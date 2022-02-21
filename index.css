@@ -1,0 +1,115 @@
+
+/*  navbar  */
+
+a.navbar-brand.text-dark{
+    font-size: 35px;
+}
+
+a#brand{
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
+nav.navbar.navbar-expand-sm.navbar-dark{
+    background-color:whitesmoke;
+
+}
+
+a.nav-link:hover{
+    color:white;
+}
+
+/* navbar2 */
+a.nav-link.text-dark:hover{
+       color:blue;
+}
+
+
+nav.navbar.navbar-expand-sm.navbar-dark.bg-secondary{
+    padding: 30px;
+    text-align: center;
+}
+
+
+
+
+button.navbar-toggler{
+    background-color:black;
+}
+
+
+
+button.navbar-toggler:hover{
+    background-color:grey;
+}
+
+
+/* brands */
+#brands{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin:20px 0px 50px 0px;
+    flex-direction:column;
+}
+
+#brands h2{
+   font-weight:500;
+   padding:2px 20px;
+   text-transform:capitalize;
+   letter-spacing: 2px;
+   margin:20px 0px;
+   border: 1px solid rgba(0,0,0,0.14) ;
+}
+
+.brands-container{
+    display: flex;
+    margin:auto;
+    width:1200px;
+    justify-content: center;
+    align-items:center;
+    padding:20px;
+    border:1px solid rgba(0,0,0,0.04);
+   
+    
+}
+
+.brands-box{
+    position:relative;
+    padding:10px;
+    text-decoration: none;
+  
+}
+
+.brands-box img{
+    width:250px;
+    height:250px;
+    object-fit:contain;
+    object-position: center;
+    padding:20px;
+    background-color:grey;
+    overflow:hidden;
+    border:1px solid rgba(0,0,0,0.04);
+    transition:all ease 0.3s;
+    
+}
+
+.brands-box span{
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: #2c2c2c;
+    text-transform: capitalize;
+    
+  
+}
+
+
