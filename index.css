@@ -1,17 +1,23 @@
-
-/*  navbar  */
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 
 a.navbar-brand.text-dark{
     font-size: 35px;
+    font-family: 'Redressed', cursive;
 }
 
 a#brand{
     font-size: 20px;
 }
 
+a.nav-link{
+    color:black
+}
 
 
-
+a.navbar-brand.d-block.d-sm-none{
+    color:black;
+    font-family: 'Redressed', cursive;
+}
 
 
 
@@ -26,27 +32,31 @@ a.nav-link:hover{
 }
 
 /* navbar2 */
-a.nav-link.text-dark:hover{
-       color:blue;
+
+img#brand{
+    width:100px;
 }
 
-
-nav.navbar.navbar-expand-sm.navbar-dark.bg-secondary{
-    padding: 30px;
-    text-align: center;
-}
-
-
-
-
-button.navbar-toggler{
-    background-color:black;
-}
 
 
 
 button.navbar-toggler:hover{
-    background-color:grey;
+    color:white;
+}
+
+
+nav#navbar{
+    background-color:lightseagreen;
+    text-align: center;
+
+}
+
+img{
+    width: 40px;
+}
+
+button.navbar-toggler{
+    background-color:lightseagreen;
 }
 
 
@@ -98,6 +108,7 @@ button.navbar-toggler:hover{
     border:1px solid rgba(0,0,0,0.04);
     transition:all ease 0.3s;
     
+    
 }
 
 .brands-box span{
@@ -112,4 +123,156 @@ button.navbar-toggler:hover{
   
 }
 
+/* owl brands */
 
+
+  .title{
+      text-align: center;
+  }
+ 
+  .slider{
+    max-width:1100px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%
+}
+  .slider .card{
+    flex: 1;
+    margin: 0 10px;
+}s
+  .slider .card .img{
+    height:200px;
+    width: 100%;
+  
+  }
+  .slider .card .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .slider .card .content{
+    padding: 10px 20px;
+  }
+  .card .content .title{
+    font-size: 25px;
+    font-weight: 600;
+  } 
+
+
+  .card .img{
+      height:150px;
+      border-radius: 10px;
+  }
+
+ .card{
+     background-color:orange;
+     border-radius: 10px;
+ }
+
+ #tissot{
+     background-color: teal;
+ }
+
+ #jbl{
+     background-color: lightgrey;
+ }
+
+ #nike{
+     background-color:lightseagreen;
+ }
+
+ #apple{
+     background-color:wheat;
+ }
+
+ /* category image grid */
+ 
+ .gallery {
+    display: flex;
+    padding: 2px;
+    transition: 0.3s;
+  }
+  .gallery:hover .gallery__image {
+    filter: grayscale(1);
+  }
+  .gallery__column {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+  .gallery__link {
+    margin: 2px;
+    overflow: hidden;
+  }
+  .gallery__link:hover .gallery__image {
+    filter: grayscale(0);
+  }
+  .gallery__link:hover .gallery__caption {
+    opacity: 1;
+  }
+  .gallery__thumb {
+    position: relative;
+  }
+  .gallery__image {
+    display: block;
+    width: 100%;
+    transition: 0.3s;
+  }
+  .gallery__image:hover {
+    transform: scale(1.1);
+  }
+  .gallery__caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 15px 15px;
+    width: 100%;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    color: white;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.3s;
+  }
+
+  /* latest products */
+  a.btn.btn-secondary{
+      margin:10px;
+  }
+
+  a.btn.btn-secondary:hover{
+      background-color:teal;
+  }
+
+
+  /* footer */
+
+
+
+img{
+    width:50px;
+}
+
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2{
+    border-radius: 50%;
+    
+    
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-info.pmd-btn-flat.mx-1.my-2{
+    border-radius: 50%;
+    
+}
+
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-danger.pmd-btn-flat.mx-1.my-2{
+    border-radius:50%;
+    background-color:#d63384;
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2{
+    border-radius: 50%;
+    background-color: red;
+}

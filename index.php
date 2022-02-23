@@ -9,6 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
 
 
     <!-- link the external stylesheet -->
@@ -19,16 +22,21 @@
 <body>
 
     <!-- navbar starts -->
-    <nav class="navbar navbar-expand-sm  navbar-dark">
+    <nav class="navbar navbar-expand-sm  ">
         <div class="container">
-            <a class="navbar-brand text-dark d-none d-sm-block" href="#">Vogue-X-maniac</a>
-            <a class="navbar-brand text-dark d-block d-sm-none" id="brand" href="#">Vogue-X-maniac</a>
+            <a class="navbar-brand text-dark d-none d-sm-block" href="#">Vogue X Maniac</a>
+            <a class="navbar-brand  d-block d-sm-none" href="#">Vogue X Maniac</a>
+
             <ul class="navbar-nav-expand-lg nav justify-content-end">
+                <form class="d-flex">
+                    <input class="form-control me-2 d-none d-xl-block d-xxl-none" type="text" placeholder="Search">
+                    <button class="btn btn-info d-none d-xl-block d-xxl-none" type="button">Search</button>
+                </form>
                 <li class="nav-item">
-                    <a class="nav-link" id="nav" href="#"><img src="./header images/user.png"></a>
+                    <a class="nav-link" id="nav" href="#"><img src="./header images/user1-removebg-preview.png"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link"  id="nav" href="#"><img src="./header images/cart.png"></a>
+                    <a class="nav-link" id="nav" href="#"><img src="./header images/cart1-removebg-preview.png"></a>
                 </li>
             </ul>
         </div>
@@ -37,42 +45,51 @@
 
     <!-- navbar ends -->
 
+    <!-- navbar 2 starts -->
+    <nav class="navbar navbar-expand-sm">
+        <div class="container  justify-content-center ">
+            <form class="d-flex d-xl-none d-xxl-block">
+                <input class="form-control me-2" type="text" placeholder="Search">
+                <button class="btn btn-info" type="button">Search</button>
+            </form>
+        </div>
+    </nav>
 
-    <!-- navbar2 starts -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-secondary">
-        <div class="container">
-            <a class="navbar-brand text-dark"><i class="fa-solid fa-bag-shopping"></i></a>
-            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                <span class="navbar-toggler-icon"></span>
+
+    <!-- navbar 2 ends -->
+
+
+    <!-- navbar 3 starts -->
+    <nav class="navbar navbar-expand-sm navbar-dark" id="navbar">
+        <div class="container  ">
+            <a class="navbar-brand text-dark"><i class="fa fa-bag-shopping"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon" id="menubar"></span>
             </button>
-            <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav me-auto">
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                <ul class="navbar-nav ">
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Home</a>
+                        <a class="nav-link" href="#">Home</a>
                     </li>
                     <hr>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Shop</a>
+                        <a class="nav-link" href="#">Shop</a>
                     </li>
                     <hr>
                     <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">About Us</a>
-                    </li><hr>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" href="#">Log Out</a>
+                        <a class="nav-link" href="#">About Us</a>
                     </li>
-                </ul>      
-                <hr>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="text" placeholder="Search">
-                    <button class="btn btn-success" type="button">Search</button>
-                </form>
+                    <hr>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Log Out</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-   
-    <!-- navbar2 ends -->
+
+    <!-- navbar 3 ends -->
 
     <!-- Carousel -->
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -87,13 +104,13 @@
         <!-- The slideshow/carousel -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./admin_area/slides_images/slider1.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                <img src="./admin_area/slides_images/slider1.jpg" alt="slider1" class="d-block" style="width:100%">
             </div>
             <div class="carousel-item">
-                <img src="./admin_area/slides_images/slider2.jpg" alt="Chicago" class="d-block" style="width:100%">
+                <img src="./admin_area/slides_images/slider2.jpg" alt="slider2" class="d-block" style="width:100%">
             </div>
             <div class="carousel-item">
-                <img src="./admin_area/slides_images/slider4.jpg" alt="New York" class="d-block" style="width:100%">
+                <img src="./admin_area/slides_images/slider4.jpg" alt="slider4" class="d-block" style="width:100%">
             </div>
         </div>
 
@@ -108,46 +125,370 @@
 
     <!-- brands -->
     <section id="brands">
+
         <h2>Brands</h2>
+        <div class="slider owl-carousel">
 
-        <div class="brands-container">
-
-        <a href="#" class="brands-box">
-            <img src="./admin_area/product_images/apple2.jpg">
-            <span>Apple</span>
-        </a>
-
-        <a href="#" class="brands-box">
-            <img src="./admin_area/product_images/boat2.jpg">
-            <span>Apple</span>
-        </a>
+            <div class="card" id="apple">
+                <div class="img">
+                    <a href="#"><img src="./admin_area/product_images/apple2-removebg-preview.png" alt=""></a>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        Apple
+                    </div>
 
 
-        <a href="#" class="brands-box">
-            <img src="./admin_area/product_images/jbl2.jpg">
-            <span>Apple</span>
-        </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <a href="#"><img src="./admin_area/product_images/boat2-removebg-preview.png" alt=""></a>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        Boat
+                    </div>
 
 
-        <a href="#" class="brands-box">
-            <img src="./admin_area/product_images/nike1.jpg">
-            <span>Apple</span>
-        </a>
+                </div>
+            </div>
+            <div class="card" id="nike">
+                <div class="img">
+                    <a href="#"><img src="./admin_area/product_images/nike1-removebg-preview.png" alt=""></a>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        Nike
+                    </div>
 
-        <a href="#" class="brands-box">
-            <img src="./admin_area/product_images/tissot2.png">
-            <span>Apple</span>
-        </a>
 
+                </div>
+            </div>
+            <div class="card" id="jbl">
+                <div class="img">
+                    <a href="#"><img src="./admin_area/product_images/images-removebg-preview (2).png" alt=""></a>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        Jbl
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="card" id="tissot">
+                <div class="img">
+                    <a href="#"><img src="./admin_area/product_images/tissot4-removebg-preview.png" alt=""></a>
+                </div>
+                <div class="content">
+                    <div class="title">
+                        Tissot
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- brands finished -->
+
+    <!-- categories -->
+
+    <section id="brands">
+        <h2>categories</h2>
+
+
+        <div class="gallery">
+            <div class="gallery__column">
+                <a href="#" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="./categories_images/mens shoes.jpg" alt="mens and womens shoes" class="gallery__image">
+                        <figcaption class="gallery__caption">Shoes</figcaption>
+                    </figure>
+                </a>
+
+                <a href="#" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="./categories_images/bluetooth speakers.jpg" alt="Bluetooth Speakers" class="gallery__image">
+                        <figcaption class="gallery__caption">BT Speakers</figcaption>
+                    </figure>
+                </a>
+
+
+            </div>
+
+            <div class="gallery__column">
+                <a href="#" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="./categories_images/smart watches.jpg" alt="smart watches" class="gallery__image">
+                        <figcaption class="gallery__caption">Smart Watches</figcaption>
+                    </figure>
+                </a>
+
+                <a href="#" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="./categories_images/womens watches.jpg" alt="Womens Watches" class="gallery__image">
+                        <figcaption class="gallery__caption">Womens Watches</figcaption>
+                    </figure>
+                </a>
+                <!-- 
+		<a href="#" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="./categories_images/headphones.jpg" alt="headphones" class="gallery__image">
+				<figcaption class="gallery__caption">Airpods and Headphones</figcaption>
+			</figure>
+		</a> -->
+            </div>
+
+            <div class="gallery__column">
+                <a href="#" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="./categories_images/mens watches.jpg" alt="mens_watch" class="gallery__image">
+                        <figcaption class="gallery__caption">Mens Watches</figcaption>
+                    </figure>
+                </a>
+
+                <a href="#" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="./categories_images/headphones.jpg" alt="headphones" class="gallery__image">
+                        <figcaption class="gallery__caption">Airpods</figcaption>
+                    </figure>
+                </a>
+
+                <!-- <a href="https://unsplash.com/@mr_geshani" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="https://source.unsplash.com/2JH8d3ChNec/300x300" alt="Portrait by Amir Geshani" class="gallery__image">
+				<figcaption class="gallery__caption">Portrait by Amir Geshani</figcaption>
+			</figure>
+		</a> -->
+            </div>
+
+            <div class="gallery__column">
+                <a href="#" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="./categories_images/travel bags.jpg" alt="travel bags" class="gallery__image">
+                        <figcaption class="gallery__caption">Travel Bags</figcaption>
+                    </figure>
+                </a>
+
+                <a href="#" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="./categories_images/womens handbags.jpg" alt="womens handbags" class="gallery__image">
+                        <figcaption class="gallery__caption">Womens Handbags</figcaption>
+                    </figure>
+                </a>
+
+                <!-- <a href="https://unsplash.com/@dimadallacqua" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="https://source.unsplash.com/XZkEhowjx8k/300x500" alt="Portrait by Dima DallAcqua" class="gallery__image">
+				<figcaption class="gallery__caption">Portrait by Dima DallAcqua</figcaption>
+			</figure>
+		</a> -->
+            </div>
         </div>
 
     </section>
 
 
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-</body>
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
 
-</html>
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./admin_area/slides_images2/slider5.jpg" alt="slider5" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="./admin_area/slides_images2/slider6.jpg" alt="slider6" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="./admin_area/slides_images2/slider7.jpg" alt="slider7" class="d-block" style="width:100%">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+
+
+    <!-- latest products -->
+    <section id="brands">
+        <h2>Latest Products</h2>
+        <div class="slider owl-carousel">
+
+            <div class="card bg-white">
+                <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Analog Watch</h4>
+                    <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
+                    <div class="text-center">
+                    <a href="#" class="btn btn-secondary" >See Details</a>
+                    <a href="#" class="btn btn-secondary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-white">
+                <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Analog Watch</h4>
+                    <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
+                    <div class="text-center">
+                    <a href="#" class="btn btn-secondary" >See Details</a>
+                    <a href="#" class="btn btn-secondary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-white">
+                <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Analog Watch</h4>
+                    <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
+                    <div class="text-center">
+                    <a href="#" class="btn btn-secondary" >See Details</a>
+                    <a href="#" class="btn btn-secondary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-white">
+                <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Analog Watch</h4>
+                    <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
+                    <div class="text-center">
+                    <a href="#" class="btn btn-secondary" >See Details</a>
+                    <a href="#" class="btn btn-secondary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-white">
+                <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h4 class="card-title text-center">Analog Watch</h4>
+                    <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
+                    <div class="text-center">
+                    <a href="#" class="btn btn-secondary" >See Details</a>
+                    <a href="#" class="btn btn-secondary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+
+    </section>
+
+
+
+
+     <!-- Footer -->
+
+     <footer class="text-center text-lg-start text-dark" style="background-color:grey">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">
+                            Company name
+                        </h6>
+                        <p class="text-white">
+                            Here you can use rows and columns to organize your footer
+                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                        <p class="text-white">MDBootstrap</p>
+                        <p class="text-white">MDWordPress</p>
+                        <p class="text-white">BrandFlow</p>
+                        <p class="text-white">Angular</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                        <p class="text-white"><i class="fas fa-home text-white mr-3"></i> New York, NY 10012, US</p>
+                        <p class="text-white"><i class="fas fa-envelope text-white mr-3"></i> inf0@text-white@gmail.com
+                        </p>
+                        <p class="text-white"><i class="fas fa-phone text-white mr-3"></i> + 01 234 567 88</p>
+                        <p class="text-white"><i class="fas fa-print text-white mr-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+                        <!-- Facebook -->
+                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-primary pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" role="button"><i class="fab fa-facebook"></i></a>
+
+                        <!-- Twitter -->
+                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-info pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" role="button"><i class="fab fa-twitter"></i></a>
+
+                        <!-- youtube -->
+                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-secondary pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="youtube" role="button"><i class="fab fa-youtube"></i></a>
+
+
+                        <!-- Instagram -->
+                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-danger pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram" role="button"><i class="fab fa-instagram"></i></a>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.096)">
+
+            <p class="text-dark"> ©2022 Vogue X Maniac.All Rights Reserved
+            <p>
+                <img class="px-2" src="./ProductImages/visacard.png">
+                <img class="px-2" src="./ProductImages/mastercard1.jpg">
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- end of the footer -->
 
 
 
@@ -158,8 +499,42 @@
 
 
 
-<!-- j query -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- j query -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- owl carousel -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 2000, //2000ms = 2s;
+                autoplayHoverPause: true,
+
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: false
+                    },
+                    200: {
+                        items: 2,
+                        nav: false
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    }
+                }
+            });
+
+
+
+
+        });
+    </script>
+
 </body>
 
 </html>
