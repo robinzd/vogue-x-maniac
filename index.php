@@ -11,85 +11,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- owl carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-
-
-
-    <!-- link the external stylesheet -->
+     <!-- link the external stylesheet -->
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>Vogue X Maniac</title>
 </head>
 
 <body>
 
-    <!-- navbar starts -->
-    <nav class="navbar navbar-expand-sm  ">
-        <div class="container">
-            <a class="navbar-brand text-dark d-none d-sm-block" href="#">Vogue X Maniac</a>
-            <a class="navbar-brand  d-block d-sm-none" href="#">Vogue X Maniac</a>
+<!-- navbar starts -->
+  
 
-            <ul class="navbar-nav-expand-lg nav justify-content-end">
-                <form class="d-flex">
-                    <input class="form-control me-2 d-none d-xl-block d-xxl-none" type="text" placeholder="Search">
-                    <button class="btn btn-info d-none d-xl-block d-xxl-none" type="button">Search</button>
-                </form>
-                <li class="nav-item">
-                    <a class="nav-link" id="nav" href="#"><img src="./header images/user1-removebg-preview.png"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="nav" href="#"><img src="./header images/cart1-removebg-preview.png"></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <?php include 'index.header.html';?> 
 
-
-    <!-- navbar ends -->
-
-    <!-- navbar 2 starts -->
-    <nav class="navbar navbar-expand-sm">
-        <div class="container  justify-content-center ">
-            <form class="d-flex d-xl-none d-xxl-block">
-                <input class="form-control me-2" type="text" placeholder="Search">
-                <button class="btn btn-info" type="button">Search</button>
-            </form>
-        </div>
-    </nav>
-
-
-    <!-- navbar 2 ends -->
-
-
-    <!-- navbar 3 starts -->
-    <nav class="navbar navbar-expand-sm navbar-dark" id="navbar">
-        <div class="container  ">
-            <a class="navbar-brand text-dark"><i class="fa fa-bag-shopping"></i></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon" id="menubar"></span>
-            </button>
-            <div class="collapse navbar-collapse " id="collapsibleNavbar">
-                <ul class="navbar-nav ">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <hr>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Shop</a>
-                    </li>
-                    <hr>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <hr>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Log Out</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-    <!-- navbar 3 ends -->
+    <!-- navbar  ends -->
 
     <!-- Carousel -->
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -192,8 +126,8 @@
 
         </div>
 
-
     </section>
+  
     <!-- brands finished -->
 
     <!-- categories -->

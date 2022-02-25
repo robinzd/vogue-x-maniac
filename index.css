@@ -2,63 +2,17 @@
 
 a.navbar-brand.text-dark{
     font-size: 35px;
-    font-family: 'Redressed', cursive;
+  
 }
 
 a#brand{
     font-size: 20px;
 }
 
-a.nav-link{
-    color:black
-}
-
-
-a.navbar-brand.d-block.d-sm-none{
-    color:black;
-    font-family: 'Redressed', cursive;
-}
-
-
-
-
-nav.navbar.navbar-expand-sm.navbar-dark{
-    background-color:whitesmoke;
-
-}
-
-a.nav-link:hover{
-    color:white;
-}
-
-/* navbar2 */
 
 img#brand{
     width:100px;
 }
-
-
-
-
-button.navbar-toggler:hover{
-    color:white;
-}
-
-
-nav#navbar{
-    background-color:lightseagreen;
-    text-align: center;
-
-}
-
-img{
-    width: 40px;
-}
-
-button.navbar-toggler{
-    background-color:lightseagreen;
-}
-
 
 /* brands */
 #brands{
@@ -74,6 +28,7 @@ button.navbar-toggler{
    padding:2px 20px;
    text-transform:capitalize;
    letter-spacing: 2px;
+   font-family: 'Redressed', cursive;
    margin:20px 0px;
    border: 1px solid rgba(0,0,0,0.14) ;
 }
@@ -165,7 +120,7 @@ button.navbar-toggler{
       border-radius: 10px;
   }
 
- .card{
+ div.card{
      background-color:orange;
      border-radius: 10px;
  }
@@ -228,7 +183,7 @@ button.navbar-toggler{
     left: 0;
     padding: 25px 15px 15px;
     width: 100%;
-    font-family: "Raleway", sans-serif;
+    font-family:'Redressed', cursive;
     font-size: 16px;
     color: white;
     opacity: 0;
