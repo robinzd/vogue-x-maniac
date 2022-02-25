@@ -36,6 +36,7 @@
         </div>
 
         <!-- The slideshow/carousel -->
+        
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./admin_area/slides_images/slider1.jpg" alt="slider1" class="d-block" style="width:100%">
