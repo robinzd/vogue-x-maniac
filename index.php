@@ -343,9 +343,7 @@
                 <div class="row">
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">
-                            Company name
-                        </h6>
+                       <img src="./header images/vogue x maniac png.png" alt="brand image">
                         <p class="text-white">
                             Here you can use rows and columns to organize your footer
                             content. Lorem ipsum dolor sit amet, consectetur adipisicing
