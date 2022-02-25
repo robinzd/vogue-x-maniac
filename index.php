@@ -183,7 +183,7 @@
 
                 <a href="#" target="_blank" class="gallery__link">
                     <figure class="gallery__thumb">
-                        <img src="./categories_images/headphones.jpg" alt="headphones" class="gallery__image">
+                        <img src="./categories_images/pexels-alena-darmel-7322208.jpg" alt="headphones" class="gallery__image">
                         <figcaption class="gallery__caption">Airpods</figcaption>
                     </figure>
                 </a>
