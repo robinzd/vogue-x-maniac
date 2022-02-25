@@ -59,7 +59,7 @@
     </div>
 
     <!-- brands -->
-    <section id="brands">
+    <section id="brands" >
 
         <h2>Brands</h2>
         <div class="slider owl-carousel">
@@ -76,6 +76,7 @@
 
                 </div>
             </div>
+
             <div class="card">
                 <div class="img">
                     <a href="#"><img src="./admin_area/product_images/boat2-removebg-preview.png" alt=""></a>
@@ -128,6 +129,8 @@
         </div>
 
     </section>
+
+
   
     <!-- brands finished -->
 
