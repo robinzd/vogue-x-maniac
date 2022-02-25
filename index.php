@@ -170,13 +170,7 @@
                         <figcaption class="gallery__caption">Womens Watches</figcaption>
                     </figure>
                 </a>
-                <!-- 
-		<a href="#" target="_blank" class="gallery__link">
-			<figure class="gallery__thumb">
-				<img src="./categories_images/headphones.jpg" alt="headphones" class="gallery__image">
-				<figcaption class="gallery__caption">Airpods and Headphones</figcaption>
-			</figure>
-		</a> -->
+            
             </div>
 
             <div class="gallery__column">
