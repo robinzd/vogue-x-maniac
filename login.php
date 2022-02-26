@@ -40,11 +40,12 @@
                                 <button type="button" class="btn1 mt-3 mb-5">Login</button>
                             </div>
                         </div>
-                     <a href="#">Forgot Password</a>
-                     <p>Don't Have An Account?<a href="#">Register Here</a></p>
+                        <a href="#">Forgot Password</a>
+                        <p>Don't Have An Account?<a href="#">Register Here</a></p>
                     </form>
                 </div>
             </div>
+        </div>
     </section>
 
 
