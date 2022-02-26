@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 a.navbar-brand.text-dark{
     font-size: 35px;
@@ -193,12 +194,25 @@ img#brand{
   }
 
   /* latest products */
-  a.btn.btn-secondary{
+  a.btn.btn{
       margin:10px;
   }
 
-  a.btn.btn-secondary:hover{
-      background-color:teal;
+  a.btn.btn:hover{
+      background-color:lightgreen;
+  }
+
+  a.btn.btn{
+    background-color: none;
+    border-radius: 10px;
+    border-color: lightgreen;
+    white-space: nowrap; 
+
+}
+
+  h5.card-title.text-center{
+    white-space: nowrap;
+    font-family: 'Poppins', sans-serif;
   }
 
 

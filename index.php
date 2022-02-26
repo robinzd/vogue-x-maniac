@@ -268,34 +268,22 @@
             <div class="card bg-white">
                 <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                    <h4 class="card-title text-center">Analog Watch</h4>
+                    <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                    <a href="#" class="btn btn-secondary" >See Details</a>
-                    <a href="#" class="btn btn-secondary">Add to Cart</a>
+                    <a href="#" class="btn btn" >See Details</a>
+                    <a href="#" class="btn btn">Add to Cart</a>
                     </div>
                 </div>
             </div>
             <div class="card bg-white">
                 <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                    <h4 class="card-title text-center">Analog Watch</h4>
+                    <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                    <a href="#" class="btn btn-secondary" >See Details</a>
-                    <a href="#" class="btn btn-secondary">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-white">
-                <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h4 class="card-title text-center">Analog Watch</h4>
-                    <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
-                    <div class="text-center">
-                    <a href="#" class="btn btn-secondary" >See Details</a>
-                    <a href="#" class="btn btn-secondary">Add to Cart</a>
+                    <a href="#" class="btn btn" >See Details</a>
+                    <a href="#" class="btn btn">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -303,11 +291,11 @@
             <div class="card bg-white">
                 <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                    <h4 class="card-title text-center">Analog Watch</h4>
+                    <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                    <a href="#" class="btn btn-secondary" >See Details</a>
-                    <a href="#" class="btn btn-secondary">Add to Cart</a>
+                    <a href="#" class="btn btn" >See Details</a>
+                    <a href="#" class="btn btn">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -315,11 +303,23 @@
             <div class="card bg-white">
                 <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
-                    <h4 class="card-title text-center">Analog Watch</h4>
+                    <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                    <a href="#" class="btn btn-secondary" >See Details</a>
-                    <a href="#" class="btn btn-secondary">Add to Cart</a>
+                    <a href="#" class="btn btn" >See Details</a>
+                    <a href="#" class="btn btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-white">
+                <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Analog Watch</h5>
+                    <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
+                    <div class="text-center">
+                    <a href="#" class="btn btn" >See Details</a>
+                    <a href="#" class="btn btn">Add to Cart</a>
                     </div>
                 </div>
             </div>
