@@ -200,6 +200,8 @@ img#brand{
 
   a.btn.btn:hover{
       background-color:lightgreen;
+      border:1px solid;
+      color:black;
   }
 
   a.btn.btn{
