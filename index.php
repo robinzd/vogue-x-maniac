@@ -21,7 +21,7 @@
 <!-- navbar starts -->
   
 
-    <?php include 'index.header.html';?> 
+    <?php include 'index.header.php';?> 
 
     <!-- navbar  ends -->
 
