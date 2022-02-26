@@ -215,6 +215,14 @@ img#brand{
     font-family: 'Poppins', sans-serif;
   }
 
+  s{
+    color:lightgrey;
+  }
+
+  p.card-text.text-center{
+    color:black;
+  }
+
 
   /* footer */
 
