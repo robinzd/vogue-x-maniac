@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login</title>
+	<title>Register</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/login-icon.png"/>
+	<link rel="icon" type="image/png" href="images/icons/icons8.png">
 
-	<!--===============================================================================================-->
+<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
@@ -24,12 +24,11 @@
 <!--===============================================================================================-->	
 	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/login1.css">
-	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/register1.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
 <!--===============================================================================================-->
 </head>
 <body style="background-color: #666666;">
-
 	
 	<div class="limiter">
 		<div class="container-login100">
@@ -42,50 +41,52 @@
 
 
 					<span class="login100-form-title p-b-43">
-						Login Form
+						Register Form
 					</span>
 					
 					
+					<div class="wrap-input100 validate-input" data-validate = "first name is required">
+						<input class="input100" type="text" name="First Name">
+						<span class="focus-input100"></span>
+						<span class="label-input100">First Name</span>
+					</div>
+					
+					
+					<div class="wrap-input100 validate-input" data-validate="last name is required">
+						<input class="input100" type="password" name="Last Name">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Last Name</span>
+					</div>
+
 					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
 						<input class="input100" type="text" name="email">
 						<span class="focus-input100"></span>
 						<span class="label-input100">Email</span>
 					</div>
-					
-					
-					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<input class="input100" type="password" name="pass">
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="text" name="Password">
 						<span class="focus-input100"></span>
 						<span class="label-input100">Password</span>
 					</div>
 
-					<div class="flex-sb-m w-full p-t-3 p-b-32">
-						<div class="contact100">
-							
-							<div>
-							<!-- <a href="../register_form/register.php" class="txt1">
-							Register Here! -->
-							</a>
-                             </div>
-						</div>
-
-						<div>
-							<a href="#" class="txt1">
-								Forgot Password?
-							</a>
-						</div>
+					<div class="wrap-input100 validate-input" data-validate = "mobile number is required">
+						<input class="input100" type="number" name="Mobile No">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Mobile No</span>
 					</div>
-			
+
+				
 
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn">
-							Login
+							Register
 						</button>
 					</div>
 
-					 <div class="text-center p-t-46 p-b-20">
+					<div class="text-center p-t-46 p-b-20">
 						<span class="txt2">
-							Don't Have an account?<a href="../register_form/register.php" class="txt1">Register</a>
+							Already Have an account?<a href="../Login_form/login.php"  class="txt1">Login</a>
 						</span>
 					</div>
 
@@ -107,7 +108,7 @@
 					</div> -->
 				</form>
 
-				<div class="login100-more" style="background-image: url('images/login-pic.jpg');">
+				<div class="login100-more" style="background-image: url('images/register-pic.jpg');">
 				</div>
 			</div>
 		</div>
