@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details</title>
     <!-- fav icon -->
-    <link rel="icon" type="image/png" href="./favicon/icons8-details-48.png"/>
+    <link rel="icon" type="image/png" href="./favicon/icons8-details-48.png" />
     <!-- bootsstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- font awesome cdn -->
@@ -18,66 +18,62 @@
     <link rel="stylesheet" type="text/css" href="details.css">
     <!-- external js sheet -->
     <script src="details.js"></script>
-   
+
 </head>
 
 <body>
 
 
 
-<!-- navbar starts -->
-  
+    <!-- navbar starts -->
 
-<?php include './index.header.php';?> 
 
-<!-- navbar  ends -->
+    <?php include './index.header.php'; ?>
 
-<!-- product details -->
-<div class="container-fluid mt-5 mb-5">
-    <div class="row d-flex justify-content-center">
-        <div class="col-md-10">
-            <div class="card">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="images p-3">
-                            <div class="text-center p-4"> <img id="main-image" src="./admin_area/product_images/product1.jpg" width="250" /> </div>
-                            <div class="thumbnail text-center" id="thumbnailimage"> <img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product1.jpg" width="70"> <img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product6.jpg" width="70"><img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product7.jpg" width="70"><img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product8.jpg" width="70"> </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="product p-4">
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="d-flex align-items-center"><a href="#"><i class="fa fa-long-arrow-left"></i></a> <a href="#"><span class="ml-1">Back</span></a> </div> <a href="index.php"><i class="fa fa-home text-muted"></i></a>
+    <!-- navbar  ends -->
+
+    <!-- product details -->
+    <div class="container-fluid mt-5 mb-5">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="images p-3">
+                                <div class="text-center p-4"> <img id="main-image" src="./admin_area/product_images/product1.jpg" width="250" /> </div>
+                                <div class="thumbnail text-center" id="thumbnailimage"> <img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product1.jpg" width="70"> <img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product6.jpg" width="70"><img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product7.jpg" width="70"><img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product8.jpg" width="70"> </div>
                             </div>
-                            <div class="mt-4 mb-3"> <span class="text-uppercase text-muted brand">Orianz</span>
-                                <h5 class="text-uppercase">Men's slim fit t-shirt</h5>
-                                <div class="price d-flex flex-row align-items-center"> <span class="act-price">₹1,200</span>
-                                    <div class="ml-2"> <small class="dis-price">₹3,000</small>  </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="product p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center"><a href="#"><i class="fa fa-long-arrow-left"></i></a> <a href="#"><span class="ml-1">Back</span></a> </div> <a href="index.php"><i class="fa fa-home text-muted"></i></a>
+                                </div>
+                                <div class="mt-4 mb-3"> <span class="text-uppercase text-muted brand">Orianz</span>
+                                    <h5 class="text-uppercase">Men's slim fit t-shirt</h5>
+                                    <div class="price d-flex flex-row align-items-center"> <span class="act-price">₹1,200</span>
+                                        <div class="ml-2"> <small class="dis-price">₹3,000</small> </div>
+                                    </div>
+                                </div>
+                                <p class="about">Shop from a wide range of t-shirt from orianz. Pefect for your everyday use, you could pair it with a stylish pair of jeans or trousers complete the look.</p>
+                                <div class="sizes mt-5">
+                                    <h6 class="text-uppercase">Size</h6> <label class="radio"> <input type="radio" name="size" value="S" checked> <span>S</span> </label> <label class="radio"> <input type="radio" name="size" value="M"> <span>M</span> </label> <label class="radio"> <input type="radio" name="size" value="L"> <span>L</span> </label> <label class="radio"> <input type="radio" name="size" value="XL"> <span>XL</span> </label> <label class="radio"> <input type="radio" name="size" value="XXL"> <span>XXL</span> </label>
+                                </div>
+                                <div class="cart mt-4 align-items-center"> <button class="btn-success text-uppercase mr-2 px-4">Add to cart</button>
+                                    <button class="btn-success text-uppercase mr-2 px-4">Buy Now</button>
                                 </div>
                             </div>
-                            <p class="about">Shop from a wide range of t-shirt from orianz. Pefect for your everyday use, you could pair it with a stylish pair of jeans or trousers complete the look.</p>
-                            <div class="sizes mt-5">
-                                <h6 class="text-uppercase">Size</h6> <label class="radio"> <input type="radio" name="size" value="S" checked> <span>S</span> </label> <label class="radio"> <input type="radio" name="size" value="M"> <span>M</span> </label> <label class="radio"> <input type="radio" name="size" value="L"> <span>L</span> </label> <label class="radio"> <input type="radio" name="size" value="XL"> <span>XL</span> </label> <label class="radio"> <input type="radio" name="size" value="XXL"> <span>XXL</span> </label>
-                            </div>
-                            <div class="cart mt-4 align-items-center"> <button class="btn-success text-uppercase mr-2 px-4">Add to cart</button>
-                            <button class="btn-success text-uppercase mr-2 px-4">Buy Now</button>
-                        </div>
-                        
-                        
-                          
-                            
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- product details ends -->
+    <!-- product details ends -->
 
 
-<!-- latest products -->
-<section id="brands">
+    <!-- latest products -->
+    <section id="brands">
         <h2>Related Products</h2>
         <div class="slider owl-carousel">
 
@@ -87,8 +83,8 @@
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                    <a href="details.php" class="btn" >See Details</a>
-                    <a href="#" class="btn">Add to Cart</a>
+                        <a href="details.php" class="btn">See Details</a>
+                        <a href="#" class="btn">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -98,8 +94,8 @@
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                    <a href="details.php" class="btn" >See Details</a>
-                    <a href="#" class="btn">Add to Cart</a>
+                        <a href="details.php" class="btn">See Details</a>
+                        <a href="#" class="btn">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -110,8 +106,8 @@
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                    <a href="details.php" class="btn" >See Details</a>
-                    <a href="#" class="btn">Add to Cart</a>
+                        <a href="details.php" class="btn">See Details</a>
+                        <a href="#" class="btn">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -122,8 +118,8 @@
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                    <a href="details.php" class="btn" >See Details</a>
-                    <a href="#" class="btn">Add to Cart</a>
+                        <a href="details.php" class="btn">See Details</a>
+                        <a href="#" class="btn">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -134,8 +130,8 @@
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                    <a href="details.php" class="btn" >See Details</a>
-                    <a href="#" class="btn">Add to Cart</a>
+                        <a href="details.php" class="btn">See Details</a>
+                        <a href="#" class="btn">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -160,7 +156,7 @@
                 <div class="row">
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                       <img src="./header images/vogue x maniac png.png" alt="brand image">
+                        <img src="./header images/vogue x maniac png.png" alt="brand image">
                         <p class="text-white">
                             Here you can use rows and columns to organize your footer
                             content. Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -252,7 +248,7 @@
         $(document).ready(function() {
             $(".owl-carousel").owlCarousel({
                 loop: true,
-                autoplay:false,
+                autoplay: false,
                 autoplayTimeout: 2000, //2000ms = 2s;
                 autoplayHoverPause: true,
 
@@ -278,7 +274,7 @@
         });
     </script>
 
-    
+
 </body>
 
 </html>
