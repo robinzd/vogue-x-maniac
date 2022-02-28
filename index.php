@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vogue X Maniac</title>
+    <!-- fav icon -->
+    <link rel="icon" type="image/png" href="./favicon/icons8-home-48.png"/>
     <!-- bootsstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- font awesome cdn -->
@@ -13,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
      <!-- link the external stylesheet -->
     <link rel="stylesheet" type="text/css" href="index.css">
-    <title>Vogue X Maniac</title>
+   
 </head>
 
 <body>
@@ -21,7 +24,7 @@
 <!-- navbar starts -->
   
 
-    <?php include 'index.header.php';?> 
+    <?php include "./index.header.php";?> 
 
     <!-- navbar  ends -->
 
@@ -271,8 +274,8 @@
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                    <a href="#" class="btn btn" >See Details</a>
-                    <a href="#" class="btn btn">Add to Cart</a>
+                    <a href="details.php" class="btn btn-success" >See Details</a>
+                    <a href="#" class="btn btn-success">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -282,20 +285,8 @@
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                    <a href="#" class="btn btn" >See Details</a>
-                    <a href="#" class="btn btn">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-white">
-                <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Analog Watch</h5>
-                    <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
-                    <div class="text-center">
-                    <a href="#" class="btn btn" >See Details</a>
-                    <a href="#" class="btn btn">Add to Cart</a>
+                    <a href="details.php" class="btn btn-success" >See Details</a>
+                    <a href="#" class="btn btn-success">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -306,8 +297,8 @@
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                    <a href="#" class="btn btn" >See Details</a>
-                    <a href="#" class="btn btn">Add to Cart</a>
+                    <a href="details.php" class="btn btn-success" >See Details</a>
+                    <a href="#" class="btn btn-success">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -318,8 +309,20 @@
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                    <a href="#" class="btn btn" >See Details</a>
-                    <a href="#" class="btn btn">Add to Cart</a>
+                    <a href="details.php" class="btn btn-success" >See Details</a>
+                    <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-white">
+                <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Analog Watch</h5>
+                    <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
+                    <div class="text-center">
+                    <a href="details.php" class="btn btn-success" >See Details</a>
+                    <a href="#" class="btn btn-success">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -337,7 +340,7 @@
 
      <!-- Footer -->
 
-     <footer class="text-center text-lg-start text-dark" style="background-color:grey">
+     <footer class="text-center text-lg-start text-dark" style="background-color:lightgrey">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
             <!-- Section: Links -->
@@ -376,7 +379,7 @@
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
                         <p class="text-white"><i class="fas fa-home text-white mr-3"></i> New York, NY 10012, US</p>
-                        <p class="text-white"><i class="fas fa-envelope text-white mr-3"></i> inf0@text-white@gmail.com
+                        <p class="text-white" id="address"><i class="fas fa-envelope text-white mr-3"></i> inf0@text-white@gmail.com
                         </p>
                         <p class="text-white"><i class="fas fa-phone text-white mr-3"></i> + 01 234 567 88</p>
                         <p class="text-white"><i class="fas fa-print text-white mr-3"></i> + 01 234 567 89</p>
@@ -431,6 +434,8 @@
 
 
     <!-- j query -->
+   
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- owl carousel -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>

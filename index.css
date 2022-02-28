@@ -53,7 +53,7 @@ img#brand{
   
 }
 
-.brands-box img{
+/* .brands-box img{
     width:250px;
     height:250px;
     object-fit:contain;
@@ -77,7 +77,7 @@ img#brand{
     text-transform: capitalize;
     
   
-}
+} */
 
 /* owl brands */
 
@@ -194,23 +194,28 @@ img#brand{
   }
 
   /* latest products */
-  a.btn.btn{
-      margin:10px;
+  a.btn.btn-success{
+    margin:10px;
+  }
+  
+  a.btn.btn-success:hover{
+    background-color:black;
+    border:1px solid;
+    color:white;
+  }
+  
+  a.btn.btn-success{
+  background-color:white;
+  border-radius: 10px;
+  border-color: lightgreen;
+  color:black;
+  white-space: nowrap; 
+  
   }
 
-  a.btn.btn:hover{
-      background-color:lightgreen;
-      border:1px solid;
-      color:black;
-  }
 
-  a.btn.btn{
-    background-color: none;
-    border-radius: 10px;
-    border-color: lightgreen;
-    white-space: nowrap; 
 
-}
+
 
   h5.card-title.text-center{
     white-space: nowrap;
@@ -237,12 +242,14 @@ img{
 
 a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2{
     border-radius: 50%;
-    
+    background-color: rgb(59,89,152);
+    color:white;
     
 }
 
 a.btn.pmd-btn-fab.pmd-ripple-effect.btn-info.pmd-btn-flat.mx-1.my-2{
     border-radius: 50%;
+    background-color: skyblue;
     
 }
 
@@ -259,4 +266,15 @@ a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2{
 
 p.text-white{
   margin-top: 20px;
+  
 }
+
+h6.text-uppercase.mb-4.font-weight-bold{
+  font-family:'Redressed', cursive;
+}
+
+p#address{
+  white-space: nowrap;
+}
+
+

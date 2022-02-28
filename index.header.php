@@ -1,21 +1,25 @@
 
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
-	<link rel="stylesheet" href="./scss header/style.css">
+	<link rel="stylesheet" type="text/css" href="./scss header/style.css">
 
-	
-    
-
-		
-		<div class="container-fluid px-md-5">
+	<title>Product Details</title>
+</head>
+<body>
+	<div class="container-fluid px-md-5">
 			<div class="row justify-content-between">
 				<div class="col-md-8 order-md-last">
 					<div class="row">
 						<div class="col-md-6 text-center">
-							<a class="navbar-brand" href="index.html"><img src="./header images/vogue x maniac png.png" at="brand image"></a>
+							<a class="navbar-brand" href="index.html"><img id="brand-image" src="./header images//vogue x maniac png.png" at="brand image"></a>
 						</div>
 						<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
 							<form action="#" class="searchform order-lg-last">
@@ -72,11 +76,12 @@
 
 
 
-	<script src="./js header/jquery.min.js"></script>
+  <script src="./js header/jquery.min.js"></script>
   <script src="./js header/bootstrap.min.js"></script>
   <script src="./js header/main.js"></script>
   <script src="./js header/popper.js"></script>
 
 
+  </body>
 </html>
 

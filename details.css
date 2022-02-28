@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+.card {
+    border: none
+}
+
+.product {
+    background-color: #eee
+}
+
+
+img#thumbnail:hover{
+    border: 1px solid lightgreen;
+}
+
+.brand {
+    font-size: 13px
+}
+
+.act-price {
+    color:black;
+    font-weight: 700
+}
+
+.dis-price {
+    text-decoration: line-through
+}
+
+.about {
+    font-size: 14px
+}
+
+.color {
+    margin-bottom: 10px
+}
+
+label.radio {
+    cursor: pointer
+}
+
+label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+label.radio span {
+   font-family:'Redressed', cursive;
+    padding: 2px 9px;
+    border: 2px solid black;
+    display: inline-block;
+    color: black;
+    border-radius: 3px;
+    text-transform: uppercase
+    
+}
+
+label.radio input:checked+span {
+    border-color:lightgreen;
+    background-color:lightgreen;
+    color: #fff
+}
+
+.btn-success {
+  border-radius: 10px;
+    border: none;
+    background-color: lightgreen !important;
+    border-color: lightgreen !important
+    
+}
+
+.btn-success:hover {
+    background-color: black !important;
+    border-color: black !important
+}
+
+.btn-success:focus {
+    box-shadow: none
+}
+
+.cart i {
+    margin-right: 10px
+}
+
+
+#brands{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  margin:20px 0px 50px 0px;
+  flex-direction:column;
+}
+
+#brands h2{
+ font-weight:500;
+ padding:2px 20px;
+ text-transform:capitalize;
+ letter-spacing: 2px;
+ font-family: 'Redressed', cursive;
+ margin:20px 0px;
+ border: 1px solid rgba(0,0,0,0.14) ;
+}
+
+.brands-container{
+  display: flex;
+  margin:auto;
+  width:1200px;
+  justify-content: center;
+  align-items:center;
+  padding:20px;
+  border:1px solid rgba(0,0,0,0.04);
+
+}
+
+.title{
+  text-align: center;
+}
+
+.slider{
+max-width:1100px;
+display: flex;
+margin-left: auto;
+margin-right: auto;
+width:100%
+}
+.slider .card{
+flex: 1;
+margin: 0 10px;
+}s
+.slider .card .img{
+height:200px;
+width: 100%;
+
+}
+.slider .card .img img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+}
+.slider .card .content{
+padding: 10px 20px;
+}
+.card .content .title{
+font-size: 25px;
+font-weight: 600;
+} 
+
+
+.card .img{
+  height:150px;
+  border-radius: 10px;
+}
+
+
+a.btn{
+  margin:10px;
+}
+
+a.btn:hover{
+  background-color:black;
+  border:1px solid;
+  color:white;
+}
+
+a.btn{
+background-color:white;
+border-radius: 10px;
+border-color: lightgreen;
+color:black;
+white-space: nowrap; 
+
+}
+
+h5.card-title.text-center{
+white-space: nowrap;
+font-family: 'Poppins', sans-serif;
+}
+
+s{
+color:lightgrey;
+}
+
+p.card-text.text-center{
+color:black;
+}
+
+ /* footer */
+
+
+
+ img{
+  width:50px;
+}
+
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2{
+  border-radius: 50%;
+  background-color:rgb(59,89,152);
+  color: white;
+  
+  
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-info.pmd-btn-flat.mx-1.my-2{
+  border-radius: 50%;
+  background-color:skyblue;
+  color: white;
+  
+}
+
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-danger.pmd-btn-flat.mx-1.my-2{
+  border-radius:50%;
+  background-color:#d63384;
+  color: white;
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2{
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+}
+
+p.text-white{
+margin-top: 20px;
+}
+
+
+h6.text-uppercase.mb-4.font-weight-bold{
+font-family:'Redressed', cursive;
+}
+
+p#address{
+  white-space: nowrap;
+}
+
+ 
+  
+
+
+
+
