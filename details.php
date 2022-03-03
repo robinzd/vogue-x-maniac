@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details</title>
     <!-- fav icon -->
-    <link rel="icon" type="image/png" href="./favicon/icons8-details-48.png" />
+    <link rel="icon" type="image/png" href="./favicon/vogue_x_maniac_png_K8m_icon.ico" />
     <!-- bootsstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- font awesome cdn -->
@@ -47,7 +47,7 @@
                         <div class="col-md-6">
                             <div class="product p-4">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center"><a href="#"><i class="fa fa-long-arrow-left"></i></a> <a href="#"><span class="ml-1">Back</span></a> </div> <a href="index.php"><i class="fa fa-home text-muted"></i></a>
+                                    <div class="d-flex align-items-center"><a href="#"><i class="fa fa-long-arrow-left"></i></a> <a href="#"><span class="ml-1">Back</span></a> </div> <a href="index.php"><i class="fa fa-home"></i></a>
                                 </div>
                                 <div class="mt-4 mb-3"> <span class="text-uppercase text-muted brand">Orianz</span>
                                     <h5 class="text-uppercase">Men's slim fit t-shirt</h5>
@@ -76,15 +76,14 @@
     <section id="brands">
         <h2>Related Products</h2>
         <div class="slider owl-carousel">
-
-            <div class="card bg-white">
+        <div class="card bg-white">
                 <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                        <a href="details.php" class="btn">See Details</a>
-                        <a href="#" class="btn">Add to Cart</a>
+                        <a href="details.php" class="btn btn-success" id="buttonhover">See Details</a>
+                        <a href="#" class="btn btn-success" id="buttonhover">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -94,8 +93,8 @@
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                        <a href="details.php" class="btn">See Details</a>
-                        <a href="#" class="btn">Add to Cart</a>
+                        <a href="details.php" class="btn btn-success" id="buttonhover">See Details</a>
+                        <a href="#" class="btn btn-success" id="buttonhover">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -106,8 +105,8 @@
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                        <a href="details.php" class="btn">See Details</a>
-                        <a href="#" class="btn">Add to Cart</a>
+                        <a href="details.php" class="btn btn-success" id="buttonhover">See Details</a>
+                        <a href="#" class="btn btn-success" id="buttonhover">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -118,8 +117,8 @@
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                        <a href="details.php" class="btn">See Details</a>
-                        <a href="#" class="btn">Add to Cart</a>
+                        <a href="details.php" class="btn btn-success" id="buttonhover">See Details</a>
+                        <a href="#" class="btn btn-success" id="buttonhover">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -130,8 +129,8 @@
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                        <a href="details.php" class="btn">See Details</a>
-                        <a href="#" class="btn">Add to Cart</a>
+                        <a href="details.php" class="btn btn-success" id="buttonhover">See Details</a>
+                        <a href="#" class="btn btn-success" id="buttonhover">Add to Cart</a>
                     </div>
                 </div>
             </div>

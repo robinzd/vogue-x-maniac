@@ -154,17 +154,17 @@ font-weight: 600;
 }
 
 
-a.btn{
+a#buttonhover{
   margin:10px;
 }
 
-a.btn:hover{
+a#buttonhover:hover{
   background-color:black;
   border:1px solid;
   color:white;
 }
 
-a.btn{
+a#buttonhover{
 background-color:white;
 border-radius: 10px;
 border-color: lightgreen;
@@ -185,6 +185,8 @@ color:lightgrey;
 p.card-text.text-center{
 color:black;
 }
+
+
 
  /* footer */
 
@@ -234,6 +236,18 @@ font-family:'Redressed', cursive;
 
 p#address{
   white-space: nowrap;
+}
+
+.fa-long-arrow-left:hover{
+  color: black;
+}
+
+span.ml-1:hover{
+  color: black;
+}
+
+.fa-home:hover{
+  color:black;
 }
 
  
