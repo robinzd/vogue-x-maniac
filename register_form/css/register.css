@@ -257,7 +257,7 @@ iframe {
 
 
 img{
-  width:30%;
+  width:40%;
 }
 
 .login100-form {
@@ -272,7 +272,7 @@ img{
   width: 100%;
   display: block;
   font-family: Poppins-Regular;
-  font-size: 30px;
+  font-size: 20px;
   color: #333333;
   line-height: 1.2;
   text-align: center;
@@ -638,3 +638,4 @@ a.login100-form-social-item.flex-c-m.bg2.m-r-5{
 a.login100-form-social-item.flex-c-m.bg2.m-r-5:hover{
   background-color:black;
 }
+
