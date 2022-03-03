@@ -63,18 +63,6 @@ label.radio input:checked+span {
     color: #fff
 }
 
-.btn-success {
-  border-radius: 10px;
-    border: none;
-    background-color: lightgreen !important;
-    border-color: lightgreen !important
-    
-}
-
-.btn-success:hover {
-    background-color: black !important;
-    border-color: black !important
-}
 
 .btn-success:focus {
     box-shadow: none
@@ -82,6 +70,14 @@ label.radio input:checked+span {
 
 .cart i {
     margin-right: 10px
+}
+
+button.btn-success.text-uppercase.mr-2.px-4{
+      border: none;
+      border-radius: 10px;
+      color:black;
+      text-transform: capitalize;
+      background-color: lightgreen;
 }
 
 
@@ -171,8 +167,8 @@ border-radius: 10px;
 border-color: lightgreen;
 color:black;
 white-space: nowrap; 
-
 }
+
 
 h5.card-title.text-center{
 white-space: nowrap;
