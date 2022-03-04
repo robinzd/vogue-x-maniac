@@ -222,8 +222,9 @@
 
             <p class="text-dark"> ©2022 Vogue X Maniac.All Rights Reserved
             <p>
-                <img class="px-2" src="./ProductImages/visacard.png">
-                <img class="px-2" src="./ProductImages/mastercard1.jpg">
+                <img class="px-2" src="./payment_pics/2560px-MasterCard_Logo.svg-removebg-preview.png">
+                <img class="px-2" src="./payment_pics/1200px-Visa.svg-removebg-preview.png">
+                <img class="px-2" src="./payment_pics/paypal-logo-removebg-preview.png">
         </div>
         <!-- Copyright -->
     </footer>

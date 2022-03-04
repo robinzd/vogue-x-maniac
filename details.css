@@ -256,7 +256,25 @@ span.ml-1:hover{
   color:black;
 }
 
+img.px-2 {
+  width: 50px;
+}
  
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-info.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-danger.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
   
 
 

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+
+
+.payment-info {
+    font-family: 'Redressed', cursive;
+    background:lightgreen;
+    padding: 10px;
+    border-radius: 6px;
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+
+    
+}
+    
+    
+
+.product-details {
+    padding: 10px
+}
+
+body {
+    background: #eee
+}
+
+.cart {
+    background: #fff
+}
+
+.p-about {
+    font-size: 12px
+}
+
+.table-shadow {
+    -webkit-box-shadow: 5px 5px 15px -2px rgba(0, 0, 0, 0.42);
+    box-shadow: 5px 5px 15px -2px rgba(0, 0, 0, 0.42)
+}
+
+.type {
+    font-weight: 400;
+    font-size: 15px
+}
+
+label.radio {
+    cursor: pointer
+}
+
+label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+label.radio span {
+    padding: 1px 12px;
+    border-radius: 3px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 300
+   
+}
+
+label.radio span:hover{
+    border:1px solid black;
+}
+
+
+img#payment {
+    width: 60px;
+}
+
+.fa-cc-stripe{
+   
+    color:blueviolet;
+
+}
+
+
+
+
+
+label.radio input:checked+span {
+    
+    border-color: black;
+    background-color:lightgreen;
+    color:black
+   
+}
+
+.credit-inputs {
+    background: rgb(102, 102, 221);
+    color: #fff !important;
+    border-color: rgb(102, 102, 221)
+}
+
+.credit-inputs::placeholder {
+    color: #fff;
+    font-size: 13px
+}
+
+.credit-card-label {
+    font-size: 15px;
+    font-weight: 300
+}
+
+.form-control.credit-inputs:focus {
+    background: rgb(102, 102, 221);
+    border: rgb(102, 102, 221)
+}
+
+.line {
+    border-bottom: 1px solid black;
+}
+
+button.btn.btn-success.btn-block.d-flex.justify-content-between.mt-3{
+    background-color: black;
+    border:black;
+}
+
+button.btn.btn-success.btn-block.d-flex.justify-content-between.mt-3:hover{
+    background-color:grey;
+    color:black;
+}
+
+.information span {
+    font-size: 12px;
+    font-weight: 500
+}
+
+.information {
+    margin-bottom: 5px
+}
+
+.items {
+    -webkit-box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.25);
+    box-shadow: 5px 5px 4px -1px rgba(0, 0, 0, 0.08)
+}
+
+.spec {
+    font-size: 11px
+}
+
+/* footer */
+img{
+    width:50px;
+}
+
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2{
+    border-radius: 50%;
+    background-color: rgb(59,89,152);
+    color:white;
+    
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-info.pmd-btn-flat.mx-1.my-2{
+    border-radius: 50%;
+    background-color: skyblue;
+    
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-info.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-danger.pmd-btn-flat.mx-1.my-2{
+    border-radius:50%;
+    background-color:#d63384;
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-danger.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2{
+    border-radius: 50%;
+    background-color: red;
+}
+
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+p.text-white{
+  margin-top: 20px;
+}
+
+h6.text-uppercase.mb-4.font-weight-bold{
+  font-family:'Redressed', cursive;
+}
+
+p#address{
+  white-space: nowrap;
+}
+
+img.px-2 {
+    width: 50px;
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2:hover{
+    color:black;
+  }
+  
+  a.btn.pmd-btn-fab.pmd-ripple-effect.btn-info.pmd-btn-flat.mx-1.my-2:hover{
+    color:black;
+  }
+  
+  a.btn.pmd-btn-fab.pmd-ripple-effect.btn-danger.pmd-btn-flat.mx-1.my-2:hover{
+    color:black;
+  }
+  
+  a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2:hover{
+    color:black;
+  }

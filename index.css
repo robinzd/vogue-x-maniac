@@ -247,10 +247,18 @@ a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2{
     
 }
 
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
 a.btn.pmd-btn-fab.pmd-ripple-effect.btn-info.pmd-btn-flat.mx-1.my-2{
     border-radius: 50%;
     background-color: skyblue;
     
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-info.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
 }
 
 
@@ -259,14 +267,22 @@ a.btn.pmd-btn-fab.pmd-ripple-effect.btn-danger.pmd-btn-flat.mx-1.my-2{
     background-color:#d63384;
 }
 
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-danger.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
 a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2{
     border-radius: 50%;
     background-color: red;
 }
 
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
 p.text-white{
   margin-top: 20px;
-  
 }
 
 h6.text-uppercase.mb-4.font-weight-bold{
@@ -276,5 +292,13 @@ h6.text-uppercase.mb-4.font-weight-bold{
 p#address{
   white-space: nowrap;
 }
+
+img.px-2 {
+  width: 50px;
+}
+
+
+
+
 
 
