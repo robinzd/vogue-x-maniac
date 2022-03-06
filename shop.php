@@ -25,6 +25,14 @@
 
     <!-- navbar  ends -->
 
+    <!-- back to top starts -->
+
+
+    <?php include "./back_to_top.php"; ?>
+
+    <!--back to top ends -->
+
+
 
     <div class="container-fluid">
 
@@ -42,7 +50,7 @@
                     </h3>
 
                     <!-- <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3"> -->
-                   
+
                     <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
                     <!-- Example -->
                     <label for="ex4">Min-price</label>
@@ -305,15 +313,15 @@
 
                     <p class="text-dark"> ©2022 Vogue X Maniac.All Rights Reserved
                     <p>
-                    <img class="px-2" src="./payment_pics/2560px-MasterCard_Logo.svg-removebg-preview.png">
-                    <img class="px-2" src="./payment_pics/1200px-Visa.svg-removebg-preview.png">
-                    <img class="px-2" src="./payment_pics/paypal-logo-removebg-preview.png">
+                        <img class="px-2" src="./payment_pics/2560px-MasterCard_Logo.svg-removebg-preview.png">
+                        <img class="px-2" src="./payment_pics/1200px-Visa.svg-removebg-preview.png">
+                        <img class="px-2" src="./payment_pics/paypal-logo-removebg-preview.png">
                 </div>
                 <!-- Copyright -->
             </footer>
             <!-- end of the footer -->
 
-            
+
 </body>
 
 </html>

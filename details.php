@@ -31,6 +31,14 @@
     <?php include './index.header.php'; ?>
 
     <!-- navbar  ends -->
+    
+
+     <!-- back to top starts -->
+  
+     <?php include "./back_to_top.php";?> 
+
+    <!--back to top ends -->
+
 
     <!-- product details -->
     <div class="container-fluid mt-5 mb-5">

@@ -21,12 +21,25 @@
 
 <body>
 
-<!-- navbar starts -->
+
+
+    <!-- navbar starts -->
   
 
     <?php include "./index.header.php";?> 
 
     <!-- navbar  ends -->
+
+
+    <!-- back to top starts -->
+  
+
+<?php include "./back_to_top.php";?> 
+
+    <!--back to top ends -->
+
+
+    
 
     <!-- Carousel -->
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
