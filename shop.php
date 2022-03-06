@@ -20,7 +20,6 @@
 
     <!-- navbar starts -->
 
-
     <?php include "./index.header.php"; ?>
 
     <!-- navbar  ends -->
@@ -35,8 +34,6 @@
 
 
     <div class="container-fluid">
-
-
         <div class="row">
             <div class="col-sm-4 col-md-3">
 
