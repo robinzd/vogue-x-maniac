@@ -297,3 +297,82 @@ img.px-2 {
   width: 50px;
 }
 
+/* services */
+
+
+
+
+.services {
+  padding: 40px;
+  position: relative
+}
+
+.services .square {
+  height: 100px;
+  width: 100px;
+  margin: 30px auto 40px;
+  position: relative;
+  border-radius: 15px;
+  transform: rotate(45deg);
+  padding: 10px;
+  background-color: lightgreen;
+  box-shadow: 0px 0px 27px 0px #ccc;
+  border: 2px dotted #eaf3fa
+}
+
+.square i {
+  transform: rotate(315deg);
+  display: block;
+  color: #eaf3fa;
+  font-size: 40px;
+  padding-top: 17px;
+  padding-right: 14px
+}
+
+.services .square::before {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color:black;
+  content: ''
+}
+
+.services .square::after {
+  position: absolute;
+  left: 50px;
+  top: 66px;
+  width: 1px;
+  height: 88%;
+  background-color:black;
+  content: '';
+  transform: rotate(90deg)
+}
+
+.services .serv .num {
+  width: 60px;
+  height: 60px;
+  background-color: #7499f1;
+  box-shadow: 0px 0px 15px 0px #00a9d3;
+  margin: -38px auto 15px auto;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 30px;
+  padding-top: 7px;
+  border: 1px dashed
+}
+
+.services .serv h5 {
+  color: #fa9746;
+  font-family: 'Redressed', cursive;
+}
+
+.services .serv p {
+  color: #777
+}
+
+.services .serv hr {
+  width: 30px;
+  border-top: 3px solid rgb(0 169 211)
+}

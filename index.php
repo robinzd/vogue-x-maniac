@@ -319,13 +319,47 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
 </section>
 
 
-
+<section>
+<div class="services pd">
+    <div class="container">
+       
+        <div class="row text-center">
+            <div class="col-md-3">
+                <div class="square"><i class="fas fa-truck"></i></div>
+                <div class="serv">
+                    <h5>Safe Delivery</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="serv">
+                    <div class="square"><i class="fas fa-money-bill"></i></div>
+                    <h5>Secured Payment</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="square"><i class="fas fa-truck-fast"></i></div>
+                <div class="serv">
+                    <h5>3-4 days Shipping</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="square"><i class="fas fa-user-shield"></i></div>
+                <div class="serv">
+                    <h5>Secure Website</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
 
 
      <!-- Footer -->
