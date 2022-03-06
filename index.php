@@ -229,38 +229,31 @@
     </section>
 
 
-    <!-- Carousel -->
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
-        <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-        </div>
-
-        <!-- The slideshow/carousel -->
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./admin_area/slides_images2/slider5.jpg" alt="slider5" class="d-block" style="width:100%">
-            </div>
-            <div class="carousel-item">
-                <img src="./admin_area/slides_images2/slider6.jpg" alt="slider6" class="d-block" style="width:100%">
-            </div>
-            <div class="carousel-item">
-                <img src="./admin_area/slides_images2/slider7.jpg" alt="slider7" class="d-block" style="width:100%">
-            </div>
-        </div>
-
-        <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
+    <!-- cross fade carousel -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./admin_area/slides_images2/slider5.jpg" class="d-block w-100" alt="...">
     </div>
+    <div class="carousel-item">
+      <img src="./admin_area/slides_images2/slider6.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="./admin_area/slides_images2/slider7.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- cross fade carousle end -->
 
+    
 
 
     <!-- latest products -->
@@ -329,15 +322,85 @@
 
 
         </div>
+</section>
 
 
-
-
-    </section>
-
-
-
-
+<section>
+<div class="container bootstrap snippets bootdeys">
+<div class="row">
+    <div class="col-md-4 col-sm-6 content-card">
+        <div class="card-big-shadow">
+            <div class="card card-just-text" data-background="color" data-color="blue" data-radius="none">
+                <div class="content">
+                <img src="./icons_delivery/safety_delivery-removebg-preview.png" class="card-img-top" alt="...">
+                    <p class="description">What all of these have in common is that they're pulling information out of the app or the service and making it relevant to the moment. </p>
+                </div>
+            </div> <!-- end card -->
+        </div>
+    </div>
+    
+    <div class="col-md-4 col-sm-6 content-card">
+        <div class="card-big-shadow">
+            <div class="card card-just-text" data-background="color" data-color="green" data-radius="none">
+                <div class="content">
+                    <h6 class="category">Best cards</h6>
+                    <h4 class="title"><a href="#">Green Card</a></h4>
+                    <p class="description">What all of these have in common is that they're pulling information out of the app or the service and making it relevant to the moment. </p>
+                </div>
+            </div> <!-- end card -->
+        </div>
+    </div>
+    
+    <div class="col-md-4 col-sm-6 content-card">
+        <div class="card-big-shadow">
+            <div class="card card-just-text" data-background="color" data-color="yellow" data-radius="none">
+                <div class="content">
+                    <h6 class="category">Best cards</h6>
+                    <h4 class="title"><a href="#">Yellow Card</a></h4>
+                    <p class="description">What all of these have in common is that they're pulling information out of the app or the service and making it relevant to the moment. </p>
+                </div>
+            </div> <!-- end card -->
+        </div>
+    </div>
+    
+    <div class="col-md-4 col-sm-6 content-card">
+        <div class="card-big-shadow">
+            <div class="card card-just-text" data-background="color" data-color="brown" data-radius="none">
+                <div class="content">
+                    <h6 class="category">Best cards</h6>
+                    <h4 class="title"><a href="#">Brown Card</a></h4>
+                    <p class="description">What all of these have in common is that they're pulling information out of the app or the service and making it relevant to the moment. </p>
+                </div>
+            </div> <!-- end card -->
+        </div>
+    </div>
+    
+    <div class="col-md-4 col-sm-6 content-card">
+        <div class="card-big-shadow">
+            <div class="card card-just-text" data-background="color" data-color="purple" data-radius="none">
+                <div class="content">
+                    <h6 class="category">Best cards</h6>
+                    <h4 class="title"><a href="#">Purple Card</a></h4>
+                    <p class="description">What all of these have in common is that they're pulling information out of the app or the service and making it relevant to the moment. </p>
+                </div>
+            </div> <!-- end card -->
+        </div>
+    </div>
+    
+    <div class="col-md-4 col-sm-6 content-card">
+        <div class="card-big-shadow">
+            <div class="card card-just-text" data-background="color" data-color="orange" data-radius="none">
+                <div class="content">
+                    <h6 class="category">Best cards</h6>
+                    <h4 class="title"><a href="#">Orange Card</a></h4>
+                    <p class="description">What all of these have in common is that they're pulling information out of the app or the service and making it relevant to the moment. </p>
+                </div>
+            </div> <!-- end card -->
+        </div>
+    </div>
+</div>
+</div>
+</section>
      <!-- Footer -->
 
      <footer class="text-center text-lg-start text-dark" style="background-color:lightgrey">
@@ -463,7 +526,9 @@
                 }
             });
 
-
+            
+ 
+ 
 
 
         });
