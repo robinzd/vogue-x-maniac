@@ -19,7 +19,7 @@
     <!-- navbar starts -->
 
 
-    <?php include "./index.header.php"; ?>
+    <?php include "./index.header.php";?>
 
     <!-- navbar  ends -->
 
@@ -95,7 +95,7 @@
                 <div class="row">
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                       <img src="./header images/vogue x maniac png.png" alt="brand image">
+                       <img class="footerimage" src="./header images/vogue x maniac png.png" alt="brand image">
                         <p class="text-white">
                             Here you can use rows and columns to organize your footer
                             content. Lorem ipsum dolor sit amet, consectetur adipisicing

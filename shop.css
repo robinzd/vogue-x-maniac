@@ -718,8 +718,9 @@ button.btn.btn-success{
     margin-top: 20px;
 }
 
-img{
-    width:50px;
+
+img.footerimage{
+  width: 120px;
 }
 
 

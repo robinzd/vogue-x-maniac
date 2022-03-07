@@ -145,9 +145,9 @@ button.btn.btn-success.btn-block.d-flex.justify-content-between.mt-3:hover{
 }
 
 /* footer */
-img{
-    width:50px;
-}
+img.footerimage{
+    width: 120px;
+  }
 
 
 a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2{

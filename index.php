@@ -16,7 +16,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
      <!-- link the external stylesheet -->
     <link rel="stylesheet" type="text/css" href="index.css">
-   
 </head>
 
 <body>
@@ -34,7 +33,7 @@
     <!-- back to top starts -->
   
 
- <?php include "./back_to_top.php";?>
+ <?php include "./back_to_top.php";?> 
 
     <!--back to top ends -->
 
@@ -386,7 +385,7 @@
                 <div class="row">
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                       <img src="./header images/vogue x maniac png.png" alt="brand image">
+                       <img class="footerimage" src="./header images/vogue x maniac png.png" alt="brand image">
                         <p class="text-white">
                             Here you can use rows and columns to organize your footer
                             content. Lorem ipsum dolor sit amet, consectetur adipisicing

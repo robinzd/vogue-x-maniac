@@ -6,10 +6,13 @@ a.navbar-brand.text-dark{
   
 }
 
+*body{
+  background-color: grey;
+}
+
 a#brand{
     font-size: 20px;
 }
-
 
 img#brand{
     width:100px;
@@ -235,8 +238,8 @@ img#brand{
 
 
 
-img{
-    width:50px;
+  img.footerimage{
+    width: 120px;
 }
 
 
