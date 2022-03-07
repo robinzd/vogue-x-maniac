@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+.text-center.py-2{
+    background-color: lightgreen;
+    color:black;
+}
+
+button.btn.btn-success.rounded-0.py-2.my-2{
+    background-color: lightgreen;
+    border-color:none;
+    color:black;
+}
+
+button.btn.btn-success.rounded-0.py-2.my-2:hover{
+    background-color: black;
+    color:white;
+}
+
+a.px-3.py-2.rounded.text-white.mb-2.d-inline-block{
+    background-color: lightgreen;
+}
+
+.fa-phone{
+    color:black;
+}
+
+.fa-map-marker{
+    color:black;
+}
+
+
+.fa-envelope{
+    color:black;
+}
+
+input#inlineFormInputGroupUsername:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color:lightgreen;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem lightgreen;
+}
+
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color:lightgreen;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem lightgreen;
+}
+
+
+ /* footer */
+
+
+
+ img.footerimage{
+    width: 120px;
+}
+
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2{
+    border-radius: 50%;
+    background-color: rgb(59,89,152);
+    color:white;
+    
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-info.pmd-btn-flat.mx-1.my-2{
+    border-radius: 50%;
+    background-color: skyblue;
+    
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-info.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-danger.pmd-btn-flat.mx-1.my-2{
+    border-radius:50%;
+    background-color:#d63384;
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-danger.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2{
+    border-radius: 50%;
+    background-color: red;
+}
+
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+p.text-white{
+  margin-top: 20px;
+}
+
+h6.text-uppercase.mb-4.font-weight-bold{
+  font-family:'Redressed', cursive;
+}
+
+p#address{
+  white-space: nowrap;
+}
+
+img.px-2 {
+  width: 50px;
+}
+
+
+
+

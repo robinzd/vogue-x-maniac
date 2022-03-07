@@ -11,8 +11,4 @@ function change_image(image){
     
     
     
-    
-    
-    
-    
-    });
+});
