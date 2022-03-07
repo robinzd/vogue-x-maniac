@@ -2,17 +2,7 @@
 
 
 
-.payment-info {
-    font-family: 'Redressed', cursive;
-    background:lightgray;
-    padding: 10px;
-    border-radius: 6px;
-    color:black;
-    font-weight: bold;
-    font-size: 20px;
 
-    
-}
     
     
 
@@ -42,42 +32,16 @@ body {
     font-size: 15px
 }
 
-label.radio {
-    cursor: pointer
+button.btn.btn-success{
+    background-color: lightgreen;
+    color: black;
 }
 
-label.radio input {
-    position: absolute;
-    top: 0;
-    left: 0;
-    visibility: hidden;
-    pointer-events: none
+button.btn.btn-success:hover{
+    background-color: black;
+    color:white;
 }
 
-label.radio span {
-    padding: 1px 12px;
-    border-radius: 3px;
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 40px;
-    font-weight: 300
-   
-}
-
-label.radio span:hover{
-    border:1px solid black;
-}
-
-
-img#payment {
-    width: 50px;
-}
-
-.fa-cc-stripe{
-   
-    color:blueviolet;
-
-}
 
 
 

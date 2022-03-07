@@ -34,9 +34,9 @@
     <!--back to top ends -->
 
 
-    <div class="container-fluid mt-5 p-3 rounded cart">
+    <div class="container mt-5 p-3 rounded cart">
         <div class="row no-gutters">
-            <div class="col-md-8">
+            <div class="col-md-8 col-lg-12">
                 <div class="product-details mr-2">
                     <div class="d-flex flex-row align-items-center"><i class="fa fa-long-arrow-left"></i><span class="ml-2">Continue Shopping</span></div>
                     <hr>
@@ -71,26 +71,11 @@
                         <div class="d-flex flex-row align-items-center"><span class="d-block">1</span><span class="d-block ml-5 font-weight-bold">$999</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
                     </div>
                 </div>
+                <div class="d-grid gap-2">
+                <button class="btn btn-success" type="button">Checkout</button>
+               </div>
             </div>
-            <div class="col-md-4">
-                <div class="payment-info">
-                    <div class="d-flex justify-content-between align-items-center"></div><span class="type d-block mt-3 mb-1">Card type</span><label class="radio">
-                        <input type="radio" name="card" value="payment" checked> <span><img id="payment" src="./payment_pics/2560px-MasterCard_Logo.svg-removebg-preview.png" /></span> </label>
-                    <label class="radio"> <input type="radio" name="card" value="payment"> <span><img id="payment" src="./payment_pics/1200px-Visa.svg-removebg-preview.png" /></span> </label>
-                    <!-- <label class="radio"> <input type="radio" name="card" value="payment"> <span><img id="payment" src="./payment_pics/1200px-Visa.svg-removebg-preview.png" /></span> </label> -->
-                    <label class="radio"> <input type="radio" name="card" value="payment"> <span><img id="payment" src="./payment_pics/paypal-logo-removebg-preview.png" /></span> </label>
-                    <div><label class="credit-card-label">Name on card</label><input type="text" class="form-control credit-inputs" placeholder="Name"></div>
-                    <div><label class="credit-card-label">Card number</label><input type="number" class="form-control credit-inputs" placeholder="0000 0000 0000 0000"></div>
-                    <div class="row">
-                        <div class="col-md-6"><label class="credit-card-label">Date</label><input type="number" class="form-control credit-inputs" placeholder="12/24"></div>
-                        <div class="col-md-6"><label class="credit-card-label">CVV</label><input type="password" class="form-control credit-inputs" placeholder="342"></div>
-                    </div>
-                    <hr class="line">
-                    <div class="d-flex justify-content-between information"><span>Subtotal</span><span>$3000.00</span></div>
-                    <div class="d-flex justify-content-between information"><span>Shipping</span><span>$20.00</span></div>
-                    <div class="d-flex justify-content-between information"><span>Total(Incl. taxes)</span><span>$3020.00</span></div><button class="btn btn-success btn-block d-flex justify-content-between mt-3" type="button"><span>$3020.00</span><span>Checkout<i class="fa fa-long-arrow-right ml-1"></i></span></button>
-                </div>
-            </div>
+           
         </div>
     </div>
 
