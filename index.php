@@ -87,8 +87,6 @@
                     <div class="title">
                         Apple
                     </div>
-
-
                 </div>
             </div>
 

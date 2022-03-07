@@ -8262,7 +8262,7 @@ h1, h2, h3, h4, h5,
         color: #fff; }
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu {
-        display: block !important;
+        /* display: block !important; */
         background: #000; }
         .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item {
           color: rgba(255, 255, 255, 0.8); } }

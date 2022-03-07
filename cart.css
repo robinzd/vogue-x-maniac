@@ -4,7 +4,7 @@
 
 .payment-info {
     font-family: 'Redressed', cursive;
-    background:lightgreen;
+    background:lightgray;
     padding: 10px;
     border-radius: 6px;
     color:black;
@@ -86,7 +86,7 @@ img#payment {
 label.radio input:checked+span {
     
     border-color: black;
-    background-color:lightgreen;
+    background-color:lightgray;
     color:black
    
 }
