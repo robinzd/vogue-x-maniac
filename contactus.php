@@ -68,7 +68,7 @@
                   <div class="form-group">
                      <label>Message</label>
                      <div class="input-group mb-2 mb-sm-0">
-                        <input type="text" class="form-control" name="mesg"  placeholder="message">
+                        <input type="text" class="form-control" name="mesg" id="inlineFormInputGroupUsername"  placeholder="message">
                      </div>
                   </div>
 				  <div class="d-grid gap-2">
