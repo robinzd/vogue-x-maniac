@@ -36,7 +36,7 @@
 
     <div class="container mt-5 p-3 rounded cart">
         <div class="row no-gutters">
-            <div class="col-md-8 col-lg-12">
+            <div class="col-xs-12 col-md-8 col-lg-12">
                 <div class="product-details mr-2">
                     <div class="d-flex flex-row align-items-center"><i class="fa fa-long-arrow-left"></i><span class="ml-2">Continue Shopping</span></div>
                     <hr>
