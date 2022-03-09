@@ -70,7 +70,7 @@ include("./conn.php");
 
             <?php
 
-            $get_slides = "select * from slider_1 LIMIT 1";
+            $get_slides = "select * from slider_1";
 
             $run_slider = mysqli_query($con, $get_slides);
 
