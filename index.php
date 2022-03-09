@@ -1,6 +1,8 @@
 
  <?php 
+
  include ("conn.php");
+
  ?> 
 
 
@@ -82,7 +84,7 @@
             
             <div class='item active'>
 
-            <img src='admin_area/slides_images/ $slider_image'>
+            <img src='admin_area/slides_images/$slider_image'>
 
             </div>
             
