@@ -74,7 +74,7 @@ include("./conn.php");
 
             $run_slider = mysqli_query($conn, $get_slides);
 
-            echo "Check";
+            // echo "Check";
 
             while($row_slides = mysqli_fetch_array($run_slider)){
 
