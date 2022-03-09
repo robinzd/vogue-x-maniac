@@ -94,6 +94,31 @@ include("./conn.php");
             
             }
 
+            $get_slides = "select * from slider_1 LIMIT 1,2";
+
+            $run_slider = mysqli_query($conn, $get_slides);
+
+            // echo "Check";
+
+            while($row_slides = mysqli_fetch_array($run_slider)){
+
+                $slider_name = $row_slides['slider_name'];
+                $slider_image = $row_slides['slider_image'];
+
+            
+            echo "<div class='carousel-item active'>
+
+            <img src='./admin_area/slides_images/$slider_image'>
+
+            </div>
+             
+            
+            ";
+            
+            
+            }
+
+
             ?>
 
         </div>
