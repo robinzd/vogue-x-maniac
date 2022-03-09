@@ -82,7 +82,7 @@ include("./conn.php");
                 $slider_image = $row_slides['slider_image'];
 
             
-            echo "<div class='item active'>
+            echo "<div class='carousel-item active'>
 
             <img src='./admin_area/slides_images/$slider_image'>
 
