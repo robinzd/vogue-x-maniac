@@ -84,7 +84,7 @@ include("./conn.php");
             
             echo "<div class='carousel-item active'>
 
-            <img src='./admin_area/slides_images/$slider_image'>
+            <img src='./admin_area/slides_images/$slider_image' class='d-block w-100'>
 
             </div>
              
@@ -106,9 +106,9 @@ include("./conn.php");
                 $slider_image = $row_slides['slider_image'];
 
             
-            echo "<div class='carousel-item active'>
+            echo "<div class='carousel-item'>
 
-            <img src='./admin_area/slides_images/$slider_image'>
+            <img src='./admin_area/slides_images/$slider_image' class='d-block w-100'>
 
             </div>
              
