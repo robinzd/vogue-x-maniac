@@ -1,9 +1,8 @@
+<?php
 
- <?php 
+include("./conn.php");
 
- include ("conn.php");
-
- ?> 
+?>
 
 
 
@@ -18,14 +17,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vogue X Maniac</title>
     <!-- fav icon -->
-    <link rel="icon" type="image/png" href="./favicon/vogue_x_maniac_png_K8m_icon.ico"/>
+    <link rel="icon" type="image/png" href="./favicon/vogue_x_maniac_png_K8m_icon.ico" />
     <!-- bootsstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- owl carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-     <!-- link the external stylesheet -->
+    <!-- link the external stylesheet -->
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
@@ -34,26 +33,26 @@
 
 
     <!-- navbar starts -->
-  
 
-    <?php include "./index.header.php";?> 
+
+    <?php include "./index.header.php"; ?>
 
     <!-- navbar  ends -->
 
 
     <!-- back to top starts -->
-  
 
- <?php include "./back_to_top.php";?> 
+
+    <?php include "./back_to_top.php"; ?>
 
     <!--back to top ends -->
 
 
 
-   
 
 
-    
+
+
 
     <!-- Carousel -->
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -66,19 +65,21 @@
         </div>
 
         <!-- The slideshow/carousel -->
-        
+
         <div class="carousel-inner">
 
-         <?php
-           
-          $get_slides = "select * from slider_1 LIMIT 0,1";
+            <?php
 
-          $run_slider = mysqli_query($con,$get_slides);
+            $get_slides = "select * from slider_1 LIMIT 0,1";
 
-          while($row_slides=mysqli_fetch_array($run_slider)){
-              
-            $slider_name = $row_slides['slider_name'];
-            $slider_image = $row_slides['slider_image'];
+            $run_slider = mysqli_query($con, $get_slides);
+
+            echo $run_slider;
+
+            while($row_slides = mysqli_fetch_array($run_slider)){
+
+                $slider_name = $row_slides['slider_name'];
+                $slider_image = $row_slides['slider_image'];
 
             echo "
             
@@ -87,13 +88,15 @@
             <img src='admin_area/slides_images/$slider_image'>
 
             </div>
-            
+             
             
             ";
+            
+            
+            }
 
-          }
-        ?>
-           
+            ?>
+
         </div>
 
         <!-- Left and right controls/icons -->
@@ -106,7 +109,7 @@
     </div>
 
     <!-- brands -->
-    <section id="brands" >
+    <section id="brands">
 
         <h2>Brands</h2>
         <div class="slider owl-carousel">
@@ -176,7 +179,7 @@
     </section>
 
 
-  
+
     <!-- brands finished -->
 
     <!-- categories -->
@@ -218,7 +221,7 @@
                         <figcaption class="gallery__caption">Womens Watches</figcaption>
                     </figure>
                 </a>
-            
+
             </div>
 
             <div class="gallery__column">
@@ -273,29 +276,29 @@
 
     <!-- cross fade carousel -->
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="./admin_area/slides_images2/slider5.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./admin_area/slides_images2/slider5.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./admin_area/slides_images2/slider6.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./admin_area/slides_images2/slider7.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
-    <div class="carousel-item">
-      <img src="./admin_area/slides_images2/slider6.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="./admin_area/slides_images2/slider7.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-<!-- cross fade carousle end -->
+    <!-- cross fade carousle end -->
 
-    
+
 
 
     <!-- latest products -->
@@ -309,8 +312,8 @@
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                    <a href="details.php" class="btn btn-success" >See Details</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
+                        <a href="details.php" class="btn btn-success">See Details</a>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -320,20 +323,8 @@
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                    <a href="details.php" class="btn btn-success" >See Details</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card bg-white">
-                <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Analog Watch</h5>
-                    <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
-                    <div class="text-center">
-                    <a href="details.php" class="btn btn-success" >See Details</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
+                        <a href="details.php" class="btn btn-success">See Details</a>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -344,8 +335,8 @@
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                    <a href="details.php" class="btn btn-success" >See Details</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
+                        <a href="details.php" class="btn btn-success">See Details</a>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -356,57 +347,69 @@
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
                     <div class="text-center">
-                    <a href="details.php" class="btn btn-success" >See Details</a>
-                    <a href="#" class="btn btn-success">Add to Cart</a>
+                        <a href="details.php" class="btn btn-success">See Details</a>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card bg-white">
+                <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Analog Watch</h5>
+                    <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
+                    <div class="text-center">
+                        <a href="details.php" class="btn btn-success">See Details</a>
+                        <a href="#" class="btn btn-success">Add to Cart</a>
                     </div>
                 </div>
             </div>
         </div>
-</section>
+    </section>
 
 
-<section>
-<div class="services pd">
-    <div class="container">
-       
-        <div class="row text-center">
-            <div class="col-md-3">
-                <div class="square"><i class="fas fa-truck"></i></div>
-                <div class="serv">
-                    <h5>Safe Delivery</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="serv">
-                    <div class="square"><i class="fas fa-money-bill"></i></div>
-                    <h5>Secured Payment</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="square"><i class="fas fa-truck-fast"></i></div>
-                <div class="serv">
-                    <h5>3-4 days Shipping</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="square"><i class="fas fa-user-shield"></i></div>
-                <div class="serv">
-                    <h5>Secure Website</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+    <section>
+        <div class="services pd">
+            <div class="container">
+
+                <div class="row text-center">
+                    <div class="col-md-3">
+                        <div class="square"><i class="fas fa-truck"></i></div>
+                        <div class="serv">
+                            <h5>Safe Delivery</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="serv">
+                            <div class="square"><i class="fas fa-money-bill"></i></div>
+                            <h5>Secured Payment</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="square"><i class="fas fa-truck-fast"></i></div>
+                        <div class="serv">
+                            <h5>3-4 days Shipping</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="square"><i class="fas fa-user-shield"></i></div>
+                        <div class="serv">
+                            <h5>Secure Website</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-</section>
+    </section>
 
 
-     <!-- Footer -->
+    <!-- Footer -->
 
-     <footer class="text-center text-lg-start text-dark" style="background-color:lightgrey">
+    <footer class="text-center text-lg-start text-dark" style="background-color:lightgrey">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
             <!-- Section: Links -->
@@ -415,7 +418,7 @@
                 <div class="row">
                     <!-- Grid column -->
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                       <img class="footerimage" src="./header images/vogue x maniac png.png" alt="brand image">
+                        <img class="footerimage" src="./header images/vogue x maniac png.png" alt="brand image">
                         <p class="text-white">
                             Here you can use rows and columns to organize your footer
                             content. Lorem ipsum dolor sit amet, consectetur adipisicing
@@ -529,9 +532,9 @@
                 }
             });
 
-            
- 
- 
+
+
+
 
 
         });
