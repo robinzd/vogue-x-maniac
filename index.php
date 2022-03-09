@@ -73,7 +73,7 @@
 
           $run_slider = mysqli_query($con,$get_slides);
 
-          while($row_slides=mysqli_fetch_array($ $run_slider)){
+          while($row_slides=mysqli_fetch_array($run_slider)){
               
             $slider_name = $row_slides['slider_name'];
             $slider_image = $row_slides['slider_image'];
