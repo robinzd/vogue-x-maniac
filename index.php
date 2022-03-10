@@ -135,7 +135,7 @@ include("./conn.php");
         <h2>Brands</h2>
         <div class="slider owl-carousel">
 
-            <div class="card" style="background-color:wheat;">
+            <div class="card" style="background-color:#e66465;">
                 <div class="img">
                     <a href="#"><img src="./admin_area/product_images/apple2-removebg-preview.png" alt=""></a>
                 </div>
