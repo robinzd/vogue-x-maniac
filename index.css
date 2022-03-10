@@ -217,7 +217,7 @@ img#brand{
   }
 
   .card.bg-white{
-    height:auto;
+    height:fit-content;
   }
 
 
