@@ -195,7 +195,7 @@ include("./conn.php");
 
                     <?php
 
-                    $get_product_category = "select * from product_category LIMIT 1,2";
+                    $get_product_category = "select * from product_category LIMIT 0,2";
 
                     $run_gallery_image = mysqli_query($conn, $get_product_category);
 
@@ -235,7 +235,7 @@ include("./conn.php");
                 <a href="#" target="_blank" class="gallery__link">
                     <?php
 
-                    $get_product_category = "select * from product_category LIMIT 3,4";
+                    $get_product_category = "select * from product_category LIMIT 2,2";
 
                     $run_gallery_image = mysqli_query($conn, $get_product_category);
 
