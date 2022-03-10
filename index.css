@@ -215,10 +215,14 @@ img#brand{
   white-space: nowrap; 
   
   }
-
-  .card.bg-white{
-    height:fit-content;
+  
+  @media only screen and (max-width: 600px) {
+    .card.bg-white{ 
+      display: block;
+      width: 100%;
+    }
   }
+
 
 
 
