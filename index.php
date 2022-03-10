@@ -136,22 +136,22 @@ include("./conn.php");
         <div class="slider owl-carousel">
 
 
-        <?php
+            <?php
 
-                     $get_owlslider_1 = "select * from owlslider_1";
+            $get_owlslider_1 = "select * from owlslider_1";
 
-                 $run_owlslider_1 = mysqli_query($conn, $get_owlslider_1);
+            $run_owlslider_1 = mysqli_query($conn, $get_owlslider_1);
 
 
 
-                while ($row_owlslider_1 = mysqli_fetch_array($run_owlslider_1)) {
+            while ($row_owlslider_picture_1 = mysqli_fetch_array($run_owlslider_1)) {
 
-             $brand_color = $row_owlslider_1['brand_color'];
-             $image_source = $row_owlslider_1['image_source'];
-            $brand_name = $row_owlslider_1['brand_name']; 
- 
+                $brand_color = $row_owlslider_picture_1['brand_color'];
+                $image_source = $row_owlslider_picture_1['image_source'];
+                $brand_name = $row_owlslider_picture_1['brand_name'];
 
-             echo " <div class='card' style='background-color: $brand_color ;'>
+
+                echo " <div class='card' style='background-color: $brand_color ;'>
              <div class='img'>
                  <a href='#'><img src='./admin_area/product_images/$image_source' alt=''></a>
              </div>
@@ -165,14 +165,12 @@ include("./conn.php");
  
 
         ";
+            }
 
 
-         }
+            ?>
 
 
-        ?>
-
-           
 
         </div>
 
@@ -189,9 +187,43 @@ include("./conn.php");
 
 
         <div class="gallery">
+
+            
+
+
             <div class="gallery__column">
+
+
                 <a href="#" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
+
+                <?php
+
+$get_product_category = "select * from product_category";
+
+$run_gallery_image = mysqli_query($conn,$get_product_category);
+
+
+
+while ($row_product_category_image = mysqli_fetch_array( $run_gallery_image)) {
+
+    $category_image = $row_product_category_image['category_image'];
+    $category_name = $row_product_category_image['category_name'];
+  
+
+
+    echo "  <figure class='gallery__thumb'>
+    <img src='./categories_images/ $category_image' alt='mens and womens shoes' class='gallery__image'>
+    <figcaption class='gallery__caption'>$category_name</figcaption>
+</figure>
+
+
+
+";
+}
+
+
+?>
+                    <!-- <figure class="gallery__thumb">
                         <img src="./categories_images/mens shoes.jpg" alt="mens and womens shoes" class="gallery__image">
                         <figcaption class="gallery__caption">Shoes</figcaption>
                     </figure>
@@ -202,12 +234,12 @@ include("./conn.php");
                         <img src="./categories_images/bluetooth speakers.jpg" alt="Bluetooth Speakers" class="gallery__image">
                         <figcaption class="gallery__caption">BT Speakers</figcaption>
                     </figure>
-                </a>
+                </a> -->
 
 
             </div>
 
-            <div class="gallery__column">
+            <!-- <div class="gallery__column">
                 <a href="#" target="_blank" class="gallery__link">
                     <figure class="gallery__thumb">
                         <img src="./categories_images/smart watches.jpg" alt="smart watches" class="gallery__image">
@@ -237,7 +269,7 @@ include("./conn.php");
                         <img src="./categories_images/pexels-alena-darmel-7322208.jpg" alt="headphones" class="gallery__image">
                         <figcaption class="gallery__caption">Airpods</figcaption>
                     </figure>
-                </a>
+                </a> -->
 
                 <!-- <a href="https://unsplash.com/@mr_geshani" target="_blank" class="gallery__link">
 			<figure class="gallery__thumb">
@@ -245,7 +277,7 @@ include("./conn.php");
 				<figcaption class="gallery__caption">Portrait by Amir Geshani</figcaption>
 			</figure>
 		</a> -->
-            </div>
+            <!-- </div>
 
             <div class="gallery__column">
                 <a href="#" target="_blank" class="gallery__link">
@@ -260,7 +292,7 @@ include("./conn.php");
                         <img src="./categories_images/womens handbags.jpg" alt="womens handbags" class="gallery__image">
                         <figcaption class="gallery__caption">Womens Handbags</figcaption>
                     </figure>
-                </a>
+                </a> -->
 
                 <!-- <a href="https://unsplash.com/@dimadallacqua" target="_blank" class="gallery__link">
 			<figure class="gallery__thumb">
@@ -268,7 +300,7 @@ include("./conn.php");
 				<figcaption class="gallery__caption">Portrait by Dima DallAcqua</figcaption>
 			</figure>
 		</a> -->
-            </div>
+            <!-- </div> -->
         </div>
 
     </section>
