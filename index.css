@@ -216,10 +216,9 @@ img#brand{
   
   }
 
-  .card .bg-white{
-    height:200px;
+  .card.bg-white{
+    height: 500px;
   }
-
 
 
 
