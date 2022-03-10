@@ -556,7 +556,7 @@ include("./conn.php");
 
             <?php
 
-            $get_product_slider = "select * from product_owlslider LIMIT";
+            $get_product_slider = "select * from product_owlslider";
 
             $run_product_image = mysqli_query($conn, $get_product_slider);
 
@@ -574,7 +574,7 @@ include("./conn.php");
                 echo " <div class='card bg-white'>
                     <img class='card-img-top' src='./admin_area/product_images/$product_image' alt='Card image' style='width:100%'>
                     <div class='card-body'>
-                        <h5 class='card-title text-center'> $product_title</h5>
+                        <h5 class='card-title text-center'>$product_title</h5>
                         <p class='card-text  text-center'><s>₹$product_strikeout_price</s>$product_price</p>
                         <div class='text-center'>
                             <a href='details.php' class='btn btn-success'>See Details</a>
