@@ -551,18 +551,49 @@ include("./conn.php");
         <h2>Latest Products</h2>
         <div class="slider owl-carousel">
 
-            <div class="card bg-white">
-                <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
-                <div class="card-body">
-                    <h5 class="card-title text-center">Analog Watch</h5>
-                    <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
-                    <div class="text-center">
-                        <a href="details.php" class="btn btn-success">See Details</a>
-                        <a href="#" class="btn btn-success">Add to Cart</a>
+
+
+
+            <?php
+
+            $get_product_slider = "select * from product_owlslider LIMIT";
+
+            $run_product_image = mysqli_query($conn, $get_product_slider);
+
+
+
+            while ($row_product_image = mysqli_fetch_array($run_product_image)) {
+
+                $product_image = $row_product_image['product_image '];
+                $product_title = $row_product_image['product_title'];
+                $product_strikeout_price = $row_product_image['product_strikeout_price'];
+                $product_price = $row_product_image['product_price'];
+
+
+
+                echo " <div class='card bg-white'>
+                    <img class='card-img-top' src='./admin_area/product_images/$product_image' alt='Card image' style='width:100%'>
+                    <div class='card-body'>
+                        <h5 class='card-title text-center'> $product_title</h5>
+                        <p class='card-text  text-center'><s>₹$product_strikeout_price</s>$product_price</p>
+                        <div class='text-center'>
+                            <a href='details.php' class='btn btn-success'>See Details</a>
+                            <a href='#' class='btn btn-success'>Add to Cart</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="card bg-white">
+
+
+
+
+
+";
+            }
+
+
+            ?>
+
+            <!-- <div class="card bg-white">
                 <img class="card-img-top" src="./admin_area/product_images/product2.jfif" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h5 class="card-title text-center">Analog Watch</h5>
@@ -608,7 +639,7 @@ include("./conn.php");
                         <a href="#" class="btn btn-success">Add to Cart</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
