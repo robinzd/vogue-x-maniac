@@ -76,13 +76,13 @@ include("./conn.php");
 
             // echo "Check";
 
-            while($row_slides = mysqli_fetch_array($run_slider)){
+            while ($row_slides = mysqli_fetch_array($run_slider)) {
 
                 $slider_name = $row_slides['slider_name'];
                 $slider_image = $row_slides['slider_image'];
 
-            
-            echo "<div class='carousel-item active'>
+
+                echo "<div class='carousel-item active'>
 
             <img src='./admin_area/slides_images/$slider_image' class='d-block w-100'>
 
@@ -90,8 +90,6 @@ include("./conn.php");
              
             
             ";
-            
-            
             }
 
             $get_slides = "select * from slider_1 LIMIT 1,2";
@@ -100,22 +98,21 @@ include("./conn.php");
 
             // echo "Check";
 
-            while($row_slides = mysqli_fetch_array($run_slider)){
+            while ($row_slides = mysqli_fetch_array($run_slider)) {
 
                 $slider_name = $row_slides['slider_name'];
                 $slider_image = $row_slides['slider_image'];
 
-            
-            echo "<div class='carousel-item'>
+
+                echo "<div class='carousel-item'>
 
             <img src='./admin_area/slides_images/$slider_image' class='d-block w-100'>
+            
 
             </div>
              
             
             ";
-            
-            
             }
 
 
@@ -301,15 +298,56 @@ include("./conn.php");
     <!-- cross fade carousel -->
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./admin_area/slides_images2/slider5.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./admin_area/slides_images2/slider6.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./admin_area/slides_images2/slider7.jpg" class="d-block w-100" alt="...">
-            </div>
+            <?php
+
+            $get_slider = "select * from slider_2 LIMIT 0,1";
+
+            $run_slides = mysqli_query($conn, $get_slider);
+
+            // echo "Check";
+
+            while ($row_slider = mysqli_fetch_array($run_slides)) {
+
+                $slider2_name = $row_slider['slider2_name'];
+                $slider2_image = $row_slider['slider2_image'];
+
+
+                echo "<div class='carousel-item active'>
+
+        <img src='./admin_area/slides_images2/$slider2_image' class='d-block w-100'>
+
+        </div>
+ 
+
+";
+            }
+
+            $get_slider = "select * from slider_1 LIMIT 1,2";
+
+            $run_slides = mysqli_query($conn,  $get_slider);
+
+            // echo "Check";
+
+            while ($row_slider = mysqli_fetch_array($run_slides)) {
+
+                $slider2_name = $row_slider['slider2_name'];
+                $slider2_image = $row_slider['slider2_image'];
+
+
+                echo "<div class='carousel-item'>
+
+<img src='./admin_area/slides_images2/$slider2_image' class='d-block w-100'>
+
+
+</div>
+ 
+
+";
+            }
+
+
+            ?>
+
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
