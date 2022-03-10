@@ -227,77 +227,7 @@ include("./conn.php");
                   
                 </a>
 
-                <a href="#" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="./categories_images/bluetooth speakers.jpg" alt="Bluetooth Speakers" class="gallery__image">
-                        <figcaption class="gallery__caption">BT Speakers</figcaption>
-                    </figure>
-                </a>
-
-
-            </div>
-
-            <div class="gallery__column">
-                <a href="#" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="./categories_images/smart watches.jpg" alt="smart watches" class="gallery__image">
-                        <figcaption class="gallery__caption">Smart Watches</figcaption>
-                    </figure>
-                </a>
-
-                <a href="#" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="./categories_images/womens watches.jpg" alt="Womens Watches" class="gallery__image">
-                        <figcaption class="gallery__caption">Womens Watches</figcaption>
-                    </figure>
-                </a>
-
-            </div>
-
-            <div class="gallery__column">
-                <a href="#" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="./categories_images/mens watches.jpg" alt="mens_watch" class="gallery__image">
-                        <figcaption class="gallery__caption">Mens Watches</figcaption>
-                    </figure>
-                </a>
-
-                <a href="#" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="./categories_images/pexels-alena-darmel-7322208.jpg" alt="headphones" class="gallery__image">
-                        <figcaption class="gallery__caption">Airpods</figcaption>
-                    </figure>
-                </a>
-
-                <!-- <a href="https://unsplash.com/@mr_geshani" target="_blank" class="gallery__link">
-			<figure class="gallery__thumb">
-				<img src="https://source.unsplash.com/2JH8d3ChNec/300x300" alt="Portrait by Amir Geshani" class="gallery__image">
-				<figcaption class="gallery__caption">Portrait by Amir Geshani</figcaption>
-			</figure>
-		</a> -->
-            </div>
-
-            <div class="gallery__column">
-                <a href="#" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="./categories_images/travel bags.jpg" alt="travel bags" class="gallery__image">
-                        <figcaption class="gallery__caption">Travel Bags</figcaption>
-                    </figure>
-                </a>
-
-                <a href="#" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="./categories_images/womens handbags.jpg" alt="womens handbags" class="gallery__image">
-                        <figcaption class="gallery__caption">Womens Handbags</figcaption>
-                    </figure>
-                </a>
-
-                <!-- <a href="https://unsplash.com/@dimadallacqua" target="_blank" class="gallery__link">
-			<figure class="gallery__thumb">
-				<img src="https://source.unsplash.com/XZkEhowjx8k/300x500" alt="Portrait by Dima DallAcqua" class="gallery__image">
-				<figcaption class="gallery__caption">Portrait by Dima DallAcqua</figcaption>
-			</figure>
-		</a> -->
+              
             </div>
         </div>
 
