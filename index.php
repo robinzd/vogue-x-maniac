@@ -188,45 +188,56 @@ include("./conn.php");
 
         <div class="gallery">
 
-            
-
-
             <div class="gallery__column">
-
 
                 <a href="#" target="_blank" class="gallery__link">
 
-                <?php
 
-$get_product_category = "select * from product_category";
+                    <?php
 
-$run_gallery_image = mysqli_query($conn,$get_product_category);
+                    $get_product_category = "select * from product_category LIMIT 1,2";
 
-
-
-while ($row_product_category_image = mysqli_fetch_array( $run_gallery_image)) {
-
-    $category_image = $row_product_category_image['category_image'];
-    $category_name = $row_product_category_image['category_name'];
-  
-
-
-    echo "  <figure class='gallery__thumb'>
-    <img src='./categories_images/ $category_image' alt='' class='gallery__image'>
-    <figcaption class='gallery__caption'>$category_name</figcaption>
-</figure>
+                    $run_gallery_image = mysqli_query($conn,$get_product_category);
 
 
 
-";
-}
+                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
+
+                        $category_image = $row_category_picture['category_image'];
+                        $category_name =$row_category_picture['category_name'];
+                      
 
 
-?>
-</a>                
-</div>
+                        echo "<figure class='gallery__thumb'>
+                        <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
+                        <figcaption class='gallery__caption'>$category_name</figcaption>
+                    </figure> -->
 
-            <!-- <div class="gallery__column">
+
+
+                    ";
+                    }
+
+
+                    ?>
+
+
+
+
+                  
+                </a>
+
+                <a href="#" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="./categories_images/bluetooth speakers.jpg" alt="Bluetooth Speakers" class="gallery__image">
+                        <figcaption class="gallery__caption">BT Speakers</figcaption>
+                    </figure>
+                </a>
+
+
+            </div>
+
+            <div class="gallery__column">
                 <a href="#" target="_blank" class="gallery__link">
                     <figure class="gallery__thumb">
                         <img src="./categories_images/smart watches.jpg" alt="smart watches" class="gallery__image">
@@ -256,7 +267,7 @@ while ($row_product_category_image = mysqli_fetch_array( $run_gallery_image)) {
                         <img src="./categories_images/pexels-alena-darmel-7322208.jpg" alt="headphones" class="gallery__image">
                         <figcaption class="gallery__caption">Airpods</figcaption>
                     </figure>
-                </a> -->
+                </a>
 
                 <!-- <a href="https://unsplash.com/@mr_geshani" target="_blank" class="gallery__link">
 			<figure class="gallery__thumb">
@@ -264,7 +275,7 @@ while ($row_product_category_image = mysqli_fetch_array( $run_gallery_image)) {
 				<figcaption class="gallery__caption">Portrait by Amir Geshani</figcaption>
 			</figure>
 		</a> -->
-            <!-- </div>
+            </div>
 
             <div class="gallery__column">
                 <a href="#" target="_blank" class="gallery__link">
@@ -279,7 +290,7 @@ while ($row_product_category_image = mysqli_fetch_array( $run_gallery_image)) {
                         <img src="./categories_images/womens handbags.jpg" alt="womens handbags" class="gallery__image">
                         <figcaption class="gallery__caption">Womens Handbags</figcaption>
                     </figure>
-                </a> -->
+                </a>
 
                 <!-- <a href="https://unsplash.com/@dimadallacqua" target="_blank" class="gallery__link">
 			<figure class="gallery__thumb">
@@ -287,7 +298,7 @@ while ($row_product_category_image = mysqli_fetch_array( $run_gallery_image)) {
 				<figcaption class="gallery__caption">Portrait by Dima DallAcqua</figcaption>
 			</figure>
 		</a> -->
-            <!-- </div> -->
+            </div>
         </div>
 
     </section>
