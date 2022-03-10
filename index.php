@@ -198,7 +198,7 @@ include("./conn.php");
 
                 <?php
 
-$get_product_category = "select * from product_category LIMIT 0,1";
+$get_product_category = "select * from product_category";
 
 $run_gallery_image = mysqli_query($conn,$get_product_category);
 
@@ -223,21 +223,8 @@ while ($row_product_category_image = mysqli_fetch_array( $run_gallery_image)) {
 
 
 ?>
-</a>                <!-- <figure class="gallery__thumb">
-                        <img src="./categories_images/mens shoes.jpg" alt="mens and womens shoes" class="gallery__image">
-                        <figcaption class="gallery__caption">Shoes</figcaption>
-                    </figure>
-                </a>
-
-                <a href="#" target="_blank" class="gallery__link">
-                    <figure class="gallery__thumb">
-                        <img src="./categories_images/bluetooth speakers.jpg" alt="Bluetooth Speakers" class="gallery__image">
-                        <figcaption class="gallery__caption">BT Speakers</figcaption>
-                    </figure>
-                </a> -->
-
-
-            </div>
+</a>                
+</div>
 
             <!-- <div class="gallery__column">
                 <a href="#" target="_blank" class="gallery__link">
