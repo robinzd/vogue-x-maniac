@@ -223,7 +223,7 @@ while ($row_product_category_image = mysqli_fetch_array( $run_gallery_image)) {
 
 
 ?>
-                    <!-- <figure class="gallery__thumb">
+</a>                <!-- <figure class="gallery__thumb">
                         <img src="./categories_images/mens shoes.jpg" alt="mens and womens shoes" class="gallery__image">
                         <figcaption class="gallery__caption">Shoes</figcaption>
                     </figure>
