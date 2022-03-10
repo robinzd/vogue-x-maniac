@@ -174,55 +174,6 @@ include("./conn.php");
 
            
 
-            <!-- <div class="card">
-                <div class="img">
-                    <a href="#"><img src="./admin_area/product_images/boat2-removebg-preview.png" alt=""></a>
-                </div>
-                <div class="content">
-                    <div class="title">
-                        Boat
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="card" style="background-color:lightseagreen;">
-                <div class="img">
-                    <a href="#"><img src="./admin_area/product_images/nike1-removebg-preview.png" alt=""></a>
-                </div>
-                <div class="content">
-                    <div class="title">
-                        Nike
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="card" style="background-color:ightgrey;">
-                <div class="img">
-                    <a href="#"><img src="./admin_area/product_images/images-removebg-preview (2).png" alt=""></a>
-                </div>
-                <div class="content">
-                    <div class="title">
-                        Jbl
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="card" style="background-color:teal;">
-                <div class="img">
-                    <a href="#"><img src="./admin_area/product_images/tissot4-removebg-preview.png" alt=""></a>
-                </div>
-                <div class="content">
-                    <div class="title">
-                        Tissot
-                    </div>
-
-
-                </div>
-            </div> -->
-
         </div>
 
     </section>
