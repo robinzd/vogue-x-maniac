@@ -197,15 +197,15 @@ include("./conn.php");
 
                     $get_product_category = "select * from product_category LIMIT 1,2";
 
-                    $run_gallery_image = mysqli_query($conn,$get_product_category);
+                    $run_gallery_image = mysqli_query($conn, $get_product_category);
 
 
 
                     while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
 
                         $category_image = $row_category_picture['category_image'];
-                        $category_name =$row_category_picture['category_name'];
-                      
+                        $category_name = $row_category_picture['category_name'];
+
 
 
                         echo "<figure class='gallery__thumb'>
@@ -224,8 +224,92 @@ include("./conn.php");
 
 
 
-                  
-               
+
+                </a>
+
+
+
+            </div>
+
+            <div class="gallery__column">
+                <a href="#" target="_blank" class="gallery__link">
+                    <?php
+
+                    $get_product_category = "select * from product_category LIMIT 3,4";
+
+                    $run_gallery_image = mysqli_query($conn, $get_product_category);
+
+
+
+                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
+
+                        $category_image = $row_category_picture['category_image'];
+                        $category_name = $row_category_picture['category_name'];
+
+
+
+                        echo "<figure class='gallery__thumb'>
+    <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
+    <figcaption class='gallery__caption'>$category_name</figcaption>
+</figure>
+
+
+
+";
+                    }
+
+
+                    ?>
+                </a>
+
+
+
+            </div>
+
+            <div class="gallery__column">
+                <a href="#" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="./categories_images/mens watches.jpg" alt="mens_watch" class="gallery__image">
+                        <figcaption class="gallery__caption">Mens Watches</figcaption>
+                    </figure>
+                </a>
+
+                <a href="#" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="./categories_images/pexels-alena-darmel-7322208.jpg" alt="headphones" class="gallery__image">
+                        <figcaption class="gallery__caption">Airpods</figcaption>
+                    </figure>
+                </a>
+
+                <!-- <a href="https://unsplash.com/@mr_geshani" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="https://source.unsplash.com/2JH8d3ChNec/300x300" alt="Portrait by Amir Geshani" class="gallery__image">
+				<figcaption class="gallery__caption">Portrait by Amir Geshani</figcaption>
+			</figure>
+		</a> -->
+            </div>
+
+            <div class="gallery__column">
+                <a href="#" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="./categories_images/travel bags.jpg" alt="travel bags" class="gallery__image">
+                        <figcaption class="gallery__caption">Travel Bags</figcaption>
+                    </figure>
+                </a>
+
+                <a href="#" target="_blank" class="gallery__link">
+                    <figure class="gallery__thumb">
+                        <img src="./categories_images/womens handbags.jpg" alt="womens handbags" class="gallery__image">
+                        <figcaption class="gallery__caption">Womens Handbags</figcaption>
+                    </figure>
+                </a>
+
+                <!-- <a href="https://unsplash.com/@dimadallacqua" target="_blank" class="gallery__link">
+			<figure class="gallery__thumb">
+				<img src="https://source.unsplash.com/XZkEhowjx8k/300x500" alt="Portrait by Dima DallAcqua" class="gallery__image">
+				<figcaption class="gallery__caption">Portrait by Dima DallAcqua</figcaption>
+			</figure>
+		</a> -->
             </div>
         </div>
 
