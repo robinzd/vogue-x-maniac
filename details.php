@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="card bg-white">
-                <img class="card-img-top" src="./admin_area/product_images/product6.jpg" alt="Card image" style="width:100%">
+                <img class="card-img-top" src="./admin_area/product_images/product-10.jfif" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
@@ -107,7 +107,7 @@
             </div>
 
             <div class="card bg-white">
-                <img class="card-img-top" src="./admin_area/product_images/product7.jpg" alt="Card image" style="width:100%">
+                <img class="card-img-top" src="./admin_area/product_images/product-4.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
@@ -119,7 +119,7 @@
             </div>
 
             <div class="card bg-white">
-                <img class="card-img-top" src="./admin_area/product_images/product8.jpg" alt="Card image" style="width:100%">
+                <img class="card-img-top" src="./admin_area/product_images/product-5.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
@@ -131,7 +131,7 @@
             </div>
 
             <div class="card bg-white">
-                <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
+                <img class="card-img-top" src="./admin_area/product_images/product2.jfif" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>
