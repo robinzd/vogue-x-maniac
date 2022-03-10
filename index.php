@@ -135,18 +135,46 @@ include("./conn.php");
         <h2>Brands</h2>
         <div class="slider owl-carousel">
 
-            <div class="card" style="background-color:#e66465;">
-                <div class="img">
-                    <a href="#"><img src="./admin_area/product_images/apple2-removebg-preview.png" alt=""></a>
-                </div>
-                <div class="content">
-                    <div class="title">
-                        Apple
-                    </div>
+
+        <?php
+
+                     $get_owlslider_1 = "select * from owlslider_1";
+
+                 $run_owlslider_1 = mysqli_query($conn, $get_owlslider_1);
+
+
+
+                while ($row_owlslider_1 = mysqli_fetch_array($run_owlslider_1)) {
+
+             $brand_color = $row_owlslider_1['brand_color'];
+             $image_source = $row_owlslider_1['image_source'];
+            $brand_name = $row_owlslider_1['brand_name']; 
+ 
+
+             echo " <div class='card' style='background-color: $brand_color ;'>
+             <div class='img'>
+                 <a href='#'><img src='./admin_area/product_images/$image_source' alt=''></a>
+             </div>
+            <div class='content'>
+                <div class='title'>
+                $brand_name
                 </div>
             </div>
+         </div>
 
-            <div class="card">
+ 
+
+        ";
+
+
+         }
+
+
+        ?>
+
+           
+
+            <!-- <div class="card">
                 <div class="img">
                     <a href="#"><img src="./admin_area/product_images/boat2-removebg-preview.png" alt=""></a>
                 </div>
@@ -154,11 +182,11 @@ include("./conn.php");
                     <div class="title">
                         Boat
                     </div>
-
-
                 </div>
             </div>
-            <div class="card" id="nike">
+
+
+            <div class="card" style="background-color:lightseagreen;">
                 <div class="img">
                     <a href="#"><img src="./admin_area/product_images/nike1-removebg-preview.png" alt=""></a>
                 </div>
@@ -170,7 +198,7 @@ include("./conn.php");
 
                 </div>
             </div>
-            <div class="card" id="jbl">
+            <div class="card" style="background-color:ightgrey;">
                 <div class="img">
                     <a href="#"><img src="./admin_area/product_images/images-removebg-preview (2).png" alt=""></a>
                 </div>
@@ -182,7 +210,7 @@ include("./conn.php");
 
                 </div>
             </div>
-            <div class="card" id="tissot">
+            <div class="card" style="background-color:teal;">
                 <div class="img">
                     <a href="#"><img src="./admin_area/product_images/tissot4-removebg-preview.png" alt=""></a>
                 </div>
@@ -193,7 +221,7 @@ include("./conn.php");
 
 
                 </div>
-            </div>
+            </div> -->
 
         </div>
 
