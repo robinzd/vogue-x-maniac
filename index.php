@@ -195,7 +195,7 @@ include("./conn.php");
 
                     <?php
 
-                    $get_product_category = "select * from product_category";
+                    $get_product_category = "select * from product_category LIMIT 1,2";
 
                     $run_gallery_image = mysqli_query($conn,$get_product_category);
 
@@ -225,9 +225,7 @@ include("./conn.php");
 
 
                   
-                </a>
-
-              
+               
             </div>
         </div>
 
