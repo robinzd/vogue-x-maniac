@@ -552,7 +552,7 @@ include("./conn.php");
         <div class="slider owl-carousel">
 
             <div class="card bg-white">
-                <img class="card-img-top" src="./admin_area/product_images/product1.jpg" alt="Card image" style="width:100%">
+                <img class="card-img-top" src="./admin_area/product_images/producty1.jpg" alt="Card image" style="width:100%">
                 <div class="card-body">
                     <h5 class="card-title text-center">Analog Watch</h5>
                     <p class="card-text  text-center"><s>₹4,000</s>₹1,500</p>

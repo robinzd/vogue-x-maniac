@@ -216,17 +216,7 @@ img#brand{
   
   }
   
-  @media only screen and (max-width: 600px) {
-    .card.bg-white{ 
-      display: block;
-      width: 100%;
-    }
-  }
-
-
-
-
-
+ 
   h5.card-title.text-center{
     white-space: nowrap;
     font-family: 'Poppins', sans-serif;
