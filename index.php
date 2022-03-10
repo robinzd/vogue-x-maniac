@@ -195,7 +195,7 @@ include("./conn.php");
 
                     <?php
 
-                    $get_product_category = "select * from product_category LIMIT 1,2";
+                    $get_product_category = "select * from product_category";
 
                     $run_gallery_image = mysqli_query($conn,$get_product_category);
 
@@ -211,7 +211,7 @@ include("./conn.php");
                         echo "<figure class='gallery__thumb'>
                         <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
                         <figcaption class='gallery__caption'>$category_name</figcaption>
-                    </figure> -->
+                    </figure>
 
 
 
