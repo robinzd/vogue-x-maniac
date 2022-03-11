@@ -2,8 +2,6 @@
 include './conn.php';
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +18,7 @@ include './conn.php';
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="./slider_1_ajax.js"></script>
-  
+
 </head>
 
 <body>
@@ -55,7 +53,7 @@ include './conn.php';
                             <th>Slider Name</th>
                             <th>Slider Image</th>
                             <th>ACTION</th>
-                            
+
                         </tr>
                     </thead>
                     <tbody>
@@ -68,11 +66,12 @@ include './conn.php';
                             <tr id="<?php echo $row["slider_id"]; ?>">
                                 <td>
                                     <span class="custom-checkbox">
-                                        <input type="checkbox" class="user_checkbox" data-user-sno="<?php echo $row["slider_id"]; ?>">
+                                    <input type="checkbox" class="user_checkbox" data-user-sno="<?php echo $row["slider_id"]; ?>">
                                         <label for="checkbox2"></label>
                                     </span>
                                 </td>
                                 <td><?php echo $i; ?></td>
+                                    <span class="custom-checkbox">
                                 <td><?php echo $row["slider_name"]; ?></td>
                                 <td><?php echo $row["slider_image"]; ?></td>
                                 <td>
@@ -175,7 +174,7 @@ include './conn.php';
         </div>
     </div>
 
-    
+
 
 
 
