@@ -18,9 +18,24 @@
 </head>
 
 <body>
-    <div class="col-xs-12 col-md-6">
-        <a href="#addServiceModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Service</span></a>
-        <a href="JavaScript:void(0);" class="btn btn-danger" id="delete_multiple"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>
+    <div class="container">
+        <p id="success"></p>
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-xs-2 col-md-1">
+                        <a href="#"><i class="material-icons home">home</i></a>
+                    </div>
+                    <div class="col-xs-10 col-md-5">
+                        <h2>Manage <b>Services</b></h2>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <a href="#addServiceModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Service</span></a>
+                        <a href="JavaScript:void(0);" class="btn btn-danger" id="delete_multiple"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="addServiceModal" class="modal fade">
         <div class="modal-dialog">
