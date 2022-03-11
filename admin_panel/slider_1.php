@@ -49,8 +49,8 @@ include './conn.php';
                                 </span>
                             </th>
                             <th>Slider ID</th>
-                            <th>Slider_name</th>
-                            <th>Slider_image</th>
+                            <th>Slider Name</th>
+                            <th>Slider Image</th>
                             <th>ACTION</th>
                             
                         </tr>
@@ -62,21 +62,16 @@ include './conn.php';
                         $i = 1;
                         while ($row = mysqli_fetch_array($result)) {
                         ?>
-                            <tr id="<?php echo $row["sno"]; ?>">
+                            <tr id="<?php echo $row["slider_id"]; ?>">
                                 <td>
                                     <span class="custom-checkbox">
-                                        <input type="checkbox" class="user_checkbox" data-user-sno="<?php echo $row["sno"]; ?>">
+                                        <input type="checkbox" class="user_checkbox" data-user-sno="<?php echo $row["slider_id"]; ?>">
                                         <label for="checkbox2"></label>
                                     </span>
                                 </td>
                                 <td><?php echo $i; ?></td>
-                                <td><?php echo $row["service"]; ?></td>
-                                <td><?php echo $row["price"]; ?></td>
-                                <td><?php echo $row["contact_person"]; ?></td>
-                                <td><?php echo $row["contact_no"]; ?></td>
-                                <td><?php echo $row["dates_available"]; ?></td>
-                                <td><?php echo $row["images_db"]; ?></td>
-                                <td><?php echo $row["place"]; ?></td>
+                                <td><?php echo $row["slider_name"]; ?></td>
+                                <td><?php echo $row["slider_image"]; ?></td>
                                 <td>
                                     <a href="#editServiceModal" class="edit" data-toggle="modal">
                                         <i class="material-icons update" data-toggle="tooltip" data-sno="<?php echo $row["sno"]; ?>" data-service="<?php echo $row["service"]; ?>" data-price="<?php echo $row["price"]; ?>" data-person="<?php echo $row["contact_person"]; ?>" data-number="<?php echo $row["contact_no"]; ?>"
