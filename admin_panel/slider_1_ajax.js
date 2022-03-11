@@ -21,12 +21,12 @@
 		});
 	});
 	$(document).on('click','.update',function(e) {
-		var slider_id=$(this).attr("data-slider_id");
-		var slider_name=$(this).attr("data-slider_name");
-		var slider_image=$(this).attr("data-slider_image");
-	    $('#slider_id_u').val(slider_id);
-		$('#slider_name_u').val(slider_name);
-		$('#slider_image_u').val(slider_image);
+		var slider_id=$(this).attr("data-id");
+		var slider_name=$(this).attr("data-name");
+		var slider_image=$(this).attr("data-image");
+	    $('#id_u').val(slider_id);
+		$('#name_u').val(slider_name);
+		$('#image_u').val(slider_image);
     });
 	
 	$(document).on('click','#update',function(e) {
@@ -49,8 +49,8 @@
 		});
 	});
 	$(document).on("click", ".delete", function() { 
-		var slider_id=$(this).attr("data-slider_id");
-		$('#slider_id_d').val(slider_id);
+		var slider_id=$(this).attr("data-id");
+		$('#id_d').val(slider_id);
 		
 	});
 	$(document).on("click", "#delete", function() { 
@@ -60,7 +60,7 @@
 			cache: false,
 			data:{
 				type:3,
-				sno: $("#slider_id_d").val()
+				sno: $("#id_d").val()
 			},
 			success: function(dataResult){
 					$('#deleteServiceModal').modal('hide');
@@ -72,7 +72,7 @@
 	$(document).on("click", "#delete_multiple", function() {
 		var user = [];
 		$(".user_checkbox:checked").each(function() {
-			user.push($(this).data('user-slider_id'));
+			user.push($(this).data('user-id'));
 		});
 		if(user.length <=0) {
 			alert("Please select records."); 

@@ -75,9 +75,9 @@ include '../conn.php';
                                 <td><?php echo $row["slider_image"]; ?></td>
                                 <td>
                                     <a href="#editServiceModal" class="edit" data-toggle="modal">
-                                        <i class="material-icons update" data-toggle="tooltip"  title="Edit">&#xE254;</i>
+                                        <i class="material-icons update" data-toggle="tooltip" data-id="<?php echo $row["slider_id"]; ?>" data-name="<?php echo $row["slider_name"]; ?>" data-image="<?php echo $row["slider_image"]; ?>" title="Edit">&#xE254;</i>
                                     </a>
-                                    <a href="#deleteServiceModal" class="delete" data-slider_id="<?php echo $row["slider_id"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                    <a href="#deleteServiceModal" class="delete" data-id="<?php echo $row["slider_id"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                                 </td>
                             </tr>
                         <?php
@@ -130,14 +130,14 @@ include '../conn.php';
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <input type="hidden" id="slider_id_u" name="slider_id" class="form-control" required>
+                        <input type="hidden" id="id_u" name="id" class="form-control" required>
                         <div class="form-group">
                             <label>Service</label>
-                            <input type="text" id="slider_name_u" name="slider_name" class="form-control" required>
+                            <input type="text" id="name_u" name="name" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label>Price</label>
-                            <input type="file" id="slider_image_u" name="slider_image" class="form-control" required>
+                            <input type="file" id="image_u" name="image" class="form-control" required>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -160,7 +160,7 @@ include '../conn.php';
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <input type="hidden" id="slider_id_d" name="slider_id" class="form-control">
+                        <input type="hidden" id="id_d" name="id" class="form-control">
                         <p>Are you sure you want to delete these Records?</p>
                         <p class="text-warning"><small>This action cannot be undone.</small></p>
                     </div>
