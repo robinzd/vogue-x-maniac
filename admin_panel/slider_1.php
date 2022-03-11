@@ -48,15 +48,10 @@ include './conn.php';
                                     <label for="selectAll"></label>
                                 </span>
                             </th>
-                            <th>S.NO</th>
-                            <th>Service</th>
-                            <th>Price</th>
-                            <th>Contact Person</th>
-                            <th>Contact No</th>
-                            <th>Dates Available</th>
-                            <th>Images</th>
-                            <th>Places</th>
-                            <th>ACTION</th>
+                            <th>Slider ID</th>
+                            <th>Slider Name</th>
+                            <th>Slider Image</th>
+                            
                             
                         </tr>
                     </thead>
