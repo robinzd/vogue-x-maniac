@@ -58,7 +58,7 @@ include './conn.php';
                     <tbody>
 
                         <?php
-                        $result = mysqli_query($conn, "SELECT * FROM service");
+                        $result = mysqli_query($conn, "SELECT * FROM  slider_1");
                         $i = 1;
                         while ($row = mysqli_fetch_array($result)) {
                         ?>
