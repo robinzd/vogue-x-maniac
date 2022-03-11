@@ -4,7 +4,7 @@
 		$.ajax({
 			data: data,
 			type: "post",
-			url: "backend/save.php",
+			url: "slider_1_save.php",
 			success: function(dataResult){
 					var dataResult = JSON.parse(dataResult);
 					if(dataResult.statusCode==200){
@@ -40,7 +40,7 @@
 		$.ajax({
 			data: data,
 			type: "post",
-			url: "backend/save.php",
+			url: "slider_1_save.php",
 			success: function(dataResult){
 					var dataResult = JSON.parse(dataResult);
 					if(dataResult.statusCode==200){
@@ -61,7 +61,7 @@
 	});
 	$(document).on("click", "#delete", function() { 
 		$.ajax({
-			url: "backend/save.php",
+			url: "slider_1_save.php",
 			type: "POST",
 			cache: false,
 			data:{
@@ -91,7 +91,7 @@
 				console.log(selected_values);
 				$.ajax({
 					type: "POST",
-					url: "backend/save.php",
+					url: "slider_1_save.php",
 					cache:false,
 					data:{
 						type: 4,						
