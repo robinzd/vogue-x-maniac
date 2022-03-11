@@ -58,12 +58,14 @@
                             <td>Check Row</td>
                         </tr>
                         <?php
+                        $result = mysqli_query($conn, "SELECT * FROM  slider_1");
                         $i = 1;
-                        while ($i < 5) {
+                        while ($row = mysqli_fetch_array($result)) {
 
                         ?>
                             <tr>
                                 <td>Check outside</td>
+                                <td><?php echo $row["slider_name"]; ?></td>
                             </tr>
 
                         <?php
