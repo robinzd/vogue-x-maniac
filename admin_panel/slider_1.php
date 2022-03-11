@@ -22,6 +22,12 @@ include './conn.php';
 </head>
 
 <body>
+    <?php
+    $result = mysqli_query($conn, "SELECT * FROM  slider_1");
+    echo "Returned rows are: " . mysqli_num_rows($result);
+    // Free result set
+    mysqli_free_result($result);
+    ?>
     <div class="container">
         <p id="success"></p>
         <div class="table-wrapper">
