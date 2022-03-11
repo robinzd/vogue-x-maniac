@@ -71,7 +71,6 @@ include './conn.php';
                                     </span>
                                 </td>
                                 <td><?php echo $i; ?></td>
-                                    <span class="custom-checkbox">
                                 <td><?php echo $row["slider_name"]; ?></td>
                                 <td><?php echo $row["slider_image"]; ?></td>
                                 <td>
