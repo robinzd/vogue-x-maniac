@@ -54,27 +54,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php
-                        $result = mysqli_query($conn, "SELECT * FROM  slider_1");
-                        $i = 1;
-                        echo "<tr>Check row</tr>";
-                        while ($row = mysqli_fetch_array($result)) {
-                        ?>
-                            <tr id="<?php echo $row["slider_id"]; ?>">
-                                <td>
-                                    <span class="custom-checkbox">
-                                        <input type="checkbox" class="user_checkbox" data-user-sno="<?php echo $row["slider_id"]; ?>">
-                                        <label for="checkbox2"></label>
-                                    </span>
-                                </td>
-                                <td><?php echo $i; ?></td>
-                                <td><?php echo $row["slider_name"]; ?></td>
-                                <td><?php echo $row["slider_image"]; ?></td>
-                            </tr>
-                        <?php
-                            $i++;
-                        }
-                        ?>
+                        <tr><td>Check Row</td></tr>
                     </tbody>
                 </table>
 
