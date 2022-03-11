@@ -1,9 +1,10 @@
 	
 	$(document).on('click','#btn-add',function(e) {
 		var data = $("#user_form").serialize();
-        console.log(data);
+        var data2=$("#user_form")[0].slider_image.value;
+        console.log(data2);
 		$.ajax({
-			data: data,
+			data: data+"&slider_image="+data2,
 			type: "post",
 			url: "slider_1_save.php",
 			success: function(dataResult){
