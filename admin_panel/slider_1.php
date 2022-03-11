@@ -74,10 +74,9 @@ include './conn.php';
                                 <td><?php echo $row["slider_image"]; ?></td>
                                 <td>
                                     <a href="#editServiceModal" class="edit" data-toggle="modal">
-                                        <i class="material-icons update" data-toggle="tooltip" data-sno="<?php echo $row["sno"]; ?>" data-service="<?php echo $row["service"]; ?>" data-price="<?php echo $row["price"]; ?>" data-person="<?php echo $row["contact_person"]; ?>" data-number="<?php echo $row["contact_no"]; ?>"
-                                         data-dates="<?php echo $row["dates_available"];?>" data-places="<?php echo $row["place"];?>" title="Edit">&#xE254;</i>
+                                        <i class="material-icons update" data-toggle="tooltip" data-slider_id="<?php echo $row["slider_id"]; ?>" data-slider_name="<?php echo $row["slider_name"]; ?>" data-slider_image="<?php echo $row["slider_image"]; ?>" title="Edit">&#xE254;</i>
                                     </a>
-                                    <a href="#deleteServiceModal" class="delete" data-sno="<?php echo $row["sno"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                    <a href="#deleteServiceModal" class="delete" data-slider_id="<?php echo $row["slider_id"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                                 </td>
                             </tr>
                         <?php
@@ -103,34 +102,13 @@ include './conn.php';
                         <!-- <div class="form-group"> -->
 
                         <div class="form-group">
-                            <label>Service</label>
-                            <input type="text" id="service" name="service" class="form-control" required>
+                            <label>slider name</label>
+                            <input type="text" id="slider_name" name="slider_name" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label>Price</label>
-                            <input type="number" id="price" name="price" class="form-control" required>
+                            <label>slider image</label>
+                            <input type="file" id="slider_image" name="slider_image" class="form-control" required>
                         </div>
-                        <div class="form-group">
-                            <label>Contact Person</label>
-                            <input type="text" id="contactperson" name="contactperson" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Contact No</label>
-                            <input type="number" id="contactnumber" name="contactnumber" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Dates Available</label>
-                            <input type="date" id="dates" name="dates" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                        <label>Image</label>
-                        <input type="file" id="images" name="images" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Place</label>
-                            <input type="text" id="places" name="places" class="form-control" required>
-                        </div>
-                        
                     </div>
                     <div class="modal-footer">
                         <input type="hidden" value="1" name="type">
@@ -151,30 +129,14 @@ include './conn.php';
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <input type="hidden" id="sno_u" name="sno" class="form-control" required>
+                        <input type="hidden" id="slider_id_u" name="slider_id" class="form-control" required>
                         <div class="form-group">
                             <label>Service</label>
-                            <input type="text" id="service_u" name="service" class="form-control" required>
+                            <input type="text" id="slider_name_u" name="slider_name" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label>Price</label>
-                            <input type="number" id="price_u" name="price" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Contact Person</label>
-                            <input type="text" id="contactperson_u" name="contactperson" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Contact No</label>
-                            <input type="number" id="contactnumber_u" name="contactnumber" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Dates Available</label>
-                            <input type="date" id="dates_u" name="dates" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Place</label>
-                            <input type="text" id="places_u" name="places" class="form-control" required>
+                            <input type="file" id="slider_image_u" name="slider_image" class="form-control" required>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -197,7 +159,7 @@ include './conn.php';
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <input type="hidden" id="sno_d" name="sno" class="form-control">
+                        <input type="hidden" id="slider_id_d" name="slider_id" class="form-control">
                         <p>Are you sure you want to delete these Records?</p>
                         <p class="text-warning"><small>This action cannot be undone.</small></p>
                     </div>

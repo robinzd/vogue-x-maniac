@@ -19,21 +19,13 @@
 		});
 	});
 	$(document).on('click','.update',function(e) {
-		var sno=$(this).attr("data-sno");
-		var service=$(this).attr("data-service");
-		var price=$(this).attr("data-price");
-		var contactperson=$(this).attr("data-person");
-		var contactno=$(this).attr("data-number");
-		var datesavailable=$(this).attr("data-dates");
-		var places=$(this).attr("data-places");
-		$('#sno_u').val(sno);
-		$('#service_u').val(service);
-		$('#price_u').val(price);
-		$('#contactperson_u').val(contactperson);
-		$('#contactnumber_u').val(contactno);
-		$('#dates_u').val(datesavailable);
-		$('#places_u').val(places);
-	});
+		var slider_id=$(this).attr("data-slider_id");
+		var slider_name=$(this).attr("data-slider_name");
+		var slider_image=$(this).attr("data-slider_image");
+	    $('#slider_id_u').val(slider_id);
+		$('#slider_name_u').val(slider_name);
+		$('#slider_image_u').val(slider_image);
+    });
 	
 	$(document).on('click','#update',function(e) {
 		var data = $("#update_form").serialize();
@@ -55,8 +47,8 @@
 		});
 	});
 	$(document).on("click", ".delete", function() { 
-		var sno=$(this).attr("data-sno");
-		$('#sno_d').val(sno);
+		var slider_id=$(this).attr("data-slider_id");
+		$('#slider_id_d').val(slider_id);
 		
 	});
 	$(document).on("click", "#delete", function() { 
@@ -66,7 +58,7 @@
 			cache: false,
 			data:{
 				type:3,
-				sno: $("#sno_d").val()
+				sno: $("#slider_id_d").val()
 			},
 			success: function(dataResult){
 					$('#deleteServiceModal').modal('hide');
@@ -78,7 +70,7 @@
 	$(document).on("click", "#delete_multiple", function() {
 		var user = [];
 		$(".user_checkbox:checked").each(function() {
-			user.push($(this).data('user-sno'));
+			user.push($(this).data('user-slider_id'));
 		});
 		if(user.length <=0) {
 			alert("Please select records."); 

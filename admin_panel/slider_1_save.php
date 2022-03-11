@@ -3,14 +3,9 @@ include './conn.php';
 
 if(count($_POST)>0){
 	if($_POST['type']==1){
-		$service=$_POST['service'];
-		$price=$_POST['price'];
-		$contactperson=$_POST['contactperson'];
-		$contactno=$_POST['contactnumber'];
-		$datesavailable=$_POST['dates'];
-		$images=$_POST['images'];
-		$places=$_POST['places'];
-		$sql = "INSERT INTO `service`( `service`, `price`, `contact_person`, `contact_no`,`dates_available`,`images_db`,`place`) VALUES ('$service','$price','$contactperson','$contactno','$datesavailable','$images','$places')";
+		$slider_name=$_POST['slider_name'];
+		$slider_image=$_POST['slider_image'];
+        $sql = "INSERT INTO `slider_1`( `slider_name`, `slider_image`) VALUES ('$slider_name','$slider_image')";
 		if (mysqli_query($conn, $sql)) {
 			echo json_encode(array("statusCode"=>200));
 			
@@ -23,14 +18,10 @@ if(count($_POST)>0){
 }
 if(count($_POST)>0){
 	if($_POST['type']==2){
-		$sno=$_POST['sno'];
-		$service=$_POST['service'];
-		$price=$_POST['price'];
-		$contactperson=$_POST['contactperson'];
-		$contactno=$_POST['contactnumber'];
-		$datesavailable=$_POST['dates'];
-		$places=$_POST['places'];
-		$sql = "UPDATE `service` SET `service`='$service',`price`='$price',`contact_person`='$contactperson',`contact_no`='$contactno',`dates_available`='$datesavailable',`place`='$places' WHERE sno=$sno";
+		$slider_id=$_POST['slider_id'];
+		$slider_name=$_POST['slider_name'];
+		$slider_image=$_POST['slider_image'];
+	    $sql = "UPDATE `slider_1` SET `slider_name`='$slider_name',`slider_image`='$slider_image'";
 		// echo $sql;
 		if (mysqli_query($conn, $sql)) {
 			echo json_encode(array("statusCode"=>200));
@@ -43,8 +34,8 @@ if(count($_POST)>0){
 }
 if(count($_POST)>0){
 	if($_POST['type']==3){
-		$sno=$_POST['sno'];
-		$sql = "DELETE FROM `service` WHERE sno=$sno ";
+		$slider_id=$_POST['slider_id'];
+		$sql = "DELETE FROM `slider_1` WHERE slider_id=$slider_id ";
 		if (mysqli_query($conn, $sql)) {
 			echo $sno;
 		} 
@@ -56,8 +47,8 @@ if(count($_POST)>0){
 }
 if(count($_POST)>0){
 	if($_POST['type']==4){
-		$sno=$_POST['sno'];
-		$sql = "DELETE FROM service WHERE sno in ($sno)";
+		$slider_id=$_POST['slider_id'];
+		$sql = "DELETE FROM `slider_1` WHERE slider_id in ($slider_id)";
 		if (mysqli_query($conn, $sql)) {
 			echo $sno;
 		} 
