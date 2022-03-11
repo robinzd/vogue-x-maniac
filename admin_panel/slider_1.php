@@ -35,7 +35,19 @@
                     </div>
                 </div>
             </div>
+        <!-- table start -->
+        <div class="table-responsive">
+        <table class="table table-hover">
+        <thead>
+            <tr>
+                
+            </tr>
+        </thead>   
+        </table>
         </div>
+        <!-- table end -->
+        </div>
+        
     </div>
     <div id="addServiceModal" class="modal fade">
         <div class="modal-dialog">
