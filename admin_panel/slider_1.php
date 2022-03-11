@@ -49,9 +49,9 @@ include './conn.php';
                                 </span>
                             </th>
                             <th>Slider ID</th>
-                            <th>Slider Name</th>
-                            <th>Slider Image</th>
-                            
+                            <th>Slider_name</th>
+                            <th>Slider_image</th>
+                            <th>ACTION</th>
                             
                         </tr>
                     </thead>
