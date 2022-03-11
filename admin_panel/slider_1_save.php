@@ -1,5 +1,6 @@
 <?php
-include './conn.php';
+include "../conn.php";
+
 
 if(count($_POST)>0){
 	if($_POST['type']==1){
