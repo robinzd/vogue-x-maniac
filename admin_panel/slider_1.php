@@ -108,7 +108,7 @@ include '../conn.php';
                         </div>
                         <div class="form-group">
                             <label>slider image</label>
-                            <input type="file" id="slider_image" name="slider_image" class="form-control" required>
+                            <input type="text" id="slider_image" name="slider_image" class="form-control" required>
                         </div>
                     </div>
                     <div class="modal-footer">
