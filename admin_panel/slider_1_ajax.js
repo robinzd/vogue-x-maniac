@@ -1,7 +1,7 @@
 	
 	$(document).on('click','#btn-add',function(e) {
 		var data = $("#user_form").serialize();
-        var data2=$("#user_form")[0].slider_image.value;
+        var data2=$("#user_form")[0].slider_image.value.split('\\')[2];
         console.log(data2);
 		$.ajax({
 			data: data+"&slider_image="+data2,
