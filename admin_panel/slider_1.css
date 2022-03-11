@@ -20,6 +20,7 @@ a.waves-effect.waves-light.btn.modal-trigger.Button1{
 }
 
 body{
+    background:url(service2.jpg);
     background-size:cover;
     background-position: center;
     min-height:1000px;
