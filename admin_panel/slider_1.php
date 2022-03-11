@@ -62,10 +62,15 @@ include './conn.php';
                             <td>Check Row</td>
                         </tr>
                         <?php
+                        echo "<tr>
+                        <td>Check Row</td>
+                    </tr>";
                         $result = mysqli_query($conn, "SELECT * FROM  slider_1");
                         $i = 1;
                         while ($row = mysqli_fetch_array($result)) {
-
+                            echo "<tr>
+                            <td>Check Row inside loop</td>
+                        </tr>";
                         ?>
                             <tr>
                                 <td>Check outside</td>
