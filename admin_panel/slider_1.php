@@ -54,11 +54,19 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr><td>Check Row</td></tr>
+                        <tr>
+                            <td>Check Row</td>
+                        </tr>
                         <?php
-                        $i=1;
-                        while($i<5){
-                            echo "<tr><td>Check another</td></tr>";
+                        $i = 1;
+                        while ($i < 5) {
+
+                        ?>
+                            <tr>
+                                <td>Check outside</td>
+                            </tr>
+
+                        <?php
                             $i++;
                         }
                         ?>
