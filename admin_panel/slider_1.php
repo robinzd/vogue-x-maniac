@@ -35,19 +35,33 @@
                     </div>
                 </div>
             </div>
-        <!-- table start -->
-        <div class="table-responsive">
-        <table class="table table-hover">
-        <thead>
-            <tr>
-                
-            </tr>
-        </thead>   
-        </table>
+            <!-- table start -->
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>
+                                <span class="custom-checkbox">
+                                    <input type="checkbox" id="selectAll">
+                                    <label for="selectAll"></label>
+                                </span>
+                            </th>
+                            <th>Slider ID</th>
+                            <th>Slider Name</th>
+                            <th>Slider Image</th>
+                            <th>ACTION</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+
+            </div>
+            <!-- table end -->
         </div>
-        <!-- table end -->
-        </div>
-        
+
     </div>
     <div id="addServiceModal" class="modal fade">
         <div class="modal-dialog">
