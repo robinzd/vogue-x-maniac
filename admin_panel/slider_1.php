@@ -75,7 +75,7 @@ include '../conn.php';
                                 <td><?php echo $row["slider_image"]; ?></td>
                                 <td>
                                     <a href="#editServiceModal" class="edit" data-toggle="modal">
-                                        <i class="material-icons update" data-toggle="tooltip" data-slider_id="<?php echo $row["slider_id"]; ?>" data-slider_name="<?php echo $row["slider_name"]; ?>" data-slider_image="<?php echo $row["slider_image"]; ?>" title="Edit">&#xE254;</i>
+                                        <i class="material-icons update" data-toggle="tooltip"  title="Edit">&#xE254;</i>
                                     </a>
                                     <a href="#deleteServiceModal" class="delete" data-slider_id="<?php echo $row["slider_id"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                                 </td>
@@ -100,7 +100,7 @@ include '../conn.php';
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <!-- <div class="form-group"> -->
+                        
 
                         <div class="form-group">
                             <label>slider name</label>
