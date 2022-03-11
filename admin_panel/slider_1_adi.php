@@ -1,5 +1,5 @@
 <?php
-include './conn.php';
+include '../conn.php';
 ?>
 
 <!DOCTYPE html>
@@ -22,6 +22,12 @@ include './conn.php';
 </head>
 
 <body>
+    <?php
+    $result = mysqli_query($conn, "SELECT * FROM  slider_1");
+    echo "Returned rows are: " . mysqli_num_rows($result);
+    // Free result set
+    mysqli_free_result($result);
+    ?>
     <div class="container">
         <p id="success"></p>
         <div class="table-wrapper">
@@ -39,6 +45,7 @@ include './conn.php';
                     </div>
                 </div>
             </div>
+            <!-- table start -->
             <div class="table-responsive">
                 <table class="table table-hover">
                     <thead>
@@ -57,40 +64,37 @@ include './conn.php';
                         </tr>
                     </thead>
                     <tbody>
-
+                        <tr>
+                            <td>Check Row</td>
+                        </tr>
                         <?php
+                        echo "<tr>
+                        <td>Check Row</td>
+                    </tr>";
                         $result = mysqli_query($conn, "SELECT * FROM  slider_1");
                         $i = 1;
                         while ($row = mysqli_fetch_array($result)) {
+                            echo "<tr>
+                            <td>Check Row inside loop</td>
+                        </tr>";
                         ?>
-                            <tr id="<?php echo $row["slider_id"]; ?>">
-                                <td>
-                                    <span class="custom-checkbox">
-                                    <input type="checkbox" class="user_checkbox" data-user-sno="<?php echo $row["slider_id"]; ?>">
-                                        <label for="checkbox2"></label>
-                                    </span>
-                                </td>
-                                <td><?php echo $i; ?></td>
+                            <tr>
+                                <td>Check outside</td>
                                 <td><?php echo $row["slider_name"]; ?></td>
-                                <td><?php echo $row["slider_image"]; ?></td>
-                                <td>
-                                    <a href="#editServiceModal" class="edit" data-toggle="modal">
-                                        <i class="material-icons update" data-toggle="tooltip" data-slider_id="<?php echo $row["slider_id"]; ?>" data-slider_name="<?php echo $row["slider_name"]; ?>" data-slider_image="<?php echo $row["slider_image"]; ?>" title="Edit">&#xE254;</i>
-                                    </a>
-                                    <a href="#deleteServiceModal" class="delete" data-slider_id="<?php echo $row["slider_id"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                </td>
                             </tr>
+
                         <?php
                             $i++;
                         }
                         ?>
                     </tbody>
                 </table>
-            </div>
 
+            </div>
+            <!-- table end -->
         </div>
+
     </div>
-    <!-- Add Modal HTML -->
     <div id="addServiceModal" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -100,7 +104,7 @@ include './conn.php';
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     </div>
                     <div class="modal-body">
-                        <!-- <div class="form-group"> -->
+
 
                         <div class="form-group">
                             <label>slider name</label>
@@ -121,64 +125,6 @@ include './conn.php';
         </div>
     </div>
 
-    <div id="editServiceModal" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <form id="update_form">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Edit Service</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <input type="hidden" id="slider_id_u" name="slider_id" class="form-control" required>
-                        <div class="form-group">
-                            <label>Service</label>
-                            <input type="text" id="slider_name_u" name="slider_name" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Price</label>
-                            <input type="file" id="slider_image_u" name="slider_image" class="form-control" required>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <input type="hidden" value="2" name="type">
-                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                        <button type="button" class="btn btn-info" id="update">Update</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- Delete Modal HTML -->
-    <div id="deleteServiceModal" class="modal fade">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <form>
-
-                    <div class="modal-header">
-                        <h4 class="modal-title">Delete Service</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    </div>
-                    <div class="modal-body">
-                        <input type="hidden" id="slider_id_d" name="slider_id" class="form-control">
-                        <p>Are you sure you want to delete these Records?</p>
-                        <p class="text-warning"><small>This action cannot be undone.</small></p>
-                    </div>
-                    <div class="modal-footer">
-                        <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                        <button type="button" class="btn btn-danger" id="delete">Delete</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-                    
-
-
-
-
-
 </body>
-
 
 </html>
