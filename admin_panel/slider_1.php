@@ -27,7 +27,7 @@ include './conn.php';
             <div class="table-title">
                 <div class="row">
                     <div class="col-xs-2 col-md-1">
-                        <a href="my project.php"><i class="material-icons home">home</i></a>
+                        <a href="#"><i class="material-icons home">home</i></a>
                     </div>
                     <div class="col-xs-10 col-md-5">
                         <h2>Manage <b>Services</b></h2>
@@ -220,12 +220,7 @@ include './conn.php';
         </div>
     </div>
 
-    <footer class="bg-dark text-center text-white navbar-fixed-bottom">
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2019 Copyright:
-            <a class="text-white" href="#">Njoy Life</a>
-        </div>
-    </footer>
+    
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
