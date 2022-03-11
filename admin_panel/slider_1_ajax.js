@@ -1,6 +1,7 @@
 	
 	$(document).on('click','#btn-add',function(e) {
 		var data = $("#user_form").serialize();
+        console.log(data);
 		$.ajax({
 			data: data,
 			type: "post",
