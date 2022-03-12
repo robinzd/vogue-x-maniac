@@ -61,7 +61,7 @@
 	      </button>
 	      <div class="collapse navbar-collapse" id="ftco-nav">
 	        <ul class="navbar-nav m-auto">
-	        	<li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
+	        	<li class="nav-item active"><a href="index.php" class="nav-link">Home</a></li>
 	        	<li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
@@ -90,6 +90,8 @@
   <script src="./js header/jquery.min.js"></script>
   <script src="./js header/main.js"></script>
   <script src="./js header/popper.js"></script>
+  <!-- external javascript file -->
+  <script src="index.header.js"></script>
 
 	</body>
 </html>
