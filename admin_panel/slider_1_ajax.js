@@ -31,9 +31,10 @@ $(document).on('click', '.update', function (e) {
 
 $(document).on('click', '#update', function (e) {
 	var data = $("#update_form").serialize();
+	var data2 = $("#update_form")[0].slider_image.value.split('\\')[2];
 	console.log(data);
 	$.ajax({
-		data: data,
+		data:data + "&slider_image=" + data2,
 		type: "post",
 		url: "slider.save.php",
 		success: function (dataResult) {
