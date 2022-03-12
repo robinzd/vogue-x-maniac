@@ -64,6 +64,10 @@ a {
     width: 40px
 }
 
+.fa-user{
+    color:white;
+}
+
 .l-navbar {
     position: fixed;
     top: 0;
