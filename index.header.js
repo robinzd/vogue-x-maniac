@@ -1,4 +1,6 @@
- /*===== LINK ACTIVE =====*/
+document.addEventListener("DOMContentLoaded", function (event) {
+ 
+//  ===== LINK ACTIVE =====*/
  const linkColor = document.querySelectorAll('.nav_link')
     
 
@@ -11,3 +13,5 @@
  linkColor.forEach(l => l.addEventListener('click', colorLink))
 
 //  link active ends
+
+});

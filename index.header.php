@@ -13,6 +13,9 @@
 	
 	<link rel="stylesheet" href="style.css">
 
+	<!-- external javascript file -->
+	<script src="index.header.js"></script>
+
 	</head>
 	<body>
 	<section class="ftco-section py-0">
