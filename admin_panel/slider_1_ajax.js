@@ -6,7 +6,7 @@ $(document).on('click', '#btn-add', function (e) {
 	$.ajax({
 		data: data + "&slider_image=" + data2,
 		type: "post",
-		url: "slider_1_save.php",
+		url: "slider.save.php",
 		success: function (dataResult) {
 			var dataResult = JSON.parse(dataResult);
 			if (dataResult.statusCode == 200) {
@@ -35,7 +35,7 @@ $(document).on('click', '#update', function (e) {
 	$.ajax({
 		data: data,
 		type: "post",
-		url: "slider_1_save.php",
+		url: "slider.save.php",
 		success: function (dataResult) {
 			var dataResult = JSON.parse(dataResult);
 			if (dataResult.statusCode == 200) {
@@ -56,7 +56,7 @@ $(document).on("click", ".delete", function () {
 });
 $(document).on("click", "#delete", function () {
 	$.ajax({
-		url: "slider_1_save.php",
+		url: "slider.save.php",
 		type: "POST",
 		cache: false,
 		data: {
@@ -86,7 +86,7 @@ $(document).on("click", "#delete_multiple", function () {
 			console.log(selected_values);
 			$.ajax({
 				type: "POST",
-				url: "slider_1_save.php",
+				url: "slider.save.php",
 				cache: false,
 				data: {
 					type: 4,
