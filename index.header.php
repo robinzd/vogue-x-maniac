@@ -13,8 +13,7 @@
 	
 	<link rel="stylesheet" href="style.css">
 
-	<!-- external javascript file -->
-	<!-- <script src="index.header.js"></script> -->
+	
 
 	</head>
 	<body>
