@@ -93,9 +93,7 @@
   <script src="./js header/jquery.min.js"></script>
   <script src="./js header/main.js"></script>
   <script src="./js header/popper.js"></script>
-  <!-- external javascript file -->
-  <script src="index.header.js"></script>
-
+  
 	</body>
 </html>
 
