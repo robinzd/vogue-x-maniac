@@ -134,6 +134,11 @@ a {
     color: var(--white-color)
 }
 
+
+.height-100.bg-light{
+    background-color:white;
+}
+
 .active::before {
     content: '';
     position: absolute;
