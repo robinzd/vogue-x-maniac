@@ -17,7 +17,7 @@ if (isset($POST['add'])) {
     } else {
         $query = "INSERT INTO slider_1 (slider_name,slider_image) VALUES ('$slidername','$sliderimage')";
 
-        $query_run = mysqli_query($conn, $query);
+        $query_run = mysqli_query($conn,$query);
 
         if ($query_run) {
             move_uploaded_file(["image"]["tmp_name"], "uploads/" . $_FILES["image"]["name"]);
@@ -32,4 +32,3 @@ if (isset($POST['add'])) {
         }
     }
 }
-?>
