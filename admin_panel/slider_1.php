@@ -47,7 +47,7 @@ include '../conn.php';
                             unset($_SESSION['status']);
                         }
                         ?>
-                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#><i class="material-icons">&#xE147;</i> <span>Add New Service</span></button>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#addServiceModal"><i class="material-icons">&#xE147;</i> <span>Add New Service</span></button>
                     </div>
                 </div>
             </div>
