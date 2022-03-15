@@ -434,7 +434,7 @@ include("./conn.php");
                             </div>
                             <!-- Grid column -->
 
-                            <hr class="w-100 clearfix d-md-none" />
+                            <hr class="w-100 clearfix d-md-none"/>
 
                             <!-- Grid column -->
                             <hr class="w-100 clearfix d-md-none" />
