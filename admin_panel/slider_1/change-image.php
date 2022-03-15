@@ -7,7 +7,7 @@ if(isset($_POST['submit']))
   	//getting the post values
   $sliderimage=$_FILES["slider_image"]["name"];
    $oldppic=$_POST['oldpic'];
-$oldprofilepic="sliderpics"."/".$oldppic;
+$oldprofilepic="./sliderpics"."/".$oldppic;
 // get the image extension
 $extension = substr($sliderimage,strlen($sliderimage)-4,strlen($sliderimage));
 // allowed extensions
@@ -22,7 +22,7 @@ else
 //rename the image file
 $imgnewfile=md5($imgfile).time().$extension;
 // Code for move image into directory
-move_uploaded_file($_FILES["slider_image"]["tmp_name"],"sliderpics/".$imgnewfile);
+move_uploaded_file($_FILES["slider_image"]["tmp_name"],"./sliderpics/".$imgnewfile);
   // Query for data insertion
      $query=mysqli_query($conn, "update slider_1 set slider_image='$imgnewfile' where id='$uid' ");
     if ($query) {

@@ -6,7 +6,7 @@ if(isset($_GET['delid']))
 {
 $rid=intval($_GET['delid']);
 $pic=$_GET['slider_image'];
-$ppicpath="sliderpics"."/".$pic;
+$ppicpath="./sliderpics"."/".$pic;
 $sql=mysqli_query($conn,"delete from slider_1 where ID=$rid");
 unlink($ppicpath);
 echo "<script>alert('Data deleted');</script>"; 
