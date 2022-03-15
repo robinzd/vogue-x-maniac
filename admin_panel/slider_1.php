@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../conn.php';
 ?>
 
@@ -17,7 +18,7 @@ include '../conn.php';
     <link rel="stylesheet" href="./slider_1.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
- 
+
 
 </head>
 
@@ -34,6 +35,18 @@ include '../conn.php';
                         <h2>Manage <b>Services</b></h2>
                     </div>
                     <div class="col-xs-12 col-md-6">
+                        <?php
+                        if (isset($_SESSION['success']) && $_SESSION['success'] != '') {
+                            echo '<h2 class="bg-white text-success"> ' . $_SESSION['success'] . ' </h2>';
+                            unset($_SESSION['success']);
+                        }
+
+                        if (isset($_SESSION['status']) && $_SESSION['status'] != '') {
+
+                            echo '<h2 class="bg-white text-danger"> ' . $_SESSION['success'] . ' </h2>';
+                            unset($_SESSION['status']);
+                        }
+                        ?>
                         <a href="#addServiceModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Service</span></a>
                     </div>
                 </div>
@@ -101,11 +114,11 @@ include '../conn.php';
                     <div class="modal-body">
                         <div class="form-group">
                             <label>slider name</label>
-                            <input type="text"  name="slidername" class="form-control" required>
+                            <input type="text" name="slidername" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label>slider image</label>
-                            <input type="file"  name="sliderimage" id="sliderimages" class="form-control" required>
+                            <input type="file" name="image" id="images" class="form-control" required>
                         </div>
                     </div>
                     <div class="modal-footer">
