@@ -47,7 +47,7 @@ include '../conn.php';
                             unset($_SESSION['status']);
                         }
                         ?>
-                        <a href="#addServiceModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Service</span></a>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#><i class="material-icons">&#xE147;</i> <span>Add New Service</span></button>
                     </div>
                 </div>
             </div>
@@ -89,7 +89,7 @@ include '../conn.php';
                                     <a href="#editServiceModal" class="edit" data-toggle="modal">
                                         <i class="material-icons update" data-toggle="tooltip" data-id="<?php echo $row["slider_id"]; ?>" data-name="<?php echo $row["slider_name"]; ?>" data-image="<?php echo $row["slider_image"]; ?>" title="Edit">&#xE254;</i>
                                     </a>
-                                    <a href="#deleteServiceModal" class="delete" data-id="<?php echo $row["slider_id"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                                    <a href="#deleteServiceModal" class="delete" data-id="<?php echo $row["slider_id"]; ?>" data-toggle="addServiceModal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
                                 </td>
                             </tr>
                         <?php
