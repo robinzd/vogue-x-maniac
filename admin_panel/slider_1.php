@@ -126,7 +126,7 @@ include '../conn.php';
                     <div class="modal-footer">
                         <input type="hidden" value="1" name="type">
                         <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                        <button type="submit" name="save" class="btn btn-success" id="btn-add">Add</button>
+                        <button type="submit" name="add" class="btn btn-success">Add</button>
                     </div>
                 </form>
             </div>

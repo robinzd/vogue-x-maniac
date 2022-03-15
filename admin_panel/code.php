@@ -2,7 +2,7 @@
 include '../conn.php';
 
 
-if (isset($POST['save'])) {
+if (isset($POST['add'])) {
     $slidername = $_POST['slidername'];
     $sliderimage = $_FILES['sliderimage'];
 
