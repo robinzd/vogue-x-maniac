@@ -3,6 +3,9 @@ session_start();
 include('../conn.php');
 
 
+$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+
+
 if (isset($POST['add'])) {
     $slidername = $_POST['slidername'];
     $sliderimage = $_FILES['sliderimage'];
