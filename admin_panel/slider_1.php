@@ -38,12 +38,15 @@ include '../conn.php';
                         <?php
                         if (isset($_SESSION['success']) && $_SESSION['success'] != '') {
                             echo '<h2 class="bg-white text-success"> ' . $_SESSION['success'] . ' </h2>';
+                            echo "hai";
                             unset($_SESSION['success']);
+
                         }
 
                         if (isset($_SESSION['status']) && $_SESSION['status'] != '') {
 
                             echo '<h2 class="bg-white text-danger"> ' . $_SESSION['success'] . ' </h2>';
+                            echo "hai";
                             unset($_SESSION['status']);
                         }
                         ?>
@@ -110,7 +113,7 @@ include '../conn.php';
                     <h4 class="modal-title">Add Service</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
-                <form action="code.php"  method="POST" enctype="multipart/form-data">
+                <form action="code.php" method="POST" enctype="multipart/form-data">
                     <div class="modal-body">
                         <div class="form-group">
                             <label>slider name</label>

@@ -10,12 +10,13 @@ if (isset($POST['add'])) {
     $slidername = $_POST['slidername'];
     $sliderimage = $_FILES['sliderimage'];
 
-    if (file_exists("uploads/" . $_FILES["image"]["name"])) {
+    if (file_exists("uploads/" . $_FILES["image"]["name"])) 
+    {
         $store = $_FILES["image"]["name"];
         $_SESSION['status'] = "Image already exsists. '.$store. '";
         header('Location: slider_1.php');
     } else {
-        $query = "INSERT INTO slider_1 (slider_name,slider_image) VALUES ('$slidername','$sliderimage')";
+        $query = "INSERT INTO slider_1 (`slider_name`,`slider_image`) VALUES ('$slidername','$sliderimage')";
 
         $query_run = mysqli_query($conn,$query);
 
