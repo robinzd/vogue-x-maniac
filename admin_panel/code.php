@@ -11,7 +11,7 @@ if (isset($POST['save'])) {
         $_SESSION['status'] = "Image already exsists. '.$store. '";
         header('Location: slider_1.php');
     } else {
-        $query = "INSERT INTO slider_1 (`slider_name`,`slider_image`) VALUES ('$slidername','$sliderimage')";
+        $query = "INSERT INTO slider_1 (slider_name,slider_image) VALUES ('$slidername','$sliderimage')";
 
         $query_run = mysqli_query($conn, $query);
 
@@ -20,9 +20,12 @@ if (isset($POST['save'])) {
 
             $_SESSION['success'] = "Data Published Successfully";
             header("Location: slider_1.php");
+            echo "hai";
         } else {
             $_SESSION['success'] = "Data not inserted";
             header("Location: slider_1.php");
+            echo "how are u";
         }
     }
 }
+?>
