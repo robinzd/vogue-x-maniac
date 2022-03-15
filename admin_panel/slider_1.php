@@ -55,12 +55,7 @@ include '../conn.php';
                 <table class="table table-hover">
                     <thead>
                         <tr>
-                            <th>
-                                <span class="custom-checkbox">
-                                    <input type="checkbox" id="selectAll">
-                                    <label for="selectAll"></label>
-                                </span>
-                            </th>
+
                             <th>Slider ID</th>
                             <th>Slider Name</th>
                             <th>Slider Image</th>
@@ -70,32 +65,7 @@ include '../conn.php';
                     </thead>
                     <tbody>
 
-                        <?php
-                        $result = mysqli_query($conn, "SELECT * FROM  slider_1");
-                        $i = 1;
-                        while ($row = mysqli_fetch_array($result)) {
-                        ?>
-                            <tr id="<?php echo $row["slider_id"]; ?>">
-                                <td>
-                                    <span class="custom-checkbox">
-                                        <input type="checkbox" class="user_checkbox" data-user-sno="<?php echo $row["slider_id"]; ?>">
-                                        <label for="checkbox2"></label>
-                                    </span>
-                                </td>
-                                <td><?php echo $i; ?></td>
-                                <td><?php echo $row["slider_name"]; ?></td>
-                                <td><?php echo $row["slider_image"]; ?></td>
-                                <td>
-                                    <a href="#editServiceModal" class="edit" data-toggle="modal">
-                                        <i class="material-icons update" data-toggle="tooltip" data-id="<?php echo $row["slider_id"]; ?>" data-name="<?php echo $row["slider_name"]; ?>" data-image="<?php echo $row["slider_image"]; ?>" title="Edit">&#xE254;</i>
-                                    </a>
-                                    <a href="#deleteServiceModal" class="delete" data-id="<?php echo $row["slider_id"]; ?>" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
-                                </td>
-                            </tr>
-                        <?php
-                            $i++;
-                        }
-                        ?>
+
                     </tbody>
                 </table>
             </div>
