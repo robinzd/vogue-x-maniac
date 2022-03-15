@@ -12,9 +12,10 @@ $query_builder = TRUE;
 // Connect to DB
 $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 
+$dbconfig = mysqli_select_db($conn,$cleardb_username);
 
-// Create connection
-// $conn = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname);
+
+
 // Check connection
 if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
