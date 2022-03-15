@@ -36,8 +36,13 @@
 
 
 
-  .ftco-section{
+.ftco-section{
     background-color: ghostwhite;
+}
+
+
+section.ftco-section.py-0{
+  background-color: ghostwhite;
 }
 
 img {
