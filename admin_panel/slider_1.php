@@ -1,6 +1,8 @@
 <?php
 session_start();
 include '../conn.php';
+include './code.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -110,7 +112,7 @@ include '../conn.php';
                     <h4 class="modal-title">Add Service</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
-                <form action="code.php" method="POST" enctype="multipart/form-data">
+                <form  method="POST" enctype="multipart/form-data">
                     <div class="modal-body">
                         <div class="form-group">
                             <label>slider name</label>
