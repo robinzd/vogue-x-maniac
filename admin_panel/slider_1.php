@@ -17,7 +17,7 @@ include '../conn.php';
     <link rel="stylesheet" href="./slider_1.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="./slider_1_ajax.js"></script>
+ 
 
 </head>
 
@@ -66,7 +66,7 @@ include '../conn.php';
                             <tr id="<?php echo $row["slider_id"]; ?>">
                                 <td>
                                     <span class="custom-checkbox">
-                                    <input type="checkbox" class="user_checkbox" data-user-sno="<?php echo $row["slider_id"]; ?>">
+                                        <input type="checkbox" class="user_checkbox" data-user-sno="<?php echo $row["slider_id"]; ?>">
                                         <label for="checkbox2"></label>
                                     </span>
                                 </td>
@@ -91,30 +91,28 @@ include '../conn.php';
         </div>
     </div>
     <!-- Add Modal HTML -->
-    <div id="addServiceModal" class="modal fade">
-        <div class="modal-dialog">
+    <div id="addServiceModal" class="modal fade" tabindex="-1" role="dailog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <form id="user_form">
-                    <div class="modal-header">
-                        <h4 class="modal-title">Add Service</h4>
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    </div>
+                <div class="modal-header">
+                    <h4 class="modal-title">Add Service</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <form action="code.php" method="POST" enctype="multipart/form-data">
                     <div class="modal-body">
-                        
-
                         <div class="form-group">
                             <label>slider name</label>
-                            <input type="text" id="slider_name" name="slider_name" class="form-control" required>
+                            <input type="text"  name="slidername" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label>slider image</label>
-                            <input type="file" id="slider_image" name="slider_image" class="form-control" required>
+                            <input type="file"  name="sliderimage" id="sliderimages" class="form-control" required>
                         </div>
                     </div>
                     <div class="modal-footer">
                         <input type="hidden" value="1" name="type">
                         <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
-                        <button type="button" class="btn btn-success" id="btn-add">Add</button>
+                        <button type="submit" name="save" class="btn btn-success" id="btn-add">Add</button>
                     </div>
                 </form>
             </div>
@@ -172,7 +170,7 @@ include '../conn.php';
             </div>
         </div>
     </div>
-                    
+
 
 
 
