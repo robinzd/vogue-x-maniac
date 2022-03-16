@@ -65,14 +65,14 @@ include("./conn.php");
             
             $get_slides = "select * from slider_1";
             $result=mysqli_query($conn, $get_slides);
-            $rowcount=mysqli_num_rows($result); 
+            $rowcount=mysqli_num_rows($result);
 
             // echo "Check";
             $counter=1;
 
             while ($counter <=  $rowcount) {
                 $counter=$counter+1;
-                echo "button type='button' data-bs-target='#demo' data-bs-slide-to='$counter'></button>";
+                echo "<button type='button' data-bs-target='#demo' data-bs-slide-to='$counter'></button>";
             }
 
             ?>
