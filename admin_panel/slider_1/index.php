@@ -12,7 +12,7 @@ unlink($ppicpath);
 echo "<script>alert('Data deleted');</script>"; 
 echo "<script>window.location.href = 'index.php'</script>";     
 } 
-require ".../admin_area";
+
 ?>
 
 
