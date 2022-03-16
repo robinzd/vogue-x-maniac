@@ -92,7 +92,7 @@ include("./conn.php");
             ";
             }
 
-            $get_slides = "select * from slider_1 LIMIT 1,2";
+            $get_slides = "select * from slider_1 LIMIT 1,6";
 
             $run_slider = mysqli_query($conn, $get_slides);
 
