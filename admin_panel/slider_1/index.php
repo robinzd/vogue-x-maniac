@@ -6,12 +6,13 @@ if(isset($_GET['delid']))
 {
 $rid=intval($_GET['delid']);
 $pic=$_GET['slider_image'];
-$ppicpath="../admin_area/slides_images"."/".$pic;
+$ppicpath=".../slides_images"."/".$pic;
 $sql=mysqli_query($conn,"delete from slider_1 where ID=$rid");
 unlink($ppicpath);
 echo "<script>alert('Data deleted');</script>"; 
 echo "<script>window.location.href = 'index.php'</script>";     
 } 
+require ".../admin_area";
 ?>
 
 
@@ -204,7 +205,7 @@ while ($row=mysqli_fetch_array($ret)) {
                        
                    
                         <td><?php  echo $row['slider_name'];?></td> 
-                        <td><img src=".../admin_area/slides_images/<?php  echo $row['slider_image'];?>" width="80" height="80"></td>                       
+                        <td><img src=".../slides_images/<?php  echo $row['slider_image'];?>" width="80" height="80"></td>                       
                        
                         <td>
   <a href="read.php?viewid=<?php echo htmlentities ($row['ID']);?>" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
