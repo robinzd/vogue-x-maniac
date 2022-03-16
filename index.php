@@ -99,7 +99,7 @@ include("./conn.php");
 
                 echo "<div class='carousel-item active'>
 
-            <img src='./slides_images/$slider_image' class='d-block w-100'>
+            <img src='./admin_panel/slider_1/slides_images/$slider_image' class='d-block w-100'>
 
             </div>
              
@@ -121,7 +121,7 @@ include("./conn.php");
 
                 echo "<div class='carousel-item'>
 
-            <img src='./slides_images/$slider_image' class='d-block w-100'>
+            <img src='./admin_panel/slider_1/slides_images/$slider_image' class='d-block w-100'>
             
 
             </div>
