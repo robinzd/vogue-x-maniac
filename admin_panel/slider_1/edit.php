@@ -140,7 +140,7 @@ while ($row=mysqli_fetch_array($ret)) {
         </div>
 		
 	<div class="form-group">
-<img src="profilepics/<?php  echo $row['slider_image'];?>" width="120" height="120">
+<img src=".../admin_area/slides_images/<?php  echo $row['slider_image'];?>" width="120" height="120">
 <a href="change-image.php?userid=<?php echo $row['ID'];?>">Change Image</a>
 		</div>
 

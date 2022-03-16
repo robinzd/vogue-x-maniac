@@ -218,7 +218,7 @@ include('dbconnection.php');
 
                         <tr>
                             <th width="200">slider Image</th>
-                            <td><img src="profilepics/<?php echo $row['slider_image']; ?>" width="80" height="80"></td>
+                            <td><img src=".../admin_area/slides_images/<?php echo $row['slider_image']; ?>" width="80" height="80"></td>
                         </tr>
 
 

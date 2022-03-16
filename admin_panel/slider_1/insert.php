@@ -20,7 +20,6 @@ else
 //rename the image file
 $imgnewfile=md5($imgfile).time().$extension;
 // Code for move image into directory
-// move_uploaded_file($_FILES["slider_image"]["tmp_name"],"profilepics/".$imgnewfile);
 move_uploaded_file($_FILES["slider_image"]["tmp_name"],".../admin_area/slides_images".$imgnewfile);
 // \admin_area\slides_images
 // Query for data insertion
