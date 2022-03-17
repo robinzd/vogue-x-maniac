@@ -21,7 +21,7 @@ else
 $imgnewfile=md5($imgfile).time().$extension;
 // Code for move image into directory
 // move_uploaded_file($_FILES["slider_image"]["tmp_name"],"./slides_images".$imgnewfile);
-move_uploaded_file($_FILES["slider_image"]["tmp_name"],"./slides_images".$imgnewfile);
+move_uploaded_file($_FILES["slider_image"]["tmp_name"],"slides_images/".$imgnewfile);
 // \admin_area\slides_images
 // Query for data insertion
 $query=mysqli_query($conn, "insert into slider_1(slider_name,slider_image) value('$slidername','$sliderimage')");
