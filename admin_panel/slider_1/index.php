@@ -173,7 +173,7 @@ table.table td i {
             font-size: 20px;
             text-align: center;
             border: 1px solid;
-            box-shadow: 5px 10px white;
+            box-shadow: 20px 20px 50px 15px grey;
             
         }
 
