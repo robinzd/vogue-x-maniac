@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
 
 	if ($query) {
 		echo "<script>alert('You have successfully update the data');</script>";
-		echo "<script type='text/javascript'> document.location ='index.php'; </script>";
+		echo "<script type='text/javascript'> document.location ='slider1.php'; </script>";
 	} else {
 		echo "<script>alert('Something Went Wrong. Please try again');</script>";
 	}
@@ -175,7 +175,7 @@ if (isset($_POST['submit'])) {
 				<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
             </div>
 
-			<div class="text-center">Back To Home <a href="index.php"><i class="fa fa-home"></i></a></div>
+			<div class="text-center">Back To Home <a href="slider1.php"><i class="fa fa-home"></i></a></div>
 
 		</form>
 

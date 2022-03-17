@@ -29,7 +29,7 @@ move_uploaded_file($_FILES["slider_image"]["tmp_name"],"slides_images/".$imgnewf
     	//Old pic
     	unlink($oldprofilepic);
     echo "<script>alert('slider updated successfully');</script>";
-    echo "<script type='text/javascript'> document.location ='index.php'; </script>";
+    echo "<script type='text/javascript'> document.location ='slider1.php'; </script>";
   }
   else
     {

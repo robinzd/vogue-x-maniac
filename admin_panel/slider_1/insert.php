@@ -25,7 +25,7 @@ move_uploaded_file($_FILES["slider_image"]["tmp_name"],"slides_images/".$imgnewf
 $query=mysqli_query($conn, "insert into slider_1(slider_name,slider_image) value ('$slidername','$imgnewfile')");
 if ($query) {
 echo "<script>alert('You have successfully inserted the slider');</script>";
-echo "<script type='text/javascript'> document.location ='index.php'; </script>";
+echo "<script type='text/javascript'> document.location ='slider1.php'; </script>";
 } else{
 echo "<script>alert('Something Went Wrong. Please try again');</script>";
 }}
@@ -158,7 +158,7 @@ body {
             <button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Submit</button>
         </div>
     </form>
-	<div class="text-center">Back To Home <a href="index.php"><i class="fa fa-home"></i></a></div>
+	<div class="text-center">Back To Home <a href="slider1.php"><i class="fa fa-home"></i></a></div>
 </div>
 </body>
 </html>
