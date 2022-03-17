@@ -503,6 +503,8 @@ include("./conn.php");
 
     <!-- cross fade carousel -->
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+    
         <div class="carousel-inner">
             <?php
 
@@ -520,7 +522,7 @@ include("./conn.php");
 
                 echo "<div class='carousel-item active'>
 
-        <img src='./admin_area/slides_images2/$slider2_image' class='d-block w-100'>
+            <img src='./admin_panel/slider_2/slides2_images/$slider2_image' class='d-block w-100'>
 
         </div>
  
@@ -528,7 +530,7 @@ include("./conn.php");
 ";
             }
 
-            $get_slider = "select * from slider_2 LIMIT 1,2";
+            $get_slider = "select * from slider_2 LIMIT 1,7";
 
             $run_slides = mysqli_query($conn,  $get_slider);
 
@@ -542,7 +544,7 @@ include("./conn.php");
 
                 echo "<div class='carousel-item'>
 
-<img src='./admin_area/slides_images2/$slider2_image' class='d-block w-100'>
+                <img src='./admin_panel/slider_2/slides2_images/$slider2_image' class='d-block w-100'>
 
 
 </div>
@@ -801,3 +803,6 @@ include("./conn.php");
 </body>
 
 </html>
+
+
+
