@@ -166,11 +166,11 @@ table.table td i {
 }
 
 .btn-circle.btn-xl {
-            width: 70px;
-            height: 70px;
+            width: 50px;
+            height: 50px;
             padding: 10px 16px;
             border-radius: 35px;
-            font-size: 12px;
+            font-size: 20px;
             text-align: center;
         }
 </style>
