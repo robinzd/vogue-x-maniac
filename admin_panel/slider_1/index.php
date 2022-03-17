@@ -173,6 +173,10 @@ table.table td i {
             font-size: 20px;
             text-align: center;
         }
+
+        i.material-icons{
+            margin-top: 5px;
+        }
 </style>
 </head>
 <body>
