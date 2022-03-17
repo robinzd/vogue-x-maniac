@@ -168,7 +168,7 @@ table.table td i {
 .btn-circle.btn-xl {
             width: 50px;
             height: 50px;
-            padding: 10px 16px;
+            padding: 10px 10px;
             border-radius: 35px;
             font-size: 20px;
             text-align: center;
