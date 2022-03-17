@@ -177,7 +177,7 @@ table.table td i {
                     </div>
 
                     <div class="col-sm-7" align="right">
-                        <a href="insert.php" class="btn btn-success"><i class="material-icons">&#xE147;</i> <span>Add New Slider</span></a>
+                        <a href="insert.php" class="btn btn-success btn-circle btn-xl"><i class="material-icons">&#xE147;</i> <span>Add New Slider</span></a>
                     </div>
                     
                 </div>
