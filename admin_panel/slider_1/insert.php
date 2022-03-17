@@ -24,7 +24,7 @@ move_uploaded_file($_FILES["slider_image"]["tmp_name"],"slides_images/".$imgnewf
 // Query for data insertion
 $query=mysqli_query($conn, "insert into slider_1(slider_name,slider_image) value ('$slidername','$imgnewfile')");
 if ($query) {
-echo "<script>alert('You have successfully inserted the data');</script>";
+echo "<script>alert('You have successfully inserted the slider');</script>";
 echo "<script type='text/javascript'> document.location ='index.php'; </script>";
 } else{
 echo "<script>alert('Something Went Wrong. Please try again');</script>";

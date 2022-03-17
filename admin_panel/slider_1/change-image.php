@@ -28,7 +28,7 @@ move_uploaded_file($_FILES["slider_image"]["tmp_name"],"slides_images/".$imgnewf
     if ($query) {
     	//Old pic
     	unlink($oldprofilepic);
-    echo "<script>alert('Profile pic updated successfully');</script>";
+    echo "<script>alert('slider updated successfully');</script>";
     echo "<script type='text/javascript'> document.location ='index.php'; </script>";
   }
   else
