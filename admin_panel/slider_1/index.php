@@ -177,7 +177,7 @@ table.table td i {
         }
 
         .btn-circle.btn-xl:hover{
-            background-color:lightgreen;
+            background-color:black;
         }
 
         i.material-icons{
@@ -196,7 +196,7 @@ table.table td i {
                     </div>
 
                     <div class="col-sm-7" align="right">
-                        <a href="insert.php" class="btn btn-black btn-circle btn-xl"><i class="material-icons">&#xE147;</i></a>
+                        <a href="insert.php" class="btn btn-success btn-circle btn-xl"><i class="material-icons">&#xE147;</i></a>
                     </div>
                     
                 </div>
