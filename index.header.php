@@ -49,7 +49,7 @@
 		    			<a href="./Login_form/login.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
 		    			<a href="cart.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-cart-shopping"><i class="sr-only">Twitter</i></span></a>
 		    			<a href="./admin_panel/slider_1.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-sign-out"><i class="sr-only">Instagram</i></span></a>
-		    			 <a href="./admin_panel/slider_2/slider2.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+		    			 <a href="./admin_panel/slider_1/slider1.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
 		    		</p>
 	        </div>
 				</div>
