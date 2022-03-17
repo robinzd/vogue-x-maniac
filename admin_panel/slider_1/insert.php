@@ -132,6 +132,10 @@ body {
 .signup-form form a:hover {
 	text-decoration: underline;
 }  
+
+.fa-home{
+			color:black;
+		}
 </style>
 </head>
 <body>
@@ -154,7 +158,7 @@ body {
             <button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Submit</button>
         </div>
     </form>
-	<div class="text-center">View Aready Inserted Data!!  <a href="index.php">View</a></div>
+	<div class="text-center">Back To Home <a href="index.php"><i class="fa fa-home"></i></a></div>
 </div>
 </body>
 </html>
