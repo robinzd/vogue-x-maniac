@@ -172,6 +172,7 @@ table.table td i {
             border-radius: 35px;
             font-size: 20px;
             text-align: center;
+            box-shadow: 2px solid grey ;
         }
 
         i.material-icons{
