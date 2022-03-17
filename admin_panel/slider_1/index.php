@@ -164,6 +164,15 @@ table.table td i {
     margin-top: 10px;
     font-size: 13px;
 }
+
+.btn-circle.btn-xl {
+            width: 70px;
+            height: 70px;
+            padding: 10px 16px;
+            border-radius: 35px;
+            font-size: 12px;
+            text-align: center;
+        }
 </style>
 </head>
 <body>
@@ -177,7 +186,7 @@ table.table td i {
                     </div>
 
                     <div class="col-sm-7" align="right">
-                        <a href="insert.php" class="btn btn-success btn-circle btn-xl"><i class="material-icons">&#xE147;</i> <span>Add New Slider</span></a>
+                        <a href="insert.php" class="btn btn-success btn-circle btn-xl"><i class="material-icons">&#xE147;</i></a>
                     </div>
                     
                 </div>
