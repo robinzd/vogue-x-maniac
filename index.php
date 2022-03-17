@@ -150,6 +150,8 @@ include("./conn.php");
         </button>
     </div>
 
+    <h1>hai</h1>
+
     <!-- brands -->
     <section id="brands">
 
