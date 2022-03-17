@@ -154,7 +154,7 @@ while ($row=mysqli_fetch_array($ret)) {
 		
 </form>
 
-<div class="text-center">View Aready Inserted Data!!  <a href="index.php">View</a></div>
+<div class="text-center">Back To Home  <a href="index.php"><i class="fa fa-home"></i></a></div>
      
 		
 	
