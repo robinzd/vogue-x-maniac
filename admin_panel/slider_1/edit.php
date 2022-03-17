@@ -140,6 +140,10 @@ if (isset($_POST['submit'])) {
 		.signup-form form a:hover {
 			text-decoration: underline;
 		}
+
+		.fa-home{
+			color:black;
+		}
 	</style>
 </head>
 
