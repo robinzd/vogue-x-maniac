@@ -190,7 +190,7 @@ table.table td i {
                     </div>
 
                     <div class="col-sm-7" align="right">
-                        <a href="insert.php" class="btn btn-success btn-circle btn-xl"><i class="material-icons">&#xE147;</i></a>
+                        <a href="insert.php" class="btn btn-success btn-circle btn-xl shadow-lg p-3 mb-5"><i class="material-icons">&#xE147;</i></a>
                     </div>
                     
                 </div>
