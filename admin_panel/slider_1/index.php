@@ -176,6 +176,10 @@ table.table td i {
             
         }
 
+        .btn-circle.btn-xl:hover{
+            background-color: black;
+        }
+
         i.material-icons{
             margin-top: 2px;
         }
