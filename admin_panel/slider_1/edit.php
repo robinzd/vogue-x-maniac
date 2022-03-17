@@ -149,7 +149,7 @@ while ($row=mysqli_fetch_array($ret)) {
 }?>
 		<div class="form-group">
             <button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
-			<button href="index.php" class="btn btn-danger btn-lg btn-block">Cancel</button>
+			<a href="index.php">Cancel</a>
 		</div>
 		
 </form>
