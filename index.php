@@ -101,7 +101,7 @@ include("./conn.php");
 
           
 
-                <img src='.../admin_panel/slider_1/slides_images/$slider_image' class='d-block w-100'>
+                <img src='./admin_panel/slider_1/slides_images/$slider_image' class='d-block w-100'>
 
             </div>
              
@@ -125,7 +125,7 @@ include("./conn.php");
 
            
             
-                <img src='.../admin_panel/slider_1/slides_images/$slider_image' class='d-block w-100'>
+                <img src='./admin_panel/slider_1/slides_images/$slider_image' class='d-block w-100'>
 
             </div>
              
