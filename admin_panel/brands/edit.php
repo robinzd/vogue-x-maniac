@@ -162,7 +162,8 @@ if (isset($_POST['submit'])) {
 
 
 				<div class="form-group">
-					<input type="text" class="form-control" name="brandcolor" value="<?php echo $row['brand_color']; ?>" required="true">
+				<label for="favcolor">Select your brand color:</label>
+                <input type="color"  class="form-control" name="brandcolor"  value="<?php echo $row['brand_color']; ?>" required="true"> 
 				</div>
 
 				<div class="form-group">

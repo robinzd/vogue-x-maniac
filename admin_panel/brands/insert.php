@@ -148,7 +148,7 @@ body {
 		
         <div class="form-group">
 		<label for="favcolor">Select your brand color:</label>
-        <input type="color" name="brandcolor" value="#ff0000" required="true"> 
+        <input type="color" class="form-control" name="brandcolor" value="#ff0000" required="true"> 
         </div>
       
              <div class="form-group">
