@@ -233,14 +233,13 @@ include('dbconnection.php');
                     <?php
                             $cnt = $cnt + 1;
                         } ?>
-
-                <div class="text-center">Back To Home <a href="brand.php"><i class="fa fa-home"></i></a></div>
-
+                        
                     </tbody>
                 </table>
 
             </div>
         </div>
+        <div class="text-center">Back To Home <a href="brand.php"><i class="fa fa-home"></i></a></div>
     </div>
 </body>
 
