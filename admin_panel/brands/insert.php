@@ -6,7 +6,7 @@ if(isset($_POST['submit']))
   	//getting the post values
     $brandcolor=$_POST['brandcolor'];
     $imagesource=$_FILES["image_source"]["name"];
-	$brandname=$POST['brandname'];
+	$brandname=$_POST['brandname'];
 // get the image extension
 $extension = substr($imagesource,strlen($imagesource)-4,strlen($imagesource));
 // allowed extensions
