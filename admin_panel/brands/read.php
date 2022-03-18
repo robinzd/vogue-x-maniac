@@ -180,6 +180,10 @@ include('dbconnection.php');
             margin-top: 10px;
             font-size: 13px;
         }
+
+        .fa-home{
+			color:black;
+		}
     </style>
 </head>
 
@@ -229,6 +233,8 @@ include('dbconnection.php');
                     <?php
                             $cnt = $cnt + 1;
                         } ?>
+
+                <div class="text-center">Back To Home <a href="brand.php"><i class="fa fa-home"></i></a></div>
 
                     </tbody>
                 </table>
