@@ -183,6 +183,10 @@ table.table td i {
         i.material-icons{
             margin-top: 2px;
         }
+
+        .tex-center{
+            color:red;
+        }
 </style>
 </head>
 <body>
@@ -247,8 +251,8 @@ $cnt=$cnt+1;
         </div>
     </div>
 
-    <span style="color:red; font-size:12px;">Note:background Remove For the appeling Result</span><br>
-    <span style="color:red; font-size:12px;"><a href="https://www.remove.bg/">Click Here for background remove</a></span><br>
+    <div class="text-center">Note:Remove Background Of your pics for appeling result</div><br>
+    <div class="text-center">Click this to remove Picture background <a href="https://www.remove.bg/"><i class="fa fa-external-link"></i></a></div><br>
 
 </div>     
 </body>
