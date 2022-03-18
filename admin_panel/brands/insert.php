@@ -147,7 +147,8 @@ body {
         <div class="form-group">
 		
         <div class="form-group">
-		<input type="color" class="form-control" placeholder="Enter Your Color" name="brandcolor"  required="true"> 
+		<label>Pick your favcolor:</label>	
+		<input type="color" class="form-control"  name="brandcolor"  required="true"> 
         </div>
       
              <div class="form-group">
