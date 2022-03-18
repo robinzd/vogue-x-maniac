@@ -251,7 +251,7 @@ $cnt=$cnt+1;
         </div>
     </div>
 
-    <div class="text-center">Note:Remove Background Of your pics for appeling result</div><br>
+    <div class="text-center">Note:Remove Background of your pics for appeling result</div><br>
     <div class="text-center">Click this to remove Picture background <a href="https://www.remove.bg/"><i class="fa fa-external-link"></i></a></div><br>
 
 </div>     
