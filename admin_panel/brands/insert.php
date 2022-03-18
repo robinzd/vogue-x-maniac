@@ -23,7 +23,7 @@ $imgnewfile=md5($imgfile).time().$extension;
 // Code for move image into directory
 move_uploaded_file($_FILES["image_source"]["tmp_name"],"brands_images/".$imgnewfile);
 // Query for data insertion
-$query=mysqli_query($conn, "insert into owlslider_1(brand_color,image_source,brand_name) value ('$brandcolor','$imgnewfile','$brandname' )");
+$query=mysqli_query($conn, "insert into owlslider_1(brand_color,brand_name,image_source) value ('$brandcolor','$brandname','$imgnewfile' )");
 if ($query) {
 echo "<script>alert('You have successfully inserted the brand');</script>";
 echo "<script type='text/javascript'> document.location ='brand.php'; </script>";
