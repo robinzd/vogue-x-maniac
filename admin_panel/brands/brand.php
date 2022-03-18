@@ -246,6 +246,10 @@ $cnt=$cnt+1;
        
         </div>
     </div>
+
+    <span style="color:red; font-size:12px;">Note:background Remove For the appeling Result</span><br>
+    <span style="color:red; font-size:12px;"><a href="https://www.remove.bg/">Click Here for background remove</a></span><br>
+
 </div>     
 </body>
 </html>
