@@ -184,7 +184,7 @@ table.table td i {
             margin-top: 2px;
         }
 
-        .tex-center{
+        .text-center{
             color:red;
         }
 </style>
