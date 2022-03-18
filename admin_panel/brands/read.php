@@ -184,6 +184,10 @@ include('dbconnection.php');
         .fa-home{
 			color:black;
 		}
+
+        .text-center{
+			color:grey;
+		}
     </style>
 </head>
 

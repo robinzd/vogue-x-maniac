@@ -138,9 +138,7 @@ body {
 			color:black;
 		}
 
-		.text-center{
-			color:grey;
-		}
+		
 </style>
 </head>
 <body>
