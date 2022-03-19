@@ -171,9 +171,9 @@ img#brand{
   .gallery__link:hover .gallery__caption {
     opacity: 1;
   }
-  /* .gallery__thumb {
+  .gallery__thumb {
     position: relative;
-  } */
+  }
   .gallery__image {
     display: block;
     width: 100%;
