@@ -58,8 +58,8 @@
 
                   <div class="col-md-3">
                       <div class="card-counter success">
-                          <i class="fa fa-database"></i>
-                          <span class="count-name">Data</span>
+                       <i class="fa fa-wrench"></i>
+                          <span class="count-name">Product slider</span>
                       </div>
                   </div>
 
