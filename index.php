@@ -233,9 +233,9 @@ include("./conn.php");
                             echo "<figure class='gallery__thumb'><img src='./categories_images/$category_image' 
                             alt='mens and womens shoes' class='gallery__image'><figcaption class='gallery__caption'>$category_name</figcaption></figure>";
                         }
-                      
+                        $counter = $counter + 1;
                     }
-
+                   
                     ?>
 
 
