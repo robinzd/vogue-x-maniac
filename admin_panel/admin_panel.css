@@ -237,7 +237,7 @@ h4{
 
   .card-counter .count-numbers{
     position: absolute;
-   
+    margin-top: 20;
     font-size: 32px;
    
   }
