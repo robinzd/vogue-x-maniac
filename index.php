@@ -219,7 +219,7 @@ include("./conn.php");
                     <?php
                     $count = 0;
                     $get_count_product_category = "select count(*) from product_category";
-                    $get_product_category = "select * from product_category  LIMIT 0,2`";
+                    $get_product_category = "select * from product_category  LIMIT 0,2";
 
                     $run_gallery_image = mysqli_query($conn, $get_product_category);
                     $run_count_product_category = mysqli_query($conn, $get_count_product_category);
