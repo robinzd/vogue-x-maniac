@@ -235,21 +235,13 @@ h4{
     opacity: 0.2;
   }
 
-  .card-counter .count-numbers{
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 50px;
-    text-align: center;
-    font-size: 32px;
-   
-  }
+  
 
   .card-counter .count-name{
     position: absolute;
     margin-left: 50px;
-    text-align: center;
     font-style: italic;
     text-transform: capitalize;
     opacity: 0.5;
-    font-size: 18px;
+    font-size: 40px;
   }
