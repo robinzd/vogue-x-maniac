@@ -236,16 +236,16 @@ h4{
   }
 
   .card-counter .count-numbers{
-  
-   
+    position: absolute;
+    right: 35px;
     top: 20px;
     font-size: 32px;
     display: block;
   }
 
   .card-counter .count-name{
-    position:relative;
-    
+    position: absolute;
+    right: 35px;
     top: 65px;
     font-style: italic;
     text-transform: capitalize;

@@ -38,7 +38,7 @@
               </nav>
           </div>
           <!--Container Main start-->
-          <div class="height-100 bg-light">
+        
               <h4>Main Components</h4>
               <div class="container">
                   <div class="row">
@@ -76,7 +76,7 @@
                   </div>
               </div>
 
-          </div>
+          
           <!--Container Main end-->
 
 
