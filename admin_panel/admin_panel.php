@@ -68,7 +68,7 @@
                           <i class="fa fa-users"></i>
                           <span class="count-name">Users</span>
                       </div>
-                  </div><br>
+                  </div><br><br>
                   <div class="col-md-3">
                       <a href="./slider_1/slider1.php"><div class="card-counter primary">
                           <i class="fa fa-code-fork"></i>
