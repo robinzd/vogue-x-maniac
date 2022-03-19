@@ -151,7 +151,7 @@ img#brand{
     transition: 0.3s;
     display: flex;
     padding: 2px;
-    flex-direction: row;
+  
  
   }
   .gallery:hover .gallery__image {
