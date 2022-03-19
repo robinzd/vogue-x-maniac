@@ -236,7 +236,7 @@ h4{
   }
 
   .card-counter .count-numbers{
-    position: absolute;
+  
    
     top: 20px;
     font-size: 32px;
@@ -244,7 +244,7 @@ h4{
   }
 
   .card-counter .count-name{
-    position: absolute;
+   
     
     top: 65px;
     font-style: italic;
