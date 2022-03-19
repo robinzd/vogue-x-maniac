@@ -69,6 +69,34 @@
                           <span class="count-name">Brand Slider</span>
                       </div></a>
                   </div>
+                  <div class="col-md-3">
+                  <a href="./product slider/brand.php"><div class="card-counter info">
+                  <i class="fa fa-gears"></i>
+                          <span class="count-name">Brand Slider</span>
+                      </div></a>
+                  </div>
+                 
+                  <div class="col-md-3">
+                  <a href="./product slider/brand.php"><div class="card-counter info">
+                  <i class="fa fa-gears"></i>
+                          <span class="count-name">Brand Slider</span>
+                      </div></a>
+                  </div>
+                 
+                  <div class="col-md-3">
+                  <a href="./product slider/brand.php"><div class="card-counter info">
+                  <i class="fa fa-gears"></i>
+                          <span class="count-name">Brand Slider</span>
+                      </div></a>
+                  </div>
+                 
+                  <div class="col-md-3">
+                  <a href="./product slider/brand.php"><div class="card-counter info">
+                  <i class="fa fa-gears"></i>
+                          <span class="count-name">Brand Slider</span>
+                      </div></a>
+                  </div>
+                 
                  
                  
                   </div>
@@ -78,40 +106,7 @@
 
           <!--Container Main end-->
         
-          <div class="container-fluid">
-              <div class="row">
-                  <div class="col-md-3">
-                      <a href="./slider_1/slider1.php"><div class="card-counter primary">
-                          <i class="fa fa-code-fork"></i>
-                          <span class="count-name">Slider 1</span>
-                      </div></a>
-                  </div>
-
-                  <div class="col-md-3">
-                  <a href="./slider_2/slider2.php"><div class="card-counter danger">
-                          <i class="fa fa-code-fork"></i>
-                          <span class="count-name">Slider 2</span>
-                      </div></a>
-                  </div>
-
-                  <div class="col-md-3">
-                      <div class="card-counter success">
-                       <i class="fa fa-wrench"></i>
-                          <span class="count-name">Product slider</span>
-                      </div>
-                  </div>
-
-                  <div class="col-md-3">
-                      <div class="card-counter info">
-                          <i class="fa fa-users"></i>
-                          <span class="count-name">Users</span>
-                      </div>
-                  </div>
-                 
-                 
-                  </div>
-              </div>
-          </div>
+         
 
 
 
