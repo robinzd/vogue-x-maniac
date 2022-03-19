@@ -40,7 +40,7 @@
           <!--Container Main start-->
 
           <h4>Main Components</h4>
-          <div class="container">
+          <div class="container-fluid">
               <div class="row">
                   <div class="col-md-3">
                       <a href="./slider_1/slider1.php"><div class="card-counter primary">
@@ -76,7 +76,7 @@
 
 
           <!--Container Main end-->
-          <div class="container">
+          <div class="container-fluid">
               <div class="row">
                   <div class="col-md-3">
                       <a href="./slider_1/slider1.php"><div class="card-counter primary">
