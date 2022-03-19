@@ -243,12 +243,14 @@ include("./conn.php");
 
 
                 </a>
+
+                
                 <a href="#" target="_blank" class="gallery__link">
 
 
                     <?php
                     $count = 0;
-                    $get_count_product_category = "select count(*) from product_category";
+                    $get_count_product_category = "select count * from product_category";
                     $get_product_category = "select * from product_category";
 
                     $run_gallery_image = mysqli_query($conn, $get_product_category);
