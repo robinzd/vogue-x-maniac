@@ -62,18 +62,18 @@ include("./conn.php");
 
             <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
             <?php
-            
+
             $get_slides = "select * from slider_1";
-            $result=mysqli_query($conn, $get_slides);
-            $rowcount=mysqli_num_rows($result);
+            $result = mysqli_query($conn, $get_slides);
+            $rowcount = mysqli_num_rows($result);
 
             // echo "Check";
-            $counter=1;
+            $counter = 1;
 
             while ($counter < $rowcount) {
-                
+
                 echo "<button type='button' data-bs-target='#demo' data-bs-slide-to='$counter'></button>";
-                $counter=$counter+1;
+                $counter = $counter + 1;
             }
 
             ?>
@@ -135,9 +135,9 @@ include("./conn.php");
 
 
             ?>
-            
 
-           
+
+
 
         </div>
 
@@ -150,7 +150,7 @@ include("./conn.php");
         </button>
     </div>
 
-   
+
 
     <!-- brands -->
     <section id="brands">
@@ -232,17 +232,18 @@ include("./conn.php");
 
 
                         echo "<figure class='gallery__thumb'>
-                        <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
-                        <figcaption class='gallery__caption'>$category_name</figcaption>
-                    </figure>
+<img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
+<figcaption class='gallery__caption'>$category_name</figcaption>
+</figure>
 
 
 
-                    ";
+";
                     }
 
 
                     ?>
+
 
 
 
@@ -504,7 +505,7 @@ include("./conn.php");
     <!-- cross fade carousel -->
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
-    
+
         <div class="carousel-inner">
             <?php
 
@@ -556,7 +557,7 @@ include("./conn.php");
 
             ?>
 
-            
+
 
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -620,12 +621,12 @@ include("./conn.php");
 
             ?>
 
-         
+
         </div>
     </section>
 
 
-   
+
 
 
     <section>
@@ -803,6 +804,3 @@ include("./conn.php");
 </body>
 
 </html>
-
-
-
