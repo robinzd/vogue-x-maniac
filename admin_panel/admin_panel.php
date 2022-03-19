@@ -51,7 +51,7 @@
 
                   <div class="col-md-3">
                   <a href="./slider_2/slider2.php"><div class="card-counter danger">
-                          <i class="fa fa-fork"></i>
+                          <i class="fa fa-code-fork"></i>
                           <span class="count-name">Slider 2</span>
                       </div></a>
                   </div>
