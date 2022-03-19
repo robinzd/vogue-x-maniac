@@ -57,14 +57,14 @@
                   </div>
 
                   <div class="col-md-3">
-                  <a href="./product slider/brand.php"><div class="card-counter success">
+                  <a href="./brands/brand.php"><div class="card-counter success">
                        <i class="fa fa-wrench"></i>
                           <span class="count-name">Product slider</span>
                       </div></a>
                   </div>
 
                   <div class="col-md-3">
-                  <a href="./product slider/brand.php"><div class="card-counter info">
+                  <a href="./brands/brand.php"><div class="card-counter info">
                   <i class="fa fa-gears"></i>
                           <span class="count-name">Brand Slider</span>
                       </div></a>
