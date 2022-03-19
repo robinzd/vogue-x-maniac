@@ -69,6 +69,30 @@
                           <span class="count-name">Users</span>
                       </div>
                   </div>
+                  <div class="col-md-3">
+                      <a href="./slider_1/slider1.php"><div class="card-counter primary">
+                          <i class="fa fa-code-fork"></i>
+                          <span class="count-name">Slider 1</span>
+                      </div></a>
+                  </div>
+                  <div class="col-md-3">
+                      <a href="./slider_1/slider1.php"><div class="card-counter primary">
+                          <i class="fa fa-code-fork"></i>
+                          <span class="count-name">Slider 1</span>
+                      </div></a>
+                  </div>
+                  <div class="col-md-3">
+                      <a href="./slider_1/slider1.php"><div class="card-counter primary">
+                          <i class="fa fa-code-fork"></i>
+                          <span class="count-name">Slider 1</span>
+                      </div></a>
+                  </div>
+                  <div class="col-md-3">
+                      <a href="./slider_1/slider1.php"><div class="card-counter primary">
+                          <i class="fa fa-code-fork"></i>
+                          <span class="count-name">Slider 1</span>
+                      </div></a>
+                  </div>
               </div>
           </div>
 
