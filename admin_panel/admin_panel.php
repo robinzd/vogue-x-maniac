@@ -65,7 +65,7 @@
 
                   <div class="col-md-3">
                   <a href="./product slider/brand.php"><div class="card-counter info">
-                          <i class="fa fa-users"></i>
+                  <i class="fa fa-gears"></i>
                           <span class="count-name">Brand Slider</span>
                       </div></a>
                   </div>
