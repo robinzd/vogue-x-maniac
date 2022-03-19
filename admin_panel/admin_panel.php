@@ -43,10 +43,10 @@
           <div class="container">
               <div class="row">
                   <div class="col-md-3">
-                      <div class="card-counter primary">
+                      <a href="./slider_1/slider1.php"><div class="card-counter primary">
                           <i class="fa fa-code-fork"></i>
-                          <span class="count-name">Flowz</span>
-                      </div>
+                          <span class="count-name">Slider 1</span>
+                      </div></a>
                   </div>
 
                   <div class="col-md-3">
