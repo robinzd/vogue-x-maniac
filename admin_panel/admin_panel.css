@@ -239,6 +239,7 @@ h4{
     position: absolute;
     margin-top: 20px;
     margin-left: 50px;
+    text-align: center;
     font-size: 32px;
    
   }
@@ -246,6 +247,7 @@ h4{
   .card-counter .count-name{
     position: absolute;
     margin-left: 50px;
+    text-align: center;
     font-style: italic;
     text-transform: capitalize;
     opacity: 0.5;
