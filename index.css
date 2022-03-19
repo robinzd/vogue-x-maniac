@@ -158,7 +158,7 @@ img#brand{
   }
   .gallery__column {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 25%;
   }
   .gallery__link {

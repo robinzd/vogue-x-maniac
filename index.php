@@ -217,25 +217,23 @@ include("./conn.php");
 
 
                     <?php
-                   $count = 0;
-                   $get_count_product_category = "select count(*) from product_category";
-                   $get_product_category = "select * from product_category";
-                   
-                   $run_gallery_image = mysqli_query($conn, $get_product_category);
-                   $run_count_product_category = mysqli_query($conn, $get_count_product_category); 
-                   
-                   while($count <= $run_count_product_category)
-                   {
-                       while ($row_category_picture = mysqli_fetch_array($run_gallery_image))
-                       {
-                           $category_image = $row_category_picture['category_image'];
-                           $category_name = $row_category_picture['category_name'];
-                           
-                           echo "<figure class='gallery__thumb'><img src='./categories_images/$category_image'  
+                    $count = 0;
+                    $get_count_product_category = "select count(*) from product_category";
+                    $get_product_category = "select * from product_category";
+
+                    $run_gallery_image = mysqli_query($conn, $get_product_category);
+                    $run_count_product_category = mysqli_query($conn, $get_count_product_category);
+
+                    while ($count <= $run_count_product_category) {
+                        while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
+                            $category_image = $row_category_picture['category_image'];
+                            $category_name = $row_category_picture['category_name'];
+
+                            echo "<figure class='gallery__thumb'><img src='./categories_images/$category_image'  
                            class='gallery__image'><figcaption class='gallery__caption'>$category_name</figcaption></figure>";
-                       }
-                       $count+=1;
-                   }
+                        }
+                        $count += 1;
+                    }
 
                     ?>
 
@@ -245,6 +243,37 @@ include("./conn.php");
 
 
                 </a>
+                <a href="#" target="_blank" class="gallery__link">
+
+
+                    <?php
+                    $count = 0;
+                    $get_count_product_category = "select count(*) from product_category";
+                    $get_product_category = "select * from product_category";
+
+                    $run_gallery_image = mysqli_query($conn, $get_product_category);
+                    $run_count_product_category = mysqli_query($conn, $get_count_product_category);
+
+                    while ($count <= $run_count_product_category) {
+                        while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
+                            $category_image = $row_category_picture['category_image'];
+                            $category_name = $row_category_picture['category_name'];
+
+                            echo "<figure class='gallery__thumb'><img src='./categories_images/$category_image'  
+       class='gallery__image'><figcaption class='gallery__caption'>$category_name</figcaption></figure>";
+                        }
+                        $count += 1;
+                    }
+
+                    ?>
+
+
+
+
+
+
+                </a>
+
 
 
             </div>
