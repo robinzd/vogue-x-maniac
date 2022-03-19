@@ -238,14 +238,14 @@ h4{
   .card-counter .count-numbers{
     position: absolute;
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 50px;
     font-size: 32px;
    
   }
 
   .card-counter .count-name{
     position: absolute;
-    margin-left: 100px;
+    margin-left: 50px;
     font-style: italic;
     text-transform: capitalize;
     opacity: 0.5;
