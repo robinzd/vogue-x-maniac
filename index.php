@@ -215,44 +215,35 @@ include("./conn.php");
 
                 <a href="#" target="_blank" class="gallery__link">
 
-
                     <?php
 
+                    $count = 0;
                     $get_product_category = "select * from product_category";
 
+
                     $run_gallery_image = mysqli_query($conn, $get_product_category);
+                    $rowcount = mysqli_num_rows($run_gallery_image);
 
 
+                    while ($count <= $rowcount) {
+                        while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
+                            $category_image = $row_category_picture['category_image'];
+                            $category_name = $row_category_picture['category_name'];
 
-                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
-
-                        $category_image = $row_category_picture['category_image'];
-                        $category_name = $row_category_picture['category_name'];
-
-
-
-                        echo "<figure class='gallery__thumb'>
-<img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
-<figcaption class='gallery__caption'>$category_name</figcaption>
-</figure>
-
-
-
-";
+                            echo "<figure class='gallery__thumb'><img src='./categories_images/$category_image' 
+                            alt='mens and womens shoes' class='gallery__image'><figcaption class='gallery__caption'>$category_name</figcaption></figure>";
+                        }
+                        $count += 1;
                     }
 
-
                     ?>
-
-
-
 
 
 
                 </a>
 
 
-                
+
 
 
 
