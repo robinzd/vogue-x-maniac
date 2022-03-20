@@ -342,7 +342,7 @@ if (isset($_GET['delid'])) {
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2022 Copyright:
-            <a class="text1" href="">Vogue X Maniac</a>
+            <a class="text1" href="/index.php`">Vogue X Maniac</a>
         </div>
         <!-- Copyright -->
     </footer>
