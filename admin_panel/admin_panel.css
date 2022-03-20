@@ -218,7 +218,7 @@ h4{
 
 .align-middle {
   position: relative;
-  top: 50%;
+  top:300px;
   transform: translateY(-50%);
 }
 
@@ -311,7 +311,5 @@ h4{
   z-index: 0;
 }
 
-.div.row .align-middle{
-    margin-top: 50px;
-}
+
 

@@ -41,7 +41,7 @@
 
           <h4>Main Components</h4>
           <div class="container-fluid">
-             
+              <div class="row align-middle">
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-1">
                           <div class="txt">
@@ -78,7 +78,7 @@
                       </div>
                   </div>
 
-             
+              </div>
           </div>
 
 
