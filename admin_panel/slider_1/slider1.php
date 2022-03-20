@@ -214,6 +214,10 @@ if (isset($_GET['delid'])) {
         i.material-icons {
             margin-top: 2px;
         }
+
+         .fa-house{
+             color:black;
+         }
     </style>
 </head>
 
@@ -222,7 +226,7 @@ if (isset($_GET['delid'])) {
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <span class="navbar-text">
-                Navbar text with an inline element
+            <a href="../admin_panel.php"><i class="fa fa-house"></i></a>
             </span>
         </div>
     </nav>
