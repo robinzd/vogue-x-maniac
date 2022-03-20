@@ -233,19 +233,7 @@ if (isset($_GET['delid'])) {
             margin-left: 10px;
         }
 
-        .form-inline .my-2 .my-lg-0{
-            display: inline-block;
-        }
-
-        .form-control .mr-sm-2{
-            display: inline;
-        }
-
-        .btn .btn-outline-success .my-2 .my-sm-0{
-            margin-left: 70px;
-        }
         
-
       
     </style>
 </head>
