@@ -234,7 +234,7 @@ if (isset($_GET['delid'])) {
         }
 
         input.form-control.me-2{
-            border:1px solid grey;
+            border:1px solid whitesmoke;
         }
     </style>
 </head>
@@ -243,7 +243,7 @@ if (isset($_GET['delid'])) {
     <!-- navbar starts -->
   
 
-    <nav class="navbar navbar-secondary bg-secodary">
+    <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <div class="navbar-text">
                 <div class="icon"><a href="../admin_panel.php"><i class="fa fa-home"></i></a></div>
