@@ -106,11 +106,11 @@ a {
 
 .nav_logo-icon {
     font-size: 1.25rem;
-    color: var(--white-color)
+    color:black;
 }
 
 .nav_logo-name {
-    color: var(--white-color);
+    color:black;
     font-weight: 700
 }
 
