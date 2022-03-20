@@ -43,24 +43,26 @@
           <div class="container-fluid h-100 d-none d-lg-block">
               <div class="row align-middle ">
                   <div class="col-md-6 col-lg-4 column">
-                      <div class="card gr-1">
-                          <div class="txt">
-                              <h1>Slider 1 </br>
-                                  Management</h1>
-                            </div>
-                        <div class="ico-card">
-                        <i class="fa fa-gear"></i>
+                      <a href="./slider_1/slider1.php">
+                          <div class="card gr-1">
+                              <div class="txt">
+                                  <h1>Slider 1 </br>
+                                      Management</h1>
+                              </div>
+                              <div class="ico-card">
+                                  <i class="fa fa-gear"></i>
+                              </div>
                           </div>
-                      </div>
+                      </a>
                   </div>
 
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-2">
                           <div class="txt">
-                          <h1>Brands  </br>
+                              <h1>Brands </br>
                                   Management</h1>
-                            </div>
-                        <div class="ico-card">
+                          </div>
+                          <div class="ico-card">
                               <i class="fa fa-codepen"></i>
                           </div>
                       </div>
@@ -69,9 +71,9 @@
                       <div class="card gr-3">
                           <div class="txt">
                               <h1>Slider 2 </br>
-                              Management</h1>
-                         </div>
-                       <div class="ico-card">
+                                  Management</h1>
+                          </div>
+                          <div class="ico-card">
                               <i class="fa fa-empire"></i>
                           </div>
                       </div>
@@ -79,11 +81,11 @@
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-4">
                           <div class="txt">
-                          <h1>Latest Product </br>
-                              Management</h1>
-                         </div>
-                       <div class="ico-card">
-                         <i class="fa fa-gears"></i>
+                              <h1>Latest Product </br>
+                                  Management</h1>
+                          </div>
+                          <div class="ico-card">
+                              <i class="fa fa-gears"></i>
                           </div>
                       </div>
                   </div>
@@ -97,24 +99,26 @@
           <div class="container-fluid h-100 d-lg-none">
               <div class="row align-middle-1">
                   <div class="col-md-6 col-lg-4 column">
-                      <div class="card gr-1">
-                          <div class="txt">
-                          <h1>Slider 1 </br>
-                                  Management</h1>
-                            </div>
-                      <div class="ico-card">
-                      <i class="fa fa-gear"></i>
+                      <a href="./slider_1/slider1.php">
+                          <div class="card gr-1">
+                              <div class="txt">
+                                  <h1>Slider 1 </br>
+                                      Management</h1>
+                              </div>
+                              <div class="ico-card">
+                                  <i class="fa fa-gear"></i>
+                              </div>
                           </div>
-                      </div>
+                      </a>
                   </div>
 
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-2">
                           <div class="txt">
-                              <h1>Brands  </br>
+                              <h1>Brands </br>
                                   Management</h1>
-                         </div>
-                     <div class="ico-card">
+                          </div>
+                          <div class="ico-card">
                               <i class="fa fa-codepen"></i>
                           </div>
                       </div>
@@ -122,10 +126,10 @@
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-3">
                           <div class="txt">
-                          <h1>Slider 2 </br>
-                              Management</h1>
-                         </div>
-                     <div class="ico-card">
+                              <h1>Slider 2 </br>
+                                  Management</h1>
+                          </div>
+                          <div class="ico-card">
                               <i class="fa fa-empire"></i>
                           </div>
                       </div>
@@ -134,10 +138,10 @@
                       <div class="card gr-4">
                           <div class="txt">
                               <h1>Latest Product </br>
-                              Management</h1>
-                         </div>
-                       <div class="ico-card">
-                       <i class="fa fa-gears"></i>
+                                  Management</h1>
+                          </div>
+                          <div class="ico-card">
+                              <i class="fa fa-gears"></i>
                           </div>
                       </div>
                   </div>
