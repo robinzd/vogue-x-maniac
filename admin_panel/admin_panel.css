@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
 
 :root {
     --header-height: 3rem;
@@ -277,35 +278,10 @@ h4{
 .card .txt h1 {
   font-size: 1.5rem;
   font-weight: 300;
-  text-transform: uppercase;
+  text-transform:capitalize;
+  font-family: 'Roboto', sans-serif;
 }
-.card .txt p {
-  font-size: 0.7rem;
-  font-family: "Open Sans", sans-serif;
-  letter-spacing: 0rem;
-  margin-top: 33px;
-  opacity: 0;
-  color: white;
-}
-.card a {
-  z-index: 3;
-  font-size: 0.7rem;
-  color: black;
-  margin-left: 1rem;
-  position: relative;
-  bottom: -0.5rem;
-  text-transform: uppercase;
-}
-.card a:after {
-  content: "";
-  display: inline-block;
-  height: 0.5em;
-  width: 0;
-  margin-right: -100%;
-  margin-left: 10px;
-  border-top: 1px solid white;
-  transition: 0.5s;
-}
+
 .card .ico-card {
   position: absolute;
   top: 0;
