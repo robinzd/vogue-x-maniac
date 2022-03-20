@@ -215,15 +215,15 @@ if (isset($_GET['delid'])) {
             margin-top: 2px;
         }
 
-        
 
-        .fa-home{
-            color:black;
+
+        .fa-home {
+            color: black;
         }
 
         .navbar-text {
             display: inline-block;
-          
+
         }
 
         .icon,
@@ -235,25 +235,23 @@ if (isset($_GET['delid'])) {
             margin-left: 10px;
         }
 
-       .navbar{
-        background-color:#f5f5f5;
-       }
-
-
+        .navbar {
+            background-color: #f5f5f5;
+        }
     </style>
 </head>
 
 <body>
     <!-- navbar starts -->
-  
+
 
     <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-text">
                 <div class="icon"><a href="../admin_panel.php"><i class="fa fa-home"></i></a></div>
                 <div class="text">Home</div>
-                </div>
-              
+            </div>
+
         </div>
     </nav>
 
@@ -322,6 +320,14 @@ if (isset($_GET['delid'])) {
             </div>
         </div>
     </div>
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color:black;">
+            © 2022 Copyright:
+            <a class="text-dark" href="">Vogue X Maniac</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 </body>
 
 </html>
