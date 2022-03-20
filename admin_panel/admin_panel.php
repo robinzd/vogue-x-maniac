@@ -79,11 +79,11 @@
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-4">
                           <div class="txt">
-                              <h1>Slider 2 </br>
+                          <h1>Latest Product </br>
                               Management</h1>
                          </div>
                        <div class="ico-card">
-                              <i class="fa fa-empire"></i>
+                         <i class="fa fa-gears"></i>
                           </div>
                       </div>
                   </div>
@@ -133,11 +133,11 @@
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-4">
                           <div class="txt">
-                              <h1>Slider 2 </br>
+                              <h1>Latest Product </br>
                               Management</h1>
                          </div>
                        <div class="ico-card">
-                              <i class="fa fa-empire"></i>
+                       <i class="fa fa-gears"></i>
                           </div>
                       </div>
                   </div>
