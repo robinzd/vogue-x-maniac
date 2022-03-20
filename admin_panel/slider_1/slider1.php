@@ -246,6 +246,15 @@ if (isset($_GET['delid'])) {
             width: 100%;
          
         }
+
+        .text-center.p-3{
+            color:black;
+        }
+
+        .text-dark {
+       color: black;
+       text-decoration: none;
+        }
     </style>
 </head>
 
