@@ -64,7 +64,7 @@
                                   Management</h1>
                           </div>
                           <div class="ico-card">
-                              <i class="fa fa-codepen"></i>
+                          <i class="fa fa-wrench"></i>
                           </div>
                       </div>
                   </a>
@@ -124,7 +124,7 @@
                                   Management</h1>
                           </div>
                           <div class="ico-card">
-                              <i class="fa fa-codepen"></i>
+                          <i class="fa fa-wrench"></i>
                           </div>
                       </div>
                   </a>
