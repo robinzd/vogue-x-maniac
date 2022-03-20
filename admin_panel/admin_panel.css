@@ -226,6 +226,12 @@ h4{
   transform: translateY(-50%);
 }
 
+.align-middle-1{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+  }
+
 .column {
   margin-top: 3rem;
   padding-left: 3rem;
