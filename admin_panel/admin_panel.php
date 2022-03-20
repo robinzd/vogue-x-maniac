@@ -39,8 +39,8 @@
           </div>
           <!--Container Main start-->
 
-          <h4>Main Components</h4><br><br><br><br>
-          <div class="container">
+          <h4>Main Components</h4>
+          <div class="container-fluid">
               <div class="row align-middle">
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-1">
