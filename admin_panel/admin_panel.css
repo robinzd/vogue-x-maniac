@@ -222,7 +222,7 @@ h4{
 
 .align-middle {
   position: relative;
-  top: 50%;
+  top:0px;
   transform: translateY(-50%);
 }
 
