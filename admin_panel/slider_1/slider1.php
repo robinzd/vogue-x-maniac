@@ -247,7 +247,14 @@ if (isset($_GET['delid'])) {
 
             </div>
 
+            <div class="form-group">
+					<input type="search" class="form-control" required="true">
+				</div>
+
+
         </div>
+
+        <input 
 
 
 
