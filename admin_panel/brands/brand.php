@@ -213,9 +213,9 @@ table.table td i {
         footer.bg-light.text-center.text-lg-start {
             position: fixed;
             left: 0;
-            bottom: 0;
+            bottom: 0 auto;
             width: 100%;
-            z-index:9999;
+          
         }
 
         .text-center.p-3{
