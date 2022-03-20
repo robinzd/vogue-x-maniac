@@ -87,11 +87,11 @@
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-1">
                           <div class="txt">
-                              <h1>BRANDING AND </br>
-                                  CORPORATE DESIGN</h1>
+                          <h1>Slider 1 </br>
+                                  Management</h1>
                             </div>
                       <div class="ico-card">
-                              <i class="fa fa-rebel"></i>
+                      <i class="fa fa-gear"></i>
                           </div>
                       </div>
                   </div>
