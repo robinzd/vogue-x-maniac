@@ -244,13 +244,14 @@ if (isset($_GET['delid'])) {
             <div class="navbar-text">
                 <div class="icon"><a href="../admin_panel.php"><i class="fa fa-home"></i></a></div>
                 <div class="text">Home</div>
-            </div>
-            <div class="input-group rounded right-aligned">
+                <div class="input-group rounded right-aligned">
   <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
   <span class="input-group-text border-0" id="search-addon">
-    <i class="fas fa-search"></i>
+    <i class="fa fa-search"></i>
   </span>
 </div>
+            </div>
+           
                 
             </div>
 
