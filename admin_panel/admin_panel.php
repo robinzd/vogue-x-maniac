@@ -40,8 +40,8 @@
           <!--Container Main start-->
 
           <h4>Main Components</h4>
-          <div class="container-fluid h-100">
-              <div class="row align-middle .d-none .d-xxl-block">
+          <div class="container-fluid h-100 d-none d-lg-block">
+              <div class="row align-middle ">
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-1">
                           <div class="txt">
@@ -55,20 +55,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="row align-middle-1.d-lg-none .d-xl-block">
-                  <div class="col-md-6 col-lg-4 column">
-                      <div class="card gr-1">
-                          <div class="txt">
-                              <h1>BRANDING AND </br>
-                                  CORPORATE DESIGN</h1>
-                              <p>Visual communication and problem-solving</p>
-                          </div>
-                          <a href="#">more</a>
-                          <div class="ico-card">
-                              <i class="fa fa-rebel"></i>
-                          </div>
-                      </div>
-                  </div>
+                 
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-2">
                           <div class="txt">
@@ -100,6 +87,51 @@
 
 
           <!--Container Main end-->
+
+          <div class="container-fluid h-100 d-lg-none">
+              <div class="row align-middle-1">
+                  <div class="col-md-6 col-lg-4 column">
+                      <div class="card gr-1">
+                          <div class="txt">
+                              <h1>BRANDING AND </br>
+                                  CORPORATE DESIGN</h1>
+                              <p>Visual communication and problem-solving</p>
+                          </div>
+                          <a href="#">more</a>
+                          <div class="ico-card">
+                              <i class="fa fa-rebel"></i>
+                          </div>
+                      </div>
+                  </div>
+                 
+                  <div class="col-md-6 col-lg-4 column-1">
+                      <div class="card gr-2">
+                          <div class="txt">
+                              <h1>Web Front-End </br>
+                                  SOLUTIONS</h1>
+                              <p>How design is implemented on the web.</p>
+                          </div>
+                          <a href="#">more</a>
+                          <div class="ico-card">
+                              <i class="fa fa-codepen"></i>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 column-1">
+                      <div class="card gr-3">
+                          <div class="txt">
+                              <h1>UX/UI WEBsite </br>AND MOBILE app</h1>
+                              <p>User Interface and User Experience Design.</p>
+                          </div>
+                          <a href="#">more</a>
+                          <div class="ico-card">
+                              <i class="fa fa-empire"></i>
+                          </div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
 
 
 
