@@ -264,14 +264,15 @@ if (isset($_GET['delid'])) {
 
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-        <div class="navbar-text">
+            <div class="navbar-text">
                 <div class="icon"><a href="../admin_panel.php"><i class="fa fa-home"></i></a></div>
                 <div class="text">Home</div>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
+                </div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+        
         </div>
     </nav>
 
