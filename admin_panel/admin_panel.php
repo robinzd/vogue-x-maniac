@@ -55,7 +55,7 @@
                           </div>
                       </div>
                   </div>
-                 
+
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-2">
                           <div class="txt">
@@ -103,8 +103,8 @@
                           </div>
                       </div>
                   </div>
-                 
-                  <div class="col-md-6 col-lg-4 column-1">
+
+                  <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-2">
                           <div class="txt">
                               <h1>Web Front-End </br>
@@ -117,7 +117,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-md-6 col-lg-4 column-1">
+                  <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-3">
                           <div class="txt">
                               <h1>UX/UI WEBsite </br>AND MOBILE app</h1>
