@@ -215,8 +215,10 @@ if (isset($_GET['delid'])) {
             margin-top: 2px;
         }
 
-        .fa-house {
-            color: black;
+        
+
+        .fa-home{
+            color:black;
         }
 
         .navbar-text {
