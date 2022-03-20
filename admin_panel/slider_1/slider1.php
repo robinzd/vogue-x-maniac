@@ -221,7 +221,7 @@ if (isset($_GET['delid'])) {
 
         .navbar-text {
             display: inline-block;
-            width: 100%;
+          
         }
 
         .icon,
