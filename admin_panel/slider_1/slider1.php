@@ -244,7 +244,11 @@ if (isset($_GET['delid'])) {
             <div class="navbar-text">
                 <div class="icon"><a href="../admin_panel.php"><i class="fa fa-home"></i></a></div>
                 <div class="text">Home</div>
-                <form class="form-inline">
+               
+            </div>
+
+            <div>
+            <form class="form-inline">
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                 </form>
