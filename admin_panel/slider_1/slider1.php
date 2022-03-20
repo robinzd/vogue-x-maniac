@@ -239,7 +239,7 @@ if (isset($_GET['delid'])) {
             background-color: #f5f5f5;
         }
 
-        footer.bg-light .text-center .text-lg-start {
+        footer.bg-light.text-center.text-lg-start {
             position: fixed;
             left: 0;
             bottom: 0;
