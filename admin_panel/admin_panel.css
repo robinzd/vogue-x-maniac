@@ -161,6 +161,7 @@ a {
 
 h4{
     padding-top: 20px;
+   font-family: 'Roboto', sans-serif;
 }
 
 .height-100 {
@@ -203,8 +204,7 @@ h4{
 
 /* admin panel card styles */
 
-@import url("https://fonts.googleapis.com/css?family=Oswald:300,400,500,700");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+
 .gr-1 {
   background: linear-gradient(170deg, #093135 0%, #23273a 100%);
 }
@@ -272,7 +272,7 @@ h4{
   border-radius: 0;
   color: black;
   letter-spacing: 0.05rem;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Roboto', sans-serif;
   box-shadow: 0 0 21px rgba(0, 0, 0, 0.27);
 }
 .card .txt {
