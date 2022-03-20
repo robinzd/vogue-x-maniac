@@ -233,7 +233,9 @@ if (isset($_GET['delid'])) {
             margin-left: 10px;
         }
 
-       
+       .navbar{
+        background-color:#f5f5f5;
+       }
 
 
     </style>
@@ -243,7 +245,7 @@ if (isset($_GET['delid'])) {
     <!-- navbar starts -->
   
 
-    <nav class="navbar navbar-secondary bg-secondary">
+    <nav class="navbar">
         <div class="container-fluid">
             <div class="navbar-text">
                 <div class="icon"><a href="../admin_panel.php"><i class="fa fa-home"></i></a></div>
