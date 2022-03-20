@@ -251,15 +251,6 @@ if (isset($_GET['delid'])) {
 
         </div>
 
-        <input 
-
-
-
-
-
-
-
-        </div>
     </nav>
 
 
