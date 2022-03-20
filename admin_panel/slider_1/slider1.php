@@ -236,6 +236,12 @@ if (isset($_GET['delid'])) {
         input.form-control.me-2{
             border:1px solid whitesmoke;
         }
+
+        input.form-control.me-2:focus{
+            box-shadow: none;
+        }
+
+
     </style>
 </head>
 
