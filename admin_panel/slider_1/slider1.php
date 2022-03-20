@@ -251,10 +251,11 @@ if (isset($_GET['delid'])) {
             color:black;
         }
 
-        a.text-dark {
+        a.text{
        color: black;
        text-decoration: none;
         }
+
     </style>
 </head>
 
@@ -341,7 +342,7 @@ if (isset($_GET['delid'])) {
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
             © 2022 Copyright:
-            <a class="text-dark" href="">Vogue X Maniac</a>
+            <a class="text" href="">Vogue X Maniac</a>
         </div>
         <!-- Copyright -->
     </footer>
