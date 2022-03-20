@@ -57,8 +57,8 @@
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-2">
                           <div class="txt">
-                              <h1>Web Front-End </br>
-                                  SOLUTIONS</h1>
+                          <h1>Brands  </br>
+                                  Management</h1>
                             </div>
                         <div class="ico-card">
                               <i class="fa fa-codepen"></i>
@@ -68,7 +68,8 @@
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-3">
                           <div class="txt">
-                              <h1>UX/UI WEBsite </br>AND MOBILE app</h1>
+                              <h1>Slider 2 </br>
+                              Management</h1>
                          </div>
                        <div class="ico-card">
                               <i class="fa fa-empire"></i>
@@ -99,8 +100,8 @@
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-2">
                           <div class="txt">
-                              <h1>Web Front-End </br>
-                                  SOLUTIONS</h1>
+                              <h1>Brands  </br>
+                                  Management</h1>
                          </div>
                      <div class="ico-card">
                               <i class="fa fa-codepen"></i>
@@ -110,7 +111,8 @@
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-3">
                           <div class="txt">
-                              <h1>UX/UI WEBsite </br>AND MOBILE app</h1>
+                          <h1>Slider 2 </br>
+                              Management</h1>
                          </div>
                      <div class="ico-card">
                               <i class="fa fa-empire"></i>
