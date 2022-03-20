@@ -237,30 +237,7 @@ if (isset($_GET['delid'])) {
 
 <body>
     <!-- navbar starts -->
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-
-
-            <div class="navbar-text">
-                <div class="icon"><a href="../admin_panel.php"><i class="fa fa-home"></i></a></div>
-                <div class="text">Home</div>
-                <div class="form">
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </div>
-
-
-            </div>
-
-
-
-
-
-        </div>
-
-    </nav>
+  
 
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
