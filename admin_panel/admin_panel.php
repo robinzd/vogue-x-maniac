@@ -49,7 +49,7 @@
                                   Management</h1>
                             </div>
                         <div class="ico-card">
-                        <i class="fa fa-slider"></i>
+                        <i class="fa fa-gear"></i>
                           </div>
                       </div>
                   </div>
