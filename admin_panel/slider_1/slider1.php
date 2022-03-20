@@ -244,6 +244,7 @@ if (isset($_GET['delid'])) {
             <div class="navbar-text">
                 <div class="icon"><a href="../admin_panel.php"><i class="fa fa-home"></i></a></div>
                 <div class="text">Home</div>
+                <input type="text" placeholder="search">
             </div>
 
            
