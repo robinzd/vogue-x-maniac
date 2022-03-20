@@ -49,7 +49,7 @@ a {
 }
 
 .header_toggle {
-    color: white;
+    color: black;
     font-size: 1.5rem;
     cursor: pointer
 }
@@ -102,6 +102,10 @@ a {
 
 .nav_logo {
     margin-bottom: 2rem
+}
+
+.fa-user{
+    color:black;
 }
 
 .nav_logo-icon {
