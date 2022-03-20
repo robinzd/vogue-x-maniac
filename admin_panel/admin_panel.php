@@ -41,14 +41,14 @@
 
           <h4>Main Components</h4>
           <div class="container-fluid">
-              <div class="row align-middle">
+             
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-1">
                           <div class="txt">
                               <h1>BRANDING AND </br>
                                   CORPORATE DESIGN</h1>
-                            </div>
-                         
+                          </div>
+
                           <div class="ico-card">
                               <i class="fa fa-rebel"></i>
                           </div>
@@ -59,8 +59,8 @@
                           <div class="txt">
                               <h1>Web Front-End </br>
                                   SOLUTIONS</h1>
-                            </div>
-                          
+                          </div>
+
                           <div class="ico-card">
                               <i class="fa fa-codepen"></i>
                           </div>
@@ -70,15 +70,15 @@
                       <div class="card gr-3">
                           <div class="txt">
                               <h1>UX/UI WEBsite </br>AND MOBILE app</h1>
-                         </div>
-                         
+                          </div>
+
                           <div class="ico-card">
                               <i class="fa fa-empire"></i>
                           </div>
                       </div>
                   </div>
 
-              </div>
+             
           </div>
 
 
