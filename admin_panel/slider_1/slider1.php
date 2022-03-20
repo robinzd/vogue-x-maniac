@@ -226,8 +226,8 @@ if (isset($_GET['delid'])) {
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
             <span class="navbar-text">
-                <h4>Home</h4>
-        <a href="../admin_panel.php"><i class="fa fa-home"></i></a>
+              
+        <a href="../admin_panel.php"><i class="fa fa-home"></i><h4>Home</h4></a>
             </span>
         </div>
     </nav>
