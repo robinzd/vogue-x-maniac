@@ -76,6 +76,17 @@
                           </div>
                       </div>
                   </div>
+                  <div class="col-md-6 col-lg-4 column">
+                      <div class="card gr-3">
+                          <div class="txt">
+                              <h1>Slider 2 </br>
+                              Management</h1>
+                         </div>
+                       <div class="ico-card">
+                              <i class="fa fa-empire"></i>
+                          </div>
+                      </div>
+                  </div>
 
               </div>
           </div>
@@ -115,6 +126,17 @@
                               Management</h1>
                          </div>
                      <div class="ico-card">
+                              <i class="fa fa-empire"></i>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 column">
+                      <div class="card gr-3">
+                          <div class="txt">
+                              <h1>Slider 2 </br>
+                              Management</h1>
+                         </div>
+                       <div class="ico-card">
                               <i class="fa fa-empire"></i>
                           </div>
                       </div>
