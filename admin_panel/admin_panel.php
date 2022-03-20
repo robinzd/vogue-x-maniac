@@ -57,6 +57,7 @@
                   </div>
 
                   <div class="col-md-6 col-lg-4 column">
+                  <a href="./brands/brand.php">
                       <div class="card gr-2">
                           <div class="txt">
                               <h1>Brands </br>
@@ -66,8 +67,10 @@
                               <i class="fa fa-codepen"></i>
                           </div>
                       </div>
+                  </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
+                  <a href="./slider_2/slider2.php">
                       <div class="card gr-3">
                           <div class="txt">
                               <h1>Slider 2 </br>
@@ -77,6 +80,7 @@
                               <i class="fa fa-empire"></i>
                           </div>
                       </div>
+                  </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-4">
@@ -113,6 +117,7 @@
                   </div>
 
                   <div class="col-md-6 col-lg-4 column">
+                  <a href="./brands/brand.php">
                       <div class="card gr-2">
                           <div class="txt">
                               <h1>Brands </br>
@@ -122,8 +127,10 @@
                               <i class="fa fa-codepen"></i>
                           </div>
                       </div>
+                  </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
+                  <a href="./slider_2/slider2.php">
                       <div class="card gr-3">
                           <div class="txt">
                               <h1>Slider 2 </br>
@@ -133,6 +140,7 @@
                               <i class="fa fa-empire"></i>
                           </div>
                       </div>
+                  </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
                       <div class="card gr-4">
