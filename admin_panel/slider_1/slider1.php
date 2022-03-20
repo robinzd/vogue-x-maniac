@@ -234,10 +234,7 @@ if (isset($_GET['delid'])) {
         }
 
         /* search box */
-        .height {
-    height: 100vh
-}
-
+   
 .search {
     position: relative;
     box-shadow: 0 0 40px rgba(51, 51, 51, .1)
