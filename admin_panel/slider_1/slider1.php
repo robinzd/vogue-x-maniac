@@ -223,39 +223,14 @@ if (isset($_GET['delid'])) {
 
 <body>
     <!-- navbar starts -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="javascript:void(0)">Logo</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Link</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-primary" type="button">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-
-<div class="container-fluid mt-3">
-  <h3>Navbar Forms</h3>
-  <p>You can also include forms inside the navigation bar.</p>
-</div>
-
-</body>
-</html>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <div class="navbar-text">
+                <h4>Home</h4><span><a href="../admin_panel.php"><i class="fa fa-home"></i></a>
+            </div>
+           
+        </div>
+    </nav>
 
 
     <!-- navbar ends -->
