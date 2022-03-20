@@ -232,6 +232,10 @@ if (isset($_GET['delid'])) {
         .text {
             margin-left: 10px;
         }
+
+        input.form-control.me-2{
+            border:1px solid white;
+        }
     </style>
 </head>
 
