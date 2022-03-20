@@ -251,7 +251,7 @@ if (isset($_GET['delid'])) {
                 </div>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit"><i class="fa fa-magnifying-glass"></i></button>
+                    <button class="btn btn-outline-success" type="submit"><i class="fa fa-search"></i></button>
                 </form>
         
         </div>
