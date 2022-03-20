@@ -251,7 +251,7 @@ if (isset($_GET['delid'])) {
             color:black;
         }
 
-        .text-dark {
+        a.text-dark {
        color: black;
        text-decoration: none;
         }
