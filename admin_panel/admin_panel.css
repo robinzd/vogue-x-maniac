@@ -222,10 +222,7 @@ h4{
   transform: translateY(-50%);
 }
 
-.column {
-  margin-top: 50px;
-  padding-left: 3rem;
-}
+
 .column:hover {
   padding-left: 0;
 }

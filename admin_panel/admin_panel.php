@@ -40,9 +40,9 @@
           <!--Container Main start-->
 
           <h4>Main Components</h4>
-         
+          <div class="container-fluid h-100">
               <div class="row align-middle">
-                  <div class="col-md-6 col-lg-4 column">
+                  <div class="col-md-6 col-lg-4">
                       <div class="card gr-1">
                           <div class="txt">
                               <h1>BRANDING AND </br>
@@ -54,7 +54,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-md-6 col-lg-4 column">
+                  <div class="col-md-6 col-lg-4">
                       <div class="card gr-2">
                           <div class="txt">
                               <h1>Web Front-End </br>
@@ -66,7 +66,7 @@
                           </div>
                       </div>
                   </div>
-                  <div class="col-md-6 col-lg-4 column">
+                  <div class="col-md-6 col-lg-4">
                       <div class="card gr-3">
                           <div class="txt">
                               <h1>UX/UI WEBsite </br>AND MOBILE app</h1>
@@ -79,7 +79,7 @@
                   </div>
 
               </div>
-          
+          </div>
 
 
           <!--Container Main end-->
