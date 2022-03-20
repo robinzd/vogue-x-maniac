@@ -215,9 +215,23 @@ if (isset($_GET['delid'])) {
             margin-top: 2px;
         }
 
-         .fa-house{
-             color:black;
-         }
+        .fa-house {
+            color: black;
+        }
+
+        .navbar-text {
+            display: inline-block;
+            width: 100%;
+        }
+
+        .icon,
+        .text {
+            display: inline;
+        }
+
+        .text {
+            margin-left: 10px;
+        }
     </style>
 </head>
 
@@ -225,10 +239,16 @@ if (isset($_GET['delid'])) {
     <!-- navbar starts -->
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-            <div class="navbar-text">
-                <h4>Home</h4><span><a href="../admin_panel.php"><i class="fa fa-home"></i></a>
-            </div>
            
+
+            <div class="navbar-text">
+                <div class="icon"><a href="../admin_panel.php"><i class="fa fa-home"></i></a></div>
+                <div class="text">Home</div>
+            </div>
+
+
+
+
         </div>
     </nav>
 
