@@ -215,6 +215,7 @@ table.table td i {
             left: 0;
             bottom: 0 auto;
             width: 100%;
+            overflow: hidden;
           
         }
 
