@@ -77,7 +77,7 @@
                       </div>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                      <div class="card gr-3">
+                      <div class="card gr-4">
                           <div class="txt">
                               <h1>Slider 2 </br>
                               Management</h1>
@@ -131,7 +131,7 @@
                       </div>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                      <div class="card gr-3">
+                      <div class="card gr-4">
                           <div class="txt">
                               <h1>Slider 2 </br>
                               Management</h1>
