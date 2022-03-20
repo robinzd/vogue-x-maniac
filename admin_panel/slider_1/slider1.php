@@ -234,7 +234,7 @@ if (isset($_GET['delid'])) {
         }
 
         .navbar{
-            background-color: lightgreen;
+            background-color: grey;
         }
        
 
