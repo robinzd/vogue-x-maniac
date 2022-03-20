@@ -48,7 +48,7 @@
                               <h1>BRANDING AND </br>
                                   CORPORATE DESIGN</h1>
                             </div>
-                          <a href="#">more</a>
+                         
                           <div class="ico-card">
                               <i class="fa fa-rebel"></i>
                           </div>
@@ -60,7 +60,7 @@
                               <h1>Web Front-End </br>
                                   SOLUTIONS</h1>
                             </div>
-                          <a href="#">more</a>
+                          
                           <div class="ico-card">
                               <i class="fa fa-codepen"></i>
                           </div>
@@ -71,7 +71,7 @@
                           <div class="txt">
                               <h1>UX/UI WEBsite </br>AND MOBILE app</h1>
                          </div>
-                          <a href="#">more</a>
+                         
                           <div class="ico-card">
                               <i class="fa fa-empire"></i>
                           </div>
