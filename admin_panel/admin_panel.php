@@ -218,11 +218,16 @@
               </div>
           </div>
 
-          <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
-    <div class="container-fluid text-center">
-      <small>Copyright &copy; Your Website</small>
-    </div>
-  </footer>
+
+          <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color:ghostwhite;">
+            © 2022 Copyright:
+            <a class="text1" href="/index.php`">Vogue X Maniac</a>
+        </div>
+        </footer>
+
+
 
 
           <!-- j query -->
