@@ -51,7 +51,7 @@
         
 
           <div class="main__title">
-            <img src="./dashboard pics/undraw_Feeling_of_joy_re_cqko.png" alt="" />
+            <img src="./dashboard pics/welcome.png" alt="" />
             <div class="main__greeting">
               <h1>Hello, Abdul AslamSha</h1>
               <p>Welcome to your admin dashboard</p>
