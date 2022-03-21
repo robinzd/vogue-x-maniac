@@ -136,112 +136,113 @@
               </div>
           </div>
           <footer class="bg-light text-center text-lg-start d-none d-lg-block">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color:ghostwhite;">
-            © 2022 Copyright:
-            <a class="text1" href="/index.php`">Vogue X Maniac</a>
+              <!-- Copyright -->
+              <div class="text-center p-3" style="background-color:ghostwhite;">
+                  © 2022 Copyright:
+                  <a class="text1" href="/index.php`">Vogue X Maniac</a>
+              </div>
 
 
-          <!--Container Main end-->
+              <!--Container Main end-->
 
-          <div class="container-fluid h-100 d-lg-none">
-              <div class="row align-middle-1">
-                  <div class="col-md-6 col-lg-4 column">
-                      <a href="./slider_1/slider1.php">
-                          <div class="card gr-1">
+              <div class="container-fluid h-100 d-lg-none">
+                  <div class="row align-middle-1">
+                      <div class="col-md-6 col-lg-4 column">
+                          <a href="./slider_1/slider1.php">
+                              <div class="card gr-1">
+                                  <div class="txt">
+                                      <h1>Slider 1 </br>
+                                          Management</h1>
+                                  </div>
+                                  <div class="ico-card">
+                                      <i class="fa fa-gear"></i>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+
+                      <div class="col-md-6 col-lg-4 column">
+                          <a href="./brands/brand.php">
+                              <div class="card gr-2">
+                                  <div class="txt">
+                                      <h1>Brands </br>
+                                          Management</h1>
+                                  </div>
+                                  <div class="ico-card">
+                                      <i class="fa fa-wrench"></i>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="col-md-6 col-lg-4 column">
+                          <a href="./slider_2/slider2.php">
+                              <div class="card gr-3">
+                                  <div class="txt">
+                                      <h1>Slider 2 </br>
+                                          Management</h1>
+                                  </div>
+                                  <div class="ico-card">
+                                      <i class="fa fa-empire"></i>
+                                  </div>
+                              </div>
+                          </a>
+                      </div>
+                      <div class="col-md-6 col-lg-4 column">
+                          <div class="card gr-4">
                               <div class="txt">
-                                  <h1>Slider 1 </br>
+                                  <h1>Latest Product </br>
                                       Management</h1>
                               </div>
                               <div class="ico-card">
-                                  <i class="fa fa-gear"></i>
+                                  <i class="fa fa-gears"></i>
                               </div>
                           </div>
-                      </a>
-                  </div>
-
-                  <div class="col-md-6 col-lg-4 column">
-                      <a href="./brands/brand.php">
-                          <div class="card gr-2">
+                      </div>
+                      <div class="col-md-6 col-lg-4 column">
+                          <div class="card gr-4">
                               <div class="txt">
-                                  <h1>Brands </br>
+                                  <h1>Latest Product </br>
                                       Management</h1>
                               </div>
                               <div class="ico-card">
-                                  <i class="fa fa-wrench"></i>
+                                  <i class="fa fa-gears"></i>
                               </div>
                           </div>
-                      </a>
-                  </div>
-                  <div class="col-md-6 col-lg-4 column">
-                      <a href="./slider_2/slider2.php">
-                          <div class="card gr-3">
+                      </div>
+                      <div class="col-md-6 col-lg-4 column">
+                          <div class="card gr-4">
                               <div class="txt">
-                                  <h1>Slider 2 </br>
+                                  <h1>Latest Product </br>
                                       Management</h1>
                               </div>
                               <div class="ico-card">
-                                  <i class="fa fa-empire"></i>
+                                  <i class="fa fa-gears"></i>
                               </div>
                           </div>
-                      </a>
-                  </div>
-                  <div class="col-md-6 col-lg-4 column">
-                      <div class="card gr-4">
-                          <div class="txt">
-                              <h1>Latest Product </br>
-                                  Management</h1>
-                          </div>
-                          <div class="ico-card">
-                              <i class="fa fa-gears"></i>
-                          </div>
                       </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4 column">
-                      <div class="card gr-4">
-                          <div class="txt">
-                              <h1>Latest Product </br>
-                                  Management</h1>
+                      <footer class="bg-light text-center text-lg-start">
+                          <!-- Copyright -->
+                          <div class="text-center p-3" style="background-color:ghostwhite;">
+                              © 2022 Copyright:
+                              <a class="text1" href="/index.php`">Vogue X Maniac</a>
                           </div>
-                          <div class="ico-card">
-                              <i class="fa fa-gears"></i>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-md-6 col-lg-4 column">
-                      <div class="card gr-4">
-                          <div class="txt">
-                              <h1>Latest Product </br>
-                                  Management</h1>
-                          </div>
-                          <div class="ico-card">
-                              <i class="fa fa-gears"></i>
-                          </div>
-                      </div>
-                  </div>
-                  <footer class="bg-light text-center text-lg-start">
-                      <!-- Copyright -->
-                      <div class="text-center p-3" style="background-color:ghostwhite;">
-                          © 2022 Copyright:
-                          <a class="text1" href="/index.php`">Vogue X Maniac</a>
-                      </div>
 
+
+                  </div>
 
               </div>
 
-          </div>
 
 
 
 
 
+              <!-- j query -->
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+              <script src="admin_panel.js"></script>
 
-          <!-- j query -->
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-          <script src="admin_panel.js"></script>
 
-
-          <!-- Copyright -->
+              <!-- Copyright -->
 
       </body>
 
