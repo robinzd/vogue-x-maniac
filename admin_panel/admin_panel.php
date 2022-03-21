@@ -51,9 +51,18 @@
           </div>
           <!--Container Main start-->
 
+        
+
+          <div class="main__title">
+            <img src="./dashboard pics/undraw_Feeling_of_joy_re_cqko.png" alt="" />
+            <div class="main__greeting">
+              <h1>Hello Codersbite</h1>
+              <p>Welcome to your admin dashboard</p>
+            </div>
+          </div>
           <h4>Main Components</h4>
           <div class="container-fluid h-100 d-none d-lg-block">
-              <div class="row align-middle ">
+                <div class="row align-middle ">
                   <div class="col-md-6 col-lg-4 column">
                       <a href="./slider_1/slider1.php">
                           <div class="card gr-1">
