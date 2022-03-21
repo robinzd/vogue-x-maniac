@@ -364,7 +364,7 @@ main {
   margin-bottom: 5px;
 }
 
-.menu_link {
+.menu_link:hover {
   background: rgba(62, 161, 117, 0.3);
   color: #3ea175;
 }
