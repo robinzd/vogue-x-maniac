@@ -142,6 +142,11 @@ a {
 
 .body-pd {
     padding-left: calc(var(--nav-width) + 1rem)
+  
+}
+
+body{
+  background-color: ghostwhite;
 }
 
 .active {
