@@ -24,10 +24,17 @@
       <body id="body-pd">
           <header class="header" id="header">
               <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
-              <a href="#">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-              </a>
-              <div class="header_img"> <img src="" alt=""> </div>
+              <div class="navbar__right">
+                  <a href="#">
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                  </a>
+                  <a href="#">
+                      <i class="fa fa-clock-o" aria-hidden="true"></i>
+                  </a>
+                  <a href="#">
+                      <img width="30" src="assets/avatar.svg" alt="" />
+                  </a>
+              </div>
           </header>
           <div class="l-navbar" id="nav-bar">
               <nav class="nav">
