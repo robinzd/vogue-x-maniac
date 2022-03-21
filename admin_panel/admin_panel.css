@@ -52,7 +52,7 @@ a {
 }
 
 .header_toggle {
-    color: lightgreen;
+    color: grey;
     font-size: 1.5rem;
     cursor: pointer
 }
