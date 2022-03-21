@@ -44,7 +44,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    background-color:white;
+    background-color:ghostwhite;
     z-index: var(--z-fixed);
     transition: .5s
 }
