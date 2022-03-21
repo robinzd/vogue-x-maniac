@@ -214,14 +214,20 @@
                           </div>
                       </div>
                   </div>
+                  <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #f5f5f5;">
+            © 2022 Copyright:
+            <a class="text1" href="/index.php`">Vogue X Maniac</a>
+        </div>
+         
 
               </div>
              
           </div>
 
         
-
-         
+        
 
 
 
@@ -229,12 +235,7 @@
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
           <script src="admin_panel.js"></script>
 
-          <footer class="bg-light text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: #f5f5f5;">
-            © 2022 Copyright:
-            <a class="text1" href="/index.php`">Vogue X Maniac</a>
-        </div>
+        
         <!-- Copyright -->
 
       </body>
