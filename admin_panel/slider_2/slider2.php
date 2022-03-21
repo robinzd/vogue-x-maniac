@@ -183,9 +183,65 @@ table.table td i {
         i.material-icons{
             margin-top: 2px;
         }
+
+        .fa-home {
+            color: black;
+        }
+
+        .navbar-text {
+            display: inline-block;
+
+        }
+
+        .icon,
+        .text {
+            display: inline;
+        }
+
+        .text {
+            margin-left: 10px;
+        }
+
+        .navbar {
+            background-color: #f5f5f5;
+        }
+
+        footer.bg-light.text-center.text-lg-start {
+           
+            left: 0;
+            bottom: 0;
+            width: 100%;
+         
+        }
+
+        .text-center.p-3{
+            color:black;
+        }
+
+        a.text1{
+       color: black;
+       text-decoration: none;
+        }
 </style>
 </head>
 <body>
+     <!-- navbar starts -->
+
+
+     <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-text">
+                <div class="icon"><a href="../admin_panel.php"><i class="fa fa-home"></i></a></div>
+                <div class="text">Home</div>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+    <!-- navbar ends -->
 <div class="container-xl">
     <div class="table-responsive">
         <div class="table-wrapper">
@@ -245,6 +301,14 @@ $cnt=$cnt+1;
        
         </div>
     </div>
-</div>     
+</div> 
+
+<footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: #f5f5f5;">
+            © 2022 Copyright:
+            <a class="text1" href="/index.php`">Vogue X Maniac</a>
+        </div>
+        <!-- Copyright -->
 </body>
 </html>
