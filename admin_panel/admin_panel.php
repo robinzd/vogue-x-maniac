@@ -133,7 +133,7 @@
                                   Management</h1>
                           </div>
                           <div class="ico-card">
-                          <i class="fa fa-wrench-simple"></i>
+                          <i class="fa fa-gear"></i>
                           </div>
                       </div>
                   </a>
@@ -223,7 +223,7 @@
                                   Management</h1>
                           </div>
                           <div class="ico-card">
-                          <i class="fa fa-wrench-simple"></i>
+                          <i class="fa fa-gear"></i>
                           </div>
                       </div>
                   </a>
