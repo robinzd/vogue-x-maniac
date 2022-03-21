@@ -135,7 +135,7 @@
 
               </div>
           </div>
-          <footer class="bg-light text-center text-lg-start">
+          <footer class="bg-light text-center text-lg-start d-none d-lg-block">
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color:ghostwhite;">
             © 2022 Copyright:
