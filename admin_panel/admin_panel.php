@@ -48,7 +48,7 @@
                       </div>
                   </div> <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
               </nav>
-          </div>
+          </div><br><br>
           <!--Container Main start-->
 
         
@@ -59,7 +59,7 @@
               <h1>Hello Codersbite</h1>
               <p>Welcome to your admin dashboard</p>
             </div>
-          </div>
+          </div><br><br>
           <h4>Main Components</h4>
           <div class="container-fluid h-100 d-none d-lg-block">
                 <div class="row align-middle ">
