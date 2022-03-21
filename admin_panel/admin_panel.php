@@ -111,24 +111,24 @@
                       </div>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                      <div class="card gr-4">
+                      <div class="card gr-5">
                           <div class="txt">
                               <h1>Latest Product </br>
                                   Management</h1>
                           </div>
                           <div class="ico-card">
-                              <i class="fa fa-gears"></i>
+                          <i class="fa-solid fa-code-fork"></i>
                           </div>
                       </div>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                      <div class="card gr-4">
+                      <div class="card gr-6">
                           <div class="txt">
                               <h1>Latest Product </br>
                                   Management</h1>
                           </div>
                           <div class="ico-card">
-                              <i class="fa fa-gears"></i>
+                          <i class="fa fa-screwdriver-wrench"></i>
                           </div>
                       </div>
                   </div>
@@ -195,24 +195,24 @@
                       </div>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                      <div class="card gr-4">
+                      <div class="card gr-5">
                           <div class="txt">
                               <h1>Latest Product </br>
                                   Management</h1>
                           </div>
                           <div class="ico-card">
-                              <i class="fa fa-gears"></i>
+                          <i class="fa-solid fa-code-fork"></i>
                           </div>
                       </div>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                      <div class="card gr-4">
+                      <div class="card gr-6">
                           <div class="txt">
                               <h1>Latest Product </br>
                                   Management</h1>
                           </div>
                           <div class="ico-card">
-                              <i class="fa fa-gears"></i>
+                          <i class="fa fa-screwdriver-wrench"></i>
                           </div>
                       </div>
                   </div>

@@ -250,6 +250,13 @@ h4{
 .gr-4 {
    background-color:crimson;
   }
+  .gr-5{
+    background-color: cadetblue;
+  }
+
+  .gr-6{
+    background-color: darkgoldenrod;
+  }
 
 * {
   transition: 0.5s;
