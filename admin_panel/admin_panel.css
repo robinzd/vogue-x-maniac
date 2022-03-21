@@ -336,7 +336,7 @@ h4{
 }
 
 .main__title > img {
-  max-height: 100px;
+  height: 200px;
   object-fit: contain;
   margin-right: 20px;
 }
