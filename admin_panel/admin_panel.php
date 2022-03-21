@@ -117,7 +117,7 @@
                                   Management</h1>
                           </div>
                           <div class="ico-card">
-                          <i class="fa-solid fa-code-fork"></i>
+                          <i class="fa fa-code-fork"></i>
                           </div>
                       </div>
                   </div>
@@ -201,7 +201,7 @@
                                   Management</h1>
                           </div>
                           <div class="ico-card">
-                          <i class="fa-solid fa-code-fork"></i>
+                          <i class="fa fa-code-fork"></i>
                           </div>
                       </div>
                   </div>
@@ -212,7 +212,7 @@
                                   Management</h1>
                           </div>
                           <div class="ico-card">
-                          <i class="fa fa-screwdriver-wrench"></i>
+                          <i class="fa fa-wrench"></i>
                           </div>
                       </div>
                   </div>
