@@ -44,7 +44,7 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
-    background-color:teal;
+    background-color:white;
     z-index: var(--z-fixed);
     transition: .5s
 }
@@ -78,7 +78,7 @@ a {
     left: -30%;
     width: var(--nav-width);
     height: 100vh;
-    background-color:teal;
+    background-color:black;
     padding: .5rem 1rem 0 0;
     transition: .5s;
     z-index: var(--z-fixed)
@@ -106,22 +106,22 @@ a {
 }
 
 .fa-user{
-    color:black;
+    color:lightgreen;
 }
 
 .nav_logo-icon {
     font-size: 1.25rem;
-    color:black;
+    color:lightgreen;
 }
 
 .nav_logo-name {
-    color:black;
+    color:lightgreen;
     font-weight: 700
 }
 
 .nav_link {
     position: relative;
-    color:black;
+    color:lightgreen;
     margin-bottom: 1.5rem;
     transition: .3s
 }
