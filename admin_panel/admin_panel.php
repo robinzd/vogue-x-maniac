@@ -57,7 +57,6 @@
               <p>Welcome to your admin dashboard</p>
             </div>
           </div><br><br>
-          <h4>Dashboard</h4>
           <div class="container-fluid h-100 d-none d-lg-block">
                 <div class="row align-middle ">
                   <div class="col-md-6 col-lg-4 column">
