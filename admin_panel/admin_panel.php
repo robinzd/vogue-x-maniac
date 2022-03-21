@@ -160,7 +160,7 @@
         </div>
 
         <div class="sidebar__menu">
-          <div class="sidebar__link active_menu_link">
+          <div class="sidebar__link">
             <i class="fa fa-home"></i>
             <a href="#">Dashboard</a>
           </div>
