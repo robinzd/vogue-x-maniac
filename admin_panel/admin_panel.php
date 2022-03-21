@@ -26,7 +26,7 @@
               <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
               <div class="navbar__right">
                   <a href="#">
-                   <i class="fa fa-bell" aria-hidden="true"></i>
+                      <i class="fa fa-bell" aria-hidden="true"></i>
                   </a>
                   <a href="#">
                       <img width="30" src="assets/avatar.svg" alt="" />
@@ -48,17 +48,17 @@
           </div><br><br>
           <!--Container Main start-->
 
-        
+
 
           <div class="main__title">
-            <img src="./dashboard pics/welcome.png" alt="" />
-            <div class="main__greeting">
-              <h1>Hello, Abdul AslamSha</h1>
-              <p>Welcome to your admin dashboard</p>
-            </div>
+              <img src="./dashboard pics/welcome.png" alt="" />
+              <div class="main__greeting">
+                  <h1>Hello, Abdul AslamSha</h1>
+                  <p>Welcome to your admin dashboard</p>
+              </div>
           </div><br><br>
           <div class="container-fluid h-100 d-none d-lg-block">
-                <div class="row align-middle ">
+              <div class="row align-middle ">
                   <div class="col-md-6 col-lg-4 column">
                       <a href="./slider_1/slider1.php">
                           <div class="card gr-1">
@@ -219,13 +219,11 @@
           </div>
 
 
-          <footer class="bg-light text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color:ghostwhite;">
-            © 2022 Copyright:
-            <a class="text1" href="/index.php`">Vogue X Maniac</a>
-        </div>
-        </footer>
+          <footer id="sticky-footer" class="flex-shrink-0 py-4 bg-dark text-white-50">
+    <div class=" text-center">
+      <small>Copyright &copy; Your Website</small>
+    </div>
+  </footer>
 
 
 
