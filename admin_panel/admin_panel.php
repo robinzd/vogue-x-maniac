@@ -132,7 +132,12 @@
                           </div>
                       </div>
                   </div>
-
+                  <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color:ghostwhite;">
+            © 2022 Copyright:
+            <a class="text1" href="/index.php`">Vogue X Maniac</a>
+        </div>
               </div>
           </div>
 
@@ -216,7 +221,7 @@
                   </div>
                   <footer class="bg-light text-center text-lg-start">
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: #f5f5f5;">
+        <div class="text-center p-3" style="background-color:ghostwhite;">
             © 2022 Copyright:
             <a class="text1" href="/index.php`">Vogue X Maniac</a>
         </div>
