@@ -26,10 +26,7 @@
               <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
               <div class="navbar__right">
                   <a href="#">
-                      <i class="fa fa-search" aria-hidden="true"></i>
-                  </a>
-                  <a href="#">
-                      <i class="fa fa-clock-o" aria-hidden="true"></i>
+                   <i class="fa fa-bell" aria-hidden="true"></i>
                   </a>
                   <a href="#">
                       <img width="30" src="assets/avatar.svg" alt="" />
