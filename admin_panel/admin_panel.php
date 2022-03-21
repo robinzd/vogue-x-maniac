@@ -24,6 +24,9 @@
       <body id="body-pd">
           <header class="header" id="header">
               <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+              <a href="#">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+              </a>
               <div class="header_img"> <img src="" alt=""> </div>
           </header>
           <div class="l-navbar" id="nav-bar">
@@ -39,7 +42,7 @@
           </div>
           <!--Container Main start-->
 
-         
+
 
 
 
