@@ -229,7 +229,8 @@ h4{
 
 
 .gr-1 {
-  background: linear-gradient(170deg, #64bac2 0%, #6874b3 100%);
+  /* background: linear-gradient(170deg, #03eeff 0%, #6874b3 100%); */
+  background-color: wheat;
 }
 
 .gr-2 {
