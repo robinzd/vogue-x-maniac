@@ -56,13 +56,7 @@
 
 
 
-          <div class="main__title">
-              <img src="./dashboard pics/welcome.png" alt="" />
-              <div class="main__greeting">
-                  <h1>Hello, Abdul AslamSha</h1>
-                  <p>Welcome to your admin dashboard</p>
-              </div>
-          </div><br><br>
+          
           <div class="container-fluid h-100 d-none d-lg-block">
               <div class="row align-middle ">
                   <div class="col-md-6 col-lg-4 column">
