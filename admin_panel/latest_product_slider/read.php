@@ -212,9 +212,7 @@ include('dbconnection.php');
             margin-top: 2px;
         }
 
-        .text-center{
-            color:red;
-        }
+      
 
        
     </style>
