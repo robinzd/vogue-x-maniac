@@ -169,6 +169,7 @@ while ($row=mysqli_fetch_array($ret)) {
               <?php 
 }?>
     </form>
+	<div class="text-center">Back To Home <a href="products.php"><i class="fa fa-home"></i></a></div>
 
 </div>
 </body>
