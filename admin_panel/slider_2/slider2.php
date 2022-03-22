@@ -207,7 +207,7 @@ table.table td i {
         }
 
         footer.bg-light.text-center.text-lg-start {
-           position:fixed;
+           position:sticky;
             left: 0;
             bottom: 0;
             width: 100%;
