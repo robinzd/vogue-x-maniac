@@ -29,7 +29,7 @@
                       <i class="fa fa-bell" aria-hidden="true"></i>
                   </a>
                   <a href="#">
-                      <i class="fa fa-bell d-none d-lg-block" aria-hidden="true"></i>
+                      <i class="fa fa-sign-out" aria-hidden="true"></i>
                   </a>
                   <a href="#">
                       <img width="30" src="assets/avatar.svg" alt="" />
@@ -46,7 +46,7 @@
                               <span class="nav_name">Messages</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Bookmark</span> </a> <a href="#" class="nav_link">
                               <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Files</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Stats</span> </a>
                       </div>
-                  </div> <a href="#" class="nav_link"> <i class='bx bx-log-out nav_icon'></i> <span class="nav_name">SignOut</span> </a>
+                
               </nav>
           </div><br><br>
 
