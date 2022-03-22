@@ -7,7 +7,7 @@ include('dbconnection.php');
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Read brand</title>
+    <title>Read Product</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -188,6 +188,31 @@ include('dbconnection.php');
         .text-center{
 			color:grey;
 		}
+
+        .btn-circle.btn-xl {
+            width: 50px;
+            height: 50px;
+            padding: 10px 10px;
+            border-radius: 35px;
+            font-size: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 4px #888888;
+            
+        }
+
+        .btn-circle.btn-xl:hover{
+            background-color:black;
+        }
+
+        .fa-pen{
+            margin-top: 2px;
+        }
+
+        .text-center{
+            color:red;
+        }
+
+       
     </style>
 </head>
 
@@ -209,7 +234,7 @@ include('dbconnection.php');
                         ?>
 
                             <div class="col-sm-7" align="right">
-                                <a href="edit.php?editid=<?php echo htmlentities($row['ID']); ?>" class="btn btn-primary"><span>Edit User Details</span></a>
+                                <a href="edit.php?editid=<?php echo htmlentities($row['ID']); ?>" class="btn btn-success btn-circle btn-xl"><i class="fa fa-pen"></i></a>
 
                             </div>
                     </div>
