@@ -11,7 +11,7 @@ $oldprofilepic="products_images"."/".$oldppic;
 // get the image extension
 $extension = substr($productimage,strlen($productimage)-4,strlen($productimage));
 // allowed extensions
-$allowed_extensions = array(".jpg","jpeg",".png",".gif",".jfif");
+$allowed_extensions = array(".jpg","jpeg",".png",".gif");
 // Validation for allowed extensions .in_array() function searches an array for a specific value.
 if(!in_array($extension,$allowed_extensions))
 {
