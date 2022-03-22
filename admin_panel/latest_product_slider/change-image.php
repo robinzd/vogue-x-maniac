@@ -157,7 +157,7 @@ while ($row=mysqli_fetch_array($ret)) {
 		</div>
 
          <div class="form-group">
-        	<input type="file" class="form-control" name="image_source"  required="true">
+        	<input type="file" class="form-control" name="product_image"  required="true">
         	<span style="color:red; font-size:12px;">Only jpg / jpeg/ png /gif format allowed.</span>
         </div> 
 
