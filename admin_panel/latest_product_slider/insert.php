@@ -169,8 +169,10 @@ body {
 		<div class="form-group">
             <button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Submit</button>
         </div>
+
+		<div class="text-center">Back To Home <a href="products.php"><i class="fa fa-home"></i></a></div>
     </form>
-	<div class="text-center">Back To Home <a href="products.php"><i class="fa fa-home"></i></a></div>
+	
 </div>
 </body>
 </html>
