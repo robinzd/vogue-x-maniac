@@ -24,7 +24,7 @@ $imgnewfile=md5($imgfile).time().$extension;
 // Code for move image into directory
 move_uploaded_file($_FILES["product_image"]["tmp_name"],"products_images/".$imgnewfile);
   // Query for data insertion
-     $query=mysqli_query($conn, "update product_owlslider set image_source='$imgnewfile' where id='$uid' ");
+     $query=mysqli_query($conn, "update product_owlslider set product_image='$imgnewfile' where id='$uid' ");
     if ($query) {
     	//Old pic
     	unlink($oldprofilepic);
