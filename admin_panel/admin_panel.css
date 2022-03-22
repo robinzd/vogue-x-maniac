@@ -385,6 +385,7 @@ text-decoration: none;
 }
 
 .footer.bg-light.text-center.text-lg-start.d-none.d-lg-block {
+  position:sticky;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -392,6 +393,7 @@ text-decoration: none;
 }
 
 .footer.bg-light.text-center.text-lg-start.d-lg-none {
+  position: sticky;
   left: 0;
   bottom: 0;
   width: 100%;
