@@ -182,6 +182,10 @@ include('dbconnection.php');
             font-size: 13px;
         }
 
+      .fa-home{
+          color:black;
+      }
+
         .btn-circle.btn-xl {
             width: 50px;
             height: 50px;
