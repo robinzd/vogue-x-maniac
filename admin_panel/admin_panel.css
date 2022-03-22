@@ -158,7 +158,11 @@ body{
 
 .bg-light {
     background-color: white!important;
+    padding-left: 0px;
+    padding-right: 0px;
 }
+
+
 
 .active::before {
     content: '';
