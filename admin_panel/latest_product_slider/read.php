@@ -227,17 +227,17 @@ include('dbconnection.php');
                         </tr>
 
                         <tr>
-                            <th>Product Strikeout Price</th>
+                            <th>Product Name</th>
                             <td><?php echo $row['product_title']; ?></td>
                         </tr>
 
                         <tr>
-                            <th>Product Price</th>
+                            <th>Product Strikeout Price</th>
                             <td><?php echo $row['product_strikeout_price']; ?></td>
                         </tr>
 
                         <tr>
-                            <th>Product Name</th>
+                            <th>Product Price</th>
                             <td><?php echo $row['product_price']; ?></td>
                         </tr>
 
