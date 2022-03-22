@@ -29,6 +29,9 @@
                       <i class="fa fa-bell" aria-hidden="true"></i>
                   </a>
                   <a href="#">
+                      <i class="fa fa-bell d-none d-lg-block" aria-hidden="true"></i>
+                  </a>
+                  <a href="#">
                       <img width="30" src="assets/avatar.svg" alt="" />
                       <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
                   </a>
