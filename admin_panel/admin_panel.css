@@ -384,29 +384,11 @@ color: black;
 text-decoration: none;
 }
 
-.footer.bg-light.text-center.text-lg-start.d-none.d-lg-block {
-  position:sticky;
+.align-middle.footer.bg-light.text-center.text-lg-start.d-none.d-lg-block {
   left: 0;
   bottom: 0;
   width: 100%;
 
-}
-
-.footer.bg-light.text-center.text-lg-start.d-lg-none {
-  position: sticky;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-
-}
-
-.text-center.p-3{
-  color:black;
-}
-
-a.text1{
-color: black;
-text-decoration: none;
 }
 
 .text-center.p-3{
