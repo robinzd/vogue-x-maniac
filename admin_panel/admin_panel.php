@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
       <!-- fav icon -->
-      <link rel="icon" type="image/png" href="./favicon/vogue_x_maniac_png_K8m_icon.ico" />
+      <link rel="icon" type="image/png" href="./favicon/icons8-male-user-48.png"/>
       <!-- bootsstrap cdn -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
       <!-- font awesome cdn -->

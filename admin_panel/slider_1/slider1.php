@@ -8,7 +8,7 @@ if (isset($_GET['delid'])) {
     $ppicpath = "slides_images" . "/" . $pic;
     $sql = mysqli_query($conn, "delete from slider_1 where ID=$rid");
     unlink($ppicpath);
-    echo "<script>alert('Data deleted');</script>";
+    echo "<script>alert('slider deleted');</script>";
     echo "<script>window.location.href = 'slider1.php'</script>";
 }
 
@@ -23,6 +23,7 @@ if (isset($_GET['delid'])) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Add Slider</title>
+    <link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -283,7 +284,7 @@ if (isset($_GET['delid'])) {
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-5">
-                            <h2>Slider <b>Management</b></h2>
+                            <h2>Slider1 <b>Management</b></h2>
                         </div>
 
                         <div class="col-sm-7" align="right">

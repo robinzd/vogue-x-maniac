@@ -27,6 +27,7 @@ if (isset($_POST['submit'])) {
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
 	<title>Edit brand</title>
+	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -157,8 +158,8 @@ if (isset($_POST['submit'])) {
 			$ret = mysqli_query($conn, "select * from owlslider_1 where ID='$eid'");
 			while ($row = mysqli_fetch_array($ret)) {
 			?>
-				<h2>Update </h2>
-				<p class="hint-text">Update your brand info.</p>
+				<h2>Edit Brand </h2>
+				
 
 
 				<div class="form-group">

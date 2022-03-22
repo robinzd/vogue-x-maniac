@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
 		if ($query) {
 			//Old pic
 			unlink($oldprofilepic);
-			echo "<script>alert('product updated successfully');</script>";
+			echo "<script>alert('product Image updated successfully');</script>";
 			echo "<script type='text/javascript'> document.location ='products.php'; </script>";
 		} else {
 			echo "<script>alert('Something Went Wrong. Please try again');</script>";
@@ -40,6 +40,7 @@ if (isset($_POST['submit'])) {
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
 	<title>Change Product Image</title>
+	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -176,8 +177,8 @@ if (isset($_POST['submit'])) {
 			$ret = mysqli_query($conn, "select * from product_owlslider where ID='$eid'");
 			while ($row = mysqli_fetch_array($ret)) {
 			?>
-				<h2>Update </h2>
-				<p class="hint-text">Update your Product Image.</p>
+				<h2>Update Product Image</h2>
+			
 				<input type="hidden" name="oldpic" value="<?php echo $row['product_image']; ?>">
 				<div class="form-group">
 					<img src="products_images/<?php echo $row['product_image']; ?>" width="120" height="120">

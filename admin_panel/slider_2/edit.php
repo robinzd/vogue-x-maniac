@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
 	$query = mysqli_query($conn, "update  slider_2 set slider2_name='$slidername' where ID='$eid'");
 
 	if ($query) {
-		echo "<script>alert('You have successfully update the data');</script>";
+		echo "<script>alert('You have successfully update the slider');</script>";
 		echo "<script type='text/javascript'> document.location ='slider2.php'; </script>";
 	} else {
 		echo "<script>alert('Something Went Wrong. Please try again');</script>";
@@ -25,6 +25,7 @@ if (isset($_POST['submit'])) {
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
 	<title>Edit Slider</title>
+	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -155,8 +156,8 @@ if (isset($_POST['submit'])) {
 			$ret = mysqli_query($conn, "select * from slider_2 where ID='$eid'");
 			while ($row = mysqli_fetch_array($ret)) {
 			?>
-				<h2>Update </h2>
-				<p class="hint-text">Update your info.</p>
+				<h2>Edit Slider2 </h2>
+				
 
 
 				<div class="form-group">

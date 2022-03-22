@@ -38,7 +38,8 @@ echo "<script>alert('Something Went Wrong. Please try again');</script>";
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-<title>Add brand</title>
+<title>Add Brand</title>
+<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -144,8 +145,8 @@ body {
 <body>
 <div class="signup-form">
     <form  method="POST" enctype="multipart/form-data" >
-		<h2>Fill Data</h2>
-		<p class="hint-text">Fill below form.</p>
+		<h2>Insert Brand</h2>
+	
         <div class="form-group">
 		
         <div class="form-group">
@@ -165,8 +166,9 @@ body {
 		<div class="form-group">
             <button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Submit</button>
         </div>
+		<div class="text-center">Back To Home <a href="brand.php"><i class="fa fa-home"></i></a></div>
     </form>
-	<div class="text-center">Back To Home <a href="brand.php"><i class="fa fa-home"></i></a></div>
+	
 </div>
 </body>
 </html>

@@ -8,6 +8,7 @@ include('dbconnection.php');
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Read Slider</title>
+    <link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -180,17 +181,93 @@ include('dbconnection.php');
             margin-top: 10px;
             font-size: 13px;
         }
+
+        .btn-circle.btn-xl {
+            width: 50px;
+            height: 50px;
+            padding: 10px 10px;
+            border-radius: 35px;
+            font-size: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 4px #888888;
+
+        }
+
+        i.material-icons {
+            margin-top: 2px;
+        }
+
+        .btn-circle.btn-xl:hover {
+            background-color: black;
+        }
+
+        .fa-pen {
+            margin-top: 2px;
+        }
+
+        .navbar-text {
+            display: inline-block;
+
+        }
+
+        .icon,
+        .text {
+            display: inline;
+        }
+
+        .text {
+            margin-left: 10px;
+        }
+
+        .navbar {
+            background-color: #f5f5f5;
+        }
+
+        footer.bg-light.text-center.text-lg-start {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+
+
+        }
+
+        .text-center.p-3 {
+            color: black;
+        }
+
+        a.text1 {
+            color: black;
+            text-decoration: none;
+        }
     </style>
 </head>
 
 <body>
+    <!-- navbar starts -->
+
+
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-text">
+                <div class="icon"><a href="../admin_panel.php"><i class="fa fa-home"></i></a></div>
+                <div class="text">Home</div>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+    <!-- navbar ends -->
     <div class="container-xl">
         <div class="table-responsive">
             <div class="table-wrapper">
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-5">
-                            <h2>User <b>Details</b></h2>
+                            <h2>Slider <b>Details</b></h2>
                         </div>
                         <?php
                         $vid = $_GET['viewid'];
@@ -201,7 +278,7 @@ include('dbconnection.php');
                         ?>
 
                             <div class="col-sm-7" align="right">
-                                <a href="edit.php?editid=<?php echo htmlentities($row['ID']); ?>" class="btn btn-primary"><span>Edit User Details</span></a>
+                                <a href="edit.php?editid=<?php echo htmlentities($row['ID']); ?>" class="btn btn-success btn-circle btn-xl"><i class="material-icons">&#xE254;</i></a>
 
                             </div>
                     </div>
@@ -231,7 +308,16 @@ include('dbconnection.php');
 
             </div>
         </div>
+        <div class="text-center">Back To Home <a href="slider1.php"><i class="fa fa-home"></i></a></div>
     </div>
+    <footer class="bg-light text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color:#f5f5f5;">
+            © 2022 Copyright:
+            <a class="text1" href="/index.php">Vogue X Maniac</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
 </body>
 
 </html>

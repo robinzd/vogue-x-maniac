@@ -9,7 +9,7 @@ $pic=$_GET['image_source'];
 $ppicpath="brands_images"."/".$pic;
 $sql=mysqli_query($conn,"delete from owlslider_1 where ID=$rid");
 unlink($ppicpath);
-echo "<script>alert('Data deleted');</script>"; 
+echo "<script>alert('Brand deleted');</script>"; 
 echo "<script>window.location.href = 'brand.php'</script>";     
 } 
 
@@ -22,7 +22,8 @@ echo "<script>window.location.href = 'brand.php'</script>";
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Add Brand</title>
+<title>Brand Management</title>
+<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
