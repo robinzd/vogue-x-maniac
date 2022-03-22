@@ -200,6 +200,10 @@ include('dbconnection.php');
             
         }
 
+        i.material-icons{
+            margin-top: 2px;
+        }
+
         .btn-circle.btn-xl:hover{
             background-color:black;
         }
@@ -234,7 +238,7 @@ include('dbconnection.php');
                         ?>
 
                             <div class="col-sm-7" align="right">
-                                <a href="edit.php?editid=<?php echo htmlentities($row['ID']); ?>" class="btn btn-success btn-circle btn-xl"><i class="fa fa-pen"></i></a>
+                                <a href="edit.php?editid=<?php echo htmlentities($row['ID']); ?>" class="btn btn-success btn-circle btn-xl"><i class="material-icons">&#xE254;</i></a>
 
                             </div>
                     </div>
