@@ -6,9 +6,6 @@ include("./conn.php");
 
 
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -94,9 +91,16 @@ include("./conn.php");
     <section id="brands">
         <h2>Related Products</h2>
         <div class="slider owl-carousel">
+
+
+
+
+
+
+
             <?php
 
-            $get_product_slider = "select * from related_product";
+            $get_product_slider = "select * from product_owlslider";
 
             $run_product_image = mysqli_query($conn, $get_product_slider);
 
@@ -112,16 +116,16 @@ include("./conn.php");
 
 
                 echo " <div class='card bg-white'>
-        <img class='card-img-top' src='./admin_panel/related_product_slider/related_images/$product_image' alt='' style='width:100%'>
-        <div class='card-body'>
-            <h5 class='card-title text-center'>$product_title</h5>
-            <p class='card-text  text-center'><s>₹$product_strikeout_price</s>₹$product_price</p>
-            <div class='text-center'>
-                <a href='details.php' class='btn btn-success'>See Details</a>
-                <a href='#' class='btn btn-success'>Add to Cart</a>
-            </div>
+    <img class='card-img-top' src='./admin_panel/related_product_slider/related_images/$product_image'  style='width:100%'>
+    <div class='card-body'>
+        <h5 class='card-title text-center'>$product_title</h5>
+        <p class='card-text  text-center'><s>₹$product_strikeout_price</s>₹$product_price</p>
+        <div class='text-center'>
+            <a href='details.php' class='btn btn-success' id='buttonhover'>See Details</a>
+            <a href='#' class='btn btn-success' id='buttonhover'>Add to Cart</a>
         </div>
     </div>
+</div> 
 
 
 
@@ -132,6 +136,9 @@ include("./conn.php");
 
 
             ?>
+
+
+
 
 
 
