@@ -209,24 +209,7 @@ include('dbconnection.php');
             margin-top: 2px;
         }
 
-        .navbar-text {
-            display: inline-block;
-
-        }
-
-        .icon,
-        .text {
-            display: inline;
-        }
-
-        .text {
-            margin-left: 10px;
-        }
-
-        .navbar {
-            background-color: #f5f5f5;
-        }
-
+     
         footer.bg-light.text-center.text-lg-start {
             position: fixed;
             left: 0;
@@ -248,23 +231,7 @@ include('dbconnection.php');
 </head>
 
 <body>
-    <!-- navbar starts -->
-
-
-    <nav class="navbar">
-        <div class="container-fluid">
-            <div class="navbar-text">
-                <div class="icon"><a href="../admin_panel.php"><i class="fa fa-home"></i></a></div>
-                <div class="text">Home</div>
-            </div>
-
-        </div>
-    </nav>
-
-
-
-
-    <!-- navbar ends -->
+   
     <div class="container-xl">
         <div class="table-responsive">
             <div class="table-wrapper">
