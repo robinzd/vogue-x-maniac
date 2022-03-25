@@ -59,8 +59,8 @@
 
           <div class="container-fluid h-100 d-none d-lg-block">
               <div class="top-text">
-                  <div class="icon"><i class="fa fa-home"></i></div>
-                  <div class="text">Home</div>
+                  <div class="icon"><i class="fa fa-grid-horizontal"></i></div>
+                  <div class="text">Dashboard</div>
               </div>
               <div class="row align-middle ">
                   <div class="col-md-6 col-lg-4 column">
