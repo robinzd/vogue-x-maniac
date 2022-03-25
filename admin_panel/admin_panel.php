@@ -55,8 +55,8 @@
           <!--Container Main start-->
 
           <div class="top-text">
-                <div class="icon"><i class="fa fa-home"></i></div>
-                <div class="text">Dashboard</div>
+                <i class="fa fa-home"></i>
+                <p>Dashboard</p>
             </div>
 
 
