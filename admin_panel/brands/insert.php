@@ -77,7 +77,7 @@ body {
 .signup-form h2:before, .signup-form h2:after {
 	content: "";
 	height: 2px;
-	width: 30%;
+	width: 22%;
 	background: #d4d4d4;
 	position: absolute;
 	top: 50%;
