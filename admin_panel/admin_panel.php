@@ -119,7 +119,7 @@
                       </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                      <a href="#">
+                  <a href="./related_product_slider/related_products.php">
                           <div class="card gr-5">
                               <div class="txt">
                                   <h1>Related Product </br>
@@ -213,7 +213,7 @@
                       </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                      <a href="#">
+                      <a href="./related_product_slider/related_products.php">
                           <div class="card gr-5">
                               <div class="txt">
                                   <h1>Related Product </br>

@@ -10,11 +10,11 @@ if (isset($_POST['submit'])) {
 
 
 	//Query for data updation
-	$query = mysqli_query($conn, "update  product_owlslider set product_title='$producttitle',product_strikeout_price='$productstrikeoutprice',product_price='$productprice' where ID='$eid'");
+	$query = mysqli_query($conn, "update  related_product set product_title='$producttitle',product_strikeout_price='$productstrikeoutprice',product_price='$productprice' where ID='$eid'");
 
 	if ($query) {
 		echo "<script>alert('You have successfully update the product');</script>";
-		echo "<script type='text/javascript'> document.location ='products.php'; </script>";
+		echo "<script type='text/javascript'> document.location ='related_products.php'; </script>";
 	} else {
 		echo "<script>alert('Something Went Wrong. Please try again');</script>";
 	}
@@ -156,14 +156,14 @@ if (isset($_POST['submit'])) {
 		<form method="POST">
 			<?php
 			$eid = $_GET['editid'];
-			$ret = mysqli_query($conn, "select * from product_owlslider where ID='$eid'");
+			$ret = mysqli_query($conn, "select * from related_product where ID='$eid'");
 			while ($row = mysqli_fetch_array($ret)) {
 			?>
 				<h2>Edit Product</h2>
 			
 
                 <div class="form-group">
-					<img src="products_images/<?php echo $row['product_image']; ?>" width="120" height="120">
+					<img src="related_images/<?php echo $row['product_image']; ?>" width="120" height="120">
 					<a href="change-image.php?userid=<?php echo $row['ID']; ?>">Change Image</a>
 				</div>
 
@@ -185,7 +185,7 @@ if (isset($_POST['submit'])) {
 				<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
             </div>
 
-			<div class="text-center">Back To Home <a href="products.php"><i class="fa fa-home"></i></a></div>
+			<div class="text-center">Back To Home <a href="related_products.php"><i class="fa fa-home"></i></a></div>
 
 		</form>
 

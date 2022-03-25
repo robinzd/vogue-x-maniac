@@ -251,7 +251,7 @@ include('dbconnection.php');
                         </div>
                         <?php
                         $vid = $_GET['viewid'];
-                        $ret = mysqli_query($conn, "select * from product_owlslider where ID =$vid");
+                        $ret = mysqli_query($conn, "select * from related_product where ID =$vid");
                         $cnt = 1;
                         while ($row = mysqli_fetch_array($ret)) {
 
@@ -272,7 +272,7 @@ include('dbconnection.php');
 
                         <tr>
                             <th width="200">product Image</th>
-                            <td><img src="products_images/<?php echo $row['product_image']; ?>" width="80" height="80"></td>
+                            <td><img src="related_images/<?php echo $row['product_image']; ?>" width="80" height="80"></td>
                         </tr>
 
                         <tr>
@@ -299,7 +299,7 @@ include('dbconnection.php');
 
             </div>
         </div>
-        <div class="text-center">Back To Home <a href="products.php"><i class="fa fa-home"></i></a></div>
+        <div class="text-center">Back To Home <a href="related_products.php"><i class="fa fa-home"></i></a></div>
     </div>
 
     <footer class="bg-light text-center text-lg-start">

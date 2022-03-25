@@ -6,11 +6,11 @@ if(isset($_GET['delid']))
 {
 $rid=intval($_GET['delid']);
 $pic=$_GET['product_image'];
-$ppicpath="products_images"."/".$pic;
-$sql=mysqli_query($conn,"delete from product_owlslider where ID=$rid");
+$ppicpath="related_images"."/".$pic;
+$sql=mysqli_query($conn,"delete from related_product where ID=$rid");
 unlink($ppicpath);
 echo "<script>alert('Product deleted');</script>"; 
-echo "<script>window.location.href = 'products.php'</script>";     
+echo "<script>window.location.href = 'related_products.php'</script>";     
 } 
 
 ?>
@@ -277,7 +277,7 @@ table.table td i {
                 </thead>
                 <tbody>
                      <?php
-$ret=mysqli_query($conn,"select * from product_owlslider");
+$ret=mysqli_query($conn,"select * from related_product");
 $cnt=1;
 $row=mysqli_num_rows($ret);
 if($row>0){
@@ -287,14 +287,14 @@ while ($row=mysqli_fetch_array($ret)) {
 <!--Fetch the Records -->
                     <tr>
                         <td><?php echo $cnt;?></td>
-                        <td><img src="products_images/<?php  echo $row['product_image'];?>" width="80" height="80"></td>                       
+                        <td><img src="related_images/<?php  echo $row['product_image'];?>" width="80" height="80"></td>                       
                         <td><?php  echo $row['product_title'];?></td> 
                         <td><?php  echo $row['product_strikeout_price'];?></td>    
                         <td><?php  echo $row['product_price'];?></td>       
                         <td>
   <a href="read.php?viewid=<?php echo htmlentities ($row['ID']);?>" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                             <a href="edit.php?editid=<?php echo htmlentities ($row['ID']);?>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a href="products.php?delid=<?php echo ($row['ID']);?>&&product_image=<?php echo $row['image_source'];?>" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to Delete ?');"><i class="material-icons">&#xE872;</i></a>
+                            <a href="related_products.php?delid=<?php echo ($row['ID']);?>&&product_image=<?php echo $row['image_source'];?>" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to Delete ?');"><i class="material-icons">&#xE872;</i></a>
                         </td>
                     </tr>
                     <?php 

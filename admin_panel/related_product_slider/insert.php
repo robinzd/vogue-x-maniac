@@ -18,12 +18,12 @@ if (isset($_POST['submit'])) {
 		//rename the image file
 		$imgnewfile = md5($imgfile) . time() . $extension;
 		// Code for move image into directory
-		move_uploaded_file($_FILES["product_image"]["tmp_name"], "products_images/" . $imgnewfile);
+		move_uploaded_file($_FILES["product_image"]["tmp_name"], "related_images/" . $imgnewfile);
 		// Query for data insertion
-		$query = mysqli_query($conn, "insert into product_owlslider(product_image,product_title,product_strikeout_price,product_price) value ('$imgnewfile','$producttitle','$productstrikeoutprice',' $productprice' )");
+		$query = mysqli_query($conn, "insert into related_product(product_image,product_title,product_strikeout_price,product_price) value ('$imgnewfile','$producttitle','$productstrikeoutprice',' $productprice' )");
 		if ($query) {
 			echo "<script>alert('You have successfully inserted the product');</script>";
-			echo "<script type='text/javascript'> document.location ='products.php'; </script>";
+			echo "<script type='text/javascript'> document.location ='related_products.php'; </script>";
 		} else {
 			echo "<script>alert('Something Went Wrong. Please try again');</script>";
 		}
@@ -186,7 +186,7 @@ if (isset($_POST['submit'])) {
 				<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Submit</button>
 			</div>
 
-			<div class="text-center">Back To Home <a href="products.php"><i class="fa fa-home"></i></a></div>
+			<div class="text-center">Back To Home <a href="related_products.php"><i class="fa fa-home"></i></a></div>
 		</form>
 
 	</div>
