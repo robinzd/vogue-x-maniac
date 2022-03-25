@@ -58,12 +58,13 @@
 
 
           <div class="container-fluid h-100 d-none d-lg-block">
-              <div class="row align-middle ">
-                  <div class="col-md-6 col-lg-4 column">
-                      <div class="top-text">
+          <div class="top-text">
                           <i class="fa fa-home"></i>
                           <p>Dashboard</p>
                       </div>
+              <div class="row align-middle ">
+                  <div class="col-md-6 col-lg-4 column">
+                   
 
                       <a href="./slider_1/slider1.php">
                         <div class="card gr-1">
