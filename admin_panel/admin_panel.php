@@ -58,16 +58,16 @@
 
 
           <div class="container-fluid h-100 d-none d-lg-block">
-          <div class="top-text">
-                          <i class="fa fa-home"></i>
-                          <p>Dashboard</p>
-                      </div>
+              <div class="top-text">
+                  <div class="icon"><i class="fa fa-home"></i></div>
+                  <div class="text">Home</div>
+              </div>
               <div class="row align-middle ">
                   <div class="col-md-6 col-lg-4 column">
-                   
+
 
                       <a href="./slider_1/slider1.php">
-                        <div class="card gr-1">
+                          <div class="card gr-1">
                               <div class="txt">
                                   <h1>Slider 1 </br>
                                       Management</h1>

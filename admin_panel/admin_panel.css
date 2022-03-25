@@ -387,5 +387,17 @@ text-decoration: none;
 }
 
 /* dashboard style */
+.top-text {
+  display: inline-block;
 
+}
+
+.icon,
+.text {
+  display: inline;
+}
+
+.text {
+  margin-left: 10px;
+}
 
