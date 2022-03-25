@@ -745,7 +745,7 @@ include("./conn.php");
         <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.096)">
 
             <p class="text-dark"> ©2022 Vogue X Maniac.All Rights Reserved
-            <p>
+        </p>
                 <img class="px-2" src="./payment_pics/2560px-MasterCard_Logo.svg-removebg-preview.png">
                 <img class="px-2" src="./payment_pics/1200px-Visa.svg-removebg-preview.png">
                 <img class="px-2" src="./payment_pics/paypal-logo-removebg-preview.png">
