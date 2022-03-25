@@ -7,7 +7,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Admin Panel</title>
       <!-- fav icon -->
-      <link rel="icon" type="image/png" href="./favicon/icons8-male-user-48.png"/>
+      <link rel="icon" type="image/png" href="./favicon/icons8-male-user-48.png" />
       <!-- bootsstrap cdn -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
       <!-- font awesome cdn -->
@@ -46,26 +46,27 @@
                               <span class="nav_name">Messages</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Bookmark</span> </a> <a href="#" class="nav_link">
                               <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Files</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Stats</span> </a>
                       </div>
-                
+
               </nav>
           </div><br><br>
 
-        
+
 
           <!--Container Main start-->
 
-          <div class="top-text">
-                <i class="fa fa-home"></i>
-                <p>Dashboard</p>
-            </div>
 
 
-          
+
           <div class="container-fluid h-100 d-none d-lg-block">
               <div class="row align-middle ">
                   <div class="col-md-6 col-lg-4 column">
+                      <div class="top-text">
+                          <i class="fa fa-home"></i>
+                          <p>Dashboard</p>
+                      </div>
+
                       <a href="./slider_1/slider1.php">
-                          <div class="card gr-1">
+                        <div class="card gr-1">
                               <div class="txt">
                                   <h1>Slider 1 </br>
                                       Management</h1>
@@ -104,43 +105,43 @@
                       </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                  <a href="./latest_product_slider/products.php">
-                      <div class="card gr-4">
-                          <div class="txt">
-                              <h1>Latest Product </br>
-                                  Management</h1>
+                      <a href="./latest_product_slider/products.php">
+                          <div class="card gr-4">
+                              <div class="txt">
+                                  <h1>Latest Product </br>
+                                      Management</h1>
+                              </div>
+                              <div class="ico-card">
+                                  <i class="fa fa-gears"></i>
+                              </div>
                           </div>
-                          <div class="ico-card">
-                              <i class="fa fa-gears"></i>
-                          </div>
-                      </div>
-                  </a>
+                      </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                  <a href="#">
-                      <div class="card gr-5">
-                          <div class="txt">
-                              <h1>Related Product </br>
-                                  Management</h1>
+                      <a href="#">
+                          <div class="card gr-5">
+                              <div class="txt">
+                                  <h1>Related Product </br>
+                                      Management</h1>
+                              </div>
+                              <div class="ico-card">
+                                  <i class="fa fa-code-fork"></i>
+                              </div>
                           </div>
-                          <div class="ico-card">
-                          <i class="fa fa-code-fork"></i>
-                          </div>
-                      </div>
-                  </a>
+                      </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                  <a href="#">
-                      <div class="card gr-6">
-                          <div class="txt">
-                              <h1>Shop Product </br>
-                                  Management</h1>
+                      <a href="#">
+                          <div class="card gr-6">
+                              <div class="txt">
+                                  <h1>Shop Product </br>
+                                      Management</h1>
+                              </div>
+                              <div class="ico-card">
+                                  <i class="fa fa-gear"></i>
+                              </div>
                           </div>
-                          <div class="ico-card">
-                          <i class="fa fa-gear"></i>
-                          </div>
-                      </div>
-                  </a>
+                      </a>
                   </div>
 
               </div>
@@ -194,43 +195,43 @@
                       </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                  <a href="./latest_product_slider/products.php">
-                      <div class="card gr-4">
-                          <div class="txt">
-                              <h1>Latest Product </br>
-                                  Management</h1>
+                      <a href="./latest_product_slider/products.php">
+                          <div class="card gr-4">
+                              <div class="txt">
+                                  <h1>Latest Product </br>
+                                      Management</h1>
+                              </div>
+                              <div class="ico-card">
+                                  <i class="fa fa-gears"></i>
+                              </div>
                           </div>
-                          <div class="ico-card">
-                              <i class="fa fa-gears"></i>
-                          </div>
-                      </div>
-                  </a>
+                      </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                  <a href="#">
-                      <div class="card gr-5">
-                          <div class="txt">
-                              <h1>Related Product </br>
-                                  Management</h1>
+                      <a href="#">
+                          <div class="card gr-5">
+                              <div class="txt">
+                                  <h1>Related Product </br>
+                                      Management</h1>
+                              </div>
+                              <div class="ico-card">
+                                  <i class="fa fa-code-fork"></i>
+                              </div>
                           </div>
-                          <div class="ico-card">
-                          <i class="fa fa-code-fork"></i>
-                          </div>
-                      </div>
-                  </a>
+                      </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                  <a href="#">
-                      <div class="card gr-6">
-                          <div class="txt">
-                              <h1>Shop Product </br>
-                                  Management</h1>
+                      <a href="#">
+                          <div class="card gr-6">
+                              <div class="txt">
+                                  <h1>Shop Product </br>
+                                      Management</h1>
+                              </div>
+                              <div class="ico-card">
+                                  <i class="fa fa-gear"></i>
+                              </div>
                           </div>
-                          <div class="ico-card">
-                          <i class="fa fa-gear"></i>
-                          </div>
-                      </div>
-                  </a>
+                      </a>
                   </div>
                   <footer class="bg-light text-center text-lg-start">
                       <!-- Copyright -->
