@@ -100,7 +100,7 @@ include("./conn.php");
 
             <?php
 
-            $get_product_slider = "select * from product_owlslider";
+            $get_product_slider = "select * from related_product";
 
             $run_product_image = mysqli_query($conn, $get_product_slider);
 
