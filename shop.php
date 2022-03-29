@@ -61,7 +61,11 @@ include("./conn.php");
                     <input type="text" id="ex3" class="form-control" disabled>
                     <label for="ex4">Max-price</label>
                     <input type="text" id="ex4" class="form-control" disabled>
-
+                      
+                    <input type="hidden" id="hidden_minimum_price" value="0" />
+                    <input type="hidden" id="hidden_maximum_price" value="65000" />
+                    <p id="price_show">1000 - 65000</p>
+                    <div id="price_range"></div>
 
                     <!-- Checkboxes -->
                     <h3 class="headline">
