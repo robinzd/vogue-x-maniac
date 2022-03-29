@@ -48,24 +48,13 @@ include("./conn.php");
 
                 <!-- Filter -->
                 <form class="shop__filter">
-                    <!-- Price -->
-                    <h3 class="headline">
-                        <span>Price</span>
-                    </h3>
-
-                    <!-- <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3"> -->
-
-                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
-                    <!-- Example -->
-                    <label for="ex4">Min-price</label>
-                    <input type="text" id="ex3" class="form-control" disabled>
-                    <label for="ex4">Max-price</label>
-                    <input type="text" id="ex4" class="form-control" disabled>
-                      
-                    <input type="hidden" id="hidden_minimum_price" value="0" />
-                    <input type="hidden" id="hidden_maximum_price" value="65000" />
-                    <p id="price_show">1000 - 65000</p>
-                    <div id="price_range"></div>
+                    <div class="list-group">
+                        <h3>Price</h3>
+                        <input type="hidden" id="hidden_minimum_price" value="0" />
+                        <input type="hidden" id="hidden_maximum_price" value="65000" />
+                        <p id="price_show">1000 - 65000</p>
+                        <div id="price_range"></div>
+                    </div>
 
                     <!-- Checkboxes -->
                     <h3 class="headline">
@@ -438,7 +427,7 @@ include("./conn.php");
                             </div>
                             <!-- Grid column -->
 
-                            <hr class="w-100 clearfix d-md-none"/>
+                            <hr class="w-100 clearfix d-md-none" />
 
                             <!-- Grid column -->
                             <hr class="w-100 clearfix d-md-none" />
