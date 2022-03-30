@@ -140,8 +140,8 @@ include("./conn.php");
                             $product_title = $row_product_image['product_title'];
                             $product_strikeout_price = $row_product_image['product_strikeout_price'];
                             $product_price = $row_product_image['product_price'];
-                            
-                            
+
+
 
 
 
@@ -183,8 +183,8 @@ include("./conn.php");
                             $product_title = $row_product_image['product_title'];
                             $product_strikeout_price = $row_product_image['product_strikeout_price'];
                             $product_price = $row_product_image['product_price'];
-                            
-                            
+
+
 
 
 
@@ -228,8 +228,8 @@ include("./conn.php");
                             $product_title = $row_product_image['product_title'];
                             $product_strikeout_price = $row_product_image['product_strikeout_price'];
                             $product_price = $row_product_image['product_price'];
-                            
-                            
+
+
 
 
 
@@ -271,8 +271,8 @@ include("./conn.php");
                             $product_title = $row_product_image['product_title'];
                             $product_strikeout_price = $row_product_image['product_strikeout_price'];
                             $product_price = $row_product_image['product_price'];
-                            
-                            
+
+
 
 
 
@@ -314,8 +314,8 @@ include("./conn.php");
                             $product_title = $row_product_image['product_title'];
                             $product_strikeout_price = $row_product_image['product_strikeout_price'];
                             $product_price = $row_product_image['product_price'];
-                            
-                            
+
+
 
 
 
@@ -357,8 +357,8 @@ include("./conn.php");
                             $product_title = $row_product_image['product_title'];
                             $product_strikeout_price = $row_product_image['product_strikeout_price'];
                             $product_price = $row_product_image['product_price'];
-                            
-                            
+
+
 
 
 
