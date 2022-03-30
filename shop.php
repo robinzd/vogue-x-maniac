@@ -60,22 +60,25 @@ include("./conn.php");
                     <h3 class="headline">
                         <span>Brands</span>
                     </h3>
-                    <div style="height: 180px; overflow-y: auto; overflow-x: hidden;">
-                        <?php
-
-                        $query = "SELECT DISTINCT(product_brand) FROM product WHERE product_status = '1' ORDER BY product_id DESC";
-                        $statement = $connect->prepare($query);
-                        $statement->execute();
-                        $result = $statement->fetchAll();
-                        foreach ($result as $row) {
-                        ?>
-                            <div class="list-group-item checkbox">
-                                <label><input type="checkbox" class="common_selector brand" value="<?php echo $row['product_brand']; ?>"> <?php echo $row['product_brand']; ?></label>
-                            </div>
-                        <?php
-                        }
-
-                        ?>
+                    <div class="checkbox">
+                        <input type="checkbox" value="" id="shop-filter-checkbox_1" checked="">
+                        <label for="shop-filter-checkbox_1">Apple</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value="" id="shop-filter-checkbox_2">
+                        <label for="shop-filter-checkbox_2">Nike</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value="" id="shop-filter-checkbox_3">
+                        <label for="shop-filter-checkbox_3">Jbl</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value="" id="shop-filter-checkbox_4">
+                        <label for="shop-filter-checkbox_4">Tissot</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value="" id="shop-filter-checkbox_5">
+                        <label for="shop-filter-checkbox_5">Boat</label>
                     </div>
 
                     <!-- Radios -->
