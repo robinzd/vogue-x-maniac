@@ -281,7 +281,7 @@ include("./conn.php");
 <div class='card-body'>
 <h5 class='card-title text-center'>$product_title</h5>
 <h5 class='caard-text  text-center'><s>₹$product_strikeout_price</s>₹$product_price</p>
-<div class='text   nter'>
+<div class='text center'>
 <a href='details.php' class='btn btn-success'>See Details</a>
 <a href='#' class='btn btn-success'>Add to Cart</a>
 </div>
