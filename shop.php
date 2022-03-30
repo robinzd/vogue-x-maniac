@@ -1,6 +1,6 @@
 <?php
 
-include("./conn.php");
+include("../conn.php");
 
 ?>
 
@@ -64,7 +64,7 @@ include("./conn.php");
                         <?php
 
                         $query = "SELECT DISTINCT(product_brand) FROM shop_page WHERE product_status = '1' ORDER BY ID DESC";
-                        $statement = $connect->prepare($query);
+                        $statement = $conn->prepare($query);
                         $statement->execute();
                         $result = $statement->fetchAll();
                         foreach ($result as $row) {
