@@ -43,80 +43,76 @@ include("./conn.php");
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-4 col-md-3">
+            <!-- Filter -->
+                <div class="col-md-3">
+                <div class="list-group">
+                    <h3>Price</h3>
+                    <input type="hidden" id="hidden_minimum_price" value="0" />
+                    <input type="hidden" id="hidden_maximum_price" value="65000" />
+                    <p id="price_show">1000 - 65000</p>
+                    <div id="price_range"></div>
+                </div>
+                <div class="list-group">
+                    <h3>Brand</h3>
+                    <div style="height: 180px; overflow-y: auto; overflow-x: hidden;">
+                        <?php
 
+                        $query = "SELECT DISTINCT(product_brand) FROM product WHERE product_status = '1' ORDER BY product_id DESC";
+                        $statement = $connect->prepare($query);
+                        $statement->execute();
+                        $result = $statement->fetchAll();
+                        foreach ($result as $row) {
+                        ?>
+                            <div class="list-group-item checkbox">
+                                <label><input type="checkbox" class="common_selector brand" value="<?php echo $row['product_brand']; ?>"> <?php echo $row['product_brand']; ?></label>
+                            </div>
+                        <?php
+                        }
 
+                        ?>
+                    </div>
+                </div>
 
-                <!-- Filter -->
-                <form class="shop__filter">
-                    <div class="list-group">
-                        <h3>Price</h3>
-                        <input type="hidden" id="hidden_minimum_price" value="0" />
-                        <input type="hidden" id="hidden_maximum_price" value="65000" />
-                        <p id="price_show">1000 - 65000</p>
-                        <div id="price_range"></div>
-                    </div>
+                <div class="list-group">
+                    <h3>RAM</h3>
+                    <?php
 
-                    <!-- Checkboxes -->
-                    <h3 class="headline">
-                        <span>Brands</span>
-                    </h3>
-                    <div class="checkbox">
-                        <input type="checkbox" value="" id="shop-filter-checkbox_1" checked="">
-                        <label for="shop-filter-checkbox_1">Apple</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" value="" id="shop-filter-checkbox_2">
-                        <label for="shop-filter-checkbox_2">Nike</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" value="" id="shop-filter-checkbox_3">
-                        <label for="shop-filter-checkbox_3">Jbl</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" value="" id="shop-filter-checkbox_4">
-                        <label for="shop-filter-checkbox_4">Tissot</label>
-                    </div>
-                    <div class="checkbox">
-                        <input type="checkbox" value="" id="shop-filter-checkbox_5">
-                        <label for="shop-filter-checkbox_5">Boat</label>
-                    </div>
+                    $query = "
+                    SELECT DISTINCT(product_ram) FROM product WHERE product_status = '1' ORDER BY product_ram DESC
+                    ";
+                    $statement = $connect->prepare($query);
+                    $statement->execute();
+                    $result = $statement->fetchAll();
+                    foreach ($result as $row) {
+                    ?>
+                        <div class="list-group-item checkbox">
+                            <label><input type="checkbox" class="common_selector ram" value="<?php echo $row['product_ram']; ?>"> <?php echo $row['product_ram']; ?> GB</label>
+                        </div>
+                    <?php
+                    }
 
-                    <!-- Radios -->
-                    <h3 class="headline">
-                        <span>Categories</span>
-                    </h3>
-                    <div class="radio">
-                        <input type="radio" name="shop-filter__radio" id="shop-filter-radio_0" value="" checked="">
-                        <label for="shop-filter-radio_0">All</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="shop-filter__radio" id="shop-filter-radio_1" value="" checked="">
-                        <label for="shop-filter-radio_1">Watches</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="shop-filter__radio" id="shop-filter-radio_2" value="">
-                        <label for="shop-filter-radio_2">Womens Handbags</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="shop-filter__radio" id="shop-filter-radio_3" value="">
-                        <label for="shop-filter-radio_3">Shoes</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="shop-filter__radio" id="shop-filter-radio_4" value="">
-                        <label for="shop-filter-radio_4">BT Speakers</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="shop-filter__radio" id="shop-filter-radio_5" value="">
-                        <label for="shop-filter-radio_5">Smart Watches</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="shop-filter__radio" id="shop-filter-radio_6" value="">
-                        <label for="shop-filter-radio_6">Travel Bags</label>
-                    </div>
-                    <div class="text-center">
-                        <button type="button" class="btn btn-success">Apply Filters</button>
-                    </div>
-                </form>
+                    ?>
+                </div>
+
+                <div class="list-group">
+                    <h3>Internal Storage</h3>
+                    <?php
+                    $query = "
+                    SELECT DISTINCT(product_storage) FROM product WHERE product_status = '1' ORDER BY product_storage DESC
+                    ";
+                    $statement = $connect->prepare($query);
+                    $statement->execute();
+                    $result = $statement->fetchAll();
+                    foreach ($result as $row) {
+                    ?>
+                        <div class="list-group-item checkbox">
+                            <label><input type="checkbox" class="common_selector storage" value="<?php echo $row['product_storage']; ?>"> <?php echo $row['product_storage']; ?> GB</label>
+                        </div>
+                    <?php
+                    }
+                    ?>
+                </div>
+            </div>
 
             </div>
 
