@@ -236,8 +236,8 @@ include("./conn.php");
                             echo " <div class='card bg-white'>
 <img class='card-img-top' src='./admin_area/product_images/$product_image' alt='' style='width:100%'>
 <div class='card-body'>
-<h5 class='card-title text-center'>$product_title</h5><br>
-<h5 class='cas='card-text  text-center'><s>₹$product_strikeout_price</s>₹$product_price</p>
+<h5 class='card-title text-center'>$product_title</h5>
+<p class='card-text  text-center'><s>₹$product_strikeout_price</s>₹$product_price</p>
 <div class='text   nter'>
 <a href='details.php' class='btn btn-success'>See Details</a>
 <a href='#' class='btn btn-success'>Add to Cart</a>
