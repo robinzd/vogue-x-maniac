@@ -240,9 +240,9 @@ include("./conn.php");
                             echo " <div class='card bg-white'>
 <img class='card-img-top' src='./admin_area/product_images/$product_image' alt='' style='width:100%'>
 <div class='card-body'>
-<h5 class='card-title text-center'>$product_title</h5>
+<h5 class='card-title text-center'>$product_title</h5><br>
 <h5 class='card-title text-center' id='names'>Brand:$product_brand</h5>
-<h5 class='card-title text-center' id='names'>Category:$product_category</h5>
+<h5 class='card-title text-center' id='names'>Category:$product_category</h5><br>
 <p class='card-text  text-center'><s>₹$product_strikeout_price</s>₹$product_price</p>
 <div class='text-center'>
 <a href='details.php' class='btn btn-success'>See Details</a>
