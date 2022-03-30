@@ -140,6 +140,8 @@ include("./conn.php");
                             $product_title = $row_product_image['product_title'];
                             $product_strikeout_price = $row_product_image['product_strikeout_price'];
                             $product_price = $row_product_image['product_price'];
+                            $product_brand=$row_product_image['product_brand'];
+                            $product_category=$row_product_image['product_category'];
 
 
 
@@ -147,6 +149,8 @@ include("./conn.php");
         <img class='card-img-top' src='./admin_area/product_images/$product_image' alt='' style='width:100%'>
         <div class='card-body'>
             <h5 class='card-title text-center'>$product_title</h5>
+            <h5 class='card-title text-center'>Brand:$product_brand</h5>
+            <h5 class='card-title text-center'>Category:$product_category</h5>
             <p class='card-text  text-center'><s>₹$product_strikeout_price</s>₹$product_price</p>
             <div class='text-center'>
                 <a href='details.php' class='btn btn-success'>See Details</a>
