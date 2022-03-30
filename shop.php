@@ -59,7 +59,8 @@ include("./conn.php");
                     <!-- Checkboxes -->
                     <h3 class="headline">
                         <span>Brands</span>
-                        <div style="height: 180px; overflow-y: auto; overflow-x: hidden;">
+                    </h3>
+                    <div style="height: 180px; overflow-y: auto; overflow-x: hidden;">
                         <?php
 
                         $query = "SELECT DISTINCT(product_brand) FROM product WHERE product_status = '1' ORDER BY product_id DESC";
