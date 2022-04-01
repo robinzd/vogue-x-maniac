@@ -209,8 +209,14 @@ include("./conn.php");
         <h2>categories</h2>
 
 
-       
-        <?php
+        <div class="gallery">
+
+
+
+
+
+
+            <?php
 
             $get_product_category = "select * from product_category";
 
@@ -225,8 +231,7 @@ include("./conn.php");
 
 
 
-                echo "  <div class='gallery'>
-                <div class='gallery__column'>
+                echo " <div class='gallery__column'>
                         <a href='#' target='_blank' class='gallery__link'>
                         <figure class='gallery__thumb'>
 <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
@@ -234,8 +239,6 @@ include("./conn.php");
 </figure>
 </a>
 </div>
-</div>
-
 
 
 
@@ -246,7 +249,8 @@ include("./conn.php");
 
             ?>
 
-      
+        </div>
+
 
 
 
