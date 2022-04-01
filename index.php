@@ -214,8 +214,6 @@ include("./conn.php");
 
 
 
-
-
             <?php
 
             $get_product_category = "select * from product_category";
@@ -233,13 +231,20 @@ include("./conn.php");
 
                 echo " <div class='gallery__column'>
                         <a href='#' target='_blank' class='gallery__link'>
-                        <figure class='gallery__thumb'>
+                    <figure class='gallery__thumb'>
+<img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
+<figcaption class='gallery__caption'>$category_name</figcaption>
+</figure>
+</a>
+
+ 
+ <a href='#' target='_blank' class='gallery__link'>
+ <figure class='gallery__thumb'>
 <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
 <figcaption class='gallery__caption'>$category_name</figcaption>
 </figure>
 </a>
 </div>
-
 
 
 
@@ -249,22 +254,19 @@ include("./conn.php");
 
             ?>
 
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     </section>
 
