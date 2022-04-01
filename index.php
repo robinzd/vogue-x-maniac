@@ -212,57 +212,295 @@ include("./conn.php");
         <div class="gallery">
 
 
+            <div class="gallery__column">
 
+                <a href="#" target="_blank" class="gallery__link">
 
-            <?php
+                    <?php
 
-            $get_product_category = "select * from product_category";
+                    $get_product_category = "select * from product_category LIMIT 0,1";
 
-            $run_gallery_image = mysqli_query($conn, $get_product_category);
-
-
-
-            while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
-
-                $category_image = $row_category_picture['category_image'];
-                $category_name = $row_category_picture['category_name'];
+                    $run_gallery_image = mysqli_query($conn, $get_product_category);
 
 
 
-                echo " <div class='gallery__column'>
-                        <a href='#' target='_blank' class='gallery__link'>
-                    <figure class='gallery__thumb'>
-<img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
-<figcaption class='gallery__caption'>$category_name</figcaption>
-</figure>
-</a>
+                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
 
- 
- <a href='#' target='_blank' class='gallery__link'>
- <figure class='gallery__thumb'>
+                        $category_image = $row_category_picture['category_image'];
+                        $category_name = $row_category_picture['category_name'];
+
+
+
+                        echo "<figure class='gallery__thumb'>
 <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
 <figcaption class='gallery__caption'>$category_name</figcaption>
 </figure>
 </a>
 </div>
 
+ 
+ 
+
 
 
 ";
-            }
+                    }
 
 
-            ?>
+                    ?>
 
-
-
-
-
+                </a>
 
 
 
 
 
+
+
+
+
+                <a href="#" target="_blank" class="gallery__link">
+
+
+                    <?php
+
+                    $get_product_category = "select * from product_category LIMIT 1,1";
+
+                    $run_gallery_image = mysqli_query($conn, $get_product_category);
+
+
+
+                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
+
+                        $category_image = $row_category_picture['category_image'];
+                        $category_name = $row_category_picture['category_name'];
+
+
+
+                        echo "<figure class='gallery__thumb'>
+    <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
+    <figcaption class='gallery__caption'>$category_name</figcaption>
+</figure>
+
+
+
+";
+                    }
+
+
+                    ?>
+
+
+
+
+
+                </a>
+
+
+
+            </div>
+
+            <div class="gallery__column">
+                <a href="#" target="_blank" class="gallery__link">
+                    <?php
+
+                    $get_product_category = "select * from product_category LIMIT 2,1";
+
+                    $run_gallery_image = mysqli_query($conn, $get_product_category);
+
+
+
+                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
+
+                        $category_image = $row_category_picture['category_image'];
+                        $category_name = $row_category_picture['category_name'];
+
+
+
+                        echo "<figure class='gallery__thumb'>
+    <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
+    <figcaption class='gallery__caption'>$category_name</figcaption>
+</figure>
+
+
+
+";
+                    }
+
+
+                    ?>
+                </a>
+
+                <a href="#" target="_blank" class="gallery__link">
+                    <?php
+
+                    $get_product_category = "select * from product_category LIMIT 3,1";
+
+                    $run_gallery_image = mysqli_query($conn, $get_product_category);
+
+
+
+                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
+
+                        $category_image = $row_category_picture['category_image'];
+                        $category_name = $row_category_picture['category_name'];
+
+
+
+                        echo "<figure class='gallery__thumb'>
+    <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
+    <figcaption class='gallery__caption'>$category_name</figcaption>
+</figure>
+
+
+
+";
+                    }
+
+
+                    ?>
+                </a>
+
+
+
+            </div>
+
+            <div class="gallery__column">
+                <a href="#" target="_blank" class="gallery__link">
+                    <?php
+
+                    $get_product_category = "select * from product_category LIMIT 4,1";
+
+                    $run_gallery_image = mysqli_query($conn, $get_product_category);
+
+
+
+                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
+
+                        $category_image = $row_category_picture['category_image'];
+                        $category_name = $row_category_picture['category_name'];
+
+
+
+                        echo "<figure class='gallery__thumb'>
+    <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
+    <figcaption class='gallery__caption'>$category_name</figcaption>
+</figure>
+
+
+
+";
+                    }
+
+
+                    ?>
+                </a>
+
+                <a href="#" target="_blank" class="gallery__link">
+                    <?php
+
+                    $get_product_category = "select * from product_category LIMIT 5,1";
+
+                    $run_gallery_image = mysqli_query($conn, $get_product_category);
+
+
+
+                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
+
+                        $category_image = $row_category_picture['category_image'];
+                        $category_name = $row_category_picture['category_name'];
+
+
+
+                        echo "<figure class='gallery__thumb'>
+    <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
+    <figcaption class='gallery__caption'>$category_name</figcaption>
+</figure>
+
+
+
+";
+                    }
+
+
+                    ?>
+                </a>
+
+
+
+            </div>
+
+            <div class="gallery__column">
+                <a href="#" target="_blank" class="gallery__link">
+                    <?php
+
+                    $get_product_category = "select * from product_category LIMIT 6,1";
+
+                    $run_gallery_image = mysqli_query($conn, $get_product_category);
+
+
+
+                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
+
+                        $category_image = $row_category_picture['category_image'];
+                        $category_name = $row_category_picture['category_name'];
+
+
+
+                        echo "<figure class='gallery__thumb'>
+    <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
+    <figcaption class='gallery__caption'>$category_name</figcaption>
+</figure>
+
+
+
+
+
+";
+                    }
+
+
+                    ?>
+                </a>
+
+
+                <a href="#" target="_blank" class="gallery__link">
+                    <?php
+
+                    $get_product_category = "select * from product_category LIMIT 7,1";
+
+                    $run_gallery_image = mysqli_query($conn, $get_product_category);
+
+
+
+                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
+
+                        $category_image = $row_category_picture['category_image'];
+                        $category_name = $row_category_picture['category_name'];
+
+
+
+                        echo "<figure class='gallery__thumb'>
+    <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
+    <figcaption class='gallery__caption'>$category_name</figcaption>
+</figure>
+
+
+
+
+
+";
+                    }
+
+
+                    ?>
+                </a>
+
+
+
+
+
+            </div>
 
 
 
