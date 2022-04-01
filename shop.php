@@ -302,7 +302,7 @@ include("./conn.php");
                                 minimum_price: minimum_price,
                                 maximum_price: maximum_price,
                                 brand: brand,
-                                category: ram,
+                                category: category,
                                
                             },
                             success: function(data) {
