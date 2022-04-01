@@ -211,261 +211,60 @@ include("./conn.php");
 
         <div class="gallery">
 
-           
-
-              
-
-
-                    <?php
-
-                    $get_product_category = "select * from product_category";
-
-                    $run_gallery_image = mysqli_query($conn, $get_product_category);
 
 
 
-                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
-
-                        $category_image = $row_category_picture['category_image'];
-                        $category_name = $row_category_picture['category_name'];
 
 
+            <?php
 
-                        echo " <div class='gallery__column'>
+            $get_product_category = "select * from product_category";
+
+            $run_gallery_image = mysqli_query($conn, $get_product_category);
+
+
+
+            while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
+
+                $category_image = $row_category_picture['category_image'];
+                $category_name = $row_category_picture['category_name'];
+
+
+
+                echo " <div class='gallery__column'>
                         <a href='#' target='_blank' class='gallery__link'>
                         <figure class='gallery__thumb'>
 <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
 <figcaption class='gallery__caption'>$category_name</figcaption>
 </figure>
-</div>
 </a>
-
-
-
-";
-                    }
-
-
-                    ?>
-
-
-
-
-
-
-              
-
-
-                
-
-
-          
-
-            <div class="gallery__column">
-                <a href="#" target="_blank" class="gallery__link">
-                    <?php
-
-                    $get_product_category = "select * from product_category LIMIT 2,1";
-
-                    $run_gallery_image = mysqli_query($conn, $get_product_category);
-
-
-
-                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
-
-                        $category_image = $row_category_picture['category_image'];
-                        $category_name = $row_category_picture['category_name'];
-
-
-
-                        echo "<figure class='gallery__thumb'>
-    <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
-    <figcaption class='gallery__caption'>$category_name</figcaption>
-</figure>
-
-
-
-";
-                    }
-
-
-                    ?>
-                </a>
-
-                <a href="#" target="_blank" class="gallery__link">
-                    <?php
-
-                    $get_product_category = "select * from product_category LIMIT 3,1";
-
-                    $run_gallery_image = mysqli_query($conn, $get_product_category);
-
-
-
-                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
-
-                        $category_image = $row_category_picture['category_image'];
-                        $category_name = $row_category_picture['category_name'];
-
-
-
-                        echo "<figure class='gallery__thumb'>
-    <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
-    <figcaption class='gallery__caption'>$category_name</figcaption>
-</figure>
-
-
-
-";
-                    }
-
-
-                    ?>
-                </a>
-
-
-
-            </div>
-
-            <div class="gallery__column">
-                <a href="#" target="_blank" class="gallery__link">
-                    <?php
-
-                    $get_product_category = "select * from product_category LIMIT 4,1";
-
-                    $run_gallery_image = mysqli_query($conn, $get_product_category);
-
-
-
-                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
-
-                        $category_image = $row_category_picture['category_image'];
-                        $category_name = $row_category_picture['category_name'];
-
-
-
-                        echo "<figure class='gallery__thumb'>
-    <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
-    <figcaption class='gallery__caption'>$category_name</figcaption>
-</figure>
-
-
-
-";
-                    }
-
-
-                    ?>
-                </a>
-
-                <a href="#" target="_blank" class="gallery__link">
-                    <?php
-
-                    $get_product_category = "select * from product_category LIMIT 5,1";
-
-                    $run_gallery_image = mysqli_query($conn, $get_product_category);
-
-
-
-                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
-
-                        $category_image = $row_category_picture['category_image'];
-                        $category_name = $row_category_picture['category_name'];
-
-
-
-                        echo "<figure class='gallery__thumb'>
-    <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
-    <figcaption class='gallery__caption'>$category_name</figcaption>
-</figure>
-
-
-
-";
-                    }
-
-
-                    ?>
-                </a>
-
-
-
-            </div>
-
-            <div class="gallery__column">
-                <a href="#" target="_blank" class="gallery__link">
-                    <?php
-
-                    $get_product_category = "select * from product_category LIMIT 6,1";
-
-                    $run_gallery_image = mysqli_query($conn, $get_product_category);
-
-
-
-                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
-
-                        $category_image = $row_category_picture['category_image'];
-                        $category_name = $row_category_picture['category_name'];
-
-
-
-                        echo "<figure class='gallery__thumb'>
-    <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
-    <figcaption class='gallery__caption'>$category_name</figcaption>
-</figure>
-
+</div>
 
 
 
 
 ";
-                    }
+            }
 
 
-                    ?>
-                </a>
-
-
-                <a href="#" target="_blank" class="gallery__link">
-                    <?php
-
-                    $get_product_category = "select * from product_category LIMIT 7,1";
-
-                    $run_gallery_image = mysqli_query($conn, $get_product_category);
-
-
-
-                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
-
-                        $category_image = $row_category_picture['category_image'];
-                        $category_name = $row_category_picture['category_name'];
-
-
-
-                        echo "<figure class='gallery__thumb'>
-    <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
-    <figcaption class='gallery__caption'>$category_name</figcaption>
-</figure>
-
-
-
-
-
-";
-                    }
-
-
-                    ?>
-                </a>
-
-
-
-
-
-            </div>
-
-
+            ?>
 
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     </section>
 
@@ -713,10 +512,10 @@ include("./conn.php");
         <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.096)">
 
             <p class="text-dark"> ©2022 Vogue X Maniac.All Rights Reserved
-        </p>
-                <img class="px-2" src="./payment_pics/2560px-MasterCard_Logo.svg-removebg-preview.png">
-                <img class="px-2" src="./payment_pics/1200px-Visa.svg-removebg-preview.png">
-                <img class="px-2" src="./payment_pics/paypal-logo-removebg-preview.png">
+            </p>
+            <img class="px-2" src="./payment_pics/2560px-MasterCard_Logo.svg-removebg-preview.png">
+            <img class="px-2" src="./payment_pics/1200px-Visa.svg-removebg-preview.png">
+            <img class="px-2" src="./payment_pics/paypal-logo-removebg-preview.png">
         </div>
         <!-- Copyright -->
     </footer>
