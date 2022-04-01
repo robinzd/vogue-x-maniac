@@ -1,8 +1,12 @@
 <?php
 
-include(".conn.php");
+include("./db_conn.php");
+
+include("./conn.php");
 
 ?>
+
+
 
 
 <!DOCTYPE html>
@@ -57,26 +61,29 @@ include(".conn.php");
                     </div>
 
                     <!-- Checkboxes -->
-                    <h3 class="headline">
-                        <span>Brands</span>
-                    </h3>
-                    <div style="height: 180px; overflow-y: auto; overflow-x: hidden;">
-                        <?php
+                    <div class="list-group">
+                        <h3 class="headline">
+                            <span>Brands</span>
+                        </h3>
+                        <div style="height: 180px; overflow-y: auto; overflow-x: hidden;">
+                            <?php
 
-                        $query = "SELECT DISTINCT(product_brand) FROM shop_page WHERE product_status = '1' ORDER BY ID DESC";
-                        $statement = $conn->prepare($query);
-                        $statement->execute();
-                        $result = $statement->fetchAll();
-                        foreach ($result as $row) {
-                        ?>
-                            <div class="list-group-item checkbox">
-                                <label><input type="checkbox" class="common_selector brand" value="<?php echo $row['product_brand']; ?>"> <?php echo $row['product_brand']; ?></label>
-                            </div>
-                        <?php
-                        }
+                            $query = "SELECT DISTINCT(product_brand) FROM shop_page WHERE product_status = '1' ORDER BY ID DESC";
+                            $statement = $connect->prepare($query);
+                            $statement->execute();
+                            $result = $statement->fetchAll();
+                            foreach ($result as $row) {
+                            ?>
+                                <div class="list-group-item checkbox">
+                                    <label><input type="checkbox" class="common_selector brand" value="<?php echo $row['product_brand']; ?>"> <?php echo $row['product_brand']; ?></label>
+                                </div>
+                            <?php
+                            }
 
-                        ?>
+                            ?>
+                        </div>
                     </div>
+
 
                     <!-- Radios -->
                     <h3 class="headline">
