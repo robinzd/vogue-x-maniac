@@ -86,40 +86,31 @@ include("./conn.php");
 
 
                     <!-- Radios -->
-                    <h3 class="headline">
-                        <span>Categories</span>
-                    </h3>
-                    <div class="radio">
-                        <input type="radio" name="shop-filter__radio" id="shop-filter-radio_0" value="" checked="">
-                        <label for="shop-filter-radio_0">All</label>
+
+                    <div class="list-group">
+                        <h3 class="headline">
+                            <span>Categories</span>
+                        </h3>
+                        <?php
+
+                        $query = "
+                    SELECT DISTINCT(product_category) FROM product WHERE product_status = '1' ORDER BY product_category DESC
+                    ";
+                        $statement = $connect->prepare($query);
+                        $statement->execute();
+                        $result = $statement->fetchAll();
+                        foreach ($result as $row) {
+                        ?>
+                            <div class="list-group-item checkbox">
+                                <label><input type="checkbox" class="common_selector category" value="<?php echo $row['product_category']; ?>"> <?php echo $row['product_category']; ?></label>
+                            </div>
+                        <?php
+                        }
+
+                        ?>
                     </div>
-                    <div class="radio">
-                        <input type="radio" name="shop-filter__radio" id="shop-filter-radio_1" value="" checked="">
-                        <label for="shop-filter-radio_1">Watches</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="shop-filter__radio" id="shop-filter-radio_2" value="">
-                        <label for="shop-filter-radio_2">Womens Handbags</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="shop-filter__radio" id="shop-filter-radio_3" value="">
-                        <label for="shop-filter-radio_3">Shoes</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="shop-filter__radio" id="shop-filter-radio_4" value="">
-                        <label for="shop-filter-radio_4">BT Speakers</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="shop-filter__radio" id="shop-filter-radio_5" value="">
-                        <label for="shop-filter-radio_5">Smart Watches</label>
-                    </div>
-                    <div class="radio">
-                        <input type="radio" name="shop-filter__radio" id="shop-filter-radio_6" value="">
-                        <label for="shop-filter-radio_6">Travel Bags</label>
-                    </div>
-                    <div class="text-center">
-                        <button type="button" class="btn btn-success">Apply Filters</button>
-                    </div>
+
+
                 </form>
 
             </div>
