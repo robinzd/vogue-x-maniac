@@ -120,10 +120,11 @@ include("./conn.php");
             <div class="col-sm-8 col-md-9">
                 <!-- Filters -->
                 <div class="row">
-                    <div class="col-sm-6 col-md-4">
+                   
                         <?php
+                       
 
-                        $get_product_slider = "select * from shop_page LIMIT 0,1";
+                        $get_product_slider = "select * from shop_page";
 
                         $run_product_image = mysqli_query($conn, $get_product_slider);
 
@@ -140,7 +141,8 @@ include("./conn.php");
 
 
 
-                            echo " <div class='card bg-white'>
+                            echo "<div class='col-sm-6 col-md-4'>
+                            <div class='card bg-white'>
         <img class='card-img-top' src='./admin_area/product_images/$product_image' alt='' style='width:100%'>
         <div class='card-body'>
             <h5 class='card-title text-center'>$product_title</h5>
@@ -150,6 +152,7 @@ include("./conn.php");
                 <a href='#' class='btn btn-success'>Add to Cart</a>
             </div>
         </div>
+    </div>
     </div>
 
 
@@ -161,7 +164,7 @@ include("./conn.php");
 
 
                         ?>
-                    </div>
+                 
 
                     <div class="col-sm-6 col-md-4">
                         <?php
