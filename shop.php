@@ -65,7 +65,7 @@ include("./conn.php");
                         <h3 class="headline">
                             <span>Brands</span>
                         </h3>
-                        <div style="height: 180px; overflow-y: auto; overflow-x: hidden;">
+                        <div>
                             <?php
 
                             $query = "SELECT DISTINCT(product_brand) FROM shop_page WHERE product_status = '1' ORDER BY ID DESC";
