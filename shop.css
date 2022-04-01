@@ -697,17 +697,7 @@ span{
    font-family: 'Redressed', cursive;
 }
 
-ul.pagination.justify-content-center{
-    margin-top: 20px;
-}
 
-a.page-link{
-    color: lightgreen;
-}
-
-a.page-link:hover{
-    color:black;
-}
 
 h3{
     text-align: center;
@@ -720,6 +710,10 @@ button.btn.btn-success{
 
 .col-sm-4.col-md-3 {
     margin-top: 20px;
+}
+
+footer.text-center.text-lg-start.text-dark{
+  margin-top: 20px;
 }
 
 
