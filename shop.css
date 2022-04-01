@@ -779,16 +779,9 @@ a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2:hover{
   color:black;
 }
 
-/* filter button */
-button.btn.btn-success{
-  border-radius: 10px;
-  text-transform: capitalize;
-  background-color: lightgreen;
-  color:black;
-
-}
-
-button.btn.btn-success:hover{
-  background-color: black;
-  color:white;
+/* filter*/
+#loading {
+  text-align: center;
+  background: url('loader.gif') no-repeat center;
+  height: 150px;
 }
