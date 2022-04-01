@@ -116,7 +116,7 @@ include("./conn.php");
                 </form>
             </div>
 
-        </div>
+       
 
 
 
@@ -180,7 +180,7 @@ include("./conn.php");
             </div> <!-- / .row -->
         </div>
 
-    </div>
+   
 
 
 
