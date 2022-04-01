@@ -379,11 +379,11 @@ include("./conn.php");
 
 
                         ?>
-                    </div> <!-- / .row -->
+                    </div><br> <!-- / .row -->
 
                    
                 </div> <!-- / .row -->
-            </div><br>
+            </div>
 
 
 
