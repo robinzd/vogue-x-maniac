@@ -235,8 +235,8 @@ include("./conn.php");
 <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
 <figcaption class='gallery__caption'>$category_name</figcaption>
 </figure>
-</a>
-</div>
+
+
 
  
  
