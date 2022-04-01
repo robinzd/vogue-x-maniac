@@ -85,7 +85,7 @@ include("./conn.php");
                     </div>
 
 
-                    <!-- Radios -->
+                    <!--product category -->
 
                     <div class="list-group">
                         <h3 class="headline">
@@ -94,7 +94,7 @@ include("./conn.php");
                         <?php
 
                         $query = "
-                    SELECT DISTINCT(product_category) FROM product WHERE product_status = '1' ORDER BY product_category DESC
+                    SELECT DISTINCT(product_category) FROM shop_page  WHERE  product_status = '1' ORDER BY product_category DESC
                     ";
                         $statement = $connect->prepare($query);
                         $statement->execute();
