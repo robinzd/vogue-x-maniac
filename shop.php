@@ -24,6 +24,11 @@ include("./conn.php");
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- link the external css sheet -->
     <link rel="stylesheet" type="text/css" href="shop.css">
+    <!-- jquery -->
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <!-- jquery css -->
+    <link href="css/jquery-ui.css" rel="stylesheet">
     <title>Shop</title>
 </head>
 
@@ -277,10 +282,7 @@ include("./conn.php");
 
 
 
-            <!-- j query -->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-            <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-
+         
             <script>
                 $(document).ready(function() {
 
