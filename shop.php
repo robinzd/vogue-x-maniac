@@ -61,8 +61,8 @@ include("./conn.php");
                 <form class="shop__filter">
                     <div class="list-group">
                         <h3>Price</h3>
-                        <input type="range" id="hidden_minimum_price" value="0" />
-                        <input type="range" id="hidden_maximum_price" value="65000" />
+                        <input type="hidden" id="hidden_minimum_price" value="0" />
+                        <input type="hidden" id="hidden_maximum_price" value="65000" />
                         <p id="price_show">1000 - 65000</p>
                         <div id="price_range"></div>
                     </div>
