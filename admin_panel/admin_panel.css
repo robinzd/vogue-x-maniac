@@ -294,7 +294,7 @@ h4{
   padding-left: 0;
 }
 .column:hover .card .txt {
-  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .column:hover .card .txt h1, .column:hover .card .txt p {
   color: white;
