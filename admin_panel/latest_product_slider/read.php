@@ -249,7 +249,7 @@ include('dbconnection.php');
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-5">
-                            <h2>Product <b>Details</b></h2>
+                            <h2>Product Details</h2>
                         </div>
                         <?php
                         $vid = $_GET['viewid'];
