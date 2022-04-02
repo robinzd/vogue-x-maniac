@@ -32,8 +32,7 @@ include("./conn.php");
     <!-- js files -->
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <!-- custom css -->
-    <link href="css/style.css" rel="stylesheet">
+   
     <title>Shop</title>
 </head>
 
