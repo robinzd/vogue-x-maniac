@@ -799,11 +799,11 @@ label {
 }
 
 /* slider */
-.ui-slider {
+.slider {
 	position: relative;
 	text-align: left;
 }
-.ui-slider .ui-slider-handle {
+.slider .slider-handle {
 	position: absolute;
 	z-index: 2;
 	width: 1.2em;
@@ -812,7 +812,7 @@ label {
 	-ms-touch-action: none;
 	touch-action: none;
 }
-.ui-slider .ui-slider-range {
+.slider .slider-range {
 	position: absolute;
 	z-index: 1;
 	font-size: .7em;
