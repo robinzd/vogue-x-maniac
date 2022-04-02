@@ -31,9 +31,11 @@ include("./conn.php");
     <!-- <link href="./css/jquery-ui.css" rel="stylesheet"> -->
     <!-- js files -->
     <!-- <script src="./js/bootstrap.min.js"></script> -->
-    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <!-- ui jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-ui-Slider-Pips/1.11.5/jquery-ui-slider-pips.min.js" integrity="sha512-pVQ8Pa4StWWGWldpcG0HiT+wnRJOYi+6jI6wPxKpgCPSJBChB6huhHFYRFXyg3rhbrNs3L/WqpkSppC5oLsnJw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery-ui-Slider-Pips/1.11.5/jquery-ui-slider-pips.css" integrity="sha512-tQVH4HASI/A87WlcyRKRjmMVXKV4DAsD5MByjqpDXkeIWHKQAlAHZP6mNFhJIToSON+qSkxp4eJRTC0VhSiNFw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-ui-Slider-Pips/1.11.5/jquery-ui-slider-pips.js" integrity="sha512-RMAZXXExv+fEDNgrTPPEKoAxWSba/QrlfvRc3VXRjD832rVUIjze6vCJrfLAPYaagpWzPy9y41MhU/lGEr7cFQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jQuery-ui-Slider-Pips/1.11.5/jquery-ui-slider-pips.min.css" integrity="sha512-zDkW+F/j01hJjaL3VpWHNXRj4SlIaPWdo64ELHhqw6bRpoBT2tJ1lOcTnfaaVVief3qrDCfGIDh/5TMhTI7R/Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Shop</title>
 </head>
 
