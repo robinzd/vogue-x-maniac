@@ -64,6 +64,7 @@ include("./conn.php");
                         <input type="hidden" id="hidden_minimum_price" value="0" />
                         <input type="hidden" id="hidden_maximum_price" value="65000" />
                         <p id="price_show">1000 - 65000</p>
+                        <input type="range"  id="price_show">
                         <div id="price_range"></div>
                     </div>
 
