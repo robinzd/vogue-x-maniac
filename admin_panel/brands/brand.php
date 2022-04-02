@@ -208,6 +208,7 @@ table.table td i {
         .text {
             margin-left: 10px;
             color: black;
+            font-family: 'Roboto', sans-serif;
         }
 
         .navbar {
