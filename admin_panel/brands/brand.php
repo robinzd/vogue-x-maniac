@@ -34,7 +34,7 @@ echo "<script>window.location.href = 'brand.php'</script>";
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
-    color: #566787;
+    color:lightgreen;
     background: #f5f5f5;
     font-family: 'Roboto', sans-serif;
 }
