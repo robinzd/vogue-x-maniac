@@ -19,7 +19,7 @@ include('dbconnection.php');
     <style>
          @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
         body {
-            color: #566787;
+            color:black;
             background: #f5f5f5;
             font-family: 'Roboto', sans-serif;
         }
