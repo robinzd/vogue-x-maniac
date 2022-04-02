@@ -207,6 +207,7 @@ table.table td i {
 
         .text {
             margin-left: 10px;
+            color: black;
         }
 
         .navbar {
