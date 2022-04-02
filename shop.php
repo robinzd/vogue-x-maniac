@@ -31,7 +31,7 @@ include("./conn.php");
     <link href="css/jquery-ui.css" rel="stylesheet">
     <!-- js files -->
     <script src="js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+  
    
     <title>Shop</title>
 </head>
