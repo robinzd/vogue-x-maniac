@@ -108,8 +108,8 @@ include("./conn.php");
                         $result = $statement->fetchAll();
                         foreach ($result as $row) {
                         ?>
-                            <div class="list-group-item checkbox">
-                                <label><input type="checkbox" class="common_selector category" value="<?php echo $row['product_category']; ?>"> <?php echo $row['product_category']; ?></label>
+                            <div class="form-check">
+                                <label><input type="checkbox" class="form-check-input category" value="<?php echo $row['product_category']; ?>"> <?php echo $row['product_category']; ?></label>
                             </div>
                         <?php
                         }
