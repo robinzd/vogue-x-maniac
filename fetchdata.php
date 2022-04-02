@@ -66,7 +66,7 @@
    ';
             }
         } else {
-            $output = '<img src="noresultfound.png">';
+            $output = '<img src="noresultfound-removebg-preview.png">';
         }
         echo $output;
     }
