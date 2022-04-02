@@ -31,6 +31,11 @@ include("./conn.php");
     <link href="./css/jquery-ui.css" rel="stylesheet">
     <!-- js files -->
     <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
     <title>Shop</title>
 </head>
 
@@ -117,7 +122,7 @@ include("./conn.php");
                         ?>
                     </div>
 
-                  
+
 
                 </form>
             </div>
@@ -130,7 +135,7 @@ include("./conn.php");
                 <!-- Filters -->
                 <div class="row filter_data">
 
-                
+
 
 
                     <?php
@@ -183,16 +188,16 @@ include("./conn.php");
 
 
 
-                
 
-              
+
+
 
 
                 </div> <!-- / .row -->
             </div>
 
 
-            
+
 
 
 
@@ -284,7 +289,7 @@ include("./conn.php");
 
 
 
-         
+
             <script>
                 $(document).ready(function() {
 
@@ -297,7 +302,7 @@ include("./conn.php");
                         var maximum_price = $('#hidden_maximum_price').val();
                         var brand = get_filter('brand');
                         var category = get_filter('category');
-                       
+
                         $.ajax({
                             url: "fetchdata.php",
                             method: "POST",
@@ -307,7 +312,7 @@ include("./conn.php");
                                 maximum_price: maximum_price,
                                 brand: brand,
                                 category: category,
-                               
+
                             },
                             success: function(data) {
                                 $('.filter_data').html(data);
