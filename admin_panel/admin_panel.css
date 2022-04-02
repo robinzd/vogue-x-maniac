@@ -319,7 +319,7 @@ h4{
   box-shadow: 0 0 21px rgba(0, 0, 0, 0.27);
 }
 .card .txt {
-  margin-left: -3rem;
+  /* margin-left: -3rem; */
   z-index: 1;
 }
 .card .txt h1 {
