@@ -128,7 +128,10 @@ include("./conn.php");
 
             <div class="col-sm-8 col-md-9">
                 <!-- Filters -->
-                <div class="row">
+                <div class="row filter_data">
+
+                
+
 
                     <?php
 
@@ -180,13 +183,16 @@ include("./conn.php");
 
 
 
+                
 
+             
 
 
                 </div> <!-- / .row -->
             </div>
 
 
+            
 
 
 
