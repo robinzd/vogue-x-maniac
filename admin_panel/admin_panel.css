@@ -294,7 +294,7 @@ h4{
   padding-left: 0;
 }
 .column:hover .card .txt {
-  margin-left: 1rem;
+  margin-right:40px;
 }
 
 
@@ -351,11 +351,6 @@ h4{
   color: black;
   z-index: 0;
 }
-
-h1 :hover ::after{
-  margin-right: 100px;
-}
-
 
 
 .align-middle-1.footer.bg-light.text-center.text-lg-start {
