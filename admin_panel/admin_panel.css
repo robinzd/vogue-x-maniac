@@ -296,6 +296,11 @@ h4{
 .column:hover .card .txt {
   margin-right: 6rem;
 }
+
+.column:hover .card .txt ::after{
+  margin-right: 30px;
+}
+
 .column:hover .card .txt h1, .column:hover .card .txt p {
   color: white;
   opacity: 1;
@@ -304,7 +309,7 @@ h4{
   color: white;
 }
 .column:hover a:after {
-  width: 20%;
+  width: 10%;
 }
 
 .card {
