@@ -25,7 +25,7 @@ include("./conn.php");
     <!-- link the external css sheet -->
     <link rel="stylesheet" type="text/css" href="shop.css">
     <!-- jquery -->
-    <script src="./js/jquery-1.10.2.min.js"></script>
+    <!-- <script src="./js/jquery-1.10.2.min.js"></script> -->
     <!-- <script src="./js/jquery-ui.js"></script> -->
     <!-- jquery css -->
     <!-- <link href="./css/jquery-ui.css" rel="stylesheet"> -->
