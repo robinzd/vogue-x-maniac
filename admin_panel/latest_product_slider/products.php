@@ -32,8 +32,9 @@ echo "<script>window.location.href = 'products.php'</script>";
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <style>
+     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
-    color: #566787;
+    color: black;
     background: #f5f5f5;
     font-family: 'Roboto', sans-serif;
 }
@@ -55,6 +56,7 @@ body {
 .table-title h2 {
     margin: 5px 0 0;
     font-size: 24px;
+    font-family: 'Roboto', sans-serif;
 }
 .table-title select {
     border-color: #ddd;
@@ -256,7 +258,7 @@ table.table td i {
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-5">
-                        <h2>Product <b>Management</b></h2>
+                        <h2>Product Management</h2>
                     </div>
 
                     <div class="col-sm-7" align="right">
@@ -272,7 +274,8 @@ table.table td i {
                         <th>Product Image</th>
                         <th>Product Title</th>
                         <th>Product Strikeout Price</th>
-                        <th>Product Price</th>                                
+                        <th>Product Price</th>
+                        <th>Actions</th>                                
                     </tr>
                 </thead>
                 <tbody>

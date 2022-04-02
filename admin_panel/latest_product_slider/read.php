@@ -17,6 +17,7 @@ include('dbconnection.php');
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <style>
+         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
         body {
             color: #566787;
             background: #f5f5f5;
@@ -187,7 +188,8 @@ include('dbconnection.php');
 		}
 
         .text-center{
-			color:grey;
+			color:black;
+
 		}
 
         .btn-circle.btn-xl {
