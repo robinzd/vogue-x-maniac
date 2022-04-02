@@ -352,6 +352,10 @@ h4{
   z-index: 0;
 }
 
+h1 :hover ::after{
+  margin-right: 40px;
+}
+
 
 
 .align-middle-1.footer.bg-light.text-center.text-lg-start {
