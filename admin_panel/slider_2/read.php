@@ -18,7 +18,7 @@ include('dbconnection.php');
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <style>
         body {
-            color: #566787;
+            color:black;
             background: #f5f5f5;
             font-family: 'Roboto', sans-serif;
         }
@@ -187,7 +187,7 @@ include('dbconnection.php');
         }
 
         .text-center {
-            color: grey;
+            color: black;
         }
 
         .btn-circle.btn-xl {
@@ -243,7 +243,7 @@ include('dbconnection.php');
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-5">
-                            <h2>Slider <b>Details</b></h2>
+                            <h2>Slider Details</h2>
                         </div>
                         <?php
                         $vid = $_GET['viewid'];

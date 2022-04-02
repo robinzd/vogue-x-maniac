@@ -33,7 +33,7 @@ echo "<script>window.location.href = 'slider2.php'</script>";
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <style>
 body {
-    color: #566787;
+    color:black;
     background: #f5f5f5;
     font-family: 'Roboto', sans-serif;
 }
@@ -249,7 +249,7 @@ table.table td i {
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-5">
-                        <h2>Slider2 <b>Management</b></h2>
+                        <h2>Slider2 Management</h2>
                     </div>
 
                     <div class="col-sm-7" align="right">
@@ -263,7 +263,8 @@ table.table td i {
                     <tr>
                         <th>ID</th>
                         <th>Slider Name</th>
-                        <th>Slider image</th>                       
+                        <th>Slider image</th> 
+                        <th>Actions</th>                      
                     </tr>
                 </thead>
                 <tbody>
