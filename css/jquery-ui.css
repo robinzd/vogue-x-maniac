@@ -719,6 +719,7 @@ button.ui-button::-moz-focus-inner {
 	float: right;
 	margin-top: 0;
 }
+/*  */
 .ui-slider {
 	position: relative;
 	text-align: left;
@@ -784,6 +785,8 @@ button.ui-button::-moz-focus-inner {
 .ui-slider-vertical .ui-slider-range-max {
 	top: 0;
 }
+
+/*  */
 .ui-sortable-handle {
 	-ms-touch-action: none;
 	touch-action: none;
