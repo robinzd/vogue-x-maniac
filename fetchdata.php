@@ -66,12 +66,12 @@
    ';
             }
         } else {
-            $output = '<h3>No Data Found</h3>';
+            $output = '<img src="noresultfound.png">';
         }
         echo $output;
     }
-    
 
+    ?>
 
-
+   
 
