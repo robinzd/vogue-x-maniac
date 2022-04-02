@@ -189,7 +189,7 @@ include('dbconnection.php');
 		}
 
         .text-center{
-			color:grey;
+			color:black;
 		}
 
         .btn-circle.btn-xl {
