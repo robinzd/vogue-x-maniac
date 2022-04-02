@@ -81,8 +81,8 @@ include("./conn.php");
                             $result = $statement->fetchAll();
                             foreach ($result as $row) {
                             ?>
-                                <div class="list-group-item checkbox">
-                                    <label><input type="checkbox" class="common_selector brand" value="<?php echo $row['product_brand']; ?>"> <?php echo $row['product_brand']; ?></label>
+                               <div class="form-check">
+                                    <label><input type="checkbox" class="form-check-input" value="<?php echo $row['product_brand']; ?>"> <?php echo $row['product_brand']; ?></label>
                                 </div>
                             <?php
                             }
@@ -323,7 +323,7 @@ include("./conn.php");
                         return filter;
                     }
 
-                    $('.common_selector').click(function() {
+                    $('.form-check-input').click(function() {
                         filter_data();
                     });
 
