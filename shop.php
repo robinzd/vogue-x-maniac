@@ -26,13 +26,6 @@ include("./conn.php");
     <link rel="stylesheet" type="text/css" href="shop.css">
     <!-- jquery -->
     <script src="./js/jquery-1.10.2.min.js"></script>
-    <script src="./js/jquery-ui.js"></script>
-    <!-- jquery css -->
-    <link href="./css/jquery-ui.css" rel="stylesheet">
-    <!-- js files -->
-    <script src="./js/bootstrap.min.js"></script>
-    <!--js-bootsstrap -->
-    <script src="./js/jquery-331.min.js"></script>
     <title>Shop</title>
 </head>
 
