@@ -29,6 +29,11 @@ include("./conn.php");
     <script src="js/jquery-ui.js"></script>
     <!-- jquery css -->
     <link href="css/jquery-ui.css" rel="stylesheet">
+    <!-- js files -->
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom css -->
+    <link href="css/style.css" rel="stylesheet">
     <title>Shop</title>
 </head>
 
