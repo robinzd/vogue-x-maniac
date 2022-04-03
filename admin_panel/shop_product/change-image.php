@@ -6,7 +6,7 @@ if (isset($_POST['submit'])) {
 	//getting the post values
 	$productimage = $_FILES["product_image"]["name"];
 	$oldppic = $_POST['oldpic'];
-	$oldprofilepic = "products_images" . "/" . $oldppic;
+	$oldprofilepic = "shopproducts_images" . "/" . $oldppic;
 	// get the image extension
 	$extension = substr($productimage, strlen($productimage) - 4, strlen($productimage));
 	// allowed extensions
@@ -18,14 +18,14 @@ if (isset($_POST['submit'])) {
 		//rename the image file
 		$imgnewfile = md5($imgfile) . time() . $extension;
 		// Code for move image into directory
-		move_uploaded_file($_FILES["product_image"]["tmp_name"], "products_images/" . $imgnewfile);
+		move_uploaded_file($_FILES["product_image"]["tmp_name"], "shopproducts_images/" . $imgnewfile);
 		// Query for data insertion
-		$query = mysqli_query($conn, "update product_owlslider set product_image='$imgnewfile' where id='$uid' ");
+		$query = mysqli_query($conn, "update shop_page set product_image='$imgnewfile' where id='$uid' ");
 		if ($query) {
 			//Old pic
 			unlink($oldprofilepic);
 			echo "<script>alert('product Image updated successfully');</script>";
-			echo "<script type='text/javascript'> document.location ='products.php'; </script>";
+			echo "<script type='text/javascript'> document.location ='shopproducts.php'; </script>";
 		} else {
 			echo "<script>alert('Something Went Wrong. Please try again');</script>";
 		}
@@ -174,14 +174,14 @@ if (isset($_POST['submit'])) {
 		<form method="POST" enctype="multipart/form-data">
 			<?php
 			$eid = $_GET['userid'];
-			$ret = mysqli_query($conn, "select * from product_owlslider where ID='$eid'");
+			$ret = mysqli_query($conn, "select * from shop_page where ID='$eid'");
 			while ($row = mysqli_fetch_array($ret)) {
 			?>
 				<h2>Update Product Image</h2>
 			
 				<input type="hidden" name="oldpic" value="<?php echo $row['product_image']; ?>">
 				<div class="form-group">
-					<img src="products_images/<?php echo $row['product_image']; ?>" width="120" height="120">
+					<img src="shopproducts_images/<?php echo $row['product_image']; ?>" width="120" height="120">
 				</div>
 
 				<div class="form-group">
@@ -196,7 +196,7 @@ if (isset($_POST['submit'])) {
 				</div>
 			<?php
 			} ?>
-			<div class="text-center">Back To Home <a href="products.php"><i class="fa fa-home"></i></a></div>
+			<div class="text-center">Back To Home <a href="shopproducts.php"><i class="fa fa-home"></i></a></div>
 		</form>
 
 

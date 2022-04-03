@@ -7,6 +7,9 @@ if (isset($_POST['submit'])) {
 	$producttitle = $_POST['title'];
 	$productstrikeoutprice = $_POST['strikeoutprice'];
 	$productprice = $_POST['price'];
+	$productbrand = $_POST['brand'];
+	$productcategory = $_POST['category'];
+	$productstatus = $_POST['status'];
 	// get the image extension
 	$extension = substr($productimage, strlen($productimage) - 4, strlen($productimage));
 	// allowed extensions
@@ -18,12 +21,12 @@ if (isset($_POST['submit'])) {
 		//rename the image file
 		$imgnewfile = md5($imgfile) . time() . $extension;
 		// Code for move image into directory
-		move_uploaded_file($_FILES["product_image"]["tmp_name"], "products_images/" . $imgnewfile);
+		move_uploaded_file($_FILES["product_image"]["tmp_name"], "shopproducts_images/" . $imgnewfile);
 		// Query for data insertion
-		$query = mysqli_query($conn, "insert into product_owlslider(product_image,product_title,product_strikeout_price,product_price) value ('$imgnewfile','$producttitle','$productstrikeoutprice',' $productprice' )");
+		$query = mysqli_query($conn, "insert into shop_page(product_image,product_title,product_strikeout_price,product_price,product_brand,product_category,product_status) value ('$imgnewfile','$producttitle','$productstrikeoutprice',' $productprice','$productbrand','$productcategory','$productstatus')");
 		if ($query) {
 			echo "<script>alert('You have successfully inserted the product');</script>";
-			echo "<script type='text/javascript'> document.location ='products.php'; </script>";
+			echo "<script type='text/javascript'> document.location ='shopproducts.php'; </script>";
 		} else {
 			echo "<script>alert('Something Went Wrong. Please try again');</script>";
 		}
@@ -181,12 +184,21 @@ if (isset($_POST['submit'])) {
 			<div class="form-group">
 				<input type="text" class="form-control" name="price" placeholder="Enter Your product price" required="true">
 			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" name="brand" placeholder="Enter Your product brand" required="true">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" name="category" placeholder="Enter Your product category" required="true">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" name="status" placeholder="Enter Your product status" required="true">
+			</div>
 
 			<div class="form-group">
 				<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Submit</button>
 			</div>
 
-			<div class="text-center">Back To Home <a href="products.php"><i class="fa fa-home"></i></a></div>
+			<div class="text-center">Back To Home <a href="shopproducts.php"><i class="fa fa-home"></i></a></div>
 		</form>
 
 	</div>

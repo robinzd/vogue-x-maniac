@@ -162,7 +162,7 @@ include("./conn.php");
 
                         echo "<div class='col-sm-6 col-md-4'>
                             <div class='card bg-white'>
-        <img class='card-img-top' src='./admin_area/product_images/$product_image' alt='' style='width:100%'>
+        <img class='card-img-top' src='./admin_panel/shop_product/shopproducts_images/$product_image' alt='' style='width:100%'>
         <div class='card-body'>
             <h5 class='card-title text-center'>$product_title</h5>
         <p class='card-text  text-center'><s>₹$product_strikeout_price</s>₹$product_price</p>

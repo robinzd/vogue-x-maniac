@@ -253,7 +253,7 @@ include('dbconnection.php');
                         </div>
                         <?php
                         $vid = $_GET['viewid'];
-                        $ret = mysqli_query($conn, "select * from product_owlslider where ID =$vid");
+                        $ret = mysqli_query($conn, "select * from shop_page where ID =$vid");
                         $cnt = 1;
                         while ($row = mysqli_fetch_array($ret)) {
 
@@ -274,7 +274,7 @@ include('dbconnection.php');
 
                         <tr>
                             <th width="200">product Image</th>
-                            <td><img src="products_images/<?php echo $row['product_image']; ?>" width="80" height="80"></td>
+                            <td><img src="shopproducts_images/<?php echo $row['product_image']; ?>" width="80" height="80"></td>
                         </tr>
 
                         <tr>
@@ -292,6 +292,21 @@ include('dbconnection.php');
                             <td><?php echo $row['product_price']; ?></td>
                         </tr>
 
+                        <tr>
+                            <th>Product Brand</th>
+                            <td><?php echo $row['product_brand']; ?></td>
+                        </tr>
+
+                        <tr>
+                            <th>Product Category</th>
+                            <td><?php echo $row['product_category']; ?></td>
+                        </tr>
+
+                        <tr>
+                            <th>Product Status</th>
+                            <td><?php echo $row['product_status']; ?></td>
+                        </tr>
+
                     <?php
                             $cnt = $cnt + 1;
                         } ?>
@@ -301,7 +316,7 @@ include('dbconnection.php');
 
             </div>
         </div>
-        <div class="text-center">Back To Home <a href="products.php"><i class="fa fa-home"></i></a></div>
+        <div class="text-center">Back To Home <a href="shopproducts.php"><i class="fa fa-home"></i></a></div>
     </div>
 
     <footer class="bg-light text-center text-lg-start">

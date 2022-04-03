@@ -132,7 +132,7 @@
                       </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                      <a href="#">
+                      <a href="./shop_product/shopproducts.php">
                           <div class="card gr-6">
                               <div class="txt">
                                   <h1>Shop Product </br>
@@ -226,7 +226,7 @@
                       </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                      <a href="#">
+                      <a href="./shop_product/shopproducts.php">
                           <div class="card gr-6">
                               <div class="txt">
                                   <h1>Shop Product </br>
