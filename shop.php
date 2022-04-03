@@ -145,7 +145,7 @@ include("./conn.php");
 
                     $get_product_slider = "select * from shop_page";
 
-                    $run_product_image = mysqli_query($conn, $get_product_slider);
+                    $run_product_image = mysqli_query($conn,$get_product_slider);
 
 
 

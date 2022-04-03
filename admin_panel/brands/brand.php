@@ -1,7 +1,6 @@
 <?php
 //database conection  file
 include('dbconnection.php');
-
 //Code for deletion
 if(isset($_GET['delid']))
 {
