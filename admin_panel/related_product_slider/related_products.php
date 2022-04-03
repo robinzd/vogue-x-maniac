@@ -295,7 +295,7 @@ while ($row=mysqli_fetch_array($ret)) {
                         <td>
   <a href="read.php?viewid=<?php echo htmlentities ($row['ID']);?>" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                             <a href="edit.php?editid=<?php echo htmlentities ($row['ID']);?>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a href="related_products.php?delid=<?php echo ($row['ID']);?>&&product_image=<?php echo $row['image_source'];?>" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to Delete ?');"><i class="material-icons">&#xE872;</i></a>
+                            <a href="related_products.php?delid=<?php echo ($row['ID']);?>&&product_image=<?php echo $row['product_image'];?>" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to Delete ?');"><i class="material-icons">&#xE872;</i></a>
                         </td>
                     </tr>
                     <?php 
