@@ -340,7 +340,7 @@ include("./conn.php");
                             max: 65000,
                             values: [1000, 65000],
                             step: 500,
-                            slide: function(event, ui) {
+                            stop: function(event, ui) {
                                 $('#price_show').html(ui.values[0] + ' - ' + ui.values[1]);
                                 $('#hidden_minimum_price').val(ui.values[0]);
                                 $('#hidden_maximum_price').val(ui.values[1]);
@@ -352,6 +352,9 @@ include("./conn.php");
 
                 });
             </script>
+
+
+
 
 </body>
 
