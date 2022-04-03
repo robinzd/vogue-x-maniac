@@ -174,7 +174,7 @@ include("./conn.php");
     </div>
     </div>
 
-    admin_panel\shop_product\shopproducts_images
+    
 
 
 
