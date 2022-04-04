@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		if ($email == isset($row['email'])) {
 			echo "email already exists";
 		}
-	} else if (
+	}  elseif (
 		!empty($first_name) && !empty($last_name) && !empty($email)
 
 		&& !empty($password) && !is_numeric($mobile_no)
