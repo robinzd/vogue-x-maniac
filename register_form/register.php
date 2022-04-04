@@ -53,7 +53,7 @@
 					
 					
 					<div class="wrap-input100 validate-input" data-validate="last name is required">
-						<input class="input100" type="password" name="Last Name">
+						<input class="input100" type="text" name="Last Name">
 						<span class="focus-input100"></span>
 						<span class="label-input100">Last Name</span>
 					</div>
@@ -65,7 +65,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="text" name="Password">
+						<input class="input100" type="password" name="Password">
 						<span class="focus-input100"></span>
 						<span class="label-input100">Password</span>
 					</div>
