@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 		$check = mysqli_query($conn, $query);
 
-		header("location:login.php");
+		header("location:../login_form/login.php");
 		die;
 	} else {
 		echo "please enter some valid information!";
