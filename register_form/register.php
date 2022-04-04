@@ -14,9 +14,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	$password = $_POST["Password"];
 	$mobile_no = $_POST["Mobile_No"];
 
-	$sql = "select * from users where (user_email='$email');";
+	$query = "select * from users where (user_email='$email');";
 
-	$res = mysqli_query($mysqli, $sql);
+	$res = mysqli_query($conn, $query);
 
 	if (mysqli_num_rows($res) > 0) {
 
@@ -109,6 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 						<input class="input100" type="text" name="First_Name">
 						<span class="focus-input100"></span>
 						<span class="label-input100">First Name</span>
+						
 					</div>
 
 

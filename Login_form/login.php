@@ -111,7 +111,6 @@ session_start();
 						<input class="input100" type="password" name="password">
 						<span class="focus-input100"></span>
 						<span class="label-input100">Password</span>
-						
 					</div>
 
 					<div class="flex-sb-m w-full p-t-3 p-b-32">
