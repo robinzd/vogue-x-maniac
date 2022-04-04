@@ -14,17 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	$password = $_POST["Password"];
 	$mobile_no = $_POST["Mobile_No"];
 
-	$query = "select * from users where (user_email='$email');";
-
-	$res = mysqli_query($conn, $query);
-
-	if (mysqli_num_rows($res) > 0) {
-
-		$row = mysqli_fetch_assoc($res);
-		if ($email == isset($row['email'])) {
-			echo "email already exists";
-		}
-	}  elseif (
+ if (
 		!empty($first_name) && !empty($last_name) && !empty($email)
 
 		&& !empty($password) && !is_numeric($mobile_no)
@@ -109,7 +99,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 						<input class="input100" type="text" name="First_Name">
 						<span class="focus-input100"></span>
 						<span class="label-input100">First Name</span>
-						
+
 					</div>
 
 
