@@ -30,9 +30,9 @@ session_start();
 			echo "selected";
 
             if($result)
-            {
+            {    
                 if($result && mysqli_num_rows($result) > 0)
-                {
+                {    echo mysqli_num_rows($result);
                     $user_data = mysqli_fetch_assoc($result);
                     if($user_data['user_password'] === $password)
                     {
