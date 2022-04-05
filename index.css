@@ -159,7 +159,6 @@ img#brand{
     display: flex;
     padding: 2px;
     flex-wrap: wrap;
-    flex-direction: row;
   }
 
   
