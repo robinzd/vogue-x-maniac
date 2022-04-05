@@ -41,6 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
  if (!empty($first_name) && !empty($last_name) && !empty($email)&& !empty($password) && !empty($mobile_no)) 
  {
 		// save to database
+		echo "hi";
 		$user_id = random_num(20);
 		echo $user_id;
 		$query = "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`, `user_password`,`user_mob_no`) VALUES ('$user_id','$first_name','$last_name','$email','$password','$mobile_no')";
