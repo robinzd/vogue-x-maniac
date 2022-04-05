@@ -42,7 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 	  echo "check";
 
-	  echo $res;
+	  
 
 	  echo mysqli_num_rows($res);
 
