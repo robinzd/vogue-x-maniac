@@ -9,7 +9,7 @@ include("./conn.php");
 
 ?>
 
-<?php
+<!-- <?php
 
 session_start();
 
@@ -20,7 +20,7 @@ include("./function.php");
 
 $user_data = check_login($conn);
 
-?>
+?> -->
 
 
 
