@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 		
 
-		header("location:login.php");
+		header("location:Login_form/login.php");
 		die;
 	} 
 	else {
