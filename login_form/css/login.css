@@ -633,3 +633,8 @@ a.login100-form-social-item.flex-c-m.bg2.m-r-5{
 a.login100-form-social-item.flex-c-m.bg2.m-r-5:hover{
   background-color:black;
 }
+
+
+.limiter{
+  margin-bottom: 20px;
+}
