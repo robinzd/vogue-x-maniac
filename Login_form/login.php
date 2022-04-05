@@ -43,11 +43,11 @@ session_start();
                     }
                 }
             }
-            echo "wrong username or password";
+            echo "<script>alert('Wrong Email or Password');</script>";
           
         }else
         {
-            echo "please enter some valid information!";
+            echo  "<script>alert('Please Enter Some Valid Information!');</script>";
         }
 
 

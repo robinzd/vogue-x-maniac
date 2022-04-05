@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
         if($email==isset($row['user_email'])) 
         {
-            	echo "email already exists";
+            	echo "<script>alert('Email Already Exsists');</script>";
         }
 
 	}
@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		die;
 	} 
 	else {
-		echo "please enter some valid information!";
+		echo "<script>alert('Please Enter Some Valid Information!');</script>";
 	}
 }
 
