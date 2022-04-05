@@ -158,6 +158,8 @@ img#brand{
     transition: 0.3s;
     display: flex;
     padding: 2px;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
 
   
