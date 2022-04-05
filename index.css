@@ -170,11 +170,9 @@ img#brand{
     display: flex;
     flex-direction:column;
     width: 25%;
-  
-    
   }
 
-  
+
   .gallery__link {
     margin: 2px;
     overflow: hidden;
