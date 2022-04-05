@@ -172,7 +172,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 					<div class="text-center p-t-46 p-b-20">
 						<span class="txt2">
-							Already Have an account?<a href="../Login_form/login.php" class="txt1">Login</a>
+							Already Have an account?<a href="../login_form/login.php" class="txt1">Login</a>
 						</span>
 					</div>
 
