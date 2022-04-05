@@ -1,6 +1,6 @@
 <?php
 
-echo "from function";
+
 
 function check_login($conn)
 {
