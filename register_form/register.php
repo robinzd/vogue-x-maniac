@@ -42,12 +42,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 	  echo $res;
 
+	  echo mysqli_num_rows($res);
+
       if (mysqli_num_rows($res) > 0) {
         
         $row = mysqli_fetch_assoc($res);
 
 		echo $row;
-		
+
         if($email==isset($row['user_email']))
         {
             	echo "email already exists";
