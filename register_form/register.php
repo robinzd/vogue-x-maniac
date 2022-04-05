@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	
 
 
- elseif (!empty($first_name) && !empty($last_name) && !empty($email)&& !empty($password) && !empty($mobile_no)) 
+ elseif (!empty($first_name) && !is_numeric($first_name) && !empty($last_name) && !is_numeric($last_name) && !empty($email)&& !empty($password) && !empty($mobile_no)) 
  {
 		// save to database
 		
