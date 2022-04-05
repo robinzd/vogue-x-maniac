@@ -34,16 +34,34 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	echo "<br/>";
 	echo !empty($mobile_no);
 
+	$sql="select * from users where (user_email='$email');";
+
+	echo $sql;
+
+      $res=mysqli_query($conn,$sql);
+
+	  echo $res;
+
+      if (mysqli_num_rows($res) > 0) {
+        
+        $row = mysqli_fetch_assoc($res);
+        if($email==isset($row['user_email']))
+        {
+            	echo "email already exists";
+        }
+
+	}
+
 
 	
 
 
- if (!empty($first_name) && !empty($last_name) && !empty($email)&& !empty($password) && !empty($mobile_no)) 
+ elseif (!empty($first_name) && !empty($last_name) && !empty($email)&& !empty($password) && !empty($mobile_no)) 
  {
 		// save to database
 		echo "hi";
 		// $user_id = random_num(20);
-		$user_id = 1234;
+		
 		echo $user_id;
 		$query = "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`, `user_password`,`user_mob_no`) VALUES ('$user_id','$first_name','$last_name','$email','$password','$mobile_no')";
         
