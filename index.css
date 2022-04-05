@@ -158,10 +158,9 @@ img#brand{
     transition: 0.3s;
     display: flex;
     padding: 2px;
-   
-  
- 
   }
+
+  
   .gallery:hover .gallery__image {
     filter: grayscale(1);
   }
