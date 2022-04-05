@@ -32,7 +32,7 @@ session_start();
                     if($user_data['user_password'] === $password)
                     {
                         $_SESSION['user_id'] = $user_data['user_id'];
-                        header("location:./index.php");
+                        header("location:../index.php");
                         die;
                     
                     }
@@ -97,6 +97,7 @@ session_start();
 
 				<span class="login100-form-title p-b-43">
 						<img src="../header images/vogue x maniac png.png">
+						
 					</span>
 
 
