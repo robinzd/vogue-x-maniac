@@ -42,7 +42,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
  {
 		// save to database
 		echo "hi";
-		$user_id = random_num(20);
+		// $user_id = random_num(20);
+		$user_id = 1234;
 		echo $user_id;
 		$query = "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`, `user_password`,`user_mob_no`) VALUES ('$user_id','$first_name','$last_name','$email','$password','$mobile_no')";
         
