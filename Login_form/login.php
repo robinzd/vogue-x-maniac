@@ -12,10 +12,7 @@ session_start();
         $email =$_POST["email"];
         $password =$_POST["password"];
 
-		echo $email;
-		echo "<br/>";
-		echo $password;
-		echo "<br/>";
+		
        
         if( !empty($email) && !empty($password) )
         {
@@ -23,25 +20,23 @@ session_start();
            
             $query = "select * from users where user_email='$email' limit 1";
 
-			echo $query;
-			echo "<br/>";
+		
 
             $result=mysqli_query($conn, $query);
 
-			echo "selected";
-			echo "<br/>";
+			
 
             if($result)
             {    
                 if($result && mysqli_num_rows($result) > 0)
-                {    echo mysqli_num_rows($result);
-					echo "<br/>";
+                {   
+					
                     $user_data = mysqli_fetch_assoc($result);
                     if($user_data['user_password'] === $password)
-                    {   echo $user_data['user_password'] === $password;
-						echo "<br/>";
+                    {  
+						
                         $_SESSION['user_id'] = $user_data['user_id'];
-						echo  $user_data['user_id'];
+					
                         header("location:../index.php");
                         die;
                     
