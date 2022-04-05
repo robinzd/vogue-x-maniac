@@ -230,10 +230,7 @@ include("./conn.php");
         <div class="gallery">
 
 
-            
-
-                
-                    <?php
+                <?php
 
                     $get_product_category = "select * from product_category";
 
@@ -269,19 +266,6 @@ include("./conn.php");
 
 
                     ?>
-
-                
-
-
-
-
-
-
-
-
-
-               
-
 
         </div>
 
