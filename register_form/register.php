@@ -3,8 +3,8 @@
 session_start();
 
 
-include("./conn.php");
-include("./function.php");
+include("../conn.php");
+include("../function.php");
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	// something was posted
@@ -52,7 +52,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 		$check = mysqli_query($conn, $query);
 
-		header("location:../login_form/login.php");
+		echo "inserted";
+
+		// header("location:../login_form/login.php");
 		die;
 	} 
 	else {
