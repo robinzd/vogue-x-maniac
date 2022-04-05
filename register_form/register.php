@@ -14,16 +14,22 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	$password = $_POST["Password"];
 	$mobile_no = $_POST["Mobile_No"];
 
+	echo $first_name;
+	echo $last_name;
+	echo $email;
+	echo $password;
+	echo $mobile_no;
+
  if (
 		!empty($first_name) && !empty($last_name) && !empty($email)
 
-		&& !empty($password) && !is_numeric($mobile_no)
+		&& !empty($password)
 	) {
 		// save to database
 		$user_id = random_num(20);
 		$query = "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`, `user_password`,`user_mob_no`) VALUES ('$user_id','$first_name','$last_name','$email','$password','$mobile_no')";
         
-		echo $query;
+		
 
 		$check = mysqli_query($conn, $query);
 
