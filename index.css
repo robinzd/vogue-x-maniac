@@ -168,11 +168,10 @@ img#brand{
   
   .gallery__column {
     display: flex;
-    flex-direction:column;
     width: 25%;
-  
-    
+    flex-wrap: wrap;
   }
+
   .gallery__link {
     margin: 2px;
     overflow: hidden;
