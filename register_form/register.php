@@ -14,33 +14,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	$password = $_POST["Password"];
 	$mobile_no = $_POST["Mobile_No"];
 
-	echo $first_name;
-	echo "<br/>";
-	echo $last_name;
-	echo "<br/>";
-	echo $email;
-	echo "<br/>";
-	echo $password;
-	echo "<br/>";
-	echo $mobile_no;
-	echo "<br/>";
-	echo !empty($first_name);
-	echo "<br/>";
-	echo  !empty($last_name);
-	echo "<br/>";
-	echo !empty($email);
-	echo "<br/>";
-	echo !empty($password);
-	echo "<br/>";
-	echo !empty($mobile_no);
+	
 
 	$sql="select * from users where (user_email='$email');";
 
-	echo $sql;
+	
 
       $res=mysqli_query($conn,$sql);
 
-	  echo "check";
+	  
 
 	  
 
@@ -50,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         
         $row = mysqli_fetch_assoc($res);
 
-		echo $row;
+		
 
         if($email==isset($row['user_email']))
         {
@@ -66,20 +48,19 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
  elseif (!empty($first_name) && !empty($last_name) && !empty($email)&& !empty($password) && !empty($mobile_no)) 
  {
 		// save to database
-		echo "hi";
-		// $user_id = random_num(20);
 		
-		echo $user_id;
+		 $user_id = random_num(20);
+		
+		
 		$query = "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`, `user_password`,`user_mob_no`) VALUES ('$user_id','$first_name','$last_name','$email','$password','$mobile_no')";
         
-		echo "<br/>";
-		echo $query;
+		
 
 		$check = mysqli_query($conn, $query);
 
-		echo "inserted";
+		
 
-		// header("location:../login_form/login.php");
+		header("location:../login_form/login.php");
 		die;
 	} 
 	else {
