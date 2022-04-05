@@ -13,7 +13,9 @@ session_start();
         $password =$_POST["password"];
 
 		echo $email;
+		echo "<br/>";
 		echo $password;
+		echo "<br/>";
        
         if( !empty($email) && !empty($password) )
         {
