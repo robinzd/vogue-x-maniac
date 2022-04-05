@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 		
 
-        if($email==isset($row['user_email']))
+        if($email==isset($row['user_email'])) 
         {
             	echo "email already exists";
         }
@@ -59,7 +59,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 		
 
-		header("location:../login_form/login.php");
+		header("location:login.php");
 		die;
 	} 
 	else {
