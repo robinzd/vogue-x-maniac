@@ -19,6 +19,19 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	echo $email;
 	echo $password;
 	echo $mobile_no;
+	echo !empty($first_name);
+	echo "<br/>";
+	echo  !empty($last_name);
+	echo "<br/>";
+	echo !empty($email);
+	echo "<br/>";
+	echo !empty($password);
+	echo "<br/>";
+	echo !empty($mobile_no);
+
+
+	
+
 
  if (
 		!empty($first_name) && !empty($last_name) && !empty($email)
