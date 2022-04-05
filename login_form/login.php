@@ -11,6 +11,9 @@ session_start();
         // something was posted
         $email =$_POST["email"];
         $password =$_POST["password"];
+
+		echo $email;
+		echo $password;
        
         if( !empty($email) && !empty($password) )
         {
@@ -18,7 +21,7 @@ session_start();
            
             $query = "select * from users where user_email='$email' limit 1";
 			echo $query;
-			
+
             $result=mysqli_query($conn, $query);
 
             if($result)
@@ -29,7 +32,7 @@ session_start();
                     if($user_data['user_password'] === $password)
                     {
                         $_SESSION['user_id'] = $user_data['user_id'];
-                        header("location:../index.php");
+                        header("location:./index.php");
                         die;
                     
                     }
