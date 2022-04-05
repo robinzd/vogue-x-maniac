@@ -226,6 +226,9 @@ include("./conn.php");
     <section id="brands">
         <h2>categories</h2>
 
+        <div class="container">
+        <div class="row">
+
 
         <div class="gallery">
 
@@ -249,13 +252,15 @@ include("./conn.php");
 
 
 
-                        echo "<div class='gallery__column'>
+                        echo "<div class='col-sm-6 col-md-4'
+                        <div class='gallery__column'>
                         <a href='#' target='_blank' class='gallery__link'>
                         <figure class='gallery__thumb'>
 <img src='./categories_images/$category_image' alt='mens and womens shoes' class='gallery__image'>
 <figcaption class='gallery__caption'>$category_name</figcaption>
 </figure>
 </a>
+</div>
 </div>
 
 
@@ -485,6 +490,10 @@ include("./conn.php");
             </div>
 
 
+
+        </div>
+
+        </div>
 
         </div>
 
