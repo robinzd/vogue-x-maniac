@@ -26,8 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 	  
 
-	  echo mysqli_num_rows($res);
-
+	  
       if (mysqli_num_rows($res) > 0) {
         
         $row = mysqli_fetch_assoc($res);
