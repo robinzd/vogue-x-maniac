@@ -20,7 +20,7 @@ session_start();
             // read from database
            
             $query = "select * from users where user_email='$email' limit 1";
-			
+
 			echo $query;
 
             $result=mysqli_query($conn, $query);
@@ -89,6 +89,8 @@ session_start();
 <!--===============================================================================================-->
 </head>
 <body style="background-color: #666666;">
+
+
 
 	
 	<div class="limiter">
