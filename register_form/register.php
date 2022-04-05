@@ -40,6 +40,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
       $res=mysqli_query($conn,$sql);
 
+	  echo "check";
+
 	  echo $res;
 
 	  echo mysqli_num_rows($res);
