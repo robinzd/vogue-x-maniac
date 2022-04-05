@@ -27,6 +27,8 @@ session_start();
 
             $result=mysqli_query($conn, $query);
 
+			echo "selected";
+
             if($result)
             {
                 if($result && mysqli_num_rows($result) > 0)
