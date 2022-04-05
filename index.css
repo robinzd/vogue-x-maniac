@@ -165,11 +165,13 @@ img#brand{
   .gallery:hover .gallery__image {
     filter: grayscale(1);
   }
+
+  
   .gallery__column {
     display: flex;
     flex-direction:column;
     width: 25%;
-    flex-wrap: wrap;
+  
     
   }
   .gallery__link {
