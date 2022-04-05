@@ -42,7 +42,7 @@ session_start();
 						echo "<br/>";
                         $_SESSION['user_id'] = $user_data['user_id'];
 						echo  $user_data['user_id'];
-                        // header("location:../index.php");
+                        header("location:../index.php");
                         die;
                     
                     }
