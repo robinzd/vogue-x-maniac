@@ -15,10 +15,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	$mobile_no = $_POST["Mobile_No"];
 
 	echo $first_name;
+	echo "<br/>";
 	echo $last_name;
+	echo "<br/>";
 	echo $email;
+	echo "<br/>";
 	echo $password;
+	echo "<br/>";
 	echo $mobile_no;
+	echo "<br/>";
 	echo !empty($first_name);
 	echo "<br/>";
 	echo  !empty($last_name);
@@ -33,11 +38,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	
 
 
- if (
-		!empty($first_name) && !empty($last_name) && !empty($email)
-
-		&& !empty($password) && !empty($mobile_no)
-	) {
+ if (!empty($first_name) && !empty($last_name) && !empty($email)&& !empty($password) && !empty($mobile_no)) 
+ {
 		// save to database
 		$user_id = random_num(20);
 		echo $user_id;
@@ -50,7 +52,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 		header("location:../login_form/login.php");
 		die;
-	} else {
+	} 
+	else {
 		echo "please enter some valid information!";
 	}
 }
