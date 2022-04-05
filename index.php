@@ -252,7 +252,7 @@ include("./conn.php");
 
 
 
-                        echo "<div class='col-sm-6 col-md-4'
+                        echo "<div class='col-sm-6 col-xl-12'
                         <div class='gallery__column'>
                         <a href='#' target='_blank' class='gallery__link'>
                         <figure class='gallery__thumb'>
