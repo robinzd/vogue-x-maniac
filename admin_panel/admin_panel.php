@@ -265,109 +265,70 @@
                           </div>
                       </a>
                   </div>
+                  <div class="table-responsive">
+                      <table class="table table-dark">
+                          <thead>
+                              <tr>
+                                  <th>#</th>
+                                  <th>First Name</th>
+                                  <th>Last Name</th>
+                                  <th>Email</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr>
+                                  <td>1</td>
+                                  <td>Clark</td>
+                                  <td>Kent</td>
+                                  <td>clarkkent@mail.com</td>
+                              </tr>
+                              <tr>
+                                  <td>2</td>
+                                  <td>Peter</td>
+                                  <td>Parker</td>
+                                  <td>peterparker@mail.com</td>
+                              </tr>
+                              <tr>
+                                  <td>3</td>
+                                  <td>John</td>
+                                  <td>Carter</td>
+                                  <td>johncarter@mail.com</td>
+                              </tr>
+                          </tbody>
+                      </table>
 
+                      <footer class="bg-light text-center text-lg-start">
+                          <!-- Copyright -->
+                          <div class="text-center p-3" style="background-color:ghostwhite;">
+                              © 2022 Copyright:
+                              <a class="text1" href="/index.php`">Vogue X Maniac</a>
+                          </div>
+                      </footer>
+                  </div>
 
-
-
-
-                  <div class="container-xl">
-    <div class="table-responsive">
-        <div class="table-wrapper">
-            <div class="table-title">
-                <div class="row">
-                    <div class="col-sm-5">
-                        <h2>Brand Management</h2>
-                    </div>
-
-                    <div class="col-sm-7" align="right">
-                        <a href="insert.php" class="btn btn-success btn-circle btn-xl"><i class="material-icons">&#xE147;</i></a>
-                    </div>
-                    
-                </div>
-            </div>
-            <table class="table table-striped table-hover">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Brand Color</th>
-                        <th>Brand image</th>
-                        <th>Brand Name</th>
-                        <th>Actions</th>                       
-                    </tr>
-                </thead>
-                <tbody>
-                     <?php
-$ret=mysqli_query($conn,"select * from owlslider_1");
-$cnt=1;
-$row=mysqli_num_rows($ret);
-if($row>0){
-while ($row=mysqli_fetch_array($ret)) {
-
-?>
-<!--Fetch the Records -->
-                    <tr>
-                        <td><?php echo $cnt;?></td>
-                       
-                   
-                        <td><?php  echo $row['brand_color'];?></td> 
-                        <td><img src="brands_images/<?php  echo $row['image_source'];?>" width="80" height="80"></td>                       
-                        <td><?php  echo $row['brand_name'];?></td>    
-                        <td>
-  <a href="read.php?viewid=<?php echo htmlentities ($row['ID']);?>" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-                            <a href="edit.php?editid=<?php echo htmlentities ($row['ID']);?>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a href="brand.php?delid=<?php echo ($row['ID']);?>&&image_source=<?php echo $row['image_source'];?>" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to Delete ?');"><i class="material-icons">&#xE872;</i></a>
-                        </td>
-                    </tr>
-                    <?php 
-$cnt=$cnt+1;
-} } else {?>
-<tr>
-    <th style="text-align:center; color:red;" colspan="6">No Record Found</th>
-</tr>
-<?php } ?>                 
-                
-                </tbody>
-            </table>
-       
-        </div>
-    </div>
-
-    <div class="text-center">Note:Remove Background of your picture for appeling result</div><br>
-    <div class="text-center">Click this to remove Picture background <a href="https://www.remove.bg/"><i class="fa fa-external-link"></i></a></div><br>
-
-</div>
-                  <footer class="bg-light text-center text-lg-start">
-                      <!-- Copyright -->
-                      <div class="text-center p-3" style="background-color:ghostwhite;">
-                          © 2022 Copyright:
-                          <a class="text1" href="/index.php`">Vogue X Maniac</a>
-                      </div>
-                  </footer>
-
+                  </div>
 
               </div>
 
-          </div>
 
 
 
 
 
+              <!-- j query -->
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+              <script src="admin_panel.js"></script>
 
-          <!-- j query -->
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-          <script src="admin_panel.js"></script>
 
-
-          <!-- Copyright -->
-
-          <footer class="bg-light text-center text-lg-start d-none d-lg-block">
               <!-- Copyright -->
-              <div class="text-center p-3" style="background-color:ghostwhite;">
-                  © 2022 Copyright:
-                  <a class="text1" href="/index.php">Vogue X Maniac</a>
-              </div>
-          </footer>
+
+              <footer class="bg-light text-center text-lg-start d-none d-lg-block">
+                  <!-- Copyright -->
+                  <div class="text-center p-3" style="background-color:ghostwhite;">
+                      © 2022 Copyright:
+                      <a class="text1" href="/index.php">Vogue X Maniac</a>
+                  </div>
+              </footer>
 
       </body>
 
