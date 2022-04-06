@@ -57,6 +57,10 @@ include('dbconnection.php');
         </div>
 
         <div class="table-responsive">
+        <div class="top-text">
+                  <div class="icon"><i class="fa fa-user"></i></div>
+                  <div class="text">Dashboard</div>
+              </div>
             <table class="table table-dark">
                 <thead>
                     <tr>
