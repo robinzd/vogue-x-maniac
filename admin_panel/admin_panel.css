@@ -279,14 +279,14 @@ h4{
 
 .align-middle {
   position: relative;
-  top:40%;
+  top:45%;
   transform: translateY(-50%);
   bottom:10%;
 }
 
 .align-middle-1{
     position: relative;
-    top:100%;
+    top:95%;
     transform: translateY(-50%);
     bottom: 10%;
   }
