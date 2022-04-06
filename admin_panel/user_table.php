@@ -47,7 +47,7 @@ include('dbconnection.php');
             <nav class="nav">
                 <div> <a href="#" class="nav_logo"><i class="fa fa-user"></i><span class="nav_logo-name">Admin Panel</span> </a>
                     <div class="nav_list"> <a href="./admin_panel.php" class="nav_link"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a>
-                        <a href="./user_table.php" class="nav_link active"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users</span> </a> 
+                        <a href="./user_table.php" class="nav_link active"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users</span> </a>
                         <!-- <a href="#" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i>
                             <span class="nav_name">Messages</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Bookmark</span> </a> <a href="#" class="nav_link">
                             <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Files</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Stats</span> </a> -->
@@ -110,14 +110,14 @@ include('dbconnection.php');
 
         <!-- Copyright -->
 
-        <footer class="bg-light text-center">
+        <footer class="bg-light text-center text-lg-start">
             <!-- Copyright -->
-            <div class="text-center p-3" style="background-color:ghostwhite;">
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
                 © 2022 Copyright:
-                <a class="text1" href="/index.php">Vogue X Maniac</a>
+                <a class="text-dark" href="../index.php"> Vogue X Maniac</a>
             </div>
+            <!-- Copyright -->
         </footer>
-
     </body>
 
 </html>
