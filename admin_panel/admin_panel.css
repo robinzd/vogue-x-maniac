@@ -286,7 +286,7 @@ h4{
 
 .align-middle-1{
     position: relative;
-    top:95%;
+    top:100%;
     transform: translateY(-50%);
     bottom: 10%;
   }
