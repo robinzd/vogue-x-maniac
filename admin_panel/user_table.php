@@ -59,7 +59,7 @@ include('dbconnection.php');
         <div class="table-responsive">
         <div class="top-text">
                   <div class="icon"><i class="fa fa-user"></i></div>
-                  <div class="text">Dashboard</div>
+                  <div class="text">Users</div>
               </div>
             <table class="table table-dark">
                 <thead>
