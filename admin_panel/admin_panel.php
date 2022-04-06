@@ -264,7 +264,7 @@
                               </div>
                           </div>
                       </a>
-                  </div>
+                  </div><br>
                   <div class="table-responsive">
                       <table class="table table-dark">
                           <thead>
