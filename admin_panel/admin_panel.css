@@ -359,7 +359,7 @@ h4{
 
 
 .align-middle-1.footer.bg-light.text-center.text-lg-start {
-  
+  position:fixed;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -377,7 +377,7 @@ text-decoration: none;
 
 .footer.bg-light.text-center.text-lg-start.d-none.d-lg-block {
   left: 0;
-  
+  position:fixed;
   bottom: 0;
   width: 100%;
   padding-left: 0px;
@@ -417,9 +417,6 @@ text-decoration: none;
   cursor:pointer;
 }
 
-.table:hover{
-  background-color: lightgreen;
-}
 
 
 
