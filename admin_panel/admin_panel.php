@@ -264,71 +264,39 @@
                               </div>
                           </div>
                       </a>
-                  </div><br>
-                  <div class="table-responsive">
-                      <table class="table table-dark">
-                          <thead>
-                              <tr>
-                                  <th>#</th>
-                                  <th>First Name</th>
-                                  <th>Last Name</th>
-                                  <th>Email</th>
-                              </tr>
-                          </thead>
-                          <tbody>
-                              <tr>
-                                  <td>1</td>
-                                  <td>Clark</td>
-                                  <td>Kent</td>
-                                  <td>clarkkent@mail.com</td>
-                              </tr>
-                              <tr>
-                                  <td>2</td>
-                                  <td>Peter</td>
-                                  <td>Parker</td>
-                                  <td>peterparker@mail.com</td>
-                              </tr>
-                              <tr>
-                                  <td>3</td>
-                                  <td>John</td>
-                                  <td>Carter</td>
-                                  <td>johncarter@mail.com</td>
-                              </tr>
-                          </tbody>
-                      </table>
-
-                      <footer class="bg-light text-center text-lg-start">
-                          <!-- Copyright -->
-                          <div class="text-center p-3" style="background-color:ghostwhite;">
-                              © 2022 Copyright:
-                              <a class="text1" href="/index.php`">Vogue X Maniac</a>
-                          </div>
-                      </footer>
                   </div>
+                  <footer class="bg-light text-center text-lg-start">
+                      <!-- Copyright -->
+                      <div class="text-center p-3" style="background-color:ghostwhite;">
+                          © 2022 Copyright:
+                          <a class="text1" href="/index.php`">Vogue X Maniac</a>
+                      </div>
+                  </footer>
 
-                  </div>
 
               </div>
 
+          </div>
 
 
 
 
 
-              <!-- j query -->
-              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
-              <script src="admin_panel.js"></script>
+
+          <!-- j query -->
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="admin_panel.js"></script>
 
 
+          <!-- Copyright -->
+
+          <footer class="bg-light text-center text-lg-start d-none d-lg-block">
               <!-- Copyright -->
-
-              <footer class="bg-light text-center text-lg-start d-none d-lg-block">
-                  <!-- Copyright -->
-                  <div class="text-center p-3" style="background-color:ghostwhite;">
-                      © 2022 Copyright:
-                      <a class="text1" href="/index.php">Vogue X Maniac</a>
-                  </div>
-              </footer>
+              <div class="text-center p-3" style="background-color:ghostwhite;">
+                  © 2022 Copyright:
+                  <a class="text1" href="/index.php">Vogue X Maniac</a>
+              </div>
+          </footer>
 
       </body>
 
