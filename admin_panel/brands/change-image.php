@@ -86,7 +86,7 @@ if (isset($_POST['submit'])) {
 		.signup-form h2:after {
 			content: "";
 			height: 2px;
-			width: 30%;
+			width: 7%;
 			background: #d4d4d4;
 			position: absolute;
 			top: 50%;
@@ -194,7 +194,7 @@ if (isset($_POST['submit'])) {
 				</div>
 			<?php
 			} ?>
-			<div class="text-center">Back To Home <a href="products.php"><i class="fa fa-home"></i></a></div>
+			<div class="text-center">Back To Home <a href="brand.php"><i class="fa fa-home"></i></a></div>
 	</form>
 
 	</div>
