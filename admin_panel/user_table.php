@@ -61,7 +61,7 @@ include('dbconnection.php');
                   <div class="icon"><i class="fa fa-table"></i></div>
                   <div class="text">Users Table</div>
               </div>
-            <table class="table table-dark">
+            <table class="table table-dark  table-hover">
                 <thead>
                     <tr>
                         <th>S.No</th>
