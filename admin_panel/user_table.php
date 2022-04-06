@@ -119,3 +119,4 @@ include('dbconnection.php');
         </footer>
 
     </body>
+    </html>
