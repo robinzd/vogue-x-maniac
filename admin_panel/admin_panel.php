@@ -270,7 +270,7 @@
                       <!-- Copyright -->
                       <div class="text-center p-3" style="background-color:ghostwhite;">
                           © 2022 Copyright:
-                          <a class="text1" href="/index.php">Vogue X Maniac</a>
+                          <a class="text1" href="../index.php">Vogue X Maniac</a>
                       </div>
                   </footer>
 
