@@ -119,7 +119,7 @@
                       </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                  <a href="./related_product_slider/related_products.php">
+                      <a href="./related_product_slider/related_products.php">
                           <div class="card gr-5">
                               <div class="txt">
                                   <h1>Related Product </br>
@@ -144,6 +144,20 @@
                           </div>
                       </a>
                   </div>
+                  <div class="col-md-6 col-lg-4 column">
+                      <a href="./shop_product/shopproducts.php">
+                          <div class="card gr-7">
+                              <div class="txt">
+                                  <h1>categories</br>
+                                      Management</h1>
+                              </div>
+                              <div class="ico-card">
+                                  <i class="fa fa-gear"></i>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+
 
               </div>
 
@@ -154,7 +168,7 @@
           <!--Container Main end-->
 
           <div class="container-fluid h-100 d-lg-none">
-          <div class="top-text">
+              <div class="top-text">
                   <div class="icon"><i class="fa fa-dashboard"></i></div>
                   <div class="text">Dashboard</div>
               </div>
@@ -230,6 +244,19 @@
                           <div class="card gr-6">
                               <div class="txt">
                                   <h1>Shop Product </br>
+                                      Management</h1>
+                              </div>
+                              <div class="ico-card">
+                                  <i class="fa fa-gear"></i>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-6 col-lg-4 column">
+                      <a href="./shop_product/shopproducts.php">
+                          <div class="card gr-7">
+                              <div class="txt">
+                                  <h1>Categories</br>
                                       Management</h1>
                               </div>
                               <div class="ico-card">
