@@ -1,4 +1,3 @@
-
 <?php
 //database conection  file
 include('dbconnection.php');
@@ -57,10 +56,10 @@ include('dbconnection.php');
         </div>
 
         <div class="table-responsive">
-        <div class="top-text">
-                  <div class="icon"><i class="fa fa-table"></i></div>
-                  <div class="text">Users Table</div>
-              </div>
+            <div class="top-text">
+                <div class="icon"><i class="fa fa-table"></i></div>
+                <div class="text">Users Table</div>
+            </div>
             <table class="table table-dark  table-hover">
                 <thead>
                     <tr>
@@ -119,4 +118,5 @@ include('dbconnection.php');
         </footer>
 
     </body>
-    </html>
+
+</html>
