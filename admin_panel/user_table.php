@@ -110,7 +110,7 @@ include('dbconnection.php');
 
         <!-- Copyright -->
 
-        <footer class="bg-light text-center text-lg-start">
+        <footer class="bg-light text-center">
             <!-- Copyright -->
             <div class="text-center p-3" style="background-color:ghostwhite;">
                 © 2022 Copyright:
