@@ -64,6 +64,9 @@ include('dbconnection.php');
                             <div class="col-sm-5">
                                 <h2>Users Table</h2>
                             </div>
+                            <div class="col-sm-7">
+
+                            </div>
                         </div>
                     </div>
 
