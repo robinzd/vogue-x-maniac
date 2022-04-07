@@ -49,7 +49,7 @@
                       </div>
 
               </nav>
-          </div><br><br>
+          </div>
 
 
           <div class="top-text">
@@ -61,9 +61,7 @@
            
               <div class="row align-middle ">
                   <div class="col-md-6 col-lg-4 column">
-
-
-                      <a href="./slider_1/slider1.php">
+                <a href="./slider_1/slider1.php">
                           <div class="card gr-1">
                               <div class="txt">
                                   <h1>Slider 1 </br>
