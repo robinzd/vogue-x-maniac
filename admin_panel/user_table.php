@@ -56,11 +56,12 @@ include('dbconnection.php');
             </nav>
         </div>
 
-        <div class="container-xl">
         <div class="top-text">
                   <div class="icon"><i class="fa fa-table"></i></div>
                   <div class="text">Users Record Table</div>
               </div>
+
+        <div class="container-xl">
             <div class="table-responsive">
                 <div class="table-wrapper">
                     <div class="table-title">
