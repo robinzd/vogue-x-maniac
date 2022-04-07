@@ -66,48 +66,48 @@ include('dbconnection.php');
                             </div>
                         </div>
                     </div>
-                    <div class="table-responsive">
-                        <table class="table table-striped table-hover">
-                            <thead>
-                                <tr>
-                                    <th>S.No</th>
-                                    <th>User ID</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>User Email</th>
-                                    <th>Created Time</th>
 
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php
-                                $ret = mysqli_query($conn, "select user_id,first_name,last_name,user_email,created_time from users");
-                                $cnt = 1;
-                                $row = mysqli_num_rows($ret);
-                                if ($row > 0) {
-                                    while ($row = mysqli_fetch_array($ret)) {
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>User ID</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>User Email</th>
+                                <th>Created Time</th>
 
-                                ?>
-                                        <!--Fetch the Records -->
-                                        <tr>
-                                            <td><?php echo $cnt; ?></td>
-                                            <td><?php echo $row['user_id']; ?></td>
-                                            <td><?php echo $row['first_name']; ?></td>
-                                            <td><?php echo $row['last_name']; ?></td>
-                                            <td><?php echo $row['user_email']; ?></td>
-                                            <td><?php echo $row['created_time']; ?></td>
-                                        </tr>
-                                    <?php
-                                        $cnt = $cnt + 1;
-                                    }
-                                } else { ?>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $ret = mysqli_query($conn, "select user_id,first_name,last_name,user_email,created_time from users");
+                            $cnt = 1;
+                            $row = mysqli_num_rows($ret);
+                            if ($row > 0) {
+                                while ($row = mysqli_fetch_array($ret)) {
+
+                            ?>
+                                    <!--Fetch the Records -->
                                     <tr>
-                                        <th style="text-align:center; color:red;" colspan="6">No Record Found</th>
+                                        <td><?php echo $cnt; ?></td>
+                                        <td><?php echo $row['user_id']; ?></td>
+                                        <td><?php echo $row['first_name']; ?></td>
+                                        <td><?php echo $row['last_name']; ?></td>
+                                        <td><?php echo $row['user_email']; ?></td>
+                                        <td><?php echo $row['created_time']; ?></td>
                                     </tr>
-                                <?php } ?>
-                            </tbody>
-                        </table>
-                    </div>
+                                <?php
+                                    $cnt = $cnt + 1;
+                                }
+                            } else { ?>
+                                <tr>
+                                    <th style="text-align:center; color:red;" colspan="6">No Record Found</th>
+                                </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
         </div>
