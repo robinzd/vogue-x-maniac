@@ -57,10 +57,10 @@ include('dbconnection.php');
         </div>
 
         <div class="top-text">
-                  <div class="icon"><i class="fa fa-table"></i></div>
-                  <div class="text">Users Record Table</div>
-              </div>
-
+            <div class="icon"><i class="fa fa-table"></i></div>
+            <div class="text">Users Record Table</div>
+        </div>
+       
         <div class="container-xl">
             <div class="table-responsive">
                 <div class="table-wrapper">
