@@ -52,17 +52,13 @@
           </div><br><br>
 
 
-
-          <!--Container Main start-->
-
-
-
-
-          <div class="container-fluid h-100 d-none d-lg-block">
-              <div class="top-text">
+          <div class="top-text">
                   <div class="icon"><i class="fa fa-dashboard"></i></div>
                   <div class="text">Dashboard</div>
               </div>
+          <!--Container Main start-->
+        <div class="container-fluid h-100 d-none d-lg-block">
+           
               <div class="row align-middle ">
                   <div class="col-md-6 col-lg-4 column">
 
@@ -169,11 +165,7 @@
           <!--Container Main end-->
 
           <div class="container-fluid h-100 d-lg-none">
-              <div class="top-text">
-                  <div class="icon"><i class="fa fa-dashboard"></i></div>
-                  <div class="text">Dashboard</div>
-              </div>
-              <div class="row align-middle-1">
+            <div class="row align-middle-1">
                   <div class="col-md-6 col-lg-4 column">
                       <a href="./slider_1/slider1.php">
                           <div class="card gr-1">
