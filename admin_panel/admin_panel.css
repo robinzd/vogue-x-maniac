@@ -420,6 +420,15 @@ text-decoration: none;
   margin-right: 50px;
   margin-top: 20px;
 }
+
+td{
+  text-align: center;
+}
+
+th{
+  text-align:center;
+}
+
 /* .table-title {
   font-size: 15px;
   padding-bottom: 10px;
