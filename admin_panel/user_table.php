@@ -47,7 +47,7 @@ include('dbconnection.php');
             <nav class="nav">
                 <div> <a href="#" class="nav_logo"><i class="fa fa-user"></i><span class="nav_logo-name">Admin Panel</span> </a>
                     <div class="nav_list"> <a href="./admin_panel.php" class="nav_link"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a>
-                        <a href="./user_table.php" class="nav_link active"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users Table</span> </a> 
+                        <a href="./user_table.php" class="nav_link active"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users Table</span> </a>
                         <!-- <a href="#" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i>
                             <span class="nav_name">Messages</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Bookmark</span> </a> <a href="#" class="nav_link">
                             <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Files</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Stats</span> </a> -->
@@ -56,53 +56,65 @@ include('dbconnection.php');
             </nav>
         </div>
 
-        <div class="table-responsive">
-            <div class="top-text">
-                <div class="icon"><i class="fa fa-table"></i></div>
-                <div class="text">Users Table</div>
+        <div class="container-xl">
+            <div class="table-responsive">
+                <div class="table-wrapper">
+                    <div class="table-title">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <h2>Users Table</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive">
+                        <div class="top-text">
+                            <div class="icon"><i class="fa fa-table"></i></div>
+                            <div class="text">Users Table</div>
+                        </div>
+                        <table class="table table-striped table-hover">
+                            <thead>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>User ID</th>
+                                    <th>First Name</th>
+                                    <th>Last Name</th>
+                                    <th>User Email</th>
+                                    <th>Created Time</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <?php
+                                $ret = mysqli_query($conn, "select user_id,first_name,last_name,user_email,created_time from users");
+                                $cnt = 1;
+                                $row = mysqli_num_rows($ret);
+                                if ($row > 0) {
+                                    while ($row = mysqli_fetch_array($ret)) {
+
+                                ?>
+                                        <!--Fetch the Records -->
+                                        <tr>
+                                            <td><?php echo $cnt; ?></td>
+                                            <td><?php echo $row['user_id']; ?></td>
+                                            <td><?php echo $row['first_name']; ?></td>
+                                            <td><?php echo $row['last_name']; ?></td>
+                                            <td><?php echo $row['user_email']; ?></td>
+                                            <td><?php echo $row['created_time']; ?></td>
+                                        </tr>
+                                    <?php
+                                        $cnt = $cnt + 1;
+                                    }
+                                } else { ?>
+                                    <tr>
+                                        <th style="text-align:center; color:red;" colspan="6">No Record Found</th>
+                                    </tr>
+                                <?php } ?>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
-            <table class="table table-dark  table-hover">
-                <thead>
-                    <tr>
-                        <th>S.No</th>
-                        <th>User ID</th>
-                        <th>First Name</th>
-                        <th>Last Name</th>
-                        <th>User Email</th>
-                        <th>Created Time</th>
-
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-                    $ret = mysqli_query($conn, "select user_id,first_name,last_name,user_email,created_time from users");
-                    $cnt = 1;
-                    $row = mysqli_num_rows($ret);
-                    if ($row > 0) {
-                        while ($row = mysqli_fetch_array($ret)) {
-
-                    ?>
-                            <!--Fetch the Records -->
-                            <tr>
-                                <td><?php echo $cnt; ?></td>
-                                <td><?php echo $row['user_id']; ?></td>
-                                <td><?php echo $row['first_name']; ?></td>
-                                <td><?php echo $row['last_name']; ?></td>
-                                <td><?php echo $row['user_email']; ?></td>
-                                <td><?php echo $row['created_time']; ?></td>
-                            </tr>
-                        <?php
-                            $cnt = $cnt + 1;
-                        }
-                    } else { ?>
-                        <tr>
-                            <th style="text-align:center; color:red;" colspan="6">No Record Found</th>
-                        </tr>
-                    <?php } ?>
-                </tbody>
-            </table>
         </div>
-
         <!-- j query -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="admin_panel.js"></script>
