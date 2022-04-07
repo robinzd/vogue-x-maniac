@@ -64,7 +64,7 @@ include('dbconnection.php');
         <div class="container-xl">
             <div class="table-responsive">
                 <div class="table-wrapper">
-                    <div class="table-title">
+                    <!-- <div class="table-title">
                         <div class="row">
                             <div class="col-sm-5">
                                 <h2>Users Table</h2>
@@ -73,7 +73,7 @@ include('dbconnection.php');
 
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <table class="table table-striped table-hover">
                         <thead>

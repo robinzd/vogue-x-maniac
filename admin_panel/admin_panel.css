@@ -420,7 +420,7 @@ text-decoration: none;
   margin-right: 50px;
   margin-top: 20px;
 }
-.table-title {
+/* .table-title {
   font-size: 15px;
   padding-bottom: 10px;
   margin: 0 0 10px;
@@ -429,7 +429,7 @@ text-decoration: none;
 .table-title h2 {
   margin: 5px 0 0;
   font-size: 24px;
-}
+} */
 .table-title select {
   border-color: #ddd;
   border-width: 0 0 1px 0;
