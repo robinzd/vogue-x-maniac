@@ -28,7 +28,7 @@
                   <a href="#">
                       <i class="fa fa-bell" aria-hidden="true"></i>
                   </a>
-                  <a href="#">
+                  <a href="../index.php">
                       <i class="fa fa-sign-out" aria-hidden="true"></i>
                   </a>
                   <a href="#">
