@@ -508,18 +508,7 @@ table.table td a {
   display: inline-block;
   margin: 0 5px;
 }
-table.table td a.view {
-  color: #03A9F4;
-}
-table.table td a.edit {
-  color: #FFC107;
-}
-table.table td a.delete {
-  color: #E34724;
-}
-table.table td i {
-  font-size: 19px;
-}    
+
 .pagination {
   float: right;
   margin: 0 0 5px;
