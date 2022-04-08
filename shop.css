@@ -825,13 +825,14 @@ a.dropdown-item:hover{
 /* checkbox styles */
 input.form-check-input.brand{
   border-color: lightgreen;
+  color:lightgreen;
+  background-color: none;
 }
 
-input.form-check-input.brand::after{
-  background-color: lightgreen;
-}
 
 input.form-check-input.category{
   border-color: lightgreen;
+  color:lightgreen;
+  background-color: none;
 }
 
