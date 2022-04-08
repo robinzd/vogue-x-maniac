@@ -817,19 +817,17 @@ button#dropdownMenuButton1:hover{
 }
 
 a.dropdown-item:hover{
-  background-color: lightgreen;
+ 
   color:black;
 
 }
 
 /* checkbox styles */
 input.form-check-input.brand{
-  background-color: lightgreen;
   border-color: lightgreen;
 }
 
 input.form-check-input.category{
-  background-color: lightgreen;
   border-color: lightgreen;
 }
 
