@@ -832,6 +832,7 @@ input.form-check-input.brand{
 input.form-check-input:checked{
   background-color: lightgreen;
   border-color: lightgreen;
+  box-shadow: none;
 }
 
 
