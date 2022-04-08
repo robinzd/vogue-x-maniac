@@ -326,7 +326,7 @@ include("./conn.php");
                             filter_data();
                         });
 
-                        $('#slider').popup({
+                        $('#slider').slider({
                             range: true,
                             min: 1000,
                             max: 65000,
