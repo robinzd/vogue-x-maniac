@@ -803,6 +803,7 @@ button#dropdownMenuButton1{
   border-radius: 10px;
   border-color: lightgreen;
   color:black;
+  margin-top: 10px;
 }
 
 button#dropdownMenuButton1:hover{
