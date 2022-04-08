@@ -829,6 +829,11 @@ input.form-check-input.brand{
   background-color: none;
 }
 
+input.form-check-input:checked{
+  background-color: lightgreen;
+  border-color: lightgreen;
+}
+
 
 input.form-check-input.category{
   border-color: lightgreen;
