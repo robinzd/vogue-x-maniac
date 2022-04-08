@@ -934,7 +934,7 @@ button#dropdownMenuButton1 {
 }
 
 button#dropdownMenuButton1:focus{
-  color: lightgreen;
+box-shadow: lightgreen;
 }
 
 
