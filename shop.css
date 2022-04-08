@@ -933,7 +933,7 @@ button#dropdownMenuButton1 {
  
 }
 
-button#dropdownMenuButton1 :focus{
+button#dropdownMenuButton1:focus{
   color: lightgreen;
 }
 
