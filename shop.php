@@ -27,17 +27,11 @@ include("./conn.php");
     <link rel="stylesheet" type="text/css" href="shop.css">
     <!-- jquery -->
     <script src="./js/jquery-1.10.2.min.js"></script>
-    <!-- <script src="./js/jquery-ui.js"></script> -->
-    <!-- jquery css -->
-    <!-- <link href="./css/jquery-ui.css" rel="stylesheet"> -->
-    <!-- js files -->
-    <!-- <script src="./js/bootstrap.min.js"></script> -->
-    <!--js-bootsstrap -->
-    <!-- <script src="./js/jquery-331.min.js"></script> -->
-    <!-- ui jquery -->
-    <link href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    
     <title>Shop</title>
 </head>
 
