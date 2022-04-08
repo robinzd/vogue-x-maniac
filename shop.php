@@ -27,7 +27,8 @@ include("./conn.php");
     <link rel="stylesheet" type="text/css" href="shop.css">
     <!-- jquery -->
     <script src="./js/jquery-1.10.2.min.js"></script>
-    <!-- slider cdns -->
+    <!-- bundle.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <title>Shop</title>
 </head>
