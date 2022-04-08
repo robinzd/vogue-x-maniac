@@ -26,12 +26,11 @@ include("./conn.php");
     <!-- link the external css sheet -->
     <link rel="stylesheet" type="text/css" href="shop.css">
     <!-- jquery -->
-    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
-    <link rel="stylesheet" href="/resources/demos/style.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-
+    <script src="./js/jquery-1.10.2.min.js"></script>
+    <!-- slider cdns -->
+    <link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.2/css/themes/default/jquery.mobile-1.4.2.min.css">  
+    <script src="https://demos.jquerymobile.com/1.4.2/js/jquery.js"></script>
+    <script src="https://demos.jquerymobile.com/1.4.2/js/jquery.mobile-1.4.2.min.js"></script>
     <title>Shop</title>
 </head>
 
@@ -60,15 +59,12 @@ include("./conn.php");
 
                 <!-- Filter -->
                 <form class="shop__filter">
-                    <div class="list-group">
-                        <h3>Price</h3>
-                        <input type="range" id="hidden_minimum_price" value="0" />
-                        <input type="range" id="hidden_maximum_price" value="65000" />
-                        <p id="price_show">1000 - 65000</p>
-                        <div id="slider"></div>
-                        <input id="rbSlider" type="range" class="span2" value="" data-slider-min="0" data-slider-max="1000" data-slider-step="5" data-slider-value="[0,1000]" />
+                    <div data-role="rangeslider" id="slider">
+                        <label for="range-1a">Rangeslider:</label>
+                        <input type="range" name="range-1a" id="range-1a" min="1000" max="65000" value="40" data-popup-enabled="true" data-show-value="true">
+                        <label for="range-1b">Rangeslider:</label>
+                        <input type="range" name="range-1b" id="range-1b" min="1000" max="65000" value="80" data-popup-enabled="true" data-show-value="true">
                     </div>
-
 
                     <!-- Checkboxes -->
                     <div class="list-group">
@@ -330,26 +326,23 @@ include("./conn.php");
                             filter_data();
                         });
 
-                        $('#slider').slider({
+                        $('#slider').popup({
                             range: true,
                             min: 1000,
                             max: 65000,
                             values: [1000, 65000],
                             step: 500,
                             stop: function(event, ui) {
-                                $('#price_show').html(ui.values[0] + ' - ' + ui.values[1]);
-                                $('#hidden_minimum_price').val(ui.values[0]);
-                                $('#hidden_maximum_price').val(ui.values[1]);
+                                // $('#price_show').html(ui.values[0] + ' - ' + ui.values[1]);
+                                $('#range-1a').val(ui.values[0]);
+                                $('#range-1b').val(ui.values[1]);
                                 filter_data();
                             }
                         });
 
-
                     });
 
                 });
-                var min = $('#rbSlider').data('sliderMin');
-                var max = $('#rbSlider').data('sliderMax');
             </script>
 
 
