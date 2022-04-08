@@ -28,9 +28,7 @@ include("./conn.php");
     <!-- jquery -->
     <script src="./js/jquery-1.10.2.min.js"></script>
     <!-- slider cdns -->
-    <!-- <link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.2/css/themes/default/jquery.mobile-1.4.2.min.css">   -->
-    <script src="https://demos.jquerymobile.com/1.4.2/js/jquery.js"></script>
-    <script src="https://demos.jquerymobile.com/1.4.2/js/jquery.mobile-1.4.2.min.js"></script>
+   
     <title>Shop</title>
 </head>
 
@@ -59,12 +57,7 @@ include("./conn.php");
 
                 <!-- Filter -->
                 <form class="shop__filter">
-                    <div data-role="rangeslider" id="slider">
-                        <label for="range-1a">Rangeslider:</label>
-                        <input type="range" name="range-1a" id="range-1a" min="1000" max="65000" value="40" data-popup-enabled="true" data-show-value="true">
-                        <label for="range-1b">Rangeslider:</label>
-                        <input type="range" name="range-1b" id="range-1b" min="1000" max="65000" value="80" data-popup-enabled="true" data-show-value="true">
-                    </div>
+                  
 
                     <!-- Checkboxes -->
                     <div class="list-group">
