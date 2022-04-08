@@ -822,3 +822,14 @@ a.dropdown-item:hover{
 
 }
 
+/* checkbox styles */
+input.form-check-input.brand{
+  background-color: lightgreen;
+  border-color: lightgreen;
+}
+
+input.form-check-input.category{
+  background-color: lightgreen;
+  border-color: lightgreen;
+}
+
