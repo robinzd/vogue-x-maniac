@@ -52,7 +52,7 @@
                 $output .= '
     <div class="col-sm-6 col-md-4">
                             <div class="card bg-white">
-        <img class="card-img-top" src="./admin_area/product_images/' . $row['product_image'] . '" style="width:100%">
+        <img class="card-img-top" src="./admin_panel/shop_product/shopproducts_images/' . $row['product_image'] . '" style="width:100%">
         <div class="card-body">
             <h5 class="card-title text-center">' . $row['product_title'] . '</h5>
         <p class="card-text  text-center"><s>₹' . $row['product_strikeout_price'] . '</s>₹' . $row['product_price'] . '</p>
