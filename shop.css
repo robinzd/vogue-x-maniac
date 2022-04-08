@@ -804,12 +804,16 @@ button#dropdownMenuButton1{
   border-color: lightgreen;
   color:black;
   margin-top: 10px;
-  box-shadow:lightgreen;
+  
 }
 
 button#dropdownMenuButton1:hover{
   background-color:black;
-  border:1px solid lightgreen;
+  border:1px solid;
   color:white;
+}
+
+.btn-secondary.focus, .btn-secondary:focus {
+  box-shadow: 0 0 0 0.2rem lightgreen;
 }
 
