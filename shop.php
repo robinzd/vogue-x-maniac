@@ -330,19 +330,19 @@ include("./conn.php");
                             filter_data();
                         });
 
-                        $('#slider').slider({
-                            range: true,
-                            min: 1000,
-                            max: 65000,
-                            values: [1000, 65000],
-                            step: 500,
-                            stop: function(event, ui) {
-                                // $('#price_show').html(ui.values[0] + ' - ' + ui.values[1]);
-                                $('#range-1a').val(ui.values[0]);
-                                $('#range-1b').val(ui.values[1]);
-                                filter_data();
-                            }
-                        });
+                        // $('#slider').slider({
+                        //     range: true,
+                        //     min: 1000,
+                        //     max: 65000,
+                        //     values: [1000, 65000],
+                        //     step: 500,
+                        //     stop: function(event, ui) {
+                        //         // $('#price_show').html(ui.values[0] + ' - ' + ui.values[1]);
+                        //         $('#range-1a').val(ui.values[0]);
+                        //         $('#range-1b').val(ui.values[1]);
+                        //         filter_data();
+                        //     }
+                        // });
 
                     });
 
