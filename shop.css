@@ -933,10 +933,10 @@ button#dropdownMenuButton1 {
  
 }
 
-button#dropdownMenuButton1:focus{
-box-shadow: lightgreen;
-}
 
+button#dropdownMenuButton1.btn-secondary:focus{
+  box-shadow: 0 0 0.2rem lightgreen;
+}
 
 
 button#dropdownMenuButton1:hover {
