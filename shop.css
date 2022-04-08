@@ -804,7 +804,7 @@ button#dropdownMenuButton1{
   border-color: lightgreen;
   color:black;
   margin-top: 10px;
-  box-shadow:0 0 0 0.2rem lightgreen;
+  box-shadow:none;
   
 }
 
