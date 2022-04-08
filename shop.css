@@ -935,7 +935,7 @@ button#dropdownMenuButton1 {
 
 
 button#dropdownMenuButton1.btn-secondary:focus{
-  box-shadow: 0 0 0.2rem  rgba(17, 184, 25, 0.8);
+  box-shadow:  rgba(17, 184, 25, 0.8);
 }
 
 
