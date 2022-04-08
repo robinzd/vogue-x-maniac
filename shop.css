@@ -816,4 +816,10 @@ button#dropdownMenuButton1:hover{
   color:white;
 }
 
+/* checkbox styles */
+.form-check-input:checked {
+  background-color:lightgreen;
+  border-color:lightgreen;
+}
+
 
