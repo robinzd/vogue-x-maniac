@@ -804,8 +804,12 @@ button#dropdownMenuButton1{
   border-color: lightgreen;
   color:black;
   margin-top: 10px;
-  box-shadow:0 0 0 0.2rem rgb(154, 219, 154);
+ 
   
+}
+
+button#dropdownMenuButton1::after{
+  box-shadow:0 0 0 0.2rem rgb(154, 219, 154);
 }
 
 button#dropdownMenuButton1:hover{
