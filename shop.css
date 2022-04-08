@@ -795,16 +795,19 @@ label {
   font-size: 20px;
 }
 
+/* drop down button style */
+
 
 button#dropdownMenuButton1{
-  margin-top: 10px;
-  background-color: lightgreen;
-  color:black;
+  background-color:white;
+  border-radius: 10px;
   border-color: lightgreen;
+  color:black;
 }
 
 button#dropdownMenuButton1:hover{
-  background-color: black;
+  background-color:black;
+  border:1px solid;
   color:white;
 }
 
