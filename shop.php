@@ -28,7 +28,7 @@ include("./conn.php");
     <!-- jquery -->
     <script src="./js/jquery-1.10.2.min.js"></script>
     <!-- slider cdns -->
-    <link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.2/css/themes/default/jquery.mobile-1.4.2.min.css">  
+    <!-- <link rel="stylesheet" href="https://demos.jquerymobile.com/1.4.2/css/themes/default/jquery.mobile-1.4.2.min.css">   -->
     <script src="https://demos.jquerymobile.com/1.4.2/js/jquery.js"></script>
     <script src="https://demos.jquerymobile.com/1.4.2/js/jquery.mobile-1.4.2.min.js"></script>
     <title>Shop</title>
