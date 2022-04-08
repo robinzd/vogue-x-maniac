@@ -65,7 +65,7 @@ include("./conn.php");
                         <input type="hidden" id="hidden_minimum_price" value="0" />
                         <input type="hidden" id="hidden_maximum_price" value="65000" />
                         <p id="price_show">1000 - 65000</p>
-                        <div id="price_range"></div>
+                        <div id="slider"></div>
                     </div>
 
                     <!-- Checkboxes -->
@@ -328,7 +328,7 @@ include("./conn.php");
                             filter_data();
                         });
 
-                        $('#price_range').slider({
+                        $('#slider').slider({
                             range: true,
                             min: 1000,
                             max: 65000,
