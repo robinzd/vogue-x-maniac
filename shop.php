@@ -26,7 +26,7 @@ include("./conn.php");
     <!-- link the external css sheet -->
     <link rel="stylesheet" type="text/css" href="shop.css">
     <!-- jquery -->
-    <!-- <script src="./js/jquery-1.10.2.min.js"></script> -->
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
