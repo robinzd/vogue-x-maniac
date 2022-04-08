@@ -817,9 +817,8 @@ button#dropdownMenuButton1:hover{
 }
 
 a.dropdown-item:hover{
+ background-color: lightgreen;
  
-  color:black;
-
 }
 
 /* checkbox styles */
