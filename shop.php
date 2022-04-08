@@ -66,7 +66,9 @@ include("./conn.php");
                         <input type="hidden" id="hidden_maximum_price" value="65000" />
                         <p id="price_show">1000 - 65000</p>
                         <div id="slider"></div>
+                        <input id="rbSlider" type="text" class="span2" value="" data-slider-min="0" data-slider-max="1000" data-slider-step="5" data-slider-value="[0,1000]" />
                     </div>
+
 
                     <!-- Checkboxes -->
                     <div class="list-group">
