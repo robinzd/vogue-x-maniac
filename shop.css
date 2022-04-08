@@ -814,7 +814,4 @@ button#dropdownMenuButton1:hover{
   color:white;
 }
 
-.btn-secondary.focus, .btn-secondary:focus {
-  box-shadow: 0 0 0 0.2rem lightgreen;
-}
 
