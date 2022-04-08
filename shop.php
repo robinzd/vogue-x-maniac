@@ -28,7 +28,7 @@ include("./conn.php");
     <!-- jquery -->
     <script src="./js/jquery-1.10.2.min.js"></script>
     <!-- slider cdns -->
-   
+
     <title>Shop</title>
 </head>
 
@@ -57,7 +57,7 @@ include("./conn.php");
 
                 <!-- Filter -->
                 <form class="shop__filter">
-                  
+
 
                     <!-- Checkboxes -->
                     <div class="list-group">
@@ -119,6 +119,17 @@ include("./conn.php");
 
 
             <div class="col-sm-8 col-md-9">
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
                 <!-- Filters -->
                 <div class="row filter_data">
 
