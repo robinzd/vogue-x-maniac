@@ -827,6 +827,10 @@ input.form-check-input.brand{
   border-color: lightgreen;
 }
 
+input.form-check-input.brand::after{
+  background-color: lightgreen;
+}
+
 input.form-check-input.category{
   border-color: lightgreen;
 }
