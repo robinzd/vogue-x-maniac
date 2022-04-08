@@ -825,8 +825,7 @@ a.dropdown-item:hover{
 /* checkbox styles */
 input.form-check-input.brand{
   border-color: lightgreen;
-  color:lightgreen;
-  background-color: none;
+  box-shadow: none;
 }
 
 input.form-check-input:checked{
@@ -838,7 +837,6 @@ input.form-check-input:checked{
 
 input.form-check-input.category{
   border-color: lightgreen;
-  color:lightgreen;
-  background-color: none;
+ box-shadow: none;
 }
 
