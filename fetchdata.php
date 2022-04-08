@@ -1,55 +1,50 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
 
 
-    <?php
+<?php
 
-    //fetchdata.php
+//fetchdata.php
 
-    include("./db_conn.php");
+include("./db_conn.php");
 
-     include("./conn.php");
+include("./conn.php");
 
 
-   
 
-    if (isset($_POST["action"])) {
-        $query = "
+
+if (isset($_POST["action"])) {
+    $query = "
   SELECT * FROM shop_page WHERE product_status = '1'
  ";
-        if (isset($_POST["minimum_price"], $_POST["maximum_price"]) && !empty($_POST["minimum_price"]) && !empty($_POST["maximum_price"])) {
-            $query .= "
+    if (isset($_POST["minimum_price"], $_POST["maximum_price"]) && !empty($_POST["minimum_price"]) && !empty($_POST["maximum_price"])) {
+        $query .= "
    AND product_price BETWEEN '" . $_POST["minimum_price"] . "' AND '" . $_POST["maximum_price"] . "'
   ";
-        }
-        if (isset($_POST["brand"])) {
-            $brand_filter = implode("','", $_POST["brand"]);
-            $query .= "
+    }
+    if (isset($_POST["brand"])) {
+        $brand_filter = implode("','", $_POST["brand"]);
+        $query .= "
    AND product_brand IN('" . $brand_filter . "')
   ";
-        }
-        if (isset($_POST["category"])) {
-            $category_filter = implode("','", $_POST["category"]);
-            $query .= "
+    }
+    if (isset($_POST["category"])) {
+        $category_filter = implode("','", $_POST["category"]);
+        $query .= "
    AND product_category IN('" . $category_filter . "')
   ";
-        }
+    }
 
 
-        $statement = $connect->prepare($query);
-        $statement->execute();
-        $result = $statement->fetchAll();
-        $total_row = $statement->rowCount();
-        $output = '';
-        if ($total_row > 0) {
-            foreach ($result as $row) {
-                $output .= '
+    $statement = $connect->prepare($query);
+    $statement->execute();
+    $result = $statement->fetchAll();
+    $total_row = $statement->rowCount();
+    $output = '';
+    if ($total_row > 0) {
+        foreach ($result as $row) {
+            $output .= '
     <div class="col-sm-6 col-md-4">
                             <div class="card bg-white">
         <img class="card-img-top" src="./admin_panel/shop_product/shopproducts_images/' . $row['product_image'] . '" style="width:100%">
@@ -64,14 +59,11 @@
     </div>
     </div>
    ';
-            }
-        } else {
-            $output = '<img src="noresultfound-removebg-preview.png">';
         }
-        echo $output;
+    } else {
+        $output = '<img src="noresultfound-removebg-preview.png">';
     }
+    echo $output;
+}
 
-    ?>
-
-   
-
+?>

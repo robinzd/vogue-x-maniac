@@ -800,6 +800,7 @@ button#dropdownMenuButton1{
   margin-top: 10px;
   background-color: lightgreen;
   color:black;
+  border-color: lightgreen;
 }
 
 button#dropdownMenuButton1:hover{
