@@ -108,14 +108,14 @@ include("./conn.php");
 
                                 <h6 class='text-uppercase'>Feauters</h6>
 
-                                        <ul>
+                                    <ul>
                                         <li>Coffee</li>
                                         <li>Tea</li>
                                         <li>Coffee</li>
                                         <li>Tea</li>
                                         <li>Coffee</li>
                                         <li>Tea</li>
-                                        <ul>
+                                    <ul>
                                 
                                 <div class='sizes mt-5'>
                                 <form>
