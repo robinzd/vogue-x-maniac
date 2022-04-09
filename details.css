@@ -303,7 +303,7 @@ width:10%;
 
 }
 
-select#example.FormControlSelect1:focus{
+select#exampleFormControlSelect1:focus{
  border-color: lightgreen;
   
   }
