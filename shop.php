@@ -147,7 +147,7 @@ include("./conn.php");
 
 
                     while ($row_product_image = mysqli_fetch_array($run_product_image)) {
-
+                        $product_id=$row_product_image['ID'];
                         $product_image = $row_product_image['product_image'];
                         $product_title = $row_product_image['product_title'];
                         $product_strikeout_price = $row_product_image['product_strikeout_price'];
@@ -164,7 +164,7 @@ include("./conn.php");
             <h5 class='card-title text-center'>$product_title</h5>
         <p class='card-text  text-center'><s>₹$product_strikeout_price</s>₹$product_price</p>
             <div class='text-center'>
-                <a href='details.php' class='btn btn-success'>See Details</a>
+                <a href='details.php?check_value=$product_id' class='btn btn-success'>See Details</a>
                 <a href='#' class='btn btn-success'>Add to Cart</a>
             </div>
         </div>
