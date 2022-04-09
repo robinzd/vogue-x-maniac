@@ -53,7 +53,7 @@ include("./conn.php");
             <div class="col-md-10">
                 <div class="card">
                     <div class="row">
-                        
+
                         <?php
 
                         $get_product_details = "select * from products_details";
@@ -63,9 +63,9 @@ include("./conn.php");
 
 
                         while ($row_product_details = mysqli_fetch_array($run_product_details)) {
-                            
-                            $details_image_1= $row_product_details['details_image_1'];
-                            $details_image_2= $row_product_details['details_image_2'];
+
+                            $details_image_1 = $row_product_details['details_image_1'];
+                            $details_image_2 = $row_product_details['details_image_2'];
                             $details_image_3 = $row_product_details['details_image_3'];
                             $details_image_4 = $row_product_details['details_image_4'];
                             $brand_title = $row_product_details['brand_title'];
@@ -105,7 +105,21 @@ include("./conn.php");
                                     </div>
                                 </div>
                                 <p class='about'>$product_description</p>
+                                
                                 <div class='sizes mt-5'>
+                                <form>
+  
+                               <div class='form-group'>
+                               <h6 class='text-uppercase'>Quantity</h6>
+                                <select class='form-control' id='exampleFormControlSelect1'>
+                               <option>1</option>
+                               <option>2</option>
+                               <option>3</option>
+                               <option>4</option>
+                               <option>5</option>
+                              </select>
+                              </div>
+                            </form>
                                     <h6 class='text-uppercase'>Size</h6> <label class='radio'> <input type='radio' name='size' value='$product_size_1' checked> <span>$product_size_1 </span> </label> <label class='radio'> <input type='radio' name='size' value='  $product_size_2'> <span>$product_size_2 </span> </label> <label class='radio'> <input type='radio' name='size' value='  $product_size_3 '> <span>  $product_size_3 </span> </label> <label class='radio'> <input type='radio' name='size' value='  $product_size_4 '> <span>  $product_size_4 </span> </label> <label class='radio'> <input type='radio' name='size' value='  $product_size_5 '> <span>$product_size_5 </span> </label>
                                     <label class='radio'> <input type='radio' name='size' value='$product_size_6'> <span>$product_size_6 </span> </label>
                                     <label class='radio'> <input type='radio' name='size' value='$product_size_7'> <span>$product_size_7 </span> </label>
@@ -127,7 +141,7 @@ include("./conn.php");
                         ?>
 
 
-                       
+
                     </div>
                 </div>
             </div>
