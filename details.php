@@ -105,6 +105,17 @@ include("./conn.php");
                                     </div>
                                 </div>
                                 <p class='about'>$product_description</p>
+
+                                <h6 class='text-uppercase'>Feauters</h6>
+
+                                        <ul>
+                                        <li>Coffee</li>
+                                        <li>Tea</li>
+                                        <li>Coffee</li>
+                                        <li>Tea</li>
+                                        <li>Coffee</li>
+                                        <li>Tea</li>
+                                        <ul>
                                 
                                 <div class='sizes mt-5'>
                                 <form>
