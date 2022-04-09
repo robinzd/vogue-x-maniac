@@ -111,11 +111,11 @@ include("./conn.php");
                                 Feauters
                                 </h6>
 
-                                <ul class='list-group list-group-horizontal'>
-                                <li class='list-group-item'>An item</li>
-                                <li class='list-group-item'>A second item</li>
-                                <li class='list-group-item'>A third item</li>
-                              </ul>
+                                <ul>
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                                </ul>
                           
                                 <div class='sizes mt-5'>
                                 <form>
