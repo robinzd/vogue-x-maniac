@@ -106,21 +106,17 @@ include("./conn.php");
                                 </div>
                                 <p class='about'>$product_description</p>
 
-                            <div>
+                           
                                 <h6 class='text-uppercase'>
                                 Feauters
                                 </h6>
 
-                                    <ul>
-                                        <li>Coffee</li>
-                                        <li>Tea</li>
-                                        <li>Coffee</li>
-                                        <li>Tea</li>
-                                        <li>Coffee</li>
-                                        <li>Tea</li>
-                                    <ul>
-                            <div>   
-                                
+                                <ul class='list-group list-group-horizontal'>
+                                <li class='list-group-item'>An item</li>
+                                <li class='list-group-item'>A second item</li>
+                                <li class='list-group-item'>A third item</li>
+                              </ul>
+                          
                                 <div class='sizes mt-5'>
                                 <form>
   
