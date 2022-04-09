@@ -302,7 +302,7 @@ select#exampleFormControlSelect1{
 width:10%;
 }
 
-select#exampleFormControlSelect1:focus{
+.form-control:focus{
   color: lightgreen;
 }
 
