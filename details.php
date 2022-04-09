@@ -115,6 +115,9 @@ include("./conn.php");
                                 <li>Coffee</li>
                                 <li>Tea</li>
                                 <li>Milk</li>
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
                                 </ul>
                           
                                 <div class='sizes mt-5'>
