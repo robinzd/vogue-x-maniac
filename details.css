@@ -300,11 +300,19 @@ a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2:hover{
 /* quantity box style */
 select#exampleFormControlSelect1{
 width:10%;
+
 }
 
-.form-control:focus{
-  color: lightgreen;
-}
+select#exampleFormControlSelect1:f{
+  width:10%;
+  
+  }
+
+  .form-control:focus {
+    border-color: lightgreen;
+    outline: 0;
+  }
+
 
   
 
