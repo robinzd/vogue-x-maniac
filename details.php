@@ -74,23 +74,48 @@ include("./conn.php");
                                 </div>
                                 <p class="about">Shop from a wide range of t-shirt from orianz. Pefect for your everyday use, you could pair it with a stylish pair of jeans or trousers complete the look.</p>
                                 <h6 class='text-capitalize'>
-                                Feauters
+                                    Feauters
                                 </h6>
                                 <ul>
-                                <li>More comfortable</li>
-                                <li>Less weight</li>
-                                <li>Durability is more</li>
-                                <li>Quality is nice</li>
-                                <li>Color is lifetime</li>
-                                <li>Warranty minium 5 years</li>
+                                    <li>More comfortable</li>
+                                    <li>Less weight</li>
+                                    <li>Durability is more</li>
+                                    <li>Quality is nice</li>
+                                    <li>Color is lifetime</li>
+                                    <li>Warranty minium 5 years</li>
                                 </ul>
                                 <div class="sizes mt-5">
-                                <div class="quantity buttons_added">
-                                <h6 class="text-uppercase">quantity</h6> 
-                                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
-                                </div>
+                                    <div class="quantity buttons_added">
+                                        <h6 class="text-uppercase">quantity</h6>
+                                        <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                                    </div>
 
-                                    <h6 class="text-uppercase">Size</h6> <label class="radio"> <input type="radio" name="size" value="S" checked> <span>S</span> </label> <label class="radio"> <input type="radio" name="size" value="M"> <span>M</span> </label> <label class="radio"> <input type="radio" name="size" value="L"> <span>L</span> </label> <label class="radio"> <input type="radio" name="size" value="XL"> <span>XL</span> </label> <label class="radio"> <input type="radio" name="size" value="XXL"> <span>XXL</span> </label>
+                                    <h6 class="text-uppercase">Size</h6>
+                                    <?php
+
+                                    // $check_array='S,M,L,XL,XXL';
+                                    $check_array = '6,7,8,9,10,11,12';
+                                    $check_array_result = explode(',', $check_array);
+
+                                    $sizeOfcheck = sizeof($check_array_result);
+
+                                    print_r($sizeOfcheck);
+
+
+                                    if (!($sizeOfcheck == 1)) {
+                                        $x = 0;
+                                        while ($x < $sizeOfcheck) {
+                                            echo "<label class='radio'> <input type='radio' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span> </label>
+                                         $x++
+        
+                                    ";
+                                        }
+                                    } else {
+                                        echo " ";
+                                    }
+
+                                    ?>
+
                                 </div>
                                 <div class="cart mt-4 align-items-center"> <button class="btn-success mr-2 px-4">Add to cart</button>
                                     <button class="btn-success mr-2 px-4">Buy Now</button>
