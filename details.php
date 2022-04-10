@@ -94,32 +94,28 @@ include("./conn.php");
                                     <?php
 
 
-$check_array='7,8,9,10,11,12';
-$check_array_result=explode(',',$check_array);
+                                    $check_array = '7,8,9,10,11,12';
+                                    $check_array_result = explode(',', $check_array);
 
-$sizeOfcheck= sizeof($check_array_result);
-
-print_r($sizeOfcheck);
+                                    $sizeOfcheck = sizeof($check_array_result);
 
 
 
-if (!($sizeOfcheck == 1)){
-    $x=0;
-    while($x < $sizeOfcheck){
-       echo" <label class='radio'> <input type='radio' name='size' value='S' checked> <span>$check_array_result[$x]</span>";
-        $x++;
-     
-    }
-   
-
-}else{
-   echo "empty";
-
-}
 
 
-?>
-                                  
+                                    if (!($sizeOfcheck == 1)) {
+                                        $x = 0;
+                                        while ($x < $sizeOfcheck) {
+                                            echo " <label class='radio'> <input type='radio' name='size' value='S' checked> <span>$check_array_result[$x]</span>";
+                                            $x++;
+                                        }
+                                    } else {
+                                        echo "empty";
+                                    }
+
+
+                                    ?>
+
                                 </div>
                                 <div class="cart mt-4 align-items-center"> <button class="btn-success mr-2 px-4">Add to cart</button>
                                     <button class="btn-success mr-2 px-4">Buy Now</button>
