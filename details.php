@@ -110,7 +110,7 @@ include("./conn.php");
                                             $x++;
                                         }
                                     } else {
-                                        echo " ";
+                                        echo "<div> </div>";
                                     }
 
 
