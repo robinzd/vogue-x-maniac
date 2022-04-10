@@ -105,10 +105,8 @@ include("./conn.php");
                                     if (!($sizeOfcheck == 1)) {
                                         $x = 0;
                                         while ($x < $sizeOfcheck) {
-                                            echo "<label class='radio'> <input type='radio' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span> </label>
-                                         $x++
-        
-                                    ";
+                                            echo "<label class='radio'> <input type='radio' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span> </label>";
+                                         $x++;
                                         }
                                     } else {
                                         echo " ";
