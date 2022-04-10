@@ -84,7 +84,7 @@ include("./conn.php");
                                     <li>Color is lifetime</li>
                                     <li>Warranty minium 5 years</li>
                                 </ul>
-                                <div class="sizes mt-5">
+                               
                                     <div class="quantity buttons_added">
                                         <h6 class="text-uppercase">quantity</h6>
                                         <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
@@ -105,8 +105,10 @@ include("./conn.php");
                                     if (!($sizeOfcheck == 1)) {
                                         $x = 0;
                                         while ($x < $sizeOfcheck) {
+                                            echo "<div class='sizes mt-5'>";
                                             echo "<label class='radio'> <input type='radio' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span> </label>";
                                          $x++;
+                                         echo "</div>";
                                         }
                                     } else {
                                         echo " ";
@@ -114,7 +116,7 @@ include("./conn.php");
 
                                     ?>
 
-                                </div>
+                              
                                 <div class="cart mt-4 align-items-center"> <button class="btn-success mr-2 px-4">Add to cart</button>
                                     <button class="btn-success mr-2 px-4">Buy Now</button>
                                 </div>
