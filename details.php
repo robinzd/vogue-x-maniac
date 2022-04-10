@@ -83,18 +83,21 @@ include("./conn.php");
                                     <li>Quality is nice</li>
                                     <li>Color is lifetime</li>
                                     <li>Warranty minium 5 years</li>
-                                </ul>
+                                </ul><br>
+
+
+
+                                <div class="quantity buttons_added">
+                                        <h6 class="text-uppercase">quantity</h6>
+                                        <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                                    </div>
 
 
 
 
                                 <div class="sizes mt-5">
 
-                                    <div class="quantity buttons_added">
-                                        <h6 class="text-uppercase">quantity</h6>
-                                        <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
-                                    </div><br>
-
+                                 
 
                                     <?php
 
