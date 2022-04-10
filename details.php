@@ -55,103 +55,36 @@ include("./conn.php");
             <div class="col-md-10">
                 <div class="card">
                     <div class="row">
-
-                        <?php
-
-                        $get_product_details = "select * from products_details";
-
-                        $run_product_details = mysqli_query($conn, $get_product_details);
-
-
-
-                        while ($row_product_details = mysqli_fetch_array($run_product_details)) {
-
-                            $details_image_1 = $row_product_details['details_image_1'];
-                            $details_image_2 = $row_product_details['details_image_2'];
-                            $details_image_3 = $row_product_details['details_image_3'];
-                            $details_image_4 = $row_product_details['details_image_4'];
-                            $brand_title = $row_product_details['brand_title'];
-                            $product_title = $row_product_details['product_title'];
-                            $product_price = $row_product_details['product_price'];
-                            $strikeout_price = $row_product_details['strikeout_price'];
-                            $product_description = $row_product_details['product_description'];
-                            $product_size_1 = $row_product_details['product_size_1'];
-                            $product_size_2 = $row_product_details['product_size_2'];
-                            $product_size_3 = $row_product_details['product_size_3'];
-                            $product_size_4 = $row_product_details['product_size_4'];
-                            $product_size_5 = $row_product_details['product_size_5'];
-                            $product_size_6 = $row_product_details['product_size_6'];
-                            $product_size_7 = $row_product_details['product_size_7'];
-                            $product_size_8 = $row_product_details['product_size_8'];
-
-
-
-
-
-
-                            echo "<div class='col-md-6'>
-                            <div class='images p-3'>
-                                <div class='text-center p-4'> <img id='main-image' src='./admin_area/product_images/$details_image_1' width='500' /> </div>
-                                <div class='thumbnail text-center' id='thumbnailimage'> <img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image_1' width='70'> <img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image_2' width='70'><img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image_3 ' width='70'><img onclick='change_image(this)'id='thumbnail' src='./admin_area/product_images/$details_image_4' width='70'></div>
+                        <div class="col-md-6">
+                            <div class="images p-3">
+                                <div class="text-center p-4"> <img id="main-image" src="./admin_area/product_images/product1.jpg" width="250" /> </div>
+                                <div class="thumbnail text-center" id="thumbnailimage"> <img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product1.jpg" width="70"> <img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product6.jpg" width="70"><img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product7.jpg" width="70"><img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product8.jpg" width="70"> </div>
                             </div>
                         </div>
-                        <div class='col-md-6'>
-                            <div class='product p-4'>
-                                <div class='d-flex justify-content-between align-items-center'>
-                                    <div class='d-flex align-items-center'><a href='#'><i class='fa fa-long-arrow-left'></i></a> <a href='#'><span class='ml-1'>Back</span></a> </div> <a href='index.php'><i class='fa fa-home'></i></a>
+                        <div class="col-md-6">
+                            <div class="product p-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="d-flex align-items-center"><a href="#"><i class="fa fa-long-arrow-left"></i></a> <a href="#"><span class="ml-1">Back</span></a> </div> <a href="index.php"><i class="fa fa-home"></i></a>
                                 </div>
-                                <div class='mt-4 mb-3'> <span class='text-uppercase text-muted brand'> $brand_title </span>
-                                    <h5 class='text-uppercase'>$product_title</h5>
-                                    <div class='price d-flex flex-row align-items-center'> <span class='act-price'>₹$product_price</span>
-                                        <div class='ml-2'> <small class='dis-price'>₹$strikeout_price</small> </div>
+                                <div class="mt-4 mb-3"> <span class="text-uppercase text-muted brand">Orianz</span>
+                                    <h5 class="text-uppercase">Men's slim fit t-shirt</h5>
+                                    <div class="price d-flex flex-row align-items-center"> <span class="act-price">₹1,200</span>
+                                        <div class="ml-2"> <small class="dis-price">₹3,000</small> </div>
                                     </div>
                                 </div>
-                                <p class='about'>$product_description</p>
-
-                           
-                                <h6 class='text-capitalize'>
-                                Feauters
-                                </h6>
-
-                                <ul>
-                                <li>More comfortable</li>
-                                <li>Less weight</li>
-                                <li>Durability is more</li>
-                                <li>Quality is nice</li>
-                                <li>Color is lifetime</li>
-                                <li>Warranty minium 5 years</li>
-                                </ul>
-
-                            <div class='quantity buttons_added'>
-                            <h6 class='text-capitalize'>
-                                Quantity
-                                </h6>
-                                <input type='button' value='-' class='minus'><input type='number' step='1' min='1' max='' name='quantity' value='1' title='Qty' class='input-text qty text' size='4' pattern='' inputmode=''><input type='button' value='+' class='plus'>
-                            </div>
-                          
-                                <div class='sizes mt-5'>
-                                    <h6 class='text-uppercase'>Size</h6> <label class='radio'> <input type='radio' name='size' value='$product_size_1' checked> <span>$product_size_1 </span> </label> <label class='radio'> <input type='radio' name='size' value='  $product_size_2'> <span>$product_size_2 </span> </label> <label class='radio'> <input type='radio' name='size' value='  $product_size_3 '> <span>  $product_size_3 </span> </label> <label class='radio'> <input type='radio' name='size' value='  $product_size_4 '> <span>  $product_size_4 </span> </label> <label class='radio'> <input type='radio' name='size' value='  $product_size_5 '> <span>$product_size_5 </span> </label>
-                                    <label class='radio'> <input type='radio' name='size' value='$product_size_6'> <span>$product_size_6 </span> </label>
-                                    <label class='radio'> <input type='radio' name='size' value='$product_size_7'> <span>$product_size_7 </span> </label>
-                                    <label class='radio'> <input type='radio' name='size' value='$product_size_8'> <span>$product_size_8 </span> </label>
+                                <p class="about">Shop from a wide range of t-shirt from orianz. Pefect for your everyday use, you could pair it with a stylish pair of jeans or trousers complete the look.</p>
+                                <div class="quantity buttons_added">
+                                <h6 class="text-uppercase">quantity</h6> 
+                                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
                                 </div>
-                                <div class='cart mt-4 align-items-center'> <button class='btn-success mr-2 px-4'>Add to cart</button>
-                                    <button class='btn-success mr-2 px-4'>Buy Now</button>
+                                <div class="sizes mt-5">
+                                    <h6 class="text-uppercase">Size</h6> <label class="radio"> <input type="radio" name="size" value="S" checked> <span>S</span> </label> <label class="radio"> <input type="radio" name="size" value="M"> <span>M</span> </label> <label class="radio"> <input type="radio" name="size" value="L"> <span>L</span> </label> <label class="radio"> <input type="radio" name="size" value="XL"> <span>XL</span> </label> <label class="radio"> <input type="radio" name="size" value="XXL"> <span>XXL</span> </label>
+                                </div>
+                                <div class="cart mt-4 align-items-center"> <button class="btn-success mr-2 px-4">Add to cart</button>
+                                    <button class="btn-success mr-2 px-4">Buy Now</button>
                                 </div>
                             </div>
                         </div>
-
-
-
-
-";
-                        }
-
-
-                        ?>
-
-
-
                     </div>
                 </div>
             </div>
