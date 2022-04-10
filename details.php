@@ -101,7 +101,7 @@ include("./conn.php");
 
                                     <?php
 
-                                    $get_details = "select product_size from products_details where id=";
+                                    $get_details = "select product_size from products_details";
 
                                     $run_details = mysqli_query($conn, $get_details);
 
