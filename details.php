@@ -88,21 +88,28 @@ include("./conn.php");
 
 
                                 <div class="quantity buttons_added">
-                                        <h6 class="text-uppercase">quantity</h6>
-                                        <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
-                                    </div>
+                                    <h6 class="text-uppercase">quantity</h6>
+                                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                                </div>
 
 
 
 
                                 <div class="sizes mt-5">
 
-                                 
+
 
                                     <?php
 
+                                    $get_details = "select product_size from products_images";
 
-                                    $check_array = '7,8,9,10,11,12';
+                                    $run_details = mysqli_query($conn,$get_details );
+
+                                 
+
+
+
+                                    $check_array = '$run_details';
                                     $check_array_result = explode(',', $check_array);
 
                                     $sizeOfcheck = sizeof($check_array_result);
