@@ -91,7 +91,35 @@ include("./conn.php");
                                     </div>
 
                                     <h6 class="text-uppercase">Size</h6>
-                                    <label class="radio"> <input type="radio" name="size" value="S" checked> <span>S</span> </label> <label class="radio"> <input type="radio" name="size" value="M"> <span>M</span> </label> <label class="radio"> <input type="radio" name="size" value="L"> <span>L</span> </label> <label class="radio"> <input type="radio" name="size" value="XL"> <span>XL</span> </label> <label class="radio"> <input type="radio" name="size" value="XXL"> <span>XXL</span> </label>
+                                    <?php
+
+
+$check_array='7,8,9,10,11,12';
+$check_array_result=explode(',',$check_array);
+
+$sizeOfcheck= sizeof($check_array_result);
+
+print_r($sizeOfcheck);
+
+
+
+if (!($sizeOfcheck == 1)){
+    $x=0;
+    while($x < $sizeOfcheck){
+       echo" <label class='radio'> <input type='radio' name='size' value='S' checked> <span>$check_array_result[$x]</span>";
+        $x++;
+     
+    }
+   
+
+}else{
+   echo "empty";
+
+}
+
+
+?>
+                                    </label> <label class="radio"> <input type="radio" name="size" value="M"> <span>M</span> </label> <label class="radio"> <input type="radio" name="size" value="L"> <span>L</span> </label> <label class="radio"> <input type="radio" name="size" value="XL"> <span>XL</span> </label> <label class="radio"> <input type="radio" name="size" value="XXL"> <span>XXL</span> </label>
                                 </div>
                                 <div class="cart mt-4 align-items-center"> <button class="btn-success mr-2 px-4">Add to cart</button>
                                     <button class="btn-success mr-2 px-4">Buy Now</button>
