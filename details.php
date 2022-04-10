@@ -119,7 +119,7 @@ include("./conn.php");
                                 <li>Milk</li>
                                 <li>Coffee</li>
                                 <li>Tea</li>
-                                <li>Milk</li>
+                                <li></li>
                                 </ul>
 
                             <div class='quantity buttons_added'>
