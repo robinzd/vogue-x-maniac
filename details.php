@@ -114,12 +114,12 @@ include("./conn.php");
                                 </h6>
 
                                 <ul>
-                                <li>Coffee</li>
-                                <li>Tea</li>
-                                <li>Milk</li>
-                                <li>Coffee</li>
-                                <li>Tea</li>
-                                <li></li>
+                                <li>More comfortable</li>
+                                <li>Less weight</li>
+                                <li>Durability is more</li>
+                                <li>Quality is nice</li>
+                                <li>Color is lifetime</li>
+                                <li>Warranty minium 5 years</li>
                                 </ul>
 
                             <div class='quantity buttons_added'>

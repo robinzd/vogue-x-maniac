@@ -182,7 +182,7 @@ if (isset($_POST['submit'])) {
 			</div>
 
 			<div class="form-group">
-				<input type="text" class="form-control" name="price" placeholder="Enter Your product price" required="true">
+				<input type="text" class="form-control" name="price" placeholder="Enter Your product price">
 			</div>
 			<div class="form-group">
 				<input type="text" class="form-control" name="brand" placeholder="Enter Your product brand" required="true">
