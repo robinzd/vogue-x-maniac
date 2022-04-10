@@ -332,7 +332,7 @@ a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2:hover{
  .quantity.buttons_added .plus {
   padding: 7px 10px 8px;
   height: 41px;
-  background-color: #ffffff;
+  background-color: #eee;  
   border: 1px solid #efefef;
   cursor:pointer;}
  
@@ -356,13 +356,7 @@ a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2:hover{
  .quantity.buttons_added .plus:focus {
   outline: none; }
  
-  input.plus{
-  background-color: #eee;
-  }
-
-  input.minus{
-    background-color: #eee;
-  }
+  
   
  
   
