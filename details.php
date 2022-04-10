@@ -94,7 +94,7 @@ include("./conn.php");
                                     <?php
 
 
-                                    $check_array = '';
+                                    $check_array = '7,8,9,10,11,12';
                                     $check_array_result = explode(',', $check_array);
 
                                     $sizeOfcheck = sizeof($check_array_result);
@@ -107,7 +107,7 @@ include("./conn.php");
                                         echo "<h6 class='text-uppercase'>Size</h6>";
                                         $x = 0;
                                         while ($x < $sizeOfcheck) {
-                                            echo " <label class='radio'> <input type='radio' name='size' value='S' checked> <span>$check_array_result[$x]</span>";
+                                            echo "<label class='radio'> <input type='radio' name='size' value='S' checked> <span>$check_array_result[$x]</span>";
                                             $x++;
                                         }
                                     } else {
