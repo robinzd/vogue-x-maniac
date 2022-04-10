@@ -107,7 +107,7 @@ include("./conn.php");
                                 <p class='about'>$product_description</p>
 
                            
-                                <h6 class='text-uppercase'>
+                                <h6 class='text-capitalize'>
                                 Feauters
                                 </h6>
 
@@ -119,21 +119,15 @@ include("./conn.php");
                                 <li>Tea</li>
                                 <li>Milk</li>
                                 </ul>
+
+                            <div class='quantity buttons_added'>
+                            <h6 class='text-capitalize'>
+                                Quantity
+                                </h6>
+                                <input type='button' value='-' class='minus'><input type='number' step='1' min='1' max='' name='quantity' value='1' title='Qty' class='input-text qty text' size='4' pattern='' inputmode=''><input type='button' value='+' class='plus'>
+                            </div>
                           
                                 <div class='sizes mt-5'>
-                                <form>
-  
-                               <div class='form-group'>
-                               <h6 class='text-uppercase'>Quantity</h6>
-                                <select class='form-control' id='exampleFormControlSelect1'>
-                               <option>1</option>
-                               <option>2</option>
-                               <option>3</option>
-                               <option>4</option>
-                               <option>5</option>
-                              </select>
-                              </div>
-                            </form>
                                     <h6 class='text-uppercase'>Size</h6> <label class='radio'> <input type='radio' name='size' value='$product_size_1' checked> <span>$product_size_1 </span> </label> <label class='radio'> <input type='radio' name='size' value='  $product_size_2'> <span>$product_size_2 </span> </label> <label class='radio'> <input type='radio' name='size' value='  $product_size_3 '> <span>  $product_size_3 </span> </label> <label class='radio'> <input type='radio' name='size' value='  $product_size_4 '> <span>  $product_size_4 </span> </label> <label class='radio'> <input type='radio' name='size' value='  $product_size_5 '> <span>$product_size_5 </span> </label>
                                     <label class='radio'> <input type='radio' name='size' value='$product_size_6'> <span>$product_size_6 </span> </label>
                                     <label class='radio'> <input type='radio' name='size' value='$product_size_7'> <span>$product_size_7 </span> </label>
