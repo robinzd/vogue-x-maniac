@@ -89,9 +89,8 @@ include("./conn.php");
                                         <h6 class="text-uppercase">quantity</h6>
                                         <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
                                     </div>
-                                  
-                                <h6 class='text-uppercase'>Size</h6>;
-                                  
+
+                                    <h6 class="text-uppercase">Size</h6>
                                     <?php
 
 
@@ -105,14 +104,13 @@ include("./conn.php");
 
 
                                     if (!($sizeOfcheck == 1)) {
-                                      
                                         $x = 0;
                                         while ($x < $sizeOfcheck) {
-                                            echo "<label class='radio'> <input type='radio' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span>";
+                                            echo " <label class='radio'> <input type='radio' name='size' value='S' checked> <span>$check_array_result[$x]</span>";
                                             $x++;
                                         }
                                     } else {
-                                        echo "";
+                                        echo " ";
                                     }
 
 
