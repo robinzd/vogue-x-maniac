@@ -103,9 +103,9 @@ include("./conn.php");
 
                                     $get_details = "select product_size from products_details where id=";
 
-                                    $run_details = mysqli_query($conn,$get_details );
+                                    $run_details = mysqli_query($conn, $get_details);
 
-                                 
+
 
 
 
@@ -122,7 +122,7 @@ include("./conn.php");
                                         echo "<h6 class='text-uppercase'>Size</h6>";
                                         $x = 0;
                                         while ($x < $sizeOfcheck) {
-                                            echo " <label class='radio'> <input type='radio' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span>";
+                                            echo " <label class='radio'> <input type='radio' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span></label>";
                                             $x++;
                                         }
                                     } else {
@@ -154,7 +154,7 @@ include("./conn.php");
         <h2>Related Products</h2>
         <div class="slider owl-carousel">
 
-        <?php
+            <?php
 
             $get_product_slider = "select * from related_product";
 
