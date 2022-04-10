@@ -86,14 +86,14 @@ include("./conn.php");
                                 </ul>
 
 
-                                <div class="quantity buttons_added">
-                                    <h6 class="text-uppercase">quantity</h6>
-                                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
-                                </div>
 
 
                                 <div class="sizes mt-5">
 
+                                    <div class="quantity buttons_added">
+                                        <h6 class="text-uppercase">quantity</h6>
+                                        <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                                    </div>
 
 
                                     <?php
@@ -127,6 +127,7 @@ include("./conn.php");
                                 <div class="cart mt-4 align-items-center">
                                     <button class="btn-success mr-2 px-4">Add to cart</button>
                                     <button class="btn-success mr-2 px-4">Buy Now</button>
+
                                 </div>
                             </div>
                         </div>
