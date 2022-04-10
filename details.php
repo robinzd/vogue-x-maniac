@@ -47,13 +47,7 @@ include("./conn.php");
     <?php include "./back_to_top.php"; ?>
 
     <!--back to top ends -->
-<?php
 
-
-
-
-
-?>
 
     <!-- product details -->
     <div class="container-fluid mt-5 mb-5">
@@ -160,13 +154,7 @@ include("./conn.php");
         <h2>Related Products</h2>
         <div class="slider owl-carousel">
 
-
-
-
-
-
-
-            <?php
+        <?php
 
             $get_product_slider = "select * from related_product";
 
