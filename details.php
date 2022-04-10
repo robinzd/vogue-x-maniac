@@ -47,7 +47,13 @@ include("./conn.php");
     <?php include "./back_to_top.php"; ?>
 
     <!--back to top ends -->
+<?php
 
+
+
+
+
+?>
 
     <!-- product details -->
     <div class="container-fluid mt-5 mb-5">
@@ -101,7 +107,7 @@ include("./conn.php");
 
                                     <?php
 
-                                    $get_details = "select product_size from products_images";
+                                    $get_details = "select product_size from products_details where id=";
 
                                     $run_details = mysqli_query($conn,$get_details );
 
