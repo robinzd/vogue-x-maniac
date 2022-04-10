@@ -94,7 +94,7 @@ include("./conn.php");
                                     <?php
 
 
-                                    $check_array = '7,8,9,10,11,12';
+                                    $check_array = '7,8,9,10,11';
                                     $check_array_result = explode(',', $check_array);
 
                                     $sizeOfcheck = sizeof($check_array_result);
