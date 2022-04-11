@@ -76,13 +76,12 @@ include("./conn.php");
                             print_r($row_products_images);
 
 
-                            // print_r($row_products_images);
+                           
 
 
-                            $details_image_1 = $row_products_images['details_image_1'];
-                            $details_image_2 = $row_products_images['details_image_2'];
-                            $details_image_3 = $row_products_images['details_image_3'];
-                            $details_image_4 = $row_products_images['details_image_4'];
+                            $details_image = $row_products_images['details_image'];
+                            $related_product = $row_products_images['related_product'];
+                          
 
 
                             echo " <div class='col-md-6'>
