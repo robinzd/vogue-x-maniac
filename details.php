@@ -71,13 +71,13 @@ include("./conn.php");
 
                             $product_id = $get_array['id'];
 
-                            $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description from products_details where ID= $product_id";
+                           $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description from products_details where ID= $product_id";
                            
-                            echo  $get_products;
-
-                            $run_slider = mysqli_query($conn,$get_products);
+                           $run_products = mysqli_query($conn,$run_products);
                 
-                            while ($row_slides = mysqli_fetch_array($run_slider)) {
+                            while ($row_products = mysqli_fetch_array($run_products)) {
+
+                                print_r($row_products);
                 
                                 $slider_name = $row_slides['slider_name'];
                                 $slider_image = $row_slides['slider_image'];
