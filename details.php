@@ -132,7 +132,7 @@ include("./conn.php");
                                     $product_id=$details['product_size'];
 
                                   
-                                    $check_array='$product_id';
+                                    $check_array=$product_id;
 
 
                                   $check_array_result = explode(',',$details);
