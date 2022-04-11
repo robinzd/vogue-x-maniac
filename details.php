@@ -131,6 +131,8 @@ include("./conn.php");
 
                                     $product_id=$details['product_size'];
 
+                                    echo $product_id;
+
                                   
                                     $check_array=$product_id;
 
