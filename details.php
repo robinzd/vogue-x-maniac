@@ -69,7 +69,9 @@ include("./conn.php");
 
                         $run_products_images = mysqli_query($conn, $get_products_images);
 
-                        while ($row_products_images = mysqli_fetch_array($run_products_images)) {
+                        while ($row_products_images = mysqli_fetch_array($run_products_images)){
+
+                            print_r($row_products_images);
 
 
                             // print_r($row_products_images);
