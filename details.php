@@ -101,17 +101,15 @@ include("./conn.php");
                                 <p class='about'>$product_description</p>";
 
 
-                                $array=
+                                $array=$product_feauters;
 
-                                <h6 class='text-capitalize'>
-                                    Feauters
-                                </h6>
-                                <ul>
-                                    <li>More comfortable</li>
-                                    <li>Less weight</li>
-                                    <li>Durability is more</li>
-                                    <li>Quality is nice</li>
-                                </ul><br>
+                                $array_result=explode('|', $array);
+
+                                $size_of_array=sizeof($array_result);
+
+                                print_r($size_of_array);
+
+                               
 
                             
                            
@@ -120,6 +118,17 @@ include("./conn.php");
 
 
                          ?>
+
+
+<h6 class='text-capitalize'>
+                                    Feauters
+                                </h6>
+                                <ul>
+                                    <li>More comfortable</li>
+                                    <li>Less weight</li>
+                                    <li>Durability is more</li>
+                                    <li>Quality is nice</li>
+                                </ul><br>
                       
                                
 
