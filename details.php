@@ -109,6 +109,23 @@ include("./conn.php");
 
                                 // print_r($size_of_array);
 
+                                if (!($size_of_array == 1)){
+
+                                    echo "<h6 class='text-capitalize'>
+                                    Feauters
+                                    </h6>";
+
+                                    $x=0;
+
+                                    while($x < $size_of_array){
+                                        echo "<ul>
+                                        <li>$array_result[$x]</li>
+                                       </ul>";
+                                       $x++;
+                                    }
+
+                                }
+
                                
 
                             
@@ -120,15 +137,8 @@ include("./conn.php");
                          ?>
 
 
-<h6 class='text-capitalize'>
-                                    Feauters
-                                </h6>
-                                <ul>
-                                    <li>More comfortable</li>
-                                    <li>Less weight</li>
-                                    <li>Durability is more</li>
-                                    <li>Quality is nice</li>
-                                </ul><br>
+
+                               
                       
                                
 
