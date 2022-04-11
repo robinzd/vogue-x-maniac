@@ -120,10 +120,7 @@ include("./conn.php");
 
                                     $run_details = mysqli_query($conn,$get_details);
                         
-
-                                    $check_array = $run_details;
-
-                                    $check_array_result = explode(',', $check_array);
+                                    $check_array_result = explode(',',$run_details);
 
                                     $sizeOfcheck = sizeof($check_array_result);
 
