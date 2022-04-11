@@ -96,10 +96,10 @@ label.radio input:checked+span {
 
 button.btn-success.mr-2.px-4{
       border:1px solid lightgreen;
-      /* border-radius: 10px; */
+      border-radius: 10px;
       color:black;
       text-transform: capitalize;
-      background-color: white;
+      background-color: #eee;
       font-family: 'Poppins', sans-serif;
     
       
