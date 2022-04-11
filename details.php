@@ -120,6 +120,8 @@ include("./conn.php");
 
                                     echo  $get_details;
 
+                                   echo "<br>";
+
                                     $run_details = mysqli_query($conn,$get_details);
 
                                     $details = mysqli_fetch_array($run_details);
