@@ -122,7 +122,7 @@ include("./conn.php");
 
                                     $run_details = mysqli_query($conn,$get_details);
 
-                                    $details = mysqli_fetch_field($run_details);
+                                    $details = mysqli_fetch_array($run_details);
 
                                     echo $details;
 
