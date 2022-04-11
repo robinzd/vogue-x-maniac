@@ -72,21 +72,27 @@ include("./conn.php");
                         while ($row_products_images = mysqli_fetch_array($run_products_images)) {
 
 
-                            print_r($row_products_images);
+                            // print_r($row_products_images);
+
+
+                            $details_image_1=$row_products_images['details_image_1'];
+                            $details_image_2=$row_products_images['details_image_2'];
+                            $details_image_3=$row_products_images['details_image_3'];
+                            $details_image_4=$row_products_images['details_image_4'];
 
         
+                            echo " <div class='col-md-6'>
+                            <div class='images p-3'>
+                                <div class='text-center p-4'> <img id='main-image' src='./admin_area/product_images/$details_image_1' width='250'/> </div>
+                                <div class='thumbnail text-center' id='thumbnailimage'> <img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image_1' width='70'> <img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image_2' width='70'><img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image_3' width='70'><img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/  $details_image_4' width='70'> </div>
+                            </div>
+                        </div>
 
-
-
+                         "; 
                         }
 
                         ?>
-                        <div class="col-md-6">
-                            <div class="images p-3">
-                                <div class="text-center p-4"> <img id="main-image" src="./admin_area/product_images/product1.jpg" width="250" /> </div>
-                                <div class="thumbnail text-center" id="thumbnailimage"> <img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product1.jpg" width="70"> <img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product6.jpg" width="70"><img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product7.jpg" width="70"><img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product8.jpg" width="70"> </div>
-                            </div>
-                        </div>
+                       
                         
                          <?php
                             $_SERVER['SCRIPT_NAME'];
@@ -137,7 +143,7 @@ include("./conn.php");
                                 if (!($size_of_array == 1)){
 
                                     echo "<h6 class='text-capitalize'>
-                                    Feauters
+                                    Features
                                     </h6>";
 
                                     $x=0;
