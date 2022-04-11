@@ -145,6 +145,7 @@ include("./conn.php");
                                     echo "<h6 class='text-capitalize'>
                                     Features
                                     </h6>";
+                                    echo "<br>";
 
                                     $x=0;
 
