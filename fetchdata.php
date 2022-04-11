@@ -52,7 +52,7 @@ if (isset($_POST["action"])) {
             <h5 class="card-title text-center">' . $row['product_title'] . '</h5>
         <p class="card-text  text-center"><s>₹' . $row['product_strikeout_price'] . '</s>₹' . $row['product_price'] . '</p>
             <div class="text-center">
-                <a href="details.php?check_value='. $row['ID'] .'" class="btn btn-success">See Details</a>
+                <a href="details.php?id='. $row['ID'] .'" class="btn btn-success">See Details</a>
                 <a href="#" class="btn btn-success">Add to Cart</a>
             </div>
         </div>
