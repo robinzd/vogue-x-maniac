@@ -135,6 +135,8 @@ include("./conn.php");
 
                                     echo $product_id;
 
+                                    echo "<br>";
+
                                   
                                     $check_array=$product_id;
 
