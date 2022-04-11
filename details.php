@@ -71,7 +71,7 @@ include("./conn.php");
 
                             $product_id = $get_array['id'];
 
-                           $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description from products_details where ID= $product_id";
+                           $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description,product_feauters from products_details where ID= $product_id";
                            
                            $run_products = mysqli_query($conn,$get_products);
                 
@@ -79,8 +79,8 @@ include("./conn.php");
 
                                 print_r($row_products);
                 
-                                $slider_name = $row_slides['slider_name'];
-                                $slider_image = $row_slides['slider_image'];
+                                $brand_title = $row_products['brand_title'];
+                               
 
 
 
@@ -109,8 +109,6 @@ include("./conn.php");
                                     <li>Less weight</li>
                                     <li>Durability is more</li>
                                     <li>Quality is nice</li>
-                                    <li>Color is lifetime</li>
-                                    <li>Warranty minium 5 years</li>
                                 </ul><br>
 
 
