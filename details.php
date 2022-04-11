@@ -55,86 +55,90 @@ include("./conn.php");
             <div class="col-md-10">
                 <div class="card">
                     <div class="row">
-                    <div class="col-md-6">
-                        <?php
+                        <div class="col-md-6">
+                            <?php
 
-                        $_SERVER['SCRIPT_NAME'];
+                            $_SERVER['SCRIPT_NAME'];
 
-                        $get_string = $_SERVER['QUERY_STRING'];
+                            $get_string = $_SERVER['QUERY_STRING'];
 
-                        parse_str($get_string, $get_array);
+                            parse_str($get_string, $get_array);
 
-                        $product_images_id = $get_array['id'];
+                            $product_images_id = $get_array['id'];
 
-                        $get_products_images = "select * from products_images where related_product=$product_images_id LIMIT 0,1";
+                            $get_products_images = "select * from products_images where related_product=$product_images_id LIMIT 0,1";
 
-                        $run_products_images = mysqli_query($conn, $get_products_images);
+                            $run_products_images = mysqli_query($conn, $get_products_images);
 
-                        $row_products_images = mysqli_fetch_array($run_products_images);
-
-                      
+                            $row_products_images = mysqli_fetch_array($run_products_images);
 
 
 
 
 
-                        $details_image = $row_products_images['details_image'];
 
-                     
-
-                        $related_product = $row_products_images['related_product'];
-
-
-
-                        echo " 
-                            <div class='images p-3'>
-                                <div class='text-center p-4'> <img id='main-image' src='./admin_area/product_images/$details_image' width='250'/> </div>";
-
-
-                        ?>
-
-                        <?php
-
-                        $_SERVER['SCRIPT_NAME'];
-
-                        $get_string = $_SERVER['QUERY_STRING'];
-
-                        parse_str($get_string, $get_array);
-
-                        $product_images_id = $get_array['id'];
-
-
-                        $get_products_images = "select * from products_images where related_product=$product_images_id";
-
-                       
-
-                        $run_products_images = mysqli_query($conn, $get_products_images);
-
-
-
-                        while ($row_products_images = mysqli_fetch_array($run_products_images)) {
-
-                          
 
                             $details_image = $row_products_images['details_image'];
 
-                           
+
 
                             $related_product = $row_products_images['related_product'];
 
 
-                            echo "<div class='thumbnail text-center' id='thumbnailimage'>
+
+                            echo " 
+                            <div class='images p-3'>
+                                <div class='text-center p-4'> <img id='main-image' src='./admin_area/product_images/$details_image' width='250'/> </div>";
+
+
+                            ?>
+
+                            <div class='thumbnail text-center' id='thumbnailimage'>
+
+                                <?php
+
+                                $_SERVER['SCRIPT_NAME'];
+
+                                $get_string = $_SERVER['QUERY_STRING'];
+
+                                parse_str($get_string, $get_array);
+
+                                $product_images_id = $get_array['id'];
+
+
+                                $get_products_images = "select * from products_images where related_product=$product_images_id";
+
+
+
+                                $run_products_images = mysqli_query($conn, $get_products_images);
+
+
+
+                                while ($row_products_images = mysqli_fetch_array($run_products_images)) {
+
+
+
+                                    $details_image = $row_products_images['details_image'];
+
+
+
+                                    $related_product = $row_products_images['related_product'];
+
+
+                                    echo "
                                  <img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image' width='70'> 
-                                </div>
+                               
                            
 
                          ";
-                        }
+                                }
 
 
-                        ?>
+                                ?>
 
-                    </div>
+                            </div>
+
+                        </div>
 
 
                         <?php
