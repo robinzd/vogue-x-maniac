@@ -2,11 +2,6 @@
 
 include("./conn.php");
 
-
-
-
-
-
 ?>
 
 <?php

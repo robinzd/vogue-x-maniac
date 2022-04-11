@@ -101,15 +101,28 @@ include("./conn.php");
 
                                     <?php
 
-                                    $get_details = "select product_size from products_details";
+                                   
+                                    echo $_SERVER['SCRIPT_NAME'];
+                                  
+                                    echo $_SERVER['QUERY_STRING'];
 
-                                    $run_details = mysqli_query($conn, $get_details);
+                                    $get_string = $_SERVER['QUERY_STRING'];
+
+
+                                    parse_str($get_string, $get_array);
+
+                                    print_r($get_array);
+                                
+                                    
+                                    $product_id = $get_array['product_id'];
+
+                                    $result = "select product_size from table where id = $product_id";
 
 
 
 
 
-                                    $check_array = '$run_details';
+                                    $check_array = $result;
                                     $check_array_result = explode(',', $check_array);
 
                                     $sizeOfcheck = sizeof($check_array_result);
@@ -122,14 +135,10 @@ include("./conn.php");
                                         echo "<h6 class='text-uppercase'>Size</h6>";
                                         $x = 0;
                                         while ($x < $sizeOfcheck) {
-                                            echo " <label class='radio'> <input type='radio' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span></label>";
+                                            echo "<label class='radio'> <input type='radio' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span></label>";
                                             $x++;
                                         }
-                                    } else {
-                                        echo " ";
                                     }
-
-
                                     ?>
 
                                 </div>
