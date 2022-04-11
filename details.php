@@ -126,7 +126,7 @@ include("./conn.php");
 
                                     $details = mysqli_fetch_array($run_details);
 
-                                    echo $details;
+                                    print_r($details);
 
 
                         
