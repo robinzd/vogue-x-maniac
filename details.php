@@ -55,6 +55,7 @@ include("./conn.php");
             <div class="col-md-10">
                 <div class="card">
                     <div class="row">
+                    <div class="col-md-6">
                         <?php
 
                         $_SERVER['SCRIPT_NAME'];
@@ -91,22 +92,33 @@ include("./conn.php");
 
 
 
-                        echo " <div class='col-md-6'>
+                        echo " 
                             <div class='images p-3'>
                                 <div class='text-center p-4'> <img id='main-image' src='./admin_area/product_images/$details_image' width='250'/> </div>";
 
 
-                            ?>
+                        ?>
 
-                                $get_products_images = "select * from products_images where related_product=$product_images_id";
+                        <?php
 
-                                echo  $get_products_images;
+                        $_SERVER['SCRIPT_NAME'];
 
-                                echo "<br>";
-        
-                                $run_products_images = mysqli_query($conn, $get_products_images);
-        
-                              
+                        $get_string = $_SERVER['QUERY_STRING'];
+
+                        parse_str($get_string, $get_array);
+
+                        $product_images_id = $get_array['id'];
+
+
+                        $get_products_images = "select * from products_images where related_product=$product_images_id";
+
+                        echo  $get_products_images;
+
+                        echo "<br>";
+
+                        $run_products_images = mysqli_query($conn, $get_products_images);
+
+
 
                         while ($row_products_images = mysqli_fetch_array($run_products_images)) {
 
@@ -115,20 +127,22 @@ include("./conn.php");
                             $details_image = $row_products_images['details_image'];
 
                             echo  $details_image;
-    
+
                             $related_product = $row_products_images['related_product'];
 
 
                             echo "<div class='thumbnail text-center' id='thumbnailimage'>
                                  <img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image' width='70'> 
                                 </div>
-                            </div>
+                           
 
                          ";
                         }
 
 
                         ?>
+
+                    </div>
 
 
                         <?php
