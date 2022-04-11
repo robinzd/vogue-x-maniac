@@ -116,13 +116,13 @@ include("./conn.php");
                                     
                                     $product_id = $get_array['product_id'];
 
-                                    $result = "select product_size from table where id = $product_id";
+                                    echo "select product_size from table where id = $product_id";
 
 
 
 
 
-                                    $check_array = '$result';
+                                    $check_array = 'product_size';
                                     $check_array_result = explode(',', $check_array);
 
                                     $sizeOfcheck = sizeof($check_array_result);
