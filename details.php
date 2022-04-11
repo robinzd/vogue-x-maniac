@@ -77,30 +77,32 @@ include("./conn.php");
                 
                             while ($row_products = mysqli_fetch_array($run_products)) {
 
-                                print_r($row_products);
-                
-                                $brand_title = $row_products['brand_title'];
                                
+                                $brand_title = $row_products['brand_title'];
+                                $product_title = $row_products['product_title'];
+                                $product_price = $row_products['product_price'];
+                                $strikeout_price = $row_products['strikeout_price'];
+                                $product_description = $row_products['product_description'];
+                                $product_feauters = $row_products['product_feauters'];
+                                echo $product_feauters;
 
 
-
-                            }
-                
-
-
-                         ?>
-                        <div class="col-md-6">
-                            <div class="product p-4">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center"><a href="#"><i class="fa fa-long-arrow-left"></i></a> <a href="#"><span class="ml-1">Back</span></a> </div> <a href="index.php"><i class="fa fa-home"></i></a>
+                            echo"  <div class='col-md-6'>
+                            <div class='product p-4'>
+                                <div class='d-flex justify-content-between align-items-center'>
+                                    <div class='d-flex align-items-center'><a href='#'><i class='fa fa-long-arrow-left'></i></a> <a href='#'><span class='ml-1'>Back</span></a> </div> <a href='index.php'><i class='fa fa-home'></i></a>
                                 </div>
-                                <div class="mt-4 mb-3"> <span class="text-uppercase text-muted brand">Orianz</span>
-                                    <h5 class="text-uppercase">Men's slim fit t-shirt</h5>
-                                    <div class="price d-flex flex-row align-items-center"> <span class="act-price">₹1,200</span>
-                                        <div class="ml-2"> <small class="dis-price">₹3,000</small> </div>
+                                <div class='mt-4 mb-3'> <span class='text-uppercase text-muted brand'>$brand_title</span>
+                                    <h5 class='text-uppercase'>$product_title</h5>
+                                    <div class='price d-flex flex-row align-items-center'> <span class='act-price'>₹$product_price </span>
+                                        <div class='ml-2'> <small class='dis-price'>₹$strikeout_price</small> </div>
                                     </div>
                                 </div>
-                                <p class="about">Shop from a wide range of t-shirt from orianz. Pefect for your everyday use, you could pair it with a stylish pair of jeans or trousers complete the look.</p>
+                                <p class='about'>$product_description</p>";
+
+
+                                $array=
+
                                 <h6 class='text-capitalize'>
                                     Feauters
                                 </h6>
@@ -110,6 +112,16 @@ include("./conn.php");
                                     <li>Durability is more</li>
                                     <li>Quality is nice</li>
                                 </ul><br>
+
+
+                           
+                            }
+                
+
+
+                         ?>
+                      
+                               
 
 
 
