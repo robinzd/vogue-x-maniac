@@ -71,7 +71,7 @@ include("./conn.php");
                         
                         $run_products_images = mysqli_query($conn, $get_products_images);
 
-                        while ($row_products_images = mysqli_fetch_array($run_products_images)){
+                        $row_products_images = mysqli_fetch_array($run_products_images);
 
                             print_r($row_products_images);
 
@@ -92,12 +92,16 @@ include("./conn.php");
                             echo " <div class='col-md-6'>
                             <div class='images p-3'>
                                 <div class='text-center p-4'> <img id='main-image' src='./admin_area/product_images/$details_image' width='250'/> </div>
-                                <div class='thumbnail text-center' id='thumbnailimage'> <img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image' width='70'> <img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image' width='70'><img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image' width='70'><img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image' width='70'> </div>
+                                <div class='thumbnail text-center' id='thumbnailimage'>
+                                 <img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image' width='70'> 
+                                 <img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image' width='70'>
+                                 <img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image' width='70'>
+                                 <img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image' width='70'> </div>
                             </div>
                         </div>
 
                          ";
-                        }
+                        
 
                         ?>
 
