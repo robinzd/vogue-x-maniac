@@ -122,7 +122,7 @@ include("./conn.php");
 
 
 
-                                    $check_array = $result;
+                                    $check_array = '$result';
                                     $check_array_result = explode(',', $check_array);
 
                                     $sizeOfcheck = sizeof($check_array_result);
