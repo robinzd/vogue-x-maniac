@@ -65,7 +65,7 @@ include("./conn.php");
 
                         $product_images_id = $get_array['id'];
 
-                       $get_products_images = "select * from products_images where ID=$product_id";
+                       $get_products_images = "select * from products_images where ID=$product_images_id";
                        
                        $run_products_images = mysqli_query($conn,$get_products_images);
             
