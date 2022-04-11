@@ -120,7 +120,7 @@ include("./conn.php");
 
                                     echo  $get_details;
 
-                                   echo "<br>";
+                                    echo "<br>";
 
                                     $run_details = mysqli_query($conn,$get_details);
 
@@ -129,10 +129,15 @@ include("./conn.php");
                                     print_r($details);
 
 
-                        
-                                    $check_array_result = explode(',',$details);
+                                    $product_id=$details['product_size'];
 
-                                    $sizeOfcheck = sizeof($check_array_result);
+                                  
+                                    $check_array='$product_id';
+
+
+                                  $check_array_result = explode(',',$details);
+
+                                  $sizeOfcheck = sizeof($check_array_result);
 
 
 
