@@ -98,6 +98,8 @@ include("./conn.php");
                                 $get_products_images = "select * from products_images where related_product=$product_images_id LIMIT 1,3";
 
                                 echo  $get_products_images;
+
+                                echo "<br>";
         
                                 $run_products_images = mysqli_query($conn, $get_products_images);
         
