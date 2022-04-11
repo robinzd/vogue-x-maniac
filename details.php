@@ -118,13 +118,8 @@ include("./conn.php");
 
 
 
-                                    echo "select product_size from product_details where ID=$product_id";
+                                    $check_array= 'select product_size from product_details where ID=$product_id';
 
-
-
-
-
-                                    $check_array = '$result';
                                     $check_array_result = explode(',', $check_array);
 
                                     $sizeOfcheck = sizeof($check_array_result);
