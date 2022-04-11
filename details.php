@@ -143,7 +143,7 @@ include("./conn.php");
                                     echo  $check_array;
 
 
-                                  $check_array_result = explode(',',$details);
+                                  $check_array_result = explode(',',$check_array);
 
                                   $sizeOfcheck = sizeof($check_array_result);
 
