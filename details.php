@@ -88,12 +88,13 @@ include("./conn.php");
 
                             echo " 
                             <div class='images p-3'>
-                                <div class='text-center p-4'> <img id='main-image' src='./admin_area/product_images/$details_image' width='250'/> </div>";
+                                <div class='text-center p-4'> <img id='main-image' src='./admin_area/product_images/$details_image' width='250'/> 
+                            </div>";
 
 
                             ?>
 
-                            <div class='thumbnail text-center' id='thumbnailimage'>
+                            <div class="thumbnail text-center" id="thumbnailimage">
 
                                 <?php
 
@@ -140,7 +141,7 @@ include("./conn.php");
 
                         </div>
 
-                        <div class='col-md-6'>
+                        <div class="col-md-6">
 
                             <?php
                             $_SERVER['SCRIPT_NAME'];
@@ -288,7 +289,8 @@ include("./conn.php");
             </div>
         </div>
     </div>
-  
+    </div>
+
     <!-- product details ends -->
 
 
