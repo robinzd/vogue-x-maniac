@@ -65,7 +65,7 @@ include("./conn.php");
 
                         $product_images_id = $get_array['id'];
 
-                        $get_products_images = "select * from products_images where related_product=$product_images_id";
+                        $get_products_images = "select * from products_images where related_product=$product_images_id LIMIT 0,1";
 
                         echo " $get_products_images";
 
@@ -93,7 +93,13 @@ include("./conn.php");
                             <div class='images p-3'>
                                 <div class='text-center p-4'> <img id='main-image' src='./admin_area/product_images/$details_image' width='250'/> </div>";
 
+                                $get_products_images = "select * from products_images where related_product=$product_images_id LIMIT 1,3";
 
+                                echo " $get_products_images";
+        
+                                $run_products_images = mysqli_query($conn, $get_products_images);
+        
+                              
 
                         while ($row_products_images = mysqli_fetch_array($run_products_images)) {
 
