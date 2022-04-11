@@ -61,6 +61,34 @@ include("./conn.php");
                                 <div class="thumbnail text-center" id="thumbnailimage"> <img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product1.jpg" width="70"> <img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product6.jpg" width="70"><img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product7.jpg" width="70"><img onclick="change_image(this)" id="thumbnail" src="./admin_area/product_images/product8.jpg" width="70"> </div>
                             </div>
                         </div>
+                        
+                         <?php
+                            $_SERVER['SCRIPT_NAME'];
+                                  
+                            $get_string = $_SERVER['QUERY_STRING'];
+                            
+                            parse_str($get_string, $get_array);
+
+                            $product_id = $get_array['id'];
+
+                            $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description from products_details where ID= $product_id";
+                           
+                            echo  $get_products;
+
+                            $run_slider = mysqli_query($conn,$get_products);
+                
+                            while ($row_slides = mysqli_fetch_array($run_slider)) {
+                
+                                $slider_name = $row_slides['slider_name'];
+                                $slider_image = $row_slides['slider_image'];
+
+
+
+                            }
+                
+
+
+                         ?>
                         <div class="col-md-6">
                             <div class="product p-4">
                                 <div class="d-flex justify-content-between align-items-center">
@@ -122,16 +150,13 @@ include("./conn.php");
 
                                     $details = mysqli_fetch_array($run_details);
 
-                                    $product_id=$details['product_size'];
+                                    $product_size=$details['product_size'];
 
-                                    $check_array=$product_id;
+                                    $check_array=$product_size;
 
                                     $check_array_result = explode(',',$check_array);
 
                                     $sizeOfcheck = sizeof($check_array_result);
-
-
-
 
 
                                     if (!($sizeOfcheck == 1)) {
