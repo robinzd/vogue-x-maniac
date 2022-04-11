@@ -56,31 +56,31 @@ include("./conn.php");
                 <div class="card">
                     <div class="row">
                         <?php
-                        
+
                         $_SERVER['SCRIPT_NAME'];
-                                  
+
                         $get_string = $_SERVER['QUERY_STRING'];
-                        
+
                         parse_str($get_string, $get_array);
 
                         $product_images_id = $get_array['id'];
 
-                       $get_products_images = "select * from products_images where ID=$product_images_id";
-                       
-                       $run_products_images = mysqli_query($conn,$get_products_images);
-            
+                        $get_products_images = "select * from products_images where ID=$product_images_id";
+
+                        $run_products_images = mysqli_query($conn, $get_products_images);
+
                         while ($row_products_images = mysqli_fetch_array($run_products_images)) {
 
 
                             // print_r($row_products_images);
 
 
-                            $details_image_1=$row_products_images['details_image_1'];
-                            $details_image_2=$row_products_images['details_image_2'];
-                            $details_image_3=$row_products_images['details_image_3'];
-                            $details_image_4=$row_products_images['details_image_4'];
+                            $details_image_1 = $row_products_images['details_image_1'];
+                            $details_image_2 = $row_products_images['details_image_2'];
+                            $details_image_3 = $row_products_images['details_image_3'];
+                            $details_image_4 = $row_products_images['details_image_4'];
 
-        
+
                             echo " <div class='col-md-6'>
                             <div class='images p-3'>
                                 <div class='text-center p-4'> <img id='main-image' src='./admin_area/product_images/$details_image_1' width='250'/> </div>
@@ -88,37 +88,37 @@ include("./conn.php");
                             </div>
                         </div>
 
-                         "; 
+                         ";
                         }
 
                         ?>
-                       
-                        
-                         <?php
-                            $_SERVER['SCRIPT_NAME'];
-                                  
-                            $get_string = $_SERVER['QUERY_STRING'];
-                            
-                            parse_str($get_string, $get_array);
 
-                            $product_id = $get_array['id'];
 
-                           $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description,product_feauters from products_details where ID= $product_id";
-                           
-                           $run_products = mysqli_query($conn,$get_products);
-                
-                            while ($row_products = mysqli_fetch_array($run_products)) {
+                        <?php
+                        $_SERVER['SCRIPT_NAME'];
 
-                               
-                                $brand_title = $row_products['brand_title'];
-                                $product_title = $row_products['product_title'];
-                                $product_price = $row_products['product_price'];
-                                $strikeout_price = $row_products['strikeout_price'];
-                                $product_description = $row_products['product_description'];
-                                $product_feauters = $row_products['product_feauters'];
-                                
+                        $get_string = $_SERVER['QUERY_STRING'];
 
-                            echo"  <div class='col-md-6'>
+                        parse_str($get_string, $get_array);
+
+                        $product_id = $get_array['id'];
+
+                        $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description,product_feauters from products_details where ID= $product_id";
+
+                        $run_products = mysqli_query($conn, $get_products);
+
+                        while ($row_products = mysqli_fetch_array($run_products)) {
+
+
+                            $brand_title = $row_products['brand_title'];
+                            $product_title = $row_products['product_title'];
+                            $product_price = $row_products['product_price'];
+                            $strikeout_price = $row_products['strikeout_price'];
+                            $product_description = $row_products['product_description'];
+                            $product_feauters = $row_products['product_feauters'];
+
+
+                            echo "  <div class='col-md-6'>
                             <div class='product p-4'>
                                 <div class='d-flex justify-content-between align-items-center'>
                                     <div class='d-flex align-items-center'><a href='#'><i class='fa fa-long-arrow-left'></i></a> <a href='#'><span class='ml-1'>Back</span></a> </div> <a href='index.php'><i class='fa fa-home'></i></a>
@@ -132,118 +132,112 @@ include("./conn.php");
                                 <p class='about'>$product_description</p>";
 
 
-                                $array=$product_feauters;
+                            $array = $product_feauters;
 
-                                $array_result=explode('|', $array);
+                            $array_result = explode('|', $array);
 
-                                $size_of_array=sizeof($array_result);
+                            $size_of_array = sizeof($array_result);
 
-                               
 
-                                if (!($size_of_array == 1)){
 
-                                    echo "<h6 class='text-capitalize'>
+                            if (!($size_of_array == 1)) {
+
+                                echo "<h6 class='text-capitalize'>
                                     Features
                                     </h6>";
-                                    echo "<br>";
 
-                                    $x=0;
+                                $x = 0;
 
-                                    while($x < $size_of_array){
-                                        echo "<ul>
+                                while ($x < $size_of_array) {
+                                    echo "<ul>
                                         <li>$array_result[$x]</li>
                                        </ul>";
-                                        $x++;
-                                    }
-                                   
-                                    echo "<br>";
+                                    $x++;
                                 }
 
-                               
-
-                            
-                           
+                                echo "<br>";
                             }
-                
-
-
-                         ?>
+                        }
 
 
 
-                               
-                      
-                               
-
-
-
-                                <div class="quantity buttons_added">
-                                    <h6 class="text-uppercase">quantity</h6>
-                                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
-                                </div>
+                        ?>
 
 
 
 
-                                <div class="sizes mt-5">
 
 
 
-                                    <?php
-
-                                   
-                                     $_SERVER['SCRIPT_NAME'];
-                                  
-                                    
-
-                                    $get_string = $_SERVER['QUERY_STRING'];
 
 
-                                    parse_str($get_string, $get_array);
-
-                                    // print_r($get_array);
-                                
-                                    
-                                    $product_id = $get_array['id'];
-
-                                    $get_details = "select product_size from products_details where ID= $product_id";
-
-                                    $run_details = mysqli_query($conn,$get_details);
-
-                                    $details = mysqli_fetch_array($run_details);
-
-                                    $product_size=$details['product_size'];
-
-                                    $check_array=$product_size;
-
-                                    $check_array_result = explode(',',$check_array);
-
-                                    $sizeOfcheck = sizeof($check_array_result);
+                        <div class="quantity buttons_added">
+                            <h6 class="text-uppercase">quantity</h6>
+                            <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                        </div>
 
 
-                                    if (!($sizeOfcheck == 1)) {
-                                        echo "<h6 class='text-uppercase'>Size</h6>";
-                                        $x = 0;
-                                        while ($x < $sizeOfcheck) {
-                                            echo "<label class='radio'> <input type='radio' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span></label>\n";
-                                            $x++;
-                                        }
-                                    }
-                                    ?>
 
-                                </div>
 
-                                <div class="cart mt-4 align-items-center">
-                                    <button class="btn-success mr-2 px-4">Add to cart</button>
-                                    <button class="btn-success mr-2 px-4">Buy Now</button>
+                        <div class="sizes mt-5">
 
-                                </div>
-                            </div>
+
+
+                            <?php
+
+
+                            $_SERVER['SCRIPT_NAME'];
+
+
+
+                            $get_string = $_SERVER['QUERY_STRING'];
+
+
+                            parse_str($get_string, $get_array);
+
+                            // print_r($get_array);
+
+
+                            $product_id = $get_array['id'];
+
+                            $get_details = "select product_size from products_details where ID= $product_id";
+
+                            $run_details = mysqli_query($conn, $get_details);
+
+                            $details = mysqli_fetch_array($run_details);
+
+                            $product_size = $details['product_size'];
+
+                            $check_array = $product_size;
+
+                            $check_array_result = explode(',', $check_array);
+
+                            $sizeOfcheck = sizeof($check_array_result);
+
+
+                            if (!($sizeOfcheck == 1)) {
+                                echo "<h6 class='text-uppercase'>Size</h6>";
+                                $x = 0;
+                                while ($x < $sizeOfcheck) {
+                                    echo "<label class='radio'> <input type='radio' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span></label>\n";
+                                    $x++;
+                                }
+                            }
+                            ?>
+
+                        </div>
+
+                        <div class="cart mt-4 align-items-center">
+                            <button class="btn-success mr-2 px-4">Add to cart</button>
+                            <button class="btn-success mr-2 px-4">Buy Now</button>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    </div>
     </div>
     <!-- product details ends -->
 
