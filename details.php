@@ -118,6 +118,8 @@ include("./conn.php");
 
                                     $get_details = "select product_size from products_details where ID= $product_id";
 
+                                    echo  $get_details;
+
                                     $run_details = mysqli_query($conn,$get_details);
 
                                     $details = mysqli_fetch_field($run_details);
