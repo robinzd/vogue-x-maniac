@@ -55,6 +55,32 @@ include("./conn.php");
             <div class="col-md-10">
                 <div class="card">
                     <div class="row">
+                        <?php
+                        
+                        $_SERVER['SCRIPT_NAME'];
+                                  
+                        $get_string = $_SERVER['QUERY_STRING'];
+                        
+                        parse_str($get_string, $get_array);
+
+                        $product_images_id = $get_array['id'];
+
+                       $get_products_images = "select * from products_images where ID=$product_id";
+                       
+                       $run_products_images = mysqli_query($conn,$get_products_images);
+            
+                        while ($row_products_images = mysqli_fetch_array($run_products_images)) {
+
+
+                            print_r($row_products_images);
+
+        
+
+
+
+                        }
+
+                        ?>
                         <div class="col-md-6">
                             <div class="images p-3">
                                 <div class="text-center p-4"> <img id="main-image" src="./admin_area/product_images/product1.jpg" width="250" /> </div>
