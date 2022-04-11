@@ -120,10 +120,10 @@ include("./conn.php");
                                         echo "<ul>
                                         <li>$array_result[$x]</li>
                                        </ul>";
-                                       echo"<br>";
-                                       $x++;
+                                        $x++;
                                     }
-
+                                   
+                                    echo "<br>";
                                 }
 
                                
