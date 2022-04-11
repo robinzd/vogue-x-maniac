@@ -111,14 +111,17 @@ include("./conn.php");
 
                                     parse_str($get_string, $get_array);
 
-                                    print_r($get_array);
+                                    // print_r($get_array);
                                 
                                     
                                     $product_id = $get_array['id'];
 
+                                    $get_details = "select product_size from products_details where ID= $product_id";
 
+                                    $run_details = mysqli_query($conn,$get_details);
+                        
 
-                                    $check_array= 'select product_size from product_details where ID=$product_id';
+                                    $check_array = '$run_details';
 
                                     $check_array_result = explode(',', $check_array);
 
