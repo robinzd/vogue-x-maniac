@@ -69,6 +69,8 @@ include("./conn.php");
 
                         echo  $get_products_images;
 
+                        echo "<br>";
+
                         $run_products_images = mysqli_query($conn, $get_products_images);
 
                         $row_products_images = mysqli_fetch_array($run_products_images);
@@ -105,7 +107,7 @@ include("./conn.php");
 
                             // print_r($row_products_images);
 
-                            echo "<br>";
+                         
 
 
                             echo "<div class='thumbnail text-center' id='thumbnailimage'>
