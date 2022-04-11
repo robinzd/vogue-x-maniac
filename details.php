@@ -119,8 +119,12 @@ include("./conn.php");
                                     $get_details = "select product_size from products_details where ID= $product_id";
 
                                     $run_details = mysqli_query($conn,$get_details);
+
+                                    $details = mysqli_fetch_field($run_details);
+
+
                         
-                                    $check_array_result = explode(',',$run_details);
+                                    $check_array_result = explode(',',$row_details);
 
                                     $sizeOfcheck = sizeof($check_array_result);
 
