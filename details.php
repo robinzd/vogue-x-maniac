@@ -116,9 +116,9 @@ include("./conn.php");
                                     
                                     $product_id = $get_array['id'];
 
-                                    
 
-                                    $result = "select product_size from table where ID=$product_id";
+
+                                    echo "select product_size from table where ID=$product_id";
 
 
 
