@@ -105,7 +105,7 @@ include("./conn.php");
                                 echo "<div class='thumbnail text-center' id='thumbnailimage'>
                                  <img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image' width='70'> 
                                 </div>
-                        
+                            </div>
 
                          ";
 
