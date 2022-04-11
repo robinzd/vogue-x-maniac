@@ -65,8 +65,10 @@ include("./conn.php");
 
                         $product_images_id = $get_array['id'];
 
-                        $get_products_images = "select * from products_images where ID=$product_images_id";
+                        $get_products_images = "select * from products_images where related_product=$product_images_id";
 
+                        echo " $get_products_images";
+                        
                         $run_products_images = mysqli_query($conn, $get_products_images);
 
                         while ($row_products_images = mysqli_fetch_array($run_products_images)){
