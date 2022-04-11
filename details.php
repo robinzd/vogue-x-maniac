@@ -84,7 +84,7 @@ include("./conn.php");
                                 $strikeout_price = $row_products['strikeout_price'];
                                 $product_description = $row_products['product_description'];
                                 $product_feauters = $row_products['product_feauters'];
-                                echo $product_feauters;
+                                // echo $product_feauters;
 
 
                             echo"  <div class='col-md-6'>
@@ -107,7 +107,7 @@ include("./conn.php");
 
                                 $size_of_array=sizeof($array_result);
 
-                                print_r($size_of_array);
+                                // print_r($size_of_array);
 
                                
 
