@@ -102,9 +102,9 @@ include("./conn.php");
                                     <?php
 
                                    
-                                    echo $_SERVER['SCRIPT_NAME'];
+                                     $_SERVER['SCRIPT_NAME'];
                                   
-                                    echo $_SERVER['QUERY_STRING'];
+                                    
 
                                     $get_string = $_SERVER['QUERY_STRING'];
 
@@ -114,7 +114,7 @@ include("./conn.php");
                                     print_r($get_array);
                                 
                                     
-                                    $product_id = $get_array['product_id'];
+                                    $product_id = $get_array['id'];
 
                                     $result = "select product_size from table where ID=$product_id";
 
