@@ -124,6 +124,8 @@ include("./conn.php");
 
                                     $details = mysqli_fetch_field($run_details);
 
+                                    echo $details;
+
 
                         
                                     $check_array_result = explode(',',$details);
