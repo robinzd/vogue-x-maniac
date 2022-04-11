@@ -95,7 +95,10 @@ include("./conn.php");
                             <div class='images p-3'>
                                 <div class='text-center p-4'> <img id='main-image' src='./admin_area/product_images/$details_image' width='250'/> </div>";
 
-                                $get_products_images = "select * from products_images where related_product=$product_images_id LIMIT 1,3";
+
+                            ?>
+
+                                $get_products_images = "select * from products_images where related_product=$product_images_id";
 
                                 echo  $get_products_images;
 
