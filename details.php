@@ -68,49 +68,48 @@ include("./conn.php");
                         $get_products_images = "select * from products_images where related_product=$product_images_id";
 
                         echo " $get_products_images";
-                        
+
                         $run_products_images = mysqli_query($conn, $get_products_images);
 
                         $row_products_images = mysqli_fetch_array($run_products_images);
 
-                            print_r($row_products_images);
+                        print_r($row_products_images);
+
+                        echo "<br>";
+
+
+
+
+
+                        $details_image = $row_products_images['details_image'];
+
+                        echo   $details_image;
+
+                        $related_product = $row_products_images['related_product'];
+
+
+
+                        echo " <div class='col-md-6'>
+                            <div class='images p-3'>
+                                <div class='text-center p-4'> <img id='main-image' src='./admin_area/product_images/$details_image' width='250'/> </div>";
+
+
+
+                        while ($row_products_images = mysqli_fetch_array($run_products_images)) {
+
+                            // print_r($row_products_images);
 
                             echo "<br>";
 
-                            
-                           
 
-
-                            $details_image = $row_products_images['details_image'];
-
-                            echo   $details_image;
-
-                            $related_product = $row_products_images['related_product'];
-                          
-
-
-                            echo " <div class='col-md-6'>
-                            <div class='images p-3'>
-                                <div class='text-center p-4'> <img id='main-image' src='./admin_area/product_images/$details_image' width='250'/> </div>";
-                                
-                               
-
-                                while($row_products_images = mysqli_fetch_array($run_products_images)){
-
-                                    print_r($row_products_images);
-
-                                    echo "<br>";
-                                
-                                
-                                echo "<div class='thumbnail text-center' id='thumbnailimage'>
+                            echo "<div class='thumbnail text-center' id='thumbnailimage'>
                                  <img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image' width='70'> 
                                 </div>
                             </div>
 
                          ";
-
                         }
-                        
+
 
                         ?>
 
