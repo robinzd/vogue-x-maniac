@@ -68,17 +68,11 @@ include("./conn.php");
 
                         $get_products_images = "select * from products_images where related_product=$product_images_id LIMIT 0,1";
 
-                        echo  $get_products_images;
-
-                        echo "<br>";
-
                         $run_products_images = mysqli_query($conn, $get_products_images);
 
                         $row_products_images = mysqli_fetch_array($run_products_images);
 
-                        print_r($row_products_images);
-
-                        echo "<br>";
+                      
 
 
 
@@ -86,7 +80,7 @@ include("./conn.php");
 
                         $details_image = $row_products_images['details_image'];
 
-                        echo   $details_image;
+                     
 
                         $related_product = $row_products_images['related_product'];
 
@@ -112,9 +106,7 @@ include("./conn.php");
 
                         $get_products_images = "select * from products_images where related_product=$product_images_id";
 
-                        echo  $get_products_images;
-
-                        echo "<br>";
+                       
 
                         $run_products_images = mysqli_query($conn, $get_products_images);
 
@@ -122,11 +114,11 @@ include("./conn.php");
 
                         while ($row_products_images = mysqli_fetch_array($run_products_images)) {
 
-                            print_r($row_products_images);
+                          
 
                             $details_image = $row_products_images['details_image'];
 
-                            echo  $details_image;
+                           
 
                             $related_product = $row_products_images['related_product'];
 
