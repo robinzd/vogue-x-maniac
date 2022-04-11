@@ -128,6 +128,8 @@ include("./conn.php");
 
                                     print_r($details);
 
+                                    echo "<br>";
+
 
                                     $product_id=$details['product_size'];
 
@@ -135,6 +137,8 @@ include("./conn.php");
 
                                   
                                     $check_array=$product_id;
+
+                                    echo  $check_array;
 
 
                                   $check_array_result = explode(',',$details);
