@@ -89,8 +89,11 @@ include("./conn.php");
 
                                 echo " 
                            
-                                <div class='text-center p-4'> <img id='main-image' src='./admin_area/product_images/$details_image' width='250'/> 
-                           ";
+                                <div class='text-center p-4'> 
+                                <img id='main-image' src='./admin_area/product_images/$details_image' width='250'> 
+                                </div> 
+
+                                ";
 
 
                                 ?>
@@ -141,7 +144,7 @@ include("./conn.php");
 
                                 </div>
 
-                            </div>
+                        </div>
 
                             <div class="col-md-6">
 
