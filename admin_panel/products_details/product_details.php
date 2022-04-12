@@ -5,12 +5,9 @@ include('dbconnection.php');
 if(isset($_GET['delid']))
 {
 $rid=intval($_GET['delid']);
-$pic=$_GET['image_source'];
-$ppicpath="brands_images"."/".$pic;
-$sql=mysqli_query($conn,"delete from owlslider_1 where ID=$rid");
-unlink($ppicpath);
+$sql=mysqli_query($conn,"delete from products_details where ID=$rid");
 echo "<script>alert('Brand deleted');</script>"; 
-echo "<script>window.location.href = 'brand.php'</script>";     
+echo "<script>window.location.href = 'product_details.php'</script>";     
 } 
 
 ?>
@@ -22,7 +19,7 @@ echo "<script>window.location.href = 'brand.php'</script>";
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Brand Management</title>
+<title>Product Details Management</title>
 <link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -187,9 +184,7 @@ table.table td i {
             margin-top: 2px;
         }
 
-        .text-center{
-            color:red;
-        }
+        
 
         .fa-home {
             color: black;
@@ -260,7 +255,7 @@ table.table td i {
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-5">
-                        <h2>Brand Management</h2>
+                        <h2>Product Details Management</h2>
                     </div>
 
                     <div class="col-sm-7" align="right">
@@ -273,15 +268,19 @@ table.table td i {
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Brand Color</th>
-                        <th>Brand image</th>
-                        <th>Brand Name</th>
+                        <th>Brand Title</th>
+                        <th>Product Title</th>
+                        <th>Product Price</th>
+                        <th>Strikeout Price</th>
+                        <th>Product Description</th>
+                        <th>Product Size</th>
+                        <th>Product Features</th>
                         <th>Actions</th>                       
                     </tr>
                 </thead>
                 <tbody>
                      <?php
-$ret=mysqli_query($conn,"select * from owlslider_1");
+$ret=mysqli_query($conn,"select * from products_details");
 $cnt=1;
 $row=mysqli_num_rows($ret);
 if($row>0){
@@ -290,16 +289,18 @@ while ($row=mysqli_fetch_array($ret)) {
 ?>
 <!--Fetch the Records -->
                     <tr>
-                        <td><?php echo $cnt;?></td>
-                       
-                   
-                        <td><?php  echo $row['brand_color'];?></td> 
-                        <td><img src="brands_images/<?php  echo $row['image_source'];?>" width="80" height="80"></td>                       
-                        <td><?php  echo $row['brand_name'];?></td>    
+                        <td><?php  echo $cnt;?></td>
+                        <td><?php  echo $row['brand_title'];?></td> 
+                        <td><?php  echo $row['product_title'];?></td>
+                        <td><?php  echo $row['product_price'];?></td>   
+                        <td><?php  echo $row['strikeout_price'];?></td>   
+                        <td><?php  echo $row['product_description'];?></td>   
+                        <td><?php  echo $row['product_size'];?></td>   
+                        <td><?php  echo $row['product_features'];?></td>       
                         <td>
   <a href="read.php?viewid=<?php echo htmlentities ($row['ID']);?>" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                             <a href="edit.php?editid=<?php echo htmlentities ($row['ID']);?>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a href="brand.php?delid=<?php echo ($row['ID']);?>&&image_source=<?php echo $row['image_source'];?>" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to Delete ?');"><i class="material-icons">&#xE872;</i></a>
+                            <a href="brand.php?delid=<?php echo ($row['ID']);?>" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to Delete ?');"><i class="material-icons">&#xE872;</i></a>
                         </td>
                     </tr>
                     <?php 
@@ -316,8 +317,7 @@ $cnt=$cnt+1;
         </div>
     </div>
 
-    <div class="text-center">Note:Remove Background of your picture for appeling result</div><br>
-    <div class="text-center">Click this to remove Picture background <a href="https://www.remove.bg/"><i class="fa fa-external-link"></i></a></div><br>
+  
 
 </div>
 
