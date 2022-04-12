@@ -4,18 +4,18 @@ include('dbconnection.php');
 if (isset($_POST['submit'])) {
 	$eid = $_GET['editid'];
 	//Getting Post Values
-	$brandtitle=$_POST['brandtitle'];
-    $producttitle=$_POST['producttitle'];
-	$productprice=$_POST['price'];
-	$strikeoutprice=$_POST['strikeout'];
-	$productdescription=$_POST['description'];
-	$productsize=$_POST['size'];
-	$productfeatures=$_POST['features'];
+	$brandtitle = $_POST['brandtitle'];
+	$producttitle = $_POST['producttitle'];
+	$productprice = $_POST['price'];
+	$strikeoutprice = $_POST['strikeout'];
+	$productdescription = $_POST['description'];
+	$productsize = $_POST['size'];
+	$productfeatures = $_POST['features'];
 
 
 
 	//Query for data updation
-	$query = mysqli_query($conn, "update  products_details set brand_title='$brandtitle',product_title='$producttitle',product_price='$productprice',strikeout_price='$strikeoutprice',product_description='$productdescription',product_size='$productsize',product_features='$productfeatures' where ID='$eid'");
+	$query = mysqli_query($conn, "update products_details set brand_title='$brandtitle',product_title='$producttitle',product_price='$productprice',strikeout_price='$strikeoutprice',product_description='$productdescription',product_size='$productsize',product_features='$productfeatures' where ID='$eid'");
 
 	if ($query) {
 		echo "<script>alert('You have successfully update the product details');</script>";
@@ -165,7 +165,7 @@ if (isset($_POST['submit'])) {
 			while ($row = mysqli_fetch_array($ret)) {
 			?>
 				<h2>Edit Product Details</h2>
-                <div class="form-group">
+				<div class="form-group">
 					<input type="text" class="form-control" name="brandtitle" placeholder="Enter Your Brand Title" required="true">
 				</div>
 
