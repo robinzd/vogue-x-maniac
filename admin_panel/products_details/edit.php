@@ -5,6 +5,7 @@ if (isset($_POST['submit'])) {
 	$eid = $_GET['editid'];
 	//Getting Post Values
 	$brandtitle = $_POST['brandtitle'];
+	echo $brandtitle;
 	$producttitle = $_POST['producttitle'];
 	$productprice = $_POST['price'];
 	$strikeoutprice = $_POST['strikeout'];
