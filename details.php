@@ -71,7 +71,7 @@ include("./conn.php");
 
                                 $run_products_images = mysqli_query($conn, $get_products_images);
 
-                                $row_products_images = mysqli_fetch_array($run_products_images);
+                                while ($row_products_images = mysqli_fetch_array($run_products_images)) {
 
 
 
@@ -79,23 +79,22 @@ include("./conn.php");
 
 
 
-                                $details_image = $row_products_images['details_image'];
+                                    $details_image = $row_products_images['details_image'];
 
 
 
-                                $related_product = $row_products_images['related_product'];
+                                    $related_product = $row_products_images['related_product'];
 
 
 
-                                echo " 
+                                    echo " 
                            
                                 <div class='text-center p-4'> 
                                 <img id='main-image' src='./admin_area/product_images/$details_image' width='250'> 
                                 </div> 
 
                                 ";
-
-
+                                }
                                 ?>
 
                                 <div class="thumbnail text-center" id="thumbnailimage">
