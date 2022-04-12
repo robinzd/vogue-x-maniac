@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
 
 
 	//Query for data updation
-	$query = mysqli_query($conn, "update  owlslider_1 set brand_title='$brandtitle',product_title='$producttitle',product_price='$productprice',strikeout_price='$strikeoutprice',product_description='$productdescription',product_size='$productsize',product_features='$productfeatures' where ID='$eid'");
+	$query = mysqli_query($conn, "update  products_details set brand_title='$brandtitle',product_title='$producttitle',product_price='$productprice',strikeout_price='$strikeoutprice',product_description='$productdescription',product_size='$productsize',product_features='$productfeatures' where ID='$eid'");
 
 	if ($query) {
 		echo "<script>alert('You have successfully update the product details');</script>";
@@ -216,7 +216,7 @@ if (isset($_POST['submit'])) {
 				<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
 			</div>
 
-			<div class="text-center">Back To Home <a href="brand.php"><i class="fa fa-home"></i></a></div>
+			<div class="text-center">Back To Home <a href="./product_details.php"><i class="fa fa-home"></i></a></div>
 
 		</form>
 
