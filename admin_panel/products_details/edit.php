@@ -161,7 +161,7 @@ if (isset($_POST['submit'])) {
 		<form method="POST">
 			<?php
 			$eid = $_GET['editid'];
-			$ret = mysqli_query($conn, "select * from owlslider_1 where ID='$eid'");
+			$ret = mysqli_query($conn, "select * from products_details where ID='$eid'");
 			while ($row = mysqli_fetch_array($ret)) {
 			?>
 				<h2>Edit Product Details</h2>
