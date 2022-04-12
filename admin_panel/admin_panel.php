@@ -152,6 +152,19 @@
                           </div>
                       </a>
                   </div>
+                  <div class="col-md-6 col-lg-4 column">
+                      <a href="./products_details/product_details.php">
+                          <div class="card gr-8">
+                              <div class="txt">
+                                  <h1>Product Details</br>
+                                      Management</h1>
+                              </div>
+                              <div class="ico-card">
+                                  <i class="fa fa-gears"></i>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
 
 
               </div>
@@ -252,6 +265,19 @@
                               </div>
                               <div class="ico-card">
                                   <i class="fa fa-wrench"></i>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-6 col-lg-4 column">
+                      <a href="./products_details/product_details.php">
+                          <div class="card gr-8">
+                              <div class="txt">
+                                  <h1>Product Details</br>
+                                      Management</h1>
+                              </div>
+                              <div class="ico-card">
+                                  <i class="fa fa-gears"></i>
                               </div>
                           </div>
                       </a>
