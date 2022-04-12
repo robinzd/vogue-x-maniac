@@ -316,7 +316,7 @@ include('dbconnection.php');
 
             </div>
         </div>
-        <div class="text-center">Back To Home <a href="brand.php"><i class="fa fa-home"></i></a></div>
+        <div class="text-center">Back To Home <a href="../products_details/product_details.php"><i class="fa fa-home"></i></a></div>
     </div>
     <footer class="bg-light text-center text-lg-start">
         <!-- Copyright -->
