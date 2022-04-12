@@ -4,16 +4,22 @@ include('dbconnection.php');
 if (isset($_POST['submit'])) {
 	$eid = $_GET['editid'];
 	//Getting Post Values
-	$brandcolor = $_POST['brandcolor'];
-	$brandname = $_POST['brandname'];
+	$brandtitle=$_POST['brandtitle'];
+    $producttitle=$_POST['producttitle'];
+	$productprice=$_POST['price'];
+	$strikeoutprice=$_POST['strikeout'];
+	$productdescription=$_POST['description'];
+	$productsize=$_POST['size'];
+	$productfeatures=$_POST['features'];
+
 
 
 	//Query for data updation
-	$query = mysqli_query($conn, "update  owlslider_1 set brand_color='$brandcolor',brand_name='$brandname' where ID='$eid'");
+	$query = mysqli_query($conn, "update  owlslider_1 set brand_title='$brandtitle',product_title='$producttitle',product_price='$productprice',strikeout_price='$strikeoutprice',product_description='$productdescription',product_size='$productsize',product_features='$productfeatures' where ID='$eid'");
 
 	if ($query) {
-		echo "<script>alert('You have successfully update the brand');</script>";
-		echo "<script type='text/javascript'> document.location ='brand.php'; </script>";
+		echo "<script>alert('You have successfully update the product details');</script>";
+		echo "<script type='text/javascript'> document.location ='product_details.php'; </script>";
 	} else {
 		echo "<script>alert('Something Went Wrong. Please try again');</script>";
 	}
@@ -26,8 +32,8 @@ if (isset($_POST['submit'])) {
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-	<title>Edit brand</title>
-	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
+	<title>Edit Product Details</title>
+	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -144,8 +150,8 @@ if (isset($_POST['submit'])) {
 			text-decoration: underline;
 		}
 
-		.fa-home{
-			color:black;
+		.fa-home {
+			color: black;
 		}
 	</style>
 </head>
@@ -158,24 +164,49 @@ if (isset($_POST['submit'])) {
 			$ret = mysqli_query($conn, "select * from owlslider_1 where ID='$eid'");
 			while ($row = mysqli_fetch_array($ret)) {
 			?>
-				<h2>Edit Brand </h2>
-				
+				<h2>Edit Product Details</h2>
+                <div class="form-group">
+					<input type="text" class="form-control" name="brandtitle" placeholder="Enter Your Brand Title" required="true">
+				</div>
 
 
 				<div class="form-group">
-				<label for="favcolor">Select your brand color:</label>
-                <input type="color"  class="form-control" name="brandcolor"  value="<?php echo $row['brand_color']; ?>" required="true"> 
-				</div>
-				
-
-				<div class="form-group">
-					<img src="brands_images/<?php echo $row['image_source']; ?>" width="120" height="120">
-					<a href="change-image.php?userid=<?php echo $row['ID']; ?>">Change Image</a>
+					<input type="text" class="form-control" name="producttitle" placeholder="Enter Your Product Title" required="true">
 				</div>
 
+
+
 				<div class="form-group">
-					<input type="text" class="form-control" name="brandname" value="<?php echo $row['brand_name']; ?>" required="true">
+					<input type="text" class="form-control" name="price" placeholder="Enter Your product price" required="true">
 				</div>
+
+
+				<div class="form-group">
+					<input type="text" class="form-control" name="strikeout" placeholder="Enter Your Stikeout Price" required="true">
+				</div>
+
+
+				<div class="form-group">
+					<input type="text" class="form-control" name="description" placeholder="Enter Your Description" required="true">
+				</div>
+
+
+
+				<div class="form-group">
+					<input type="text" class="form-control" name="size" placeholder="Enter Your Product Size">
+				</div>
+
+
+
+				<div class="form-group">
+					<input type="text" class="form-control" name="features" placeholder="Enter Your Product Features" required="true">
+				</div>
+
+
+
+
+
+
 
 
 
@@ -183,13 +214,13 @@ if (isset($_POST['submit'])) {
 			} ?>
 			<div class="form-group">
 				<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
-            </div>
+			</div>
 
 			<div class="text-center">Back To Home <a href="brand.php"><i class="fa fa-home"></i></a></div>
 
 		</form>
 
-	
+
 
 
 

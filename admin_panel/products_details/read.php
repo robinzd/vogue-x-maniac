@@ -7,7 +7,7 @@ include('dbconnection.php');
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Read brand</title>
+    <title>Read Product Details</title>
     <link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -249,11 +249,11 @@ include('dbconnection.php');
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-5">
-                            <h2>Brand Details</h2>
+                            <h2>Read Product Details</h2>
                         </div>
                         <?php
                         $vid = $_GET['viewid'];
-                        $ret = mysqli_query($conn, "select * from owlslider_1 where ID =$vid");
+                        $ret = mysqli_query($conn, "select * from products_details where ID =$vid");
                         $cnt = 1;
                         while ($row = mysqli_fetch_array($ret)) {
 
@@ -271,19 +271,41 @@ include('dbconnection.php');
 
 
                         <tr>
-                            <th>Brand Color</th>
-                            <td><?php echo $row['brand_color']; ?></td>
+                            <th>Brand Title</th>
+                            <td><?php echo $row['brand_title']; ?></td>
+                        </tr>
+
+
+                        <tr>
+                            <th>Product Title</th>
+                            <td><?php echo $row['product_title']; ?></td>
                         </tr>
 
                         <tr>
-                            <th width="200">slider Image</th>
-                            <td><img src="brands_images/<?php echo $row['image_source']; ?>" width="80" height="80"></td>
+                            <th>Product Price</th>
+                            <td><?php echo $row['product_price']; ?></td>
                         </tr>
 
                         <tr>
-                            <th>Brand Name</th>
-                            <td><?php echo $row['brand_name']; ?></td>
+                            <th>Strikeout Price</th>
+                            <td><?php echo $row['strikeout_price']; ?></td>
                         </tr>
+
+                        <tr>
+                            <th>Product Description</th>
+                            <td><?php echo $row['product_description']; ?></td>
+                        </tr>
+
+                        <tr>
+                            <th>Product Size</th>
+                            <td><?php echo $row['product_size']; ?></td>
+                        </tr>
+
+                        <tr>
+                            <th>Product Features</th>
+                            <td><?php echo $row['product_features']; ?></td>
+                        </tr>
+
 
                     <?php
                             $cnt = $cnt + 1;

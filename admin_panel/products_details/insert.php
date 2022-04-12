@@ -4,41 +4,31 @@ include('dbconnection.php');
 if(isset($_POST['submit']))
   {
   	//getting the post values
-    $brandcolor=$_POST['brandcolor'];
-    $imagesource=$_FILES["image_source"]["name"];
-	$brandname=$_POST['brandname'];
-// get the image extension
-$extension = substr($imagesource,strlen($imagesource)-4,strlen($imagesource));
-// allowed extensions
-$allowed_extensions = array(".jpg","jpeg",".png",".gif");
-// Validation for allowed extensions .in_array() function searches an array for a specific value.
-if(!in_array($extension,$allowed_extensions))
-{
-echo "<script>alert('Invalid format. Only jpg / jpeg/ png /gif format allowed');</script>";
-}
-else
-{
-//rename the image file
-$imgnewfile=md5($imgfile).time().$extension;
-// Code for move image into directory
-move_uploaded_file($_FILES["image_source"]["tmp_name"],"brands_images/".$imgnewfile);
+    $brandtitle=$_POST['brandtitle'];
+    $producttitle=$_POST['producttitle'];
+	$productprice=$_POST['price'];
+	$strikeoutprice=$_POST['strikeout'];
+	$productdescription=$_POST['description'];
+	$productsize=$_POST['size'];
+	$productfeatures=$_POST['features'];
+
 // Query for data insertion
-$query=mysqli_query($conn, "insert into owlslider_1(brand_color,image_source,brand_name) value ('$brandcolor','$imgnewfile','$brandname' )");
+$query=mysqli_query($conn, "insert into products_details(brand_title,product_title,product_price,strikeout_price,product_description,product_size,product_features) value ('$brandtitle',' $producttitle','$productprice','$strikeoutprice','$productdescription','$productsize','$productfeatures')");
 if ($query) {
-echo "<script>alert('You have successfully inserted the brand');</script>";
-echo "<script type='text/javascript'> document.location ='brand.php'; </script>";
+echo "<script>alert('You have successfully inserted the product details');</script>";
+echo "<script type='text/javascript'> document.location ='product_details.php'; </script>";
 } else{
 echo "<script>alert('Something Went Wrong. Please try again');</script>";
 }}
-}
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-<title>Add Brand</title>
+<title>Add Product Details</title>
 <link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -145,27 +135,50 @@ body {
 <body>
 <div class="signup-form">
     <form  method="POST" enctype="multipart/form-data" >
-		<h2>Insert Brand</h2>
+		<h2>Insert Product Details</h2>
 	
-        <div class="form-group">
-		
-        <div class="form-group">
-		<label>Pick your favcolor:</label>	
-		<input type="color" class="form-control"  name="brandcolor"  required="true"> 
+       <div class="form-group">
+        	<input type="text" class="form-control" name="brandtitle" placeholder="Enter Your Brand Title"  required="true">
         </div>
-      
-             <div class="form-group">
-        	<input type="file" class="form-control" name="image_source"  required="true">
-        	<span style="color:red; font-size:12px;">Only jpg / jpeg/ png /gif format allowed.</span>
-        </div>
+
 		
 		<div class="form-group">
-        	<input type="text" class="form-control" name="brandname" placeholder="Enter Your brand name"  required="true">
+        	<input type="text" class="form-control" name="producttitle" placeholder="Enter Your Product Title"  required="true">
         </div>
+      
+
+		
+		<div class="form-group">
+        	<input type="text" class="form-control" name="price" placeholder="Enter Your product price"  required="true">
+        </div>
+      
+		
+		<div class="form-group">
+        	<input type="text" class="form-control" name="strikeout" placeholder="Enter Your Stikeout Price"  required="true">
+        </div>
+      
+		
+		<div class="form-group">
+        	<input type="text" class="form-control" name="description" placeholder="Enter Your Description"  required="true">
+        </div>
+      
+
+		
+		<div class="form-group">
+        	<input type="text" class="form-control" name="size" placeholder="Enter Your Product Size">
+        </div>
+      
+
+		
+		<div class="form-group">
+        	<input type="text" class="form-control" name="features" placeholder="Enter Your Product Features"  required="true">
+        </div>
+      
       
 		<div class="form-group">
             <button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Submit</button>
         </div>
+		
 		<div class="text-center">Back To Home <a href="brand.php"><i class="fa fa-home"></i></a></div>
     </form>
 	
