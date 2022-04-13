@@ -116,13 +116,13 @@ include("./conn.php");
 
                                     while ($row_products_images = mysqli_fetch_array($run_products_images)) {
 
-                                           
+
 
                                         $details_image = $row_products_images['details_image'];
 
-                                      
 
-                                      
+
+
                                         $related_product = $row_products_images['related_product'];
 
 
@@ -156,22 +156,20 @@ include("./conn.php");
 
                                 $product_id = $get_array['id'];
 
-                                echo $product_id;
-
-                                echo "<br>";
 
 
-                            $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description,product_features from products_details where ID= $product_id";
+
+                                $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description,product_features from products_details where ID= $product_id";
 
 
-                               
+
 
                                 $run_products = mysqli_query($conn, $get_products);
 
-                                while ($row_products = mysqli_fetch_array($run_products)){
+                                while ($row_products = mysqli_fetch_array($run_products)) {
 
-                                       
-                               
+
+
 
 
                                     $brand_title = $row_products['brand_title'];
