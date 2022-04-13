@@ -52,19 +52,10 @@ if (isset($_POST["action"])) {
             $get_products_image ="select details_image from products_images where primary_image=1 and related_product=$product_id";
 
             $run_products_image = mysqli_query($conn,$get_products_image);
-
-
+            $details_image=null;
             while ($row_products_image = mysqli_fetch_array( $run_products_image )){
-
-            
-
-
                 $details_image=$row_products_image['details_image'];
-
-
-         
-
-            }    
+            } 
             $output .= '
     <div class="col-sm-6 col-md-4">
                             <div class="card bg-white">
