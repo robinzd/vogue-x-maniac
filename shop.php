@@ -157,11 +157,12 @@ include("./conn.php");
 
                     $run_products_image = mysqli_query($conn,$get_products_image);
 
+                    $details_image=null; 
 
                     while ($row_products_image = mysqli_fetch_array( $run_products_image )){
 
                     
-
+                      
 
                         $details_image=$row_products_image['details_image'];
 
