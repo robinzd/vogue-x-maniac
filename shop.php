@@ -166,6 +166,9 @@ include("./conn.php");
                         $details_image=$row_products_image['details_image'];
 
 
+                        echo  $details_image;
+
+
                         echo "<div class='col-sm-6 col-md-4'>
                             <div class='card bg-white'>
         <img class='card-img-top' src='./admin_panel/products_images/images/$details_image' alt='' style='width:100%'>
