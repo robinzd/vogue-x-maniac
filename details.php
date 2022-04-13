@@ -221,7 +221,7 @@ include("./conn.php");
                                             $x++;
                                         }
 
-                                        echo "<br>";
+                                      
                                     }
                                 }
 
