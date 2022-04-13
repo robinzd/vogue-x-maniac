@@ -187,7 +187,7 @@ if (isset($_POST['submit'])) {
 				</div>
 
 					<div class="form-group">
-						<input type="text" class="form-control" name="size" value="<?php echo $row['product_size']; ?>" required="true">
+						<input type="text" class="form-control" name="size" value="<?php echo $row['product_size']; ?>">
 					</div>
 
 					<div class="form-group">
