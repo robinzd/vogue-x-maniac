@@ -160,6 +160,8 @@ include("./conn.php");
 
                     while ($row_products_image = mysqli_fetch_array( $run_products_image )){
 
+                        print_r($row_products_image);
+
 
                         $details_image=$row_products_image['details_image'];
 
