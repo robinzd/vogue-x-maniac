@@ -116,13 +116,13 @@ include("./conn.php");
 
                                     while ($row_products_images = mysqli_fetch_array($run_products_images)) {
 
-
+                                           
 
                                         $details_image = $row_products_images['details_image'];
 
+                                      
 
-
-
+                                      
                                         $related_product = $row_products_images['related_product'];
 
 
@@ -161,18 +161,18 @@ include("./conn.php");
                                 echo "<br>";
 
 
-                                $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description,product_feauters from products_details where ID= $product_id";
+                            $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description,product_feauters from products_details where ID= $product_id";
 
 
                                 echo  $get_products;
 
                                 $run_products = mysqli_query($conn, $get_products);
 
-                                while ($row_products = mysqli_fetch_array($run_products)) {
+                                while ($row_products = mysqli_fetch_array($run_products)){
 
-
+                                       
                                     print_r($row_products);
-
+                                
 
 
                                     $brand_title = $row_products['brand_title'];
@@ -186,11 +186,8 @@ include("./conn.php");
                                     echo "
                            
                                 <div class='d-flex justify-content-between align-items-center'>
-                                    <div class='d-flex align-items-center'><a href='#'><i class='fa fa-long-arrow-left'></i></a> <a href='#'><span class='ml-1'>Back</span></a> 
-                                    </div> 
-                                    <a href='index.php'><i class='fa fa-home'></i></a>
+                                    <div class='d-flex align-items-center'><a href='#'><i class='fa fa-long-arrow-left'></i></a> <a href='#'><span class='ml-1'>Back</span></a> </div> <a href='index.php'><i class='fa fa-home'></i></a>
                                 </div>
-                                
                                 <div class='mt-4 mb-3'> 
                                  <span class='text-uppercase text-muted brand'>$brand_title</span>
                                     <h5 class='text-uppercase'>$product_title</h5>
@@ -225,11 +222,11 @@ include("./conn.php");
                                         <li>$array_result[$x]</li>
                                        </ul>";
                                             $x++;
-                                        }
+                                        };
 
                                         echo "<br>";
-                                    }
-                                }
+                                    };
+                                };
 
 
 
