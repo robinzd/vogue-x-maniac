@@ -162,6 +162,8 @@ include("./conn.php");
 
                                 echo $product_id;
 
+                                echo "<br>";
+
 
                             $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description,product_feauters from products_details where ID= $product_id";
 
