@@ -116,17 +116,13 @@ include("./conn.php");
 
                                     while ($row_products_images = mysqli_fetch_array($run_products_images)) {
 
-                                           print_r($row_products_images);
 
-                                           echo"<br>";
 
                                         $details_image = $row_products_images['details_image'];
 
-                                        echo  $details_image;
 
-                                        echo "<br>";
 
-                                      
+
                                         $related_product = $row_products_images['related_product'];
 
 
@@ -152,85 +148,88 @@ include("./conn.php");
                             <div class="product p-4">
 
                                 <?php
-                            //     $_SERVER['SCRIPT_NAME'];
+                                $_SERVER['SCRIPT_NAME'];
 
-                            //     $get_string = $_SERVER['QUERY_STRING'];
+                                $get_string = $_SERVER['QUERY_STRING'];
 
-                            //     parse_str($get_string, $get_array);
+                                parse_str($get_string, $get_array);
 
-                            //     $product_id = $get_array['id'];
+                                $product_id = $get_array['id'];
 
-                            //     echo $product_id;
+                                echo $product_id;
 
-                            //     echo "<br>";
-
-
-                            // $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description,product_feauters from products_details where ID= $product_id";
+                                echo "<br>";
 
 
-                            //     echo  $get_products;
+                                $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description,product_feauters from products_details where ID= $product_id";
 
-                            //     $run_products = mysqli_query($conn, $get_products);
 
-                            //     while ($row_products = mysqli_fetch_array($run_products)){
+                                echo  $get_products;
 
-                                       
-                            //         print_r($row_products);
+                                $run_products = mysqli_query($conn, $get_products);
+
+                                while ($row_products = mysqli_fetch_array($run_products)) {
+
+
+                                    print_r($row_products);
+
+
+
+                                    $brand_title = $row_products['brand_title'];
+                                    $product_title = $row_products['product_title'];
+                                    $product_price = $row_products['product_price'];
+                                    $strikeout_price = $row_products['strikeout_price'];
+                                    $product_description = $row_products['product_description'];
+                                    $product_feauters = $row_products['product_feauters'];
+
+
+                                    echo "
+                           
+                                <div class='d-flex justify-content-between align-items-center'>
+                                    <div class='d-flex align-items-center'><a href='#'><i class='fa fa-long-arrow-left'></i></a> <a href='#'><span class='ml-1'>Back</span></a> 
+                                    </div> 
+                                    <a href='index.php'><i class='fa fa-home'></i></a>
+                                </div>
                                 
-
-
-                            //         $brand_title = $row_products['brand_title'];
-                            //         $product_title = $row_products['product_title'];
-                            //         $product_price = $row_products['product_price'];
-                            //         $strikeout_price = $row_products['strikeout_price'];
-                            //         $product_description = $row_products['product_description'];
-                            //         $product_feauters = $row_products['product_feauters'];
-
-
-                            //         echo "
-                           
-                            //     <div class='d-flex justify-content-between align-items-center'>
-                            //         <div class='d-flex align-items-center'><a href='#'><i class='fa fa-long-arrow-left'></i></a> <a href='#'><span class='ml-1'>Back</span></a> </div> <a href='index.php'><i class='fa fa-home'></i></a>
-                            //     </div>
-                            //     <div class='mt-4 mb-3'> 
-                            //      <span class='text-uppercase text-muted brand'>$brand_title</span>
-                            //         <h5 class='text-uppercase'>$product_title</h5>
-                            //         <div class='price d-flex flex-row align-items-center'> <span class='act-price'>₹$product_price</span>
-                            //             <div class='ml-2'> <small class='dis-price'>₹$strikeout_price</small></div>
-                            //         </div>
-                            //     </div>
+                                <div class='mt-4 mb-3'> 
+                                 <span class='text-uppercase text-muted brand'>$brand_title</span>
+                                    <h5 class='text-uppercase'>$product_title</h5>
+                                    <div class='price d-flex flex-row align-items-center'> <span class='act-price'>₹$product_price</span>
+                                        <div class='ml-2'> <small class='dis-price'>₹$strikeout_price</small></div>
+                                    </div>
+                                </div>
                            
                            
                            
-                            //     <p class='about'>$product_description</p>";
+                                <p class='about'>$product_description</p>";
 
 
-                            //         $array = $product_feauters;
+                                    $array = $product_feauters;
 
-                            //         $array_result = explode('|', $array);
+                                    $array_result = explode('|', $array);
 
-                            //         $size_of_array = sizeof($array_result);
+                                    $size_of_array = sizeof($array_result);
 
 
 
-                            //         if (!($size_of_array == 1)) {
+                                    if (!($size_of_array == 1)) {
 
-                            //             echo "<h6 class='text-capitalize'>
-                            //         Features
-                            //         </h6>";
+                                        echo "<h6 class='text-capitalize'>
+                                    Features
+                                    </h6>";
 
-                            //             $x = 0;
+                                        $x = 0;
 
-                            //             while ($x < $size_of_array) {
-                            //                 echo "<ul>
-                            //             <li>$array_result[$x]</li>
-                            //            </ul>";
-                            //                 $x++;
-                            //             }
+                                        while ($x < $size_of_array) {
+                                            echo "<ul>
+                                        <li>$array_result[$x]</li>
+                                       </ul>";
+                                            $x++;
+                                        }
 
-                            //             echo "<br>";
-                            //         }
-                            //     }
+                                        echo "<br>";
+                                    }
+                                }
 
 
 
