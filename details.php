@@ -160,9 +160,10 @@ include("./conn.php");
 
                                 $product_id = $get_array['id'];
 
+                                echo $product_id;
 
 
-                                $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description,product_feauters from products_details where ID= $product_id";
+                            $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description,product_feauters from products_details where ID= $product_id";
 
                                 $run_products = mysqli_query($conn, $get_products);
 
