@@ -168,6 +168,8 @@ include("./conn.php");
 
                         echo  $details_image;
 
+                    }
+
 
                         echo "<div class='col-sm-6 col-md-4'>
                             <div class='card bg-white'>
@@ -191,7 +193,7 @@ include("./conn.php");
 
 ";
 
-                    }
+                 
 
                     }
 

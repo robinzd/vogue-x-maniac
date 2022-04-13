@@ -18,6 +18,8 @@ if (isset($_POST["action"])) {
     $query = "
   SELECT * FROM products_details WHERE product_status = '1'
  ";
+  
+
     if (isset($_POST["minimum_price"], $_POST["maximum_price"]) && !empty($_POST["minimum_price"]) && !empty($_POST["maximum_price"])) {
         $query .= "
    AND product_price BETWEEN '" . $_POST["minimum_price"] . "' AND '" . $_POST["maximum_price"] . "'
@@ -44,10 +46,29 @@ if (isset($_POST["action"])) {
     $output = '';
     if ($total_row > 0) {
         foreach ($result as $row) {
+            
+            $product_id=$row['ID'];
+            
+            $get_products_image ="select details_image from products_images where primary_image=1 and related_product=$product_id";
+
+            $run_products_image = mysqli_query($conn,$get_products_image);
+
+
+            while ($row_products_image = mysqli_fetch_array( $run_products_image )){
+
+                print_r($row_products_image);
+
+
+                $details_image=$row_products_image['details_image'];
+
+
+                echo  $details_image;
+
+            }    
             $output .= '
     <div class="col-sm-6 col-md-4">
                             <div class="card bg-white">
-        <img class="card-img-top" src="./admin_panel/products_images/images/' . $row['details_image'] . '" style="width:100%">
+        <img class="card-img-top" src="./admin_panel/products_images/images/' . $details_image . '" style="width:100%">
         <div class="card-body">
             <h5 class="card-title text-center">' . $row['product_title'] . '</h5>
         <p class="card-text  text-center"><s>₹' . $row['product_strikeout_price'] . '</s>₹' . $row['product_price'] . '</p>
