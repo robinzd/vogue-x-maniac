@@ -48,8 +48,6 @@ include("./conn.php");
 
     <!--back to top ends -->
 
-
-    <!-- product details -->
     <div class="container-fluid mt-5 mb-5">
         <div class="row d-flex justify-content-center">
             <div class="col-md-10">
@@ -75,6 +73,10 @@ include("./conn.php");
 
 
 
+
+
+
+
                                 $details_image = $row_products_images['details_image'];
 
 
@@ -88,8 +90,8 @@ include("./conn.php");
                                 <div class='text-center p-4'> 
                                 <img id='main-image' src='./admin_area/product_images/$details_image' width='250'> 
                                 </div> 
-
                                 ";
+
 
                                 ?>
 
@@ -129,8 +131,7 @@ include("./conn.php");
                                  <img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image' width='70'> 
                                
                            
-
-                                      ";
+                         ";
                                     }
 
 
@@ -162,9 +163,6 @@ include("./conn.php");
                                 while ($row_products = mysqli_fetch_array($run_products)) {
 
 
-                                    print_r($row_products);
-
-
                                     $brand_title = $row_products['brand_title'];
                                     $product_title = $row_products['product_title'];
                                     $product_price = $row_products['product_price'];
@@ -178,12 +176,10 @@ include("./conn.php");
                                 <div class='d-flex justify-content-between align-items-center'>
                                     <div class='d-flex align-items-center'><a href='#'><i class='fa fa-long-arrow-left'></i></a> <a href='#'><span class='ml-1'>Back</span></a> </div> <a href='index.php'><i class='fa fa-home'></i></a>
                                 </div>
-                                <div class='mt-4 mb-3'> 
-                                 <span class='text-uppercase text-muted brand'>$brand_title</span>
+                                <div class='mt-4 mb-3'> <span class='text-uppercase text-muted brand'>$brand_title</span>
                                     <h5 class='text-uppercase'>$product_title</h5>
-                                    <div class='price d-flex flex-row align-items-center'> <span class='act-price'>₹$product_price</span>
-                                        <div class='ml-2'> <small class='dis-price'>₹$strikeout_price</small></div>
-                                    </div>
+                                    <div class='price d-flex flex-row align-items-center'> <span class='act-price'>₹$product_price </span>
+                                        <div class='ml-2'> <small class='dis-price'>₹$strikeout_price</small> </div>
                                 </div>
                            
                            
@@ -231,7 +227,7 @@ include("./conn.php");
 
 
                                 <div class="quantity buttons_added">
-                                    <h6 class="text-capitalize">quantity</h6>
+                                    <h6 class="text-uppercase">quantity</h6>
                                     <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
                                 </div>
 
@@ -275,7 +271,7 @@ include("./conn.php");
 
 
                                     if (!($sizeOfcheck == 1)) {
-                                        echo "<h6 class='text-capitalize'>Size</h6>";
+                                        echo "<h6 class='text-uppercase'>Size</h6>";
                                         $x = 0;
                                         while ($x < $sizeOfcheck) {
                                             echo "<label class='radio'> <input type='radio' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span></label>\n";
@@ -289,6 +285,7 @@ include("./conn.php");
                                 <div class="cart mt-4 align-items-center">
                                     <button class="btn-success mr-2 px-4">Add to cart</button>
                                     <button class="btn-success mr-2 px-4">Buy Now</button>
+
                                 </div>
                             </div>
                         </div>
@@ -297,6 +294,10 @@ include("./conn.php");
             </div>
         </div>
     </div>
+    </div>
+
+    <!-- product details -->
+   
 
 
     <!-- product details ends -->
