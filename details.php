@@ -180,7 +180,7 @@ include("./conn.php");
                                     $product_price = $row_products['product_price'];
                                     $strikeout_price = $row_products['strikeout_price'];
                                     $product_description = $row_products['product_description'];
-                                    $product_feauters = $row_products['product_feauters'];
+                                    $product_feauters = $row_products['product_features'];
 
 
                                     echo "
