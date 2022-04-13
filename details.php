@@ -130,7 +130,7 @@ include("./conn.php");
                                
                            
 
-                         ";
+                                      ";
                                     }
 
 
@@ -162,6 +162,9 @@ include("./conn.php");
                                 while ($row_products = mysqli_fetch_array($run_products)) {
 
 
+                                    print_r($row_products);
+
+
                                     $brand_title = $row_products['brand_title'];
                                     $product_title = $row_products['product_title'];
                                     $product_price = $row_products['product_price'];
@@ -175,10 +178,11 @@ include("./conn.php");
                                 <div class='d-flex justify-content-between align-items-center'>
                                     <div class='d-flex align-items-center'><a href='#'><i class='fa fa-long-arrow-left'></i></a> <a href='#'><span class='ml-1'>Back</span></a> </div> <a href='index.php'><i class='fa fa-home'></i></a>
                                 </div>
-                                <div class='mt-4 mb-3'> <span class='text-uppercase text-muted brand'>$brand_title</span>
+                                <div class='mt-4 mb-3'> 
+                                 <span class='text-uppercase text-muted brand'>$brand_title</span>
                                     <h5 class='text-uppercase'>$product_title</h5>
-                                    <div class='price d-flex flex-row align-items-center'> <span class='act-price'>₹$product_price </span>
-                                        <div class='ml-2'> <small class='dis-price'>₹$strikeout_price</small> </div>
+                                    <div class='price d-flex flex-row align-items-center'> <span class='act-price'>₹$product_price</span>
+                                        <div class='ml-2'> <small class='dis-price'>₹$strikeout_price</small></div>
                                     </div>
                                 </div>
                            
@@ -285,7 +289,6 @@ include("./conn.php");
                                 <div class="cart mt-4 align-items-center">
                                     <button class="btn-success mr-2 px-4">Add to cart</button>
                                     <button class="btn-success mr-2 px-4">Buy Now</button>
-
                                 </div>
                             </div>
                         </div>
