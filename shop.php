@@ -155,7 +155,7 @@ include("./conn.php");
 
                     $get_products_image ="select details_image from products_images where primary_image=1 and related_product=$product_id";
 
-                    $run_products_image = mysqli_query($conn,  $get_products_image);
+                    $run_products_image = mysqli_query($conn,$get_products_image);
 
 
                     while ($row_products_image = mysqli_fetch_array( $run_products_image )){
