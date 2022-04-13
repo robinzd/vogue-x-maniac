@@ -164,15 +164,14 @@ include("./conn.php");
                             $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description,product_features from products_details where ID= $product_id";
 
 
-                                echo  $get_products;
+                               
 
                                 $run_products = mysqli_query($conn, $get_products);
 
                                 while ($row_products = mysqli_fetch_array($run_products)){
 
                                        
-                                    print_r($row_products);
-                                
+                               
 
 
                                     $brand_title = $row_products['brand_title'];
