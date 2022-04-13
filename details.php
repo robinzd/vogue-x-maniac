@@ -245,7 +245,7 @@ include("./conn.php");
 
 
 
-                                <div class="sizes mt-5">
+                                <div class="sizes">
 
 
 
