@@ -124,6 +124,8 @@ include("./conn.php");
 
                                         echo  $details_image;
 
+                                        echo "<br>";
+
                                       
                                         $related_product = $row_products_images['related_product'];
 
@@ -157,6 +159,8 @@ include("./conn.php");
                                 parse_str($get_string, $get_array);
 
                                 $product_id = $get_array['id'];
+
+
 
                                 $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description,product_feauters from products_details where ID= $product_id";
 
