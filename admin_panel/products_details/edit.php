@@ -5,7 +5,7 @@ if (isset($_POST['submit'])) {
 	$eid = $_GET['editid'];
 	//Getting Post Values
 	$brandtitle = $_POST['brandtitle'];
-    $producttitle = $_POST['producttitle'];
+	$producttitle = $_POST['producttitle'];
 	$productprice = $_POST['price'];
 	$strikeoutprice = $_POST['strikeout'];
 	$productdescription = $_POST['description'];
@@ -165,7 +165,7 @@ if (isset($_POST['submit'])) {
 			while ($row = mysqli_fetch_array($ret)) {
 			?>
 				<h2>Edit Product Details</h2>
-				
+
 				<div class="form-group">
 					<input type="text" class="form-control" name="brandtitle" value="<?php echo $row['brand_title']; ?>" required="true">
 				</div>
@@ -183,24 +183,24 @@ if (isset($_POST['submit'])) {
 				</div>
 
 				<div class="form-group">
-					<input type="text" class="form-control" name="description" value="<?php echo $row['product_description']; ?>" required="true">
-				</div>
+					<textarea type="text" class="form-control" name="description" value="<?php echo $row['product_description']; ?>" required="true">
+					</textarea>
 
-				<div class="form-group">
-					<input type="text" class="form-control" name="size" value="<?php echo $row['product_size']; ?>" required="true">
-				</div>
+					<div class="form-group">
+						<input type="text" class="form-control" name="size" value="<?php echo $row['product_size']; ?>" required="true">
+					</div>
 
-				<div class="form-group">
-					<input type="text" class="form-control" name="features" value="<?php echo $row['product_features']; ?>" required="true">
-				</div>
+					<div class="form-group">
+						<input type="text" class="form-control" name="features" value="<?php echo $row['product_features']; ?>" required="true">
+					</div>
 
-            <?php
+				<?php
 			} ?>
-			<div class="form-group">
-				<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
-			</div>
+				<div class="form-group">
+					<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
+				</div>
 
-			<div class="text-center">Back To Home <a href="./product_details.php"><i class="fa fa-home"></i></a></div>
+				<div class="text-center">Back To Home <a href="./product_details.php"><i class="fa fa-home"></i></a></div>
 
 		</form>
 
