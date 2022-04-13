@@ -56,13 +56,13 @@ if (isset($_POST["action"])) {
 
             while ($row_products_image = mysqli_fetch_array( $run_products_image )){
 
-                print_r($row_products_image);
+            
 
 
                 $details_image=$row_products_image['details_image'];
 
 
-                echo  $details_image;
+         
 
             }    
             $output .= '
