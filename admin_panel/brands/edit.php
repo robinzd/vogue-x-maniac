@@ -27,7 +27,7 @@ if (isset($_POST['submit'])) {
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
 	<title>Edit brand</title>
-	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
+	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -144,8 +144,8 @@ if (isset($_POST['submit'])) {
 			text-decoration: underline;
 		}
 
-		.fa-home{
-			color:black;
+		.fa-home {
+			color: black;
 		}
 	</style>
 </head>
@@ -159,14 +159,14 @@ if (isset($_POST['submit'])) {
 			while ($row = mysqli_fetch_array($ret)) {
 			?>
 				<h2>Edit Brand </h2>
-				
+
 
 
 				<div class="form-group">
-				<label for="favcolor">Select your brand color:</label>
-                <input type="color"  class="form-control" name="brandcolor"  value="<?php echo $row['brand_color']; ?>" required="true"> 
+					<label for="favcolor">Select your brand color:</label>
+					<input type="color" class="form-control" name="brandcolor" value="<?php echo $row['brand_color']; ?>" required="true">
 				</div>
-				
+
 
 				<div class="form-group">
 					<img src="brands_images/<?php echo $row['image_source']; ?>" width="120" height="120">
@@ -183,13 +183,13 @@ if (isset($_POST['submit'])) {
 			} ?>
 			<div class="form-group">
 				<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
-            </div>
+			</div>
 
 			<div class="text-center">Back To Home <a href="brand.php"><i class="fa fa-home"></i></a></div>
 
 		</form>
 
-	
+
 
 
 

@@ -5,8 +5,7 @@ if (isset($_POST['submit'])) {
 	$eid = $_GET['editid'];
 	//Getting Post Values
 	$brandtitle = $_POST['brandtitle'];
-	echo $brandtitle;
-	$producttitle = $_POST['producttitle'];
+    $producttitle = $_POST['producttitle'];
 	$productprice = $_POST['price'];
 	$strikeoutprice = $_POST['strikeout'];
 	$productdescription = $_POST['description'];
@@ -166,52 +165,36 @@ if (isset($_POST['submit'])) {
 			while ($row = mysqli_fetch_array($ret)) {
 			?>
 				<h2>Edit Product Details</h2>
+				
 				<div class="form-group">
-					<input type="text" class="form-control" name="brandtitle" placeholder="Enter Your Brand Title" required="true">
+					<input type="text" class="form-control" name="brandtitle" value="<?php echo $row['brand_title']; ?>" required="true">
 				</div>
 
-
 				<div class="form-group">
-					<input type="text" class="form-control" name="producttitle" placeholder="Enter Your Product Title" required="true">
+					<input type="text" class="form-control" name="producttitle" value="<?php echo $row['product_title']; ?>" required="true">
 				</div>
 
-
-
 				<div class="form-group">
-					<input type="text" class="form-control" name="price" placeholder="Enter Your product price" required="true">
+					<input type="text" class="form-control" name="price" value="<?php echo $row['product_price']; ?>" required="true">
 				</div>
 
-
 				<div class="form-group">
-					<input type="text" class="form-control" name="strikeout" placeholder="Enter Your Stikeout Price" required="true">
+					<input type="text" class="form-control" name="strikeout" value="<?php echo $row['strikeout_price']; ?>" required="true">
 				</div>
 
-
 				<div class="form-group">
-					<input type="text" class="form-control" name="description" placeholder="Enter Your Description" required="true">
+					<input type="text" class="form-control" name="description" value="<?php echo $row['product_description']; ?>" required="true">
 				</div>
 
-
-
 				<div class="form-group">
-					<input type="text" class="form-control" name="size" placeholder="Enter Your Product Size">
+					<input type="text" class="form-control" name="size" value="<?php echo $row['product_size']; ?>" required="true">
 				</div>
 
-
-
 				<div class="form-group">
-					<input type="text" class="form-control" name="features" placeholder="Enter Your Product Features" required="true">
+					<input type="text" class="form-control" name="features" value="<?php echo $row['product_features']; ?>" required="true">
 				</div>
 
-
-
-
-
-
-
-
-
-			<?php
+            <?php
 			} ?>
 			<div class="form-group">
 				<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
