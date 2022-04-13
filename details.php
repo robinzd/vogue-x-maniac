@@ -179,6 +179,7 @@ include("./conn.php");
                                     <h5 class='text-uppercase'>$product_title</h5>
                                     <div class='price d-flex flex-row align-items-center'> <span class='act-price'>₹$product_price </span>
                                         <div class='ml-2'> <small class='dis-price'>₹$strikeout_price</small> </div>
+                                    </div>
                                 </div>
                            
                            
@@ -287,13 +288,13 @@ include("./conn.php");
 
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- product details ends -->
 
