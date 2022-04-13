@@ -118,7 +118,11 @@ include("./conn.php");
 
                                            print_r($row_products_images);
 
+                                           echo"<br>";
+
                                         $details_image = $row_products_images['details_image'];
+
+                                        echo  $details_image;
 
                                       
                                         $related_product = $row_products_images['related_product'];
