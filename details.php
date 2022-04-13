@@ -161,7 +161,7 @@ include("./conn.php");
                                 echo "<br>";
 
 
-                            $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description,product_feauters from products_details where ID= $product_id";
+                            $get_products = "select brand_title,product_title,product_price,strikeout_price,product_description,product_features from products_details where ID= $product_id";
 
 
                                 echo  $get_products;
@@ -222,11 +222,11 @@ include("./conn.php");
                                         <li>$array_result[$x]</li>
                                        </ul>";
                                             $x++;
-                                        };
+                                        }
 
                                         echo "<br>";
-                                    };
-                                };
+                                    }
+                                }
 
 
 
