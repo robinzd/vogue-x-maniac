@@ -90,7 +90,7 @@ include("./conn.php");
                                 </div> 
 
                                 ";
-                              
+
                                 ?>
 
                                 <div class="thumbnail text-center" id="thumbnailimage">
@@ -287,12 +287,12 @@ include("./conn.php");
 
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <!-- product details ends -->
