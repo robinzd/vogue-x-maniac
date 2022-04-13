@@ -2,33 +2,26 @@
 //Database Connection
 include('dbconnection.php');
 if (isset($_POST['submit'])) {
-	$uid = $_GET['userid'];
-	//getting the post values
-	$productimage = $_FILES["product_image"]["name"];
-	$oldppic = $_POST['oldpic'];
-	$oldprofilepic = "related_images" . "/" . $oldppic;
-	// get the image extension
-	$extension = substr($productimage, strlen($productimage) - 4, strlen($productimage));
-	// allowed extensions
-	$allowed_extensions = array(".jpg", "jpeg", ".png", ".gif");
-	// Validation for allowed extensions .in_array() function searches an array for a specific value.
-	if (!in_array($extension, $allowed_extensions)) {
-		echo "<script>alert('Invalid format. Only jpg / jpeg/ png /gif format allowed');</script>";
+	$eid = $_GET['editid'];
+	//Getting Post Values
+	$brandtitle = $_POST['brandtitle'];
+	$producttitle = $_POST['producttitle'];
+	$productprice = $_POST['price'];
+	$strikeoutprice = $_POST['strikeout'];
+	$productdescription = $_POST['description'];
+	$productsize = $_POST['size'];
+	$productfeatures = $_POST['features'];
+
+
+
+	//Query for data updation
+	$query = mysqli_query($conn, "update products_details set brand_title='$brandtitle',product_title='$producttitle',product_price='$productprice',strikeout_price='$strikeoutprice',product_description='$productdescription',product_size='$productsize',product_features='$productfeatures' where ID='$eid'");
+
+	if ($query) {
+		echo "<script>alert('You have successfully update the product details');</script>";
+		echo "<script type='text/javascript'> document.location ='product_details.php'; </script>";
 	} else {
-		//rename the image file
-		$imgnewfile = md5($imgfile) . time() . $extension;
-		// Code for move image into directory
-		move_uploaded_file($_FILES["product_image"]["tmp_name"], "related_images/" . $imgnewfile);
-		// Query for data insertion
-		$query = mysqli_query($conn, "update related_product set product_image='$imgnewfile' where id='$uid' ");
-		if ($query) {
-			//Old pic
-			unlink($oldprofilepic);
-			echo "<script>alert('product Image updated successfully');</script>";
-			echo "<script type='text/javascript'> document.location ='related_products.php'; </script>";
-		} else {
-			echo "<script>alert('Something Went Wrong. Please try again');</script>";
-		}
+		echo "<script>alert('Something Went Wrong. Please try again');</script>";
 	}
 }
 ?>
@@ -39,8 +32,8 @@ if (isset($_POST['submit'])) {
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-	<title>Change Product Image</title>
-	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
+	<title>Edit Product Details</title>
+	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -86,7 +79,7 @@ if (isset($_POST['submit'])) {
 		.signup-form h2:after {
 			content: "";
 			height: 2px;
-			width: 7%;
+			width: 22%;
 			background: #d4d4d4;
 			position: absolute;
 			top: 50%;
@@ -155,49 +148,65 @@ if (isset($_POST['submit'])) {
 
 		.signup-form form a:hover {
 			text-decoration: underline;
-
-
 		}
 
 		.fa-home {
 			color: black;
-		}
-
-		.text-center {
-			color: grey;
 		}
 	</style>
 </head>
 
 <body>
 	<div class="signup-form">
-		<form method="POST" enctype="multipart/form-data">
+		<form method="POST">
 			<?php
-			$eid = $_GET['userid'];
-			$ret = mysqli_query($conn, "select * from related_product where ID='$eid'");
+			$eid = $_GET['editid'];
+			$ret = mysqli_query($conn, "select * from products_details where ID='$eid'");
 			while ($row = mysqli_fetch_array($ret)) {
 			?>
-				<h2>Update Product Image</h2>
-			
-				<input type="hidden" name="oldpic" value="<?php echo $row['product_image']; ?>">
+				<h2>Edit Product Details</h2>
+
 				<div class="form-group">
-					<img src="related_images/<?php echo $row['product_image']; ?>" width="120" height="120">
+					<input type="text" class="form-control" name="brandtitle" value="<?php echo $row['brand_title']; ?>" required="true">
 				</div>
 
 				<div class="form-group">
-					<input type="file" class="form-control" name="product_image" required="true">
-					<span style="color:red; font-size:12px;">Only jpg / jpeg/ png /gif format allowed.</span>
+					<input type="text" class="form-control" name="producttitle" value="<?php echo $row['product_title']; ?>" required="true">
 				</div>
 
+				<div class="form-group">
+					<input type="text" class="form-control" name="price" value="<?php echo $row['product_price']; ?>" required="true">
+				</div>
 
+				<div class="form-group">
+					<input type="text" class="form-control" name="strikeout" value="<?php echo $row['strikeout_price']; ?>" required="true">
+				</div>
 
+				<div class="form-group">
+					<input type="text" class="form-control" name="description" value="<?php echo $row['product_description']; ?>" required="true">
+				</div>
+
+					<div class="form-group">
+						<input type="text" class="form-control" name="size" value="<?php echo $row['product_size']; ?>">
+					</div>
+
+					<div class="form-group">
+						<input type="text" class="form-control" name="features" value="<?php echo $row['product_features']; ?>" required="true">
+					</div>
+
+				<?php
+			} ?>
 				<div class="form-group">
 					<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
 				</div>
-			<?php
-			} ?>
-			<div class="text-center">Back To Home <a href="related_products.php"><i class="fa fa-home"></i></a></div>
+
+				<div class="text-center">Back To Home <a href="./product_details.php"><i class="fa fa-home"></i></a></div>
+
 		</form>
+
+
+
+
 
 
 	</div>

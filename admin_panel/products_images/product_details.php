@@ -5,12 +5,9 @@ include('dbconnection.php');
 if(isset($_GET['delid']))
 {
 $rid=intval($_GET['delid']);
-$pic=$_GET['product_image'];
-$ppicpath="shopproducts_images"."/".$pic;
-$sql=mysqli_query($conn,"delete from shop_page where ID=$rid");
-unlink($ppicpath);
-echo "<script>alert('Product deleted');</script>"; 
-echo "<script>window.location.href = 'shopproducts.php'</script>";     
+$sql=mysqli_query($conn,"delete from products_details where ID=$rid");
+echo "<script>alert('Brand deleted');</script>"; 
+echo "<script>window.location.href = 'product_details.php'</script>";     
 } 
 
 ?>
@@ -22,7 +19,7 @@ echo "<script>window.location.href = 'shopproducts.php'</script>";
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Product Management</title>
+<title>Product Details Management</title>
 <link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -32,9 +29,9 @@ echo "<script>window.location.href = 'shopproducts.php'</script>";
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <style>
-     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
-    color: black;
+    color:black;
     background: #f5f5f5;
     font-family: 'Roboto', sans-serif;
 }
@@ -187,9 +184,7 @@ table.table td i {
             margin-top: 2px;
         }
 
-        .text-center{
-            color:red;
-        }
+        
 
         .fa-home {
             color: black;
@@ -207,6 +202,8 @@ table.table td i {
 
         .text {
             margin-left: 10px;
+            color: black;
+            font-family: 'Roboto', sans-serif;
         }
 
         .navbar {
@@ -214,7 +211,7 @@ table.table td i {
         }
 
         footer.bg-light.text-center.text-lg-start {
-            position: sticky;
+            position:sticky;
             left: 0;
             bottom: 0;
             width: 100%;
@@ -258,7 +255,7 @@ table.table td i {
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-5">
-                        <h2>Product Management</h2>
+                        <h2>Product Details Management</h2>
                     </div>
 
                     <div class="col-sm-7" align="right">
@@ -271,19 +268,19 @@ table.table td i {
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Product Image</th>
+                        <th>Brand Title</th>
                         <th>Product Title</th>
-                        <th>Product Strikeout Price</th>
                         <th>Product Price</th>
-                        <th>Product Brand</th>
-                        <th>Product Category</th>
-                        <th>Product Status</th>
-                        <th>Actions</th>                                
+                        <th>Strikeout Price</th>
+                        <th>Product Description</th>
+                        <th>Product Size</th>
+                        <th>Product Features</th>
+                        <th>Actions</th>                       
                     </tr>
                 </thead>
                 <tbody>
                      <?php
-$ret=mysqli_query($conn,"select * from shop_page");
+$ret=mysqli_query($conn,"select * from products_details");
 $cnt=1;
 $row=mysqli_num_rows($ret);
 if($row>0){
@@ -292,18 +289,18 @@ while ($row=mysqli_fetch_array($ret)) {
 ?>
 <!--Fetch the Records -->
                     <tr>
-                        <td><?php echo $cnt;?></td>
-                        <td><img src="shopproducts_images/<?php  echo $row['product_image'];?>" width="80" height="80"></td>                       
-                        <td><?php  echo $row['product_title'];?></td> 
-                        <td><?php  echo $row['product_strikeout_price'];?></td>    
-                        <td><?php  echo $row['product_price'];?></td> 
-                        <td><?php  echo $row['product_brand'];?></td>    
-                        <td><?php  echo $row['product_category'];?></td>    
-                        <td><?php  echo $row['product_status'];?></td>          
+                        <td><?php  echo $cnt;?></td>
+                        <td><?php  echo $row['brand_title'];?></td> 
+                        <td><?php  echo $row['product_title'];?></td>
+                        <td><?php  echo $row['product_price'];?></td>   
+                        <td><?php  echo $row['strikeout_price'];?></td>   
+                        <td><?php  echo $row['product_description'];?></td>   
+                        <td><?php  echo $row['product_size'];?></td>   
+                        <td><?php  echo $row['product_features'];?></td>       
                         <td>
   <a href="read.php?viewid=<?php echo htmlentities ($row['ID']);?>" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                             <a href="edit.php?editid=<?php echo htmlentities ($row['ID']);?>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a href="shopproducts.php?delid=<?php echo ($row['ID']);?>&&product_image=<?php echo $row['product_image'];?>" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to Delete ?');"><i class="material-icons">&#xE872;</i></a>
+                            <a href="product_details.php?delid=<?php echo ($row['ID']);?>" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to Delete ?');"><i class="material-icons">&#xE872;</i></a>
                         </td>
                     </tr>
                     <?php 
@@ -320,7 +317,7 @@ $cnt=$cnt+1;
         </div>
     </div>
 
-    
+  
 
 </div>
 
@@ -328,7 +325,7 @@ $cnt=$cnt+1;
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color:#f5f5f5;">
             © 2022 Copyright:
-            <a class="text1" href="/index.php">Vogue X Maniac</a>
+            <a class="text1" href="/index.php`">Vogue X Maniac</a>
         </div>
         <!-- Copyright -->
     </footer>

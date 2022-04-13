@@ -68,7 +68,7 @@ include("./conn.php");
                         <div>
                             <?php
 
-                            $query = "SELECT DISTINCT(product_brand) FROM shop_page WHERE product_status = '1' ORDER BY ID DESC";
+                            $query = "SELECT DISTINCT(product_brand) FROM Products_details WHERE product_status = '1' ORDER BY ID DESC";
                             $statement = $connect->prepare($query);
                             $statement->execute();
                             $result = $statement->fetchAll();
@@ -94,7 +94,7 @@ include("./conn.php");
                         <?php
 
                         $query = "
-                    SELECT DISTINCT(product_category) FROM shop_page  WHERE  product_status = '1' ORDER BY product_category DESC
+                    SELECT DISTINCT(product_category) FROM products_details  WHERE  product_status = '1' ORDER BY product_category DESC
                     ";
                         $statement = $connect->prepare($query);
                         $statement->execute();
@@ -140,26 +140,33 @@ include("./conn.php");
                     <?php
 
 
-                    $get_product_slider = "select * from shop_page";
+                    $get_product_slider = "select * from products_details";
 
                     $run_product_image = mysqli_query($conn, $get_product_slider);
 
 
 
-                    while ($row_product_image = mysqli_fetch_array($run_product_image)) {
-                        $product_id=$row_product_image['ID'];
-                        $product_image = $row_product_image['product_image'];
-                        $product_title = $row_product_image['product_title'];
-                        $product_strikeout_price = $row_product_image['product_strikeout_price'];
-                        $product_price = $row_product_image['product_price'];
+                    while ($row_product = mysqli_fetch_array($run_product_image)) {
+                        $product_id=$row_product['ID'];
+                        $product_title = $row_product['product_title'];
+                        $product_strikeout_price = $row_product['product_strikeout_price'];
+                        $product_price = $row_product['product_price'];
 
 
+                    $get_products_image ="select details_image from products_images where primary_image=1 and related_product=$product_id";
 
+                    $run_products_image = mysqli_query($conn,  $get_products_image);
+
+
+                    while ($row_products_image = mysqli_fetch_array( $run_products_image )){
+
+
+                        $details_image=$row_products_image['details_image'];
 
 
                         echo "<div class='col-sm-6 col-md-4'>
                             <div class='card bg-white'>
-        <img class='card-img-top' src='./admin_panel/shop_product/shopproducts_images/$product_image' alt='' style='width:100%'>
+        <img class='card-img-top' src='./admin_panel/products_images/images/$details_image' alt='' style='width:100%'>
         <div class='card-body'>
             <h5 class='card-title text-center'>$product_title</h5>
         <p class='card-text  text-center'><s>₹$product_strikeout_price</s>₹$product_price</p>
@@ -178,6 +185,9 @@ include("./conn.php");
 
 
 ";
+
+                    }
+
                     }
 
 

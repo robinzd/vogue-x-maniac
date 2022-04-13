@@ -16,7 +16,7 @@ include("./conn.php");
 
 if (isset($_POST["action"])) {
     $query = "
-  SELECT * FROM shop_page WHERE product_status = '1'
+  SELECT * FROM products_details WHERE product_status = '1'
  ";
     if (isset($_POST["minimum_price"], $_POST["maximum_price"]) && !empty($_POST["minimum_price"]) && !empty($_POST["maximum_price"])) {
         $query .= "
@@ -47,7 +47,7 @@ if (isset($_POST["action"])) {
             $output .= '
     <div class="col-sm-6 col-md-4">
                             <div class="card bg-white">
-        <img class="card-img-top" src="./admin_panel/shop_product/shopproducts_images/' . $row['product_image'] . '" style="width:100%">
+        <img class="card-img-top" src="./admin_panel/products_images/images/' . $row['details_image'] . '" style="width:100%">
         <div class="card-body">
             <h5 class="card-title text-center">' . $row['product_title'] . '</h5>
         <p class="card-text  text-center"><s>₹' . $row['product_strikeout_price'] . '</s>₹' . $row['product_price'] . '</p>
