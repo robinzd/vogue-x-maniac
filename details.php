@@ -116,14 +116,11 @@ include("./conn.php");
 
                                     while ($row_products_images = mysqli_fetch_array($run_products_images)) {
 
-
+                                           print_r($row_products_images);
 
                                         $details_image = $row_products_images['details_image'];
 
-                                        echo  $details_image;
-
-
-
+                                      
                                         $related_product = $row_products_images['related_product'];
 
 
