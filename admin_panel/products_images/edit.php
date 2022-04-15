@@ -155,8 +155,6 @@ if (isset($_POST['submit'])) {
 			$eid = $_GET['editid'];
 			$ret = mysqli_query($conn, "select * from products_images where ID='$eid'");
 			while ($row = mysqli_fetch_array($ret)) {
-
-				
 			?>
 				<h2>Edit Products Image</h2>
 
@@ -166,11 +164,11 @@ if (isset($_POST['submit'])) {
 					<a href="change-image.php?userid=<?php echo $row['ID']; ?>">Change Image</a>
 				</div>
 
-			
+
 
 				<div class="form-group">
-					<select class="form-control" name="related">
-					<option selected><?php echo $row['related_product'];?></option>
+					<select class="form-control" name="related" id=sortfilter>
+						<option selected><?php echo $row['related_product']; ?></option>
 						<?php
 
 						$get_products = mysqli_query($conn, "select * from products_details");
@@ -178,10 +176,10 @@ if (isset($_POST['submit'])) {
 						$rowimage = mysqli_num_rows($get_products);
 						if ($rowimage > 0) {
 							while ($rowimage = mysqli_fetch_array($get_products)) {
-                        ?>       
-								
-							<option value="1"><?php echo $rowimage['ID'];?></option>
-							
+						?>
+
+								<option value="1"><?php echo $rowimage['ID']; ?></option>
+
 						<?php
 
 
@@ -205,13 +203,18 @@ if (isset($_POST['submit'])) {
 			<div class="text-center">Back To Home <a href="productsimages.php"><i class="fa fa-home"></i></a></div>
 
 		</form>
-
-
-
-
-
-
 	</div>
+	<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript">
+		var code = {};
+		$("selected[id='sortfilter'] > option").each(function() {
+			if (code[this.text]) {
+				$(this).remove();
+			} else {
+				code[this.text] = this.value;
+			}
+		});
+	</script>
 </body>
 
 </html>
