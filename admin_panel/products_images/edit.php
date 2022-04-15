@@ -167,7 +167,7 @@ if (isset($_POST['submit'])) {
 			
 
 				<div class="form-group">
-					<select class="form-control" name="related" value="<?php echo $row['related_product']; ?>">
+					<select class="form-control" name="related">
 						<?php
 
 						$get_products = mysqli_query($conn, "select * from products_details");
@@ -177,8 +177,9 @@ if (isset($_POST['submit'])) {
 							while ($rowimage = mysqli_fetch_array($get_products)) {
 
 							
-						?>
-								<option selected><?php echo $rowimage['ID']; ?></option>
+						?>       
+								<option selected><?php echo $row['related_product'];?></option>
+								<option><?php echo $rowimage['ID'];?></option>
 						<?php
 
 
