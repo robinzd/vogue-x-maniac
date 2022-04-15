@@ -275,6 +275,12 @@ table.table td i {
                         <th>Product Description</th>
                         <th>Product Size</th>
                         <th>Product Features</th>
+                        <th>Product Category</th>
+                        <th>Product Status</th>
+                        <th>Latest Product</th>
+                        <th>Related Product</th>
+                        <th>Actions</th>
+                        
                         <th>Actions</th>                       
                     </tr>
                 </thead>
