@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
 	$relatedproduct = $_POST['related'];
 	$primaryimage = $_POST['primary'];
 	//Query for data updation
-	$query = mysqli_query($conn, "update  products_images set related_product='$relatedproduct',primary_image=$primaryimage where ID='$eid'");
+	$query = mysqli_query($conn, "update  products_images set related_product='$relatedproduct',primary_image='$primaryimage' where ID='$eid'");
 
 	if ($query) {
 		echo "<script>alert('You have successfully update the products images');</script>";
@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
 	<title>Edit Products Images</title>
-	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
+	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -142,8 +142,8 @@ if (isset($_POST['submit'])) {
 			text-decoration: underline;
 		}
 
-		.fa-home{
-			color:black;
+		.fa-home {
+			color: black;
 		}
 	</style>
 </head>
@@ -157,34 +157,34 @@ if (isset($_POST['submit'])) {
 			while ($row = mysqli_fetch_array($ret)) {
 			?>
 				<h2>Edit Products Image</h2>
-			
 
-                <div class="form-group">
+
+				<div class="form-group">
 					<img src="images/<?php echo $row['details_image']; ?>" width="120" height="120">
 					<a href="change-image.php?userid=<?php echo $row['ID']; ?>">Change Image</a>
 				</div>
 
 				<div class="form-group">
-				<select  class="form-control" id="inputGroupSelect01" name="related" value="<?php echo $row['related_product']; ?>">
-					<?php
+					<select class="form-control" id="inputGroupSelect01" name="related" value="<?php echo $row['related_product']; ?>">
+						<?php
 
-					$get_products = mysqli_query($conn, "select * from products_details");
-					$cnt = 1;
-					$row = mysqli_num_rows($get_products);
-					if ($row > 0) {
-						while ($row = mysqli_fetch_array($get_products)){
-					?>
-							<option selected><?php echo $row['ID']; ?></option>
-					<?php
+						$get_products = mysqli_query($conn, "select * from products_details");
+						$cnt = 1;
+						$row = mysqli_num_rows($get_products);
+						if ($row > 0) {
+							while ($row = mysqli_fetch_array($get_products)) {
+						?>
+								<option selected><?php echo $row['ID']; ?></option>
+						<?php
 
 
-							$cnt = $cnt + 1;
-						}
-					} ?>
+								$cnt = $cnt + 1;
+							}
+						} ?>
 
-				</select>
+					</select>
 
-				
+
 				</div>
 
 				<div class="form-group">
@@ -195,13 +195,13 @@ if (isset($_POST['submit'])) {
 			} ?>
 			<div class="form-group">
 				<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
-            </div>
+			</div>
 
 			<div class="text-center">Back To Home <a href="productsimages.php"><i class="fa fa-home"></i></a></div>
 
 		</form>
 
-	
+
 
 
 
