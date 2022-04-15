@@ -4,13 +4,14 @@ include('dbconnection.php');
 if (isset($_POST['submit'])) {
 	$eid = $_GET['editid'];
 	//Getting Post Values
-	$categorytitle = $_POST['title'];
+	$relatedproduct = $_POST['related'];
+	$primaryimage = $_POST['primary'];
 	//Query for data updation
-	$query = mysqli_query($conn, "update  product_category set category_name='$categorytitle' where ID='$eid'");
+	$query = mysqli_query($conn, "update  products_images set related_product='$relatedproduct',primary_image=$primaryimage where ID='$eid'");
 
 	if ($query) {
-		echo "<script>alert('You have successfully update the category');</script>";
-		echo "<script type='text/javascript'> document.location ='categories.php'; </script>";
+		echo "<script>alert('You have successfully update the products images');</script>";
+		echo "<script type='text/javascript'> document.location ='productsimages.php'; </script>";
 	} else {
 		echo "<script>alert('Something Went Wrong. Please try again');</script>";
 	}
@@ -23,7 +24,7 @@ if (isset($_POST['submit'])) {
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-	<title>Edit category</title>
+	<title>Edit Products Images</title>
 	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -152,27 +153,51 @@ if (isset($_POST['submit'])) {
 		<form method="POST">
 			<?php
 			$eid = $_GET['editid'];
-			$ret = mysqli_query($conn, "select * from product_category where ID='$eid'");
+			$ret = mysqli_query($conn, "select * from products_images where ID='$eid'");
 			while ($row = mysqli_fetch_array($ret)) {
 			?>
-				<h2>Edit category</h2>
+				<h2>Edit Products Image</h2>
 			
 
                 <div class="form-group">
-					<img src="categories_images/<?php echo $row['category_image']; ?>" width="120" height="120">
+					<img src="images/<?php echo $row['details_image']; ?>" width="120" height="120">
 					<a href="change-image.php?userid=<?php echo $row['ID']; ?>">Change Image</a>
 				</div>
 
 				<div class="form-group">
-					<input type="text" class="form-control" name="title" value="<?php echo $row['category_name']; ?>" required="true">
+				<select  class="form-control" id="inputGroupSelect01" name="related" value="<?php echo $row['related_product']; ?>">
+					<?php
+
+					$get_products = mysqli_query($conn, "select * from products_details");
+					$cnt = 1;
+					$row = mysqli_num_rows($get_products);
+					if ($row > 0) {
+						while ($row = mysqli_fetch_array($get_products)){
+					?>
+							<option selected><?php echo $row['ID']; ?></option>
+					<?php
+
+
+							$cnt = $cnt + 1;
+						}
+					} ?>
+
+				</select>
+
+				
 				</div>
+
+				<div class="form-group">
+					<input type="text" class="form-control" name="primary" value="<?php echo $row['primary_image']; ?>" required="true">
+				</div>
+
 			<?php
 			} ?>
 			<div class="form-group">
 				<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
             </div>
 
-			<div class="text-center">Back To Home <a href="categories.php"><i class="fa fa-home"></i></a></div>
+			<div class="text-center">Back To Home <a href="productsimages.php"><i class="fa fa-home"></i></a></div>
 
 		</form>
 
