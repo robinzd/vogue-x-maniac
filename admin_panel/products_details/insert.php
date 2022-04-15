@@ -209,7 +209,7 @@ body {
             <button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Submit</button>
         </div>
 		
-		<div class="text-center">Back To Home <a href="brand.php"><i class="fa fa-home"></i></a></div>
+		<div class="text-center">Back To Home <a href="product_details.php"><i class="fa fa-home"></i></a></div>
     </form>
 	
 </div>
