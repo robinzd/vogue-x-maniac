@@ -204,6 +204,8 @@ include("./conn.php");
 
                                     $size_of_array = sizeof($array_result);
 
+                                    print_r($size_of_array);
+
 
 
                                     if (!($size_of_array == 1)) {

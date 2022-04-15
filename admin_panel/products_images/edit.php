@@ -178,12 +178,7 @@ if (isset($_POST['submit'])) {
 						$rowimage = mysqli_num_rows($get_products);
 						if ($rowimage > 0) {
 							while ($rowimage = mysqli_fetch_array($get_products)) {
-
-							$result=array_intersect($row,$rowimage);
-
-							print_r($result);
-							
-						?>       
+                        ?>       
 								
 							<option value="1"><?php echo $rowimage['ID'];?></option>
 							
