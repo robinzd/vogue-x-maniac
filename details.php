@@ -114,7 +114,7 @@ include("./conn.php");
 
 
 
-                                    while ($row_products_images = mysqli_fetch_array($run_products_images)) {   
+                                    while ($row_products_images = mysqli_fetch_array($run_products_images)) {
 
 
 
@@ -220,8 +220,6 @@ include("./conn.php");
                                        </ul>";
                                             $x++;
                                         }
-
-                                      
                                     }
                                 }
 
@@ -316,28 +314,40 @@ include("./conn.php");
 
             <?php
 
-            $get_product_slider = "select * from related_product";
+            $get_product_slider = "select * from products_details related_product_owlslider=1";
 
             $run_product_image = mysqli_query($conn, $get_product_slider);
 
 
 
-            while ($row_product_image = mysqli_fetch_array($run_product_image)) {
+            while ($row_product = mysqli_fetch_array($run_product_image)) {
+                $product_id = $row_product['ID'];
+                $product_title = $row_product['product_title'];
+                $product_strikeout_price = $row_product['product_strikeout_price'];
+                $product_price = $row_product['product_price'];
 
-                $product_image = $row_product_image['product_image'];
-                $product_title = $row_product_image['product_title'];
-                $product_strikeout_price = $row_product_image['product_strikeout_price'];
-                $product_price = $row_product_image['product_price'];
+
+                $get_products_image = "select details_image from products_images where primary_image=1 and related_product=$product_id";
+
+                $run_products_image = mysqli_query($conn, $get_products_image);
+
+                $details_image = null;
+
+                while ($row_products_image = mysqli_fetch_array($run_products_image)) {
 
 
+
+
+                    $details_image = $row_products_image['details_image'];
+                }
 
                 echo " <div class='card bg-white'>
-    <img class='card-img-top' src='./admin_panel/related_product_slider/related_images/$product_image'  style='width:100%'>
+    <img class='card-img-top' src='./admin_panel/products_images/images/$details_image'  style='width:100%'>
     <div class='card-body'>
         <h5 class='card-title text-center'>$product_title</h5>
         <p class='card-text  text-center'><s>₹$product_strikeout_price</s>₹$product_price</p>
         <div class='text-center'>
-            <a href='details.php' class='btn btn-success' id='buttonhover'>See Details</a>
+            <a href='details.php?id=$product_id' class='btn btn-success' id='buttonhover'>See Details</a>
             <a href='#' class='btn btn-success' id='buttonhover'>Add to Cart</a>
         </div>
     </div>
