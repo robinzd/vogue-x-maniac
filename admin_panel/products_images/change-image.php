@@ -83,10 +83,10 @@ if (isset($_POST['submit'])) {
 		}
 
 		.signup-form h2:before,
-		.signup-form h2:after {
+		.signup-form h2:after{
 			content: "";
 			height: 2px;
-			width: 10%;
+			width: 7%;
 			background: #d4d4d4;
 			position: absolute;
 			top: 50%;
