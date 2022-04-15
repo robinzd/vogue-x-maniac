@@ -8,7 +8,7 @@ include('dbconnection.php');
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Read Product Details</title>
-    <link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
+    <link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -17,7 +17,8 @@ include('dbconnection.php');
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <style>
-           @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
         body {
             color: black;
             background: #f5f5f5;
@@ -184,13 +185,13 @@ include('dbconnection.php');
             font-size: 13px;
         }
 
-        .fa-home{
-			color:black;
-		}
+        .fa-home {
+            color: black;
+        }
 
-        .text-center{
-			color:black;
-		}
+        .text-center {
+            color: black;
+        }
 
         .btn-circle.btn-xl {
             width: 50px;
@@ -200,49 +201,46 @@ include('dbconnection.php');
             font-size: 20px;
             text-align: center;
             box-shadow: 0px 4px 4px #888888;
-            
+
         }
 
-        i.material-icons{
+        i.material-icons {
             margin-top: 2px;
         }
 
-        .btn-circle.btn-xl:hover{
-            background-color:black;
+        .btn-circle.btn-xl:hover {
+            background-color: black;
         }
 
-        .fa-pen{
+        .fa-pen {
             margin-top: 2px;
         }
 
-        
+
 
         footer.bg-light.text-center.text-lg-start {
-            position:sticky;
+            position: sticky;
             left: 0;
             bottom: 0;
             width: 100%;
-            
-          
+
+
         }
 
-        .text-center.p-3{
-            color:black;
+        .text-center.p-3 {
+            color: black;
         }
 
-        a.text1{
-       color: black;
-       text-decoration: none;
+        a.text1 {
+            color: black;
+            text-decoration: none;
         }
-
-      
-
     </style>
 </head>
 
 <body>
 
- 
+
     <div class="container-xl">
         <div class="table-responsive">
             <div class="table-wrapper">
@@ -260,7 +258,7 @@ include('dbconnection.php');
                         ?>
 
                             <div class="col-sm-7" align="right">
-                                <a href="edit.php?editid=<?php echo htmlentities($row['ID']); ?>"class="btn btn-success btn-circle btn-xl"><i class="material-icons">&#xE254;</i></a>
+                                <a href="edit.php?editid=<?php echo htmlentities($row['ID']); ?>" class="btn btn-success btn-circle btn-xl"><i class="material-icons">&#xE254;</i></a>
 
                             </div>
                     </div>
@@ -268,6 +266,11 @@ include('dbconnection.php');
                 <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="hidden-table-info">
 
                     <tbody>
+
+                        <tr>
+                            <th>Product ID</th>
+                            <td><?php echo $row['ID']; ?></td>
+                        </tr>
 
 
                         <tr>
@@ -330,7 +333,7 @@ include('dbconnection.php');
                     <?php
                             $cnt = $cnt + 1;
                         } ?>
-                        
+
                     </tbody>
                 </table>
 
