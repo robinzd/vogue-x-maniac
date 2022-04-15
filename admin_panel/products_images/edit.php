@@ -164,7 +164,12 @@ if (isset($_POST['submit'])) {
 					<a href="change-image.php?userid=<?php echo $row['ID']; ?>">Change Image</a>
 				</div>
 
-				
+			
+
+				<div class="form-group">
+					<input type="text" class="form-control" name="related" value="<?php echo $row['related_product']; ?>" required="true">
+				</div>
+
 				<div class="form-group">
 					<input type="text" class="form-control" name="primary" value="<?php echo $row['primary_image']; ?>" required="true">
 				</div>
