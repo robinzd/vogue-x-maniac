@@ -180,6 +180,8 @@ if (isset($_POST['submit'])) {
 							while ($rowimage = mysqli_fetch_array($get_products)) {
 
 							$result=array_intersect($row,$rowimage);
+
+							print_r($result);
 							
 						?>       
 								
