@@ -48,7 +48,7 @@ a {
     padding: 0 1rem;
     background-color:ghostwhite;
     z-index: var(--z-fixed);
-    transition: .5s
+    transition: .5s;
 }
 
 .header_toggle {
@@ -93,7 +93,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden
+    overflow: hidden;
 }
 
 .nav_logo,

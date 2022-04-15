@@ -290,10 +290,10 @@ while ($row=mysqli_fetch_array($ret)) {
 <!--Fetch the Records -->
                     <tr>
                         <td><?php  echo $cnt;?></td>
-                        <td><?php  echo $row['brand_title'];?></td> 
+                        <td><?php  echo $row['product_brand'];?></td> 
                         <td><?php  echo $row['product_title'];?></td>
                         <td><?php  echo $row['product_price'];?></td>   
-                        <td><?php  echo $row['strikeout_price'];?></td>   
+                        <td><?php  echo $row['product_strikeout_price'];?></td>   
                         <td><?php  echo $row['product_description'];?></td>   
                         <td><?php  echo $row['product_size'];?></td>   
                         <td><?php  echo $row['product_features'];?></td>       
