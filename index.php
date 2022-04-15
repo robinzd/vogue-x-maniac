@@ -225,22 +225,22 @@ include("./conn.php");
         <div class="gallery">
 
 
-                <?php
+            <?php
 
-                    $get_product_category = "select * from product_category";
+            $get_product_category = "select * from product_category";
 
-                    $run_gallery_image = mysqli_query($conn, $get_product_category);
-
-
-
-                    while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
-
-                        $category_image = $row_category_picture['category_image'];
-                        $category_name = $row_category_picture['category_name'];
+            $run_gallery_image = mysqli_query($conn, $get_product_category);
 
 
 
-                        echo "<div class='gallery__column'>
+            while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
+
+                $category_image = $row_category_picture['category_image'];
+                $category_name = $row_category_picture['category_name'];
+
+
+
+                echo "<div class='gallery__column'>
                         <a href='#' target='_blank' class='gallery__link'>
                         <figure class='gallery__thumb'>
 <img src='./admin_panel/categories/categories_images/$category_image' alt='' class='gallery__image'>
@@ -257,16 +257,16 @@ include("./conn.php");
 
 
 ";
-                    }
+            }
 
 
-                    ?>
+            ?>
 
         </div>
 
     </section>
 
-   
+
 
 
     <!-- cross fade carousel -->
@@ -351,29 +351,40 @@ include("./conn.php");
 
             <?php
 
-            $get_product_slider = "select * from shop_page where product_owlslider=1";
+            $get_product_slider = "select * from products_details where product_owlslider=1";
 
             $run_product_image = mysqli_query($conn, $get_product_slider);
 
 
 
-            while ($row_product_image = mysqli_fetch_array($run_product_image)) {
-                
-                $product_id=$row_product_image ['ID'];
-                $product_image = $row_product_image['product_image'];
-                $product_title = $row_product_image['product_title'];
-                $product_strikeout_price = $row_product_image['product_strikeout_price'];
-                $product_price = $row_product_image['product_price'];
+            while ($row_product = mysqli_fetch_array($run_product_image)) {
+                $product_id = $row_product['ID'];
+                $product_title = $row_product['product_title'];
+                $product_strikeout_price = $row_product['product_strikeout_price'];
+                $product_price = $row_product['product_price'];
 
 
+                $get_products_image = "select details_image from products_images where primary_image=1 and related_product=$product_id";
+
+                $run_products_image = mysqli_query($conn, $get_products_image);
+
+                $details_image = null;
+
+                while ($row_products_image = mysqli_fetch_array($run_products_image)) {
+
+
+
+
+                    $details_image = $row_products_image['details_image'];
+                }
 
                 echo " <div class='card bg-white'>
-                    <img class='card-img-top' src='./admin_panel/latest_product_slider/products_images/$product_image' alt='' style='width:100%'>
+                    <img class='card-img-top' src='./admin_panel/products_images/images/$details_image' alt='' style='width:100%'>
                     <div class='card-body'>
                         <h5 class='card-title text-center'>$product_title</h5>
                         <p class='card-text  text-center'><s>₹$product_strikeout_price</s>₹$product_price</p>
                         <div class='text-center'>
-                            <a href='details.php' class='btn btn-success'>See Details</a>
+                            <a href=''details.php?id=$product_id' class='btn btn-success'>See Details</a>
                             <a href='#' class='btn btn-success'>Add to Cart</a>
                         </div>
                     </div>
