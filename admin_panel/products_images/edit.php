@@ -164,29 +164,7 @@ if (isset($_POST['submit'])) {
 					<a href="change-image.php?userid=<?php echo $row['ID']; ?>">Change Image</a>
 				</div>
 
-				<div class="form-group">
-					<select class="form-control" id="inputGroupSelect01" name="related" value="<?php echo $row['related_product']; ?>">
-						<?php
-
-						$get_products = mysqli_query($conn, "select * from products_details");
-						$cnt = 1;
-						$row = mysqli_num_rows($get_products);
-						if ($row > 0) {
-							while ($row = mysqli_fetch_array($get_products)) {
-						?>
-								<option selected><?php echo $row['ID']; ?></option>
-						<?php
-
-
-								$cnt = $cnt + 1;
-							}
-						} ?>
-
-					</select>
-
-
-				</div>
-
+				
 				<div class="form-group">
 					<input type="text" class="form-control" name="primary" value="<?php echo $row['primary_image']; ?>" required="true">
 				</div>
