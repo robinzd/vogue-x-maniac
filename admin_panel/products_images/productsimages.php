@@ -5,9 +5,12 @@ include('dbconnection.php');
 if(isset($_GET['delid']))
 {
 $rid=intval($_GET['delid']);
-$sql=mysqli_query($conn,"delete from products_details where ID=$rid");
-echo "<script>alert('Brand deleted');</script>"; 
-echo "<script>window.location.href = 'product_details.php'</script>";     
+$pic=$_GET['details_image'];
+$ppicpath="images"."/".$pic;
+$sql=mysqli_query($conn,"delete from products_images where ID=$rid");
+unlink($ppicpath);
+echo "<script>alert('product image deleted');</script>"; 
+echo "<script>window.location.href = 'categories.php'</script>";     
 } 
 
 ?>
@@ -19,7 +22,7 @@ echo "<script>window.location.href = 'product_details.php'</script>";
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Product Details Management</title>
+<title>Products Images Management</title>
 <link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -29,9 +32,9 @@ echo "<script>window.location.href = 'product_details.php'</script>";
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
-    color:black;
+    color: black;
     background: #f5f5f5;
     font-family: 'Roboto', sans-serif;
 }
@@ -184,7 +187,9 @@ table.table td i {
             margin-top: 2px;
         }
 
-        
+        .text-center{
+            color:red;
+        }
 
         .fa-home {
             color: black;
@@ -202,8 +207,6 @@ table.table td i {
 
         .text {
             margin-left: 10px;
-            color: black;
-            font-family: 'Roboto', sans-serif;
         }
 
         .navbar {
@@ -211,7 +214,7 @@ table.table td i {
         }
 
         footer.bg-light.text-center.text-lg-start {
-            position:sticky;
+            position: sticky;
             left: 0;
             bottom: 0;
             width: 100%;
@@ -255,7 +258,7 @@ table.table td i {
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-5">
-                        <h2>Product Details Management</h2>
+                        <h2>Product Images Management</h2>
                     </div>
 
                     <div class="col-sm-7" align="right">
@@ -268,19 +271,14 @@ table.table td i {
                 <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Brand Title</th>
-                        <th>Product Title</th>
-                        <th>Product Price</th>
-                        <th>Strikeout Price</th>
-                        <th>Product Description</th>
-                        <th>Product Size</th>
-                        <th>Product Features</th>
-                        <th>Actions</th>                       
+                        <th>Product Image</th>
+                        <th>Related Product</th>
+                        <th>Primary Image</th>
                     </tr>
                 </thead>
                 <tbody>
                      <?php
-$ret=mysqli_query($conn,"select * from products_details");
+$ret=mysqli_query($conn,"select * from products_images");
 $cnt=1;
 $row=mysqli_num_rows($ret);
 if($row>0){
@@ -289,18 +287,14 @@ while ($row=mysqli_fetch_array($ret)) {
 ?>
 <!--Fetch the Records -->
                     <tr>
-                        <td><?php  echo $cnt;?></td>
-                        <td><?php  echo $row['brand_title'];?></td> 
-                        <td><?php  echo $row['product_title'];?></td>
-                        <td><?php  echo $row['product_price'];?></td>   
-                        <td><?php  echo $row['strikeout_price'];?></td>   
-                        <td><?php  echo $row['product_description'];?></td>   
-                        <td><?php  echo $row['product_size'];?></td>   
-                        <td><?php  echo $row['product_features'];?></td>       
-                        <td>
+                        <td><?php echo $cnt;?></td>
+                        <td><img src="images/<?php  echo $row['details_image'];?>" width="80" height="80"></td>                       
+                        <td><?php  echo $row['related_product'];?></td> 
+                        <td><?php  echo $row['primary_image'];?></td> 
+                    <td>
   <a href="read.php?viewid=<?php echo htmlentities ($row['ID']);?>" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                             <a href="edit.php?editid=<?php echo htmlentities ($row['ID']);?>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a href="product_details.php?delid=<?php echo ($row['ID']);?>" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to Delete ?');"><i class="material-icons">&#xE872;</i></a>
+                            <a href="productsimages.php?delid=<?php echo ($row['ID']);?>&&images=<?php echo $row['details_image'];?>" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to Delete ?');"><i class="material-icons">&#xE872;</i></a>
                         </td>
                     </tr>
                     <?php 
@@ -317,7 +311,7 @@ $cnt=$cnt+1;
         </div>
     </div>
 
-  
+    
 
 </div>
 
@@ -325,7 +319,7 @@ $cnt=$cnt+1;
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color:#f5f5f5;">
             © 2022 Copyright:
-            <a class="text1" href="/index.php`">Vogue X Maniac</a>
+            <a class="text1" href="/index.php">Vogue X Maniac</a>
         </div>
         <!-- Copyright -->
     </footer>

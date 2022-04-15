@@ -7,7 +7,7 @@ include('dbconnection.php');
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Read Product Details</title>
+    <title>Read Category</title>
     <link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -17,9 +17,9 @@ include('dbconnection.php');
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <style>
-           @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+         @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
         body {
-            color: black;
+            color:black;
             background: #f5f5f5;
             font-family: 'Roboto', sans-serif;
         }
@@ -45,7 +45,6 @@ include('dbconnection.php');
         .table-title h2 {
             margin: 5px 0 0;
             font-size: 24px;
-            font-family: 'Roboto', sans-serif;
         }
 
         .table-title select {
@@ -190,6 +189,7 @@ include('dbconnection.php');
 
         .text-center{
 			color:black;
+
 		}
 
         .btn-circle.btn-xl {
@@ -215,10 +215,10 @@ include('dbconnection.php');
             margin-top: 2px;
         }
 
-        
+      
 
         footer.bg-light.text-center.text-lg-start {
-            position:sticky;
+            position:fixed;
             left: 0;
             bottom: 0;
             width: 100%;
@@ -237,30 +237,30 @@ include('dbconnection.php');
 
       
 
+       
     </style>
 </head>
 
 <body>
 
- 
-    <div class="container-xl">
+<div class="container-xl">
         <div class="table-responsive">
             <div class="table-wrapper">
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-5">
-                            <h2>Read Product Details</h2>
+                            <h2>Category Details</h2>
                         </div>
                         <?php
                         $vid = $_GET['viewid'];
-                        $ret = mysqli_query($conn, "select * from products_details where ID =$vid");
+                        $ret = mysqli_query($conn, "select * from product_category where ID =$vid");
                         $cnt = 1;
                         while ($row = mysqli_fetch_array($ret)) {
 
                         ?>
 
                             <div class="col-sm-7" align="right">
-                                <a href="edit.php?editid=<?php echo htmlentities($row['ID']); ?>"class="btn btn-success btn-circle btn-xl"><i class="material-icons">&#xE254;</i></a>
+                                <a href="edit.php?editid=<?php echo htmlentities($row['ID']); ?>" class="btn btn-success btn-circle btn-xl"><i class="material-icons">&#xE254;</i></a>
 
                             </div>
                     </div>
@@ -270,44 +270,19 @@ include('dbconnection.php');
                     <tbody>
 
 
-                        <tr>
-                            <th>Brand Title</th>
-                            <td><?php echo $row['brand_title']; ?></td>
-                        </tr>
-
+                      
 
                         <tr>
-                            <th>Product Title</th>
-                            <td><?php echo $row['product_title']; ?></td>
+                            <th width="200">Category Image</th>
+                            <td><img src="categories_images/<?php echo $row['category_image']; ?>" width="80" height="80"></td>
                         </tr>
 
                         <tr>
-                            <th>Product Price</th>
-                            <td><?php echo $row['product_price']; ?></td>
+                            <th>Category Title</th>
+                            <td><?php echo $row['category_name']; ?></td>
                         </tr>
 
-                        <tr>
-                            <th>Strikeout Price</th>
-                            <td><?php echo $row['strikeout_price']; ?></td>
-                        </tr>
-
-                        <tr>
-                            <th>Product Description</th>
-                            <td><?php echo $row['product_description']; ?></td>
-                        </tr>
-
-                        <tr>
-                            <th>Product Size</th>
-                            <td><?php echo $row['product_size']; ?></td>
-                        </tr>
-
-                        <tr>
-                            <th>Product Features</th>
-                            <td><?php echo $row['product_features']; ?></td>
-                        </tr>
-
-
-                    <?php
+                        <?php
                             $cnt = $cnt + 1;
                         } ?>
                         
@@ -316,8 +291,9 @@ include('dbconnection.php');
 
             </div>
         </div>
-        <div class="text-center">Back To Home<a href="../products_details/product_details.php"><i class="fa fa-home"></i></a></div>
+        <div class="text-center">Back To Home <a href="categories.php"><i class="fa fa-home"></i></a></div>
     </div>
+
     <footer class="bg-light text-center text-lg-start">
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color:#f5f5f5;">

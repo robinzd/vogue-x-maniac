@@ -126,6 +126,20 @@
                           </div>
                       </a>
                   </div>
+                  <div class="col-md-6 col-lg-4 column">
+                      <a href="./products_images/productsimages.php">
+                          <div class="card gr-5">
+                              <div class="txt">
+                                  <h1>Products Images</br>
+                                      Management</h1>
+                              </div>
+                              <div class="ico-card">
+                                  <i class="fa fa-code-fork"></i>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  
                  
 
 
@@ -197,6 +211,19 @@
                           <div class="card gr-5">
                               <div class="txt">
                                   <h1>Products</br>
+                                      Management</h1>
+                              </div>
+                              <div class="ico-card">
+                                  <i class="fa fa-code-fork"></i>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-6 col-lg-4 column">
+                      <a href="./products_images/productsimages.php">
+                          <div class="card gr-5">
+                              <div class="txt">
+                                  <h1>Products Images</br>
                                       Management</h1>
                               </div>
                               <div class="ico-card">

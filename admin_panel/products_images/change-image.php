@@ -2,17 +2,33 @@
 //Database Connection
 include('dbconnection.php');
 if (isset($_POST['submit'])) {
-	$eid = $_GET['editid'];
-	//Getting Post Values
-	$categorytitle = $_POST['title'];
-	//Query for data updation
-	$query = mysqli_query($conn, "update  product_category set category_name='$categorytitle' where ID='$eid'");
-
-	if ($query) {
-		echo "<script>alert('You have successfully update the category');</script>";
-		echo "<script type='text/javascript'> document.location ='categories.php'; </script>";
+	$uid = $_GET['userid'];
+	//getting the post values
+	$categoryimage = $_FILES["category_image"]["name"];
+	$oldppic = $_POST['oldpic'];
+	$oldprofilepic = "categories_images" . "/" . $oldppic;
+	// get the image extension
+	$extension = substr($categoryimage, strlen($categoryimage) - 4, strlen($categoryimage));
+	// allowed extensions
+	$allowed_extensions = array(".jpg", "jpeg", ".png", ".gif");
+	// Validation for allowed extensions .in_array() function searches an array for a specific value.
+	if (!in_array($extension, $allowed_extensions)) {
+		echo "<script>alert('Invalid format. Only jpg / jpeg/ png /gif format allowed');</script>";
 	} else {
-		echo "<script>alert('Something Went Wrong. Please try again');</script>";
+		//rename the image file
+		$imgnewfile = md5($imgfile) . time() . $extension;
+		// Code for move image into directory
+		move_uploaded_file($_FILES["category_image"]["tmp_name"], "categories_images/" . $imgnewfile);
+		// Query for data insertion
+		$query = mysqli_query($conn, "update product_category set category_image='$imgnewfile' where id='$uid' ");
+		if ($query) {
+			//Old pic
+			unlink($oldprofilepic);
+			echo "<script>alert('category Image updated successfully');</script>";
+			echo "<script type='text/javascript'> document.location ='categories.php'; </script>";
+		} else {
+			echo "<script>alert('Something Went Wrong. Please try again');</script>";
+		}
 	}
 }
 ?>
@@ -23,7 +39,7 @@ if (isset($_POST['submit'])) {
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-	<title>Edit category</title>
+	<title>Change Category Image</title>
 	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -70,7 +86,7 @@ if (isset($_POST['submit'])) {
 		.signup-form h2:after {
 			content: "";
 			height: 2px;
-			width: 22%;
+			width: 7%;
 			background: #d4d4d4;
 			position: absolute;
 			top: 50%;
@@ -139,46 +155,49 @@ if (isset($_POST['submit'])) {
 
 		.signup-form form a:hover {
 			text-decoration: underline;
+
+
 		}
 
-		.fa-home{
-			color:black;
+		.fa-home {
+			color: black;
+		}
+
+		.text-center {
+			color: grey;
 		}
 	</style>
 </head>
 
 <body>
 	<div class="signup-form">
-		<form method="POST">
+		<form method="POST" enctype="multipart/form-data">
 			<?php
-			$eid = $_GET['editid'];
+			$eid = $_GET['userid'];
 			$ret = mysqli_query($conn, "select * from product_category where ID='$eid'");
 			while ($row = mysqli_fetch_array($ret)) {
 			?>
-				<h2>Edit category</h2>
+				<h2>Update Category Image</h2>
 			
-
-                <div class="form-group">
+				<input type="hidden" name="oldpic" value="<?php echo $row['category_image']; ?>">
+				<div class="form-group">
 					<img src="categories_images/<?php echo $row['category_image']; ?>" width="120" height="120">
-					<a href="change-image.php?userid=<?php echo $row['ID']; ?>">Change Image</a>
 				</div>
 
 				<div class="form-group">
-					<input type="text" class="form-control" name="title" value="<?php echo $row['category_name']; ?>" required="true">
+					<input type="file" class="form-control" name="category_image" required="true">
+					<span style="color:red; font-size:12px;">Only jpg / jpeg/ png /gif format allowed.</span>
+				</div>
+
+
+
+				<div class="form-group">
+					<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
 				</div>
 			<?php
 			} ?>
-			<div class="form-group">
-				<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
-            </div>
-
 			<div class="text-center">Back To Home <a href="categories.php"><i class="fa fa-home"></i></a></div>
-
 		</form>
-
-	
-
-
 
 
 	</div>
