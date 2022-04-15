@@ -196,7 +196,7 @@ if (isset($_POST['submit'])) {
 					} ?>
 
 				</select>
-				<span style="color:red; font-size:12px;">*product id from products management and this number wants to be same</span>
+				<span style="color:red; font-size:12px;">*product id (products management) and this number wants to be same</span>
 			</div>
 
 	
