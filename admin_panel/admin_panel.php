@@ -128,7 +128,7 @@
                   </div>
                   <div class="col-md-6 col-lg-4 column">
                       <a href="./products_images/productsimages.php">
-                          <div class="card gr-5">
+                          <div class="card gr-6">
                               <div class="txt">
                                   <h1>Products Images</br>
                                       Management</h1>
@@ -221,7 +221,7 @@
                   </div>
                   <div class="col-md-6 col-lg-4 column">
                       <a href="./products_images/productsimages.php">
-                          <div class="card gr-5">
+                          <div class="card gr-6">
                               <div class="txt">
                                   <h1>Products Images</br>
                                       Management</h1>
