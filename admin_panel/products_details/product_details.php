@@ -42,7 +42,7 @@ if (isset($_GET['delid'])) {
         }
 
         .table-wrapper {
-            min-width: 1000px;
+            min-width: 1500px;
             background: #fff;
             padding: 20px;
             box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
@@ -260,12 +260,7 @@ if (isset($_GET['delid'])) {
             text-decoration: none;
         }
 
-        .table td,
-        .table th {
-            padding: 0.5rem;
-            vertical-align: top;
-            border-top: 1px solid #dee2e6;
-        }
+       
     </style>
 </head>
 
