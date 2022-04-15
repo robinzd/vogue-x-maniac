@@ -179,7 +179,7 @@ if (isset($_POST['submit'])) {
 
 							
 						?>       
-								<option><?php echo $rowimage['ID'];?></option>
+								<option value="1"><?php echo $rowimage['ID'];?></option>
 							
 						<?php
 
