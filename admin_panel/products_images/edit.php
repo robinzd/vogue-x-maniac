@@ -172,13 +172,13 @@ if (isset($_POST['submit'])) {
 
 						$get_products = mysqli_query($conn, "select * from products_details");
 						$cnt = 1;
-						$row = mysqli_num_rows($get_products);
-						if ($row > 0) {
-							while ($row = mysqli_fetch_array($get_products)) {
+						$rowimage = mysqli_num_rows($get_products);
+						if ($rowimage > 0) {
+							while ($rowimage = mysqli_fetch_array($get_products)) {
 
-								print_r($row);
+							
 						?>
-								<option selected><?php echo $row['ID']; ?></option>
+								<option selected><?php echo $rowimage['ID']; ?></option>
 						<?php
 
 
