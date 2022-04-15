@@ -227,6 +227,10 @@ table.table td i {
        color: black;
        text-decoration: none;
         }
+
+        th{
+            text-align: center;
+        }
 </style>
 </head>
 <body>
