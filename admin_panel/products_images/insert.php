@@ -172,7 +172,7 @@ if (isset($_POST['submit'])) {
 
 			<div class="form-group">
 				<label class="form-control" for="inputGroupSelect01" name="related"></label>
-				<select class="form-select" id="inputGroupSelect01" name="related">
+				<select class="form-control" id="inputGroupSelect01" name="related">
 					<?php
 
 					$get_products = mysqli_query($conn, "select * from products_details");
