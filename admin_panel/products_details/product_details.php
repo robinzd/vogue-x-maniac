@@ -280,8 +280,6 @@ table.table td i {
                         <th>Latest Product</th>
                         <th>Related Product</th>
                         <th>Actions</th>
-                        
-                        <th>Actions</th>                       
                     </tr>
                 </thead>
                 <tbody>
@@ -302,7 +300,12 @@ while ($row=mysqli_fetch_array($ret)) {
                         <td><?php  echo $row['product_strikeout_price'];?></td>   
                         <td><?php  echo $row['product_description'];?></td>   
                         <td><?php  echo $row['product_size'];?></td>   
-                        <td><?php  echo $row['product_features'];?></td>       
+                        <td><?php  echo $row['product_features'];?></td>
+                        <td><?php  echo $row['product_category'];?></td>
+                        <td><?php  echo $row['product_status'];?></td>
+                        <td><?php  echo $row['product_owlslider'];?></td>
+                        <td><?php  echo $row['related_product_owlslider'];?></td>
+
                         <td>
   <a href="read.php?viewid=<?php echo htmlentities ($row['ID']);?>" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                             <a href="edit.php?editid=<?php echo htmlentities ($row['ID']);?>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
