@@ -173,7 +173,7 @@ if (isset($_POST['submit'])) {
 			<h2>Insert Product Image</h2>
 			<div class="form-group">
 				<input type="file" class="form-control" name="details_image" required="true">
-				<span style="color:red; font-size:12px;">Only jpg / jpeg/ png /gif format allowed.</span>
+				<span style="color:red; font-size:10px;">Only jpg / jpeg/ png /gif format allowed.</span>
 			</div>
 
 			<div class="form-group">
@@ -196,7 +196,7 @@ if (isset($_POST['submit'])) {
 					} ?>
 
 				</select>
-				<span style="color:red; font-size:12px;">*The product id from products management and this number wants to be same</span>
+				<span style="color:red; font-size:10px;">*The product id from products management and this number wants to be same</span>
 			</div>
 
 	
