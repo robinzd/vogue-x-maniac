@@ -303,6 +303,7 @@ if (isset($_GET['delid'])) {
                     <thead>
                         <tr>
                             <th>ID</th>
+                            <th>Product ID</th>
                             <th>Brand Title</th>
                             <th>Product Title</th>
                             <th>Product Price</th>
@@ -329,6 +330,7 @@ if (isset($_GET['delid'])) {
                                 <!--Fetch the Records -->
                                 <tr>
                                     <td><?php echo $cnt; ?></td>
+                                    <td><?php echo $row['ID']; ?></td>
                                     <td><?php echo $row['product_brand']; ?></td>
                                     <td><?php echo $row['product_title']; ?></td>
                                     <td><?php echo $row['product_price']; ?></td>
