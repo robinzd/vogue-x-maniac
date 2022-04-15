@@ -163,7 +163,7 @@ if (isset($_POST['submit'])) {
 			color: red;
 			font-size: 10px;
 		}
-		
+
 	</style>
 </head>
 
@@ -196,9 +196,10 @@ if (isset($_POST['submit'])) {
 					} ?>
 
 				</select>
+				<span style="color:red; font-size:12px;">*The product id from products management and this number wants to be same</span>
 			</div>
 
-			<p>*The product id from products management and this number wants to be same</p>
+	
 
 			<div class="form-group">
 				<input type="text" class="form-control" name="primary" placeholder="Enter Your Primary Image No" required="true">
