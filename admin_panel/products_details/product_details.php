@@ -228,6 +228,10 @@ table.table td i {
        text-decoration: none;
         }
 
+        td{
+            padding:0.5rem;
+        }
+
        
 </style>
 </head>
