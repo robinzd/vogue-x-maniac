@@ -133,6 +133,12 @@ body {
 			color:black;
 		}
 
+
+		p{
+			font-size: 10px;
+			color: red;
+		}
+
 		
 </style>
 </head>
@@ -190,11 +196,13 @@ body {
         	<input type="text" class="form-control" name="owlslider" placeholder="Enter 1 to add the Latest Product 0 for delete"  required="true">
         </div>
 
-		<p>Enter 1 to add the product into the latest product for delete 0</p>
+		<p>*Enter 1 to add the product into the latest product for delete 0</p>
 
 		<div class="form-group">
         	<input type="text" class="form-control" name="related" placeholder="Enter 1 to add the Related Product 0 for delete"  required="true">
         </div>
+
+		<p>*Enter 1 to add the product into the related product for delete 0</p>
       
       
 		<div class="form-group">
