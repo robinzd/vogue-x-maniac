@@ -86,7 +86,7 @@ include("./conn.php");
                                 echo " 
                            
                                 <div class='text-center p-4'> 
-                                <img id='main-image' src='./admin_area/product_images/$details_image' width='250'> 
+                                <img id='main-image' src='./admin_panel/products_images/images/$details_image' width='250'> 
                                 </div> 
 
                                 ";
@@ -127,7 +127,7 @@ include("./conn.php");
 
 
                                         echo "
-                                 <img onclick='change_image(this)' id='thumbnail' src='./admin_area/product_images/$details_image' width='70'> 
+                                 <img onclick='change_image(this)' id='thumbnail' src='./admin_panel/products_images/images/$details_image' width='70'> 
                                
                            
 
