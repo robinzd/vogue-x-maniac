@@ -262,7 +262,7 @@ if (isset($_GET['delid'])) {
 
         .table td,
         .table th {
-            padding: 0.75rem;
+            padding: 0.5rem;
             vertical-align: top;
             border-top: 1px solid #dee2e6;
         }
