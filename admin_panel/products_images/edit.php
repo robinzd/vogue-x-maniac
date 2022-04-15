@@ -167,7 +167,24 @@ if (isset($_POST['submit'])) {
 			
 
 				<div class="form-group">
-					<input type="text" class="form-control" name="related" value="<?php echo $row['related_product']; ?>" required="true">
+					<select type="text" class="form-control" name="related" value="<?php echo $row['related_product']; ?>" required="true">
+						<?php
+
+						$get_products = mysqli_query($conn, "select * from products_details");
+						$cnt = 1;
+						$row = mysqli_num_rows($get_products);
+						if ($row > 0) {
+							while ($row = mysqli_fetch_array($get_products)) {
+						?>
+								<option selected><?php echo $row['ID']; ?></option>
+						<?php
+
+
+								$cnt = $cnt + 1;
+							}
+						} ?>
+					</select>
+
 				</div>
 
 				<div class="form-group">
