@@ -217,12 +217,12 @@ include("./conn.php");
                                         $x = 0;
 
                                         while ($x < $size_of_array)
-                                         echo $x < $size_of_array;
+                                       
                                          {
                                             echo "<ul>
                                         <li>$array_result[$x]</li>
                                        </ul>";
-                                            $x++;
+                                       $x++;
                                         }
                                     }
                                 }
