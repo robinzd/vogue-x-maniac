@@ -10,7 +10,7 @@ $ppicpath="images"."/".$pic;
 $sql=mysqli_query($conn,"delete from products_images where ID=$rid");
 unlink($ppicpath);
 echo "<script>alert('product image deleted');</script>"; 
-echo "<script>window.location.href = 'categories.php'</script>";     
+echo "<script>window.location.href = 'productsimages.php'</script>";     
 } 
 
 ?>
