@@ -190,7 +190,7 @@ body {
         	<input type="text" class="form-control" name="owlslider" placeholder="Enter 1 to add the Latest Product 0 for delete"  required="true">
         </div>
 
-		<h6>Enter 1 to add the product into the latest product for delete 0</h6>
+		<p>Enter 1 to add the product into the latest product for delete 0</p>
 
 		<div class="form-group">
         	<input type="text" class="form-control" name="related" placeholder="Enter 1 to add the Related Product 0 for delete"  required="true">
