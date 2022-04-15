@@ -168,7 +168,7 @@ if (isset($_POST['submit'])) {
 
 				<div class="form-group">
 					<select class="form-control" name="related">
-					<selected><?php echo $row['related_product'];?></selected>
+					<option selected><?php echo $row['related_product'];?></option>
 						<?php
 
 						$get_products = mysqli_query($conn, "select * from products_details");
@@ -179,7 +179,7 @@ if (isset($_POST['submit'])) {
 
 							
 						?>       
-								<option value=$cnt><?php echo $rowimage['ID'];?></option>
+								<option value='$cnt'><?php echo $rowimage['ID'];?></option>
 							
 						<?php
 
