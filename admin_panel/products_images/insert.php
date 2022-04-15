@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-	<title>Add Category</title>
+	<title>Add Product Image</title>
 	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -164,7 +164,7 @@ if (isset($_POST['submit'])) {
 <body>
 	<div class="signup-form">
 		<form method="POST" enctype="multipart/form-data">
-			<h2>Insert Category</h2>
+			<h2>Insert Product Image</h2>
 			<div class="form-group">
 				<input type="file" class="form-control" name="details_image" required="true">
 				<span style="color:red; font-size:12px;">Only jpg / jpeg/ png /gif format allowed.</span>
