@@ -314,7 +314,7 @@ include("./conn.php");
 
             <?php
 
-            $get_product_slider = "select * from products_details related_product_owlslider=1";
+            $get_product_slider = "select * from products_details where related_product_owlslider=1";
 
             $run_product_image = mysqli_query($conn, $get_product_slider);
 
