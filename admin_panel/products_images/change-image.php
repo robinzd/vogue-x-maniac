@@ -4,11 +4,11 @@ include('dbconnection.php');
 if (isset($_POST['submit'])) {
 	$uid = $_GET['userid'];
 	//getting the post values
-	$categoryimage = $_FILES["category_image"]["name"];
+	$productimage = $_FILES["details_image"]["name"];
 	$oldppic = $_POST['oldpic'];
-	$oldprofilepic = "categories_images" . "/" . $oldppic;
+	$oldprofilepic = "images" . "/" . $oldppic;
 	// get the image extension
-	$extension = substr($categoryimage, strlen($categoryimage) - 4, strlen($categoryimage));
+	$extension = substr($productimage , strlen($productimage) - 4, strlen($productimage));
 	// allowed extensions
 	$allowed_extensions = array(".jpg", "jpeg", ".png", ".gif");
 	// Validation for allowed extensions .in_array() function searches an array for a specific value.
@@ -18,14 +18,14 @@ if (isset($_POST['submit'])) {
 		//rename the image file
 		$imgnewfile = md5($imgfile) . time() . $extension;
 		// Code for move image into directory
-		move_uploaded_file($_FILES["category_image"]["tmp_name"], "categories_images/" . $imgnewfile);
+		move_uploaded_file($_FILES["details_image"]["tmp_name"], "images/" . $imgnewfile);
 		// Query for data insertion
-		$query = mysqli_query($conn, "update product_category set category_image='$imgnewfile' where id='$uid' ");
+		$query = mysqli_query($conn, "update products_images set details_image='$imgnewfile' where id='$uid' ");
 		if ($query) {
 			//Old pic
 			unlink($oldprofilepic);
-			echo "<script>alert('category Image updated successfully');</script>";
-			echo "<script type='text/javascript'> document.location ='categories.php'; </script>";
+			echo "<script>alert('product image updated successfully');</script>";
+			echo "<script type='text/javascript'> document.location ='productsimages.php'; </script>";
 		} else {
 			echo "<script>alert('Something Went Wrong. Please try again');</script>";
 		}
@@ -39,7 +39,7 @@ if (isset($_POST['submit'])) {
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-	<title>Change Category Image</title>
+	<title>Change Product Image</title>
 	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -174,18 +174,18 @@ if (isset($_POST['submit'])) {
 		<form method="POST" enctype="multipart/form-data">
 			<?php
 			$eid = $_GET['userid'];
-			$ret = mysqli_query($conn, "select * from product_category where ID='$eid'");
+			$ret = mysqli_query($conn, "select * from products_images where ID='$eid'");
 			while ($row = mysqli_fetch_array($ret)) {
 			?>
-				<h2>Update Category Image</h2>
+				<h2>Update Product Image</h2>
 			
-				<input type="hidden" name="oldpic" value="<?php echo $row['category_image']; ?>">
+				<input type="hidden" name="oldpic" value="<?php echo $row['details_image']; ?>">
 				<div class="form-group">
-					<img src="categories_images/<?php echo $row['category_image']; ?>" width="120" height="120">
+					<img src="images/<?php echo $row['details_image']; ?>" width="120" height="120">
 				</div>
 
 				<div class="form-group">
-					<input type="file" class="form-control" name="category_image" required="true">
+					<input type="file" class="form-control" name="details_image" required="true">
 					<span style="color:red; font-size:12px;">Only jpg / jpeg/ png /gif format allowed.</span>
 				</div>
 
@@ -196,7 +196,7 @@ if (isset($_POST['submit'])) {
 				</div>
 			<?php
 			} ?>
-			<div class="text-center">Back To Home <a href="categories.php"><i class="fa fa-home"></i></a></div>
+			<div class="text-center">Back To Home <a href="productsimages.php"><i class="fa fa-home"></i></a></div>
 		</form>
 
 

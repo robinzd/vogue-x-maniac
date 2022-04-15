@@ -7,7 +7,7 @@ include('dbconnection.php');
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Read Category</title>
+    <title>Read Products Images</title>
     <link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -249,11 +249,11 @@ include('dbconnection.php');
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-5">
-                            <h2>Category Details</h2>
+                            <h2>Products Images Details</h2>
                         </div>
                         <?php
                         $vid = $_GET['viewid'];
-                        $ret = mysqli_query($conn, "select * from product_category where ID =$vid");
+                        $ret = mysqli_query($conn, "select * from products_images where ID =$vid");
                         $cnt = 1;
                         while ($row = mysqli_fetch_array($ret)) {
 
@@ -268,30 +268,31 @@ include('dbconnection.php');
                 <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="hidden-table-info">
 
                     <tbody>
-
-
-                      
-
                         <tr>
-                            <th width="200">Category Image</th>
-                            <td><img src="categories_images/<?php echo $row['category_image']; ?>" width="80" height="80"></td>
+                            <th width="200">Product Image</th>
+                            <td><img src="images/<?php echo $row['details_image']; ?>" width="80" height="80"></td>
                         </tr>
 
                         <tr>
-                            <th>Category Title</th>
-                            <td><?php echo $row['category_name']; ?></td>
+                            <th>Related Product</th>
+                            <td><?php echo $row['related_product']; ?></td>
+                        </tr>
+
+                        <tr>
+                            <th>Primary Image</th>
+                            <td><?php echo $row['primary_image']; ?></td>
                         </tr>
 
                         <?php
                             $cnt = $cnt + 1;
-                        } ?>
+                        }?>
                         
                     </tbody>
                 </table>
 
             </div>
         </div>
-        <div class="text-center">Back To Home <a href="categories.php"><i class="fa fa-home"></i></a></div>
+        <div class="text-center">Back To Home <a href="productsimages.php"><i class="fa fa-home"></i></a></div>
     </div>
 
     <footer class="bg-light text-center text-lg-start">
