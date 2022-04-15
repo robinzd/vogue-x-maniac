@@ -101,10 +101,10 @@
                       </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                      <a href="./latest_product_slider/products.php">
+                      <a href="./categories/categories.php">
                           <div class="card gr-4">
                               <div class="txt">
-                                  <h1>Latest Product </br>
+                                  <h1>Categories</br>
                                       Management</h1>
                               </div>
                               <div class="ico-card">
@@ -114,10 +114,10 @@
                       </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                      <a href="./related_product_slider/related_products.php">
+                      <a href="./products_details/product_details.php">
                           <div class="card gr-5">
                               <div class="txt">
-                                  <h1>Related Product </br>
+                                  <h1>Products</br>
                                       Management</h1>
                               </div>
                               <div class="ico-card">
@@ -126,45 +126,7 @@
                           </div>
                       </a>
                   </div>
-                  <div class="col-md-6 col-lg-4 column">
-                      <a href="./shop_product/shopproducts.php">
-                          <div class="card gr-6">
-                              <div class="txt">
-                                  <h1>Shop Product </br>
-                                      Management</h1>
-                              </div>
-                              <div class="ico-card">
-                                  <i class="fa fa-gear"></i>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="col-md-6 col-lg-4 column">
-                      <a href="./categories/categories.php">
-                          <div class="card gr-7">
-                              <div class="txt">
-                                  <h1>categories</br>
-                                      Management</h1>
-                              </div>
-                              <div class="ico-card">
-                                  <i class="fa fa-wrench"></i>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="col-md-6 col-lg-4 column">
-                      <a href="./products_details/product_details.php">
-                          <div class="card gr-8">
-                              <div class="txt">
-                                  <h1>Product Details</br>
-                                      Management</h1>
-                              </div>
-                              <div class="ico-card">
-                                  <i class="fa fa-gears"></i>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
+                 
 
 
               </div>
@@ -218,10 +180,10 @@
                       </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                      <a href="./latest_product_slider/products.php">
+                      <a href="./categories/categories.php">
                           <div class="card gr-4">
                               <div class="txt">
-                                  <h1>Latest Product </br>
+                                  <h1>Categories</br>
                                       Management</h1>
                               </div>
                               <div class="ico-card">
@@ -231,10 +193,10 @@
                       </a>
                   </div>
                   <div class="col-md-6 col-lg-4 column">
-                      <a href="./related_product_slider/related_products.php">
+                      <a href="./products_details/product_details.php">
                           <div class="card gr-5">
                               <div class="txt">
-                                  <h1>Related Product </br>
+                                  <h1>Products</br>
                                       Management</h1>
                               </div>
                               <div class="ico-card">
@@ -243,45 +205,7 @@
                           </div>
                       </a>
                   </div>
-                  <div class="col-md-6 col-lg-4 column">
-                      <a href="./shop_product/shopproducts.php">
-                          <div class="card gr-6">
-                              <div class="txt">
-                                  <h1>Shop Product </br>
-                                      Management</h1>
-                              </div>
-                              <div class="ico-card">
-                                  <i class="fa fa-gear"></i>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="col-md-6 col-lg-4 column">
-                      <a href="./categories/categories.php">
-                          <div class="card gr-7">
-                              <div class="txt">
-                                  <h1>Categories</br>
-                                      Management</h1>
-                              </div>
-                              <div class="ico-card">
-                                  <i class="fa fa-wrench"></i>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
-                  <div class="col-md-6 col-lg-4 column">
-                      <a href="./products_details/product_details.php">
-                          <div class="card gr-8">
-                              <div class="txt">
-                                  <h1>Product Details</br>
-                                      Management</h1>
-                              </div>
-                              <div class="ico-card">
-                                  <i class="fa fa-gears"></i>
-                              </div>
-                          </div>
-                      </a>
-                  </div>
+               
                   <footer class="bg-light text-center text-lg-start">
                       <!-- Copyright -->
                       <div class="text-center p-3" style="background-color:ghostwhite;">
