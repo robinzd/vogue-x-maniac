@@ -171,7 +171,7 @@ if (isset($_POST['submit'])) {
 			</div>
 
 			<div class="form-group">
-				<label class="form-control" for="inputGroupSelect01" name="related"></label>
+				<!-- <label class="form-control" for="inputGroupSelect01" name="related"></label> -->
 				<select class="form-control" id="inputGroupSelect01" name="related">
 					<?php
 
