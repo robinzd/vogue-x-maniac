@@ -155,6 +155,8 @@ if (isset($_POST['submit'])) {
 			$eid = $_GET['editid'];
 			$ret = mysqli_query($conn, "select * from products_images where ID='$eid'");
 			while ($row = mysqli_fetch_array($ret)) {
+
+				print_r($row);
 			?>
 				<h2>Edit Products Image</h2>
 
