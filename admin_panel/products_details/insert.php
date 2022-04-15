@@ -11,9 +11,13 @@ if(isset($_POST['submit']))
 	$productdescription=$_POST['description'];
 	$productsize=$_POST['size'];
 	$productfeatures=$_POST['features'];
+	$productcategory=$_POST['category'];
+	$productstatus=$_POST['status'];
+	$productowlslider=$_POST['owlslider'];
+	$relatedproduct=$_POST['related'];
 
 // Query for data insertion
-$query=mysqli_query($conn, "insert into products_details(brand_title,product_title,product_price,strikeout_price,product_description,product_size,product_features) value ('$brandtitle',' $producttitle','$productprice','$strikeoutprice','$productdescription','$productsize','$productfeatures')");
+$query=mysqli_query($conn, "insert into products_details(product_brand,product_title,product_price,product_strikeout_price,product_description,product_size,product_features,product_category,product_status,product_owlslider,related_product_owlslider) value ('$brandtitle',' $producttitle','$productprice','$strikeoutprice','$productdescription','$productsize','$productfeatures','$productcategory','$productstatus','$productowlslider','$relatedproduct')");
 if ($query) {
 echo "<script>alert('You have successfully inserted the product details');</script>";
 echo "<script type='text/javascript'> document.location ='product_details.php'; </script>";
@@ -172,6 +176,22 @@ body {
 		
 		<div class="form-group">
         	<input type="text" class="form-control" name="features" placeholder="Enter Your Product Features"  required="true">
+        </div>
+
+		<div class="form-group">
+        	<input type="text" class="form-control" name="category" placeholder="Enter Your Product Category"  required="true">
+        </div>
+
+		<div class="form-group">
+        	<input type="text" class="form-control" name="status" placeholder="Enter Your Product Status"  required="true">
+        </div>
+
+		<div class="form-group">
+        	<input type="text" class="form-control" name="owlslider" placeholder="Enter 1 to add the product into the Latest Product 0 for delete"  required="true">
+        </div>
+
+		<div class="form-group">
+        	<input type="text" class="form-control" name="related" placeholder="Enter 1 to add the product into the Related Product 0 for delete"  required="true">
         </div>
       
       

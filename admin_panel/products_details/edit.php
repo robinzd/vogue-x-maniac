@@ -11,11 +11,15 @@ if (isset($_POST['submit'])) {
 	$productdescription = $_POST['description'];
 	$productsize = $_POST['size'];
 	$productfeatures = $_POST['features'];
+	$productcategory=$_POST['category'];
+	$productstatus=$_POST['status'];
+	$productowlslider=$_POST['owlslider'];
+	$relatedproduct=$_POST['related'];
 
 
 
 	//Query for data updation
-	$query = mysqli_query($conn, "update products_details set brand_title='$brandtitle',product_title='$producttitle',product_price='$productprice',strikeout_price='$strikeoutprice',product_description='$productdescription',product_size='$productsize',product_features='$productfeatures' where ID='$eid'");
+	$query = mysqli_query($conn, "update products_details set product_brand='$brandtitle',product_title='$producttitle',product_price='$productprice',product_strikeout_price='$strikeoutprice',product_description='$productdescription',product_size='$productsize',product_features='$productfeatures',product_category='$productcategory',product_status='$productstatus',product_owlslider='$productowlslider',related_product_owlslider='$relatedproduct' where ID='$eid'");
 
 	if ($query) {
 		echo "<script>alert('You have successfully update the product details');</script>";
@@ -167,7 +171,7 @@ if (isset($_POST['submit'])) {
 				<h2>Edit Product Details</h2>
 
 				<div class="form-group">
-					<input type="text" class="form-control" name="brandtitle" value="<?php echo $row['brand_title']; ?>" required="true">
+					<input type="text" class="form-control" name="brandtitle" value="<?php echo $row['product_brand']; ?>" required="true">
 				</div>
 
 				<div class="form-group">
@@ -179,7 +183,7 @@ if (isset($_POST['submit'])) {
 				</div>
 
 				<div class="form-group">
-					<input type="text" class="form-control" name="strikeout" value="<?php echo $row['strikeout_price']; ?>" required="true">
+					<input type="text" class="form-control" name="strikeout" value="<?php echo $row['product_strikeout_price']; ?>" required="true">
 				</div>
 
 				<div class="form-group">
@@ -192,6 +196,22 @@ if (isset($_POST['submit'])) {
 
 					<div class="form-group">
 						<input type="text" class="form-control" name="features" value="<?php echo $row['product_features']; ?>" required="true">
+					</div>
+
+					<div class="form-group">
+						<input type="text" class="form-control" name="category" value="<?php echo $row['product_category']; ?>" required="true">
+					</div>
+
+					<div class="form-group">
+						<input type="text" class="form-control" name="status" value="<?php echo $row['product_status']; ?>" required="true">
+					</div>
+
+					<div class="form-group">
+						<input type="text" class="form-control" name="owlslider" value="<?php echo $row['product_owlslider']; ?>" required="true">
+					</div>
+
+					<div class="form-group">
+						<input type="text" class="form-control" name="related" value="<?php echo $row['related_product_owlslider']; ?>" required="true">
 					</div>
 
 				<?php

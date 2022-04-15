@@ -272,7 +272,7 @@ include('dbconnection.php');
 
                         <tr>
                             <th>Brand Title</th>
-                            <td><?php echo $row['brand_title']; ?></td>
+                            <td><?php echo $row['product_brand']; ?></td>
                         </tr>
 
 
@@ -288,7 +288,7 @@ include('dbconnection.php');
 
                         <tr>
                             <th>Strikeout Price</th>
-                            <td><?php echo $row['strikeout_price']; ?></td>
+                            <td><?php echo $row['product_strikeout_price']; ?></td>
                         </tr>
 
                         <tr>
@@ -304,6 +304,26 @@ include('dbconnection.php');
                         <tr>
                             <th>Product Features</th>
                             <td><?php echo $row['product_features']; ?></td>
+                        </tr>
+
+                        <tr>
+                            <th>Product Category</th>
+                            <td><?php echo $row['product_category']; ?></td>
+                        </tr>
+
+                        <tr>
+                            <th>Product Status</th>
+                            <td><?php echo $row['product_status']; ?></td>
+                        </tr>
+
+                        <tr>
+                            <th>Latest Product</th>
+                            <td><?php echo $row['product_owlslider']; ?></td>
+                        </tr>
+
+                        <tr>
+                            <th>Related Product</th>
+                            <td><?php echo $row['related_product_owlslider']; ?></td>
                         </tr>
 
 
