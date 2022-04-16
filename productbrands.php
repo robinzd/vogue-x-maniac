@@ -66,14 +66,14 @@ include("./conn.php");
 
 
 
-    while ($row_product_brand = mysqli_fetch_array($run_product_brand)) {
+    while ($row = mysqli_fetch_array($run_product_brand)) {
 
-      print_r($row_product_brand);
+        print_r($row_product_brand);
 
-        $product_id =$row_product_brand ['ID'];
-        $product_title =$row_product_brand ['product_title'];
-        $product_strikeout_price =$row_product_brand ['product_strikeout_price'];
-        $product_price =$row_product_brand ['product_price'];
+        $product_id = $row['ID'];
+        $product_title = $row['product_title'];
+        $product_strikeout_price = $row['product_strikeout_price'];
+        $product_price = $row['product_price'];
 
 
         $get_brand_image = "select details_image from products_images where primary_image=1 and related_product=$product_id";
