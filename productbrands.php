@@ -2,6 +2,8 @@
 
 include("./conn.php");
 
+include("./db_conn.php");
+
 ?>
 
 
