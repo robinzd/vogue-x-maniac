@@ -67,13 +67,16 @@ include("./conn.php");
 
     echo $get_product_brand;
 
-    $run_product_brand = mysqli_query($conn, $get_product_brand);
+    echo "<br>";
+
+    $run_product_brand = mysqli_query($conn,$get_product_brand);
 
 
 
     while ($row = mysqli_fetch_array($run_product_brand)) {
 
       
+        print_r($row);
 
         $product_id = $row['ID'];
         $product_title = $row['product_title'];
