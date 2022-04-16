@@ -70,11 +70,11 @@ include("./conn.php");
 
             echo "<br>";
 
-            $run_product_brand = mysqli_query($conn, $get_product_brand);
+            $run_product_brand = mysqli_query($conn,$get_product_brand);
 
 
 
-            while ($row = mysqli_fetch_array($run_product_brand)) {
+            while ($row = mysqli_fetch_array($run_product_brand)){
 
                 print_r($row);
 
