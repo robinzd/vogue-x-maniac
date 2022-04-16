@@ -56,6 +56,8 @@ include("./conn.php");
 
     $brand_title = $get_array['brand_name'];
 
+    print_r($brand_title);
+
 
     $get_product_brand = "select * from products_details where product_brand=$brand_title";
 
@@ -68,7 +70,7 @@ include("./conn.php");
 
     while ($row = mysqli_fetch_array($run_product_brand)) {
 
-        print_r($row);
+      
 
         $product_id = $row['ID'];
         $product_title = $row['product_title'];
