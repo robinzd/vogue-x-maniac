@@ -67,6 +67,9 @@ include("./conn.php");
 
 
     while ($row_product_brand = mysqli_fetch_array($run_product_brand)) {
+
+      print_r($row_product_brand);
+
         $product_id =$row_product_brand ['ID'];
         $product_title =$row_product_brand ['product_title'];
         $product_strikeout_price =$row_product_brand ['product_strikeout_price'];
