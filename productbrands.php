@@ -46,60 +46,60 @@ include("./conn.php");
     <!--back to top ends -->
 
     <div class="col-sm-8 col-md-9">
-    <div class="row">
-        <?php
+        <div class="row">
+            <?php
 
-        $_SERVER['SCRIPT_NAME'];
+            $_SERVER['SCRIPT_NAME'];
 
-        $get_string = $_SERVER['QUERY_STRING'];
+            $get_string = $_SERVER['QUERY_STRING'];
 
-        parse_str($get_string, $get_array);
+            parse_str($get_string, $get_array);
 
-        $brand_title = $get_array['brand_name'];
+            $brand_title = $get_array['brand_name'];
 
-        print_r($brand_title);
-
-
-        echo "<br>";
+            print_r($brand_title);
 
 
-        $get_product_brand = "select * from products_details where product_brand=$brand_title";
+            echo "<br>";
 
 
-        echo $get_product_brand;
-
-        echo "<br>";
-
-        $run_product_brand = mysqli_query($conn, $get_product_brand);
+            $get_product_brand = "select * from products_details where product_brand=$brand_title";
 
 
+            echo $get_product_brand;
 
-        while ($row = mysqli_fetch_array($run_product_brand)) {
+            echo "<br>";
 
-            print_r($row);
-
-            $product_id = $row['ID'];
-            $product_title = $row['product_title'];
-            $product_strikeout_price = $row['product_strikeout_price'];
-            $product_price = $row['product_price'];
-
-
-            $get_brand_image = "select details_image from products_images where primary_image=1 and related_product=$product_id";
-
-            $run_brand_image = mysqli_query($conn, $get_brand_image);
-
-            $details_image = null;
-
-            while ($row_brand_image = mysqli_fetch_array($run_brand_image)) {
+            $run_product_brand = mysqli_query($conn, $get_product_brand);
 
 
 
+            while ($row = mysqli_fetch_array($run_product_brand)) {
 
-                $details_image = $row_brand_image['details_image'];
-            }
+                print_r($row);
+
+                $product_id = $row['ID'];
+                $product_title = $row['product_title'];
+                $product_strikeout_price = $row['product_strikeout_price'];
+                $product_price = $row['product_price'];
 
 
-            echo "<div class='col-sm-6 col-md-4'>
+                $get_brand_image = "select details_image from products_images where primary_image=1 and related_product=$product_id";
+
+                $run_brand_image = mysqli_query($conn, $get_brand_image);
+
+                $details_image = null;
+
+                while ($row_brand_image = mysqli_fetch_array($run_brand_image)) {
+
+
+
+
+                    $details_image = $row_brand_image['details_image'];
+                }
+
+
+                echo "<div class='col-sm-6 col-md-4'>
             <div class='card bg-white'>
 <img class='card-img-top' src='./admin_panel/products_images/images/$details_image' alt='' style='width:100%'>
 <div class='card-body'>
@@ -120,13 +120,13 @@ include("./conn.php");
 
 
 ";
-        }
+            }
 
 
 
 
-        ?>
-    </div>
+            ?>
+        </div>
     </div>
 
     <!-- Footer -->
