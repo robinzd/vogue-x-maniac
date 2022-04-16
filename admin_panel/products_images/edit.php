@@ -179,16 +179,19 @@ if (isset($_POST['submit'])) {
 
 								if (!($row['related_product'] == $rowimage['ID'])) {
 									
-								}
+								
 						?>
 
 								<option><?php echo $rowimage['ID']; ?></option>
 
+							
+
 						<?php
 								
-
+                           
 
 								$cnt = $cnt + 1;
+								}
 							}
 						} ?>
 					</select>
