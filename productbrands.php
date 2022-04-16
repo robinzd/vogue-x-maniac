@@ -63,25 +63,25 @@ include("./conn.php");
             echo "<br>";
 
 
-            $get_product_brand = "select * from products_details where product_brand=$brand_title";
+            $get_product_brand ="select ID,product_title,product_price,product_strikeout_price from products_details where product_brand=$brand_title";
 
 
             echo $get_product_brand;
 
-             echo "<br>";
+            echo "<br>";
 
-            // $run_product_brand = mysqli_query($conn,$get_product_brand);
+            $run_product_brand = mysqli_query($conn,$get_product_brand);
 
 
 
-            // while ($row = mysqli_fetch_array($run_product_brand)){
+            while ($row = mysqli_fetch_array($run_product_brand)){
 
-            //     print_r($row);
+                print_r($row);
 
-            //     $product_id = $row['ID'];
-            //     $product_title = $row['product_title'];
-            //     $product_strikeout_price = $row['product_strikeout_price'];
-            //     $product_price = $row['product_price'];
+                $product_id = $row['ID'];
+                $product_title = $row['product_title'];
+                $product_strikeout_price = $row['product_strikeout_price'];
+                $product_price = $row['product_price'];
 
 
                 $get_brand_image = "select details_image from products_images where primary_image=1 and related_product=$product_id";
@@ -124,7 +124,7 @@ include("./conn.php");
 ";      
 
 
-            //}
+            }
 
 
 
