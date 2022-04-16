@@ -155,7 +155,7 @@ if (isset($_POST['submit'])) {
 			$eid = $_GET['editid'];
 			$ret = mysqli_query($conn, "select * from products_images where ID='$eid'");
 			while ($row = mysqli_fetch_array($ret)) {
-			?>
+            ?>
 				<h2>Edit Products Image</h2>
 
 
@@ -167,11 +167,11 @@ if (isset($_POST['submit'])) {
 
 
 				<div class="form-group">
-					<select class="form-control" name="related" id=sortfilter>
+					<select class="form-control" name="related">
 						<option selected><?php echo $row['related_product']; ?></option>
 						<?php
 
-						$get_products = mysqli_query($conn, "select * from products_details");
+						$get_products = mysqli_query($conn, "select * from products_details ");
 						$cnt = 1;
 						$rowimage = mysqli_num_rows($get_products);
 						if ($rowimage > 0) {
