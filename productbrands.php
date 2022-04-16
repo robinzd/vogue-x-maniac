@@ -46,6 +46,7 @@ include("./conn.php");
     <!--back to top ends -->
 
     <div class="col-sm-8 col-md-9">
+    <div class="row">
         <?php
 
         $_SERVER['SCRIPT_NAME'];
@@ -125,6 +126,7 @@ include("./conn.php");
 
 
         ?>
+    </div>
     </div>
 
     <!-- Footer -->
