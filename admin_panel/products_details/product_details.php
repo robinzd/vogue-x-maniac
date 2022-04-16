@@ -5,7 +5,7 @@ include('dbconnection.php');
 if (isset($_GET['delid'])) {
     $rid = intval($_GET['delid']);
     $sql = mysqli_query($conn, "delete from products_details where ID=$rid");
-    echo "<script>alert('Brand deleted');</script>";
+    echo "<script>alert('Product Details deleted');</script>";
     echo "<script>window.location.href = 'product_details.php'</script>";
 }
 
