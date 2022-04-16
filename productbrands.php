@@ -62,7 +62,7 @@ include("./conn.php");
 
             echo "<br>";
 
-        $get_product="select ID,product_title,product_price,product_strikeout_price from products_details where product_brand=$brand_title";
+        $get_product="select * from products_details where product_brand=$brand_title";
 
 
             echo $get_product;
