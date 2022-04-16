@@ -179,15 +179,16 @@ if (isset($_POST['submit'])) {
 						?>
 
 								<option><?php echo $rowimage['ID'];?></option>
-
+                        
 						<?php
+						
 
 
 								$cnt = $cnt + 1;
 							}
 						} ?>
 					</select>
-
+					<span style="color:red; font-size:12px;">*product id (products management) and this number wants to be same</span>
 				</div>
 
 				<div class="form-group">
