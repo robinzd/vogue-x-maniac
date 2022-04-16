@@ -176,14 +176,16 @@ if (isset($_POST['submit'])) {
 						$rowimage = mysqli_num_rows($get_products);
 						if ($rowimage > 0) {
 							while ($rowimage = mysqli_fetch_array($get_products)) {
+
+								if (!($row['related_product'] == $rowimage['ID'])) {
+									
+								}
 						?>
 
 								<option><?php echo $rowimage['ID']; ?></option>
 
 						<?php
-								if ($row['related_product'] == $rowimage['ID']) {
-									echo '<option> false </option>';
-								}
+								
 
 
 								$cnt = $cnt + 1;
