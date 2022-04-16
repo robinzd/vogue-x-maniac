@@ -96,7 +96,7 @@ include("./conn.php");
 
 
                     $details_image = $row_brand_image['details_image'];
-                }
+                
 
 
                 echo "<div class='col-sm-6 col-md-4'>
@@ -119,7 +119,9 @@ include("./conn.php");
 
 
 
-";
+";      
+                }
+
             }
 
 
