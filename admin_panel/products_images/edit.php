@@ -178,7 +178,7 @@ if (isset($_POST['submit'])) {
 							while ($rowimage = mysqli_fetch_array($get_products)) {
 						?>
 
-								<option value="2"><?php echo $rowimage['ID']; ?></option>
+								<option value="1"><?php echo $rowimage['ID']; ?></option>
 
 						<?php
 
