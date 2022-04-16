@@ -59,6 +59,9 @@ include("./conn.php");
     print_r($brand_title);
 
 
+    echo "<br>";
+
+
     $get_product_brand = "select * from products_details where product_brand=$brand_title";
 
 
