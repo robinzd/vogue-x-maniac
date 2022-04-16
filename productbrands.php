@@ -73,7 +73,7 @@ include("./conn.php");
 
 
 
-    while ($row = mysqli_fetch_array($run_product_brand)) {
+    while ($row = mysqli_fetch_array($run_product_brand)){
 
       
         print_r($row);
