@@ -59,6 +59,9 @@ include("./conn.php");
 
     $get_product_brand = "select * from products_details where product_brand=$brand_title";
 
+
+    echo $get_product_brand;
+
     $run_product_brand = mysqli_query($conn, $get_product_brand);
 
 
