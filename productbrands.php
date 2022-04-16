@@ -47,7 +47,7 @@ include("./conn.php");
 
     <div class="col-sm-8 col-md-9">
         <div class="row">
-            <?php
+            <!-- <?php
 
             $_SERVER['SCRIPT_NAME'];
 
@@ -70,11 +70,11 @@ include("./conn.php");
 
             echo "<br>";
 
-            $run_product_brand = mysqli_query($conn, $get_product_brand);
+            $run_product_brand = mysqli_query($conn,$get_product_brand);
 
 
 
-            while ($row = mysqli_fetch_array($run_product_brand)) {
+            while ($row = mysqli_fetch_array($run_product_brand)){
 
                 print_r($row);
 
@@ -98,8 +98,10 @@ include("./conn.php");
                     $details_image = $row_brand_image['details_image'];
 
 
+                }
 
-                    echo "<div class='col-sm-6 col-md-4'>
+
+                echo "<div class='col-sm-6 col-md-4'>
             <div class='card bg-white'>
 <img class='card-img-top' src='./admin_panel/products_images/images/$details_image' alt='' style='width:100%'>
 <div class='card-body'>
@@ -119,14 +121,15 @@ include("./conn.php");
 
 
 
-";
-                }
+";      
+
+
             }
 
 
 
 
-            ?>
+            ?> -->
         </div>
     </div>
 
