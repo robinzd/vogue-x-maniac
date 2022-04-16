@@ -63,18 +63,18 @@ include("./conn.php");
 
             echo "<br>";
 
-        $get_product="select * from products_details where product_brand=$brand_title";
+            $get_product = "select * from products_details where product_brand=$brand_title";
 
 
             echo $get_product;
 
             echo "<br>";
 
-            $run_product = mysqli_query($conn,$get_product);
+            $run_product = mysqli_query($conn, $get_product);
 
 
 
-            while ($row = mysqli_fetch_array($run_product)){
+            while ($row = mysqli_fetch_array($run_product)) {
 
                 print_r($row);
 
@@ -96,8 +96,6 @@ include("./conn.php");
 
 
                     $details_image = $row_brand_image['details_image'];
-
-
                 }
 
 
@@ -121,9 +119,7 @@ include("./conn.php");
 
 
 
-";      
-
-
+";
             }
 
 
