@@ -178,11 +178,7 @@ if (isset($_POST['submit'])) {
 							while ($rowimage = mysqli_fetch_array($get_products)) {
 						?>
 
-								<option value="1"><?php
-													$input = array($row['related_product'],$rowimage['ID']);
-													$result = array_unique($input);
-													print_r($result);
-													echo $result; ?></option>
+								<option value="1"><?php echo $rowimage['ID']; ?></option>
 
 						<?php
 
