@@ -62,19 +62,18 @@ include("./conn.php");
 
             echo "<br>";
 
+        $get_product="select ID,product_title,product_price,product_strikeout_price from products_details where product_brand=$brand_title";
 
-            $get_product_brand ="select ID,product_title,product_price,product_strikeout_price from products_details where product_brand=$brand_title";
 
-
-            echo $get_product_brand;
+            echo $get_product;
 
             echo "<br>";
 
-            $run_product_brand = mysqli_query($conn,$get_product_brand);
+            $run_product = mysqli_query($conn,$get_product);
 
 
 
-            while ($row = mysqli_fetch_array($run_product_brand)){
+            while ($row = mysqli_fetch_array($run_product)){
 
                 print_r($row);
 
