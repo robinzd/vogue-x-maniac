@@ -20,25 +20,8 @@ if (isset($_POST['submit'])) {
 		// Code for move image into directory
 		move_uploaded_file($_FILES["details_image"]["tmp_name"], "images/" . $imgnewfile);
 		// Query for data insertion
-		$get_product = "select ID from products_details";
-
-		$run_product= mysqli_query($conn, $get_product);
-
-		while ($row_product = mysqli_fetch_array($run_product)) {
-            
-			$product_id=$row_product['ID'];
-                 
-		}
-
 		$query = mysqli_query($conn, "insert into products_images(details_image,related_product,primary_image) value ('$imgnewfile','$relatedproduct','$primaryimage')");
-		
-		while ($row = mysqli_fetch_array($query)) {
-            
-			$id=$row_product['related_product'];
-                 
-		}
-
-		if ($product_id == $id) {
+		if ($query) {
 			echo "<script>alert('You have successfully inserted the product image');</script>";
 			echo "<script type='text/javascript'> document.location ='productsimages.php'; </script>";
 		} else {
@@ -55,7 +38,7 @@ if (isset($_POST['submit'])) {
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
 	<title>Add Product Image</title>
-	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png" />
+	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
