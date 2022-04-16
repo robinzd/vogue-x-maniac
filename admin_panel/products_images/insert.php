@@ -20,8 +20,12 @@ if (isset($_POST['submit'])) {
 		// Code for move image into directory
 		move_uploaded_file($_FILES["details_image"]["tmp_name"], "images/" . $imgnewfile);
 		// Query for data insertion
+		$get_product_slider = "select ID from products_details";
+
+		$run_product_image = mysqli_query($conn, $get_product_slider);
+
 		$query = mysqli_query($conn, "insert into products_images(details_image,related_product,primary_image) value ('$imgnewfile','$relatedproduct','$primaryimage')");
-		if ($query) {
+		if ($query == $run_product_image) {
 			echo "<script>alert('You have successfully inserted the product image');</script>";
 			echo "<script type='text/javascript'> document.location ='productsimages.php'; </script>";
 		} else {
