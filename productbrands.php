@@ -66,7 +66,7 @@ include("./conn.php");
 
             while ($row = mysqli_fetch_array($run_product)) {
 
-               
+
 
                 $product_id = $row['ID'];
                 $product_title = $row['product_title'];
