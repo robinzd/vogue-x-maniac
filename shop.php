@@ -27,9 +27,6 @@ include("./conn.php");
     <link rel="stylesheet" type="text/css" href="shop.css">
     <!-- jquery -->
     <script src="./js/jquery-1.10.2.min.js"></script>
-    <!-- bundle.js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
     <title>Shop</title>
 </head>
 
@@ -147,29 +144,25 @@ include("./conn.php");
 
 
                     while ($row_product = mysqli_fetch_array($run_product_image)) {
-                        $product_id=$row_product['ID'];
+                        $product_id = $row_product['ID'];
                         $product_title = $row_product['product_title'];
                         $product_strikeout_price = $row_product['product_strikeout_price'];
                         $product_price = $row_product['product_price'];
 
 
-                    $get_products_image ="select details_image from products_images where primary_image=1 and related_product=$product_id";
+                        $get_products_image = "select details_image from products_images where primary_image=1 and related_product=$product_id";
 
-                    $run_products_image = mysqli_query($conn,$get_products_image);
+                        $run_products_image = mysqli_query($conn, $get_products_image);
 
-                    $details_image=null; 
+                        $details_image = null;
 
-                    while ($row_products_image = mysqli_fetch_array( $run_products_image )){
-
-                    
-                      
-
-                        $details_image=$row_products_image['details_image'];
+                        while ($row_products_image = mysqli_fetch_array($run_products_image)) {
 
 
-                      
 
-                    }
+
+                            $details_image = $row_products_image['details_image'];
+                        }
 
 
                         echo "<div class='col-sm-6 col-md-4'>
@@ -193,9 +186,6 @@ include("./conn.php");
 
 
 ";
-
-                 
-
                     }
 
 
@@ -369,7 +359,11 @@ include("./conn.php");
             </script>
 
 
-
+            <!-- j query -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- owl carousel -->
+            <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 </body>
 
