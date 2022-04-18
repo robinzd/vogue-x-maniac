@@ -46,7 +46,7 @@ include("./conn.php");
 
     <!--back to top ends -->
 
-    <div class="col-sm-8 col-md-9">
+    <div class="col-sm-8 col-md-9 col-xl-12">
         <div class="row">
             <?php
 
