@@ -12,7 +12,7 @@ if (isset($_POST['submit'])) {
 
 	$primaryimage = $_POST['primary'];
 
-	
+
 	//Query for data updation
 	$query = mysqli_query($conn, "update  products_images set related_product='$relatedproducts',primary_image='$primaryimage' where ID='$eid'");
 
@@ -168,14 +168,14 @@ if (isset($_POST['submit'])) {
 
 				<div class="form-group">
 					<img src="images/<?php echo $row['details_image']; ?>" width="120" height="120">
-					<a href="change-image.php?userid=<?php echo  $row['ID']."  |  ".$row['product_title']; ?>">Change Image</a>
+					<a href="change-image.php?userid=<?php echo  $row['ID']; ?>">Change Image</a>
 				</div>
 
 
 
 				<div class="form-group">
 					<select class="form-control" name="related">
-						<option selected><?php echo $row['related_product']; ?></option>
+						<option selected><?php echo  $row['ID']."  |  ".$row['product_title']; ?></option>
 						<?php
 
 						$get_products = mysqli_query($conn, "select * from products_details");
@@ -184,12 +184,12 @@ if (isset($_POST['submit'])) {
 						if ($rowimage > 0) {
 							while ($rowimage = mysqli_fetch_array($get_products)) {
 
-								if (!($row['related_product'] == $rowimage['ID'])) {
+								if (!($row['related_product'] == $rowimage['ID'] == $row['product_title'])) {
 
 
 						?>
 
-									<option><?php echo $rowimage['ID']; ?></option>
+									<option><?php echo  $row['ID']."  |  ".$row['product_title']; ?></option>
 
 
 
