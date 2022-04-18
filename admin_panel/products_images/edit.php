@@ -171,19 +171,20 @@ if (isset($_POST['submit'])) {
 					<a href="change-image.php?userid=<?php echo  $row['ID']; ?>">Change Image</a>
 				</div>
 
-				<?php
 
-				$get_products = mysqli_query($conn, "select * from products_details");
-
-				$cnt = 1;
-				
-				$rowimage = mysqli_num_rows($get_products);
-
-				?>
 
 				<div class="form-group">
-					<select class="form-control" name="related">
+					<?php
 
+						$get_products = mysqli_query($conn, "select * from products_details");
+
+						$cnt = 1;
+
+						$rowimage = mysqli_num_rows($get_products);
+
+						?>
+						
+                        <select class="form-control" name="related">
 						<option selected><?php echo  $rowimage['ID'] . "  |  " . $rowimage['product_title']; ?></option>;
 
 						<?php
