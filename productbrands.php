@@ -60,8 +60,6 @@ include("./conn.php");
 
             $get_product = "select * from products_details where product_brand='$brand_title'";
 
-            echo $get_product;
-
             $run_product = mysqli_query($conn, $get_product);
 
 
