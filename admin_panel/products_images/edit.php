@@ -179,16 +179,22 @@ if (isset($_POST['submit'])) {
 						<?php
 
 						$get_products = mysqli_query($conn, "select * from products_details");
+
+						
 						$cnt = 1;
 						$rowimage = mysqli_num_rows($get_products);
+						
 						if ($rowimage > 0) {
+							
+							
 							while ($rowimage = mysqli_fetch_array($get_products)) {
 
 								if (!($row['related_product'] == $rowimage['ID'])) {
 
 
 						?>
-                                    <option selected><?php echo  $rowimage['ID']."  |  ".$rowimage['product_title']; ?></option>
+                                   <option selected><?php echo  $rowimage['ID']."  |  ".$rowimage['product_title']; ?></option>
+
 									<option><?php echo  $rowimage['ID']."  |  ".$rowimage['product_title']; ?></option>
 
 
