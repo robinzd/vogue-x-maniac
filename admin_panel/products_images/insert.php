@@ -193,7 +193,7 @@ if (isset($_POST['submit'])) {
 					if ($row > 0) {
 						while ($row = mysqli_fetch_array($get_products)){
 					?>
-							<option selected><?php echo $row['ID']."|  ".$row['product_title']; ?></option>
+							<option selected><?php echo $row['ID']."  |  ".$row['product_title']; ?></option>
 					<?php
 
 
