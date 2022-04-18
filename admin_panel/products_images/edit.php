@@ -5,9 +5,14 @@ if (isset($_POST['submit'])) {
 	$eid = $_GET['editid'];
 	//Getting Post Values
 	$relatedproduct = $_POST['related'];
+
+	$arrayresult=explode('|',$relatedproduct);
+
+	$relatedproducts= $_POST['related'];
+
 	$primaryimage = $_POST['primary'];
 	//Query for data updation
-	$query = mysqli_query($conn, "update  products_images set related_product='$relatedproduct',primary_image='$primaryimage' where ID='$eid'");
+	$query = mysqli_query($conn, "update  products_images set related_product='$relatedproducts',primary_image='$primaryimage' where ID='$eid'");
 
 	if ($query) {
 		echo "<script>alert('You have successfully update the products images');</script>";
@@ -161,7 +166,7 @@ if (isset($_POST['submit'])) {
 
 				<div class="form-group">
 					<img src="images/<?php echo $row['details_image']; ?>" width="120" height="120">
-					<a href="change-image.php?userid=<?php echo $row['ID']; ?>">Change Image</a>
+					<a href="change-image.php?userid=<?php echo  $row['ID']."  |  ".$row['product_title']; ?>">Change Image</a>
 				</div>
 
 
