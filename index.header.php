@@ -75,8 +75,7 @@ include("./conn.php");
 				<div class="collapse navbar-collapse" id="ftco-nav">
 					<ul class="navbar-nav m-auto">
 						<li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+					
 							
 								<?php
 
@@ -97,9 +96,12 @@ include("./conn.php");
 
 
 
-									echo "<div class='dropdown-menu' aria-labelledby='dropdown04'>
+									echo "<li class='nav-item dropdown'>
+									<a class='nav-link dropdown-toggle' href='#' id='dropdown04' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'>Categories</a>
+									<div class='dropdown-menu' aria-labelledby='dropdown04'>
 									<a class='dropdown-item' href='productcategory.php?category_name=$categoryname'>$productcategory</a>
                                     </div>
+									</li>
 
 
 
@@ -118,7 +120,7 @@ include("./conn.php");
 							
 								
 							
-						</li>
+					
 						<li class="nav-item"><a href="shop.php" class="nav-link">Shop</a></li>
 						<li class="nav-item"><a href="aboutus.php" class="nav-link">About Us</a></li>
 						<li class="nav-item"><a href="contactus.php" class="nav-link">Contact Us</a></li>
