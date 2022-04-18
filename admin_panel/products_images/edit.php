@@ -175,6 +175,9 @@ if (isset($_POST['submit'])) {
 
 				$get_products = mysqli_query($conn, "select * from products_details");
 
+				$cnt = 1;
+				
+				$rowimage = mysqli_num_rows($get_products);
 
 				?>
 
@@ -184,8 +187,6 @@ if (isset($_POST['submit'])) {
 						<option selected><?php echo  $rowimage['ID'] . "  |  " . $rowimage['product_title']; ?></option>;
 
 						<?php
-						$cnt = 1;
-						$rowimage = mysqli_num_rows($get_products);
 
 						if ($rowimage > 0) {
 
