@@ -4,7 +4,13 @@ include('dbconnection.php');
 if (isset($_POST['submit'])) {
 	//getting the post values
 	$productimage = $_FILES["details_image"]["name"];
+    
 	$relatedproduct = $_POST['related'];
+
+	$arrayresult=explode('|',$$relatedproduct);
+
+	$relatedproducts= $_POST['related'];
+
 	$primaryimage = $_POST['primary'];
 
 	// get the image extension
@@ -20,7 +26,7 @@ if (isset($_POST['submit'])) {
 		// Code for move image into directory
 		move_uploaded_file($_FILES["details_image"]["tmp_name"], "images/" . $imgnewfile);
 		// Query for data insertion
-		$query = mysqli_query($conn, "insert into products_images(details_image,related_product,primary_image) value ('$imgnewfile','$relatedproduct','$primaryimage')");
+		$query = mysqli_query($conn, "insert into products_images(details_image,related_product,primary_image) value ('$imgnewfile','$relatedproducts','$primaryimage')");
 		if ($query) {
 			echo "<script>alert('You have successfully inserted the product image');</script>";
 			echo "<script type='text/javascript'> document.location ='productsimages.php'; </script>";
