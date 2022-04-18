@@ -191,23 +191,13 @@ if (isset($_POST['submit'])) {
 
 								if (!($row['related_product'] == $rowimage['ID'])) {
 
-									echo "<option selected>" . $rowimage['ID'] . "  |  " . $rowimage['product_title']."</option>";
+								echo "<option>". $rowimage['ID'] . "  |  " . $rowimage['product_title']."</option>";
+                            }
+							else{
+								
+								echo "<option selected>" . $rowimage['ID'] . "  |  " . $rowimage['product_title']."</option>";
 
-
-
-						?>
-
-									
-									<option><?php echo  $rowimage['ID'] . "  |  " . $rowimage['product_title']; ?></option>
-
-
-
-						<?php
-
-
-
-									$cnt = $cnt + 1;
-								}
+							}
 							}
 						} ?>
 					</select>
