@@ -258,7 +258,7 @@ table.table td i {
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-5">
-                        <h2>categories Management</h2>
+                        <h2>Categories Management</h2>
                     </div>
 
                     <div class="col-sm-7" align="right">
