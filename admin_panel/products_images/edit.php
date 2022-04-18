@@ -11,6 +11,8 @@ if (isset($_POST['submit'])) {
 	$relatedproducts= $_POST['related'];
 
 	$primaryimage = $_POST['primary'];
+
+	
 	//Query for data updation
 	$query = mysqli_query($conn, "update  products_images set related_product='$relatedproducts',primary_image='$primaryimage' where ID='$eid'");
 
