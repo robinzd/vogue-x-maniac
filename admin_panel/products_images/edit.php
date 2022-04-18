@@ -184,7 +184,7 @@ if (isset($_POST['submit'])) {
 						if ($rowimage > 0) {
 							while ($rowimage = mysqli_fetch_array($get_products)) {
 
-								if (!($row['related_product'] == $rowimage['ID'] == $row['product_title'])) {
+								if (!($row['related_product'] == $rowimage['ID'])) {
 
 
 						?>
