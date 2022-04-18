@@ -6,9 +6,9 @@ if (isset($_POST['submit'])) {
 	//Getting Post Values
 	$relatedproduct = $_POST['related'];
 
-	$arrayresult=explode('|',$relatedproduct);
+	$arrayresult = explode('|', $relatedproduct);
 
-	$relatedproducts= $_POST['related'];
+	$relatedproducts = $_POST['related'];
 
 	$primaryimage = $_POST['primary'];
 
@@ -171,31 +171,34 @@ if (isset($_POST['submit'])) {
 					<a href="change-image.php?userid=<?php echo  $row['ID']; ?>">Change Image</a>
 				</div>
 
+				<?php
 
+				$get_products = mysqli_query($conn, "select * from products_details");
+
+
+				?>
 
 				<div class="form-group">
 					<select class="form-control" name="related">
-						
+
+						<option selected><?php echo  $rowimage['ID'] . "  |  " . $rowimage['product_title']; ?></option>;
+
 						<?php
-
-						$get_products = mysqli_query($conn, "select * from products_details");
-
-						
 						$cnt = 1;
 						$rowimage = mysqli_num_rows($get_products);
-						
+
 						if ($rowimage > 0) {
-							
-							
+
+
 							while ($rowimage = mysqli_fetch_array($get_products)) {
 
-								if (!($row['related_product'] === $rowimage['ID'] === $rowimage['product_title'])) {
+								if (!($row['related_product'] == $rowimage['ID'])) {
 
 
 						?>
-                                   <option selected><?php echo  $rowimage['ID']."  |  ".$rowimage['product_title']; ?></option>
 
-									<option><?php echo  $rowimage['ID']."  |  ".$rowimage['product_title']; ?></option>
+
+									<option><?php echo  $rowimage['ID'] . "  |  " . $rowimage['product_title']; ?></option>
 
 
 
