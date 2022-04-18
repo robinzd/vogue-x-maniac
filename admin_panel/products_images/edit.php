@@ -184,12 +184,12 @@ if (isset($_POST['submit'])) {
 						if ($rowimage > 0) {
 							while ($rowimage = mysqli_fetch_array($get_products)) {
 
-								if (!($row['related_product'] == $rowimage['ID'])) {
+								if (!($row['related_product'] == $rowimage['ID'] == $rowimage['product_title'])) {
 
 
 						?>
 
-									<option><?php echo  $row['ID']."  |  ".$row['product_title']; ?></option>
+									<option><?php echo  $row['ID']."  |  ".$rowimage['product_title']; ?></option>
 
 
 
