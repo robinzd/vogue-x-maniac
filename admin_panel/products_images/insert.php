@@ -7,7 +7,7 @@ if (isset($_POST['submit'])) {
     
 	$relatedproduct = $_POST['related'];
 
-	$arrayresult=explode('|',$$relatedproduct);
+	$arrayresult=explode('|',$relatedproduct);
 
 	$relatedproducts= $_POST['related'];
 
