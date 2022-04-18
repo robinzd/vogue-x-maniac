@@ -174,20 +174,15 @@ if (isset($_POST['submit'])) {
 
 
 				<div class="form-group">
-					<?php
+					<select class="form-control" name="related">
+
+						<?php
 
 						$get_products = mysqli_query($conn, "select * from products_details");
 
 						$cnt = 1;
 
 						$rowimage = mysqli_num_rows($get_products);
-
-						?>
-						
-                        <select class="form-control" name="related">
-						<option selected><?php echo  $rowimage['ID'] . "  |  " . $rowimage['product_title']; ?></option>;
-
-						<?php
 
 						if ($rowimage > 0) {
 
@@ -199,6 +194,7 @@ if (isset($_POST['submit'])) {
 
 						?>
 
+									<option selected><?php echo  $rowimage['ID'] . "  |  " . $rowimage['product_title']; ?></option>;
 
 									<option><?php echo  $rowimage['ID'] . "  |  " . $rowimage['product_title']; ?></option>
 
