@@ -190,10 +190,9 @@ if (isset($_POST['submit'])) {
 							while ($rowimage = mysqli_fetch_array($get_products)) {
 
 								if (!($row['related_product'] == $rowimage['ID'])) {
-
 									echo "<option>" . $rowimage['ID'] . "  |  " . $rowimage['product_title'] . "</option>";
 								} else {
-									echo "<option>" . $rowimage['ID'] . "  |  " . $rowimage['product_title'] . "</option>";
+
 									echo "<option selected>" . $rowimage['ID'] . "  |  " . $rowimage['product_title'] . "</option>";
 								}
 							}
