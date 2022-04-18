@@ -72,7 +72,7 @@
 								<?php
 
 
-								$get_product_category = "select category_name from products_details";
+								$get_product_category = "select category_name from product_category";
 
 								$run_product_category = mysqli_query($conn, $get_product_category);
 
