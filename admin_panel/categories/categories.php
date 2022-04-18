@@ -273,6 +273,8 @@ table.table td i {
                         <th>ID</th>
                         <th>category Image</th>
                         <th>Category Title</th>
+                        <th>Actions</th>
+
                     </tr>
                 </thead>
                 <tbody>

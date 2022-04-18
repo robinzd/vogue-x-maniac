@@ -378,7 +378,7 @@ include("./conn.php");
                     $details_image = $row_products_image['details_image'];
                 }
 
-                echo " <div class='card bg-white'>
+                echo "<div class='card bg-white'>
                     <img class='card-img-top' src='./admin_panel/products_images/images/$details_image' alt='' style='width:100%'>
                     <div class='card-body'>
                         <h5 class='card-title text-center'>$product_title</h5>
