@@ -241,7 +241,7 @@ include("./conn.php");
 
 
                 echo "<div class='gallery__column'>
-                        <a href='#' target='_blank' class='gallery__link'>
+                        <a href='productcategory.php?category_name=$category_name' target='_blank' class='gallery__link'>
                         <figure class='gallery__thumb'>
 <img src='./admin_panel/categories/categories_images/$category_image' alt='' class='gallery__image'>
 <figcaption class='gallery__caption'>$category_name</figcaption>
