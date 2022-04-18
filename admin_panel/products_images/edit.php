@@ -196,9 +196,7 @@ if (isset($_POST['submit'])) {
 
 									<option selected><?php echo  $rowimage['ID'] . "  |  " . $rowimage['product_title']; ?></option>;
 
-									<option><?php echo  $rowimage['ID'] . "  |  " . $rowimage['product_title']; ?></option>
-
-
+									
 
 						<?php
 
