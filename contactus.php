@@ -69,8 +69,8 @@
                      </div>
                      <div class="form-group">
                         <label>Message:</label>
-                        <div class="input-group mb-2 mb-sm-0">
-                           <textarea type="text" class="form-control" name="message" id="inlineFormInputGroupUsername" placeholder="message" data-validate="Message is required"></textarea>
+                        <div class="input-group mb-2 mb-sm-0" data-validate="Message is required">
+                           <textarea type="text" class="form-control" name="message" id="inlineFormInputGroupUsername" placeholder="message" ></textarea>
                         </div>
                      </div>
                      <div class="d-grid gap-2">
