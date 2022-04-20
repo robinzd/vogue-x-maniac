@@ -388,11 +388,13 @@ include("./conn.php");
 
                 $get_string = $_SERVER['QUERY_STRING'];
 
+                echo  $get_string;
+
                 parse_str($get_string, $get_array);
 
                 $product_category = $get_array['category_name'];
 
-                echo $product_category;
+              
 
 
                 if ($product_category) { ?>
