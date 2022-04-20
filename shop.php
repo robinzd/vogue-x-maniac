@@ -390,11 +390,13 @@ include("./conn.php");
 
                 $replace_string=str_replace("%20"," ","$get_string");
 
-                echo "console.log('".$replace_string."');";
+                // echo "console.log('".$replace_string."');";
 
-                parse_str($get_string, $get_array);
+                parse_str($replace_string, $get_array);
 
                 $product_category = $get_array['category_name'];
+
+              
 
               
 
