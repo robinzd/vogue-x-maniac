@@ -12,7 +12,7 @@ include("./conn.php");
 include("./conn.php");
 include("./function.php");
 
- $user_data 
+ $user_data = check_login($conn);
 
  print_r ($user_data);
 
