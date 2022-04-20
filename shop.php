@@ -392,6 +392,8 @@ include("./conn.php");
 
                 $product_category = $get_array['category_name'];
 
+                echo $product_category;
+
 
                 if ($product_category) { ?>
 
