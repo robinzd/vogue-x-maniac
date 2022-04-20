@@ -16,6 +16,10 @@ include("./function.php");
 
  print_r ($user_data);
 
+ $userid=$user_data['user_id'];
+
+ echo $userid;
+
 ?>
 
 
