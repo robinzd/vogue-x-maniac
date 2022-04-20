@@ -356,6 +356,31 @@ include("./conn.php");
                     });
 
                 });
+                <?php
+
+                $_SERVER['SCRIPT_NAME'];
+
+                $get_string = $_SERVER['QUERY_STRING'];
+
+                parse_str($get_string, $get_array);
+
+                $brand_title = $get_array['brand_name'];
+
+
+                if ($_SERVER["$brand_title"] == "") { ?>
+
+
+                    $(document).ready(function() {
+                        $("input[class=brand]").click();
+                    });
+
+
+                <?php
+                } else {
+
+                    echo $_SERVER["$brand_title"];
+                }
+                ?>
             </script>
 
 
