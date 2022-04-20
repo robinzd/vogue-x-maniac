@@ -236,7 +236,9 @@ include("./conn.php");
             while ($row_category_picture = mysqli_fetch_array($run_gallery_image)) {
 
                 $category_image = $row_category_picture['category_image'];
-                $category_name = $row_category_picture['category_name'];
+
+                $category_name =str_replace(" ","-", $row_category_picture['category_name']);
+
 
 
 
