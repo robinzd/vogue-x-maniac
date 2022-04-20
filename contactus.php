@@ -62,13 +62,13 @@
                   <div class="form-group">
                      <label>Subject</label>
                      <div class="input-group mb-2 mb-sm-0">
-                        <input type="text" name="data[subject]" class="form-control" id="inlineFormInputGroupUsername" placeholder="Subject">
+                        <textarea type="text" name="data[subject]" class="form-control" id="inlineFormInputGroupUsername" placeholder="Subject"></textarea>
                      </div>
                   </div>
                   <div class="form-group">
                      <label>Message</label>
                      <div class="input-group mb-2 mb-sm-0">
-                        <input type="text" class="form-control" name="mesg" id="inlineFormInputGroupUsername"  placeholder="message">
+                        <textarea type="text" class="form-control" name="mesg" id="inlineFormInputGroupUsername"  placeholder="message"></textarea>
                      </div>
                   </div>
 				  <div class="d-grid gap-2">
