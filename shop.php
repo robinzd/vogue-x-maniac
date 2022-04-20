@@ -72,7 +72,7 @@ include("./conn.php");
                             foreach ($result as $row) {
                             ?>
                                 <div class="form-check">
-                                    <label><input type="checkbox" class="form-check-input brand" id="brands" value="<?php echo $row['product_brand']; ?>"> <?php echo $row['product_brand']; ?></label>
+                                    <label><input type="checkbox" class="form-check-input brand" id="brand-<?php echo $row['product_brand']; ?>" value="<?php echo $row['product_brand']; ?>"> <?php echo $row['product_brand']; ?></label>
                                 </div>
                             <?php
                             }
@@ -371,7 +371,7 @@ include("./conn.php");
 
 
                     $(document).ready(function() {
-                        $("input[brands=submit]").click();
+                        $("input[id=brand-<?php echo $brand_title;?>").click();
                     });
 
 
