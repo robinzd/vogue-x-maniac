@@ -52,25 +52,25 @@
                      <div class="form-group">
                         <label> Your name:</label>
                         <div class="input-group">
-                           <input type="text" name="name" class="form-control" id="inlineFormInputGroupUsername" placeholder="Your name" data-validate="first name is required">
+                           <input type="text" name="name" class="form-control" id="inlineFormInputGroupUsername" placeholder="Your name">
                         </div>
                      </div>
                      <div class="form-group">
                         <label>Your email:</label>
                         <div class="input-group mb-2 mb-sm-0">
-                           <input type="email" name="email" class="form-control" id="inlineFormInputGroupUsername" placeholder="Email" data-validate="Valid email is required: ex@abc.xyz">
+                           <input type="email" name="email" class="form-control" id="inlineFormInputGroupUsername" placeholder="Email">
                         </div>
                      </div>
                      <div class="form-group">
                         <label>Subject:</label>
                         <div class="input-group mb-2 mb-sm-0">
-                           <textarea type="text" name="subject" class="form-control" id="inlineFormInputGroupUsername" placeholder="Subject" data-validate="Subject is required"></textarea>
+                           <textarea type="text" name="subject" class="form-control" id="inlineFormInputGroupUsername" placeholder="Subject"></textarea>
                         </div>
                      </div>
                      <div class="form-group">
                         <label>Message:</label>
                         <div class="input-group mb-2 mb-sm-0">
-                           <textarea type="text" class="form-control" name="message" id="inlineFormInputGroupUsername" placeholder="message" require="true" ></textarea>
+                           <textarea type="text" class="form-control" name="message" id="inlineFormInputGroupUsername" placeholder="message"></textarea>
                         </div>
                      </div>
                      <div class="d-grid gap-2">
