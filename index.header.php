@@ -92,12 +92,14 @@ include("./conn.php");
 
 									$categoryname = $row_product_category['category_name'];
 
+									$category_replace =str_replace(" ","-", $row_product_category['category_name']);
 
 
 
 
 
-									echo "<a class='dropdown-item' href='shop.php?category_name=$categoryname'>$categoryname</a>
+
+									echo "<a class='dropdown-item' href='shop.php?category_name=$category_replace'>$categoryname</a>
 
 
 
