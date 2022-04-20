@@ -99,7 +99,7 @@ include("./conn.php");
                         foreach ($result as $row) {
                         ?>
                             <div class="form-check">
-                                <label><input type="checkbox"  id=category-<?php echo $row['product_category'];?> value="<?php echo $row['product_category']; ?>"> <?php echo $row['product_category']; ?></label>
+                                <label><input type="checkbox" class="form-check-input category" id=category-<?php echo $row['product_category'];?> value="<?php echo $row['product_category']; ?>"> <?php echo $row['product_category']; ?></label>
                             </div>
                         <?php
                         }
