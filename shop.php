@@ -97,9 +97,10 @@ include("./conn.php");
                         $statement->execute();
                         $result = $statement->fetchAll();
                         foreach ($result as $row) {
+                            $repalce_category=str_replace(" ","-",$row['product_category']);
                         ?>
                             <div class="form-check">
-                                <label><input type="checkbox" class="form-check-input category" id="category-<?php echo $row['product_category'];?>" value="<?php echo $row['product_category']; ?>"> <?php echo $row['product_category']; ?></label>
+                                <label><input type="checkbox" class="form-check-input category" id="category-<?php echo  $repalce_category;?>" value="<?php echo  $repalce_category; ?>"> <?php echo  $repalce_category; ?></label>
                             </div>
                         <?php
                         }
@@ -395,7 +396,7 @@ include("./conn.php");
                 $product_category = $get_array['category_name'];
 
 
-                $replace_string=str_replace("%20"," ","$product_category");
+                $replace_string=str_replace("%20","-","$product_category");
 
               
 
