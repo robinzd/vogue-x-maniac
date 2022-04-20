@@ -26,6 +26,7 @@ switch($_GET["action"]) {
 			$pid=$_GET["productid"];
 			$result=mysqli_query($conn,"SELECT * FROM products_details WHERE ID='$pid'");
 	          while($productByCode=mysqli_fetch_array($result)){
+                  print_r($productByCode);
 			$itemArray = array($productByCode["code"]=>array('name'=>$productByCode["name"], 'code'=>$productByCode["code"], 'quantity'=>$_POST["quantity"], 'price'=>$productByCode["price"], 'image'=>$productByCode["image"]));
 			print_r($itemArray);
             if(!empty($_SESSION["cart_item"])) {
