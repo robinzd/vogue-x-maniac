@@ -189,7 +189,7 @@ include("./conn.php");
 
                 echo " <div class='card' style='background-color: $brand_color ;'>
              <div class='img'>
-                 <a href='productbrands.php?brand_name=$brand_name'><img src='./admin_panel/brands/brands_images/$image_source' alt=''></a>
+                 <a href='shop.php?brand_name=$brand_name'><img src='./admin_panel/brands/brands_images/$image_source' alt=''></a>
              </div>
             <div class='content'>
                 <div class='title'>
