@@ -97,7 +97,7 @@ include("./conn.php");
 
 
 
-									echo "<a class='dropdown-item' href='productcategory.php?category_name=$categoryname'>$categoryname</a>
+									echo "<a class='dropdown-item' href='shop.php?category_name=$categoryname'>$categoryname</a>
 
 
 
