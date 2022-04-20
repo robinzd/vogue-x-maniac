@@ -388,31 +388,32 @@ include("./conn.php");
 
                 $get_string = $_SERVER['QUERY_STRING'];
 
-                $replace_string=str_replace("%20"," ","$get_string");
+               // echo "console.log('".$replace_string."');";
 
-                // echo "console.log('".$replace_string."');";
-
-                parse_str($replace_string, $get_array);
+                parse_str($get_string , $get_array);
 
                 $product_category = $get_array['category_name'];
 
-              
+
+                $replace_string=str_replace("%20"," ","$product_category");
 
               
 
+              
 
-                if ($product_category) { ?>
+
+                if ($replace_string) { ?>
 
 
                     $(document).ready(function() {
-                        $("input[id=category-<?php echo $product_category; ?>").click();
+                        $("input[id=category-<?php echo $replace_string; ?>").click();
                     });
 
 
                 <?php
                 } else {
 
-                    echo $product_category;
+                    echo $replace_string;
                 }
 
             ?>
