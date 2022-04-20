@@ -99,7 +99,7 @@ include("./conn.php");
                         foreach ($result as $row) {
                         ?>
                             <div class="form-check">
-                                <label><input type="checkbox" class="form-check-input category" value="<?php echo $row['product_category']; ?>"> <?php echo $row['product_category']; ?></label>
+                                <label><input type="checkbox"  id=category-<?php echo $row['product_category'];?> value="<?php echo $row['product_category']; ?>"> <?php echo $row['product_category']; ?></label>
                             </div>
                         <?php
                         }
@@ -371,7 +371,7 @@ include("./conn.php");
 
 
                     $(document).ready(function() {
-                        $("input[id=brand-<?php echo $brand_title;?>").click();
+                        $("input[id=brand-<?php echo $brand_title; ?>").click();
                     });
 
 
@@ -381,6 +381,33 @@ include("./conn.php");
                     echo $brand_title;
                 }
                 ?>
+
+                <?php
+
+                $_SERVER['SCRIPT_NAME'];
+
+                $get_string = $_SERVER['QUERY_STRING'];
+
+                parse_str($get_string, $get_array);
+
+                $product_category = $get_array['category_name'];
+
+
+                if ($product_category) { ?>
+
+
+                    $(document).ready(function() {
+                        $("input[id=category-<?php echo $product_category; ?>").click();
+                    });
+
+
+                <?php
+                } else {
+
+                    echo $product_category;
+                }
+
+            ?>
             </script>
 
 
