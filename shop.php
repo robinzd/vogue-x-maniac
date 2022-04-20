@@ -100,7 +100,7 @@ include("./conn.php");
                             $repalce_category=str_replace(" ","-",$row['product_category']);
                         ?>
                             <div class="form-check">
-                                <label><input type="checkbox" class="form-check-input category" id="category-<?php echo  $repalce_category;?>" value="<?php echo  $repalce_category; ?>"> <?php echo  $repalce_category; ?></label>
+                                <label><input type="checkbox" class="form-check-input category" id="category-<?php echo  $repalce_category;?>" value="<?php echo $row['product_category']; ?>"> <?php echo $row['product_category']; ?></label>
                             </div>
                         <?php
                         }
