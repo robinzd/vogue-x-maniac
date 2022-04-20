@@ -48,36 +48,36 @@
                   </div>
                </div>
                <div class="card-body p-3">
-
-                  <div class="form-group">
-                     <label> Your name:</label>
-                     <div class="input-group">
-                        <input type="text" name="name" class="form-control" id="inlineFormInputGroupUsername" placeholder="Your name"  data-validate="first name is required">
+                  <form method="post">
+                     <div class="form-group">
+                        <label> Your name:</label>
+                        <div class="input-group">
+                           <input type="text" name="name" class="form-control" id="inlineFormInputGroupUsername" placeholder="Your name" data-validate="first name is required">
+                        </div>
                      </div>
-                  </div>
-                  <div class="form-group">
-                     <label>Your email:</label>
-                     <div class="input-group mb-2 mb-sm-0">
-                        <input type="email" name="email" class="form-control" id="inlineFormInputGroupUsername" placeholder="Email" data-validate="Valid email is required: ex@abc.xyz">
+                     <div class="form-group">
+                        <label>Your email:</label>
+                        <div class="input-group mb-2 mb-sm-0">
+                           <input type="email" name="email" class="form-control" id="inlineFormInputGroupUsername" placeholder="Email" data-validate="Valid email is required: ex@abc.xyz">
+                        </div>
                      </div>
-                  </div>
-                  <div class="form-group">
-                     <label>Subject:</label>
-                     <div class="input-group mb-2 mb-sm-0">
-                        <textarea type="text" name="subject" class="form-control" id="inlineFormInputGroupUsername" placeholder="Subject"  data-validate="Subject is required"></textarea>
+                     <div class="form-group">
+                        <label>Subject:</label>
+                        <div class="input-group mb-2 mb-sm-0">
+                           <textarea type="text" name="subject" class="form-control" id="inlineFormInputGroupUsername" placeholder="Subject" data-validate="Subject is required"></textarea>
+                        </div>
                      </div>
-                  </div>
-                  <div class="form-group">
-                     <label>Message:</label>
-                     <div class="input-group mb-2 mb-sm-0">
-                        <textarea type="text" class="form-control" name="message" id="inlineFormInputGroupUsername" placeholder="message"  data-validate="Message is required"></textarea>
+                     <div class="form-group">
+                        <label>Message:</label>
+                        <div class="input-group mb-2 mb-sm-0">
+                           <textarea type="text" class="form-control" name="message" id="inlineFormInputGroupUsername" placeholder="message" data-validate="Message is required"></textarea>
+                        </div>
                      </div>
-                  </div>
-                  <div class="d-grid gap-2">
-                     <button type="submit" name="submit" value="submit" class="btn btn-success rounded-0 py-2 my-2" type="button">Submit</button>
-                  </div>
+                     <div class="d-grid gap-2">
+                        <button type="submit" name="submit" value="submit" class="btn btn-success rounded-0 py-2 my-2" type="button">Submit</button>
+                     </div>
+                  </form>
                </div>
-
             </div>
          </div>
          <!--Grid column-->
