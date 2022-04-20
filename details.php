@@ -22,8 +22,11 @@ if(!empty($_GET["action"])) {
 switch($_GET["action"]) {
 	//code for adding product in cart
 	case "add":
-		if(!empty($_POST["quantity"])) {
-			$pid=$_GET["productid"];
+		if(!empty($_POST["quantity"])){
+            
+			$pid=$_GET["ID"];
+
+            print_r($pid);
 			$result=mysqli_query($conn,"SELECT * FROM products_details WHERE ID='$pid'");
 	          while($productByCode=mysqli_fetch_array($result)){
                   print_r($productByCode);
@@ -296,7 +299,7 @@ switch($_GET["action"]) {
 
                                 <form method="Post">
 
-                                    <input type="hidden" id="custId" name="productid" value="<? echo $product_id;?>">
+                                    <input type="hidden" id="custId" name="ID" value="<? echo $product_id;?>">
 
                                     <input type="hidden" id="user_Id" name="user_id" value="<? echo $userid;?>">
 
@@ -357,7 +360,7 @@ switch($_GET["action"]) {
                                     </div>
 
                                     <div class="cart mt-4 align-items-center">
-                                        <button class="btn-success mr-2 px-4">Add to cart</button>
+                                        <button type="submit" class="btn-success mr-2 px-4">Add to cart</button>
                                         <button class="btn-success mr-2 px-4">Buy Now</button>
                                     </div>
                                 </form>
