@@ -4,6 +4,20 @@ include("./conn.php");
 
 ?>
 
+<?php
+
+ session_start();
+
+
+include("./conn.php");
+include("./function.php");
+
+ $user_data = check_login($conn);
+
+ echo $user_data;
+
+?>
+
 
 
 <!DOCTYPE html>
@@ -24,7 +38,7 @@ include("./conn.php");
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- link the external stylesheet -->
     <link rel="stylesheet" type="text/css" href="details.css">
-   
+
 </head>
 
 <body>
@@ -167,7 +181,7 @@ include("./conn.php");
 
 
 
-
+                                    $product_id = $row_products['ID'];
                                     $brand_title = $row_products['product_brand'];
                                     $product_title = $row_products['product_title'];
                                     $product_price = $row_products['product_price'];
@@ -200,7 +214,7 @@ include("./conn.php");
 
                                     $size_of_array = sizeof($array_result);
 
-                                   
+
 
 
 
@@ -212,13 +226,11 @@ include("./conn.php");
 
                                         $x = 0;
 
-                                        while ($x < $size_of_array)
-                                       
-                                         {
+                                        while ($x < $size_of_array) {
                                             echo "<ul>
                                         <li>$array_result[$x]</li>
                                        </ul>";
-                                       $x++;
+                                            $x++;
                                         }
                                     }
                                 }
@@ -232,69 +244,71 @@ include("./conn.php");
 
 
 
+                                <form method="post">
+
+                                    <input type="hidden" id="custId" name="productid" value="<? echo $product_id;?>">
+
+                                    <div class="quantity buttons_added">
+                                        <h6 class="text-capitalize">quantity</h6>
+                                        <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                                    </div>
 
 
 
-                                <div class="quantity buttons_added">
-                                    <h6 class="text-capitalize">quantity</h6>
-                                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
-                                </div>
+
+                                    <div class="sizes">
 
 
 
-
-                                <div class="sizes">
-
+                                        <?php
 
 
-                                    <?php
-
-
-                                    $_SERVER['SCRIPT_NAME'];
+                                        $_SERVER['SCRIPT_NAME'];
 
 
 
-                                    $get_string = $_SERVER['QUERY_STRING'];
+                                        $get_string = $_SERVER['QUERY_STRING'];
 
 
-                                    parse_str($get_string, $get_array);
+                                        parse_str($get_string, $get_array);
 
-                                    // print_r($get_array);
-
-
-                                    $product_id = $get_array['id'];
-
-                                    $get_details = "select product_size from products_details where ID= $product_id";
-
-                                    $run_details = mysqli_query($conn, $get_details);
-
-                                    $details = mysqli_fetch_array($run_details);
-
-                                    $product_size = $details['product_size'];
-
-                                    $check_array = $product_size;
-
-                                    $check_array_result = explode(',', $check_array);
-
-                                    $sizeOfcheck = sizeof($check_array_result);
+                                        // print_r($get_array);
 
 
-                                    if (!($sizeOfcheck == 1)) {
-                                        echo "<h6 class='text-capitalize'>Size</h6>";
-                                        $x = 0;
-                                        while ($x < $sizeOfcheck) {
-                                            echo "<label class='radio'> <input type='radio' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span></label>\n";
-                                            $x++;
+                                        $product_id = $get_array['id'];
+
+                                        $get_details = "select product_size from products_details where ID= $product_id";
+
+                                        $run_details = mysqli_query($conn, $get_details);
+
+                                        $details = mysqli_fetch_array($run_details);
+
+                                        $product_size = $details['product_size'];
+
+                                        $check_array = $product_size;
+
+                                        $check_array_result = explode(',', $check_array);
+
+                                        $sizeOfcheck = sizeof($check_array_result);
+
+
+                                        if (!($sizeOfcheck == 1)) {
+                                            echo "<h6 class='text-capitalize'>Size</h6>";
+                                            $x = 0;
+                                            while ($x < $sizeOfcheck) {
+                                                echo "<label class='radio'> <input type='radio' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span></label>\n";
+                                                $x++;
+                                            }
                                         }
-                                    }
-                                    ?>
+                                        ?>
 
-                                </div>
+                                    </div>
 
-                                <div class="cart mt-4 align-items-center">
-                                    <button class="btn-success mr-2 px-4">Add to cart</button>
-                                    <button class="btn-success mr-2 px-4">Buy Now</button>
-                                </div>
+                                    <div class="cart mt-4 align-items-center">
+                                        <button class="btn-success mr-2 px-4">Add to cart</button>
+                                        <button class="btn-success mr-2 px-4">Buy Now</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -467,10 +481,10 @@ include("./conn.php");
 
 
 
-   
 
-     <!-- external js sheet -->
-     <script src="details.js"></script>
+
+    <!-- external js sheet -->
+    <script src="details.js"></script>
     <!-- j query -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- owl carousel -->
