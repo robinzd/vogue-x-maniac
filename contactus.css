@@ -48,6 +48,12 @@ textarea#inlineFormInputGroupUsername:focus{
   border-color:lightgreen;
   outline: 0;
   box-shadow: 0 0 0 0.25rem lightgreen;
+  
+}
+
+textarea#inlineFormInputGroupUsername{
+  padding-bottom: 100px;
+  overflow-y: hidden;
 }
 
 

@@ -48,25 +48,25 @@
             <div class="card-body p-3">
                
                   <div class="form-group">
-                  <label> Your name </label>
+                  <label> Your name:</label>
                   <div class="input-group">
                      <input value="" type="text" name="data[name]" class="form-control" id="inlineFormInputGroupUsername" placeholder="Your name">
                   </div>
 				</div>
                   <div class="form-group">
-                     <label>Your email</label>
+                     <label>Your email:</label>
                      <div class="input-group mb-2 mb-sm-0">
                         <input type="email" value="" name="data[email]" class="form-control" id="inlineFormInputGroupUsername" placeholder="Email">
                      </div>
                   </div>
                   <div class="form-group">
-                     <label>Subject</label>
+                     <label>Subject:</label>
                      <div class="input-group mb-2 mb-sm-0">
                         <textarea type="text" name="data[subject]" class="form-control" id="inlineFormInputGroupUsername" placeholder="Subject"></textarea>
                      </div>
                   </div>
                   <div class="form-group">
-                     <label>Message</label>
+                     <label>Message:</label>
                      <div class="input-group mb-2 mb-sm-0">
                         <textarea type="text" class="form-control" name="mesg" id="inlineFormInputGroupUsername"  placeholder="message"></textarea>
                      </div>
