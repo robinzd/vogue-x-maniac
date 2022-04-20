@@ -388,7 +388,9 @@ include("./conn.php");
 
                 $get_string = $_SERVER['QUERY_STRING'];
 
-                echo "console.log('".$get_string."');";
+                $replace_string=str_replace("%20"," ","$get_string");
+
+                echo "console.log('".$replace_string."');";
 
                 parse_str($get_string, $get_array);
 
