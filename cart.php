@@ -1,11 +1,5 @@
 <?php
 
-include("./conn.php");
-
-?>
-
-<?php
-
 session_start();
 
 include("./conn.php");
@@ -15,9 +9,8 @@ $user_data = check_login($conn);
 
 $userid = $user_data['user_id'];
 
-?>
+echo $userid;
 
-<?php
 
 $productid = isset($_POST['productid']) ? $_POST['productid'] : "";
 
