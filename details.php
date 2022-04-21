@@ -222,7 +222,15 @@ include("./conn.php");
                                             $x++;
                                         }
                                     }
+
+
+                                   echo "<form method='Post' action='cart.php'>
+
+                                    <input type='hidden'  name='productid' value='$product_id'>";
+
                                 }
+
+
 
 
 
@@ -233,9 +241,8 @@ include("./conn.php");
 
 
 
-                                <form method="Post" action="cart.php">
-
-                                    <input type="hidden"  name="productid" value="<?echo $product_id;?>">
+                             
+                                    
 
                                     
                                 <div class="quantity buttons_added">
