@@ -125,7 +125,7 @@ $userid = $user_data['user_id'];
                     <tr>
                         <td colspan="2" align="center">Total:</td>
                         <td align="center"><?php echo $total_quantity; ?></td>
-                        <td align="center" colspan="4"><strong><?php echo "₹" . number_format($total_price, 2); ?></strong></td>
+                        <td align="center" colspan="6"><strong><?php echo "₹" . number_format($total_price, 2); ?></strong></td>
                         
                     </tr>
             </tbody>
