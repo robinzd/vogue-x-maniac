@@ -37,8 +37,8 @@ session_start();
 						
                         $_SESSION['user_id'] = $user_data['user_id'];
 					
-                        // header("location:../index.php");
-						header("location:../cart.php");
+                        header("location:../index.php");
+						// header("location:../cart.php");
                         // die;
                     
                     }
