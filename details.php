@@ -13,6 +13,8 @@ include("./function.php");
 
 $user_data;
 
+echo $user_data;
+
 $userid=$user_data['user_id'];
 
 echo $userid;
