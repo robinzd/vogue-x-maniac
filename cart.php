@@ -10,15 +10,12 @@ $user_data = check_login($conn);
 $userid = $user_data['user_id'];
 
 echo $userid;
-
-
+print_r($_POST);
 $productid = isset($_POST['productid']) ? $_POST['productid'] : "";
 
 $productquantity = isset($_POST['quantity']) ? $_POST['quantity'] : "";
 
 $productsize = isset($_POST['size']) ? $_POST['size'] : "";
-
-echo $productsize;
 
 $query_product = "select product_quantity from products_cart where product_id='$productid' and  user_id='$userid' and product_size='$productsize'";
 
