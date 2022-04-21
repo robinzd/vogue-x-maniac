@@ -4,6 +4,21 @@ include("./conn.php");
 
 ?>
 
+<?php
+
+ session_start();
+
+include("./conn.php");
+include("./function.php");
+
+$user_data = check_login($conn);
+
+print_r($user_data);
+
+$userid=$user_data['user_id'];
+
+?>
+
 
 
 

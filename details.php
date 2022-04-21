@@ -4,20 +4,7 @@ include("./conn.php");
 
 ?>
 
-<?php
 
-//  session_start();
-
-include("./conn.php");
-include("./function.php");
-
-$user_data = $conn;
-
-print_r($user_data);
-
-$userid=$user_data['user_id'];
-
-?>
 
 
 
@@ -250,7 +237,7 @@ $userid=$user_data['user_id'];
 
                                     <input type="hidden"  name="productid" value="<? echo $product_id;?>">
 
-                                    <input type="hidden"  name="user_id" value="<? echo $userid;?>">
+                                    <!-- <input type="hidden"  name="user_id" value="<? echo $userid;?>"> -->
 
                                     <div class="quantity buttons_added">
                                         <h6 class="text-capitalize">quantity</h6>
