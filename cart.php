@@ -133,7 +133,7 @@ if ($rowcount > 0) {
 
                         $run_product = mysqli_query($conn, $get_product);
 
-                        while ($row_product = mysqli_fetch_array($run_product)){
+                        while ($row_product = mysqli_fetch_array($run_product)) {
 
                             $product_price = $row_product['product_price'];
                             $product_title =  $row_product['product_title'];
@@ -147,141 +147,142 @@ if ($rowcount > 0) {
                             while ($row_image = mysqli_fetch_array($run_image)) {
 
                                 $product_image = $row_image['details_image'];
-                          ?>
-                                <tr>
-                                    <td><?php echo $cnt; ?></td>
-                                    <td><img src="<?php echo $product_image;?>" class="cart-item-image" /><?php echo $product_title ?></td>
-                                    <td style="text-align:right;"><?php echo $row["product_quantity"]; ?></td>
-                                    <td style="text-align:right;"><?php echo $row["product_size"]; ?></td>
-                                    <td style="text-align:right;"><?php echo $product_price; ?></td>
-                                    <td style="text-align:right;"><?php echo "₹" . number_format($unit_price , 2); ?></td>
-                                    <td style="text-align:center;"><a href="index.php?action=remove&code=<?php echo $item["code"]; ?>" class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item" /></a></td>
-                                </tr>
-                            <?php
-                                $total_quantity += $row["product_quantity"];
-                                $total_price += ($product_price * $row["product_quantity"]);
-                                $cnt = $cnt + 1;
                             }
+                        }
+                ?>
+                        <tr>
+                            <td><?php echo $cnt; ?></td>
+                            <td><img src="<?php echo $product_image; ?>" class="cart-item-image" /><?php echo $product_title ?></td>
+                            <td style="text-align:right;"><?php echo $row["product_quantity"]; ?></td>
+                            <td style="text-align:right;"><?php echo $row["product_size"]; ?></td>
+                            <td style="text-align:right;"><?php echo $product_price; ?></td>
+                            <td style="text-align:right;"><?php echo "₹" . number_format($unit_price, 2); ?></td>
+                            <td style="text-align:center;"><a href="index.php?action=remove&code=<?php echo $item["code"]; ?>" class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item" /></a></td>
+                        </tr>
+                    <?php
+                        $total_quantity += $row["product_quantity"];
+                        $total_price += ($product_price * $row["product_quantity"]);
+                        $cnt = $cnt + 1;
+                    }
 
-                            ?>
-                            <tr>
-                                <td colspan="2" align="right">Total:</td>
-                                <td align="right"><?php echo $total_quantity; ?></td>
-                                <td align="right" colspan="2"><strong><?php echo "₹" . number_format($total_price, 2); ?></strong></td>
-                                <td></td>
-                            </tr>
+                    ?>
+                    <tr>
+                        <td colspan="2" align="right">Total:</td>
+                        <td align="right"><?php echo $total_quantity; ?></td>
+                        <td align="right" colspan="2"><strong><?php echo "₹" . number_format($total_price, 2); ?></strong></td>
+                        <td></td>
+                    </tr>
             </tbody>
         </table>
-<?php
-                        }
-                    }
-                } 
-                else {
-?>
-<div class="no-records">Your Cart is Empty</div>
-<?php
+    <?php
+
+
+                } else {
+    ?>
+        <div class="no-records">Your Cart is Empty</div>
+    <?php
                 }
-?>
+    ?>
 
 
 
 
-<!-- Footer -->
+    <!-- Footer -->
 
-<footer class="text-center text-lg-start text-dark" style="background-color:lightgrey">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-        <!-- Section: Links -->
-        <section class="">
-            <!--Grid row-->
-            <div class="row">
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <img class="footerimage" src="./header images/vogue x maniac png.png" alt="brand image">
-                    <p class="text-white">
-                        Here you can use rows and columns to organize your footer
-                        content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.
-                    </p>
+    <footer class="text-center text-lg-start text-dark" style="background-color:lightgrey">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <img class="footerimage" src="./header images/vogue x maniac png.png" alt="brand image">
+                        <p class="text-white">
+                            Here you can use rows and columns to organize your footer
+                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                        <p class="text-white">MDBootstrap</p>
+                        <p class="text-white">MDWordPress</p>
+                        <p class="text-white">BrandFlow</p>
+                        <p class="text-white">Angular</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                        <p class="text-white"><i class="fas fa-home text-white mr-3"></i> New York, NY 10012, US</p>
+                        <p class="text-white" id="address"><i class="fas fa-envelope text-white mr-3"></i> inf0@text-white@gmail.com
+                        </p>
+                        <p class="text-white"><i class="fas fa-phone text-white mr-3"></i> + 01 234 567 88</p>
+                        <p class="text-white"><i class="fas fa-print text-white mr-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+                        <!-- Facebook -->
+                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-primary pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" role="button"><i class="fab fa-facebook"></i></a>
+
+                        <!-- Twitter -->
+                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-info pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" role="button"><i class="fab fa-twitter"></i></a>
+
+                        <!-- youtube -->
+                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-secondary pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="youtube" role="button"><i class="fab fa-youtube"></i></a>
+
+
+                        <!-- Instagram -->
+                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-danger pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram" role="button"><i class="fab fa-instagram"></i></a>
+
+                    </div>
                 </div>
-                <!-- Grid column -->
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
 
-                <hr class="w-100 clearfix d-md-none" />
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.096)">
 
-                <!-- Grid column -->
-                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-                    <p class="text-white">MDBootstrap</p>
-                    <p class="text-white">MDWordPress</p>
-                    <p class="text-white">BrandFlow</p>
-                    <p class="text-white">Angular</p>
-                </div>
-                <!-- Grid column -->
-
-                <hr class="w-100 clearfix d-md-none" />
-
-                <!-- Grid column -->
-                <hr class="w-100 clearfix d-md-none" />
-
-                <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                    <p class="text-white"><i class="fas fa-home text-white mr-3"></i> New York, NY 10012, US</p>
-                    <p class="text-white" id="address"><i class="fas fa-envelope text-white mr-3"></i> inf0@text-white@gmail.com
-                    </p>
-                    <p class="text-white"><i class="fas fa-phone text-white mr-3"></i> + 01 234 567 88</p>
-                    <p class="text-white"><i class="fas fa-print text-white mr-3"></i> + 01 234 567 89</p>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mt-3">
-                    <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
-
-                    <!-- Facebook -->
-                    <a class="btn pmd-btn-fab pmd-ripple-effect btn-primary pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" role="button"><i class="fab fa-facebook"></i></a>
-
-                    <!-- Twitter -->
-                    <a class="btn pmd-btn-fab pmd-ripple-effect btn-info pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" role="button"><i class="fab fa-twitter"></i></a>
-
-                    <!-- youtube -->
-                    <a class="btn pmd-btn-fab pmd-ripple-effect btn-secondary pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="youtube" role="button"><i class="fab fa-youtube"></i></a>
-
-
-                    <!-- Instagram -->
-                    <a class="btn pmd-btn-fab pmd-ripple-effect btn-danger pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram" role="button"><i class="fab fa-instagram"></i></a>
-
-                </div>
-            </div>
-            <!--Grid row-->
-        </section>
-        <!-- Section: Links -->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.096)">
-
-        <p class="text-dark"> ©2022 Vogue X Maniac.All Rights Reserved
-        <p>
-            <img class="px-2" src="./payment_pics/2560px-MasterCard_Logo.svg-removebg-preview.png">
-            <img class="px-2" src="./payment_pics/1200px-Visa.svg-removebg-preview.png">
-            <img class="px-2" src="./payment_pics/paypal-logo-removebg-preview.png">
-    </div>
-    <!-- Copyright -->
-</footer>
-<!-- end of the footer -->
+            <p class="text-dark"> ©2022 Vogue X Maniac.All Rights Reserved
+            <p>
+                <img class="px-2" src="./payment_pics/2560px-MasterCard_Logo.svg-removebg-preview.png">
+                <img class="px-2" src="./payment_pics/1200px-Visa.svg-removebg-preview.png">
+                <img class="px-2" src="./payment_pics/paypal-logo-removebg-preview.png">
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- end of the footer -->
 
 
 
 
 
 
-<!-- j query -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-<!-- owl carousel -->
-<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- j query -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- owl carousel -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </body>
 
 </html>
