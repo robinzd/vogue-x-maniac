@@ -24,7 +24,7 @@ $userid = $user_data['user_id'];
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cart</title>
     <!-- fav icon -->
     <link rel="icon" type="image/png" href="./favicon/vogue_x_maniac_png_K8m_icon.ico" />
@@ -62,11 +62,11 @@ $userid = $user_data['user_id'];
         <table class="tbl-cart" cellpadding="10" cellspacing="1">
         <tbody>
             <tr>
-                    <th style="text-align:center;">S.no</th>
+                 
                     <th style="text-align:left;">Product Name</th>
-                    <th style="text-align:center;"width="5%">Product Quantity</th>
-                    <th style="text-align:center;"width="10%">Product Size</th>
-                    <th style="text-align:center;" width="5%">Unit Price</th>
+                    <th style="text-align:center;">Product Quantity</th>
+                    <th style="text-align:center;"width="5%">Product Size</th>
+                    <th style="text-align:center;" width="10%">Unit Price</th>
                     <th style="text-align:center;" width="10%">Price</th>
                     <th style="text-align:center;" width="5%">Remove</th>
                 </tr>
@@ -105,7 +105,6 @@ $userid = $user_data['user_id'];
 
                 ?>
                                 <tr>
-                                    <td style="text-align:center;"><?php echo $cnt; ?></td>
                                     <td><img src="<?php echo "./admin_panel/products_images/images/$product_image"; ?>" class="cart-item-image" /><?php echo $product_title ?></td>
                                     <td style="text-align:center;"><?php echo $row["product_quantity"]; ?></td>
                                     <td style="text-align:center;"><?php echo $row["product_size"]; ?></td>
@@ -116,7 +115,7 @@ $userid = $user_data['user_id'];
                     <?php
                                 $total_quantity += $row["product_quantity"];
                                 $total_price += ($product_price * $row["product_quantity"]);
-                                $cnt = $cnt + 1;
+                               
                             }
                         }
                     }
