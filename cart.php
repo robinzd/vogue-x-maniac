@@ -29,7 +29,7 @@ $productsize = isset($_POST['size']) ? $_POST['size'] : "";
 $query = mysqli_query($conn,"insert into products_cart(product_id,user_id,product_quantity,product_size) value ('$productid','$userid','$productquantity','$productsize')");
 if ($query) {
     echo "<script>alert('You have successfully inserted into the cart');</script>";
-    echo "<script type='text/javascript'> document.location ='details.php'; </script>";
+    echo "<script type='text/javascript'> document.location ='details.php?id=$productid'; </script>";
 } else {
     echo "<script>alert('Something Went Wrong. Please try again');</script>";
 }
