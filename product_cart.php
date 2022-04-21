@@ -78,7 +78,7 @@ $userid = $user_data['user_id'];
 
                 $total_quantity = 0;
                 $total_price = 0;
-
+                echo $userid;
                 $ret = mysqli_query($conn, "select * from products_cart where user_id='$userid'");
                 $cnt = 1;
                 $row = mysqli_num_rows($ret);
