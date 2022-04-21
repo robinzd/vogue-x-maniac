@@ -11,9 +11,9 @@ include("./conn.php");
 include("./conn.php");
 include("./function.php");
 
-$user_data = check_login($conn);
+$user_data = $conn;
 
-echo $user_data;
+print_r($user_data);
 
 $userid=$user_data['user_id'];
 
