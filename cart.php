@@ -13,11 +13,31 @@ include("./function.php");
 
 $user_data = check_login($conn);
 
-print_r($user_data);
-
 $userid=$user_data['user_id'];
 
 ?>
+
+<?php
+
+$productid = isset($_POST['productid']) ? $_POST['productid'] : "";
+
+$productquantity = isset($_POST['quantity']) ? $_POST['quantity'] : "";
+
+$productsize = isset($_POST['size']) ? $_POST['size'] : "";
+
+
+$query = mysqli_query($conn, "insert into products_cart(product_id,user_id,product_quantity,product_size) value ('$productid','$userid','$productquantity','$productsize')");
+if ($query) {
+    echo "<script>alert('You have successfully inserted into the cart');</script>";
+    echo "<script type='text/javascript'> document.location ='cart.php'; </script>";
+} else {
+    echo "<script>alert('Something Went Wrong. Please try again');</script>";
+}
+
+
+?>
+
+
 
 
 

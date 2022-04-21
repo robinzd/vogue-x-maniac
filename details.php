@@ -237,9 +237,8 @@ include("./conn.php");
 
                                     <input type="hidden"  name="productid" value="<? echo $product_id;?>">
 
-                                    <!-- <input type="hidden"  name="user_id" value="<? echo $userid;?>"> -->
-
-                                    <div class="quantity buttons_added">
+                                    
+                                <div class="quantity buttons_added">
                                         <h6 class="text-capitalize">quantity</h6>
                                         <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
                                     </div>
