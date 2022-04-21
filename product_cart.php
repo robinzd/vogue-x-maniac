@@ -107,10 +107,10 @@ $userid = $user_data['user_id'];
                                 <tr>
                                     <td><?php echo $cnt; ?></td>
                                     <td><img src="<?php echo "./admin_panel/products_images/images/$product_image"; ?>" class="cart-item-image" /><?php echo $product_title ?></td>
-                                    <td style="text-align:right;"><?php echo $row["product_quantity"]; ?></td>
-                                    <td style="text-align:right;"><?php echo $row["product_size"]; ?></td>
-                                    <td style="text-align:right;"><?php echo $product_price; ?></td>
-                                    <td style="text-align:right;"><?php echo "₹" . number_format($unit_price, 2); ?></td>
+                                    <td style="text-align:center;"><?php echo $row["product_quantity"]; ?></td>
+                                    <td style="text-align:center;"><?php echo $row["product_size"]; ?></td>
+                                    <td style="text-align:center;"><?php echo $product_price; ?></td>
+                                    <td style="text-align:center;"><?php echo "₹" . number_format($unit_price, 2); ?></td>
                                     <td style="text-align:center;"><a href="index.php?action=remove&code=<?php echo $item["code"]; ?>" class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item" /></a></td>
                                 </tr>
                     <?php
@@ -123,10 +123,10 @@ $userid = $user_data['user_id'];
 
                     ?>
                     <tr>
-                        <td colspan="2" align="right">Total:</td>
-                        <td align="right"><?php echo $total_quantity; ?></td>
-                        <td align="right" colspan="2"><strong><?php echo "₹" . number_format($total_price, 2); ?></strong></td>
-                        <td></td>
+                        <td colspan="2" align="center">Total:</td>
+                        <td align="center"><?php echo $total_quantity; ?></td>
+                        <td align="center" colspan="2"><strong><?php echo "₹" . number_format($total_price, 2); ?></strong></td>
+                        
                     </tr>
             </tbody>
         </table>
