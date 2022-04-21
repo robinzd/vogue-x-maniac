@@ -87,6 +87,8 @@ $userid = $user_data['user_id'];
 
                         print_r($row);
 
+                        echo "<br>";
+
                         $product_id = $row['product_id'];
 
                         $get_product = "select * from  products_details where ID='$product_id'";
@@ -96,6 +98,8 @@ $userid = $user_data['user_id'];
                     while ($row_product = mysqli_fetch_array($run_product)) {
 
                         print_r($row_product);
+
+                        echo "<br>";
 
                             $product_price = $row_product['product_price'];
                             $product_title =  $row_product['product_title'];
@@ -109,6 +113,8 @@ $userid = $user_data['user_id'];
                             while ($row_image = mysqli_fetch_array($run_image)) {
 
                                 print_r($row_image);
+
+                                echo "<br>";
 
                                 $product_image = $row_image['details_image'];
                        
