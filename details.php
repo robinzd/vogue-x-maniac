@@ -235,7 +235,7 @@ include("./conn.php");
 
                                 <form method="Post" action="cart.php">
 
-                                    <input type="hidden"  name="productid" value="<? echo $product_id;?>">
+                                    <input type="hidden"  name="productid" value="<?echo $product_id;?>">
 
                                     
                                 <div class="quantity buttons_added">
