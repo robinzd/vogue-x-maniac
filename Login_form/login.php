@@ -39,7 +39,7 @@ session_start();
 					
                         // header("location:../index.php");
 						header("location:../cart.php");
-                        die;
+                        // die;
                     
                     }
                 }

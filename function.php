@@ -20,7 +20,8 @@ function check_login($conn)
 
     // redirecting to login page
     header("location:./login_form/login.php");
-    die;
+
+    // die;
 
 
 }
