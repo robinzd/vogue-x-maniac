@@ -91,7 +91,7 @@ $userid = $user_data['user_id'];
 
                         $run_product = mysqli_query($conn, $get_product);
 
-                        while ($row_product = mysqli_fetch_array($run_product)) {
+                    while ($row_product = mysqli_fetch_array($run_product)) {
 
                             $product_price = $row_product['product_price'];
                             $product_title =  $row_product['product_title'];
@@ -105,8 +105,7 @@ $userid = $user_data['user_id'];
                             while ($row_image = mysqli_fetch_array($run_image)) {
 
                                 $product_image = $row_image['details_image'];
-                            }
-                        }
+                       
                 ?>
                         <tr>
                             <td><?php echo $cnt; ?></td>
@@ -122,6 +121,8 @@ $userid = $user_data['user_id'];
                         $total_price += ($product_price * $row["product_quantity"]);
                         $cnt = $cnt + 1;
                     }
+                }
+            }
 
                     ?>
                     <tr>
@@ -135,7 +136,8 @@ $userid = $user_data['user_id'];
     <?php
 
 
-                } else {
+                } 
+                else {
     ?>
         <div class="no-records">Your Cart is Empty</div>
     <?php
