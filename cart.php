@@ -18,6 +18,8 @@ $productquantity = isset($_POST['quantity']) ? $_POST['quantity'] : "";
 
 $productsize = isset($_POST['size']) ? $_POST['size'] : "";
 
+echo $productsize;
+
 $query_product = "select product_quantity from products_cart where product_id='$productid' and  user_id='$userid' and product_size='$productsize'";
 
 $result = mysqli_query($conn, $query_product);
