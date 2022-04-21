@@ -19,7 +19,7 @@ $userid=$user_data['user_id'];
 
 <?php
 
-$productid = isset($_POST['productid']) ? $_POST['productid'] : "";
+$productid = isset($_POST['product_id']) ? $_POST['product_id'] : "";
 
 $productquantity = isset($_POST['quantity']) ? $_POST['quantity'] : "";
 
