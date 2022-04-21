@@ -1,3 +1,12 @@
+<?php
+
+include("./conn.php");
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -34,49 +43,60 @@
     <!--back to top ends -->
 
 
-    <div class="container mt-5 p-3 rounded cart">
-        <div class="row no-gutters">
-            <div class="col-md-8 col-lg-12">
-                <div class="product-details mr-2">
-                    <div class="d-flex flex-row align-items-center"><i class="fa fa-long-arrow-left"></i><span class="ml-2">Continue Shopping</span></div>
-                    <hr>
-                    <h6 class="mb-0">Shopping cart</h6>
-                    <div class="d-flex justify-content-between"><span>You have 4 items in your cart</span>
-                        <div class="d-flex flex-row align-items-center"><span class="text-black-50">Sort by:</span>
-                            <div class="price ml-2"><span class="mr-1">price</span><i class="fa fa-angle-down"></i></div>
-                        </div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
-                        <div class="d-flex flex-row mr-3"><img class="rounded" src="https://i.imgur.com/QRwjbm5.jpg" width="40">
-                            <div class="ml-2"><span class="font-weight-bold d-block">Iphone 11 pro</span><span class="spec">256GB, Navy Blue</span></div>
-                        </div>
-                        <div class="d-flex flex-row align-items-center"><span class="d-block">2</span><span class="d-block ml-5 font-weight-bold">$900</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
-                        <div class="d-flex flex-row mr-3"><img class="rounded" src="https://i.imgur.com/GQnIUfs.jpg" width="40">
-                            <div class="ml-2"><span class="font-weight-bold d-block">One pro 7T</span><span class="spec">256GB, Navy Blue</span></div>
-                        </div>
-                        <div class="d-flex flex-row align-items-center"><span class="d-block">2</span><span class="d-block ml-5 font-weight-bold">$900</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center mt-3 p-2 items rounded">
-                        <div class="d-flex flex-row mr-3"><img class="rounded" src="https://i.imgur.com/o2fKskJ.jpg" width="40">
-                            <div class="ml-2"><span class="font-weight-bold d-block">Google pixel 4 XL</span><span class="spec">256GB, Axe black</span></div>
-                        </div>
-                        <div class="d-flex flex-row align-items-center"><span class="d-block">1</span><span class="d-block ml-5 font-weight-bold">$800</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
-                    </div>
-                    <div class="d-flex justify-content-between align-items-center mt-3 p-1 items rounded">
-                        <div class="d-flex flex-row mr-3"><img class="rounded" src="https://i.imgur.com/Tja5H1c.jpg" width="40">
-                            <div class="ml-2"><span class="font-weight-bold d-block">Samsung galaxy Note 10&nbsp;</span><span class="spec">256GB, Navy Blue</span></div>
-                        </div>
-                        <div class="d-flex flex-row align-items-center"><span class="d-block">1</span><span class="d-block ml-5 font-weight-bold">$999</span><i class="fa fa-trash-o ml-3 text-black-50"></i></div>
-                    </div>
-                </div>
-                <div class="d-grid gap-2">
-                <button class="btn btn-success" type="button">Checkout</button>
-               </div>
-            </div>
-           
-        </div>
+
+    <!-- Cart ---->
+    <div id="shopping-cart">
+        <div class="txt-heading">Shopping Cart</div>
+
+        <a id="btnEmpty" href="index.php?action=empty">Empty Cart</a>
+        <?php
+        if (isset($_SESSION["cart_item"])) {
+            $total_quantity = 0;
+            $total_price = 0;
+        ?>
+            <table class="tbl-cart" cellpadding="10" cellspacing="1">
+                <tbody>
+                    <tr>
+                        <th style="text-align:left;">Name</th>
+                        <th style="text-align:left;">Code</th>
+                        <th style="text-align:right;" width="5%">Quantity</th>
+                        <th style="text-align:right;" width="10%">Unit Price</th>
+                        <th style="text-align:right;" width="10%">Price</th>
+                        <th style="text-align:center;" width="5%">Remove</th>
+                    </tr>
+                    <?php
+                    foreach ($_SESSION["cart_item"] as $item) {
+                        $item_price = $item["quantity"] * $item["price"];
+                    ?>
+                        <tr>
+                            <td><img src="<?php echo $item["image"]; ?>" class="cart-item-image" /><?php echo $item["name"]; ?></td>
+                            <td><?php echo $item["code"]; ?></td>
+                            <td style="text-align:right;"><?php echo $item["quantity"]; ?></td>
+                            <td style="text-align:right;"><?php echo "$ " . $item["price"]; ?></td>
+                            <td style="text-align:right;"><?php echo "$ " . number_format($item_price, 2); ?></td>
+                            <td style="text-align:center;"><a href="index.php?action=remove&code=<?php echo $item["code"]; ?>" class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item" /></a></td>
+                        </tr>
+                    <?php
+                        $total_quantity += $item["quantity"];
+                        $total_price += ($item["price"] * $item["quantity"]);
+                    }
+                    ?>
+
+                    <tr>
+                        <td colspan="2" align="right">Total:</td>
+                        <td align="right"><?php echo $total_quantity; ?></td>
+                        <td align="right" colspan="2"><strong><?php echo "$ " . number_format($total_price, 2); ?></strong></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        <?php
+        } else {
+        ?>
+            <div class="no-records">Your Cart is Empty</div>
+        <?php
+        }
+        ?>
     </div>
 
 
@@ -171,8 +191,8 @@
 
 
 
-   <!-- j query -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- j query -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- owl carousel -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>

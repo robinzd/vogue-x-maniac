@@ -11,65 +11,14 @@ include("./conn.php");
 include("./conn.php");
 include("./function.php");
 
-$user_data = check_login($conn);
+$user_data;
 
 $userid=$user_data['user_id'];
 
+echo $userid;
+
 ?>
 
-<?php
-if(!empty($_GET["action"])) {
-switch($_GET["action"]) {
-	//code for adding product in cart
-	case "add":
-		if(!empty($_POST["quantity"])){
-            
-			$pid=$_GET["ID"];
-
-            print_r($pid);
-			$result=mysqli_query($conn,"SELECT * FROM products_details WHERE ID='$pid'");
-	          while($productByCode=mysqli_fetch_array($result)){
-                  print_r($productByCode);
-			$itemArray = array($productByCode["code"]=>array('name'=>$productByCode["name"], 'code'=>$productByCode["code"], 'quantity'=>$_POST["quantity"], 'price'=>$productByCode["price"], 'image'=>$productByCode["image"]));
-			print_r($itemArray);
-            if(!empty($_SESSION["cart_item"])) {
-				if(in_array($productByCode["code"],array_keys($_SESSION["cart_item"]))) {
-					foreach($_SESSION["cart_item"] as $k => $v) {
-							if($productByCode["code"] == $k) {
-								if(empty($_SESSION["cart_item"][$k]["quantity"])) {
-									$_SESSION["cart_item"][$k]["quantity"] = 0;
-								}
-								$_SESSION["cart_item"][$k]["quantity"] += $_POST["quantity"];
-							}
-					}
-				} else {
-					$_SESSION["cart_item"] = array_merge($_SESSION["cart_item"],$itemArray);
-				}
-			}  else {
-				$_SESSION["cart_item"] = $itemArray;
-			}
-		}
-	}
-	break;
-
-	// code for removing product from cart
-	case "remove":
-		if(!empty($_SESSION["cart_item"])) {
-			foreach($_SESSION["cart_item"] as $k => $v) {
-					if($_GET["code"] == $k)
-						unset($_SESSION["cart_item"][$k]);				
-					if(empty($_SESSION["cart_item"]))
-						unset($_SESSION["cart_item"]);
-			}
-		}
-	break;
-	// code for if cart is empty
-	case "empty":
-		unset($_SESSION["cart_item"]);
-	break;	
-}
-}
-?>
 
 
 
@@ -297,11 +246,11 @@ switch($_GET["action"]) {
 
 
 
-                                <form method="Post">
+                                <form method="Post" action="cart.php">
 
-                                    <input type="hidden" id="custId" name="ID" value="<? echo $product_id;?>">
+                                    <input type="hidden"  name="productid" value="<? echo $product_id;?>">
 
-                                    <input type="hidden" id="user_Id" name="user_id" value="<? echo $userid;?>">
+                                    <input type="hidden"  name="user_id" value="<? echo $userid;?>">
 
                                     <div class="quantity buttons_added">
                                         <h6 class="text-capitalize">quantity</h6>
