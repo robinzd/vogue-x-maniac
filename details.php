@@ -225,7 +225,7 @@ include("./conn.php");
 
 
                                    echo "<form method='Post' action='cart.php'>
-
+                                    $product_id
                                     <input type='hidden'  name='productid' value='$product_id'>";
 
                                 }
