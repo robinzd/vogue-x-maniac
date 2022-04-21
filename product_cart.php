@@ -78,17 +78,12 @@ $userid = $user_data['user_id'];
 
                 $total_quantity = 0;
                 $total_price = 0;
-                echo $userid;
                 $ret = mysqli_query($conn, "select * from products_cart where user_id='$userid'");
                 $cnt = 1;
                 $row = mysqli_num_rows($ret);
                 if ($row > 0) {
                     while ($row = mysqli_fetch_array($ret)) {
-                        echo "<br>";
-                        print_r($row);
-
-                        echo "<br>";
-
+                        
                         $product_id = $row['product_id'];
 
                         $get_product = "select * from  products_details where ID='$product_id'";
@@ -96,33 +91,21 @@ $userid = $user_data['user_id'];
                         $run_product = mysqli_query($conn, $get_product);
 
                     while ($row_product = mysqli_fetch_array($run_product)) {
-                        echo "<br>";
-                        print_r($row_product);
-
-                        echo "<br>";
+                        
 
                             $product_price = $row_product['product_price'];
                             $product_title =  $row_product['product_title'];
 
                             $unit_price = $row["product_quantity"] * $product_price;
-                            echo "<br>";
-                            echo $unit_price;
-                            echo "<br>";
+                            
 
                             $get_image = "select details_image from  products_images where related_product='$product_id' and primary_image=1";
-                            echo "<br>";
-                            echo  $get_image;
-                            echo "<br>";
+                           
                             $run_image = mysqli_query($conn, $get_image);
 
                             while ($row_image = mysqli_fetch_array($run_image)) {
 
-                                echo "<br>";
-                                print_r($row_image);
-
-                                echo "<br>";
-
-                                $product_image = $row_image['details_image'];
+                            $product_image = $row_image['details_image'];
                        
                 ?>
                         <tr>
