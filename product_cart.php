@@ -63,7 +63,7 @@ $userid = $user_data['user_id'];
         <tbody>
             <tr>
                     <th style="text-align:center;">S.no</th>
-                    <th style="text-align:center;">Product Name</th>
+                    <th style="text-align:left;">Product Name</th>
                     <th style="text-align:center;"width="5%">Product Quantity</th>
                     <th style="text-align:center;"width="10%">Product Size</th>
                     <th style="text-align:center;" width="5%">Unit Price</th>
