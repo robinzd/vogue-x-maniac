@@ -179,7 +179,7 @@ include("./conn.php");
                                     $product_feauters = $row_products['product_features'];
 
 
-                                    echo "<h1>$product_id</h1>
+                                    echo "
                            
                                 <div class='d-flex justify-content-between align-items-center'>
                                     <div class='d-flex align-items-center'><a href='#'><i class='fa fa-long-arrow-left'></i></a> <a href='#'><span class='ml-1'>Back</span></a> </div> <a href='index.php'><i class='fa fa-home'></i></a>
@@ -225,8 +225,7 @@ include("./conn.php");
 
 
                                    echo "<form method='Post' action='cart.php'>
-                                    $product_id
-                                    <input type='hidden'  name='productid' value='$product_id'>";
+                                   <input type='hidden'  name='productid' value='$product_id'>";
 
                                 }
 

@@ -291,8 +291,6 @@ while ($row=mysqli_fetch_array($ret)) {
 <!--Fetch the Records -->
                     <tr>
                         <td><?php echo $cnt;?></td>
-                       
-                   
                         <td><?php  echo $row['brand_color'];?></td> 
                         <td><img src="brands_images/<?php  echo $row['image_source'];?>" width="80" height="80"></td>                       
                         <td><?php  echo $row['brand_name'];?></td>    
