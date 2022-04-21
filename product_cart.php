@@ -84,7 +84,7 @@ $userid = $user_data['user_id'];
                 $row = mysqli_num_rows($ret);
                 if ($row > 0) {
                     while ($row = mysqli_fetch_array($ret)) {
-
+                        echo "<br>";
                         print_r($row);
 
                         echo "<br>";
@@ -96,7 +96,7 @@ $userid = $user_data['user_id'];
                         $run_product = mysqli_query($conn, $get_product);
 
                     while ($row_product = mysqli_fetch_array($run_product)) {
-
+                        echo "<br>";
                         print_r($row_product);
 
                         echo "<br>";
@@ -112,6 +112,7 @@ $userid = $user_data['user_id'];
 
                             while ($row_image = mysqli_fetch_array($run_image)) {
 
+                                echo "<br>";
                                 print_r($row_image);
 
                                 echo "<br>";
