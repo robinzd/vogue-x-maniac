@@ -60,9 +60,8 @@ $userid = $user_data['user_id'];
         <a id="btnEmpty" href="">Empty Cart</a>
 
         <table class="tbl-cart" cellpadding="10" cellspacing="1">
-
-            <thead>
-                <tr>
+        <tbody>
+            <tr>
                     <th style="text-align:left;">S.no</th>
                     <th style="text-align:left;">Product Name</th>
                     <th style="text-align:left;">Product Quantity</th>
@@ -71,8 +70,6 @@ $userid = $user_data['user_id'];
                     <th style="text-align:right;" width="10%">Price</th>
                     <th style="text-align:center;" width="5%">Remove</th>
                 </tr>
-            </thead>
-            <tbody>
                 <?php
 
                 $total_quantity = 0;
