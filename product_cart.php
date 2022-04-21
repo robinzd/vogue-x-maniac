@@ -109,7 +109,7 @@ $userid = $user_data['user_id'];
                             echo $unit_price;
                             echo "<br>";
 
-                            $get_image = "select details_image from  products_images where relative_product='$product_id' and primary_image=1";
+                            $get_image = "select details_image from  products_images where related_product='$product_id' and primary_image=1";
                             echo "<br>";
                             echo  $get_image;
                             echo "<br>";
