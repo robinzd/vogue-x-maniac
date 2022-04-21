@@ -42,6 +42,7 @@ if ($rowcount > 0) {
 
     if ($update_query) {
         echo "<script>alert('You have successfully updated the cart');</script>";
+        echo "<script type='text/javascript'> document.location ='details.php?id=$productid'; </script>";
     } else {
         echo "<script>alert('something went wrong');</script>";
     }
@@ -55,7 +56,6 @@ if ($query) {
     echo "<script>alert('Something Went Wrong. Please try again');</script>";
 }
 };
-
 
 ?>
 
