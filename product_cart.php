@@ -105,7 +105,7 @@ $userid = $user_data['user_id'];
 
                 ?>
                                 <tr>
-                                    <td><?php echo $cnt; ?></td>
+                                    <td style="text-align:center;"><?php echo $cnt; ?></td>
                                     <td><img src="<?php echo "./admin_panel/products_images/images/$product_image"; ?>" class="cart-item-image" /><?php echo $product_title ?></td>
                                     <td style="text-align:center;"><?php echo $row["product_quantity"]; ?></td>
                                     <td style="text-align:center;"><?php echo $row["product_size"]; ?></td>
@@ -125,7 +125,7 @@ $userid = $user_data['user_id'];
                     <tr>
                         <td colspan="2" align="center">Total:</td>
                         <td align="center"><?php echo $total_quantity; ?></td>
-                        <td align="center" colspan="2"><strong><?php echo "₹" . number_format($total_price, 2); ?></strong></td>
+                        <td align="center" colspan="4"><strong><?php echo "₹" . number_format($total_price, 2); ?></strong></td>
                         
                     </tr>
             </tbody>
