@@ -62,12 +62,12 @@ $userid = $user_data['user_id'];
         <table class="tbl-cart" cellpadding="10" cellspacing="1">
         <tbody>
             <tr>
-                    <th style="text-align:left;">S.no</th>
-                    <th style="text-align:left;">Product Name</th>
-                    <th style="text-align:right;"width="5%">Product Quantity</th>
-                    <th style="text-align:right;"width="10%">Product Size</th>
-                    <th style="text-align:right;" width="5%">Unit Price</th>
-                    <th style="text-align:right;" width="10%">Price</th>
+                    <th style="text-align:center;">S.no</th>
+                    <th style="text-align:center;">Product Name</th>
+                    <th style="text-align:center;"width="5%">Product Quantity</th>
+                    <th style="text-align:center;"width="10%">Product Size</th>
+                    <th style="text-align:center;" width="5%">Unit Price</th>
+                    <th style="text-align:center;" width="10%">Price</th>
                     <th style="text-align:center;" width="5%">Remove</th>
                 </tr>
                 <?php
