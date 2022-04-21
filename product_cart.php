@@ -127,7 +127,7 @@ $userid = $user_data['user_id'];
                 ?>
                         <tr>
                             <td><?php echo $cnt; ?></td>
-                            <td><img src="<?php echo $product_image; ?>" class="cart-item-image" /><?php echo $product_title ?></td>
+                            <td><img src="<?php echo "./admin_panel/products_images/images/$product_image"; ?>" class="cart-item-image" /><?php echo $product_title ?></td>
                             <td style="text-align:right;"><?php echo $row["product_quantity"]; ?></td>
                             <td style="text-align:right;"><?php echo $row["product_size"]; ?></td>
                             <td style="text-align:right;"><?php echo $product_price; ?></td>
