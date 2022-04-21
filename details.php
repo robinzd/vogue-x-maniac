@@ -11,7 +11,7 @@ include("./conn.php");
 include("./conn.php");
 include("./function.php");
 
-$user_data=($conn);
+$user_data = check_login($conn);
 
 echo $user_data;
 
