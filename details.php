@@ -11,13 +11,11 @@ include("./conn.php");
 include("./conn.php");
 include("./function.php");
 
-$user_data;
+$user_data=($conn);
 
 echo $user_data;
 
 $userid=$user_data['user_id'];
-
-echo $userid;
 
 ?>
 
