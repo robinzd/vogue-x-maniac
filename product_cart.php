@@ -273,8 +273,10 @@ if (isset($_GET['delid'])) {
     </div>
 
     <!-- product_cart ends -->
-
+    
+    <div class="d-grid gap-2">
     <button class="btn btn-success" type="button">Checkout</button>
+    </div>
 
     <!-- Footer -->
 
