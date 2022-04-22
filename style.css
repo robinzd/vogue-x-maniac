@@ -388,6 +388,11 @@ span#product{
     padding-right: 5px;
 }
 
+span#product:hover{
+  background-color: black;
+  color: white;
+}
+
 /*  */
 
 small,
