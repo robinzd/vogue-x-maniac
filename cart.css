@@ -195,6 +195,7 @@ a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2:hover{
 
 #product-grid {
 	margin: 40px;
+    overflow-y: auto;
 }
 
 #shopping-cart table {
@@ -311,3 +312,4 @@ a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2:hover{
 th{
     white-space: nowrap;
 }
+
