@@ -65,7 +65,7 @@ include("./conn.php");
 							$row_count=mysqli_num_rows($select_rows)
 
 							?>
-							<a href="product_cart.php"  class="d-flex align-items-center justify-content-center"><span class="fa fa-cart-shopping"><i class="sr-only"  id='lblCartCount'>Twitter</i></span><span id="product"><?php echo $row_count ; ?></span></a>
+							<a href="product_cart.php"  class="d-flex align-items-center justify-content-center"><span class="fa fa-cart-shopping"><i class="sr-only">Twitter</i></span><span id="product"><?php echo $row_count ; ?></span></a>
 							<a href="./logout.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-sign-out"><i class="sr-only">Instagram</i></span></a>
 							<a href="./admin_panel/admin_panel.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
 						</p>
