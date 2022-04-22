@@ -79,7 +79,6 @@ if (isset($_GET['delid'])) {
 
         <table class="tbl-cart" cellpadding="10" cellspacing="1">
             <tbody>
-                
                 <?php
 
                 $total_quantity = 0;
@@ -146,17 +145,21 @@ if (isset($_GET['delid'])) {
                         <td align="right" colspan="3"><strong><?php echo "₹" . number_format($total_price, 2); ?></strong></td>
                         <td></td>
                     </tr>
-            </tbody>
-        </table>
-    <?php
+
+                <?php
 
 
                 } else {
-    ?>
-        <div class="no-records"><img src="./empty-cart-removebg-preview.png"></div>
-    <?php
+                ?>
+                    <div class="no-records"><img src="./empty-cart-removebg-preview.png"></div>
+                <?php
                 }
-    ?>
+                ?>
+
+            </tbody>
+
+        </table>
+
     </div>
 
 
