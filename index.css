@@ -234,6 +234,7 @@ img#brand{
     font-family: 'Poppins', sans-serif;
   }
 
+  
   s{
     color:lightgrey;
   }
@@ -312,6 +313,9 @@ img.px-2 {
 
 /* services */
 
+.col-md-3{
+  margin-top: -40px;
+}
 
 
 
