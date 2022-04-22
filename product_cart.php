@@ -20,9 +20,7 @@ echo "<script>alert('item deleted in the cart');</script>";
 echo "<script>window.location.href = 'product_cart.php'</script>"; 
 
 }
-else{
-    echo "<script>alert('something went wrong');</script>"; 
-} 
+
 
 if(isset($_GET['delete']))
  {
