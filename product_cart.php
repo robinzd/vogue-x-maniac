@@ -79,23 +79,25 @@ if (isset($_GET['delid'])) {
 
         <table class="tbl-cart" cellpadding="10" cellspacing="1">
             <tbody>
-                <tr>
-
-                    <th style="text-align:left;">Product Name</th>
-                    <th style="text-align:center;">Product Quantity</th>
-                    <th style="text-align:center;" width="5%">Product Size</th>
-                    <th style="text-align:center;" width="10%">Unit Price</th>
-                    <th style="text-align:center;" width="10%">Price</th>
-                    <th style="text-align:center;" width="5%">Remove</th>
-                </tr>
+                
                 <?php
 
                 $total_quantity = 0;
                 $total_price = 0;
                 $ret = mysqli_query($conn, "select * from products_cart where user_id='$userid'");
-                $cnt = 1;
                 $row = mysqli_num_rows($ret);
                 if ($row > 0) {
+                    echo "<tr>
+
+                    <th style='text-align:left;'>Product Name</th>
+                    <th style='text-align:center;'>Product Quantity</th>
+                    <th style='text-align:center;' width='5%'>Product Size</th>
+                    <th style='text-align:center;' width='10%'>Unit Price</th>
+                    <th style='text-align:center;' width='10%''>Price</th>
+                    <th style='text-align:center;' width='5%'>Remove</th>
+                    
+                </tr> ";
+
                     while ($row = mysqli_fetch_array($ret)) {
 
                         $product_id = $row['product_id'];
@@ -244,12 +246,6 @@ if (isset($_GET['delid'])) {
         <!-- Copyright -->
     </footer>
     <!-- end of the footer -->
-
-
-
-
-
-
     <!-- j query -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- owl carousel -->
