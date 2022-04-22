@@ -71,8 +71,8 @@ if (isset($_GET['delid'])) {
 
     <!--back to top ends -->
 
-
-    <div class="table-responsive" style="zoom:70%">
+<!-- product_cart starts hidden only on xs -->
+    <div class="table-responsive d-none d-sm-block">
         <div id="shopping-cart">
 
 
@@ -169,8 +169,110 @@ if (isset($_GET['delid'])) {
 
     </div>
 
+<!-- product_cart ends -->
 
 
+<!-- product_cart visible only on xs -->
+
+
+<div class="table-responsive d-block d-sm-none" style="zoom:50%">
+        <div id="shopping-cart">
+
+
+            <div class="txt-heading">Shopping Cart</div>
+
+
+            <a id="btnEmpty" href="delete_cart.php" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to empty the cart ?');">Empty Cart</a>
+
+
+            <table class="tbl-cart" cellpadding="10" cellspacing="1">
+                <tbody>
+                    <?php
+
+                    $total_quantity = 0;
+                    $total_price = 0;
+                    $ret = mysqli_query($conn, "select * from products_cart where user_id='$userid'");
+                    $row = mysqli_num_rows($ret);
+                    if ($row > 0) {
+                        echo "<tr>
+
+                    <th style='text-align:left;'>Product Name</th>
+                    <th style='text-align:center;'>Product Quantity</th>
+                    <th style='text-align:center;' width='5%'>Product Size</th>
+                    <th style='text-align:center;' width='10%'>Unit Price</th>
+                    <th style='text-align:center;' width='10%''>Price</th>
+                    <th style='text-align:center;' width='5%'>Remove</th>
+                    
+                </tr> ";
+
+                        while ($row = mysqli_fetch_array($ret)) {
+
+                            $product_id = $row['product_id'];
+
+                            $get_product = "select * from  products_details where ID='$product_id'";
+
+                            $run_product = mysqli_query($conn, $get_product);
+
+                            while ($row_product = mysqli_fetch_array($run_product)) {
+
+
+                                $product_price = $row_product['product_price'];
+                                $product_title =  $row_product['product_title'];
+
+                                $unit_price = $row["product_quantity"] * $product_price;
+
+
+                                $get_image = "select details_image from  products_images where related_product='$product_id' and primary_image=1";
+
+                                $run_image = mysqli_query($conn, $get_image);
+
+                                while ($row_image = mysqli_fetch_array($run_image)) {
+
+                                    $product_image = $row_image['details_image'];
+
+                    ?>
+                                    <tr>
+                                        <td><img src="<?php echo "./admin_panel/products_images/images/$product_image"; ?>" class="cart-item-image" /><?php echo $product_title ?></td>
+                                        <td style="text-align:center;"><?php echo $row["product_quantity"]; ?></td>
+                                        <td style="text-align:center;"><?php echo $row["product_size"]; ?></td>
+                                        <td style="text-align:center;"><?php echo $product_price; ?></td>
+                                        <td style="text-align:center;"><?php echo "₹" . number_format($unit_price, 2); ?></td>
+                                        <td style="text-align:center;"><a href="product_cart.php?delid=<?php echo ($row['ID']); ?>" class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item" /></a></td>
+                                    </tr>
+                        <?php
+                                    $total_quantity += $row["product_quantity"];
+                                    $total_price += ($product_price * $row["product_quantity"]);
+                                }
+                            }
+                        }
+
+                        ?>
+                        <tr>
+                            <td align="center">Total:</td>
+                            <td align="center"><?php echo $total_quantity; ?></td>
+                            <td align="right" colspan="3"><strong><?php echo "₹" . number_format($total_price, 2); ?></strong></td>
+                            <td></td>
+                        </tr>
+
+                    <?php
+
+
+                    } else {
+                    ?>
+                        <div class="no-records"><img src="./empty-cart-removebg-preview.png"></div>
+                    <?php
+                    }
+                    ?>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- product_cart ends -->
 
 
     <!-- Footer -->

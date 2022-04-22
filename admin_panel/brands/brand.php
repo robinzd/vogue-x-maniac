@@ -276,7 +276,7 @@ table.table td i {
                         <th>Brand Color</th>
                         <th>Brand image</th>
                         <th>Brand Name</th>
-                        <th>Actions</th>                       
+                        <th>Actions</th>               
                     </tr>
                 </thead>
                 <tbody>
