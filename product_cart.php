@@ -154,7 +154,7 @@ echo "<script>window.location.href = 'product_cart.php'</script>";
 
                 } else {
     ?>
-        <div class="no-records">Your Cart is Empty</div>
+        <div class="no-records"><img src="./empty-cart-removebg-preview.png"></div>
     <?php
                 }
     ?>
