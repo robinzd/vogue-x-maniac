@@ -352,15 +352,11 @@ include("./conn.php");
                 }
 
                 echo " <div class='card bg-white'>
-    <img class='card-img-top' src='./admin_panel/products_images/images/$details_image'  style='width:100%'>
+                <a href='details.php?id=$product_id'><img class='card-img-top' src='./admin_panel/products_images/images/$details_image'  style='width:100%'>
     <div class='card-body'>
         <h5 class='card-title text-center'>$product_title</h5>
         <p class='card-text  text-center'><s>₹$product_strikeout_price</s>₹$product_price</p>
-        <div class='text-center'>
-            <a href='details.php?id=$product_id' class='btn btn-success' id='buttonhover'>See Details</a>
-            <a href='#' class='btn btn-success' id='buttonhover'>Add to Cart</a>
-        </div>
-    </div>
+    </div></a>
 </div> 
 
 
