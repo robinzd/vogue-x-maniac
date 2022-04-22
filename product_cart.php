@@ -75,10 +75,14 @@ if (isset($_GET['delid'])) {
     <div class="container-xl">
         <div class="table-responsive">
             <div id="shopping-cart">
-                <div class="txt-heading">Shopping Cart</div>
-
-                <a id="btnEmpty" href="delete_cart.php" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to empty the cart ?');">Empty Cart</a>
-
+                <div class="row">
+                    <div class=col-sm-5>
+                        <div class="txt-heading">Shopping Cart</div>
+                    </div>
+                    <div  class="col-sm-7" align="right">
+                    <a id="btnEmpty" href="delete_cart.php" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to empty the cart ?');">Empty Cart</a>
+                    </div>
+                </div>
                 <table class="tbl-cart" cellpadding="10" cellspacing="1">
                     <tbody>
                         <?php
