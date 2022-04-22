@@ -378,7 +378,7 @@ hr {
     margin-top: -20px; 
 }
 
-span{
+span#product{
     margin-top: -40px;
     position: absolute;
     margin-left: 20px;
