@@ -122,9 +122,9 @@ $userid = $user_data['user_id'];
 
                     ?>
                     <tr>
-                        <td colspan="2" align="center">Total:</td>
+                        <td align="center">Total:</td>
                         <td align="center"><?php echo $total_quantity; ?></td>
-                        <td align="right" colspan="4"><strong><?php echo "₹" . number_format($total_price, 2); ?></strong></td>
+                        <td align="right" colspan="3"><strong><?php echo "₹" . number_format($total_price, 2); ?></strong></td>
                         <td></td>
                     </tr>
             </tbody>

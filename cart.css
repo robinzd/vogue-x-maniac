@@ -307,3 +307,7 @@ a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2:hover{
 	clear: both;
 	margin: 38px 0px;
 }
+
+th{
+    white-space: nowrap;
+}
