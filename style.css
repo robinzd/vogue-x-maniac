@@ -386,6 +386,7 @@ span#product{
     border-radius: 5px;
     padding-left: 5px;
     padding-right: 5px;
+    font-size: 12px;
 }
 
 span#product:hover{
