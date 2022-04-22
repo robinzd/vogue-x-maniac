@@ -16,8 +16,8 @@ if(isset($_GET['delid']))
 $rid=intval($_GET['delid']);
 $pic=$_GET['product_id'];
 $sql=mysqli_query($conn,"delete from products_cart where ID=$rid");
-echo "<script>alert('Brand deleted');</script>"; 
-echo "<script>window.location.href = 'brand.php'</script>";     
+echo "<script>alert('item deleted in the cart');</script>"; 
+echo "<script>window.location.href = 'product_cart.php'</script>";     
 } 
 
 ?>
