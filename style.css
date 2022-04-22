@@ -374,7 +374,8 @@ hr {
     color: #fff;
     padding: 0 5px;
     vertical-align: top;
-    margin-left: -10px; 
+    margin-left: -10px;
+    margin-top: -20px; 
 }
 
 /*  */
