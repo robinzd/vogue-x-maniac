@@ -367,6 +367,19 @@ hr {
   border: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
+
+  /*  */
+  #lblCartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px; 
+}
+
+/*  */
+
 small,
 .small {
   font-size: 80%;
@@ -8383,36 +8396,4 @@ h1, h2, h3, h4, h5,
   .form-control:focus, .form-control:active {
     border-color: #000; }
 
-    /* notification design */
-    *.icon-blue {
-      color: #0088cc;
-    }
     
-    *.icon-grey {
-      color: grey;
-    }
-    
-    i {
-      width: 100px;
-      text-align: center;
-      vertical-align: middle;
-      position: relative;
-    }
-    
-    .badge:after {
-      content: attr(data-count);
-      position: absolute;
-      background: #ff6600;
-      height: 2rem;
-      top: 1rem;
-      right: 1.5rem;
-      width: 2rem;
-      text-align: center;
-      line-height: 2rem;
-      font-size: 1rem;
-      border-radius: 50%;
-      color: white;
-      border: 1px solid #ff6600;
-      font-family: sans-serif;
-      font-weight: bold;
-    }
