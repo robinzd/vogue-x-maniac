@@ -71,7 +71,7 @@ if (isset($_GET['delid'])) {
 
     <!--back to top ends -->
 
-<!-- product_cart starts hidden only on xs -->
+    <!-- product_cart starts hidden only on xs -->
     <div class="table-responsive d-none d-sm-block">
         <div id="shopping-cart">
 
@@ -165,17 +165,22 @@ if (isset($_GET['delid'])) {
 
             </table>
 
+            <div class="d-grid gap-2">
+                <button class="btn btn-success" type="button">Checkout</button>
+            </div>
+
+
         </div>
 
     </div>
 
-<!-- product_cart ends -->
+    <!-- product_cart ends -->
 
 
-<!-- product_cart visible only on xs -->
+    <!-- product_cart visible only on xs -->
 
 
-<div class="table-responsive d-block d-sm-none" style="zoom:50%">
+    <div class="table-responsive d-block d-sm-none" style="zoom:50%">
         <div id="shopping-cart">
 
 
@@ -268,15 +273,17 @@ if (isset($_GET['delid'])) {
 
             </table>
 
+            <div class="d-grid gap-2">
+                <button class="btn btn-success" type="button">Checkout</button>
+            </div>
+
         </div>
 
     </div>
 
     <!-- product_cart ends -->
-    
-    <div class="d-grid gap-2">
-    <button class="btn btn-success" type="button">Checkout</button>
-    </div>
+
+
 
     <!-- Footer -->
 
