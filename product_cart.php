@@ -274,7 +274,7 @@ if (isset($_GET['delid'])) {
 
     <!-- product_cart ends -->
 
-    <button class="btn btn-success" type="button">Button</button>
+    <button class="btn btn-success" type="button">Checkout</button>
 
     <!-- Footer -->
 
