@@ -77,7 +77,7 @@ echo "<script>window.location.href = 'product_cart.php'</script>";
     <div id="shopping-cart">
         <div class="txt-heading">Shopping Cart</div>
 
-        <a id="btnEmpty" href="delete_cart.php" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to Delete ?');">Empty Cart</a>
+        <a id="btnEmpty" href="delete_cart.php" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to empty the cart ?');">Empty Cart</a>
 
         <table class="tbl-cart" cellpadding="10" cellspacing="1">
         <tbody>
