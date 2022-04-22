@@ -118,7 +118,7 @@ echo "<script>window.location.href = 'product_cart.php'</script>";
                                     <td style="text-align:center;"><?php echo $row["product_size"]; ?></td>
                                     <td style="text-align:center;"><?php echo $product_price; ?></td>
                                     <td style="text-align:center;"><?php echo "₹" . number_format($unit_price, 2); ?></td>
-                                    <td style="text-align:center;"><a href="product_cart.php?delid=<?php  echo $row['product_id']; ?>" class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item"/></a></td>
+                                    <td style="text-align:center;"><a href="product_cart.php?delid=<?php echo ($row['ID']);?>&&product_id=<?php echo  $product_id;?>"class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item"/></a></td>
                                 </tr>
                     <?php
                                 $total_quantity += $row["product_quantity"];
