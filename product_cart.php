@@ -22,14 +22,7 @@ echo "<script>window.location.href = 'product_cart.php'</script>";
 }
 
 
-if(isset($_GET['delete']))
- {
-$rid=intval($_GET['delete']);
-$sql=mysqli_query($conn,"delete * from products_cart");
-echo "<script>alert('cart emptyed!');</script>"; 
-echo "<script>window.location.href = 'product_cart.php'</script>"; 
 
-} 
 
 
 	
@@ -85,7 +78,7 @@ echo "<script>window.location.href = 'product_cart.php'</script>";
     <div id="shopping-cart">
         <div class="txt-heading">Shopping Cart</div>
 
-        <a id="btnEmpty" href="product_cart.php?action=delete">Empty Cart</a>
+        <a id="btnEmpty" href="delete_cart.php" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to Delete ?');">Empty Cart</a>
 
         <table class="tbl-cart" cellpadding="10" cellspacing="1">
         <tbody>
