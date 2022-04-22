@@ -11,20 +11,18 @@ $user_data = check_login($conn);
 
 $userid = $user_data['user_id'];
 
-if(isset($_GET['delid']))
-{
-$rid=intval($_GET['delid']);
-$sql=mysqli_query($conn,"delete from products_cart where ID=$rid");
-echo "<script>alert('you have successfully deleted the item in the cart');</script>"; 
-echo "<script>window.location.href = 'product_cart.php'</script>"; 
-
+if (isset($_GET['delid'])) {
+    $rid = intval($_GET['delid']);
+    $sql = mysqli_query($conn, "delete from products_cart where ID=$rid");
+    echo "<script>alert('you have successfully deleted the item in the cart');</script>";
+    echo "<script>window.location.href = 'product_cart.php'</script>";
 }
 
 
 
 
 
-	
+
 
 ?>
 
@@ -80,12 +78,12 @@ echo "<script>window.location.href = 'product_cart.php'</script>";
         <a id="btnEmpty" href="delete_cart.php" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to empty the cart ?');">Empty Cart</a>
 
         <table class="tbl-cart" cellpadding="10" cellspacing="1">
-        <tbody>
-            <tr>
-                 
+            <tbody>
+                <tr>
+
                     <th style="text-align:left;">Product Name</th>
                     <th style="text-align:center;">Product Quantity</th>
-                    <th style="text-align:center;"width="5%">Product Size</th>
+                    <th style="text-align:center;" width="5%">Product Size</th>
                     <th style="text-align:center;" width="10%">Unit Price</th>
                     <th style="text-align:center;" width="10%">Price</th>
                     <th style="text-align:center;" width="5%">Remove</th>
@@ -130,12 +128,11 @@ echo "<script>window.location.href = 'product_cart.php'</script>";
                                     <td style="text-align:center;"><?php echo $row["product_size"]; ?></td>
                                     <td style="text-align:center;"><?php echo $product_price; ?></td>
                                     <td style="text-align:center;"><?php echo "₹" . number_format($unit_price, 2); ?></td>
-                                    <td style="text-align:center;"><a href="product_cart.php?delid=<?php echo ($row['ID']);?>"class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item"/></a></td>
+                                    <td style="text-align:center;"><a href="product_cart.php?delid=<?php echo ($row['ID']); ?>" class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item" /></a></td>
                                 </tr>
                     <?php
                                 $total_quantity += $row["product_quantity"];
                                 $total_price += ($product_price * $row["product_quantity"]);
-                               
                             }
                         }
                     }
