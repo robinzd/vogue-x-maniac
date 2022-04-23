@@ -260,7 +260,7 @@ if (isset($_GET['delid'])) {
                         </tr>
 
                         <div class="d-grid gap-2">
-                            <button class="btn btn-success" type="button">Checkout</button>
+                            <?php echo "<button class='btn btn-success' type='button'>Checkout</button>";?>
                         </div>
 
                     <?php
@@ -276,9 +276,6 @@ if (isset($_GET['delid'])) {
                 </tbody>
 
             </table>
-
-
-
         </div>
 
     </div>
