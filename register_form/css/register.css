@@ -265,7 +265,7 @@ img{
   min-height: 100vh;
   display: block;
   background-color: #f7f7f7;
-  padding: 10px 55px 55px 10px;
+  padding: 10px 55px 10px 55px;
 }
 
 .login100-form-title{
