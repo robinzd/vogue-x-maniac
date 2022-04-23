@@ -259,6 +259,10 @@ if (isset($_GET['delid'])) {
                             <td></td>
                         </tr>
 
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-success" type="button">Checkout</button>
+                        </div>
+
                     <?php
 
 
@@ -273,9 +277,7 @@ if (isset($_GET['delid'])) {
 
             </table>
 
-            <div class="d-grid gap-2">
-                <button class="btn btn-success" type="button">Checkout</button>
-            </div>
+
 
         </div>
 
