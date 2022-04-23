@@ -108,7 +108,7 @@ if (!empty($name) && !is_numeric($name) && !empty($email)&& !empty($subject) && 
                   </div>
                </div>
                <div class="card-body p-3">
-                  <form method="post">
+                  <form method="Post">
                      <div class="form-group">
                         <label> Your name:</label>
                         <div class="input-group">
