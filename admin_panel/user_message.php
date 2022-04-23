@@ -10,7 +10,7 @@ include('dbconnection.php');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Table</title>
+    <title>User Messages Table</title>
     <!-- fav icon -->
     <link rel="icon" type="image/png" href="./favicon/icons8-data-sheet-48.png"/>
     <!-- bootsstrap cdn -->
@@ -47,11 +47,11 @@ include('dbconnection.php');
             <nav class="nav">
                 <div> <a href="#" class="nav_logo"><i class="fa fa-user"></i><span class="nav_logo-name">Admin Panel</span> </a>
                     <div class="nav_list"> <a href="./admin_panel.php" class="nav_link"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a>
-                        <a href="./user_table.php" class="nav_link active"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users Table</span> </a>
-                        <a href="./user_message.php" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i>
+                        <a href="./user_table.php" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users Table</span> </a>
+                        <a href="./user_message.php" class="nav_link active"> <i class='bx bx-message-square-detail nav_icon'></i>
                             <span class="nav_name">Messages</span> </a> 
                             <!-- <a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Bookmark</span> </a> <a href="#" class="nav_link">
-                            <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Files</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Stats</span> </a> -->
+                            <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Files</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Stats</span> </a> --> -->
                     </div>
 
             </nav>
@@ -59,7 +59,7 @@ include('dbconnection.php');
 
         <div class="top-text">
             <div class="icon"><i class="fa fa-table"></i></div>
-            <div class="text">Users Record Table</div>
+            <div class="text">Users Messages Table</div>
         </div>
        
         <div class="container-xl">
@@ -81,16 +81,17 @@ include('dbconnection.php');
                             <tr>
                                 <th>S.No</th>
                                 <th>User ID</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
+                                <th>User Name</th>
                                 <th>User Email</th>
+                                <th>User Subject</th>
+                                <th>User Message</th>
                                 <th>Created Time</th>
 
                             </tr>
                         </thead>
                         <tbody>
                             <?php
-                            $ret = mysqli_query($conn, "select user_id,first_name,last_name,user_email,created_time from users");
+                            $ret = mysqli_query($conn, "select * from users_message");
                             $cnt = 1;
                             $row = mysqli_num_rows($ret);
                             if ($row > 0) {
@@ -101,9 +102,10 @@ include('dbconnection.php');
                                     <tr>
                                         <td><?php echo $cnt; ?></td>
                                         <td><?php echo $row['user_id']; ?></td>
-                                        <td><?php echo $row['first_name']; ?></td>
-                                        <td><?php echo $row['last_name']; ?></td>
+                                        <td><?php echo $row['user_name']; ?></td>
                                         <td><?php echo $row['user_email']; ?></td>
+                                        <td><?php echo $row['user_subject']; ?></td>
+                                        <td><?php echo $row['user_message']; ?></td>
                                         <td><?php echo $row['created_time']; ?></td>
                                     </tr>
                                 <?php

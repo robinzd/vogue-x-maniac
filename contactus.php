@@ -41,19 +41,7 @@ if (!empty($name) && !is_numeric($name) && !empty($email)&& !empty($subject) && 
 
 
 
-
-
 ?>
-
-
-
-
-
-
-
-
-
-
 
 
 <!DOCTYPE html>
