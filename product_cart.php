@@ -262,9 +262,7 @@ if (isset($_GET['delid'])) {
 
                     <?php
 
-                        echo "<div class='d-grid gap-2'>
-                       <button class='btn btn-success' type='button'>Checkout</button>
-                           </div> ";
+
                     } else {
                     ?>
                         <div class="no-records"><img src="./empty-cart-removebg-preview.png"></div>
@@ -275,6 +273,16 @@ if (isset($_GET['delid'])) {
                 </tbody>
 
             </table>
+
+            <?php
+            if($row > 0){
+                echo "<div class='d-grid gap-2'>
+                <button class='btn btn-success' type='button'>Checkout</button>
+                    </div> ";
+            }
+
+
+            ?>
         </div>
 
     </div>
