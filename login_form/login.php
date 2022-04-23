@@ -99,7 +99,7 @@ session_start();
 	
 	<div class="limiter">
 		<div class="container-login100">
-			<div class="wrap-login100" style="margin-top:-60px;">
+			<div class="wrap-login100 d-block d-sm-none" style="margin-top:-60px;">
 				<form method="post" class="login100-form validate-form" >
 
 				<span class="login100-form-title p-b-43">
