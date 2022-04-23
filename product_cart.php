@@ -259,14 +259,12 @@ if (isset($_GET['delid'])) {
                             <td></td>
                         </tr>
 
-                         <div class="d-grid gap-2">
-                             <button class="btn btn-success" type="button">Checkout</button>
-                        </div> 
-                        
 
                     <?php
 
-
+                        echo "<div class='d-grid gap-2'>
+                       <button class='btn btn-success' type='button'>Checkout</button>
+                           </div> ";
                     } else {
                     ?>
                         <div class="no-records"><img src="./empty-cart-removebg-preview.png"></div>
