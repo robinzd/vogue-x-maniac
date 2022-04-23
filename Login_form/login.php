@@ -101,7 +101,91 @@ session_start();
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form method="post" class="login100-form validate-form">
+				<form method="post" class="login100-form validate-form d-none d-sm-block" style="margin-top:-140px;">
+
+				<span class="login100-form-title p-b-43">
+						<img src="../header images/vogue x maniac png.png">
+						
+					</span>
+
+
+					<span class="login100-form-title p-b-43">
+						Login Form
+					</span>
+					
+					
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="email" name="email">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Email</span>
+					</div>
+					
+					
+					<div class="wrap-input100 validate-input" data-validate="Password is required">
+						<input class="input100" type="password" name="password">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Password</span>
+					</div>
+
+					<div class="flex-sb-m w-full p-t-3 p-b-32">
+						<div class="contact100">
+							
+							<div>
+							<a href="../register_form/register.php" class="txt1">
+							Register Here! 
+							</a>
+                             </div>
+						</div>
+
+						<div>
+							<a href="#" class="txt1">
+								Forgot Password?
+							</a>
+						</div>
+					</div>
+			
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn"  type="submit" value="login">
+							Login
+						</button>
+					</div>
+
+					 <div class="text-center p-t-46 p-b-20">
+						<span class="txt2">
+							Don't Have an account?<a href="../register_form/register.php" class="txt1">Register</a>
+						</span>
+					</div>
+
+					
+					 <div class="text-center p-t-46 p-b-20">
+						<span class="txt2">
+							or sign up using
+						</span>
+					</div>
+
+					<!-- <div class="login100-form-social flex-c-m">
+						<a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
+							<i class="fa fa-facebook-f" aria-hidden="true"></i>
+						</a>
+
+						<a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
+							<i class="fa fa-google" aria-hidden="true"></i>
+						</a>
+					</div> -->
+				</form>
+
+				<div class="login100-more" style="background-image: url('images/login-pic.jpg');">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<form method="post" class="login100-form validate-form d-block d-sm-none">
 
 				<span class="login100-form-title p-b-43">
 						<img src="../header images/vogue x maniac png.png">
