@@ -100,7 +100,7 @@ session_start();
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form method="post" class="login100-form validate-form">
+				<form method="post" class="login100-form validate-form" style="margin-top:-60px;">
 
 				<span class="login100-form-title p-b-43">
 						<img src="../header images/vogue x maniac png.png">
