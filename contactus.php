@@ -1,14 +1,13 @@
 
 <?php
 
+include("./conn.php");
+
 session_start();
 
 $user_data = check_login($conn);
 
 $userid = $user_data['user_id'];
-
-
-include("./conn.php");
 
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
