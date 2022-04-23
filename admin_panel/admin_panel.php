@@ -25,9 +25,9 @@
           <header class="header" id="header">
               <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
               <div class="navbar__right">
-                  <a href="#">
+                  <!-- <a href="#">
                       <i class="fa fa-bell" aria-hidden="true"></i>
-                  </a>
+                  </a> -->
                   <a href="../index.php">
                       <i class="fa fa-sign-out" aria-hidden="true"></i>
                   </a>
