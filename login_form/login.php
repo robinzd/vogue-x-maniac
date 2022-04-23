@@ -175,16 +175,6 @@ session_start();
 					</div> -->
 				</form>
 
-				<div class="login100-more" style="background-image: url('images/login-pic.jpg');">
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
 				<form method="post" class="login100-form validate-form d-block d-sm-none">
 
 				<span class="login100-form-title p-b-43">
@@ -264,7 +254,8 @@ session_start();
 			</div>
 		</div>
 	</div>
-	
+
+
 	
 
 	
