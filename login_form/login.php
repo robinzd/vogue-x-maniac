@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
 	<div class="limiter">
-		<div class="container-login100"  style="padding-bottom:0px;">
+		<div class="container-login100">
 			<div class="wrap-login100" style="margin-top:-60px;">
 				<form method="post" class="login100-form validate-form">
 
