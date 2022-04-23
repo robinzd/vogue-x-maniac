@@ -90,7 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
 	<div class="limiter">
-		<div class="container-login100">
+		<div class="container-login100"  style="padding-bottom:0px;">
 			<div class="wrap-login100" style="margin-top:-60px;">
 				<form method="post" class="login100-form validate-form">
 
@@ -142,7 +142,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 						</button>
 					</div>
 
-					<div class="text-center p-t-46 p-b-20" style="padding-bottom:0px;">
+					<div class="text-center p-t-46 p-b-20">
 						<span class="txt2">
 							Don't Have an account?<a href="../register_form/register.php" class="txt1">Register</a>
 						</span>
