@@ -163,7 +163,7 @@ session_start();
 						</span>
 					</div>
 
-					<div class="login100-form-social flex-c-m">
+					<!-- <div class="login100-form-social flex-c-m">
 						<a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
 							<i class="fa fa-facebook-f" aria-hidden="true"></i>
 						</a>
@@ -171,7 +171,7 @@ session_start();
 						<a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
 							<i class="fa fa-google" aria-hidden="true"></i>
 						</a>
-					</div> 
+					</div>  -->
 				</form>
 
 				<div class="login100-more" style="background-image: url('images/login-pic.jpg');">
