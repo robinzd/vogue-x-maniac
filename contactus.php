@@ -32,8 +32,7 @@ if (!empty($name) && !is_numeric($name) && !empty($email)&& !empty($subject) && 
 
 		
       echo "<script>alert('you have successfully sent the message');</script>";
-		header("location:./contactus.php");
-		die;
+      echo "<script>window.location.href = './contactus.php'</script>";
 	} 
 	else {
 		echo "<script>alert('something went wrong');</script>";
