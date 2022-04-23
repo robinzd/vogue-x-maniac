@@ -1,3 +1,62 @@
+
+<?php
+
+session_start();
+
+$user_data = check_login($conn);
+
+$userid = $user_data['user_id'];
+
+
+include("./conn.php");
+
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+	// something was posted
+	$name = $_POST["name"];
+	$email = $_POST["email"];
+	$subject = $_POST["subject"];
+	$message= $_POST["message"];
+	
+
+	
+if (!empty($name) && !is_numeric($name) && !empty($email)&& !empty($subject) && !empty($message)) 
+ {
+		// save to database
+		
+		$query = "INSERT INTO `users_message`( `user_id`, `user_name`, `user_email`, `user_subject`, `user_message`) VALUES ('$userid','$name','$email','$subject','$message')";
+        
+		
+
+		$check = mysqli_query($conn, $query);
+
+		
+      echo "<script>alert('you have successfully sent the message');</script>";
+		header("location:./contactus.php");
+		die;
+	} 
+	else {
+		echo "<script>alert('something went wrong');</script>";
+	}
+}
+
+
+
+
+
+?>
+
+
+
+
+
+
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -33,6 +92,7 @@
 
    <!--back to top ends -->
 
+   
 
    <section class="container mt-5">
       <!--Contact heading-->
