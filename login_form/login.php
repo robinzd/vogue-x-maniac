@@ -150,7 +150,7 @@ session_start();
 						</button>
 					</div>
 
-					 <div class="text-center p-t-46 p-b-20" style="padding-top:0px";>
+					 <div class="text-center p-t-46 p-b-20">
 						<span class="txt2">
 							Don't Have an account?<a href="../register_form/register.php" class="txt1">Register</a>
 						</span>
