@@ -125,10 +125,6 @@ $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$se
 
             <div class="col-sm-8 col-md-9">
 
-              
-                <!-- Filters -->
-                <div class="row filter_data">
-
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         Sort by
@@ -139,8 +135,13 @@ $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$se
                         <li><a class="dropdown-item" href="#">Newest Product</a></li>
                     </ul>
                 </div>
+                <!-- Filters -->
+                <div class="row filter_data">
 
-                <?php
+
+
+
+                    <?php
 
                     if ($searchingquery) {
                         $get_product_slider = $searchingquery;
