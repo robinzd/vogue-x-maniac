@@ -124,21 +124,18 @@ $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$se
 
 
             <div class="col-sm-8 col-md-9">
-
                 <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Sort by
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Low to high</a></li>
-                        <li><a class="dropdown-item" href="#">High to Low</a></li>
-                        <li><a class="dropdown-item" href="#">Newest Product</a></li>
-                    </ul>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
                 </div>
                 <!-- Filters -->
                 <div class="row filter_data">
 
-                <?php
+                    <?php
 
                     if ($searchingquery) {
                         $get_product_slider = $searchingquery;
@@ -324,7 +321,7 @@ $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$se
                                     maximum_price: maximum_price,
                                     brand: brand,
                                     category: category,
-                                    search_string:"<?php echo $searchstring; ?>",
+                                    search_string: "<?php echo $searchstring; ?>",
 
                                 },
                                 success: function(data) {
