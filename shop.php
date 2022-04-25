@@ -130,9 +130,9 @@ $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$se
                         Sort by
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Low to high</a></li>
+                        <li><a class="dropdown-item" href="#">High to Low</a></li>
+                        <li><a class="dropdown-item" href="#">Newest Product</a></li>
                     </ul>
                 </div>
                 <!-- Filters -->
