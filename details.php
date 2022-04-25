@@ -83,12 +83,10 @@ include("./conn.php");
 
 
                                 echo " 
-                           
                                 <div class='text-center p-4'> 
                                 <img id='main-image' src='./admin_panel/products_images/images/$details_image' width='250'> 
                                 </div> 
-
-                                ";
+                            ";
 
                                 ?>
 

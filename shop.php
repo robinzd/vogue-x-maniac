@@ -144,7 +144,6 @@ $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$se
                     <?php
 
                     if ($searchingquery) {
-                        echo $searchingquery;
                         $get_product_slider = $searchingquery;
                     } else {
                         $get_product_slider = "select * from products_details";
