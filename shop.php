@@ -126,10 +126,10 @@ $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$se
             <div class="col-sm-8 col-md-9">
                 <div class="dropdown">
                     <select class="form-select" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
+                        <option selected>Sort by</option>
+                        <option value="1">Sort by:low to high</option>
+                        <option value="2">sort by:high to low</option>
+                        <option value="3">sort by:Latest Product</option>
                     </select>
                 </div>
                 <!-- Filters -->
