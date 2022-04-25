@@ -452,6 +452,7 @@ th{
   margin: 5px 0 0;
   font-size: 24px;
 } */
+
 .table-title select {
   border-color: #ddd;
   border-width: 0 0 1px 0;
@@ -465,23 +466,24 @@ th{
   position: relative;
   float: right;
 }
-.search-box .input-group {
+.search-box .input-group{
   min-width: 200px;
   position: absolute;
   right: 0;
 }
+
 .search-box .input-group-addon, .search-box input {
   border-color: #ddd;
   border-radius: 0;
 }
-.search-box .input-group-addon {
+.search-box .input-group-addon{
   border: none;
   border: none;
   background: transparent;
   position: absolute;
   z-index: 9;
 }
-.search-box input {
+.search-box input{
   height: 34px;
   padding-left: 28px;     
   box-shadow: none !important;
