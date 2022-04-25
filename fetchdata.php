@@ -45,7 +45,7 @@ if (isset($_POST["action"])) {
   ";
     }
 
-    echo $query;
+    
     $statement = $connect->prepare($query);
     $statement->execute();
     $result = $statement->fetchAll();

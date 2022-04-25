@@ -45,7 +45,7 @@ include("./conn.php");
 							<a class="navbar-brand" href="index.html"><img src="./header images/vogue x maniac png.png"></a>
 						</div>
 						<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
-							<form action="shop1.php" method="Post" class="searchform order-lg-last">
+							<form action="shop.php" method="Post" class="searchform order-lg-last">
 								<div class="form-group d-flex">
 									<input type="text" name="search" class="form-control pl-3" placeholder="Search">
 									<button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
