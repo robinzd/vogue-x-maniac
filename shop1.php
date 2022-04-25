@@ -8,7 +8,7 @@ $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
 
 $searchingquery="SELECT * FROM products_details WHERE product_title LIKE '%$searchstring%'";
 
-echo $query;
+echo $searchingquery;
 
 ?>
 
