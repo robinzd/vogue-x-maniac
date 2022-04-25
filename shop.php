@@ -138,10 +138,7 @@ $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$se
                 <!-- Filters -->
                 <div class="row filter_data">
 
-
-
-
-                    <?php
+                <?php
 
                     if ($searchingquery) {
                         $get_product_slider = $searchingquery;
