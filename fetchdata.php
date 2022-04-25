@@ -41,7 +41,7 @@ if (isset($_POST["action"])) {
         // $category_filter = implode("','", $_POST["category"]);
         $searchstring=$_POST["search_string"];
         $query .= "
-   AND product_title IN('" . $category_filter . "')
+   AND product_title like '%$searchstring%';
   ";
     }
 

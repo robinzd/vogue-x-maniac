@@ -330,7 +330,7 @@ echo $searchingquery;
                                     maximum_price: maximum_price,
                                     brand: brand,
                                     category: category,
-                                    search_string:<?php echo $searchstring; ?>,
+                                    search_string:"<?php echo $searchstring; ?>",
 
                                 },
                                 success: function(data) {
