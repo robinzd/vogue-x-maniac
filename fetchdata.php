@@ -37,6 +37,13 @@ if (isset($_POST["action"])) {
    AND product_category IN('" . $category_filter . "')
   ";
     }
+    if (isset($_POST["search_string"])) {
+        // $category_filter = implode("','", $_POST["category"]);
+        $searchstring=$_POST["search_string"];
+        $query .= "
+   AND product_title IN('" . $category_filter . "')
+  ";
+    }
 
 
     $statement = $connect->prepare($query);
