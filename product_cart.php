@@ -18,22 +18,7 @@ if (isset($_GET['delid'])) {
     echo "<script>window.location.href = 'product_cart.php'</script>";
 }
 
-
-
-
-
-
-
 ?>
-
-
-
-
-
-
-
-
-
 
 
 <!DOCTYPE html>
