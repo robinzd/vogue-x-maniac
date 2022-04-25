@@ -6,7 +6,7 @@ include("./conn.php");
 
 $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
 
-$query="SELECT * FROM products_details WHERE product_title LIKE '%$searchstring%'";
+$searchingquery="SELECT * FROM products_details WHERE product_title LIKE '%$searchstring%'";
 
 echo $query;
 
@@ -142,10 +142,16 @@ echo $query;
 
 
                     <?php
+                     if($searchingquery){
+                        echo $searchingquery;
+                        $get_product_slider=$searchingquery;
+                     }
+                     else{
+                         $get_product_slider = "select * from products_details";
+                     };
 
-
-                    $get_product_slider = "select * from products_details";
-
+                   
+                    
                     $run_product_image = mysqli_query($conn, $get_product_slider);
 
 
@@ -190,6 +196,8 @@ echo $query;
 
 ";
                     }
+
+                
 
 
                     ?>
