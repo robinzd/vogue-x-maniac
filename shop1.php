@@ -6,9 +6,9 @@ include("./conn.php");
 
 $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
 
-$searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$searchstring%'";
+$searchingquery="SELECT * FROM products_details WHERE product_title LIKE '%$searchstring%'";
 
-
+echo $searchingquery;
 
 ?>
 
@@ -103,10 +103,10 @@ $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$se
                         $statement->execute();
                         $result = $statement->fetchAll();
                         foreach ($result as $row) {
-                            $repalce_category = str_replace(" ", "-", $row['product_category']);
+                            $repalce_category=str_replace(" ","-",$row['product_category']);
                         ?>
                             <div class="form-check">
-                                <label><input type="checkbox" class="form-check-input category" id="category-<?php echo  $repalce_category; ?>" value="<?php echo $row['product_category']; ?>"> <?php echo $row['product_category']; ?></label>
+                                <label><input type="checkbox" class="form-check-input category" id="category-<?php echo  $repalce_category;?>" value="<?php echo $row['product_category']; ?>"> <?php echo $row['product_category']; ?></label>
                             </div>
                         <?php
                         }
@@ -124,7 +124,7 @@ $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$se
 
 
             <div class="col-sm-8 col-md-9">
-                <form action="shop.php">
+
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         Sort by
@@ -135,19 +135,23 @@ $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$se
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </div>
-                </form>
                 <!-- Filters -->
                 <div class="row filter_data">
+
+
+
+
                     <?php
+                     if($searchingquery){
+                        echo $searchingquery;
+                        $get_product_slider=$searchingquery;
+                     }
+                     else{
+                         $get_product_slider = "select * from products_details";
+                     };
 
-                    if ($searchingquery) {
-                        $get_product_slider = $searchingquery;
-                    } else {
-                        $get_product_slider = "select * from products_details";
-                    };
-
-
-
+                   
+                    
                     $run_product_image = mysqli_query($conn, $get_product_slider);
 
 
@@ -192,6 +196,8 @@ $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$se
 
 ";
                     }
+
+                
 
 
                     ?>
@@ -324,7 +330,7 @@ $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$se
                                     maximum_price: maximum_price,
                                     brand: brand,
                                     category: category,
-                                    search_string: "<?php echo $searchstring; ?>",
+                                    search_string:"<?php echo $searchstring; ?>",
 
                                 },
                                 success: function(data) {
@@ -394,18 +400,18 @@ $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$se
 
                 $get_string = $_SERVER['QUERY_STRING'];
 
-                // echo "console.log('".$replace_string."');";
+               // echo "console.log('".$replace_string."');";
 
-                parse_str($get_string, $get_array);
+                parse_str($get_string , $get_array);
 
                 $product_category = $get_array['category_name'];
 
 
-                $replace_string = str_replace("%20", "-", "$product_category");
+                $replace_string=str_replace("%20","-","$product_category");
 
+              
 
-
-
+              
 
 
                 if ($replace_string) { ?>
@@ -422,7 +428,7 @@ $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$se
                     echo $replace_string;
                 }
 
-                ?>
+            ?>
             </script>
 
 
