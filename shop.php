@@ -148,6 +148,9 @@ $ordervalue = isset($_POST['order']) ? $_POST['order'] : "";
                     } else {
                         $get_product_slider = "select * from products_details";
                     };
+                    if($ordervalue) {
+                        $get_product_slider .= "ORDER BY product_price $ordervalue";
+                    }
 
 
 
