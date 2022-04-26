@@ -67,7 +67,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
 
                     <!-- Checkboxes -->
-                    <div class="list-group">
+                    <div class="list-group"  style="overflow-y: scroll;height: 400px;">
                         <h3 class="headline">
                             <span>Brands</span>
                         </h3>
@@ -93,7 +93,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
                     <!--product category -->
 
-                    <div class="list-group">
+                    <div class="list-group" style="overflow-y: scroll;height: 400px;">
                         <h3 class="headline">
                             <span>Categories</span>
                         </h3>
