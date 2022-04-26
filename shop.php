@@ -9,6 +9,9 @@ $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
 $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$searchstring%'";
 
 
+$ordervalue = isset($_POST['order']) ? $_POST['order'] : "";
+
+
 
 ?>
 
@@ -130,9 +133,9 @@ $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$se
                         Sort by
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="shop.php?order=desc">High to Low</a></li>
+                        <li><a class="dropdown-item" href="shop.php?order=asc">Low to High</a></li>
+                        <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                     </ul>
                 </div>
                 </form>
@@ -325,6 +328,7 @@ $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$se
                                     brand: brand,
                                     category: category,
                                     search_string: "<?php echo $searchstring; ?>",
+                                    order_value:"<?php echo $ordervalue; ?>",
 
                                 },
                                 success: function(data) {

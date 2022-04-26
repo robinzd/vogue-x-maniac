@@ -41,10 +41,17 @@ if (isset($_POST["action"])) {
         // $category_filter = implode("','", $_POST["category"]);
         $searchstring=$_POST["search_string"];
         $query .= "
-   AND product_title like('%$searchstring%');
+   AND product_title like('%$searchstring%')
   ";
     }
-
+    if (isset($_POST["order_value"])) {
+        // $category_filter = implode("','", $_POST["category"]);
+        $order=$_POST["order_value"];
+        $query .= "
+  ORDER BY product_price $order;
+  ";
+    }
+    
     
     $statement = $connect->prepare($query);
     $statement->execute();
