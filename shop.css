@@ -616,6 +616,8 @@ body {
 }
 
 
+
+
 /**
  * Forms
  */
@@ -767,6 +769,8 @@ ol#bread {
 }
 
 /* products */
+
+
 a.btn.btn-success {
   margin: 10px;
 }
@@ -785,6 +789,8 @@ a.btn.btn-success {
   white-space: nowrap;
 
 }
+
+
 
 /* .text-center{
   white-space:nowrap;
@@ -973,3 +979,5 @@ input.form-check-input.category {
   border-color: lightgreen;
   box-shadow: none;
 }
+
+

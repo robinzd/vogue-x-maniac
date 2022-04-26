@@ -126,7 +126,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
 
 
-            <div class="col-sm-8 col-md-9">
+            <div class="col-sm-8 col-md-9" style="overflow-y: scroll;height: 1000px;">
                 <form action="shop.php">
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -180,7 +180,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                         }
 
 
-                        echo "<div class='col-sm-6 col-md-4'>
+                        echo "<div class='col-sm-6 col-md-4' >
                             <div class='card bg-white'>
                             <a href='details.php?id=$product_id'><img class='card-img-top' src='./admin_panel/products_images/images/$details_image' alt='' style='width:100%'>
         <div class='card-body'>
@@ -229,7 +229,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                         <!--Grid row-->
                         <div class="row">
                             <!-- Grid column -->
-                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" >
                                 <img class="footerimage" src="./header images/vogue x maniac png.png" alt="brand image">
                                 <p class="text-white">
                                     Here you can use rows and columns to organize your footer
