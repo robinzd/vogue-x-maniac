@@ -9,7 +9,7 @@ $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
 $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$searchstring%'";
 
 
-$ordervalue = isset($_POST['order']) ? $_POST['order'] : "";
+$ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
 
 
