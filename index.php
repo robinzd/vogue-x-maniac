@@ -239,6 +239,8 @@ include("./conn.php");
 
                 $category_name =str_replace(" ","-", $row_category_picture['category_name']);
 
+                $category_name1=$row_category_picture['category_name'];
+
 
 
 
@@ -246,7 +248,7 @@ include("./conn.php");
                         <a href='shop.php?category_name=$category_name' target='_blank' class='gallery__link'>
                         <figure class='gallery__thumb'>
 <img src='./admin_panel/categories/categories_images/$category_image' alt='' class='gallery__image'>
-<figcaption class='gallery__caption'>$category_name</figcaption>
+<figcaption class='gallery__caption'>$category_name1</figcaption>
 </figure>
 </a>
 </div>
