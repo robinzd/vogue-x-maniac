@@ -4,6 +4,8 @@ $email_id = isset($_POST['email']) ? $_POST['email'] : "";
 
 $subject = isset($_POST['subject']) ? $_POST['subject'] : "";
 
+$body= isset($_POST['body']) ? $_POST['body'] : "";
+
 
 
 
@@ -43,8 +45,8 @@ try {
   
   // Message
   $phpmailer->IsHTML(true);
-  $phpmailer->Subject = "Mailer To Go Test";
-  $phpmailer->Body    = "<h1>$subject</h1>";
+  $phpmailer->Subject = $subject;
+  $phpmailer->Body    = $body;
   $phpmailer->AltBody = "Hi!\nTest from Mailer To Go 😊\n";
 
   // Send the Email
