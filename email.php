@@ -6,6 +6,8 @@ $subject = isset($_POST['subject']) ? $_POST['subject'] : "";
 
 $body= isset($_POST['body']) ? $_POST['body'] : "";
 
+$sender = isset($_POST['sender']) ? $_POST['sender'] : "";
+
 
 
 
@@ -39,7 +41,7 @@ try {
     // $mailguntogo_domain = getenv("MAILGUN_DOMAIN", true);
 
   // Mail Headers
-  $phpmailer->SetFrom("ibots.robin@gmail.com", "Robinson Rajiv");
+  $phpmailer->SetFrom("ibots.robin@gmail.com", $sender);
   // Change to recipient email. Make sure to use a real email address in your tests to avoid hard bounces and protect your reputation as a sender.
   $phpmailer->AddAddress("$email_id", "Robin");
   
