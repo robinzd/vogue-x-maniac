@@ -1,4 +1,11 @@
 <?php
+$email_id = isset($_POST['email']) ? $_POST['email'] : "";
+
+
+$subject = isset($_POST['subject']) ? $_POST['subject'] : "";
+
+
+
 
 require("vendor/autoload.php");
 use PHPMailer\PHPMailer\PHPMailer;
@@ -32,12 +39,12 @@ try {
   // Mail Headers
   $phpmailer->SetFrom("ibots.robin@gmail.com", "Robinson Rajiv");
   // Change to recipient email. Make sure to use a real email address in your tests to avoid hard bounces and protect your reputation as a sender.
-  $phpmailer->AddAddress("rickmathews2@gmail.com", "Robin");
+  $phpmailer->AddAddress("$email_id", "Robin");
   
   // Message
   $phpmailer->IsHTML(true);
   $phpmailer->Subject = "Mailer To Go Test";
-  $phpmailer->Body    = "<h1>Check message</h1>";
+  $phpmailer->Body    = "<h1>$subject</h1>";
   $phpmailer->AltBody = "Hi!\nTest from Mailer To Go 😊\n";
 
   // Send the Email
