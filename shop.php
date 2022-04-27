@@ -185,7 +185,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                             <a href='details.php?id=$product_id'><img class='card-img-top' src='./admin_panel/products_images/images/$details_image' alt='' style='width:100%'>
         <div class='card-body'>
             <h5 class='card-title text-center'>$product_title</h5>
-        <p class='card-text  text-center'><s>₹$product_strikeout_price</s>.'\n'.₹$product_price</p>
+        <p class='card-text  text-center'><s>₹$product_strikeout_price</s>\n₹$product_price</p>
         </div></a>
     </div>
     </div>
