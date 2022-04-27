@@ -23,7 +23,7 @@ try {
   // Mail Headers
   $phpmailer->setFrom("ibots.robin@gmail.com", "Mailer");
   // Change to recipient email. Make sure to use a real email address in your tests to avoid hard bounces and protect your reputation as a sender.
-  $phpmailer->addAddress("rickmathews2@gmail.com", "Recipient");
+  $phpmailer->addAddress("adithian1996@gmail.com", "Recipient");
   
   // Message
   $phpmailer->isHTML(true);
