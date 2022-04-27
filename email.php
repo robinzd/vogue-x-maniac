@@ -30,14 +30,14 @@ try {
     // $mailguntogo_domain = getenv("MAILGUN_DOMAIN", true);
 
   // Mail Headers
-  $phpmailer->SetFrom("ibots.robin@gmail.com", "Mailer");
+  $phpmailer->SetFrom("ibots.robin@gmail.com", "Robinson Rajiv");
   // Change to recipient email. Make sure to use a real email address in your tests to avoid hard bounces and protect your reputation as a sender.
-  $phpmailer->AddAddress("adithian1996@gmail.com", "Recipient");
+  $phpmailer->AddAddress("adithian1996@gmail.com", "Adithian");
   
   // Message
   $phpmailer->IsHTML(true);
   $phpmailer->Subject = "Mailer To Go Test";
-  $phpmailer->Body    = "<b>Hi</b>\nTest from Mailer To Go 😊\n";
+  $phpmailer->Body    = "<h1>Check message</h1>";
   $phpmailer->AltBody = "Hi!\nTest from Mailer To Go 😊\n";
 
   // Send the Email
