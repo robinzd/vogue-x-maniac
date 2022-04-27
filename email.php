@@ -14,11 +14,19 @@ try {
   $phpmailer->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 
   // ENV Credentials
-  $phpmailer->Host = getenv("MAILGUN_SMTP_SERVER", true);
-  $phpmailer->Port = intval(getenv("MAILGUN_SMTP_PORT", true));
-  $phpmailer->Username = getenv("MAILGUN_SMTP_LOGIN", true);
-  $phpmailer->Password = getenv("MAILGUN_SMTP_PASSWORD", true);
-  $mailguntogo_domain = getenv("MAILGUN_DOMAIN", true);
+//   $phpmailer->Host = getenv("MAILGUN_SMTP_SERVER", true);
+//   $phpmailer->Port = intval(getenv("MAILGUN_SMTP_PORT", true));
+//   $phpmailer->Username = getenv("MAILGUN_SMTP_LOGIN", true);
+//   $phpmailer->Password = getenv("MAILGUN_SMTP_PASSWORD", true);
+//   $mailguntogo_domain = getenv("MAILGUN_DOMAIN", true);
+
+    // ENV Credentials
+    $phpmailer->Mailer = "smtp";
+    $phpmailer->Host ="smtp.gmail.com";
+    $phpmailer->Port = 587;
+    $phpmailer->Username = "ibots.robin@gmail.com";
+    $phpmailer->Password = "robinsonrajiv123";
+    // $mailguntogo_domain = getenv("MAILGUN_DOMAIN", true);
 
   // Mail Headers
   $phpmailer->setFrom("ibots.robin@gmail.com", "Mailer");
