@@ -180,7 +180,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                         }
 
 
-                        echo "<div class='col-sm-6 col-md-4' >
+                        echo "<div class='col-sm-6 col-md-4'>
                             <div class='card bg-white'>
                             <a href='details.php?id=$product_id'><img class='card-img-top' src='./admin_panel/products_images/images/$details_image' alt='' style='width:100%'>
         <div class='card-body'>
