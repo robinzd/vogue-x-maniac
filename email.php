@@ -10,8 +10,9 @@ $phpmailer = new PHPMailer(true);
 try {
   // Configure SMTP
   $phpmailer->isSMTP();
+  $phpmailer->SMTPDebug=1;
   $phpmailer->SMTPAuth = true;
-  $phpmailer->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+  $phpmailer->SMTPSecure = "tls";
 
   // ENV Credentials
 //   $phpmailer->Host = getenv("MAILGUN_SMTP_SERVER", true);
@@ -29,12 +30,12 @@ try {
     // $mailguntogo_domain = getenv("MAILGUN_DOMAIN", true);
 
   // Mail Headers
-  $phpmailer->setFrom("ibots.robin@gmail.com", "Mailer");
+  $phpmailer->SetFrom("ibots.robin@gmail.com", "Mailer");
   // Change to recipient email. Make sure to use a real email address in your tests to avoid hard bounces and protect your reputation as a sender.
-  $phpmailer->addAddress("adithian1996@gmail.com", "Recipient");
+  $phpmailer->AddAddress("adithian1996@gmail.com", "Recipient");
   
   // Message
-  $phpmailer->isHTML(true);
+  $phpmailer->IsHTML(true);
   $phpmailer->Subject = "Mailer To Go Test";
   $phpmailer->Body    = "<b>Hi</b>\nTest from Mailer To Go 😊\n";
   $phpmailer->AltBody = "Hi!\nTest from Mailer To Go 😊\n";
@@ -44,4 +45,5 @@ try {
   echo "Message has been sent";
 } catch (Exception $e) {
   echo "Message could not be sent. Mailer Error: {$phpmailer->ErrorInfo}";
+  var_dump($phpmailer);
 }
