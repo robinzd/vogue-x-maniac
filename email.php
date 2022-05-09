@@ -1,7 +1,6 @@
 <?php
 $email_id = isset($_POST['email']) ? $_POST['email'] : "";
 
-
 $subject = isset($_POST['subject']) ? $_POST['subject'] : "";
 
 $body= isset($_POST['body']) ? $_POST['body'] : "";
