@@ -453,9 +453,7 @@ include("./conn.php");
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                         <img class="footerimage" src="./header images/vogue x maniac png.png" alt="brand image">
                         <p class="text-white">
-                            Here you can use rows and columns to organize your footer
-                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                            elit.
+                           vogue-x-maniac is the one of the leading ecommerce website
                         </p>
                     </div>
                     <!-- Grid column -->
