@@ -12,7 +12,7 @@ include('dbconnection.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Messages Table</title>
     <!-- fav icon -->
-    <link rel="icon" type="image/png" href="./favicon/icons8-messages-48.png"/>
+    <link rel="icon" type="image/png" href="./favicon/icons8-messages-48.png" />
     <!-- bootsstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- font awesome cdn -->
@@ -25,6 +25,13 @@ include('dbconnection.php');
 </head>
 
 <body>
+
+    <!-- back to top starts -->
+
+
+    <?php include "./back_to_top.php"; ?>
+
+    <!--back to top ends -->
 
     <body id="body-pd">
         <header class="header" id="header">
@@ -49,8 +56,8 @@ include('dbconnection.php');
                     <div class="nav_list"> <a href="./admin_panel.php" class="nav_link"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a>
                         <a href="./user_table.php" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users Table</span> </a>
                         <a href="./user_message.php" class="nav_link active"> <i class='bx bx-message-square-detail nav_icon'></i>
-                            <span class="nav_name">Messages</span> </a> 
-                            <!-- <a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Bookmark</span> </a> <a href="#" class="nav_link">
+                            <span class="nav_name">Messages</span> </a>
+                        <!-- <a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Bookmark</span> </a> <a href="#" class="nav_link">
                             <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Files</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Stats</span> </a> -->
                     </div>
 
@@ -61,7 +68,7 @@ include('dbconnection.php');
             <div class="icon"><i class="fa fa-table"></i></div>
             <div class="text">Users Messages Table</div>
         </div>
-       
+
         <div class="container-xl">
             <div class="table-responsive">
                 <div class="table-wrapper">
