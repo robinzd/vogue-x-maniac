@@ -18,7 +18,7 @@
 
 <body>
 
-    <div class="container-fluid">
+    <div class="container">
         <div class="accordion" id="accordionExample">
             <div class="steps">
                 <progress id="progress" value=0 max=100></progress>
