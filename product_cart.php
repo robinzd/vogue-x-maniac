@@ -271,7 +271,7 @@ if (isset($_GET['delid'])) {
              $row = mysqli_num_rows($ret);
             if($row > 0){
                 echo "<div class='d-grid gap-2'>
-                <button class='btn btn-success' type='button'>Checkout</button>
+                <button href='payment.php' class='btn btn-success' type='button'>Checkout</button>
                     </div> ";
             }
 
