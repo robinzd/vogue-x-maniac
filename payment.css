@@ -16,11 +16,11 @@
 .step-button[aria-expanded="true"] {
     width: 60px;
     height: 60px;
-    background-color: lightblue;
+    background-color:lightgreen;
     color: #fff;
 }
 .done {
-    background-color: lightblue;
+    background-color: lightgreen;
     color: #fff;
 }
 .step-item {
@@ -38,7 +38,7 @@
 }
 /* to customize progress bar */
 #progress::-webkit-progress-value {
-    background-color: lightblue;
+    background-color: lightgreen;
     transition: .5s ease;
 }
 #progress::-webkit-progress-bar {
