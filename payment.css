@@ -10,17 +10,17 @@
     height: 50px;
     border-radius: 50%;
     border: none;
-    background-color: var(--prm-gray);
+    background-color: grey;
     transition: .4s;
 }
 .step-button[aria-expanded="true"] {
     width: 60px;
     height: 60px;
-    background-color: var(--prm-color);
+    background-color: blue;
     color: #fff;
 }
 .done {
-    background-color: var(--prm-color);
+    background-color: blue;
     color: #fff;
 }
 .step-item {
@@ -38,10 +38,10 @@
 }
 /* to customize progress bar */
 #progress::-webkit-progress-value {
-    background-color: var(--prm-color);
+    background-color: blue;
     transition: .5s ease;
 }
 #progress::-webkit-progress-bar {
-    background-color: var(--prm-gray);
+    background-color:grey;
 
 }
