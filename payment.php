@@ -82,7 +82,7 @@
     </div>
 
      <!-- external js sheet -->
-     <script src="payment.js"></script>
+     <script src="./payment.js"></script>
     <!-- j query -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- owl carousel -->
