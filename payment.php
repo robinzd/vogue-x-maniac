@@ -58,14 +58,14 @@
                         <form class="row g-3 needs-validation">
                             <div class="col-md-4 position-relative">
                                 <label for="validationTooltip01" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
+                                <input type="text" class="form-control" id="validationTooltip01"  required>
                                 <div class="valid-tooltip">
                                     Looks good!
                                 </div>
                             </div>
                             <div class="col-md-4 position-relative">
                                 <label for="validationTooltip02" class="form-label">Street</label>
-                                <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
+                                <input type="text" class="form-control" id="validationTooltip02"  required>
                                 <div class="valid-tooltip">
                                     Looks good!
                                 </div>
