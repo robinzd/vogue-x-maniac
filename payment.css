@@ -45,3 +45,11 @@
     background-color:grey;
 
 }
+
+.container{
+    margin-top: 20px;
+}
+
+.card {
+    border: none;
+}
