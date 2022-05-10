@@ -13,12 +13,12 @@
     <!-- font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- link the external stylesheet -->
-    <link rel="stylesheet" type="text/css" href="payment.css">
+    <link rel="stylesheet" type="text/css" href="./payment.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <div class="container-fluid">
         <div class="accordion" id="accordionExample">
             <div class="steps">
                 <progress id="progress" value=0 max=100></progress>
