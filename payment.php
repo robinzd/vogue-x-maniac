@@ -54,7 +54,7 @@
 
                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="card-body">
-                        <form class="row g-3 needs-validation" novalidate>
+                        <form class="row g-3 needs-validation">
                             <div class="col-md-4 position-relative">
                                 <label for="validationTooltip01" class="form-label">First name</label>
                                 <input type="text" class="form-control" id="validationTooltip01" value="Mark" required>
