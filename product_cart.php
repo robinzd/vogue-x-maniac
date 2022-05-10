@@ -156,7 +156,7 @@ if (isset($_GET['delid'])) {
             if($row > 0){
                 echo " <a href='./payment.php'><div class='d-grid gap-2'>
                 <button  class='btn btn-success' type='button'>Checkout</button>
-                    </div></a> ";
+                    </div></a>";
             }
 
 
