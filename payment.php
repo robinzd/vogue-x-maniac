@@ -72,8 +72,7 @@
                             <div class="col-md-4 position-relative">
                                 <label for="validationTooltipUsername" class="form-label">Username</label>
                                 <div class="input-group has-validation">
-                                    <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-                                    <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                                  <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
                                     <div class="invalid-tooltip">
                                         Please choose a unique and valid username.
                                     </div>
@@ -102,9 +101,6 @@
                                 <div class="invalid-tooltip">
                                     Please provide a valid zip.
                                 </div>
-                            </div>
-                            <div class="col-12">
-                                <button class="btn btn-primary" type="submit">Submit form</button>
                             </div>
                         </form>
                     </div>
