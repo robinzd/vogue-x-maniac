@@ -18,6 +18,15 @@
 
 <body>
 
+
+<!-- navbar starts -->
+
+
+<?php include "./index.header.php"; ?>
+
+<!-- navbar  ends -->
+
+
     <div class="container">
         <div class="accordion" id="accordionExample">
             <div class="steps">
