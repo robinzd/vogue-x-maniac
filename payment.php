@@ -19,12 +19,12 @@
 <body>
 
 
-<!-- navbar starts -->
+    <!-- navbar starts -->
 
 
-<?php include "./index.header.php"; ?>
+    <?php include "./index.header.php"; ?>
 
-<!-- navbar  ends -->
+    <!-- navbar  ends -->
 
 
     <div class="container">
@@ -32,10 +32,10 @@
             <div class="steps">
                 <progress id="progress" value=0 max=100></progress>
                 <div class="step-item">
-                <button class="step-button text-center" type="submit" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="step-button text-center" type="submit" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         1
                     </button>
-                   
+
                     <div class="step-title">
                         First Step
                     </div>
@@ -67,14 +67,14 @@
                         <form class="row g-3 needs-validation">
                             <div class="col-md-4 position-relative">
                                 <label for="validationTooltip01" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="validationTooltip01"  required>
+                                <input type="text" class="form-control" id="validationTooltip01" required>
                                 <div class="valid-tooltip">
                                     Looks good!
                                 </div>
                             </div>
                             <div class="col-md-4 position-relative">
                                 <label for="validationTooltip02" class="form-label">Street</label>
-                                <input type="text" class="form-control" id="validationTooltip02"  required>
+                                <input type="text" class="form-control" id="validationTooltip02" required>
                                 <div class="valid-tooltip">
                                     Looks good!
                                 </div>
@@ -82,7 +82,7 @@
                             <div class="col-md-4 position-relative">
                                 <label for="validationTooltipUsername" class="form-label">Landmark</label>
                                 <div class="input-group has-validation">
-                                  <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                                    <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
                                     <div class="invalid-tooltip">
                                         Please fill this field.
                                     </div>
@@ -114,7 +114,7 @@
                                     Please provide a valid zip.
                                 </div>
                             </div>
-                           
+
                         </form>
                     </div>
                 </div>
@@ -143,9 +143,9 @@
     </div>
 
 
-     <!-- Footer -->
+    <!-- Footer -->
 
-     <footer class="text-center text-lg-start text-dark" style="background-color:lightgrey">
+    <footer class="text-center text-lg-start text-dark" style="background-color:lightgrey">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
             <!-- Section: Links -->
@@ -156,7 +156,7 @@
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                         <img class="footerimage" src="./header images/vogue x maniac png.png" alt="brand image">
                         <p class="text-white">
-                           vogue-x-maniac is the one of the leading ecommerce website
+                            vogue-x-maniac is the one of the leading ecommerce website
                         </p>
                     </div>
                     <!-- Grid column -->
