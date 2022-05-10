@@ -23,11 +23,10 @@
             <div class="steps">
                 <progress id="progress" value=0 max=100></progress>
                 <div class="step-item">
-                    <form>
-                    <button class="step-button text-center" type="submit" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="step-button text-center" type="submit" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         1
                     </button>
-                    </form>
+                   
                     <div class="step-title">
                         First Step
                     </div>
