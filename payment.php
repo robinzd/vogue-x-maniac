@@ -23,9 +23,11 @@
             <div class="steps">
                 <progress id="progress" value=0 max=100></progress>
                 <div class="step-item">
-                    <button class="step-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <form>
+                    <button class="step-button text-center" type="submit" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         1
                     </button>
+                    </form>
                     <div class="step-title">
                         First Step
                     </div>
@@ -102,6 +104,7 @@
                                     Please provide a valid zip.
                                 </div>
                             </div>
+                           
                         </form>
                     </div>
                 </div>
