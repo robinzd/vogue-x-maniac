@@ -9,7 +9,9 @@ include("./function.php");
 $user_data = check_login($conn);
 
 $userid = $user_data['user_id'];
-    $deletequery=mysqli_query($conn, "DELETE * FROM products_cart where user_id=$userid");
+
+
+    $deletequery=mysqli_query($conn, "DELETE * FROM products_cart where user_id='$userid'");
 
     if($deletequery){
     echo "<script>alert('you have successfully emptyed the cart!');</script>"; 
