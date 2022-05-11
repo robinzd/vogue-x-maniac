@@ -2,6 +2,9 @@
 
 include("./conn.php");
 
+
+$userid = $user_data['user_id'];
+
 ?>
 
 
@@ -60,7 +63,7 @@ include("./conn.php");
 							<a href="./login_form/login.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
 							<?php
 							
-							$select_rows=mysqli_query($conn, "select * from products_cart");
+							$select_rows=mysqli_query($conn, "select * from products_cart where user_id=$userid");
 							
 							$row_count=mysqli_num_rows($select_rows);
 
