@@ -112,18 +112,27 @@ if (isset($_GET['delid'])) {
 
                                     $product_image = $row_image['details_image'];
 
+
+                                    $get_user = "select user_id from  products_cart";
+
+                                    $run_user = mysqli_query($conn,$get_user );
+
+                                    while ($row_user = mysqli_fetch_array($run_user)) {
+
+                                        $user = $row_user['user_id'];
                     ?>
-                                    <tr>
-                                        <td><img src="<?php echo "./admin_panel/products_images/images/$product_image"; ?>" class="cart-item-image" /><?php echo $product_title ?></td>
-                                        <td style="text-align:center;"><?php echo $row["product_quantity"]; ?></td>
-                                        <td style="text-align:center;"><?php echo $row["product_size"]; ?></td>
-                                        <td style="text-align:center;"><?php echo $product_price; ?></td>
-                                        <td style="text-align:right;"><?php echo "₹" . number_format($unit_price, 2); ?></td>
-                                        <td style="text-align:center;"><a href="product_cart.php?delid=<?php echo ($row['user_id']); ?>" class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item" /></a></td>
-                                    </tr>
+                                        <tr>
+                                            <td><img src="<?php echo "./admin_panel/products_images/images/$product_image"; ?>" class="cart-item-image" /><?php echo $product_title ?></td>
+                                            <td style="text-align:center;"><?php echo $row["product_quantity"]; ?></td>
+                                            <td style="text-align:center;"><?php echo $row["product_size"]; ?></td>
+                                            <td style="text-align:center;"><?php echo $product_price; ?></td>
+                                            <td style="text-align:right;"><?php echo "₹" . number_format($unit_price, 2); ?></td>
+                                            <td style="text-align:center;"><a href="product_cart.php?delid=<?php echo ($user); ?>" class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item" /></a></td>
+                                        </tr>
                         <?php
-                                    $total_quantity += $row["product_quantity"];
-                                    $total_price += ($product_price * $row["product_quantity"]);
+                                        $total_quantity += $row["product_quantity"];
+                                        $total_price += ($product_price * $row["product_quantity"]);
+                                    }
                                 }
                             }
                         }
@@ -151,9 +160,9 @@ if (isset($_GET['delid'])) {
             </table>
 
             <?php
-             $ret = mysqli_query($conn, "select * from products_cart where user_id='$userid'");
-             $row = mysqli_num_rows($ret);
-            if($row > 0){
+            $ret = mysqli_query($conn, "select * from products_cart where user_id='$userid'");
+            $row = mysqli_num_rows($ret);
+            if ($row > 0) {
                 echo " <a href='./payment.php'><div class='d-grid gap-2'>
                 <button  class='btn btn-success' type='button'>Checkout</button>
                     </div></a>";
@@ -267,9 +276,9 @@ if (isset($_GET['delid'])) {
             </table>
 
             <?php
-             $ret = mysqli_query($conn, "select * from products_cart where user_id='$userid'");
-             $row = mysqli_num_rows($ret);
-            if($row > 0){
+            $ret = mysqli_query($conn, "select * from products_cart where user_id='$userid'");
+            $row = mysqli_num_rows($ret);
+            if ($row > 0) {
                 echo " <a href='payment.php'><div class='d-grid gap-2'>
                <button  class='btn btn-success' type='button'>Checkout</button>
                     </div> </a>";

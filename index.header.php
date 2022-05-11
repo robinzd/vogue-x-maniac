@@ -5,7 +5,7 @@ session_start();
 include("./conn.php");
 include("./function.php");
 
-$user_data = check_login($conn);
+$user_data =check_login($conn);
 
 $userid = $user_data['user_id'];
 
