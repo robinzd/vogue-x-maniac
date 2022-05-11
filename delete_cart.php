@@ -1,8 +1,14 @@
 <?php
-	include("./conn.php");
+	
 
-    $userid = $user_data['user_id'];
+    session_start();
 
+include("./conn.php");
+include("./function.php");
+
+$user_data = check_login($conn);
+
+$userid = $user_data['user_id'];
     $deletequery=mysqli_query($conn, "DELETE * FROM products_cart where user_id=$userid");
 
     if($deletequery){
@@ -12,4 +18,3 @@
     else{
         echo "<script>alert('sopmething went wrong');</script>"; 
     }
-?>
