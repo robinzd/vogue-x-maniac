@@ -1,17 +1,7 @@
 <?php
-	
+	include("./conn.php");
 
-    session_start();
-
-include("./conn.php");
-include("./function.php");
-
-$user_data = check_login($conn);
-
-$userid = $user_data['user_id'];
-
-
-    $deletequery=mysqli_query($conn, "DELETE * FROM products_cart where user_id='$userid'");
+    $deletequery=mysqli_query($conn, "DELETE FROM `products_cart`");
 
     if($deletequery){
     echo "<script>alert('you have successfully emptyed the cart!');</script>"; 
@@ -20,3 +10,4 @@ $userid = $user_data['user_id'];
     else{
         echo "<script>alert('sopmething went wrong');</script>"; 
     }
+?>

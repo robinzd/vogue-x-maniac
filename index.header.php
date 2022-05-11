@@ -1,13 +1,9 @@
 <?php
 
-session_start();
+
 
 include("./conn.php");
-include("./function.php");
 
-$user_data =check_login($conn);
-
-$userid = $user_data['user_id'];
 
 ?>
 
@@ -67,7 +63,7 @@ $userid = $user_data['user_id'];
 							<a href="./login_form/login.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
 							<?php
 							
-							$select_rows=mysqli_query($conn, "select * from products_cart where user_id='$userid'");
+							$select_rows=mysqli_query($conn, "select * from products_cart");
 							
 							$row_count=mysqli_num_rows($select_rows);
 
