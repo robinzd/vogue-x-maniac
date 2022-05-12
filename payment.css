@@ -59,7 +59,7 @@ div.card {
  background-color: transparent;
 }
 
-button#button1{
+button.step-button.text-center.done{
   margin-right: 29px;
 }
 
