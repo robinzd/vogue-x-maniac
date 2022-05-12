@@ -19,6 +19,4 @@ Array.from(stepButtons).forEach((button,index) => {
 
 
 
-$(function() {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
+
