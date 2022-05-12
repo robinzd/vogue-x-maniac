@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- link the external stylesheet -->
     <link rel="stylesheet" type="text/css" href="./payment.css">
-    <!-- external js sheet -->
-    <script src="./payment.js"></script>
 </head>
 
 <body>
@@ -29,48 +27,120 @@
     <!-- navbar  ends -->
 
 
-    <!-- MultiStep Form -->
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-            <form id="msform">
-                <!-- progressbar -->
-                <ul id="progressbar">
-                    <li class="active">Personal Details</li>
-                    <li>Social Profiles</li>
-                    <li>Account Setup</li>
-                </ul>
-                <!-- fieldsets -->
-                <fieldset>
-                    <h2 class="fs-title">Personal Details</h2>
-                    <h3 class="fs-subtitle">Tell us something more about you</h3>
-                    <input type="text" name="fname" placeholder="First Name" />
-                    <input type="text" name="lname" placeholder="Last Name" />
-                    <input type="text" name="phone" placeholder="Phone" />
-                    <input type="button" name="next" class="next action-button" value="Next" />
-                </fieldset>
-                <fieldset>
-                    <h2 class="fs-title">Social Profiles</h2>
-                    <h3 class="fs-subtitle">Your presence on the social network</h3>
-                    <input type="text" name="twitter" placeholder="Twitter" />
-                    <input type="text" name="facebook" placeholder="Facebook" />
-                    <input type="text" name="gplus" placeholder="Google Plus" />
-                    <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-                    <input type="button" name="next" class="next action-button" value="Next" />
-                </fieldset>
-                <fieldset>
-                    <h2 class="fs-title">Create your account</h2>
-                    <h3 class="fs-subtitle">Fill in your credentials</h3>
-                    <input type="text" name="email" placeholder="Email" />
-                    <input type="password" name="pass" placeholder="Password" />
-                    <input type="password" name="cpass" placeholder="Confirm Password" />
-                    <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
-                    <input type="submit" name="submit" class="submit action-button" value="Submit" />
-                </fieldset>
-            </form>
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+            <div class="steps">
+                <progress id="progress" value=0 max=100></progress>
+                <div class="step-item">
+                    <button class="step-button text-center" type="submit" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        1
+                    </button>
+
+                    <div class="step-title">
+                        First Step
+                    </div>
+                </div>
+                <div class="step-item">
+                    <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        2
+                    </button>
+                    <div class="step-title">
+                        Second Step
+                    </div>
+                </div>
+                <div class="step-item">
+                    <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        3
+                    </button>
+                    <div class="step-title">
+                        Third Step
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div id="headingOne">
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="card-body">
+                        <form class="row g-3 needs-validation">
+                            <div class="col-md-4 position-relative">
+                                <label for="validationTooltip01" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="validationTooltip01" required>
+                                <div class="valid-tooltip">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4 position-relative">
+                                <label for="validationTooltip02" class="form-label">Street</label>
+                                <input type="text" class="form-control" id="validationTooltip02" required>
+                                <div class="valid-tooltip">
+                                    Looks good!
+                                </div>
+                            </div>
+                            <div class="col-md-4 position-relative">
+                                <label for="validationTooltipUsername" class="form-label">Landmark</label>
+                                <div class="input-group has-validation">
+                                    <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
+                                    <div class="invalid-tooltip">
+                                        Please fill this field.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 position-relative">
+                                <label for="validationTooltip03" class="form-label">City</label>
+                                <input type="text" class="form-control" id="validationTooltip03" required>
+                                <div class="invalid-tooltip">
+                                    Please provide a valid city.
+                                </div>
+                            </div>
+                            <div class="col-md-3 position-relative">
+                                <label for="validationTooltip04" class="form-label">State</label>
+                                <select class="form-select" id="validationTooltip04" required>
+                                    <option selected disabled value="">Choose...</option>
+                                    <option>Tamilnadu</option>
+                                    <option>Kerala</option>
+                                    <option>Bangalore</option>
+                                </select>
+                                <div class="invalid-tooltip">
+                                    Please select a valid state.
+                                </div>
+                            </div>
+                            <div class="col-md-3 position-relative">
+                                <label for="validationTooltip05" class="form-label">Zip</label>
+                                <input type="text" class="form-control" id="validationTooltip05" required>
+                                <div class="invalid-tooltip">
+                                    Please provide a valid zip.
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div id="headingTwo">
+
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="card-body">
+                        your content goes here...
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div id="headingThree">
+
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="card-body">
+                        your content goes here...
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <!-- /.MultiStep Form -->
 
 
     <!-- Footer -->
@@ -159,114 +229,13 @@
 
 
 
-
+    <!-- external js sheet -->
+    <script src="./payment.js"></script>
     <!-- Bootstrap 5 JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <!-- owl carousel -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function() {
-        //jQuery time
-            var current_fs, next_fs, previous_fs; //fieldsets
-            var left, opacity, scale; //fieldset properties which we will animate
-            var animating; //flag to prevent quick multi-click glitches
-
-            $(".next").click(function() {
-                if (animating) return false;
-                animating = true;
-
-                current_fs = $(this).parent();
-                next_fs = $(this).parent().next();
-
-                //activate next step on progressbar using the index of next_fs
-                $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-
-                //show the next fieldset
-                next_fs.show();
-                //hide the current fieldset with style
-                current_fs.animate({
-                    opacity: 0
-                }, {
-                    step: function(now, mx) {
-                        //as the opacity of current_fs reduces to 0 - stored in "now"
-                        //1. scale current_fs down to 80%
-                        scale = 1 - (1 - now) * 0.2;
-                        //2. bring next_fs from the right(50%)
-                        left = (now * 50) + "%";
-                        //3. increase opacity of next_fs to 1 as it moves in
-                        opacity = 1 - now;
-                        current_fs.css({
-                            'transform': 'scale(' + scale + ')',
-                            'position': 'absolute'
-                        });
-                        next_fs.css({
-                            'left': left,
-                            'opacity': opacity
-                        });
-                    },
-                    duration: 800,
-                    complete: function() {
-                        current_fs.hide();
-                        animating = false;
-                    },
-                    //this comes from the custom easing plugin
-                    easing: 'easeInOutBack'
-                });
-            });
-
-            $(".previous").click(function() {
-                if (animating) return false;
-                animating = true;
-
-                current_fs = $(this).parent();
-                previous_fs = $(this).parent().prev();
-
-                //de-activate current step on progressbar
-                $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-
-                //show the previous fieldset
-                previous_fs.show();
-                //hide the current fieldset with style
-                current_fs.animate({
-                    opacity: 0
-                }, {
-                    step: function(now, mx) {
-                        //as the opacity of current_fs reduces to 0 - stored in "now"
-                        //1. scale previous_fs from 80% to 100%
-                        scale = 0.8 + (1 - now) * 0.2;
-                        //2. take current_fs to the right(50%) - from 0%
-                        left = ((1 - now) * 50) + "%";
-                        //3. increase opacity of previous_fs to 1 as it moves in
-                        opacity = 1 - now;
-                        current_fs.css({
-                            'left': left
-                        });
-                        previous_fs.css({
-                            'transform': 'scale(' + scale + ')',
-                            'opacity': opacity
-                        });
-                    },
-                    duration: 800,
-                    complete: function() {
-                        current_fs.hide();
-                        animating = false;
-                    },
-                    //this comes from the custom easing plugin
-                    easing: 'easeInOutBack'
-                });
-            });
-
-            $(".submit").click(function() {
-                return false;
-            })
-
-
-
-
-        });
-    </script>
-
 </body>
 
 </html>
