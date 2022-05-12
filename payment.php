@@ -37,7 +37,7 @@
                     </button>
 
                     <div class="step-title">
-                        First Step
+                        Address Details
                     </div>
                 </div>
                 <div class="step-item">
@@ -45,7 +45,7 @@
                         2
                     </button>
                     <div class="step-title">
-                        Second Step
+                        Card Details
                     </div>
                 </div>
                 <div class="step-item">
@@ -53,7 +53,7 @@
                         3
                     </button>
                     <div class="step-title">
-                        Third Step
+                        Preview
                     </div>
                 </div>
             </div>
