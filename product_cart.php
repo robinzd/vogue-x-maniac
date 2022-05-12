@@ -13,7 +13,7 @@ $userid = $user_data['user_id'];
 
 if (isset($_GET['delid'])) {
     $rid = intval($_GET['delid']);
-    $sql = mysqli_query($conn, "delete from products_cart where ID='$rid'");
+    $sql = mysqli_query($conn, "delete * from products_cart where ID='$rid'");
     echo "<script>alert('you have successfully deleted the item in the cart');</script>";
     echo "<script>window.location.href = 'product_cart.php'</script>";
 }
@@ -121,7 +121,7 @@ if (isset($_GET['delid'])) {
                                             <td style="text-align:center;"><?php echo $row["product_size"]; ?></td>
                                             <td style="text-align:center;"><?php echo $product_price; ?></td>
                                             <td style="text-align:right;"><?php echo "₹" . number_format($unit_price, 2); ?></td>
-                                            <td style="text-align:center;"><a href="product_cart.php?delid=<?php echo ($row['ID']); ?>" class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item" /></a></td>
+                                            <td style="text-align:center;"><a href="product_cart.php?delid=<?php echo ($userid); ?>" class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item" /></a></td>
                                         </tr>
                         <?php
                                         $total_quantity += $row["product_quantity"];
