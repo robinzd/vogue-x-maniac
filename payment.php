@@ -27,120 +27,49 @@
     <!-- navbar  ends -->
 
 
+    <!-- MultiStep Form -->
     <div class="container">
-        <div class="accordion" id="accordionExample">
-            <div class="steps">
-                <progress id="progress" value=0 max=100></progress>
-                <div class="step-item">
-                    <button class="step-button text-center" type="submit" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        1
-                    </button>
-
-                    <div class="step-title">
-                        First Step
-                    </div>
-                </div>
-                <div class="step-item">
-                    <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        2
-                    </button>
-                    <div class="step-title">
-                        Second Step
-                    </div>
-                </div>
-                <div class="step-item">
-                    <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        3
-                    </button>
-                    <div class="step-title">
-                        Third Step
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div id="headingOne">
-                </div>
-
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="card-body">
-                        <form class="row g-3 needs-validation">
-                            <div class="col-md-4 position-relative">
-                                <label for="validationTooltip01" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="validationTooltip01" required>
-                                <div class="valid-tooltip">
-                                    Looks good!
-                                </div>
-                            </div>
-                            <div class="col-md-4 position-relative">
-                                <label for="validationTooltip02" class="form-label">Street</label>
-                                <input type="text" class="form-control" id="validationTooltip02" required>
-                                <div class="valid-tooltip">
-                                    Looks good!
-                                </div>
-                            </div>
-                            <div class="col-md-4 position-relative">
-                                <label for="validationTooltipUsername" class="form-label">Landmark</label>
-                                <div class="input-group has-validation">
-                                    <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
-                                    <div class="invalid-tooltip">
-                                        Please fill this field.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6 position-relative">
-                                <label for="validationTooltip03" class="form-label">City</label>
-                                <input type="text" class="form-control" id="validationTooltip03" required>
-                                <div class="invalid-tooltip">
-                                    Please provide a valid city.
-                                </div>
-                            </div>
-                            <div class="col-md-3 position-relative">
-                                <label for="validationTooltip04" class="form-label">State</label>
-                                <select class="form-select" id="validationTooltip04" required>
-                                    <option selected disabled value="">Choose...</option>
-                                    <option>Tamilnadu</option>
-                                    <option>Kerala</option>
-                                    <option>Bangalore</option>
-                                </select>
-                                <div class="invalid-tooltip">
-                                    Please select a valid state.
-                                </div>
-                            </div>
-                            <div class="col-md-3 position-relative">
-                                <label for="validationTooltip05" class="form-label">Zip</label>
-                                <input type="text" class="form-control" id="validationTooltip05" required>
-                                <div class="invalid-tooltip">
-                                    Please provide a valid zip.
-                                </div>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div id="headingTwo">
-
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="card-body">
-                        your content goes here...
-                    </div>
-                </div>
-            </div>
-            <div class="card">
-                <div id="headingThree">
-
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                    <div class="card-body">
-                        your content goes here...
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <form id="msform">
+                    <!-- progressbar -->
+                    <ul id="progressbar">
+                        <li class="active">Personal Details</li>
+                        <li>Social Profiles</li>
+                        <li>Account Setup</li>
+                    </ul>
+                    <!-- fieldsets -->
+                    <fieldset>
+                        <h2 class="fs-title">Personal Details</h2>
+                        <h3 class="fs-subtitle">Tell us something more about you</h3>
+                        <input type="text" name="fname" placeholder="First Name" />
+                        <input type="text" name="lname" placeholder="Last Name" />
+                        <input type="text" name="phone" placeholder="Phone" />
+                        <input type="button" name="next" class="next action-button" value="Next" />
+                    </fieldset>
+                    <fieldset>
+                        <h2 class="fs-title">Social Profiles</h2>
+                        <h3 class="fs-subtitle">Your presence on the social network</h3>
+                        <input type="text" name="twitter" placeholder="Twitter" />
+                        <input type="text" name="facebook" placeholder="Facebook" />
+                        <input type="text" name="gplus" placeholder="Google Plus" />
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        <input type="button" name="next" class="next action-button" value="Next" />
+                    </fieldset>
+                    <fieldset>
+                        <h2 class="fs-title">Create your account</h2>
+                        <h3 class="fs-subtitle">Fill in your credentials</h3>
+                        <input type="text" name="email" placeholder="Email" />
+                        <input type="password" name="pass" placeholder="Password" />
+                        <input type="password" name="cpass" placeholder="Confirm Password" />
+                        <input type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                        <input type="submit" name="submit" class="submit action-button" value="Submit" />
+                    </fieldset>
+                </form>
             </div>
         </div>
     </div>
+    <!-- /.MultiStep Form -->
 
 
     <!-- Footer -->
