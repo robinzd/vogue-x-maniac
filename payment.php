@@ -32,7 +32,7 @@
             <div class="steps">
                 <progress id="progress" value=0 max=100></progress>
                 <div class="step-item">
-                    <button class="step-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <button class="step-button text-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="margin-right: 29px;">
                         1
                     </button>
 
