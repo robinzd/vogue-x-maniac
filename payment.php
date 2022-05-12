@@ -41,7 +41,7 @@
                     </div>
                 </div>
                 <div class="step-item">
-                    <button class="step-button text-center collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <button class="step-button text-center collapsed" id="buttton1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         2
                     </button>
                     <div class="step-title">
