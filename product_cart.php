@@ -78,7 +78,7 @@ if (isset($_GET['delid'])) {
 
                     $user_id = $get_array['userid'];
 
-                    print_r($user_id);
+                    echo $user_id;
 
                     $total_quantity = 0;
                     $total_price = 0;
