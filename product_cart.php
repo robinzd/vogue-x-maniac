@@ -76,13 +76,13 @@ if (isset($_GET['delid'])) {
 
                     parse_str($get_string, $get_array);
 
-                    $user_id = $get_array['userid'];
+                    $user = $get_array['userid'];
 
-                    echo $user_id;
+                    
 
                     $total_quantity = 0;
                     $total_price = 0;
-                    $ret = mysqli_query($conn, "select * from products_cart where user_id='$user_id'");
+                    $ret = mysqli_query($conn, "select * from products_cart where user_id='$user'");
                     $row = mysqli_num_rows($ret);
                     if ($row > 0) {
                         echo "<tr>
