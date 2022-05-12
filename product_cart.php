@@ -13,7 +13,7 @@ $userid = $user_data['user_id'];
 
 if (isset($_GET['delid'])) {
     $rid = intval($_GET['delid']);
-    $sql = mysqli_query($conn, "delete * from products_cart where user_id='$rid'");
+    $sql = mysqli_query($conn, "delete from products_cart where user_id=$rid");
     echo "<script>alert('you have successfully deleted the item in the cart');</script>";
     echo "<script>window.location.href = 'product_cart.php'</script>";
 }
