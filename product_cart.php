@@ -70,19 +70,9 @@ if (isset($_GET['delid'])) {
             <table class="tbl-cart" cellpadding="10" cellspacing="1">
                 <tbody>
                     <?php
-                    $_SERVER['SCRIPT_NAME'];
-
-                    $get_string = $_SERVER['QUERY_STRING'];
-
-                    parse_str($get_string, $get_array);
-
-                    $user = $get_array['userid'];
-
-                    
-
                     $total_quantity = 0;
                     $total_price = 0;
-                    $ret = mysqli_query($conn, "select * from products_cart where user_id='$user'");
+                    $ret = mysqli_query($conn, "select * from products_cart where user_id='$userid'");
                     $row = mysqli_num_rows($ret);
                     if ($row > 0) {
                         echo "<tr>
@@ -197,18 +187,9 @@ if (isset($_GET['delid'])) {
             <table class="tbl-cart" cellpadding="10" cellspacing="1">
                 <tbody>
                     <?php
-                     $_SERVER['SCRIPT_NAME'];
-
-                     $get_string = $_SERVER['QUERY_STRING'];
- 
-                     parse_str($get_string, $get_array);
- 
-                     $user_id = $get_array['userid'];
- 
-
                     $total_quantity = 0;
                     $total_price = 0;
-                    $ret = mysqli_query($conn, "select * from products_cart where user_id='$user_id'");
+                    $ret = mysqli_query($conn, "select * from products_cart where user_id='$userid'");
                     $row = mysqli_num_rows($ret);
                     if ($row > 0) {
                         echo "<tr>
