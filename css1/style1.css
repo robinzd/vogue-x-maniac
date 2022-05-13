@@ -446,6 +446,7 @@ body {
 	.wizard-v1-content .wizard-form {
 	    padding: 40px 20px;
 	    width: auto;
+      background:antiquewhite;
 	}
 	.form-register .content {
 	    padding: 32px 30px 23px 30px;
