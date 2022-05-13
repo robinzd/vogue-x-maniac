@@ -185,7 +185,7 @@ body {
 	padding-bottom: 8px;
 }
 .form-register .content {
-	background: lightgreen;
+	background:transparent;
 	border-radius: 5px;
 	-o-border-radius: 5px;
     -ms-border-radius: 5px;
