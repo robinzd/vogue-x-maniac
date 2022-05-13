@@ -33,6 +33,18 @@
 	
 	?>
 
+	<!-- back to top starts -->
+
+
+    <?php 
+	
+	include "./back_to_top.php"; 
+	
+	?>
+
+    <!--back to top ends -->
+
+
 	<!-- navbar  ends -->
 
 	<div class="page-content" style="background-image: url('images/wizard-v1.jpg')">
