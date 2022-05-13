@@ -2,14 +2,18 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Wizard-v1</title>
+	<title>Payment Details</title>
 	<!-- Mobile Specific Metas -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- Font-->
 	<link rel="stylesheet" type="text/css" href="css1/raleway-font.css">
 	<link rel="stylesheet" type="text/css" href="fonts1/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	 <!-- fav icon -->
+	 <link rel="icon" type="image/png" href="./favicon/vogue_x_maniac_png_K8m_icon.ico" />
 	<!-- Jquery -->
 	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+	 <!-- font awesome cdn -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- Main Style Css -->
     <link rel="stylesheet" href="css1/style.css"/>
 </head>
@@ -254,6 +258,9 @@
 
 
 	<script src="js1/jquery-3.3.1.min.js"></script>
+	<!--budle.js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- bundle.js -->
 	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
 	<script src="js1/jquery.steps.js"></script>
