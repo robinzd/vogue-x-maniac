@@ -48,7 +48,7 @@
 	<!-- navbar  ends -->
 
 	<div class="page-content" style="background-image: url('images/wizard-v1.jpg')">
-		<div class="copntainer-fluid wizard-v1-content">
+		<div class="container-fluid wizard-v1-content">
 			<div class="wizard-form">
 				<form class="form-register" id="form-register" action="#" method="post">
 					<div id="form-total">
