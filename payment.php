@@ -34,7 +34,7 @@
 			            <h2>
 			            	<span class="step-icon"><i class="zmdi zmdi-account"></i></span>
 			            	<span class="step-number">Step 1</span>
-			            	<span class="step-text">Account Infomation</span>
+			            	<span class="step-text">Address Infomation</span>
 			            </h2>
 			            <section>
 			                <div class="inner">
