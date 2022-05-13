@@ -228,7 +228,7 @@ body {
 .inner .form-row .form-holder select {
     width: 100%;
     padding: 13px 25px;
-    border: none;
+    border:solid;
     background: #2f8be0;
     border-radius: 5px;
     -o-border-radius: 5px;
