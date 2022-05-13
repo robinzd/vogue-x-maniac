@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
 body {
 	margin:  0;
 }
@@ -475,3 +479,146 @@ body {
 	}
 	
 } 
+
+
+/* footer */
+img.footerimage{
+    width: 120px;
+}
+
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2{
+    border-radius: 50%;
+    background-color: rgb(59,89,152);
+    color:white;
+    
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-info.pmd-btn-flat.mx-1.my-2{
+    border-radius: 50%;
+    background-color: skyblue;
+    
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-info.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-danger.pmd-btn-flat.mx-1.my-2{
+    border-radius:50%;
+    background-color:#d63384;
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-danger.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2{
+    border-radius: 50%;
+    background-color: red;
+}
+
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+p.text-white{
+  margin-top: 20px;
+}
+
+h6.text-uppercase.mb-4.font-weight-bold{
+  font-family:'Redressed', cursive;
+}
+
+p#address{
+  white-space: nowrap;
+}
+
+img.px-2 {
+  width: 50px;
+}
+
+/* services */
+
+
+
+.services {
+  padding: 40px;
+  position: relative
+}
+
+.services .square {
+  height: 100px;
+  width: 100px;
+  margin: 30px auto 40px;
+  position: relative;
+  border-radius: 15px;
+  transform: rotate(45deg);
+  padding: 10px;
+  background-color: lightgreen;
+  box-shadow: 0px 0px 27px 0px #ccc;
+  border: 2px dotted #eaf3fa
+}
+
+.square i {
+  transform: rotate(315deg);
+  display: block;
+  color: #eaf3fa;
+  font-size: 40px;
+  padding-top: 17px;
+  padding-right: 14px
+}
+
+.services .square::before {
+  position: absolute;
+  left: -10px;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color:black;
+  content: ''
+}
+
+.services .square::after {
+  position: absolute;
+  left: 50px;
+  top: 66px;
+  width: 1px;
+  height: 88%;
+  background-color:black;
+  content: '';
+  transform: rotate(90deg)
+}
+
+.services .serv .num {
+  width: 60px;
+  height: 60px;
+  background-color: #7499f1;
+  box-shadow: 0px 0px 15px 0px #00a9d3;
+  margin: -38px auto 15px auto;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 30px;
+  padding-top: 7px;
+  border: 1px dashed
+}
+
+.services .serv h5 {
+  color: #fa9746;
+  font-family: 'Redressed', cursive;
+}
+
+.services .serv p {
+  color: #777
+}
+
+.services .serv hr {
+  width: 30px;
+  border-top: 3px solid rgb(0 169 211)
+}
