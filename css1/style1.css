@@ -185,7 +185,7 @@ body {
 	padding-bottom: 8px;
 }
 .form-register .content {
-	background: #359bfa;
+	background: lightgreen;
 	border-radius: 5px;
 	-o-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -220,7 +220,7 @@ body {
 .inner .form-row .form-holder label {
 	font-size: 16px;
 	font-weight: 500;
-	color: #fff;
+	color:black;
 	padding-bottom: 11px;
 	display: block;
 }
