@@ -36,7 +36,7 @@ try {
     $phpmailer->Host ="smtp.gmail.com";
     $phpmailer->Port = 587;
     $phpmailer->Username = "ibots.robin@gmail.com";
-    $phpmailer->Password = "robinsonrajiv123";
+    $phpmailer->Password = "robin123divya123";
     // $mailguntogo_domain = getenv("MAILGUN_DOMAIN", true);
 
   // Mail Headers

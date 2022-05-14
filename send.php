@@ -24,6 +24,10 @@
             <label for="exampleInputPassword1" class="form-label">subject</label>
             <input type="text" name="subject" class="form-control" id="exampleInputPassword1">
         </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">body</label>
+            <input type="text" name="body" class="form-control" id="exampleInputPassword1">
+        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
 </body>
