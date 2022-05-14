@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>Login</title>
+	<title>Address Details</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
@@ -47,7 +47,7 @@
 
 
 					<span class="login100-form-title p-b-43">
-						Login Form
+				         Address Details
 					</span>
 
 
@@ -64,31 +64,35 @@
 						<span class="label-input100">Password</span>
 					</div>
 
-					<div class="flex-sb-m w-full p-t-3 p-b-32">
-						<div class="contact100">
-
-							<div>
-								<a href="../register_form/register.php" class="txt1">
-									Register Here!
-								</a>
-							</div>
-						</div>
-
-						<div>
-							<a href="#" class="txt1">
-								Forgot Password?
-							</a>
-						</div>
+					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<input class="input100" type="email" name="email">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Email</span>
 					</div>
 
 
-					<div class="container-login100-form-btn">
+
+					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<input class="input100" type="email" name="email">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Email</span>
+					</div>
+
+
+					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<input class="input100" type="email" name="email">
+						<span class="focus-input100"></span>
+						<span class="label-input100">Email</span>
+					</div>
+
+
+				    <div class="container-login100-form-btn">
 						<button class="login100-form-btn" type="submit" value="login">
 							submit
 						</button>
 					</div>
 				</form>
-            <div class="login100-more" style="background-image: url('images\address.jpg');">
+            <div class="login100-more" style="background-image: url('./images/address.jpg');">
 				</div>
 			</div>
 		</div>
@@ -96,7 +100,7 @@
 
 
 
-
+     
 
 
 
