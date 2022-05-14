@@ -35,7 +35,7 @@ try {
     $phpmailer->Mailer = "smtp";
     $phpmailer->Host ="smtp.gmail.com";
     $phpmailer->Port = 587;
-    $phpmailer->Username = "ibots.robin@gmail.com";
+    $phpmailer->Username = "rickmathews2@gmail.com";
     $phpmailer->Password = "robin123divya123";
     // $mailguntogo_domain = getenv("MAILGUN_DOMAIN", true);
 
