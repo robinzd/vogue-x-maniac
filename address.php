@@ -24,7 +24,7 @@
     <div style="margin-top: 50px; margin-left: 10px;" class="text-center">
       <i id="animationDemo" data-mdb-animation="slide-right" data-mdb-toggle="animation"
         data-mdb-animation-reset="true" data-mdb-animation-start="onScroll"
-        data-mdb-animation-on-scroll="repeat" class="fas fa-3x fa-shipping-fast text-white"></i>
+        data-mdb-animation-on-scroll="repeat" class="fa fa-3x fa-shipping-fast text-white"></i>
       <h3 class="mt-3 text-white">Welcome</h3>
       <p class="white-text">You are 30 seconds away from compleating your order!</p>
     </div>
