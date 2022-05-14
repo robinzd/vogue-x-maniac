@@ -32,7 +32,13 @@
 
 <body style="background-color: #666666;">
 
+	<?php
 
+	include "../index.header.php";
+
+	?>
+
+	
 
 
 	<div class="limiter">
@@ -47,7 +53,7 @@
 
 
 					<span class="login100-form-title p-b-43">
-				         Address Details
+						Address Details
 					</span>
 
 
@@ -86,13 +92,13 @@
 					</div>
 
 
-				    <div class="container-login100-form-btn">
+					<div class="container-login100-form-btn">
 						<button class="login100-form-btn" type="submit" value="login">
 							submit
 						</button>
 					</div>
 				</form>
-            <div class="login100-more" style="background-image: url('./images/address.jpg');">
+				<div class="login100-more" style="background-image: url('./images/address.jpg');">
 				</div>
 			</div>
 		</div>
@@ -100,7 +106,7 @@
 
 
 
-     
+
 
 
 
