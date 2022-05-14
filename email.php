@@ -40,7 +40,7 @@ try {
     // $mailguntogo_domain = getenv("MAILGUN_DOMAIN", true);
 
   // Mail Headers
-  $phpmailer->SetFrom("ibots.robin@gmail.com", "Robinson Rajiv");
+  $phpmailer->SetFrom("rickmathews2@gmail.com", "Robinson Rajiv");
   // Change to recipient email. Make sure to use a real email address in your tests to avoid hard bounces and protect your reputation as a sender.
   $phpmailer->AddAddress("$email_id", "Robin");
   
