@@ -35,12 +35,12 @@ try {
     $phpmailer->Mailer = "smtp";
     $phpmailer->Host ="smtp.gmail.com";
     $phpmailer->Port = 587;
-    $phpmailer->Username = "rickmathews2@gmail.com";
-    $phpmailer->Password = "robin123divya123";
+    $phpmailer->Username = "t678089@gmail.com";
+    $phpmailer->Password = "robindivya@0514";
     // $mailguntogo_domain = getenv("MAILGUN_DOMAIN", true);
 
   // Mail Headers
-  $phpmailer->SetFrom("rickmathews2@gmail.com", "Robinson Rajiv");
+  $phpmailer->SetFrom("t678089@gmail.com", "Robinson Rajiv");
   // Change to recipient email. Make sure to use a real email address in your tests to avoid hard bounces and protect your reputation as a sender.
   $phpmailer->AddAddress("$email_id", "Robin");
   
