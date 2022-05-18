@@ -43,32 +43,32 @@
               <div class="col-md-12">
                 <input class="form-control" type="text" name="name" placeholder="Full Name" required>
                 <div class="valid-feedback">Username field is valid!</div>
-                <div class="invalid-feedback">Username field cannot be blank!</div>
+                <div id="invalid-feedback">Username field cannot be blank!</div>
               </div>
 
               <div class="col-md-12">
                 <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
                 <div class="valid-feedback">Email field is valid!</div>
-                <div class="invalid-feedback">Email field cannot be blank!</div>
+                <div id="invalid-feedback">Email field cannot be blank!</div>
               </div>
 
               <div class="col-md-12">
                 <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
                 <div class="valid-feedback">Email field is valid!</div>
-                <div class="invalid-feedback">Email field cannot be blank!</div>
+                <div id="invalid-feedback">Email field cannot be blank!</div>
               </div>
 
               <div class="col-md-12">
                 <input class="form-control" type="password" name="password" placeholder="Password" required>
                 <div class="valid-feedback">Password field is valid!</div>
-                <div class="invalid-feedback">Password field cannot be blank!</div>
+                <div id="invalid-feedback">Password field cannot be blank!</div>
               </div><br>
 
 
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                 <label class="form-check-label">I confirm that all data are correct</label>
-                <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+                <div id="invalid-feedback">Please confirm that the entered data are all correct!</div>
               </div>
 
 
