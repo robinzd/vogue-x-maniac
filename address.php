@@ -15,7 +15,7 @@
   <!-- owl carousel -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <!-- link the external stylesheet -->
-  <link rel="stylesheet" type="text/css" href="address.css">
+  <link rel="stylesheet" type="text/css" href="./address.css">
   <!-- link the external stylesheet -->
   <script src="./address.js"></script>
 </head>
