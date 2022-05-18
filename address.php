@@ -40,7 +40,7 @@
             <p>Fill in the data below.</p>
             <form class="requires-validation" novalidate>
 
-              <div class="col-md-12">
+              <div class="col-12 col-md-12">
                 <input class="form-control" type="text" name="name" placeholder="Full Name" required>
                 <div class="valid-feedback">Username field is valid!</div>
                 <div class="invalid-feedback">Username field cannot be blank!</div>
