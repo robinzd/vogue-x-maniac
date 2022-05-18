@@ -151,20 +151,21 @@ if (isset($_GET['delid'])) {
                 </tbody>
 
             </table>
-          <form method="Post" action="address.php">
-              <input type="hidden" name="id" value=<?php echo $product_id;?>>
+        
             <?php
             $ret = mysqli_query($conn, "select * from products_cart where user_id='$userid'");
             $row = mysqli_num_rows($ret);
             if ($row > 0) {
-                echo " <a href='./address_form/address.php'><div class='d-grid gap-2'>
+                echo " <a href='./address.php?user_id=$userid'><div class='d-grid gap-2'>
                 <button  class='btn btn-success' type='button'>Checkout</button>
                     </div></a>";
             }
 
 
             ?>
-            </form>
+
+            <img src="./"
+           
 
         </div>
 
