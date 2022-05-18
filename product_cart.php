@@ -164,7 +164,7 @@ if (isset($_GET['delid'])) {
 
             ?>
 
-            <img src="./"
+          
            
 
         </div>
