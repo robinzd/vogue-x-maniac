@@ -55,7 +55,7 @@
              <div class="col-md-12">
                 <input class="form-control" type="password" name="password" placeholder="Password" required>
                 <div class="valid-feedback">Password field is valid!</div>
-                <div id="invalid-feedback">Password field cannot be blank!</div>
+                <div class="invalid-feedback">Password field cannot be blank!</div>
               </div><br>
 
 
