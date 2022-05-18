@@ -30,8 +30,7 @@
   ?>
 
   <!-- navbar  ends -->
-
-  <div class="form-body" style="zoom:70%;">
+  <div class="form-body">
     <div class="row">
       <div class="form-holder">
         <div class="form-content">
