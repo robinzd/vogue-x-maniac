@@ -151,7 +151,8 @@ if (isset($_GET['delid'])) {
                 </tbody>
 
             </table>
-
+          <form method="Post" action="address.php">
+              <input type="hidden" name="id" value=<?php echo $product_id;?>>
             <?php
             $ret = mysqli_query($conn, "select * from products_cart where user_id='$userid'");
             $row = mysqli_num_rows($ret);
@@ -163,6 +164,7 @@ if (isset($_GET['delid'])) {
 
 
             ?>
+            </form>
 
         </div>
 
