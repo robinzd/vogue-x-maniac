@@ -94,6 +94,7 @@ html, body {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     margin-top: 16px;
+    border: 2px solid lightgreen;
 }
 
 
@@ -127,7 +128,7 @@ html, body {
     height: 120px;
     -webkit-transition: none;
     transition: none;
-    margin-bottom: 14px;
+   
 }
 
 .form-content textarea:hover, .form-content textarea:focus {
