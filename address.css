@@ -150,9 +150,6 @@ html, body {
    color: #2acc80;
 }
 
-input.form-control:focus{
-    color: lightgreen;
-}
 
 /* footer */
 
