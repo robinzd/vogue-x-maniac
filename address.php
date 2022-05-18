@@ -16,8 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <!-- link the external stylesheet -->
   <link rel="stylesheet" type="text/css" href="./address.css">
-  <!-- link the external stylesheet -->
-  <script src="./address.js"></script>
+ 
 </head>
 
 <body>
@@ -54,16 +53,10 @@
               </div>
 
               <div class="col-md-12">
-                <select class="form-select mt-3" required>
-                  <option selected disabled value="">Position</option>
-                  <option value="jweb">Junior Web Developer</option>
-                  <option value="sweb">Senior Web Developer</option>
-                  <option value="pmanager">Project Manager</option>
-                </select>
-                <div class="valid-feedback">You selected a position!</div>
-                <div class="invalid-feedback">Please select a position!</div>
+                <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                <div class="valid-feedback">Email field is valid!</div>
+                <div class="invalid-feedback">Email field cannot be blank!</div>
               </div>
-
 
               <div class="col-md-12">
                 <input class="form-control" type="password" name="password" placeholder="Password" required>
@@ -71,21 +64,6 @@
                 <div class="invalid-feedback">Password field cannot be blank!</div>
               </div>
 
-
-              <div class="col-md-12 mt-3">
-                <label class="mb-3 mr-1" for="gender">Gender: </label>
-
-                <input type="radio" class="btn-check" name="gender" id="male" autocomplete="off" required>
-                <label class="btn btn-sm btn-outline-secondary" for="male">Male</label>
-
-                <input type="radio" class="btn-check" name="gender" id="female" autocomplete="off" required>
-                <label class="btn btn-sm btn-outline-secondary" for="female">Female</label>
-
-                <input type="radio" class="btn-check" name="gender" id="secret" autocomplete="off" required>
-                <label class="btn btn-sm btn-outline-secondary" for="secret">Secret</label>
-                <div class="valid-feedback mv-up">You selected a gender!</div>
-                <div class="invalid-feedback mv-up">Please select a gender!</div>
-              </div>
 
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
@@ -187,6 +165,9 @@
         <!-- Copyright -->
     </footer>
     <!-- end of the footer -->
+
+  <!-- link the external stylesheet -->
+  <script src="./address.js"></script>
   <!-- j query -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- owl carousel -->
