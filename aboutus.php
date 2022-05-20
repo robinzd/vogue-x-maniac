@@ -34,8 +34,8 @@
 
 
     
-<section class="text-center about">
-      <h1>About US</h1>
+<section id="brands" class="text-center about">
+      <h2>About US</h2>
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
