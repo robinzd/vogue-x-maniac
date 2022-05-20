@@ -54,22 +54,22 @@
               <div class="col-md-12">
                 <input class="form-control" type="text" name="street" placeholder="Address" required>
                 <div class="invalid-feedback">Address field cannot be blank!</div>
-              </div><br>
+              </div>
 
               <div class="col-md-12">
                 <input class="form-control" type="text" name="landmark" placeholder="Landmark" required>
                 <div class="invalid-feedback">Landmark field cannot be blank!</div>
-              </div><br>
+              </div>
 
               <div class="col-md-12">
                 <input class="form-control" type="text" name="city" placeholder="City" required>
                 <div class="invalid-feedback">City field cannot be blank!</div>
-              </div><br>
+              </div>
 
               <div class="col-md-12">
                 <input class="form-control" type="text" name="pincode" placeholder="Pincode" required>
                 <div class="invalid-feedback">Pincode field cannot be blank!</div>
-              </div><br>
+              </div>
 
 
               <div class="form-check">
