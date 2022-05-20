@@ -80,7 +80,7 @@
 
 
               <div class="form-button mt-3">
-                <button id="submit" type="submit" class="btn btn-primary">Register</button>
+                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
               </div>
             </form>
           </div>
@@ -140,7 +140,7 @@
 
 
               <div class="form-button mt-3">
-                <button id="submit" type="submit" class="btn btn-primary">Register</button>
+                <button id="submit" type="submit" class="btn btn-primary">Submit</button>
               </div>
             </form>
           </div>
