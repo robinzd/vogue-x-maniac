@@ -69,7 +69,7 @@
               <div class="col-md-12">
                 <input class="form-control" type="number" name="pincode" placeholder="Pincode" required>
                 <div class="invalid-feedback">Pincode field cannot be blank!</div>
-              </div>
+              </div><br>
 
 
               <div class="form-check">
@@ -129,7 +129,7 @@
               <div class="col-md-12">
                 <input class="form-control" type="text" name="pincode" placeholder="Pincode" required>
                 <div class="invalid-feedback">Pincode field cannot be blank!</div>
-              </div>
+              </div><br>
 
 
               <div class="form-check">
