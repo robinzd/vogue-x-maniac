@@ -151,6 +151,21 @@ html, body {
    color: #2acc80;
 }
 
+button#submit{
+    background-color: lightgreen;
+    color: black;
+
+}
+
+button#submit:active{
+    border:none;
+}
+
+button#submit:hover{
+   background-color: black;
+   color:white;
+}
+
 /* footer */
 
 
