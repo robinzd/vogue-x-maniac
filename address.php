@@ -80,7 +80,7 @@
 
 
               <div class="form-button mt-3">
-                <button id="submit" type="submit" class="btn btn-outline-success">Submit</button>
+                <button href="bill.php" id="submit" type="submit" class="btn btn-outline-success">Submit</button>
               </div>
             </form>
           </div>
