@@ -8,12 +8,52 @@
 	padding-top: 20px;
 	padding-bottom: 30px;
 }
-.about h1 {
+/* .about h1 {
 	padding: 10px 0;
 	margin-bottom: 20px;
 	font-family: 'Redressed' , cursive;
    
+} */
+
+/* brands */
+#brands{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin:20px 0px 50px 0px;
+    flex-direction:column;
 }
+
+#brands h1{
+   font-weight:500;
+   padding:2px 20px;
+   text-transform:capitalize;
+   letter-spacing: 2px;
+   font-family: 'Redressed', cursive;
+   margin:20px 0px;
+   border: 1px solid rgba(0,0,0,0.14) ;
+}
+
+.brands-container{
+    display: flex;
+    margin:auto;
+    width:1200px;
+    justify-content: center;
+    align-items:center;
+    padding:20px;
+    border:1px solid rgba(0,0,0,0.04);
+   
+    
+}
+
+.brands-box{
+    position:relative;
+    padding:10px;
+    text-decoration: none;
+  
+}
+
+/*  */
 
 .about h2 {
 	opacity: .8;
