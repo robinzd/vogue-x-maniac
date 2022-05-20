@@ -157,10 +157,6 @@ button#submit{
 
 }
 
-button#submit:active{
-    border:none;
-}
-
 button#submit:hover{
    background-color: black;
    color:white;
