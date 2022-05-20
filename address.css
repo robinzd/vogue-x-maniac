@@ -81,7 +81,7 @@ html, body {
     color: black;
 }
 
-.form-content input[type=text], .form-content input[type=password], .form-content input[type=email], .form-content input[type=number], .form-content select {
+.form-content input[type=text], .form-content input[type=email], .form-content input[type=number] {
     width: 100%;
     padding: 9px 20px;
     text-align: left;
