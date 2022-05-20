@@ -11,18 +11,11 @@
 .about h1 {
 	padding: 10px 0;
 	margin-bottom: 20px;
+	font-family: 'Redressed' , cursive;
    
 }
 
-#brands h2{
-	font-weight:500;
-	padding:2px 20px;
-	text-transform:capitalize;
-	letter-spacing: 2px;
-	font-family: 'Redressed', cursive;
-	margin:20px 0px;
-	border: 1px solid rgba(0,0,0,0.14) ;
- }
+
  
 .about h2 {
 	opacity: .8;
