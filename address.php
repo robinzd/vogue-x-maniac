@@ -38,7 +38,7 @@
           <div class="form-items">
             <h3>Address Details</h3>
             <p>Fill in the data below.</p>
-            <form class="requires-validation" novalidate>
+            <form class="requires-validation" novalidate method="Post">
 
               <div class="col col-md-12">
                 <input class="form-control" type="text" name="name" placeholder="Full Name" required>
