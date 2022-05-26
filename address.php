@@ -127,7 +127,7 @@ die;
 
 
               <div class="form-button mt-3">
-                <button id="submit" type="submit" class="btn btn-outline-success">Submit</button>
+                <button id="submit" type="submit" value="submit" class="btn btn-outline-success">Submit</button>
               </div>
             </form>
           </div>
