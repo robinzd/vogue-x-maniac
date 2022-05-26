@@ -1,3 +1,47 @@
+<?php
+session_start();
+
+include("./conn.php");
+include("./function.php");
+
+$user_data = check_login($conn);
+
+$userid = $user_data['user_id'];
+
+echo $userid;
+
+echo "<br>";
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+$fullname = $_POST['name'];
+echo $fullname;
+echo "<br>";
+$email =  $_POST['email'];
+echo $email;
+$street =  $_POST['street'];
+$landmark =  $_POST['landmark'];
+$city =  $_POST['city'];
+$pincode = $_POST['pincode'];
+
+
+if(!empty($fullname) && !empty($email ) && !empty($street) && !empty($landmark ) && !empty($email)&& !empty($city) && !empty($pincode)){
+
+$query = "INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`, `user_address`, `user_landmark`,`user_city`,`user_pincode`) VALUES ('$userid ','$fullname','$email','$street','$city','$pincode')";
+
+$check = mysqli_query($conn, $query);
+
+header("location:./address.php");
+		die;
+
+}
+
+}
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,6 +65,8 @@
 
 <body>
   <!-- navbar starts -->
+
+  
 
 
   <?php
