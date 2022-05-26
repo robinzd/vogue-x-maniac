@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	$email = $_POST["email"];
 	$password = $_POST["Password"];
 	$mobile_no = $_POST["Mobile_No"];
-	$user_id=$POST["$name"];
+	
 
 
 
