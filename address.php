@@ -20,9 +20,17 @@ $email =  $_POST['email'];
 echo $email;
 echo "<br>";
 $street =  $_POST['street'];
+echo $street;
+echo "<br>";
 $landmark =  $_POST['landmark'];
+echo $landmark;
+echo "<br>";
 $city =  $_POST['city'];
+echo $city;
+echo "<br>";
 $pincode = $_POST['pincode'];
+echo $pincode;
+echo "<br>";
 
 
 if(!empty($fullname) && !empty($email ) && !empty($street) && !empty($landmark ) && !empty($email)&& !empty($city) && !empty($pincode)){
@@ -33,7 +41,7 @@ echo $query;
 
 $check = mysqli_query($conn, $query);
 
-header("location:./address.php");
+header("location:../address.php");
 
 die;
 
