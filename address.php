@@ -35,11 +35,11 @@ echo "<br>";
 
 if(!empty($fullname) && !empty($email ) && !empty($street) && !empty($landmark ) && !empty($email)&& !empty($city) && !empty($pincode)){
 
-$query = "INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`, `user_address`, `user_landmark`,`user_city`,`user_pincode`) VALUES ('$userid ','$fullname','$email','$street','$city','$pincode')";
+$query_address = "INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`, `user_address`, `user_landmark`,`user_city`,`user_pincode`) VALUES ('$userid ','$fullname','$email','$street','$city','$pincode')";
 
-echo $query;
+echo $query_address;
 
-$check = mysqli_query($conn, $query);
+$check_address = mysqli_query($conn, $query_address);
 
 header("location:../address.php");
 
