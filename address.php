@@ -46,6 +46,9 @@ header("location:../address.php");
 die;
 
 }
+else{
+  echo "<script>alert('Please Enter Some Valid Information!');</script>";
+}
 
 }
 
