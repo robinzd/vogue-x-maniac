@@ -31,7 +31,8 @@ $query = "INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`,
 $check = mysqli_query($conn, $query);
 
 header("location:./address.php");
-		die;
+
+die;
 
 }
 
@@ -84,7 +85,7 @@ header("location:./address.php");
           <div class="form-items">
             <h3>Address Details</h3>
             <p>Fill in the data below.</p>
-            <form class="requires-validation" novalidate method="Post" action="bill.php">
+            <form class="requires-validation" novalidate method="Post">
 
               <div class="col col-md-12">
                 <input class="form-control" type="text" name="name" placeholder="Full Name" required>
