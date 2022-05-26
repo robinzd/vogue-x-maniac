@@ -18,6 +18,7 @@ echo $fullname;
 echo "<br>";
 $email =  $_POST['email'];
 echo $email;
+echo "<br>";
 $street =  $_POST['street'];
 $landmark =  $_POST['landmark'];
 $city =  $_POST['city'];
@@ -27,6 +28,8 @@ $pincode = $_POST['pincode'];
 if(!empty($fullname) && !empty($email ) && !empty($street) && !empty($landmark ) && !empty($email)&& !empty($city) && !empty($pincode)){
 
 $query = "INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`, `user_address`, `user_landmark`,`user_city`,`user_pincode`) VALUES ('$userid ','$fullname','$email','$street','$city','$pincode')";
+
+echo $query;
 
 $check = mysqli_query($conn, $query);
 
