@@ -156,7 +156,7 @@ if (isset($_GET['delid'])) {
             $ret = mysqli_query($conn, "select * from products_cart where user_id='$userid'");
             $row = mysqli_num_rows($ret);
             if ($row > 0) {
-                echo " <a href='./address.php?user_id=$userid'><div class='d-grid gap-2'>
+                echo " <a href='./address.php'><div class='d-grid gap-2'>
                 <button  class='btn btn-success' type='button'>Checkout</button>
                     </div></a>";
             }
@@ -277,7 +277,7 @@ if (isset($_GET['delid'])) {
             $ret = mysqli_query($conn, "select * from products_cart where user_id='$userid'");
             $row = mysqli_num_rows($ret);
             if ($row > 0) {
-                echo " <a href='./address.php?$userid'><div class='d-grid gap-2'>
+                echo " <a href='./address.php'><div class='d-grid gap-2'>
                <button  class='btn btn-success' type='button'>Checkout</button>
                     </div> </a>";
             }
