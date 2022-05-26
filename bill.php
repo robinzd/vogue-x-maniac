@@ -35,8 +35,14 @@ $city = isset($_POST['city']) ? $_POST['city'] : "";
 
 $pincode = isset($_POST['pincode']) ? $_POST['pincode'] : "";
 
+$query_adress = "select * from users_address";
 
+$result = mysqli_query($conn,$query_adress);
+
+
+if($result){
 $query = "INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`, `user_address`, `user_landmark`,`user_city`,`user_pincode`) VALUES ('$userid ','$fullname','$email','$street','$city','$pincode')";
 
-
 $check = mysqli_query($conn, $query);
+
+}
