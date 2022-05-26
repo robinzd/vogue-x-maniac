@@ -91,7 +91,7 @@ include("./conn.php");
 
                 echo "<button type='button' data-bs-target='#demo' data-bs-slide-to='$counter'></button>";
                 $counter = $counter + 1;
-                echo $counter;
+               
             }
 
             ?>
