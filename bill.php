@@ -318,13 +318,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                         </div>
 
 
-                        <div class="d-flex justify-content-between footer p-3">
-
-                            <span>Need Help? visit our <a href="#"> help center</a></span>
-                             <span>12 June, 2020</span>
-                            
-                        </div>
-
+                        
 
 
             
