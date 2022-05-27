@@ -96,7 +96,7 @@
             <form class="requires-validation" novalidate method="Post" action="./bill.php">
 
               <div class="col col-md-12">
-                <input class="form-control" type="text" name="name" placeholder="Full Name" required>
+                <input class="form-control" type="text" name="fullname" placeholder="Full Name" required>
                 <div class="invalid-feedback">Username field cannot be blank!</div>
               </div>
 
