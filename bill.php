@@ -3,7 +3,7 @@ session_start();
 
 include("./conn.php");
 include("./function.php");
-include("./orderid_generate.php");
+// include("./orderid_generate.php");
 
 
 $user_data = check_login($conn);
