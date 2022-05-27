@@ -5,9 +5,9 @@
 *, body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    -webkit-font-smoothing: antialiased;
+    /* -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    -moz-osx-font-smoothing: grayscale;
+    -moz-osx-font-smoothing: grayscale; */
 }
 
 html, body {
@@ -99,7 +99,7 @@ html, body {
 }
 
 
-.btn-primary{
+/* .btn-primary{
     background-color: #6C757D;
     outline: none;
     border: 0px;
@@ -111,7 +111,7 @@ html, body {
     outline: none !important;
     border: none !important;
      box-shadow: none;
-}
+} */
 
 .form-content textarea {
     position: static !important;
