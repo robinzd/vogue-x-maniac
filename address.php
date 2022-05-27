@@ -22,7 +22,7 @@
 <body>
   <!-- navbar starts -->
 
-  
+
 
 
   <?php
@@ -30,6 +30,14 @@
   include "./index.header.php";
 
   ?>
+
+  <!-- back to top starts -->
+
+
+  <?php include "./back_to_top.php"; ?>
+
+  <!--back to top ends -->
+
 
   <!-- navbar  ends -->
   <!-- hide only on xs -->
@@ -40,7 +48,7 @@
           <div class="form-items">
             <h3>Address Details</h3>
             <p>Fill in the data below.</p>
-            <form class="requires-validation" novalidate  method="POST" action="./bill.php">
+            <form class="requires-validation" novalidate method="POST" action="./bill.php">
 
               <div class="col col-md-12">
                 <input class="form-control" type="text" name="fullname" placeholder="Full Name" required>
