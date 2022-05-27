@@ -11,7 +11,7 @@ $userid = $user_data['user_id'];
 echo $userid;
 
 echo "<br>";
-$fullname = $_POST["fullname"];
+$fullname = $_POST["name"];
 echo $fullname;
 echo "<br>";
 $email =  $_POST["email"];
