@@ -32,18 +32,9 @@ $pincode = $_POST["pincode"];
 echo $pincode;
 echo "<br>";
 
-if(!empty($fullname) && !empty($email ) && !empty($street) && !empty($landmark) && !empty($city)&& !empty($pincode)){
-    
-    
-    $query_address =mysqli_query ($conn,"INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`, `user_address`, `user_landmark`,`user_city`,`user_pincode`) VALUES ('$userid ','$fullname','$email','$street','$landmark','$city','$pincode')");
-  
-}  
-
 $get_userscart = "select * from products_cart where user_id=$userid";
 
 $run_userscart = mysqli_query($conn,$get_userscart);
-
-
 
 while ($row_userscart = mysqli_fetch_array($run_userscart)) {
 
@@ -55,18 +46,23 @@ while ($row_userscart = mysqli_fetch_array($run_userscart)) {
 
 $order_id=random_num(10);
 
-$query_order = "select * from  users_order";
 
-$result_order = mysqli_query($conn, $query_order);
+if(!empty($fullname) && !empty($email ) && !empty($street) && !empty($landmark) && !empty($city)&& !empty($pincode)){
+    
+    
+    $query_address =mysqli_query ($conn,"INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`, `user_address`, `user_landmark`,`user_city`,`user_pincode`) VALUES ('$userid ','$fullname','$email','$street','$landmark','$city','$pincode')");
+  
+    
+    if($query_address){
 
-$rowcount = mysqli_num_rows($result_order);
+        $query_order =mysqli_query ($conn,"INSERT INTO `users_order`( `user_id`, `order_id`, `product_id`, `product_quantity`, `product_size`) VALUES ('$userid ','$order_id','$product_id','$product_quantity ','$product_size')");
+    
+    
+    }
 
-if($rowcount == $rowcount){
 
-    $query_order =mysqli_query ($conn,"INSERT INTO `users_order`( `user_id`, `order_id`, `product_id`, `product_quantity`, `product_size`) VALUES ('$userid ','$order_id','$product_id','$product_quantity ','$product_size')");
+}  
 
-
-}
 
 else{
   echo "<script>alert('Something Went Wrong!');</script>";
