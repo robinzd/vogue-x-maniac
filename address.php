@@ -22,7 +22,7 @@
 <body>
   <!-- navbar starts -->
 
-
+  
 
 
   <?php
@@ -32,18 +32,124 @@
   ?>
 
   <!-- navbar  ends -->
- 
+  <!-- hide only on xs -->
+  <div class="form-body d-none d-sm-block">
+    <div class="row">
+      <div class="form-holder">
+        <div class="form-content">
+          <div class="form-items">
+            <h3>Address Details</h3>
+            <p>Fill in the data below.</p>
+            <form class="requires-validation" novalidate  method="POST" action="./bill.php">
+
+              <div class="col col-md-12">
+                <input class="form-control" type="text" name="name" placeholder="Full Name" required>
+                <div class="invalid-feedback">Username field cannot be blank!</div>
+              </div>
+
+              <div class="col-md-12">
+                <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                <div class="valid-feedback">Email field is valid!</div>
+                <div class="invalid-feedback">Email field cannot be blank!</div>
+              </div>
+
+              <div class="col-md-12">
+                <input class="form-control" type="text" name="street" placeholder="Address" required>
+                <div class="invalid-feedback">Address field cannot be blank!</div>
+              </div>
+
+              <div class="col-md-12">
+                <input class="form-control" type="text" name="landmark" placeholder="Landmark" required>
+                <div class="invalid-feedback">Landmark field cannot be blank!</div>
+              </div>
+
+              <div class="col-md-12">
+                <input class="form-control" type="text" name="city" placeholder="City" required>
+                <div class="invalid-feedback">City field cannot be blank!</div>
+              </div>
+
+              <div class="col-md-12">
+                <input class="form-control" type="number" name="pincode" placeholder="Pincode" required>
+                <div class="invalid-feedback">Pincode field cannot be blank!</div>
+              </div><br>
 
 
-  <form method="Post" action="bill.php">
-        <input type="text" placeholder="fullname" name="fullname"><br>
-        <input type="text" placeholder="enter you email" name="email"><br>
-        <input type="text" placeholder="enter you street" name="street"><br>
-        <input type="text" placeholder="enter you landmark" name="landmark"><br>
-        <input type="text" placeholder="enter your city" name="city"><br>
-        <input type="number" placeholder="enter pincode" name="pincode"><br>
-        <input type="submit">
-  </form>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label">I confirm that all data are correct</label>
+                <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+              </div>
+
+
+              <div class="form-button mt-3">
+                <button type="submit" class="btn btn-outline-success">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- hide only on xs -->
+
+
+  <div class="form-body  d-block d-sm-none" style="zoom:70%">
+    <div class="row">
+      <div class="form-holder">
+        <div class="form-content">
+          <div class="form-items">
+            <h3>Address Details</h3>
+            <p>Fill in the data below.</p>
+            <form class="requires-validation" novalidate method="Post" action="./bill.php">
+
+              <div class="col col-md-12">
+                <input class="form-control" type="text" name="name" placeholder="Full Name" required>
+                <div class="invalid-feedback">Username field cannot be blank!</div>
+              </div>
+
+              <div class="col-md-12">
+                <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
+                <div class="valid-feedback">Email field is valid!</div>
+                <div class="invalid-feedback">Email field cannot be blank!</div>
+              </div>
+
+              <div class="col-md-12">
+                <input class="form-control" type="text" name="street" placeholder="Address" required>
+                <div class="invalid-feedback">Address field cannot be blank!</div>
+              </div>
+
+              <div class="col-md-12">
+                <input class="form-control" type="text" name="landmark" placeholder="Landmark" required>
+                <div class="invalid-feedback">Landmark field cannot be blank!</div>
+              </div>
+
+              <div class="col-md-12">
+                <input class="form-control" type="text" name="city" placeholder="City" required>
+                <div class="invalid-feedback">City field cannot be blank!</div>
+              </div><br>
+
+              <div class="col-md-12">
+                <input class="form-control" type="text" name="pincode" placeholder="Pincode" required>
+                <div class="invalid-feedback">Pincode field cannot be blank!</div>
+              </div><br>
+
+
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                <label class="form-check-label">I confirm that all data are correct</label>
+                <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
+              </div>
+
+
+              <div class="form-button mt-3">
+                <button id="submit" type="submit" class="btn btn-outline-success">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
 
