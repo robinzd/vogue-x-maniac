@@ -36,13 +36,13 @@ $get_userscart = "select * from products_cart where user_id=$userid";
 
 $run_userscart = mysqli_query($conn,$get_userscart);
 
-while ($row_userscart = mysqli_fetch_array($run_userscart)) {
+// while ($row_userscart = mysqli_fetch_array($run_userscart)) {
 
-    $product_id = $row_userscart['product_id'];
-    $product_quantity = $row_userscart['product_quantity'];
-    $product_size = $row_userscart['product_size'];
+//     $product_id = $row_userscart['product_id'];
+//     $product_quantity = $row_userscart['product_quantity'];
+//     $product_size = $row_userscart['product_size'];
 
-}
+// }
 
 $order_id=random_num(10);
 
@@ -55,6 +55,8 @@ if(!empty($fullname) && !empty($email ) && !empty($street) && !empty($landmark) 
   
     
     if($query_address){
+
+        echo $userid;
 
         while ($row_userscart = mysqli_fetch_array($run_userscart)) {
 
