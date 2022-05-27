@@ -56,8 +56,18 @@ if(!empty($fullname) && !empty($email ) && !empty($street) && !empty($landmark) 
     
     if($query_address){
 
-        $query_order = mysqli_query ($conn,"INSERT INTO `users_order`( `user_id`, `order_id`, `product_id`, `product_quantity`, `product_size`) VALUES ('$userid ','$order_id','$product_id','$product_quantity ','$product_size')");
-    
+        while ($row_userscart = mysqli_fetch_array($run_userscart)) {
+
+            $product_id = $row_userscart['product_id'];
+            $product_quantity = $row_userscart['product_quantity'];
+            $product_size = $row_userscart['product_size'];
+
+            $query_order = mysqli_query ($conn,"INSERT INTO `users_order`( `user_id`, `order_id`, `product_id`, `product_quantity`, `product_size`) VALUES ('$userid ','$order_id','$product_id','$product_quantity ','$product_size')");
+        
+        }
+
+      
+      
     
     }
     else{
