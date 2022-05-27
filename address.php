@@ -33,18 +33,12 @@ echo $pincode;
 echo "<br>";
 
 
-if(!empty($fullname) && !empty($email ) && !empty($street) && !empty($landmark ) && !empty($email)&& !empty($city) && !empty($pincode)){
 
-$query_address = "INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`, `user_address`, `user_landmark`,`user_city`,`user_pincode`) VALUES ('$userid ','$fullname','$email','$street','$city','$pincode')";
 
-echo $query_address;
+$query_address =mysqli_query ($conn,"INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`, `user_address`, `user_landmark`,`user_city`,`user_pincode`) VALUES ('$userid ','$fullname','$email','$street','$city','$pincode')");
 
-$check_address = mysqli_query($conn, $query_address);
-
-header("location:../bill.php");
-
-die;
-
+if($query_address){
+  echo "<script>alert('successfully added!');</script>";
 }
 else{
   echo "<script>alert('Please Enter Some Valid Information!');</script>";
@@ -159,7 +153,7 @@ else{
           <div class="form-items">
             <h3>Address Details</h3>
             <p>Fill in the data below.</p>
-            <form class="requires-validation" novalidate>
+            <form class="requires-validation">
 
               <div class="col col-md-12">
                 <input class="form-control" type="text" name="name" placeholder="Full Name" required>
