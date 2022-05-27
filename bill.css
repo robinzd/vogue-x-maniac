@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 
 
 body{
-    font-family: 'Montserrat', sans-serif
+    font-family: 'Poppins', sans-serif;
 }
 .card{
     border:none
@@ -77,9 +76,9 @@ h6.text-uppercase.mb-4.font-weight-bold{
   font-family:'Redressed', cursive !important;
 }
 
-p#address{
+ p#address{
   white-space: nowrap;
-}
+} 
 
 img.px-2 {
   width: 50px;
