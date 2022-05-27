@@ -60,6 +60,10 @@ if(!empty($fullname) && !empty($email ) && !empty($street) && !empty($landmark) 
     
     
     }
+    else{
+
+        echo "<script>alert('Something Went Wrong!');</script>";
+    }
 
 
 }  
