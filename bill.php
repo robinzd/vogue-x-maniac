@@ -163,10 +163,10 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                         </td>
                                     
                                         <td width="60%">
-                                            <span class="font-weight-bold">Men's Sports cap</span>
+                                            <span class="font-weight-bold">Men's Sports cap</span><br>
                                             <div class="product-qty">
                                                 <span class="d-block">Quantity:1</span>
-                                                <span>Color:Dark</span>
+                                               
                                                 
                                             </div>
                                         </td>
@@ -186,10 +186,10 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                         </td>
                                     
                                         <td width="60%">
-                                            <span class="font-weight-bold">Men's Collar T-shirt</span>
+                                            <span class="font-weight-bold">Men's Collar T-shirt</span><br>
                                             <div class="product-qty">
                                                 <span class="d-block">Quantity:1</span>
-                                                <span>Color:Orange</span>
+                                               
                                                 
                                             </div>
                                         </td>
