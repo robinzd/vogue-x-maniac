@@ -44,7 +44,8 @@ while ($row_userscart = mysqli_fetch_array($run_userscart)) {
 
 }
 
-$order_id=random_num(10);
+$order_id=random_num(20);
+
 
 
 if(!empty($fullname) && !empty($email ) && !empty($street) && !empty($landmark) && !empty($city)&& !empty($pincode)){
