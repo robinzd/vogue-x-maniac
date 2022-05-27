@@ -77,26 +77,26 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- link the external stylesheet -->
     <link rel="stylesheet" type="text/css" href="./bill.css">
-    
+
 </head>
 
 <body>
 
-<?php
+    <?php
 
-  include "./index.header.php";
+    include "./index.header.php";
 
-  ?>
+    ?>
 
-  <!-- back to top starts -->
+    <!-- back to top starts -->
 
 
-  <?php include "./back_to_top.php"; ?>
+    <?php include "./back_to_top.php"; ?>
 
-  <!--back to top ends -->
+    <!--back to top ends -->
 
-                           
-<div class="container mt-5 mb-5">
+
+    <div class="container mt-5 mb-5">
 
         <div class="row d-flex justify-content-center">
 
@@ -105,81 +105,81 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                 <div class="card">
 
 
-                      
 
-                        <div class="invoice p-5">
 
-                            <h5>Your order Confirmed!</h5>
+                    <div class="invoice p-5">
 
-                            <span class="font-weight-bold d-block mt-4">Hello, Chris</span>
-                            <span>You order has been confirmed and will be shipped in next two days!</span>
+                        <h5>Your order Confirmed!</h5>
 
-                            <div class="payment border-top mt-3 mb-3 border-bottom table-responsive">
+                        <span class="font-weight-bold d-block mt-4">Hello, Chris</span>
+                        <span>You order has been confirmed and will be shipped in next two days!</span>
 
-                                <table class="table table-borderless">
-                                    
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="py-2">
+                        <div class="payment border-top mt-3 mb-3 border-bottom table-responsive">
 
-                                                    <span class="d-block text-muted">Order Date</span>
+                            <table class="table table-borderless">
+
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="py-2">
+
+                                                <span class="d-block text-muted">Order Date</span>
                                                 <span>12 Jan,2018</span>
-                                                    
-                                                </div>
-                                            </td>
 
-                                            <td>
-                                                <div class="py-2">
+                                            </div>
+                                        </td>
 
-                                                    <span class="d-block text-muted">Order No</span>
+                                        <td>
+                                            <div class="py-2">
+
+                                                <span class="d-block text-muted">Order No</span>
                                                 <span>MT12332345</span>
-                                                    
-                                                </div>
-                                            </td>
 
-                                         
+                                            </div>
+                                        </td>
 
-                                            <td>
-                                                <div class="py-2">
 
-                                                    <span class="d-block text-muted">Shiping Address</span>
+
+                                        <td>
+                                            <div class="py-2">
+
+                                                <span class="d-block text-muted">Shiping Address</span>
                                                 <span>414 Advert Avenue, NY,USA</span>
-                                                    
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
 
-                                </table>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
 
-
-
-
-                                
-                            </div>
+                            </table>
 
 
 
 
-                                <div class="product border-bottom table-responsive">
 
-                                    <table class="table table-borderless">
+                        </div>
 
-                                    <tbody>
-                                        <tr>
-                                            <td width="20%">
-                                            
+
+
+
+                        <div class="product border-bottom table-responsive">
+
+                            <table class="table table-borderless">
+
+                                <tbody>
+                                    <tr>
+                                        <td width="20%">
+
                                             <img src="https://i.imgur.com/u11K1qd.jpg" width="90">
 
                                         </td>
-                                    
+
                                         <td width="60%">
                                             <span class="font-weight-bold">Men's Sports cap</span><br>
                                             <div class="product-qty">
                                                 <span class="d-block">Quantity:1</span>
-                                               
-                                                
+
+
                                             </div>
                                         </td>
                                         <td width="20%">
@@ -187,22 +187,22 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                                 <span class="font-weight-bold">$67.50</span>
                                             </div>
                                         </td>
-                                        </tr>
+                                    </tr>
 
 
-                                        <tr>
-                                            <td width="20%">
-                                            
+                                    <tr>
+                                        <td width="20%">
+
                                             <img src="https://i.imgur.com/SmBOua9.jpg" width="70">
 
                                         </td>
-                                    
+
                                         <td width="60%">
                                             <span class="font-weight-bold">Men's Collar T-shirt</span><br>
                                             <div class="product-qty">
                                                 <span class="d-block">Quantity:1</span>
-                                               
-                                                
+
+
                                             </div>
                                         </td>
                                         <td width="20%">
@@ -210,222 +210,222 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                                 <span class="font-weight-bold">$77.50</span>
                                             </div>
                                         </td>
-                                        </tr>
-                                    </tbody> 
-                                        
-                                    </table>
-                                    
+                                    </tr>
+                                </tbody>
+
+                            </table>
 
 
-                                </div>
-
-
-
-                                <div class="row d-flex justify-content-end">
-
-                                    <div class="col-md-5">
-
-                                        <table class="table table-borderless">
-
-                                            <tbody class="totals">
-
-                                                <tr>
-                                                    <td>
-                                                        <div class="text-left">
-
-                                                            <span class="text-muted">Subtotal</span>
-                                                            
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="text-right">
-                                                            <span>$168.50</span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-
-                                                 <tr>
-                                                    <td>
-                                                        <div class="text-left">
-
-                                                            <span class="text-muted">Shipping Fee</span>
-                                                            
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="text-right">
-                                                            <span>$22</span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-
-                                                 <tr>
-                                                    <td>
-                                                        <div class="text-left">
-
-                                                            <span class="text-muted">Tax Fee</span>
-                                                            
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="text-right">
-                                                            <span>$7.65</span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-
-                                                 <tr>
-                                                    <td>
-                                                        <div class="text-left">
-
-                                                            <span class="text-muted">Discount</span>
-                                                            
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="text-right">
-                                                            <span class="text-success">$168.50</span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-
-
-                                                 <tr class="border-top border-bottom">
-                                                    <td>
-                                                        <div class="text-left">
-
-                                                            <span class="font-weight-bold">Subtotal</span>
-                                                            
-                                                        </div>
-                                                    </td>
-                                                    <td>
-                                                        <div class="text-right">
-                                                            <span class="font-weight-bold">$238.50</span>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                
-                                            </tbody>
-                                            
-                                        </table>
-                                        
-                                    </div>
-                                    
-
-
-                                </div>
-
-
-                                <p>We will be sending shipping confirmation email when the item shipped successfully!</p>
-                                <p class="font-weight-bold mb-0">Thanks for shopping with us!</p>
-                                <span>Nike Team</span>
-
-
-
-                            
 
                         </div>
 
 
-                        
+
+                        <div class="row d-flex justify-content-end">
+
+                            <div class="col-md-5">
+
+                                <table class="table table-borderless">
+
+                                    <tbody class="totals">
+
+                                        <tr>
+                                            <td>
+                                                <div class="text-left">
+
+                                                    <span class="text-muted">Subtotal</span>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-right">
+                                                    <span>$168.50</span>
+                                                </div>
+                                            </td>
+                                        </tr>
 
 
-            
-        </div>
-                
+                                        <tr>
+                                            <td>
+                                                <div class="text-left">
+
+                                                    <span class="text-muted">Shipping Fee</span>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-right">
+                                                    <span>$22</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>
+                                                <div class="text-left">
+
+                                                    <span class="text-muted">Tax Fee</span>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-right">
+                                                    <span>$7.65</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>
+                                                <div class="text-left">
+
+                                                    <span class="text-muted">Discount</span>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-right">
+                                                    <span class="text-success">$168.50</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr class="border-top border-bottom">
+                                            <td>
+                                                <div class="text-left">
+
+                                                    <span class="font-weight-bold">Subtotal</span>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-right">
+                                                    <span class="font-weight-bold">$238.50</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                        <p>We will be sending shipping confirmation email when the item shipped successfully!</p>
+                        <p class="font-weight-bold mb-0">Thanks for shopping with us!</p>
+                        <span>Nike Team</span>
+
+
+
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
             </div>
-            
+
         </div>
-        
-    </div>    
+
+    </div>
 
 
-     <!-- Footer -->
+    <!-- Footer -->
 
-  <footer class="text-center text-lg-start text-dark" style="background-color:lightgrey">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Links -->
-      <section class="">
-        <!--Grid row-->
-        <div class="row">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-            <img class="footerimage" src="./header images/vogue x maniac png.png" alt="brand image">
-            <p class="text-white">
-              vogue-x-maniac is the one of the leading ecommerce website
-            </p>
-          </div>
-          <!-- Grid column -->
+    <footer class="text-center text-lg-start text-dark" style="background-color:lightgrey">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <img class="footerimage" src="./header images/vogue x maniac png.png" alt="brand image">
+                        <p class="text-white">
+                            vogue-x-maniac is the one of the leading ecommerce website
+                        </p>
+                    </div>
+                    <!-- Grid column -->
 
-          <hr class="w-100 clearfix d-md-none" />
+                    <hr class="w-100 clearfix d-md-none" />
 
-          <!-- Grid column -->
-          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-            <p class="text-white">MDBootstrap</p>
-            <p class="text-white">MDWordPress</p>
-            <p class="text-white">BrandFlow</p>
-            <p class="text-white">Angular</p>
-          </div>
-          <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                        <p class="text-white">MDBootstrap</p>
+                        <p class="text-white">MDWordPress</p>
+                        <p class="text-white">BrandFlow</p>
+                        <p class="text-white">Angular</p>
+                    </div>
+                    <!-- Grid column -->
 
-          <hr class="w-100 clearfix d-md-none" />
+                    <hr class="w-100 clearfix d-md-none" />
 
-          <!-- Grid column -->
-          <hr class="w-100 clearfix d-md-none" />
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
 
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-            <p class="text-white"><i class="fas fa-home text-white mr-3"></i> New York, NY 10012, US</p>
-            <p class="text-white" id="address"><i class="fas fa-envelope text-white mr-3"></i> inf0@text-white@gmail.com
-            </p>
-            <p class="text-white"><i class="fas fa-phone text-white mr-3"></i> + 01 234 567 88</p>
-            <p class="text-white"><i class="fas fa-print text-white mr-3"></i> + 01 234 567 89</p>
-          </div>
-          <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                        <p class="text-white"><i class="fas fa-home text-white mr-3"></i> New York, NY 10012, US</p>
+                        <p class="text-white" id="address"><i class="fas fa-envelope text-white mr-3"></i> inf0@text-white@gmail.com
+                        </p>
+                        <p class="text-white"><i class="fas fa-phone text-white mr-3"></i> + 01 234 567 88</p>
+                        <p class="text-white"><i class="fas fa-print text-white mr-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
 
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mt-3">
-            <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
 
-            <!-- Facebook -->
-            <a class="btn pmd-btn-fab pmd-ripple-effect btn-primary pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" role="button"><i class="fab fa-facebook"></i></a>
+                        <!-- Facebook -->
+                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-primary pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" role="button"><i class="fab fa-facebook"></i></a>
 
-            <!-- Twitter -->
-            <a class="btn pmd-btn-fab pmd-ripple-effect btn-info pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" role="button"><i class="fab fa-twitter"></i></a>
+                        <!-- Twitter -->
+                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-info pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" role="button"><i class="fab fa-twitter"></i></a>
 
-            <!-- youtube -->
-            <a class="btn pmd-btn-fab pmd-ripple-effect btn-secondary pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="youtube" role="button"><i class="fab fa-youtube"></i></a>
+                        <!-- youtube -->
+                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-secondary pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="youtube" role="button"><i class="fab fa-youtube"></i></a>
 
 
-            <!-- Instagram -->
-            <a class="btn pmd-btn-fab pmd-ripple-effect btn-danger pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram" role="button"><i class="fab fa-instagram"></i></a>
+                        <!-- Instagram -->
+                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-danger pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram" role="button"><i class="fab fa-instagram"></i></a>
 
-          </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
         </div>
-        <!--Grid row-->
-      </section>
-      <!-- Section: Links -->
-    </div>
-    <!-- Grid container -->
+        <!-- Grid container -->
 
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.096)">
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.096)">
 
-      <p class="text-dark"> ©2022 Vogue X Maniac.All Rights Reserved
-      </p>
-      <img class="px-2" src="./payment_pics/2560px-MasterCard_Logo.svg-removebg-preview.png">
-      <img class="px-2" src="./payment_pics/1200px-Visa.svg-removebg-preview.png">
-      <img class="px-2" src="./payment_pics/paypal-logo-removebg-preview.png">
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- end of the footer -->
+            <p class="text-dark"> ©2022 Vogue X Maniac.All Rights Reserved
+            </p>
+            <img class="px-2" src="./payment_pics/2560px-MasterCard_Logo.svg-removebg-preview.png">
+            <img class="px-2" src="./payment_pics/1200px-Visa.svg-removebg-preview.png">
+            <img class="px-2" src="./payment_pics/paypal-logo-removebg-preview.png">
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- end of the footer -->
 
 
     <!-- j query -->
