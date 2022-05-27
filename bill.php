@@ -30,7 +30,7 @@ $pincode = $_POST["pincode"];
 echo $pincode;
 echo "<br>";
 
-if(!empty($fullname) && !is_numeric($email ) && !empty($street) && !is_numeric($last_name) && !empty($email)&& !empty($password) && !empty($mobile_no)){
+if(!empty($fullname) && !empty($email ) && !empty($street) && !empty($landmark) && !empty($city)&& !empty($pincode)){
     
     $query_address =mysqli_query ($conn,"INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`, `user_address`, `user_landmark`,`user_city`,`user_pincode`) VALUES ('$userid ','$fullname','$email','$street','$city','$pincode')");
   
