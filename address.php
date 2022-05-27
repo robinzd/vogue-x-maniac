@@ -13,22 +13,22 @@ echo $userid;
 echo "<br>";
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
-$fullname = $_POST['name'];
+$fullname = $_POST["name"];
 echo $fullname;
 echo "<br>";
-$email =  $_POST['email'];
+$email =  $_POST["email"];
 echo $email;
 echo "<br>";
-$street =  $_POST['street'];
+$street =  $_POST["street"];
 echo $street;
 echo "<br>";
-$landmark =  $_POST['landmark'];
+$landmark =  $_POST["landmark"];
 echo $landmark;
 echo "<br>";
-$city =  $_POST['city'];
+$city =  $_POST["city"];
 echo $city;
 echo "<br>";
-$pincode = $_POST['pincode'];
+$pincode = $_POST["pincode"];
 echo $pincode;
 echo "<br>";
 
@@ -41,7 +41,7 @@ echo $query_address;
 
 $check_address = mysqli_query($conn, $query_address);
 
-header("location:../address.php");
+header("location:../bill.php");
 
 die;
 
