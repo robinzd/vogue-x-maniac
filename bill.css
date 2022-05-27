@@ -73,7 +73,7 @@ p.text-white{
 }
 
 h6.text-uppercase.mb-4.font-weight-bold{
-  font-family:'Redressed', cursive !important;
+  font-family:'Redressed', cursive;
 }
 
  p#address{
@@ -81,5 +81,5 @@ h6.text-uppercase.mb-4.font-weight-bold{
 } 
 
 img.px-2 {
-  width: 70px;
+  width: 50px;
 }
