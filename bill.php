@@ -33,7 +33,7 @@ echo "<br>";
 if(!empty($fullname) && !empty($email ) && !empty($street) && !empty($landmark) && !empty($city)&& !empty($pincode)){
     
     
-    $query_address =mysqli_query ($conn,"INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`, `user_address`, `user_landmark`,`user_city`,`user_pincode`) VALUES ('$userid ','$fullname','$email','$street','$city','$pincode')");
+    $query_address =mysqli_query ($conn,"INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`, `user_address`, `user_landmark`,`user_city`,`user_pincode`) VALUES ('$userid ','$fullname','$email','$street','$landmark','$city','$pincode')");
   
     if($query_address){
     echo "<script>alert('added into the database!');</script>";
