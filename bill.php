@@ -3,7 +3,7 @@ session_start();
 
 include("./conn.php");
 include("./function.php");
-// include("./orderid_generate.php");
+
 
 
 $user_data = check_login($conn);
@@ -44,7 +44,7 @@ while ($row_userscart = mysqli_fetch_array($run_userscart)) {
 
 }
 
-$order_id=random_num(20);
+$order_id=random_num(10);
 
 
 
