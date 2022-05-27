@@ -2,15 +2,12 @@
 
 
 body{
-    background-color: #ffe8d2;
     font-family: 'Montserrat', sans-serif
 }
 .card{
     border:none
 }
-.logo{
-    background-color: #eeeeeea8
-}
+
 .totals tr td{
     font-size: 13px
 }
