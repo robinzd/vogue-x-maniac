@@ -27,14 +27,14 @@
 }
 
 button.btn.btn-success{
-    color:black;
-    border-radius:20px;
+    color:black !important;
+    border-radius:20px !important;
     background-color: lightgreen !important;
 }
 
 button.btn.btn-success:hover{
-    color:white;
-    background-color: black;
+    color:white !important;
+    background-color: black !important;
 
 }
 

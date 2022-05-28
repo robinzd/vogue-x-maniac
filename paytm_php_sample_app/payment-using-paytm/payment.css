@@ -144,14 +144,14 @@ html, body {
    color: #2acc80;
 }
 
-button.btn.btn-success-success{
+button.btn.btn-success{
     background-color: lightgreen;
     color: black;
     border-radius: 20px;
 
 }
 
-button.btn.btn-success-success:hover{
+button.btn.btn-success-:hover{
    background-color: black;
    color:white;
 }
