@@ -54,7 +54,6 @@
 
               <div class="col-md-12">
                 <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
-                <div class="valid-feedback">Email field is valid!</div>
                 <div class="invalid-feedback">Email field cannot be blank!</div>
               </div>
 
@@ -106,7 +105,6 @@
 
               <div class="col-md-12">
                 <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
-                <div class="valid-feedback">Email field is valid!</div>
                 <div class="invalid-feedback">Email field cannot be blank!</div>
               </div>
 
