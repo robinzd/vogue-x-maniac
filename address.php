@@ -22,10 +22,7 @@
 <body>
   <!-- navbar starts -->
 
-
-
-
-  <?php
+<?php
 
   include "./index.header.php";
 
