@@ -38,5 +38,24 @@ button.btn.btn-success:hover{
 
 }
 
+#orderdate{
+    
+    white-space:nowrap;
+}
+
+#date{
+
+    white-space:nowrap;
+}
+
+#orderno{
+
+    white-space:nowrap;
+}
+
+#order{
+
+    white-space:nowrap;
+}
 
 

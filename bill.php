@@ -157,15 +157,15 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                     <tr>
                                         <td>
                                             <div class="py-2 text-left">
-                                                <span class="d-block text-muted">Order Date</span>
-                                                <span><?php echo date("d M,Y"); ?></span>
+                                                <span class="d-block text-muted" id="orderdate">Order Date</span>
+                                                <span id="date"><?php echo date("d M,Y"); ?></span>
                                             </div>
                                         </td>
 
                                         <td>
                                             <div class="py-2 text-center">
-                                                <span class="d-block text-muted">Order No</span>
-                                                <span class="font-weight-bold"><?php echo $order_id; ?></span>
+                                                <span class="d-block text-muted" id="orderno">Order No</span>
+                                                <span class="font-weight-bold" id="order"><?php echo $order_id; ?></span>
                                             </div>
                                         </td>
 
@@ -482,15 +482,15 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                     <tr>
                                         <td>
                                             <div class="py-2 text-left">
-                                                <span class="d-block text-muted">Order Date</span>
-                                                <span><?php echo date("d M,Y"); ?></span>
+                                                <span class="d-block text-muted" id="orderdate">Order Date</span>
+                                                <span id="date"><?php echo date("d M,Y"); ?></span>
                                             </div>
                                         </td>
 
                                         <td>
                                             <div class="py-2 text-center">
-                                                <span class="d-block text-muted">Order No</span>
-                                                <span class="font-weight-bold"><?php echo $order_id; ?></span>
+                                                <span class="d-block text-muted" id="orderno">Order No</span>
+                                                <span class="font-weight-bold" id="order"><?php echo $order_id; ?></span>
                                             </div>
                                         </td>
 

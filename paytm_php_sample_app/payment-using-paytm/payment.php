@@ -158,19 +158,19 @@ $transactionURL = PAYTM_TXN_URL;
                             <label>User Id</label>
                             <input type="text" name="CUST_ID" value="<?php echo $custId; ?>" readonly>
 
-                        </div>
+                        </div><br>
 
                         <div class="col-md-12">
                             <label>Mobile No</label>
                             <input type="text" name="MOBILE_NO" value="<?php echo $mobileNo; ?>" readonly>
 
-                        </div>
+                        </div><br>
 
                         <div class="col-md-12">
                             <label>Email ID</label>
                             <input type="text" name="EMAIL" value="<?php echo  $email; ?>" readonly>
 
-                        </div>
+                        </div><br>
 
                         <div class="col-md-12">
                             <label>Transaction Amount</label>
