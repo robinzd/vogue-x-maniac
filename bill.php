@@ -189,7 +189,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                                     <?php
 
-                                    $total_count=0;
+                                    $total_count = 0;
 
                                     $get_cart = "select * from products_cart where user_id=$userid";
 
@@ -204,21 +204,21 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                                         $get_details = "select * from products_details where ID=$product_id";
 
-                                        $run_details = mysqli_query($conn,$get_details);
+                                        $run_details = mysqli_query($conn, $get_details);
 
                                         while ($row_details = mysqli_fetch_array($run_details)) {
 
-                                        $product_price=$row_details["product_price"];
+                                            $product_price = $row_details["product_price"];
 
-                                        $total_price= $product_price *  $product_quantity;
+                                            $total_price = $product_price *  $product_quantity;
 
-                                        $get_images = "select * from  products_images where related_product=$product_id and primary_image=1";
+                                            $get_images = "select details_image from  products_images where related_product=$product_id and primary_image=1";
 
-                                        $run_details = mysqli_query($conn,$get_details);
+                                            $run_images = mysqli_query($conn,$get_images);
 
-                                        while ($row_details = mysqli_fetch_array($run_details)) {
+                                            while ($row_images = mysqli_fetch_array($run_images)) {
 
-                                            $details_image=$row_details["details_image"];
+                                                $details_image = $row_images["details_image"];
 
 
                                     ?>
@@ -226,35 +226,35 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
 
 
-                                            <tr>
-                                                <td width="20%">
+                                                <tr>
+                                                    <td width="20%">
 
-                                                    <img src="<?php echo "./admin_panel/products_images/images/$details_image"; ?>" width="90">
+                                                        <img src="<?php echo "./admin_panel/products_images/images/$details_image"; ?>" width="90">
 
-                                                </td>
+                                                    </td>
 
-                                                <td width="60%">
-                                                    <span class="font-weight-bold">Men's Sports cap</span><br>
-                                                    <div class="product-qty">
-                                                        <span class="d-block">Quantity:<?php $product_quantity;?></span>
-                                                    </div>
-                                                </td>
-                                                <td width="20%">
-                                                    <div class="text-right">
-                                                        <span class="font-weight-bold"><?php echo "₹" . number_format($total_price, 2); ?></span>
-                                                    </div>
-                                                </td>
-                                            </tr>
+                                                    <td width="60%">
+                                                        <span class="font-weight-bold">Men's Sports cap</span><br>
+                                                        <div class="product-qty">
+                                                            <span class="d-block">Quantity:<?php echo $product_quantity; ?></span>
+                                                        </div>
+                                                    </td>
+                                                    <td width="20%">
+                                                        <div class="text-right">
+                                                            <span class="font-weight-bold"><?php echo "₹" . number_format($total_price, 2); ?></span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
 
 
                                     <?php
 
-                                        }
-
+                                                $total_count +=  $product_price *  $product_quantity;
+                                            }
                                         }
                                     }
 
-                                    $total_count +=  $product_price *  $product_quantity;
+
 
                                     ?>
 
