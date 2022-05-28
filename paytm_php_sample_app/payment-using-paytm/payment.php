@@ -24,17 +24,10 @@ $email = $_POST['email'];
 
 $orderId     = time();
 $txnAmount     = "$transaction_amount";
-echo  $txnAmount;
-echo '</br>';
 $custId     = "$customer_id";
-echo  $custId;
-echo '</br>';
 $mobileNo     = "$mobile_number";
-echo $mobileNo;
-echo '</br>';
 $email         = "$email";
-echo  $email;
-echo '</br>';
+
 
 $paytmParams = array();
 
@@ -103,19 +96,19 @@ $transactionURL = PAYTM_TXN_URL;
                                 <label>User Id</label>
                                 <input type="text" name="CUST_ID" value="<?php echo $custId; ?>" readonly>
 
-                            </div>
+                            </div><br>
 
                             <div class="col-md-12">
                                 <label>Mobile No</label>
                                 <input type="text" name="MOBILE_NO" value="<?php echo $mobileNo; ?>" readonly>
 
-                            </div>
+                            </div><br>
 
                             <div class="col-md-12">
                                 <label>Email ID</label>
                                 <input type="text" name="EMAIL" value="<?php echo  $email; ?>" readonly>
 
-                            </div>
+                            </div><br>
 
                             <div class="col-md-12">
                                 <label>Transaction Amount</label>
@@ -128,7 +121,7 @@ $transactionURL = PAYTM_TXN_URL;
                             <input type="hidden" name="INDUSTRY_TYPE_ID" value="<?php echo PAYTM_INDUSTRY_TYPE_ID; ?>">
                             <input type="hidden" name="CALLBACK_URL" value="<?php echo PAYTM_CALLBACK_URL; ?>">
                             <input type="hidden" name="CHECKSUMHASH" value="<?php echo $paytmChecksum ?>">
-                            <input type="submit" name="submit" value="submit" />
+                           
 
 
 
@@ -186,7 +179,7 @@ $transactionURL = PAYTM_TXN_URL;
                         <input type="hidden" name="INDUSTRY_TYPE_ID" value="<?php echo PAYTM_INDUSTRY_TYPE_ID; ?>">
                         <input type="hidden" name="CALLBACK_URL" value="<?php echo PAYTM_CALLBACK_URL; ?>">
                         <input type="hidden" name="CHECKSUMHASH" value="<?php echo $paytmChecksum ?>">
-                        <input type="submit" name="submit" value="submit" />
+                      
 
 
 
