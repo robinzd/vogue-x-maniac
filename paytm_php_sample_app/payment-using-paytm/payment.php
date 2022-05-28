@@ -133,8 +133,8 @@ $transactionURL = PAYTM_TXN_URL;
                             
 
 
-                            <div class="form-button mt-3">
-                                <button type="submit" class="btn btn-outline-success text-center">Submit</button>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-success" type="submit">Submit</button>
                             </div>
                         </form>
                     </div>
@@ -190,8 +190,8 @@ $transactionURL = PAYTM_TXN_URL;
                             
 
 
-                            <div class="form-button mt-3">
-                                <button type="submit" class="btn btn-outline-success text-center">Submit</button>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-success" type="submit">Submit</button>
                             </div>
                         </form>
                     </div>
