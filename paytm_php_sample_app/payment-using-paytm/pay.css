@@ -162,6 +162,11 @@ label{
     font-weight: 200;
 }
 
+.fa-arrow-left {
+    cursor: pointer;
+    margin-top: 30px;
+ }
+
 /* footer */
 
 
