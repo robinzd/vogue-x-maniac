@@ -170,13 +170,14 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                                         <td>
                                             <div class="py-2">
-
-                                                <span class="d-block text-muted">Shiping Address</span>
-                                                <span><?php echo $user_street;?></span><br>
-                                                <span><?php echo $user_landmark;?>,</span><br>
-                                                <span><?php echo  $user_city." - ".$user_pincode ;?></span>
-
-                                            </div>
+                                            <span class="d-block text-muted">Shiping Address</span>
+                                                <span><?php echo $user_street;
+                                                echo "<br>";  
+                                                echo $user_landmark;
+                                                echo "<br>";  
+                                                echo $user_city."-".$user_pincode;     
+                                            ?></span>
+                                        </div>
                                         </td>
                                     </tr>
                                 </tbody>
