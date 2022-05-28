@@ -400,9 +400,6 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                             <div class="d-grid gap-2 col-6 mx-auto">
                                 <button class="btn btn-success" type="submit">PAY</button>
                             </div>
-
-
-
                         </form>
 
 
