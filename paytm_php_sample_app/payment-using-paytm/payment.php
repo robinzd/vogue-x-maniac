@@ -77,7 +77,9 @@ $transactionURL = PAYTM_TXN_URL;
 
     <!--back to top ends -->
 
-    <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
+    <div class="container">
+        <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
+    </div>
 
     <!-- hide only on xs -->
     <div class="form-body d-none d-sm-block">
@@ -119,7 +121,7 @@ $transactionURL = PAYTM_TXN_URL;
                             <input type="hidden" name="INDUSTRY_TYPE_ID" value="<?php echo PAYTM_INDUSTRY_TYPE_ID; ?>">
                             <input type="hidden" name="CALLBACK_URL" value="<?php echo PAYTM_CALLBACK_URL; ?>">
                             <input type="hidden" name="CHECKSUMHASH" value="<?php echo $paytmChecksum ?>">
-                           
+
 
 
 
@@ -177,7 +179,7 @@ $transactionURL = PAYTM_TXN_URL;
                         <input type="hidden" name="INDUSTRY_TYPE_ID" value="<?php echo PAYTM_INDUSTRY_TYPE_ID; ?>">
                         <input type="hidden" name="CALLBACK_URL" value="<?php echo PAYTM_CALLBACK_URL; ?>">
                         <input type="hidden" name="CHECKSUMHASH" value="<?php echo $paytmChecksum ?>">
-                      
+
 
 
 
