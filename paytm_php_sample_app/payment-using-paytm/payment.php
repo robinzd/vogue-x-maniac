@@ -6,6 +6,7 @@ $transaction_amount = $_POST['txn_no'];
 $customer_id = $_POST['cust_id'];
 $mobile_number = $_POST['mob_no'];
 $email = $_POST['email'];
+$order_id=$_POST['orderid'];
 
 // define("merchantMid", "dZlzzF17647713571019");
 // Key in your staging and production MID available in your dashboard
@@ -21,7 +22,7 @@ $email = $_POST['email'];
 // This is the staging value. Production value is available in your dashboard
 // define("callbackUrl", "https://<Merchant_Response_URL>");
 
-$orderId     = time();
+$orderId     = "$order_id";
 $txnAmount     = "$transaction_amount";
 echo  $txnAmount;
 echo '</br>';
