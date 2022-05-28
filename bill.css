@@ -23,11 +23,15 @@
 
 .d-grid.gap-2.col-6.mx-auto{
     margin-top: 50px;
+    
+}
+
+button.btn.btn-success{
     color:black;
     border-radius:20px;
 }
 
-.d-grid.gap-2.col-6.mx-auto:hover{
+button.btn.btn-success:hover{
     color:white;
     background-color: black;
 
