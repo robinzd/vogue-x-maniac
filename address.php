@@ -22,7 +22,7 @@
 <body>
   <!-- navbar starts -->
 
-<?php
+  <?php
 
   include "./index.header.php";
 
@@ -139,9 +139,10 @@
               </div>
 
 
-              <div class="form-button mt-3">
-                <button id="submit" type="submit" class="btn btn-outline-success">Submit</button>
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-outline-success" type="submit">Pay</button>
               </div>
+
             </form>
           </div>
         </div>
