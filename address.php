@@ -90,14 +90,14 @@
   <!-- hide only on xs -->
 
 <!-- visible only on xs -->
-  <div class="form-body  d-block d-sm-none" style="zoom:70%">
+<div class="form-body  d-block d-sm-none" style="zoom:70%">
     <div class="row">
       <div class="form-holder">
         <div class="form-content">
           <div class="form-items">
-            <h3 class="text-center">Address Details</h3>
+          <h3 class="text-center">Address Details</h3>
             <p class="text-center">Fill in the data below.</p>
-            <form class="requires-validation" novalidate method="Post" action="./bill.php">
+            <form class="requires-validation" novalidate method="POST" action="./bill.php">
 
               <div class="col col-md-12">
                 <input class="form-control" type="text" name="fullname" placeholder="Full Name" required>
@@ -123,25 +123,16 @@
               <div class="col-md-12">
                 <input class="form-control" type="text" name="city" placeholder="City" required>
                 <div class="invalid-feedback">City field cannot be blank!</div>
-              </div><br>
-
-              <div class="col-md-12">
-                <input class="form-control" type="text" name="pincode" placeholder="Pincode" required>
-                <div class="invalid-feedback">Pincode field cannot be blank!</div>
-              </div><br>
-
-
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                <label class="form-check-label">I confirm that all data are correct</label>
-                <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
               </div>
 
+              <div class="col-md-12">
+                <input class="form-control" type="number" name="pincode" placeholder="Pincode" required>
+                <div class="invalid-feedback">Pincode field cannot be blank!</div>
+              </div><br>
 
               <div class="d-grid gap-2 col-6 mx-auto">
                 <button class="btn btn-outline-success" type="submit">Submit</button>
               </div>
-
             </form>
           </div>
         </div>
