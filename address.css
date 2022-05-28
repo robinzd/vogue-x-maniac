@@ -145,13 +145,14 @@ html, body {
    color: #2acc80;
 }
 
-button.btn.btn-outline-success.text-center{
+button.btn.btn-outline-success{
     background-color: lightgreen;
     color: black;
+    border-radius:20px;
 
 }
 
-button.btn.btn-outline-success.text-center:hover{
+button.btn.btn-outline-success:hover{
    background-color: black;
    color:white;
 }
