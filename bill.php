@@ -149,27 +149,23 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <div class="py-2">
-
+                                            <div class="py-2 text-left">
                                                 <span class="d-block text-muted">Order Date</span>
                                                 <span><?php echo date("d M,Y");?></span>
-
                                             </div>
                                         </td>
 
                                         <td>
-                                            <div class="py-2">
-
+                                            <div class="py-2 text-center">
                                                 <span class="d-block text-muted">Order No</span>
                                                 <span><?php echo $order_id;?></span>
-
                                             </div>
                                         </td>
 
 
 
                                         <td>
-                                            <div class="py-2">
+                                            <div class="py-2 text-right">
                                             <span class="d-block text-muted">Shiping Address</span>
                                                 <span><?php echo $user_street;?>,</span><br>
                                                 <span><?php echo $user_landmark;?>,</span><br>
