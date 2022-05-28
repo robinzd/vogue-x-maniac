@@ -77,9 +77,7 @@ $transactionURL = PAYTM_TXN_URL;
 
     <!--back to top ends -->
 
-    <center>
-        <h1>Please do not refresh this page...</h1>
-    </center>
+    <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
 
     <!-- hide only on xs -->
     <div class="form-body d-none d-sm-block">
