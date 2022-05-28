@@ -80,7 +80,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
 <body>
 
-   
+
 
     <!-- back to top starts -->
 
@@ -92,7 +92,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
     <div class="container mt-5 mb-5">
 
-    <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
+        <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
 
         <div class="row d-flex justify-content-center">
 
@@ -100,14 +100,46 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                 <div class="card">
 
+                    <?php
 
+
+                    $get_useraddress = "select * from users_address where user_id=$userid";
+
+                    $run_useraddress  = mysqli_query($conn, $get_useraddress);
+
+                    while ($row_useraddress = mysqli_fetch_array($run_useraddress)) {
+
+                        $user_name = $row_useraddress['user_fullname'];
+                        $user_street = $row_useraddress['user_address'];
+                        $user_landmark = $row_userscart['user_landmark'];
+                        $user_city = $row_userscart['user_city'];
+                        $user_pincode = $row_userscart['user_pincode'];
+
+                        $get_userorder = "select * from users_order where user_id=$userid";
+
+                        $run_userorder  = mysqli_query($conn,  $get_userorder);
+
+                        while ($row_userorder = mysqli_fetch_array($run_userorder )) {
+
+                            $order_id = $row_userorder['order_id'];
+
+
+
+
+                    }
+
+
+                }
+
+
+                    ?>
 
 
                     <div class="invoice p-5">
 
                         <h5>Your order Confirmed!</h5>
 
-                        <span class="font-weight-bold d-block mt-4">Hello, Chris</span>
+                        <span class="font-weight-bold d-block mt-4">Hello,<?php echo $user_name;?></span>
                         <span>You order has been confirmed and will be shipped in next two days!</span>
 
                         <div class="payment border-top mt-3 mb-3 border-bottom table-responsive">
@@ -120,7 +152,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             <div class="py-2">
 
                                                 <span class="d-block text-muted">Order Date</span>
-                                                <span>12 Jan,2018</span>
+                                                <span><?php echo date("d M,Y");?></span>
 
                                             </div>
                                         </td>
@@ -129,7 +161,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             <div class="py-2">
 
                                                 <span class="d-block text-muted">Order No</span>
-                                                <span>MT12332345</span>
+                                                <span><?php echo $order_id;?></span>
 
                                             </div>
                                         </td>
@@ -140,7 +172,9 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             <div class="py-2">
 
                                                 <span class="d-block text-muted">Shiping Address</span>
-                                                <span>414 Advert Avenue, NY,USA</span>
+                                                <span><?php echo $user_street;?></span>
+                                                <span><?php echo $user_landmark;?>,</span>
+                                                <span><?php echo  $user_city." - ".$user_pincode ;?></span>
 
                                             </div>
                                         </td>
@@ -181,29 +215,6 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                         <td width="20%">
                                             <div class="text-right">
                                                 <span class="font-weight-bold">$67.50</span>
-                                            </div>
-                                        </td>
-                                    </tr>
-
-
-                                    <tr>
-                                        <td width="20%">
-
-                                            <img src="https://i.imgur.com/SmBOua9.jpg" width="70">
-
-                                        </td>
-
-                                        <td width="60%">
-                                            <span class="font-weight-bold">Men's Collar T-shirt</span><br>
-                                            <div class="product-qty">
-                                                <span class="d-block">Quantity:1</span>
-
-
-                                            </div>
-                                        </td>
-                                        <td width="20%">
-                                            <div class="text-right">
-                                                <span class="font-weight-bold">$77.50</span>
                                             </div>
                                         </td>
                                     </tr>
@@ -339,7 +350,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
     </div>
 
 
-   
+
 
     <!-- j query -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
