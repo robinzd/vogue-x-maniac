@@ -144,13 +144,13 @@ html, body {
    color: #2acc80;
 }
 
-button#submit{
+button.btn.btn-outline-success.text-center{
     background-color: lightgreen;
     color: black;
 
 }
 
-button#submit:hover{
+button.btn.btn-outline-success.text-center:hover{
    background-color: black;
    color:white;
 }
