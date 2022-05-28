@@ -158,7 +158,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                         <td>
                                             <div class="py-2 text-center">
                                                 <span class="d-block text-muted">Order No</span>
-                                                <span><?php echo $order_id;?></span>
+                                                <span class="font-weight-bold"><?php echo $order_id;?></span>
                                             </div>
                                         </td>
 
