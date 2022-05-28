@@ -18,6 +18,18 @@ $city =  $_POST["city"];
 $pincode = $_POST["pincode"];
 
 
+$get_users = "select user_mob_no,user_email from users where user_id=$userid";
+
+$run_users = mysqli_query($conn, $get_users);
+
+while ($row_users = mysqli_fetch_array($run_users)) {
+
+    $mob_no = $row_users['user_mob_no'];
+    $user_email = $row_users['user_email'];
+}
+
+
+
 $get_userscart = "select * from products_cart where user_id=$userid";
 
 $run_userscart = mysqli_query($conn, $get_userscart);
@@ -358,6 +370,17 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             </td>
                                         </tr>
 
+                                        <form method="Post" action="./payment-using-paytm/payment.php">
+                                            <input type="hidden" name="txn_no" value="<?php echo "₹" . number_format($total_count, 2); ?>">
+                                            <input type="hidden" name="cust_id" value="<?php echo $userid; ?>">
+                                            <input type="hidden" name="mob_no" value="<?php echo  $mob_no; ?>">
+                                            <input type="hidden" name="email" value="<?php echo  $user_email; ?>">
+
+                                            <div class="d-grid gap-2 col-6 mx-auto">
+                                                <button class="btn btn-success" type="submit">PAY</button>
+                                            </div>
+                                        </form>
+
                                     </tbody>
 
                                 </table>
@@ -371,7 +394,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                         <p>We will be sending shipping confirmation email when the item shipped successfully!</p>
                         <p class="font-weight-bold mb-0">Thanks for shopping with us!</p>
-                        <span>Nike Team</span>
+                        <span>vogue-x-maniac Team</span>
 
 
 
