@@ -384,18 +384,25 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                             </div>
 
-                            <div class="d-grid gap-2 col-6 mx-auto">
-                                <button class="btn btn-success" type="submit">PAY</button>
-                            </div>
+                          
 
-                            </form>
-                            
+                         
+
                         </div>
 
 
                         <p>We will be sending shipping confirmation email when the item shipped successfully!</p>
                         <p class="font-weight-bold mb-0">Thanks for shopping with us!</p>
                         <span>vogue-x-maniac Team</span>
+
+
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-success" type="submit">PAY</button>
+                        </div>
+
+
+
+                        </form>
 
 
 
