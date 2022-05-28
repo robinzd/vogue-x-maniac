@@ -35,8 +35,6 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
     if ($query_address) {
 
-
-
         while ($row_userscart = mysqli_fetch_array($run_userscart)) {
 
             $product_id = $row_userscart['product_id'];
@@ -93,6 +91,8 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
 
     <div class="container mt-5 mb-5">
+
+    <div class="text-center">Back To Home<i class="fa fa-home"></i></div>
 
         <div class="row d-flex justify-content-center">
 
