@@ -43,8 +43,8 @@
       <div class="form-holder">
         <div class="form-content">
           <div class="form-items">
-            <h3>Address Details</h3>
-            <p>Fill in the data below.</p>
+          <h3 class="text-center">Address Details</h3>
+            <p class="text-center">Fill in the data below.</p>
             <form class="requires-validation" novalidate method="POST" action="./bill.php">
 
               <div class="col col-md-12">
@@ -95,8 +95,8 @@
       <div class="form-holder">
         <div class="form-content">
           <div class="form-items">
-            <h3>Address Details</h3>
-            <p>Fill in the data below.</p>
+            <h3 class="text-center">Address Details</h3>
+            <p class="text-center">Fill in the data below.</p>
             <form class="requires-validation" novalidate method="Post" action="./bill.php">
 
               <div class="col col-md-12">
