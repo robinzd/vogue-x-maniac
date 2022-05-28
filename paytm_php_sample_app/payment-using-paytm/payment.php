@@ -65,7 +65,7 @@ $transactionURL = PAYTM_TXN_URL;
     <!-- owl carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- link the external stylesheet -->
-    <link rel="stylesheet" type="text/css" href="./address.css">
+    <link rel="stylesheet" type="text/css" href=".../address.css">
 
 </head>
 
@@ -85,7 +85,7 @@ $transactionURL = PAYTM_TXN_URL;
     <!-- navbar  ends -->
 
     <!-- hide only on xs -->
-    <div class="form-body d-none d-sm-block">
+   <div class="form-body d-none d-sm-block">
         <div class="row">
             <div class="form-holder">
                 <div class="form-content">
@@ -197,7 +197,7 @@ $transactionURL = PAYTM_TXN_URL;
     <!-- visible only on xs -->
 
     <!-- link the external stylesheet -->
-    <script src="./address.js"></script>
+    <script src=".../address.js"></script>
     <!-- j query -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- owl carousel -->
