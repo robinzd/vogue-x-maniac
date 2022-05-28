@@ -97,26 +97,26 @@ $transactionURL = PAYTM_TXN_URL;
                                 <label>Order ID</label>
                                 <input type="text" name="ORDER_ID" value="<?php echo $orderId; ?>">
                                 <div class="invalid-feedback">orderid field cannot be blank!</div>
-                            </div>
+                            </div><br>
 
                             <div class="col-md-12">
                             <label>Customer ID</label>
                                 <input type="text" name="CUST_ID" value="<?php echo $custId; ?>">
                                 <div class="valid-feedback">Email field is valid!</div>
                                 <div class="invalid-feedback">custid field cannot be blank!</div>
-                            </div>
+                            </div><br>
 
                             <div class="col-md-12">
                             <label>Mobile No</label>
                                 <input type="text" name="MOBILE_NO" value="<?php echo $mobileNo; ?>">
                                 <div class="invalid-feedback">mobileno field cannot be blank!</div>
-                            </div>
+                            </div><br>
 
                             <div class="col-md-12">
                             <label>Email</label>
                                 <input type="text" name="EMAIL" value="<?php echo  $email; ?>">
                                 <div class="invalid-feedback">email field cannot be blank!</div>
-                            </div>
+                            </div><br>
 
                             <div class="col-md-12">
                             <label>Transaction Amount</label>
