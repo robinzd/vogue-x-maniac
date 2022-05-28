@@ -119,17 +119,11 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                         $run_userorder  = mysqli_query($conn,  $get_userorder);
 
-                        while ($row_userorder = mysqli_fetch_array($run_userorder )) {
+                        while ($row_userorder = mysqli_fetch_array($run_userorder)) {
 
                             $order_id = $row_userorder['order_id'];
-
-
-
-
+                        }
                     }
-
-
-                }
 
 
                     ?>
@@ -139,7 +133,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                         <h5>Your order Confirmed!</h5>
 
-                        <span class="font-weight-bold d-block mt-4">Hello,<?php echo $user_name;?></span>
+                        <span class="font-weight-bold d-block mt-4">Hello,<?php echo $user_name; ?></span>
                         <span>You order has been confirmed and will be shipped in next two days!</span>
 
                         <div class="payment border-top mt-3 mb-3 border-bottom table-responsive">
@@ -151,14 +145,14 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                         <td>
                                             <div class="py-2 text-left">
                                                 <span class="d-block text-muted">Order Date</span>
-                                                <span><?php echo date("d M,Y");?></span>
+                                                <span><?php echo date("d M,Y"); ?></span>
                                             </div>
                                         </td>
 
                                         <td>
                                             <div class="py-2 text-center">
                                                 <span class="d-block text-muted">Order No</span>
-                                                <span class="font-weight-bold"><?php echo $order_id;?></span>
+                                                <span class="font-weight-bold"><?php echo $order_id; ?></span>
                                             </div>
                                         </td>
 
@@ -166,12 +160,12 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                                         <td>
                                             <div class="py-2 text-right">
-                                            <span class="d-block text-muted">Shiping Address</span>
-                                                <span><?php echo $user_street;?>,</span><br>
-                                                <span><?php echo $user_landmark;?>,</span><br>
-                                                <span><?php echo $user_city."-". $user_pincode;?>.</span>
+                                                <span class="d-block text-muted">Shiping Address</span>
+                                                <span><?php echo $user_street; ?>,</span><br>
+                                                <span><?php echo $user_landmark; ?>,</span><br>
+                                                <span><?php echo $user_city . "-" . $user_pincode; ?>.</span>
                                             </div>
-                                           
+
                                         </td>
                                     </tr>
                                 </tbody>
@@ -192,25 +186,79 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                             <table class="table table-borderless">
 
                                 <tbody>
-                                    <tr>
-                                        <td width="20%">
 
-                                            <img src="https://i.imgur.com/u11K1qd.jpg" width="90">
+                                    <?php
 
-                                        </td>
+                                    $total_count=0;
 
-                                        <td width="60%">
-                                            <span class="font-weight-bold">Men's Sports cap</span><br>
-                                            <div class="product-qty">
-                                                <span class="d-block">Quantity:1</span>
-                                            </div>
-                                        </td>
-                                        <td width="20%">
-                                            <div class="text-right">
-                                                <span class="font-weight-bold">$67.50</span>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    $get_cart = "select * from products_cart where user_id=$userid";
+
+                                    $run_cart = mysqli_query($conn, $get_cart);
+
+                                    while ($row_cart = mysqli_fetch_array($run_cart)) {
+
+                                        $product_id = $row_cart["product_id"];
+
+                                        $product_quantity = $row_cart["product_quantity"];
+
+
+                                        $get_details = "select * from products_details where ID=$product_id";
+
+                                        $run_details = mysqli_query($conn,$get_details);
+
+                                        while ($row_details = mysqli_fetch_array($run_details)) {
+
+                                        $product_price=$row_details["product_price"];
+
+                                        $total_price= $product_price *  $product_quantity;
+
+                                        $get_images = "select * from  products_images where related_product=$product_id and primary_image=1";
+
+                                        $run_details = mysqli_query($conn,$get_details);
+
+                                        while ($row_details = mysqli_fetch_array($run_details)) {
+
+                                            $details_image=$row_details["details_image"];
+
+
+                                    ?>
+
+
+
+
+                                            <tr>
+                                                <td width="20%">
+
+                                                    <img src="<?php echo "./admin_panel/products_images/images/$details_image"; ?>" width="90">
+
+                                                </td>
+
+                                                <td width="60%">
+                                                    <span class="font-weight-bold">Men's Sports cap</span><br>
+                                                    <div class="product-qty">
+                                                        <span class="d-block">Quantity:<?php $product_quantity;?></span>
+                                                    </div>
+                                                </td>
+                                                <td width="20%">
+                                                    <div class="text-right">
+                                                        <span class="font-weight-bold"><?php echo "₹" . number_format($total_price, 2); ?></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                    <?php
+
+                                        }
+
+                                        }
+                                    }
+
+                                    $total_count +=  $product_price *  $product_quantity;
+
+                                    ?>
+
+
                                 </tbody>
 
                             </table>
@@ -239,13 +287,13 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span>$168.50</span>
+                                                    <span><?php echo "₹" . number_format($total_count, 2); ?></span>
                                                 </div>
                                             </td>
                                         </tr>
 
 
-                                        <tr>
+                                        <!-- <tr>
                                             <td>
                                                 <div class="text-left">
 
@@ -258,10 +306,10 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                                     <span>$22</span>
                                                 </div>
                                             </td>
-                                        </tr>
+                                        </tr> -->
 
 
-                                        <tr>
+                                        <!-- <tr>
                                             <td>
                                                 <div class="text-left">
 
@@ -274,10 +322,10 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                                     <span>$7.65</span>
                                                 </div>
                                             </td>
-                                        </tr>
+                                        </tr> -->
 
 
-                                        <tr>
+                                        <!-- <tr>
                                             <td>
                                                 <div class="text-left">
 
@@ -290,7 +338,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                                     <span class="text-success">$168.50</span>
                                                 </div>
                                             </td>
-                                        </tr>
+                                        </tr> -->
 
 
                                         <tr class="border-top border-bottom">
@@ -303,7 +351,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span class="font-weight-bold">$238.50</span>
+                                                    <span class="font-weight-bold"><?php echo "₹" . number_format($total_count, 2); ?></span>
                                                 </div>
                                             </td>
                                         </tr>
