@@ -391,7 +391,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                         <span>vogue-x-maniac Team</span>
 
                         <form method="Post" action="./paytm_php_sample_app/payment-using-paytm/payment.php">
-                            <input type="hidden" name="txn_no" value="<?php echo "₹" . number_format($total_count, 2); ?>">
+                            <input type="hidden" name="txn_no" value="<?php echo $total_count; ?>">
                             <input type="hidden" name="cust_id" value="<?php echo $userid; ?>">
                             <input type="hidden" name="mob_no" value="<?php echo  $mob_no; ?>">
                             <input type="hidden" name="email" value="<?php echo  $user_email; ?>">
