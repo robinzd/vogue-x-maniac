@@ -89,7 +89,7 @@
   </div>
   <!-- hide only on xs -->
 
-
+<!-- visible only on xs -->
   <div class="form-body  d-block d-sm-none" style="zoom:70%">
     <div class="row">
       <div class="form-holder">
@@ -148,6 +148,7 @@
       </div>
     </div>
   </div>
+  <!-- visible only on xs -->
 
   <!-- Footer -->
 

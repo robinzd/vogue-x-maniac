@@ -395,7 +395,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                             <input type="hidden" name="cust_id" value="<?php echo $userid; ?>">
                             <input type="hidden" name="mob_no" value="<?php echo  $mob_no; ?>">
                             <input type="hidden" name="email" value="<?php echo  $user_email; ?>">
-                            <input type="hidden" name="orderid" value="<?php echo  $order_id; ?>">
+                           
 
 
                             <div class="d-grid gap-2 col-6 mx-auto">
