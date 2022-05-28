@@ -20,3 +20,17 @@
    cursor: pointer;
 }
 
+
+.d-grid.gap-2.col-6.mx-auto{
+    margin-top: 50px;
+    color:black;
+}
+
+.d-grid.gap-2.col-6.mx-auto:hover{
+    color:white;
+    background-color: black;
+
+}
+
+
+
