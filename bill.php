@@ -376,10 +376,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             <input type="hidden" name="mob_no" value="<?php echo  $mob_no; ?>">
                                             <input type="hidden" name="email" value="<?php echo  $user_email; ?>">
 
-                                            <div class="d-grid gap-2 col-6 mx-auto">
-                                                <button class="btn btn-success" type="submit">PAY</button>
-                                            </div>
-                                        </form>
+
 
                                     </tbody>
 
@@ -387,8 +384,12 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                             </div>
 
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-success" type="submit">PAY</button>
+                            </div>
 
-
+                            </form>
+                            
                         </div>
 
 
