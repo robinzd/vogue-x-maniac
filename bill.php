@@ -171,13 +171,11 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                         <td>
                                             <div class="py-2">
                                             <span class="d-block text-muted">Shiping Address</span>
-                                                <span><?php echo $user_street;
-                                                echo "<br>";  
-                                                echo $user_landmark;
-                                                echo "<br>";  
-                                                echo $user_city."-".$user_pincode;     
-                                            ?></span>
-                                        </div>
+                                                <span><?php echo $user_street;?></span>
+                                            </div>
+                                            <div class="py-2">
+                                            <span><?php echo $user_landmark;?>,</span>
+                                            </div>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -209,8 +207,6 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             <span class="font-weight-bold">Men's Sports cap</span><br>
                                             <div class="product-qty">
                                                 <span class="d-block">Quantity:1</span>
-
-
                                             </div>
                                         </td>
                                         <td width="20%">
