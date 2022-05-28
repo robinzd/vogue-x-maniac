@@ -111,9 +111,9 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                         $user_name = $row_useraddress['user_fullname'];
                         $user_street = $row_useraddress['user_address'];
-                        $user_landmark = $row_userscart['user_landmark'];
-                        $user_city = $row_userscart['user_city'];
-                        $user_pincode = $row_userscart['user_pincode'];
+                        $user_landmark = $row_useraddress['user_landmark'];
+                        $user_city = $row_useraddress['user_city'];
+                        $user_pincode = $row_useraddress['user_pincode'];
 
                         $get_userorder = "select * from users_order where user_id=$userid";
 
@@ -171,11 +171,11 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                         <td>
                                             <div class="py-2">
                                             <span class="d-block text-muted">Shiping Address</span>
-                                                <span><?php echo $user_street;?></span>
+                                                <span><?php echo $user_street;?>,</span><br>
+                                                <span><?php echo $user_landmark;?>,</span><br>
+                                                <span><?php echo $user_city."-". $user_pincode;?>.</span>
                                             </div>
-                                            <div class="py-2">
-                                            <span><?php echo $user_landmark;?>,</span>
-                                            </div>
+                                           
                                         </td>
                                     </tr>
                                 </tbody>
