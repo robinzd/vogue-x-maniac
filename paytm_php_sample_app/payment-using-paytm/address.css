@@ -155,6 +155,11 @@ button#submit:hover{
    color:white;
 }
 
+label{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
 /* footer */
 
 
