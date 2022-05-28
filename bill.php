@@ -210,11 +210,13 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                                             $product_price = $row_details["product_price"];
 
+                                            $product_title = $row_details["product_title"];
+
                                             $total_price = $product_price *  $product_quantity;
 
                                             $get_images = "select details_image from  products_images where related_product=$product_id and primary_image=1";
 
-                                            $run_images = mysqli_query($conn,$get_images);
+                                            $run_images = mysqli_query($conn, $get_images);
 
                                             while ($row_images = mysqli_fetch_array($run_images)) {
 
@@ -234,7 +236,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                                     </td>
 
                                                     <td width="60%">
-                                                        <span class="font-weight-bold">Men's Sports cap</span><br>
+                                                        <span class="font-weight-bold"><?php echo $product_title; ?></span><br>
                                                         <div class="product-qty">
                                                             <span class="d-block">Quantity:<?php echo $product_quantity; ?></span>
                                                         </div>

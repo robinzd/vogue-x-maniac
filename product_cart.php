@@ -118,7 +118,7 @@ if (isset($_GET['delid'])) {
                                             <td><img src="<?php echo "./admin_panel/products_images/images/$product_image"; ?>" class="cart-item-image" /><?php echo $product_title ?></td>
                                             <td style="text-align:center;"><?php echo $row["product_quantity"]; ?></td>
                                             <td style="text-align:center;"><?php echo $row["product_size"]; ?></td>
-                                            <td style="text-align:center;"><?php echo $product_price; ?></td>
+                                            <td style="text-align:center;"><?php echo "₹" . $product_price; ?></td>
                                             <td style="text-align:right;"><?php echo "₹" . number_format($unit_price, 2); ?></td>
                                             <td style="text-align:center;"><a href="product_cart.php?delid=<?php echo ($userid); ?>" class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item" /></a></td>
                                         </tr>
@@ -239,7 +239,7 @@ if (isset($_GET['delid'])) {
                                         <td><img src="<?php echo "./admin_panel/products_images/images/$product_image"; ?>" class="cart-item-image" /><?php echo $product_title ?></td>
                                         <td style="text-align:center;"><?php echo $row["product_quantity"]; ?></td>
                                         <td style="text-align:center;"><?php echo $row["product_size"]; ?></td>
-                                        <td style="text-align:center;"><?php echo $product_price; ?></td>
+                                        <td style="text-align:center;"><?php echo "₹" . $product_price; ?></td>
                                         <td style="text-align:center;"><?php echo "₹" . number_format($unit_price, 2); ?></td>
                                         <td style="text-align:center;"><a href="product_cart.php?delid=<?php echo ($userid); ?>" class="btnRemoveAction"><img src="icon-delete.png" alt="Remove Item" /></a></td>
                                     </tr>
