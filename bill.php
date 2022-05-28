@@ -398,7 +398,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
 
                             <div class="d-grid gap-2 col-6 mx-auto">
-                                <button class="btn btn-success" type="submit">PAY</button>
+                                <button class="btn btn-success" type="submit">Pay</button>
                             </div>
                         </form>
 
@@ -408,11 +408,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                     </div>
 
-
-
-
-
-
+                    
                 </div>
 
             </div>
