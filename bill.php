@@ -92,7 +92,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
     <div class="container mt-5 mb-5">
 
-    <div class="text-left"><button onclick="history.back()"><i class="fa fa-arrow-left"></i></button></div><br>
+    <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
 
         <div class="row d-flex justify-content-center">
 
