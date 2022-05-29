@@ -300,11 +300,15 @@ include("./conn.php");
 
                                     <div class="cart mt-4 align-items-center">
                                         <button type="submit" class="btn-success mr-2 px-4">Add to cart</button>
+                                        </div>
                                     </form>
-                                    <form>    
+                                   
+                                    <div class="cart mt-4 align-items-center">  
+                                    <form>  
                                         <button type="submit" class="btn-success mr-2 px-4">Buy Now</button>
-                                    </form>   
+                                    </form>    
                                     </div>
+                                   
                                
                             </div>
                         </div>
