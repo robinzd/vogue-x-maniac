@@ -72,7 +72,7 @@ $transactionURL = PAYTM_TXN_URL;
 
    
    <center>
-        <h1>Checking Details...</h1>
+        <h1 id="heading">Checking Details...</h1>
     </center>
 
     <!-- hide only on xs -->
@@ -94,7 +94,7 @@ $transactionURL = PAYTM_TXN_URL;
                         <input type="hidden" name="INDUSTRY_TYPE_ID" value="<?php echo PAYTM_INDUSTRY_TYPE_ID; ?>">
                         <input type="hidden" name="CALLBACK_URL" value="<?php echo PAYTM_CALLBACK_URL; ?>">
                         <input type="hidden" name="CHECKSUMHASH" value="<?php echo $paytmChecksum ?>">
-                        <button class="btn btn-outline-success" id="clickbutton"  type="hidden">Proceed</button>
+                        <button class="btn btn-outline-success" id="clickbutton" style="display:none;" type="submit">Proceed</button>
                     </form>
                     </div>
                 </div>
@@ -124,7 +124,7 @@ $transactionURL = PAYTM_TXN_URL;
                         <input type="hidden" name="INDUSTRY_TYPE_ID" value="<?php echo PAYTM_INDUSTRY_TYPE_ID; ?>">
                         <input type="hidden" name="CALLBACK_URL" value="<?php echo PAYTM_CALLBACK_URL; ?>">
                         <input type="hidden" name="CHECKSUMHASH" value="<?php echo $paytmChecksum ?>">
-                        <button class="btn btn-outline-success" id="clickbutton"  type="hidden">Proceed</button>
+                        <button class="btn btn-outline-success" id="clickbutton" style="display:none;" type="submit">Proceed</button>
                        
                     </form>
                 </div>
