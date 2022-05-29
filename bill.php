@@ -257,7 +257,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                                             <?php
                                                             if(!($product_size == 0)) 
                                                             {
-                                                            echo "<span class='d-block'>Size:<?php echo $product_size; ?></span>";
+                                                            echo "<span class='d-block'>Size:$product_size</span>";
                                                             }
                                                             ?>
                                                         </div>
