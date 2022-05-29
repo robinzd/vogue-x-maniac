@@ -31,6 +31,3 @@ String.prototype.getDecimals || (String.prototype.getDecimals = function() {
 });
 
 
-function redirectform() {
-    document.myform.action = '/buynow.php';
-}

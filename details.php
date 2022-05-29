@@ -302,7 +302,7 @@ include("./conn.php");
 
                                 <div class="cart mt-4 align-items-center">
                                     <button type="submit" class="btn-success mr-2 px-4">Add to cart</button>
-                                    <button type="submit"  class="btn-success mr-2 px-4" onclick="redirectform();return true;">Buy Now</button>
+                                    <a href="./buynow.php"><button type="submit" class="btn-success mr-2 px-4">Buy Now</button></a>
                                 </div>
 
 
