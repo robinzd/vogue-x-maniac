@@ -255,8 +255,10 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                                         <div class="product-qty">
                                                             <span class="d-block">Quantity:<?php echo $product_quantity; ?></span><br>
                                                             <?php
-                                                            if($product_size == 1)
+                                                            if(!($product_size == 0)) 
+                                                            {
                                                             echo "<span class='d-block'>Size:<?php echo $product_size; ?></span>";
+                                                            }
                                                             ?>
                                                         </div>
                                                     </td>
