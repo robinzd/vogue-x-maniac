@@ -53,8 +53,9 @@ $transactionURL = PAYTM_TXN_URL;
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="URL=<?php echo $transactionURL; ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="" content="0;URL=index.php" />
     <title>Check Details</title>
     <!-- fav icon -->
     <link rel="icon" type="image/png" href="./favicon/vogue_x_maniac_png_K8m_icon.ico" />
