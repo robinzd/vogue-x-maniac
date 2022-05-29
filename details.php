@@ -222,9 +222,8 @@ include("./conn.php");
                                     }
 
 
-                                   echo "<form method='Post' action='cart.php'>
+                                    echo "<form method='Post' action='cart.php'>
                                    <input type='hidden'  name='productid' value='$product_id'>";
-
                                 }
 
 
@@ -238,78 +237,76 @@ include("./conn.php");
 
 
 
-                             
-                                    
 
-                                    
+
+
+
                                 <div class="quantity buttons_added">
-                                        <h6 class="text-capitalize">quantity</h6>
-                                        <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
-                                    </div>
+                                    <h6 class="text-capitalize">quantity</h6>
+                                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                                </div>
 
 
 
 
-                                    <div class="sizes">
+                                <div class="sizes">
 
 
 
-                                        <?php
+                                    <?php
 
 
-                                        $_SERVER['SCRIPT_NAME'];
+                                    $_SERVER['SCRIPT_NAME'];
 
 
 
-                                        $get_string = $_SERVER['QUERY_STRING'];
+                                    $get_string = $_SERVER['QUERY_STRING'];
 
 
-                                        parse_str($get_string, $get_array);
+                                    parse_str($get_string, $get_array);
 
-                                        // print_r($get_array);
-
-
-                                        $product_id = $get_array['id'];
-
-                                        $get_details = "select product_size from products_details where ID= $product_id";
-
-                                        $run_details = mysqli_query($conn, $get_details);
-
-                                        $details = mysqli_fetch_array($run_details);
-
-                                        $product_size = $details['product_size'];
-
-                                        $check_array = $product_size;
-
-                                        $check_array_result = explode(',', $check_array);
-
-                                        $sizeOfcheck = sizeof($check_array_result);
+                                    // print_r($get_array);
 
 
-                                        if (!($sizeOfcheck == 1)) {
-                                            echo "<h6 class='text-capitalize'>Size</h6>";
-                                            $x = 0;
-                                            while ($x < $sizeOfcheck) {
-                                                echo "<label class='radio'> <input type='radio' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span></label>\n";
-                                                $x++;
-                                            }
+                                    $product_id = $get_array['id'];
+
+                                    $get_details = "select product_size from products_details where ID= $product_id";
+
+                                    $run_details = mysqli_query($conn, $get_details);
+
+                                    $details = mysqli_fetch_array($run_details);
+
+                                    $product_size = $details['product_size'];
+
+                                    $check_array = $product_size;
+
+                                    $check_array_result = explode(',', $check_array);
+
+                                    $sizeOfcheck = sizeof($check_array_result);
+
+
+                                    if (!($sizeOfcheck == 1)) {
+                                        echo "<h6 class='text-capitalize'>Size</h6>";
+                                        $x = 0;
+                                        while ($x < $sizeOfcheck) {
+                                            echo "<label class='radio'> <input type='radio' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span></label>\n";
+                                            $x++;
                                         }
-                                        ?>
+                                    }
+                                    ?>
 
-                                    </div>
+                                </div>
 
-                                    <div class="cart mt-4 align-items-center">
-                                        <button type="submit" class="btn-success mr-2 px-4">Add to cart</button>
-                                        </div>
+                                <div class="cart mt-4 align-items-center">
+                                    <button type="submit" class="btn-success mr-2 px-4">Add to cart</button>
                                     </form>
-                                   
-                                    <div class="cart mt-4 align-items-center">  
-                                    <form>  
+                                    <form>
                                         <button type="submit" class="btn-success mr-2 px-4">Buy Now</button>
-                                    </form>    
-                                    </div>
-                                   
-                               
+                                    </form>
+                                </div>
+
+
+
                             </div>
                         </div>
                     </div>
