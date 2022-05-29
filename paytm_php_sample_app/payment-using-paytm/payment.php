@@ -70,19 +70,9 @@ $transactionURL = PAYTM_TXN_URL;
 
 <body>
 
-    <!-- back to top starts -->
-
-
-    <?php include "./back_to_top.php"; ?>
-
-    <!--back to top ends -->
-
-    <div class="container">
-        <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
-    </div>
-
-    <center>
-        <h1>Please do not refresh this page...</h1>
+   
+   <center>
+        <h1>Checking Details...</h1>
     </center>
 
     <!-- hide only on xs -->
@@ -91,49 +81,21 @@ $transactionURL = PAYTM_TXN_URL;
             <div class="form-holder">
                 <div class="form-content">
                     <div class="form-items">
-                        <h3 class="text-center">Check Details</h3>
+                        <h1 class="text-center"><img src="./checking_details.png"></h1>
                         <form class="requires-validation" novalidatemethod='post' action='<?php echo $transactionURL; ?>' name='f1'>
-
-                            <input type="hidden" name="ORDER_ID" value="<?php echo $orderId; ?>">
-
-                            <div class="col col-md-12">
-                                <label>User Id</label>
-                                <input type="text" name="CUST_ID" value="<?php echo $custId; ?>" readonly>
-
-                            </div><br>
-
-                            <div class="col-md-12">
-                                <label>Mobile No</label>
-                                <input type="text" name="MOBILE_NO" value="<?php echo $mobileNo; ?>" readonly>
-
-                            </div><br>
-
-                            <div class="col-md-12">
-                                <label>Email ID</label>
-                                <input type="text" name="EMAIL" value="<?php echo  $email; ?>" readonly>
-
-                            </div><br>
-
-                            <div class="col-md-12">
-                                <label>Transaction Amount</label>
-                                <input type="text" name="TXN_AMOUNT" value="<?php echo   $txnAmount; ?>" readonly>
-                            </div>
-
-                            <input type="hidden" name="MID" value="<?php echo PAYTM_MERCHANT_MID; ?>">
-                            <input type="hidden" name="CHANNEL_ID" value="<?php echo PAYTM_CHANNEL_ID;; ?>">
-                            <input type="hidden" name="WEBSITE" value="<?php echo PAYTM_MERCHANT_WEBSITE; ?>">
-                            <input type="hidden" name="INDUSTRY_TYPE_ID" value="<?php echo PAYTM_INDUSTRY_TYPE_ID; ?>">
-                            <input type="hidden" name="CALLBACK_URL" value="<?php echo PAYTM_CALLBACK_URL; ?>">
-                            <input type="hidden" name="CHECKSUMHASH" value="<?php echo $paytmChecksum ?>">
-
-
-
-
-
-                            <div class="d-grid gap-2 col-6 mx-auto">
-                                <button class="btn btn-outline-success" id="clickbutton" type="submit">Proceed</button>
-                            </div>
-                        </form>
+                        <input type="hidden" name="ORDER_ID" value="<?php echo $orderId; ?>">
+                        <input type="hidden" name="CUST_ID" value="<?php echo $custId; ?>" readonly>
+                        <input type="hidden" name="MOBILE_NO" value="<?php echo $mobileNo; ?>" readonly>
+                        <input type="hidden" name="EMAIL" value="<?php echo  $email; ?>" readonly>
+                        <input type="hidden" name="TXN_AMOUNT" value="<?php echo   $txnAmount; ?>" readonly>
+                        <input type="hidden" name="MID" value="<?php echo PAYTM_MERCHANT_MID; ?>">
+                        <input type="hidden" name="CHANNEL_ID" value="<?php echo PAYTM_CHANNEL_ID;; ?>">
+                        <input type="hidden" name="WEBSITE" value="<?php echo PAYTM_MERCHANT_WEBSITE; ?>">
+                        <input type="hidden" name="INDUSTRY_TYPE_ID" value="<?php echo PAYTM_INDUSTRY_TYPE_ID; ?>">
+                        <input type="hidden" name="CALLBACK_URL" value="<?php echo PAYTM_CALLBACK_URL; ?>">
+                        <input type="hidden" name="CHECKSUMHASH" value="<?php echo $paytmChecksum ?>">
+                        <button class="btn btn-outline-success" id="clickbutton"  type="hidden">Proceed</button>
+                    </form>
                     </div>
                 </div>
             </div>
@@ -149,48 +111,21 @@ $transactionURL = PAYTM_TXN_URL;
         <div class="form-holder">
             <div class="form-content">
                 <div class="form-items">
-                    <h3 class="text-center">Check Details</h3>
+                <h1 class="text-center"><img src="./checking_details.png"></h1>
                     <form class="requires-validation" novalidatemethod='post' action='<?php echo $transactionURL; ?>' name='f1'>
-
                         <input type="hidden" name="ORDER_ID" value="<?php echo $orderId; ?>">
-
-                        <div class="col col-md-12">
-                            <label>User Id</label>
-                            <input type="text" name="CUST_ID" value="<?php echo $custId; ?>" readonly>
-
-                        </div><br>
-
-                        <div class="col-md-12">
-                            <label>Mobile No</label>
-                            <input type="text" name="MOBILE_NO" value="<?php echo $mobileNo; ?>" readonly>
-
-                        </div><br>
-
-                        <div class="col-md-12">
-                            <label>Email ID</label>
-                            <input type="text" name="EMAIL" value="<?php echo  $email; ?>" readonly>
-
-                        </div><br>
-
-                        <div class="col-md-12">
-                            <label>Transaction Amount</label>
-                            <input type="text" name="TXN_AMOUNT" value="<?php echo   $txnAmount; ?>" readonly>
-                        </div>
-
+                        <input type="hidden" name="CUST_ID" value="<?php echo $custId; ?>" readonly>
+                        <input type="hidden" name="MOBILE_NO" value="<?php echo $mobileNo; ?>" readonly>
+                        <input type="hidden" name="EMAIL" value="<?php echo  $email; ?>" readonly>
+                        <input type="hidden" name="TXN_AMOUNT" value="<?php echo   $txnAmount; ?>" readonly>
                         <input type="hidden" name="MID" value="<?php echo PAYTM_MERCHANT_MID; ?>">
                         <input type="hidden" name="CHANNEL_ID" value="<?php echo PAYTM_CHANNEL_ID;; ?>">
                         <input type="hidden" name="WEBSITE" value="<?php echo PAYTM_MERCHANT_WEBSITE; ?>">
                         <input type="hidden" name="INDUSTRY_TYPE_ID" value="<?php echo PAYTM_INDUSTRY_TYPE_ID; ?>">
                         <input type="hidden" name="CALLBACK_URL" value="<?php echo PAYTM_CALLBACK_URL; ?>">
                         <input type="hidden" name="CHECKSUMHASH" value="<?php echo $paytmChecksum ?>">
-
-
-
-
-
-                        <div class="d-grid gap-2 col-6 mx-auto">
-                            <button class="btn btn-outline-success" id="clickbutton"  type="submit">Proceed</button>
-                        </div>
+                        <button class="btn btn-outline-success" id="clickbutton"  type="hidden">Proceed</button>
+                       
                     </form>
                 </div>
             </div>
