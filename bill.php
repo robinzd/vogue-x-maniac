@@ -253,11 +253,11 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                                     <td width="60%">
                                                         <span class="font-weight-bold"><?php echo $product_title; ?></span><br>
                                                         <div class="product-qty">
-                                                            <span class="d-block">Quantity:<?php echo $product_quantity; ?></span><br>
+                                                            <span class="d-block">Quantity:<?php echo $product_quantity; ?></span>
                                                             <?php
                                                             if(!($product_size == 0)) 
                                                             {
-                                                            echo "<span class='d-block'>Size:$product_size</span>";
+                                                            echo "<span id='size' class='d-block'>Size:$product_size</span>";
                                                             }
                                                             ?>
                                                         </div>
