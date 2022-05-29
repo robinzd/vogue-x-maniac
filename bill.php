@@ -214,6 +214,8 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                                         $product_quantity = $row_cart["product_quantity"];
 
+                                        $product_size = $row_cart["product_size"];
+
 
                                         $get_details = "select * from products_details where ID=$product_id";
 
@@ -251,7 +253,11 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                                     <td width="60%">
                                                         <span class="font-weight-bold"><?php echo $product_title; ?></span><br>
                                                         <div class="product-qty">
-                                                            <span class="d-block">Quantity:<?php echo $product_quantity; ?></span>
+                                                            <span class="d-block">Quantity:<?php echo $product_quantity; ?></span><br>
+                                                            <?php
+                                                            if($product_size == 1)
+                                                            echo "<span class='d-block'>Size:<?php echo $product_size; ?></span>";
+                                                            ?>
                                                         </div>
                                                     </td>
                                                     <td width="20%">
