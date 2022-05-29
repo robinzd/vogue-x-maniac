@@ -5,6 +5,8 @@ include("./conn.php");
 
 $productid = isset($_POST['productid']) ? $_POST['productid'] : "";
 
+echo $productid;
+
 $productquantity = isset($_POST['quantity']) ? $_POST['quantity'] : "";
 
 $productsize = isset($_POST['size']) ? $_POST['size'] : "";
