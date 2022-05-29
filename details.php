@@ -251,14 +251,8 @@ include("./conn.php");
                                     <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
                                 </div>
 
-                                <?php
-
-                                $quantity = "quantity";
-
-                                ?>
-
-
-                                <div class="sizes">
+                                
+                            <div class="sizes">
 
 
 
@@ -308,7 +302,7 @@ include("./conn.php");
 
                                 <div class="cart mt-4 align-items-center">
                                     <button type="submit" class="btn-success mr-2 px-4">Add to cart</button>
-                                    <button class="btn-success mr-2 px-4">Buy Now</button>
+                                    <button type="submit"  class="btn-success mr-2 px-4" onclick="redirectform();return true;">Buy Now</button>
                                 </div>
 
 
