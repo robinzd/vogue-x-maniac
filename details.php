@@ -2,6 +2,14 @@
 
 include("./conn.php");
 
+
+$productid = isset($_POST['productid']) ? $_POST['productid'] : "";
+
+$productquantity = isset($_POST['quantity']) ? $_POST['quantity'] : "";
+
+$productsize = isset($_POST['size']) ? $_POST['size'] : "";
+
+
 ?>
 
 
@@ -234,10 +242,7 @@ include("./conn.php");
                                 ?>
 
 
-                                <form method="Post" action="buynow.php">
-
-
-                                <input type='hidden'  name='productid' value="<?php $product_id;?>">;
+                               
 
 
 
@@ -305,11 +310,11 @@ include("./conn.php");
                                     </div>
 
                                     <div class="cart mt-4 align-items-center">
-                                        <button type="submit" class="btn-success mr-2 px-4" value="action1">Add to cart</button>
-                                        <button  type="submit" class="btn-success mr-2 px-4" value="action2">Buy Now</button>
+                                        <button type="submit" class="btn-success mr-2 px-4">Add to cart</button>
+                                        <button class="btn-success mr-2 px-4">Buy Now</button>
                                     </div>
 
-                                </form>
+                             
 
                                 </form>
 
