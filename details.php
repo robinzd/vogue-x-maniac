@@ -299,13 +299,17 @@ include("./conn.php");
 
                                 <div class="cart mt-4 align-items-center">
                                     <button type="submit" class="btn-success mr-2 px-4">Add to cart</button>
-                                    </form>
-                                    <form>
-                                        <button type="submit" class="btn-success mr-2 px-4">Buy Now</button>
-                                    </form>
+                                    <?php
+                                    echo "</form>";
+                                    ?>
+                                    <?php
+                                    echo "<form>";
+                                    ?>
+                                    <button type="submit" class="btn-success mr-2 px-4">Buy Now</button>
+                                    <?php
+                                    echo "</form>";
+                                    ?>
                                 </div>
-
-
 
                             </div>
                         </div>
