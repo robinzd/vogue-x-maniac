@@ -56,11 +56,11 @@ $productsize = isset($_POST['size']) ? $_POST['size'] : "";
             <p class="text-center">Fill in the data below.</p>
             <form class="requires-validation" novalidate method="POST" action="buynow.php">
 
-            <input type="hidden"  name="productid"> <?php $productid ?> <input> 
+            <input type="hidden"  name="productid" value="<?php echo $productid ;?>"> 
 
-            <input type="hidden"  name="quantity"> <?php $productquantity ?> <input> 
+            <input type="hidden"  name="quantity" value="<?php echo $productquantity ;?>"> 
 
-            <input type="hidden"  name="size"> <?php $productsize ?> <input> 
+            <input type="hidden"  name="size" value="<?php echo $productsize ;?>"> 
 
             <div class="col col-md-12">
                 <input class="form-control" type="text" name="fullname" placeholder="Full Name" required>
