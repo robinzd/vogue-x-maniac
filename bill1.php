@@ -430,7 +430,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
     <!-- visible only on xs -->
 
-    <div class="container mt-5 mb-5 d-block d-sm-none" style="zoom:70%">
+    <div class="container mt-5 mb-5  d-block d-sm-none" style="zoom:70%">
 
         <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
 
@@ -752,6 +752,8 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
         </div>
 
     </div>
+
+    
 
     <!-- visible only on xs -->
 
