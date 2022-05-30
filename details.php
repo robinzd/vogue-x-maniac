@@ -301,13 +301,13 @@ include("./conn.php");
                                 </div>
 
                                 <div class="d-grid gap-2 col-6 mx-auto">
-                                    <button class="btn btn-success" type="submit">Add To Cart</button>
+                                    <button type="submit" class="btn btn-success">Add To Cart</button>
                                 </div>
                                 </form>
                                 <form>
-                                <div class="d-grid gap-2 col-6 mx-auto">
-                                    <button class="btn btn-success" id="button2" type="button">Buy Now</button>
-                                </div>
+                                    <div class="d-grid gap-2 col-6 mx-auto">
+                                        <button class="btn btn-success" id="button2" type="button">Buy Now</button>
+                                    </div>
                                 </form>
                             </div>
                         </div>
