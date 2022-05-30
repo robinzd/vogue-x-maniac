@@ -91,6 +91,7 @@ include("./conn.php");
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option> -->
+                <option selected>Select Your State</option>
                 <?php
 
 					$get_charges = mysqli_query($conn, "select * from shipping_charges");
@@ -99,7 +100,7 @@ include("./conn.php");
 					if ($row > 0) {
 						while ($row = mysqli_fetch_array($get_charges)){
 					?>
-								<option selected>Select Your State</option>
+								
               <option><?php echo $row['user_state'] ;?></option>
 
 					<?php
