@@ -223,7 +223,7 @@ include("./conn.php");
                                     }
 
 
-                                    echo "<form method='Post' action='cart.php'>
+                                    echo "<form method='Post'>
                                     
                                    <input type='hidden'  name='productid' value='$product_id'>";
                                 }
@@ -300,16 +300,10 @@ include("./conn.php");
 
                                 </div>
 
-                                <div class="d-grid gap-2 col-6 mx-auto">
-                                    <button type="submit" class="btn btn-success">Add To Cart</button>
+                                <div class="cart mt-4 align-items-center">
+                                    <button type="submit" class="btn-success mr-2 px-4" value="cart" formaction="cart.php">Add to cart</button>
+                                    <button type="submit" class="btn-success mr-2 px-4" value="address" formaction="address1.php">Buy Now</button>
                                 </div>
-
-                                </form>
-                                <form method="Post" action="address1.php">
-                                    <input type="hidden" name="productid" value="<?php echo $product_id; ?>">
-                                <div class="d-grid gap-2 col-6 mx-auto">
-                                        <button type="submit" class="btn btn-success" id="button2">Buy Now</button>
-                                    </div>
                                 </form>
                             </div>
                         </div>
