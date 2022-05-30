@@ -184,8 +184,8 @@ include("./conn.php");
                                     <div class='d-flex align-items-center'><a  onclick='history.back()'><i class='fa fa-long-arrow-left'> <span class='ml-1'>Back</span></i></a> </div> <a href='index.php'><i class='fa fa-home'></i></a>
                                 </div>
                                 <div class='mt-4 mb-3'> 
+                                 <h5 class='text-uppercase'>$product_title</h5>
                                  <span class='text-uppercase text-muted brand'>$brand_title</span>
-                                    <h5 class='text-uppercase'>$product_title</h5>
                                     <div class='price d-flex flex-row align-items-center'> <span class='act-price'>₹$product_price</span>
                                         <div class='ml-2'> <small class='dis-price'>₹$strikeout_price</small></div>
                                     </div>
