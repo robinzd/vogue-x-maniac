@@ -97,7 +97,7 @@ include("./conn.php");
 						while ($row = mysqli_fetch_array($get_charges)){
 					?>
 								
-              <option value="yes"><?php echo $row['user_state'] ;?></option>
+              <option value="<?php echo $row['user_state'] ;?>"><?php echo $row['user_state'] ;?></option>
 
 					<?php
 
