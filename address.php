@@ -77,7 +77,7 @@
                 <div class="invalid-feedback">Pincode field cannot be blank!</div>
               </div><br>
 
-              <input class="form-control" type="text" name="state"  placeholder="select your state" required>
+              <select class="form-control" type="text" name="state"  placeholder="select your state" required>
                 <!-- <option selected>Select the state</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
@@ -98,6 +98,8 @@
 							$cnt = $cnt + 1;
 						}
 					} ?>
+
+              </select>
  
 
               <div class="d-grid gap-2 col-6 mx-auto">
