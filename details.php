@@ -309,7 +309,7 @@ include("./conn.php");
                                     <input type="hidden" name="productid" value="<?php echo $product_id; ?>">
 
                                     
-                                    <input type="hidden" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                                    <input type="hidden" value="-" class="minus"><input type="hidden" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="hidden" value="+" class="plus">
                               
                                 <?php
 
@@ -347,7 +347,7 @@ include("./conn.php");
                                       
                                         $x = 0;
                                         while ($x < $sizeOfcheck) {
-                                            echo "<label class='radio'> <input type='hidden' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span></label>\n";
+                                            echo "<input type='hidden' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span>\n";
                                             $x++;
                                         }
                                     }
