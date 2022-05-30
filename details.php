@@ -347,7 +347,7 @@ include("./conn.php");
                                       
                                         $x = 0;
                                         while ($x < $sizeOfcheck) {
-                                            echo "<input type='hidden' name='size' value='$check_array_result[$x]' checked> <span></span>\n";
+                                            echo "<label class='radio'><input type='hidden' name='size' value='$check_array_result[$x]' checked> <span></span></label>\n";
                                             $x++;
                                         }
                                     }
