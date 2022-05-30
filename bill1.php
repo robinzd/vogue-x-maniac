@@ -11,9 +11,9 @@ $user_data = check_login($conn);
 
 $userid = $user_data['user_id'];
 
-$id = isset($_POST['productid']) ? $_POST['productid'] : "";
-$quantity = isset($_POST['quantity']) ? $_POST['quantity'] : "";
-$size = isset($_POST['size']) ? $_POST['size'] : "";
+$id = $_POST['productid'];
+$quantity =  $_POST['quantity'];
+$size = $_POST['size']; 
 $fullname = $_POST["fullname"];
 $email =  $_POST["email"];
 $street =  $_POST["street"];
@@ -215,7 +215,7 @@ else {
                                         $product_size = $row_cart["product_size"];
 
 
-                                        $get_details = "select * from products_details where ID=$product_id";
+                                        $get_details = "select * from products_details where ID=$id";
 
                                         $run_details = mysqli_query($conn, $get_details);
 
@@ -227,7 +227,7 @@ else {
 
                                             $total_price = $product_price *  $product_quantity;
 
-                                            $get_images = "select details_image from  products_images where related_product=$product_id and primary_image=1";
+                                            $get_images = "select details_image from  products_images where related_product=$id and primary_image=1";
 
                                             $run_images = mysqli_query($conn, $get_images);
 
@@ -548,7 +548,7 @@ else {
                                         $product_size = $row_cart["product_size"];
 
 
-                                        $get_details = "select * from products_details where ID=$product_id";
+                                        $get_details = "select * from products_details where ID=$id";
 
                                         $run_details = mysqli_query($conn, $get_details);
 
@@ -560,7 +560,7 @@ else {
 
                                             $total_price = $product_price *  $product_quantity;
 
-                                            $get_images = "select details_image from  products_images where related_product=$product_id and primary_image=1";
+                                            $get_images = "select details_image from  products_images where related_product=$id and primary_image=1";
 
                                             $run_images = mysqli_query($conn, $get_images);
 
