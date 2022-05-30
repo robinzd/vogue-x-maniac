@@ -305,8 +305,16 @@ p#address{
   color: black;
 }
 
+.fa-long-arrow-left{
+  cursor: pointer;
+}
+
 span.ml-1:hover{
   color: black;
+}
+
+span.ml-1{
+  cursor:pointer;
 }
 
 .fa-home:hover{
