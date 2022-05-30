@@ -313,41 +313,10 @@ include("./conn.php");
                               
                                 <?php
 
-
-                                    $_SERVER['SCRIPT_NAME'];
-
-
-
-                                    $get_string = $_SERVER['QUERY_STRING'];
-
-
-                                    parse_str($get_string, $get_array);
-
-                                    // print_r($get_array);
-
-
-                                    $product_id = $get_array['id'];
-
-                                    $get_details = "select product_size from products_details where ID= $product_id";
-
-                                    $run_details = mysqli_query($conn, $get_details);
-
-                                    $details = mysqli_fetch_array($run_details);
-
-                                    $product_size = $details['product_size'];
-
-                                    $check_array = $product_size;
-
-                                    $check_array_result = explode(',', $check_array);
-
-                                    $sizeOfcheck = sizeof($check_array_result);
-
-
-                                    if (!($sizeOfcheck == 1)) {
-                                      
-                                        $x = 0;
+                                if (!($sizeOfcheck == 1)) {
+                                      $x = 0;
                                         while ($x < $sizeOfcheck) {
-                                            echo "<label class='radio'><input type='hidden' name='size' value='$check_array_result[$x]' checked> <span>$check_array_result[$x]</span></label>\n";
+                                            echo "<label type='hidden' class='radio'><input type='hidden' name='size' value='$check_array_result[$x]' checked> <span></span></label>\n";
                                             $x++;
                                         }
                                     }
