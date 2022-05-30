@@ -13,3 +13,13 @@
         }, false)
       })
     })()
+
+
+    function validateThisFrom(thisForm) {
+        if (thisForm.state.value == "") {
+            alert("Please make a selection");
+            thisForm.FIELDNAME.focus();
+            return false;
+        }
+
+      }

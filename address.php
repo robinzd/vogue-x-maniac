@@ -87,7 +87,7 @@ include("./conn.php");
                
               <div class="col-md-12">
               <select class="form-control" type="text" name="state" required>
-              <option  disabled selected>Select Your State</option>
+              <option value="" disabled selected>Select Your State</option>
                 <?php
 
 					$get_charges = mysqli_query($conn, "select * from shipping_charges");
@@ -97,7 +97,7 @@ include("./conn.php");
 						while ($row = mysqli_fetch_array($get_charges)){
 					?>
 								
-              <option><?php echo $row['user_state'] ;?></option>
+              <option value="yes"><?php echo $row['user_state'] ;?></option>
 
 					<?php
 
