@@ -87,7 +87,7 @@ include("./conn.php");
                
               <div class="col-md-12">
               <select class="form-control" type="text" name="state" required>
-              <option  class="placeholder">Select Your State</option>
+              <option  disabled selected>Select Your State</option>
                 <?php
 
 					$get_charges = mysqli_query($conn, "select * from shipping_charges");
