@@ -535,7 +535,7 @@ else {
 
                                     $total_count = 0;
 
-                                    $get_cart = "select * from users_order where order_id=$orderid";
+                                    $get_cart = "select * from users_order where order_id=$order_id";
 
                                     $run_cart = mysqli_query($conn, $get_cart);
 
