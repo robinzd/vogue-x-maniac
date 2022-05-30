@@ -139,6 +139,11 @@ include("./conn.php");
                                 </div>
                             </div>
 
+                            <h1  class="text-muted" id="offerheading">Note</h1>
+                                <ul>
+                                <li class="text-muted" id="offer">Within Tamilnadu shipping charges free,for other states delivery charges applied!</p>
+                                </ul>
+
                         </div>
 
                         <div class="col-md-6">
