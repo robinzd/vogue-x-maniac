@@ -251,8 +251,8 @@ include("./conn.php");
                                     <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
                                 </div>
 
-                                
-                            <div class="sizes">
+
+                                <div class="sizes">
 
 
 
@@ -300,12 +300,16 @@ include("./conn.php");
 
                                 </div>
 
-                                <div class="cart mt-4 align-items-center">
-                                    <button type="submit" class="btn-success mr-2 px-4">Add to cart</button>
-                                    <button class="btn-success mr-2 px-4">Buy Now</button>
+                                <div class="d-grid gap-2 col-6 mx-auto">
+                                    <button class="btn btn-success" type="submit">Add To Cart</button>
                                 </div>
-                            </form>
-                        </div>
+                                </form>
+                                <form>
+                                <div class="d-grid gap-2 col-6 mx-auto">
+                                    <button class="btn btn-success" type="button">Buy Now</button>
+                                </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
