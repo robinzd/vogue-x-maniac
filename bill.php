@@ -16,6 +16,7 @@ $street =  $_POST["street"];
 $landmark =  $_POST["landmark"];
 $city =  $_POST["city"];
 $pincode = $_POST["pincode"];
+$state = $_POST["state"];
 
 
 $get_users = "select user_mob_no,user_email from users where user_id=$userid";
@@ -39,10 +40,10 @@ $order_id = random_num(10);
 
 
 
-if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) && !empty($city) && !empty($pincode)) {
+if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) && !empty($city) && !empty($pincode) &&  !empty($state)) {
 
 
-    $query_address = mysqli_query($conn, "INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`, `user_address`, `user_landmark`,`user_city`,`user_pincode`) VALUES ('$userid ','$fullname','$email','$street','$landmark','$city','$pincode')");
+    $query_address = mysqli_query($conn, "INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`, `user_address`, `user_landmark`,`user_city`,`user_pincode`,`user_state`) VALUES ('$userid ','$fullname','$email','$street','$landmark','$city','$pincode','$state')");
 
 
     if ($query_address) {
@@ -101,7 +102,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
     <!--back to top ends -->
 
-<!-- hidden only on xs -->
+    <!-- hidden only on xs -->
 
     <div class="container mt-5 mb-5  d-none d-sm-block">
 
@@ -255,9 +256,8 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                                         <div class="product-qty">
                                                             <span class="d-block">Quantity:<?php echo $product_quantity; ?></span>
                                                             <?php
-                                                            if(!($product_size == 0)) 
-                                                            {
-                                                            echo "<span id='size' class='d-block'>Size:$product_size</span>";
+                                                            if (!($product_size == 0)) {
+                                                                echo "<span id='size' class='d-block'>Size:$product_size</span>";
                                                             }
                                                             ?>
                                                         </div>
@@ -315,6 +315,18 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             </td>
                                         </tr>
 
+                                        <?php
+
+                                        $get_shipping_fee = "select * from shipping_charges where user_state='$state'";
+
+                                        $run_shipping_fee = mysqli_query($conn, $get_shipping_fee);
+
+                                        while ($row_shipping_fee = mysqli_fetch_array($run_shipping_fee)) {
+
+                                            $delivery_charges = $row_shipping_fee['shipping_fee'];
+                                        }
+                                        ?>
+
 
                                         <tr>
                                             <td>
@@ -326,10 +338,18 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span>$22</span>
+                                                    <span><?php echo "₹" . number_format($delivery_charges, 2); ?></span>
                                                 </div>
                                             </td>
                                         </tr>
+
+
+
+                                        <?php
+
+                                       $totalamount=$total_count + $delivery_charges;
+
+                                        ?>
 
 
                                         <!-- <tr>
@@ -368,13 +388,13 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             <td>
                                                 <div class="text-left">
 
-                                                    <span class="font-weight-bold">Subtotal</span>
+                                                    <span class="font-weight-bold">Total Amount</span>
 
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span class="font-weight-bold"><?php echo "₹" . number_format($total_count, 2); ?></span>
+                                                    <span class="font-weight-bold"><?php echo "₹" . number_format($totalamount, 2); ?></span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -400,11 +420,11 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                         <span>vogue-x-maniac Team</span>
 
                         <form method="Post" action="./paytm_php_sample_app/payment-using-paytm/payment.php">
-                            <input type="hidden" name="txn_no" value="<?php echo $total_count; ?>">
+                            <input type="hidden" name="txn_no" value="<?php echo $totalamount; ?>">
                             <input type="hidden" name="cust_id" value="<?php echo $userid; ?>">
                             <input type="hidden" name="mob_no" value="<?php echo  $mob_no; ?>">
                             <input type="hidden" name="email" value="<?php echo  $user_email; ?>">
-                           
+
 
 
                             <div class="d-grid gap-2 col-6 mx-auto">
@@ -418,7 +438,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                     </div>
 
-                    
+
                 </div>
 
             </div>
@@ -434,7 +454,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
 
 
-<!-- visible only on xs -->
+    <!-- visible only on xs -->
 
     <div class="container mt-5 mb-5 d-block d-sm-none" style="zoom:70%">
 
@@ -588,9 +608,8 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                                         <div class="product-qty">
                                                             <span class="d-block">Quantity:<?php echo $product_quantity; ?></span>
                                                             <?php
-                                                            if(!($product_size == 0)) 
-                                                            {
-                                                            echo "<span id='size' class='d-block'>Size:$product_size</span>";
+                                                            if (!($product_size == 0)) {
+                                                                echo "<span id='size' class='d-block'>Size:$product_size</span>";
                                                             }
                                                             ?>
                                                         </div>
@@ -737,7 +756,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                             <input type="hidden" name="cust_id" value="<?php echo $userid; ?>">
                             <input type="hidden" name="mob_no" value="<?php echo  $mob_no; ?>">
                             <input type="hidden" name="email" value="<?php echo  $user_email; ?>">
-                           
+
 
 
                             <div class="d-grid gap-2 col-6 mx-auto">
@@ -751,7 +770,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                     </div>
 
-                    
+
                 </div>
 
             </div>
