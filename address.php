@@ -84,7 +84,8 @@ include("./conn.php");
                 <input class="form-control" type="number" name="pincode" placeholder="Pincode" required>
                 <div class="invalid-feedback">Pincode field cannot be blank!</div>
               </div>
-
+               
+              <div class="col-md-12">
               <select class="form-control" type="text" name="state"  placeholder="select your state" required>
                 <!-- <option selected>Select the state</option>
                 <option value="1">One</option>
@@ -108,6 +109,7 @@ include("./conn.php");
 					} ?>
 
               </select>
+              </div><br>
  
 
               <div class="d-grid gap-2 col-6 mx-auto">
