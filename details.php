@@ -302,7 +302,7 @@ include("./conn.php");
 
                                 </div>
                                 
-                                <h1  class="text-muted" id="offerheading">Note</h1>
+                                <h1  class="text-muted" id="offerheading">Note*</h1>
                                 
                                 <p class="text-muted" id="offer">Within Tamilnadu shipping charges free,for other states delivery charges applied!</p>
                                 
