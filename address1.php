@@ -102,6 +102,31 @@ $productsize = isset($_POST['size']) ? $_POST['size'] : "";
               <div class="col-md-12">
                 <input class="form-control" type="number" name="pincode" placeholder="Pincode" required>
                 <div class="invalid-feedback">Pincode field cannot be blank!</div>
+              </div>
+
+              <div class="col-md-12">
+                <select class="form-control" type="text" name="state" required>
+                  <option value="" disabled selected>Select Your State</option>
+                  <?php
+
+                  $get_charges = mysqli_query($conn, "select * from shipping_charges");
+                  $cnt = 1;
+                  $row = mysqli_num_rows($get_charges);
+                  if ($row > 0) {
+                    while ($row = mysqli_fetch_array($get_charges)) {
+                  ?>
+
+                      <option value="<?php echo $row['user_state']; ?>"><?php echo $row['user_state']; ?></option>
+
+                  <?php
+
+
+                      $cnt = $cnt + 1;
+                    }
+                  } ?>
+
+                </select>
+                <div class="invalid-feedback">Select anyone</div>
               </div><br>
 
               <div class="d-grid gap-2 col-6 mx-auto">
@@ -159,6 +184,31 @@ $productsize = isset($_POST['size']) ? $_POST['size'] : "";
               <div class="col-md-12">
                 <input class="form-control" type="number" name="pincode" placeholder="Pincode" required>
                 <div class="invalid-feedback">Pincode field cannot be blank!</div>
+              </div>
+
+              <div class="col-md-12">
+                <select class="form-control" type="text" name="state" required>
+                  <option value="" disabled selected>Select Your State</option>
+                  <?php
+
+                  $get_charges = mysqli_query($conn, "select * from shipping_charges");
+                  $cnt = 1;
+                  $row = mysqli_num_rows($get_charges);
+                  if ($row > 0) {
+                    while ($row = mysqli_fetch_array($get_charges)) {
+                  ?>
+
+                      <option value="<?php echo $row['user_state']; ?>"><?php echo $row['user_state']; ?></option>
+
+                  <?php
+
+
+                      $cnt = $cnt + 1;
+                    }
+                  } ?>
+
+                </select>
+                <div class="invalid-feedback">Select anyone</div>
               </div><br>
 
               <div class="d-grid gap-2 col-6 mx-auto">

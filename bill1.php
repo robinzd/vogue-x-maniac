@@ -20,6 +20,8 @@ $street =  $_POST["street"];
 $landmark =  $_POST["landmark"];
 $city =  $_POST["city"];
 $pincode = $_POST["pincode"];
+$state = $_POST["state"];
+
 
 
 $get_users = "select user_mob_no,user_email from users where user_id=$userid";
@@ -43,7 +45,7 @@ $order_id = random_num(10);
 if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) && !empty($city) && !empty($pincode)) {
 
 
-    $query_address = mysqli_query($conn, "INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`, `user_address`, `user_landmark`,`user_city`,`user_pincode`) VALUES ('$userid ','$fullname','$email','$street','$landmark','$city','$pincode')");
+    $query_address = mysqli_query($conn, "INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`, `user_address`, `user_landmark`,`user_city`,`user_pincode`,`user_state`) VALUES ('$userid ','$fullname','$email','$street','$landmark','$city','$pincode','$state')");
 
 
     if ($query_address) {
@@ -309,8 +311,21 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             </td>
                                         </tr>
 
+                                        <?php
 
-                                         <tr>
+                                        $get_shipping_fee = "select * from shipping_charges where user_state='$state'";
+
+                                        $run_shipping_fee = mysqli_query($conn, $get_shipping_fee);
+
+                                        while ($row_shipping_fee = mysqli_fetch_array($run_shipping_fee)) {
+
+                                            $delivery_charges = $row_shipping_fee['shipping_fee'];
+                                        }
+
+                                        ?>
+
+
+                                        <tr>
                                             <td>
                                                 <div class="text-left">
 
@@ -320,10 +335,17 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span>$22</span>
+                                                    <span><?php echo "₹" . number_format($delivery_charges, 2); ?></span>
                                                 </div>
                                             </td>
                                         </tr>
+
+
+                                        <?php
+
+                                        $totalamount = $total_count + $delivery_charges;
+
+                                        ?>
 
 
                                         <!-- <tr>
@@ -368,7 +390,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span class="font-weight-bold"><?php echo "₹" . number_format($total_count, 2); ?></span>
+                                                    <span class="font-weight-bold"><?php echo "₹" . number_format($totalamount, 2); ?></span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -394,7 +416,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                         <span>vogue-x-maniac Team</span>
 
                         <form method="Post" action="./paytm_php_sample_app/payment-using-paytm/payment.php">
-                            <input type="hidden" name="txn_no" value="<?php echo $total_count; ?>">
+                            <input type="hidden" name="txn_no" value="<?php echo  $totalamount; ?>">
                             <input type="hidden" name="cust_id" value="<?php echo $userid; ?>">
                             <input type="hidden" name="mob_no" value="<?php echo  $mob_no; ?>">
                             <input type="hidden" name="email" value="<?php echo  $user_email; ?>">
@@ -641,53 +663,73 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             </td>
                                         </tr>
 
+                                        <?php
 
-                                         <tr>
-                                    <td>
-                                        <div class="text-left">
+                                        $get_shipping_fee = "select * from shipping_charges where user_state='$state'";
 
-                                            <span class="text-muted">Shipping Fee</span>
+                                        $run_shipping_fee = mysqli_query($conn, $get_shipping_fee);
 
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="text-right">
-                                            <span>$22</span>
-                                        </div>
-                                    </td>
-                                </tr> 
+                                        while ($row_shipping_fee = mysqli_fetch_array($run_shipping_fee)) {
+
+                                            $delivery_charges = $row_shipping_fee['shipping_fee'];
+                                        }
+
+                                        ?>
+
+
+                                        <tr>
+                                            <td>
+                                                <div class="text-left">
+
+                                                    <span class="text-muted">Shipping Fee</span>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-right">
+                                                    <span><?php echo "₹" . number_format($delivery_charges, 2); ?></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+                                        <?php
+
+                                        $totalamount = $total_count + $delivery_charges;
+
+                                        ?>
 
 
                                         <!-- <tr>
-                                    <td>
-                                        <div class="text-left">
+                                            <td>
+                                                <div class="text-left">
 
-                                            <span class="text-muted">Tax Fee</span>
+                                                    <span class="text-muted">Tax Fee</span>
 
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="text-right">
-                                            <span>$7.65</span>
-                                        </div>
-                                    </td>
-                                </tr> -->
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-right">
+                                                    <span>$7.65</span>
+                                                </div>
+                                            </td>
+                                        </tr> -->
 
 
                                         <!-- <tr>
-                                    <td>
-                                        <div class="text-left">
+                                            <td>
+                                                <div class="text-left">
 
-                                            <span class="text-muted">Discount</span>
+                                                    <span class="text-muted">Discount</span>
 
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="text-right">
-                                            <span class="text-success">$168.50</span>
-                                        </div>
-                                    </td>
-                                </tr> -->
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-right">
+                                                    <span class="text-success">$168.50</span>
+                                                </div>
+                                            </td>
+                                        </tr> -->
 
 
                                         <tr class="border-top border-bottom">
@@ -700,7 +742,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span class="font-weight-bold"><?php echo "₹" . number_format($total_count, 2); ?></span>
+                                                    <span class="font-weight-bold"><?php echo "₹" . number_format($totalamount, 2); ?></span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -726,7 +768,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                         <span>vogue-x-maniac Team</span>
 
                         <form method="Post" action="./paytm_php_sample_app/payment-using-paytm/payment.php">
-                            <input type="hidden" name="txn_no" value="<?php echo $total_count; ?>">
+                            <input type="hidden" name="txn_no" value="<?php echo  $totalamount; ?>">
                             <input type="hidden" name="cust_id" value="<?php echo $userid; ?>">
                             <input type="hidden" name="mob_no" value="<?php echo  $mob_no; ?>">
                             <input type="hidden" name="email" value="<?php echo  $user_email; ?>">
@@ -753,7 +795,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
     </div>
 
-    
+
 
     <!-- visible only on xs -->
 
