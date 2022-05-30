@@ -13,7 +13,7 @@ $userid = $user_data['user_id'];
 
 $id = $_POST['productid'];
 $quantity =  $_POST['quantity'];
-$size = $_POST['size']; 
+$size = $_POST['size'];
 $fullname = $_POST["fullname"];
 $email =  $_POST["email"];
 $street =  $_POST["street"];
@@ -47,16 +47,13 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
 
     if ($query_address) {
-        
+
         $query_order = mysqli_query($conn, "INSERT INTO `users_order`( `user_id`, `order_id`, `product_id`, `product_quantity`, `product_size`) VALUES ('$userid ','$order_id','$id','$quantity','$size')");
-        
-    }
-     else {
+    } else {
 
         echo "<script>alert('Something Went Wrong!');</script>";
     }
-} 
-else {
+} else {
 
     echo "<script>alert('Something Went Wrong!');</script>";
 }
@@ -99,7 +96,7 @@ else {
 
     <!--back to top ends -->
 
-<!-- hidden only on xs -->
+    <!-- hidden only on xs -->
 
     <div class="container mt-5 mb-5  d-none d-sm-block">
 
@@ -253,9 +250,8 @@ else {
                                                         <div class="product-qty">
                                                             <span class="d-block">Quantity:<?php echo $product_quantity; ?></span>
                                                             <?php
-                                                            if(!($product_size == 0)) 
-                                                            {
-                                                            echo "<span id='size' class='d-block'>Size:$product_size</span>";
+                                                            if (!($product_size == 0)) {
+                                                                echo "<span id='size' class='d-block'>Size:$product_size</span>";
                                                             }
                                                             ?>
                                                         </div>
@@ -402,7 +398,7 @@ else {
                             <input type="hidden" name="cust_id" value="<?php echo $userid; ?>">
                             <input type="hidden" name="mob_no" value="<?php echo  $mob_no; ?>">
                             <input type="hidden" name="email" value="<?php echo  $user_email; ?>">
-                           
+
 
 
                             <div class="d-grid gap-2 col-6 mx-auto">
@@ -416,7 +412,7 @@ else {
 
                     </div>
 
-                    
+
                 </div>
 
             </div>
@@ -432,7 +428,7 @@ else {
 
 
 
-<!-- visible only on xs -->
+    <!-- visible only on xs -->
 
     <div class="container mt-5 mb-5 d-block d-sm-none" style="zoom:70%">
 
@@ -586,9 +582,8 @@ else {
                                                         <div class="product-qty">
                                                             <span class="d-block">Quantity:<?php echo $product_quantity; ?></span>
                                                             <?php
-                                                            if(!($product_size == 0)) 
-                                                            {
-                                                            echo "<span id='size' class='d-block'>Size:$product_size</span>";
+                                                            if (!($product_size == 0)) {
+                                                                echo "<span id='size' class='d-block'>Size:$product_size</span>";
                                                             }
                                                             ?>
                                                         </div>
@@ -648,51 +643,51 @@ else {
 
 
                                         <!-- <tr>
-                                            <td>
-                                                <div class="text-left">
+                                    <td>
+                                        <div class="text-left">
 
-                                                    <span class="text-muted">Shipping Fee</span>
+                                            <span class="text-muted">Shipping Fee</span>
 
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-right">
-                                                    <span>$22</span>
-                                                </div>
-                                            </td>
-                                        </tr> -->
-
-
-                                        <!-- <tr>
-                                            <td>
-                                                <div class="text-left">
-
-                                                    <span class="text-muted">Tax Fee</span>
-
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-right">
-                                                    <span>$7.65</span>
-                                                </div>
-                                            </td>
-                                        </tr> -->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-right">
+                                            <span>$22</span>
+                                        </div>
+                                    </td>
+                                </tr> -->
 
 
                                         <!-- <tr>
-                                            <td>
-                                                <div class="text-left">
+                                    <td>
+                                        <div class="text-left">
 
-                                                    <span class="text-muted">Discount</span>
+                                            <span class="text-muted">Tax Fee</span>
 
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-right">
-                                                    <span class="text-success">$168.50</span>
-                                                </div>
-                                            </td>
-                                        </tr> -->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-right">
+                                            <span>$7.65</span>
+                                        </div>
+                                    </td>
+                                </tr> -->
+
+
+                                        <!-- <tr>
+                                    <td>
+                                        <div class="text-left">
+
+                                            <span class="text-muted">Discount</span>
+
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-right">
+                                            <span class="text-success">$168.50</span>
+                                        </div>
+                                    </td>
+                                </tr> -->
 
 
                                         <tr class="border-top border-bottom">
@@ -735,7 +730,7 @@ else {
                             <input type="hidden" name="cust_id" value="<?php echo $userid; ?>">
                             <input type="hidden" name="mob_no" value="<?php echo  $mob_no; ?>">
                             <input type="hidden" name="email" value="<?php echo  $user_email; ?>">
-                           
+
 
 
                             <div class="d-grid gap-2 col-6 mx-auto">
@@ -749,7 +744,7 @@ else {
 
                     </div>
 
-                    
+
                 </div>
 
             </div>
@@ -773,10 +768,3 @@ else {
 </body>
 
 </html>
-
-
-
-
-
-
-
