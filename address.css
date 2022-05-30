@@ -157,6 +157,24 @@ button.btn.btn-outline-success:hover{
    color:white;
 }
 
+
+select.form-control{
+    width: 100%;
+    padding: 9px 20px;
+    text-align: left;
+    border: 0;
+    outline: 0;
+    border-radius: 6px;
+    background-color: black;
+    font-size: 15px;
+    font-weight: 300;
+    color: #8D8D8D;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    margin-top: 16px;
+    border:2px solid lightgreen;
+}
+
 /* footer */
 
 
