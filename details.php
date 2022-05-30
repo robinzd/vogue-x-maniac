@@ -301,7 +301,10 @@ include("./conn.php");
                                 </div>
                                 
                                 <h1 id="offerheading">Note</h1>
-                                <p id="offer">Within Tamilnadu shipping charges free,for other states delivery charges applied!</p>
+                                <ul>
+                                <li id="offer">Within Tamilnadu shipping charges free,for other states delivery charges applied!</p>
+                                </ul>
+                                
 
                                 <div class="cart mt-4 align-items-center">
                                     <button type="submit" class="btn-success mr-2 px-4" value="cart" formaction="cart.php">Add to cart</button>
