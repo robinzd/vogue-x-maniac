@@ -547,6 +547,8 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                                         $product_quantity = $row_cart["product_quantity"];
 
+                                        $product_size = $row_cart["product_size"];
+
 
                                         $get_details = "select * from products_details where ID=$product_id";
 
