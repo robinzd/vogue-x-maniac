@@ -139,10 +139,7 @@ include("./conn.php");
                                 </div>
                             </div>
 
-                            <h1  class="text-muted" id="offerheading">Note</h1>
-                                <ul>
-                                <li class="text-muted" id="offer">Within Tamilnadu shipping charges free,for other states delivery charges applied!</p>
-                                </ul>
+                           
 
                         </div>
 
@@ -306,9 +303,9 @@ include("./conn.php");
                                 </div>
                                 
                                 <h1  class="text-muted" id="offerheading">Note</h1>
-                                <ul>
-                                <li class="text-muted" id="offer">Within Tamilnadu shipping charges free,for other states delivery charges applied!</p>
-                                </ul>
+                                
+                                <p class="text-muted" id="offer">Within Tamilnadu shipping charges free,for other states delivery charges applied!</p>
+                                
                                 
 
                                 <div class="cart mt-4 align-items-center">
