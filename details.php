@@ -307,23 +307,7 @@ include("./conn.php");
                                 </form>
                                 <form method="Post" action="address1.php">
                                     <input type="hidden" name="productid" value="<?php echo $product_id; ?>">
-
-                                    
-                                    <input type="hidden" value="-" class="minus"><input type="hidden" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="hidden" value="+" class="plus">
-                              
-                                <?php
-
-                                if (!($sizeOfcheck == 1)) {
-                                      $x = 0;
-                                        while ($x < $sizeOfcheck) {
-                                            echo "<label type='hidden' class='radio'><input type='hidden' name='size' value='$check_array_result[$x]' checked> <span></span></label>\n";
-                                            $x++;
-                                        }
-                                    }
-                                    ?>
-
-
-                                    <div class="d-grid gap-2 col-6 mx-auto">
+                                <div class="d-grid gap-2 col-6 mx-auto">
                                         <button type="submit" class="btn btn-success" id="button2">Buy Now</button>
                                     </div>
                                 </form>
