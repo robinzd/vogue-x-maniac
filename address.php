@@ -43,7 +43,7 @@
       <div class="form-holder">
         <div class="form-content">
           <div class="form-items">
-          <h3 class="text-center">Address Details</h3>
+            <h3 class="text-center">Address Details</h3>
             <p class="text-center">Fill in the data below.</p>
             <form class="requires-validation" novalidate method="POST" action="./bill.php">
 
@@ -77,6 +77,30 @@
                 <div class="invalid-feedback">Pincode field cannot be blank!</div>
               </div><br>
 
+              <select class="form-control" name="state" aria-label="Default select example">
+                <option selected>Select the state</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                <?php
+
+					$get_charges = mysqli_query($conn, "select * from shipping_charges");
+					$cnt = 1;
+					$row = mysqli_num_rows($get_charges);
+					if ($row > 0) {
+						while ($row = mysqli_fetch_array($get_charges)){
+					?>
+							<option selected>Select your state</option>
+              <option><?php $row['user_state'] ;?></option>
+
+					<?php
+
+
+							$cnt = $cnt + 1;
+						}
+					} ?>
+              </select>
+
               <div class="d-grid gap-2 col-6 mx-auto">
                 <button class="btn btn-outline-success" type="submit">Submit</button>
               </div>
@@ -88,13 +112,13 @@
   </div>
   <!-- hide only on xs -->
 
-<!-- visible only on xs -->
-<div class="form-body  d-block d-sm-none" style="zoom:70%">
+  <!-- visible only on xs -->
+  <div class="form-body  d-block d-sm-none" style="zoom:70%">
     <div class="row">
       <div class="form-holder">
         <div class="form-content">
           <div class="form-items">
-          <h3 class="text-center">Address Details</h3>
+            <h3 class="text-center">Address Details</h3>
             <p class="text-center">Fill in the data below.</p>
             <form class="requires-validation" novalidate method="POST" action="./bill.php">
 
