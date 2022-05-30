@@ -310,7 +310,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                         </tr>
 
 
-                                        <!-- <tr>
+                                         <tr>
                                             <td>
                                                 <div class="text-left">
 
@@ -323,7 +323,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                                     <span>$22</span>
                                                 </div>
                                             </td>
-                                        </tr> -->
+                                        </tr>
 
 
                                         <!-- <tr>
@@ -642,7 +642,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                         </tr>
 
 
-                                        <!-- <tr>
+                                         <tr>
                                     <td>
                                         <div class="text-left">
 
@@ -655,7 +655,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             <span>$22</span>
                                         </div>
                                     </td>
-                                </tr> -->
+                                </tr> 
 
 
                                         <!-- <tr>
