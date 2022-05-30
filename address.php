@@ -77,11 +77,11 @@
                 <div class="invalid-feedback">Pincode field cannot be blank!</div>
               </div><br>
 
-              <select class="form-control" name="state" aria-label="Default select example">
-                <option selected>Select the state</option>
+              <input class="form-control" type="text" name="state"  placeholder="select your state" required>
+                <!-- <option selected>Select the state</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="3">Three</option> -->
                 <?php
 
 					$get_charges = mysqli_query($conn, "select * from shipping_charges");
@@ -90,8 +90,7 @@
 					if ($row > 0) {
 						while ($row = mysqli_fetch_array($get_charges)){
 					?>
-							<option selected>Select your state</option>
-              <option><?php $row['user_state'] ;?></option>
+							<option><?php $row['user_state'] ;?></option>
 
 					<?php
 
@@ -99,7 +98,7 @@
 							$cnt = $cnt + 1;
 						}
 					} ?>
-              </select>
+ 
 
               <div class="d-grid gap-2 col-6 mx-auto">
                 <button class="btn btn-outline-success" type="submit">Submit</button>
