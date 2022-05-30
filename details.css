@@ -331,6 +331,12 @@ img.px-2 {
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
 }
+
+#offerheading{
+  font-family: 'Redressed', cursive;
+}
+
+
  
 a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2:hover{
   color:black;

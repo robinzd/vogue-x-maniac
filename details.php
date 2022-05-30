@@ -299,7 +299,8 @@ include("./conn.php");
                                     ?>
 
                                 </div>
-
+                                
+                                <h1 id="offerheading">Note</h1>
                                 <p id="offer">Within Tamilnadu shipping charges free,for other states delivery charges applied!</p>
 
                                 <div class="cart mt-4 align-items-center">
