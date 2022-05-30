@@ -305,7 +305,7 @@ include("./conn.php");
                                 </div>
                                 </form>
                                 <form>
-                                <div class="d-grid gap-2 col-6 mx-auto">
+                                <div class="d-grid gap-2 col-6 mx-auto" id="button2">
                                     <button class="btn btn-success" type="button">Buy Now</button>
                                 </div>
                                 </form>
