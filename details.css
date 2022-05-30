@@ -329,6 +329,7 @@ img.px-2 {
   color:grey;
   margin-top: 10px;
   font-size: 14px;
+  font-family:'Redressed', cursive;
 }
  
 a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2:hover{
