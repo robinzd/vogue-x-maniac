@@ -75,7 +75,7 @@
               <div class="col-md-12">
                 <input class="form-control" type="number" name="pincode" placeholder="Pincode" required>
                 <div class="invalid-feedback">Pincode field cannot be blank!</div>
-              </div><br>
+              </div>
 
               <select class="form-control" type="text" name="state"  placeholder="select your state" required>
                 <!-- <option selected>Select the state</option>
