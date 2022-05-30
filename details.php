@@ -181,7 +181,7 @@ include("./conn.php");
                                     echo "
                            
                                 <div class='d-flex justify-content-between align-items-center'>
-                                    <div class='d-flex align-items-center'><a  onclick='history.back()'><i class='fa fa-long-arrow-left'> <span class='ml-1'>Back</i></a> </div> <a href='index.php'><i class='fa fa-home'></i></a>
+                                    <div class='d-flex align-items-center'><a  onclick='history.back()'><i class='fa fa-long-arrow-left'> <span class='ml-1'>Back</span></i></a> </div> <a href='index.php'><i class='fa fa-home'></i></a>
                                 </div>
                                 <div class='mt-4 mb-3'> 
                                  <span class='text-uppercase text-muted brand'>$brand_title</span>
