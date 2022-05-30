@@ -96,7 +96,7 @@ label.radio input:checked+span {
     margin-right: 10px
 }
 
-button.btn-success.mr-2.px-4{
+/* button.btn-success.mr-2.px-4{
       border:1px solid lightgreen;
       border-radius: 10px;
       color:black;
@@ -111,7 +111,34 @@ button.btn-success.mr-2.px-4:hover{
   color:white;
   background-color: black;
   font-family: 'Poppins', sans-serif;
+} */
+
+
+button#button2{
+  margin-top:10px;
+  background-color: lightgreen;
+  border-radius: 20px;
+  color:black
 }
+
+button#button2:hover{
+  background-color: black;
+  color:white;
+}
+
+button.btn.btn-success{
+  margin-top:10px;
+  background-color: lightgreen;
+  border-radius: 20px;
+  color:black
+}
+
+button.btn.btn-success:hover{
+  background-color: black;
+  color:white;
+}
+
+
 
 
 
