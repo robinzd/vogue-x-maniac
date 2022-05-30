@@ -328,6 +328,7 @@ img.px-2 {
 #offer{
   color:grey;
   margin-top: 10px;
+  font-size: 10px;
 }
  
 a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2:hover{
