@@ -347,7 +347,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                                         <?php
 
-                                       $totalamount=$total_count + $delivery_charges;
+                                        $totalamount = $total_count + $delivery_charges;
 
                                         ?>
 
@@ -667,6 +667,18 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             </td>
                                         </tr>
 
+                                        <?php
+
+                                        $get_shipping_fee = "select * from shipping_charges where user_state='$state'";
+
+                                        $run_shipping_fee = mysqli_query($conn, $get_shipping_fee);
+
+                                        while ($row_shipping_fee = mysqli_fetch_array($run_shipping_fee)) {
+
+                                            $delivery_charges = $row_shipping_fee['shipping_fee'];
+                                        }
+                                        ?>
+
 
                                         <tr>
                                             <td>
@@ -678,55 +690,63 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span>$22</span>
+                                                    <span><?php echo "₹" . number_format($delivery_charges, 2); ?></span>
                                                 </div>
                                             </td>
-                                        </tr> -->
+                                        </tr>
+
+
+
+                                        <?php
+
+                                        $totalamount = $total_count + $delivery_charges;
+
+                                        ?>
 
 
                                         <!-- <tr>
-                                            <td>
-                                                <div class="text-left">
+                                    <td>
+                                        <div class="text-left">
 
-                                                    <span class="text-muted">Tax Fee</span>
+                                            <span class="text-muted">Tax Fee</span>
 
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-right">
-                                                    <span>$7.65</span>
-                                                </div>
-                                            </td>
-                                        </tr> -->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-right">
+                                            <span>$7.65</span>
+                                        </div>
+                                    </td>
+                                </tr> -->
 
 
                                         <!-- <tr>
-                                            <td>
-                                                <div class="text-left">
+                                    <td>
+                                        <div class="text-left">
 
-                                                    <span class="text-muted">Discount</span>
+                                            <span class="text-muted">Discount</span>
 
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="text-right">
-                                                    <span class="text-success">$168.50</span>
-                                                </div>
-                                            </td>
-                                        </tr> -->
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="text-right">
+                                            <span class="text-success">$168.50</span>
+                                        </div>
+                                    </td>
+                                </tr> -->
 
 
                                         <tr class="border-top border-bottom">
                                             <td>
                                                 <div class="text-left">
 
-                                                    <span class="font-weight-bold">Subtotal</span>
+                                                    <span class="font-weight-bold">Total Amount</span>
 
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span class="font-weight-bold"><?php echo "₹" . number_format($total_count, 2); ?></span>
+                                                    <span class="font-weight-bold"><?php echo "₹" . number_format($totalamount, 2); ?></span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -752,7 +772,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                         <span>vogue-x-maniac Team</span>
 
                         <form method="Post" action="./paytm_php_sample_app/payment-using-paytm/payment.php">
-                            <input type="hidden" name="txn_no" value="<?php echo $total_count; ?>">
+                            <input type="hidden" name="txn_no" value="<?php echo $totalamount; ?>">
                             <input type="hidden" name="cust_id" value="<?php echo $userid; ?>">
                             <input type="hidden" name="mob_no" value="<?php echo  $mob_no; ?>">
                             <input type="hidden" name="email" value="<?php echo  $user_email; ?>">
