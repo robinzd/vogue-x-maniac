@@ -300,6 +300,8 @@ include("./conn.php");
 
                                 </div>
 
+                                <p id="offer">Within Tamilnadu Shipping Charges Free</p>
+
                                 <div class="cart mt-4 align-items-center">
                                     <button type="submit" class="btn-success mr-2 px-4" value="cart" formaction="cart.php">Add to cart</button>
                                     <button type="submit" class="btn-success mr-2 px-4" value="address" formaction="address1.php">Buy Now</button>
