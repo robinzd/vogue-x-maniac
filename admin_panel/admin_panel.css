@@ -383,8 +383,11 @@ text-decoration: none;
   margin-top: 100px;
 }
 
+#text{
+  color:black;
+}
+
 .footer.bg-light.text-center.text-lg-start.d-none.d-lg-block {
- margin-top: 100px !important;
   left: 0;
    bottom: 0;
   width: 100%;
