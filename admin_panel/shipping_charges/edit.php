@@ -15,7 +15,7 @@ if (isset($_POST['submit'])) {
 
 	if ($query) {
 		echo "<script>alert('You have successfully update the shipping details');</script>";
-		echo "<script type='text/javascript'> document.location ='product_details.php'; </script>";
+		echo "<script type='text/javascript'> document.location ='shipping_details.php'; </script>";
 	} else {
 		echo "<script>alert('Something Went Wrong. Please try again');</script>";
 	}
