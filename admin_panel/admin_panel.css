@@ -379,6 +379,10 @@ color: black;
 text-decoration: none;
 }
 
+.text-center.p-3{
+  margin-top: 100px;
+}
+
 .footer.bg-light.text-center.text-lg-start.d-none.d-lg-block {
  margin-top: 100px !important;
   left: 0;
