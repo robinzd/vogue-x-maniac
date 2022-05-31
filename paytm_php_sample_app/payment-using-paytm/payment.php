@@ -24,6 +24,7 @@ $email = $_POST['email'];
 // define("callbackUrl", "https://<Merchant_Response_URL>");
 
 $orderId     = "$customer_id";
+echo $$orderId;
 $txnAmount     = "$transaction_amount";
 $custId     = "$customer_id";
 $mobileNo     = "$mobile_number";
