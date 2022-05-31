@@ -6,7 +6,7 @@ $transaction_amount = $_POST['txn_no'];
 $customer_id = $_POST['cust_id'];
 $mobile_number = $_POST['mob_no'];
 $email = $_POST['email'];
-$order_id=$_POST['order_id'];
+$order_id = $_POST['order_id'];
 
 
 // define("merchantMid", "dZlzzF17647713571019");
@@ -28,10 +28,10 @@ $txnAmount     = "$transaction_amount";
 $custId     = "$customer_id";
 $mobileNo     = "$mobile_number";
 $email         = "$email";
-
+$orderid        = "$order_id";
 
 $paytmParams = array();
-
+$paytmParams["ORDERID"] = $orderid;
 $paytmParams["ORDER_ID"] = $orderId;
 $paytmParams["CUST_ID"] = $custId;
 $paytmParams["MOBILE_NO"] = $mobileNo;
@@ -74,7 +74,7 @@ $transactionURL = PAYTM_TXN_URL;
 
 
 
-    
+
     <div class="form-body">
         <div class="row">
             <div class="form-holder">
@@ -85,7 +85,7 @@ $transactionURL = PAYTM_TXN_URL;
                         </center>
                         <h1 class="text-center"><img src="./checking_details.png"></h1>
                         <form class="requires-validation" novalidatemethod='post' action='<?php echo $transactionURL; ?>' name='f1'>
-                            <input type="hidden" name="order_id" value="<?php echo $order_id; ?>">
+                            <input type="hidden" name="ORDERID" value="<?php echo $order_id; ?>">
                             <input type="hidden" name="ORDER_ID" value="<?php echo $orderId; ?>">
                             <input type="hidden" name="CUST_ID" value="<?php echo $custId; ?>" readonly>
                             <input type="hidden" name="MOBILE_NO" value="<?php echo $mobileNo; ?>" readonly>
@@ -104,11 +104,11 @@ $transactionURL = PAYTM_TXN_URL;
             </div>
         </div>
     </div>
-  
 
 
 
-    
+
+
 
 
 
