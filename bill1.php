@@ -768,9 +768,8 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                         <span>vogue-x-maniac Team</span>
 
                         <form method="Post" action="./paytm_php_sample_app/payment-using-paytm/payment.php">
-                            <input type="hidden" name="order_id" value="<?php echo $order_id; ?>">
                             <input type="hidden" name="txn_no" value="<?php echo  $totalamount; ?>">
-                            <input type="hidden" name="cust_id" value="<?php echo $userid; ?>">
+                            <input type="hidden" name="cust_id" value="<?php echo $order_id; ?>">
                             <input type="hidden" name="mob_no" value="<?php echo  $mob_no; ?>">
                             <input type="hidden" name="email" value="<?php echo  $user_email; ?>">
 
