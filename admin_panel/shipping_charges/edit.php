@@ -4,25 +4,17 @@ include('dbconnection.php');
 if (isset($_POST['submit'])) {
 	$eid = $_GET['editid'];
 	//Getting Post Values
-	$brandtitle = $_POST['brandtitle'];
-	$producttitle = $_POST['producttitle'];
-	$productprice = $_POST['price'];
-	$strikeoutprice = $_POST['strikeout'];
-	$productdescription = $_POST['description'];
-	$productsize = $_POST['size'];
-	$productfeatures = $_POST['features'];
-	$productcategory=$_POST['category'];
-	$productstatus=$_POST['status'];
-	$productowlslider=$_POST['owlslider'];
-	$relatedproduct=$_POST['related'];
+	$userstate = $_POST['state'];
+	$shippingfee = $_POST['charges'];
+	
 
 
 
 	//Query for data updation
-	$query = mysqli_query($conn, "update products_details set product_brand='$brandtitle',product_title='$producttitle',product_price='$productprice',product_strikeout_price='$strikeoutprice',product_description='$productdescription',product_size='$productsize',product_features='$productfeatures',product_category='$productcategory',product_status='$productstatus',product_owlslider='$productowlslider',related_product_owlslider='$relatedproduct' where ID='$eid'");
+	$query = mysqli_query($conn, "update products_details set user_state='$userstate',shipping_fee='$shippingfee' where ID='$eid'");
 
 	if ($query) {
-		echo "<script>alert('You have successfully update the product details');</script>";
+		echo "<script>alert('You have successfully update the shipping details');</script>";
 		echo "<script type='text/javascript'> document.location ='product_details.php'; </script>";
 	} else {
 		echo "<script>alert('Something Went Wrong. Please try again');</script>";
@@ -36,7 +28,7 @@ if (isset($_POST['submit'])) {
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
-	<title>Edit Product Details</title>
+	<title>Edit Shipping Details</title>
 	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -165,54 +157,20 @@ if (isset($_POST['submit'])) {
 		<form method="POST">
 			<?php
 			$eid = $_GET['editid'];
-			$ret = mysqli_query($conn, "select * from products_details where ID='$eid'");
+			$ret = mysqli_query($conn, "select * from shipping_charges where ID='$eid'");
 			while ($row = mysqli_fetch_array($ret)) {
 			?>
-				<h2>Edit Product Details</h2>
+				<h2>Edit Shipping Details</h2>
 
 				<div class="form-group">
-					<input type="text" class="form-control" name="brandtitle" value="<?php echo $row['product_brand']; ?>" required="true">
+					<input type="text" class="form-control" name="state" value="<?php echo $row['user_state']; ?>" required="true">
 				</div>
 
 				<div class="form-group">
-					<input type="text" class="form-control" name="producttitle" value="<?php echo $row['product_title']; ?>" required="true">
+					<input type="text" class="form-control" name="charges" value="<?php echo $row['shipping_fee']; ?>" required="true">
 				</div>
 
-				<div class="form-group">
-					<input type="text" class="form-control" name="price" value="<?php echo $row['product_price']; ?>" required="true">
-				</div>
-
-				<div class="form-group">
-					<input type="text" class="form-control" name="strikeout" value="<?php echo $row['product_strikeout_price']; ?>" required="true">
-				</div>
-
-				<div class="form-group">
-					<input type="text" class="form-control" name="description" value="<?php echo $row['product_description']; ?>" required="true">
-				</div>
-
-					<div class="form-group">
-						<input type="text" class="form-control" name="size" value="<?php echo $row['product_size']; ?>">
-					</div>
-
-					<div class="form-group">
-						<input type="text" class="form-control" name="features" value="<?php echo $row['product_features']; ?>" required="true">
-					</div>
-
-					<div class="form-group">
-						<input type="text" class="form-control" name="category" value="<?php echo $row['product_category']; ?>" required="true">
-					</div>
-
-					<div class="form-group">
-						<input type="text" class="form-control" name="status" value="<?php echo $row['product_status']; ?>" required="true">
-					</div>
-
-					<div class="form-group">
-						<input type="text" class="form-control" name="owlslider" value="<?php echo $row['product_owlslider']; ?>" required="true">
-					</div>
-
-					<div class="form-group">
-						<input type="text" class="form-control" name="related" value="<?php echo $row['related_product_owlslider']; ?>" required="true">
-					</div>
+				
 
 				<?php
 			} ?>
@@ -220,7 +178,7 @@ if (isset($_POST['submit'])) {
 					<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
 				</div>
 
-				<div class="text-center">Back To Home <a href="./product_details.php"><i class="fa fa-home"></i></a></div>
+				<div class="text-center">Back To Home <a href="./shipping_details.php"><i class="fa fa-home"></i></a></div>
 
 		</form>
 

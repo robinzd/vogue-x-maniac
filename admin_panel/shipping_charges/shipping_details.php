@@ -4,9 +4,9 @@ include('dbconnection.php');
 //Code for deletion
 if (isset($_GET['delid'])) {
     $rid = intval($_GET['delid']);
-    $sql = mysqli_query($conn, "delete from products_details where ID=$rid");
-    echo "<script>alert('Product Details deleted');</script>";
-    echo "<script>window.location.href = 'product_details.php'</script>";
+    $sql = mysqli_query($conn, "delete from shipping_charges where ID=$rid");
+    echo "<script>alert('shipping Details deleted');</script>";
+    echo "<script>window.location.href = 'shipping_details.php'</script>";
 }
 
 ?>
@@ -19,7 +19,7 @@ if (isset($_GET['delid'])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Product Details Management</title>
+    <title>Shipping Details Management</title>
     <link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -290,7 +290,7 @@ if (isset($_GET['delid'])) {
                 <div class="table-title">
                     <div class="row">
                         <div class="col-sm-5">
-                            <h2>Product Details Management</h2>
+                            <h2>Shipping Details Management</h2>
                         </div>
 
                         <div class="col-sm-7" align="right">
@@ -303,24 +303,14 @@ if (isset($_GET['delid'])) {
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Product ID</th>
-                            <th>Brand Title</th>
-                            <th>Product Title</th>
-                            <th>Product Price</th>
-                            <th>Strikeout Price</th>
-                            <th>Product Description</th>
-                            <th>Product Size</th>
-                            <th>Product Features</th>
-                            <th>Product Category</th>
-                            <th>Product Status</th>
-                            <th>Latest Product</th>
-                            <th>Related Product</th>
+                            <th>User State</th>
+                            <th>Shipping Charges</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <?php
-                        $ret = mysqli_query($conn, "select * from products_details");
+                        $ret = mysqli_query($conn, "select * from shipping_charges");
                         $cnt = 1;
                         $row = mysqli_num_rows($ret);
                         if ($row > 0) {
@@ -330,20 +320,9 @@ if (isset($_GET['delid'])) {
                                 <!--Fetch the Records -->
                                 <tr>
                                     <td><?php echo $cnt; ?></td>
-                                    <td><?php echo $row['ID']; ?></td>
-                                    <td><?php echo $row['product_brand']; ?></td>
-                                    <td><?php echo $row['product_title']; ?></td>
-                                    <td><?php echo $row['product_price']; ?></td>
-                                    <td><?php echo $row['product_strikeout_price']; ?></td>
-                                    <td><?php echo $row['product_description']; ?></td>
-                                    <td><?php echo $row['product_size']; ?></td>
-                                    <td><?php echo $row['product_features']; ?></td>
-                                    <td><?php echo $row['product_category']; ?></td>
-                                    <td><?php echo $row['product_status']; ?></td>
-                                    <td><?php echo $row['product_owlslider']; ?></td>
-                                    <td><?php echo $row['related_product_owlslider']; ?></td>
-
-                                    <td>
+                                    <td><?php echo $row['user_state']; ?></td>
+                                    <td><?php echo $row['shipping_fee']; ?></td>
+                                <td>
                                         <a href="read.php?viewid=<?php echo htmlentities($row['ID']); ?>" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                                         <a href="edit.php?editid=<?php echo htmlentities($row['ID']); ?>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
                                         <a href="product_details.php?delid=<?php echo ($row['ID']); ?>" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to Delete ?');"><i class="material-icons">&#xE872;</i></a>

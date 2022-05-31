@@ -7,7 +7,7 @@ include('dbconnection.php');
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Read Product Details</title>
+    <title>Read Shipping Details</title>
     <link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -251,7 +251,7 @@ include('dbconnection.php');
                         </div>
                         <?php
                         $vid = $_GET['viewid'];
-                        $ret = mysqli_query($conn, "select * from products_details where ID =$vid");
+                        $ret = mysqli_query($conn, "select * from shipping_charges where ID =$vid");
                         $cnt = 1;
                         while ($row = mysqli_fetch_array($ret)) {
 
@@ -268,67 +268,18 @@ include('dbconnection.php');
                     <tbody>
 
                         <tr>
-                            <th>Product ID</th>
-                            <td><?php echo $row['ID']; ?></td>
+                            <th>User State</th>
+                            <td><?php echo $row['user_state']; ?></td>
                         </tr>
 
 
                         <tr>
-                            <th>Brand Title</th>
-                            <td><?php echo $row['product_brand']; ?></td>
+                            <th>Shipping Charges</th>
+                            <td><?php echo $row['shipping_fee']; ?></td>
                         </tr>
 
 
-                        <tr>
-                            <th>Product Title</th>
-                            <td><?php echo $row['product_title']; ?></td>
-                        </tr>
-
-                        <tr>
-                            <th>Product Price</th>
-                            <td><?php echo $row['product_price']; ?></td>
-                        </tr>
-
-                        <tr>
-                            <th>Strikeout Price</th>
-                            <td><?php echo $row['product_strikeout_price']; ?></td>
-                        </tr>
-
-                        <tr>
-                            <th>Product Description</th>
-                            <td><?php echo $row['product_description']; ?></td>
-                        </tr>
-
-                        <tr>
-                            <th>Product Size</th>
-                            <td><?php echo $row['product_size']; ?></td>
-                        </tr>
-
-                        <tr>
-                            <th>Product Features</th>
-                            <td><?php echo $row['product_features']; ?></td>
-                        </tr>
-
-                        <tr>
-                            <th>Product Category</th>
-                            <td><?php echo $row['product_category']; ?></td>
-                        </tr>
-
-                        <tr>
-                            <th>Product Status</th>
-                            <td><?php echo $row['product_status']; ?></td>
-                        </tr>
-
-                        <tr>
-                            <th>Latest Product</th>
-                            <td><?php echo $row['product_owlslider']; ?></td>
-                        </tr>
-
-                        <tr>
-                            <th>Related Product</th>
-                            <td><?php echo $row['related_product_owlslider']; ?></td>
-                        </tr>
-
+                        
 
                     <?php
                             $cnt = $cnt + 1;
@@ -339,7 +290,7 @@ include('dbconnection.php');
 
             </div>
         </div>
-        <div class="text-center">Back To Home<a href="../products_details/product_details.php"><i class="fa fa-home"></i></a></div>
+        <div class="text-center">Back To Home<a href="../products_details/shipping_details.php"><i class="fa fa-home"></i></a></div>
     </div>
     <footer class="bg-light text-center text-lg-start">
         <!-- Copyright -->
