@@ -23,8 +23,7 @@ $email = $_POST['email'];
 // This is the staging value. Production value is available in your dashboard
 // define("callbackUrl", "https://<Merchant_Response_URL>");
 
-$orderId     = "$customer_id";
-echo $$orderId;
+$orderId     = time();
 $txnAmount     = "$transaction_amount";
 $custId     = "$customer_id";
 $mobileNo     = "$mobile_number";
