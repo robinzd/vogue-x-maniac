@@ -290,7 +290,7 @@ include('dbconnection.php');
 
             </div>
         </div>
-        <div class="text-center">Back To Home<a href="../products_details/shipping_details.php"><i class="fa fa-home"></i></a></div>
+        <div class="text-center">Back To Home<a href="../shipping_charges/shipping_details.php"><i class="fa fa-home"></i></a></div>
     </div>
     <footer class="bg-light text-center text-lg-start">
         <!-- Copyright -->
