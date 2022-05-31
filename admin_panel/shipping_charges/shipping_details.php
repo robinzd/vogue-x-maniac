@@ -115,6 +115,7 @@ if (isset($_GET['delid'])) {
         table.table tr th,
         table.table tr td {
             border-color: #e9e9e9;
+            text-align:center;
         }
 
         table.table th i {
