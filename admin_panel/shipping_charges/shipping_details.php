@@ -29,10 +29,8 @@ if (isset($_GET['delid'])) {
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
         body {
-            color: black;
+            color:black;
             background: #f5f5f5;
             font-family: 'Roboto', sans-serif;
         }
@@ -42,7 +40,7 @@ if (isset($_GET['delid'])) {
         }
 
         .table-wrapper {
-            min-width: 1500px;
+            min-width: 1000px;
             background: #fff;
             padding: 20px;
             box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
@@ -58,7 +56,6 @@ if (isset($_GET['delid'])) {
         .table-title h2 {
             margin: 5px 0 0;
             font-size: 24px;
-            font-family: 'Roboto', sans-serif;
         }
 
         .table-title select {
@@ -234,8 +231,6 @@ if (isset($_GET['delid'])) {
 
         .text {
             margin-left: 10px;
-            color: black;
-            font-family: 'Roboto', sans-serif;
         }
 
         .navbar {
@@ -243,22 +238,22 @@ if (isset($_GET['delid'])) {
         }
 
         footer.bg-light.text-center.text-lg-start {
-            position: sticky;
+            position:sticky;
             left: 0;
             bottom: 0;
             width: 100%;
-
-
+         
         }
 
-        .text-center.p-3 {
-            color: black;
+        .text-center.p-3{
+            color:black;
         }
 
-        a.text1 {
-            color: black;
-            text-decoration: none;
+        a.text1{
+       color: black;
+       text-decoration: none;
         }
+
     </style>
 </head>
 
