@@ -29,124 +29,237 @@ if (isset($_GET['delid'])) {
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <style>
-		body {
-			color: #fff;
-			background: #63738a;
-			font-family: 'Roboto', sans-serif;
-		}
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-		.form-control {
-			height: 40px;
-			box-shadow: none;
-			color: #969fa4;
-		}
+        body {
+            color: black;
+            background: #f5f5f5;
+            font-family: 'Roboto', sans-serif;
+        }
 
-		.form-control:focus {
-			border-color: #5cb85c;
-		}
+        .table-responsive {
+            margin: 30px 0;
+        }
 
-		.form-control,
-		.btn {
-			border-radius: 3px;
-		}
+        .table-wrapper {
+            min-width: 1500px;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+        }
 
-		.signup-form {
-			width: 450px;
-			margin: 0 auto;
-			padding: 30px 0;
-			font-size: 15px;
-		}
+        .table-title {
+            font-size: 15px;
+            padding-bottom: 10px;
+            margin: 0 0 10px;
+            min-height: 45px;
+        }
 
-		.signup-form h2 {
-			color: #636363;
-			margin: 0 0 15px;
-			position: relative;
-			text-align: center;
-		}
+        .table-title h2 {
+            margin: 5px 0 0;
+            font-size: 24px;
+            font-family: 'Roboto', sans-serif;
+        }
 
-		.signup-form h2:before,
-		.signup-form h2:after {
-			content: "";
-			height: 2px;
-			width: 7%;
-			background: #d4d4d4;
-			position: absolute;
-			top: 50%;
-			z-index: 2;
-		}
+        .table-title select {
+            border-color: #ddd;
+            border-width: 0 0 1px 0;
+            padding: 3px 10px 3px 5px;
+            margin: 0 5px;
+        }
 
-		.signup-form h2:before {
-			left: 0;
-		}
+        .table-title .show-entries {
+            margin-top: 7px;
+        }
 
-		.signup-form h2:after {
-			right: 0;
-		}
+        .search-box {
+            position: relative;
+            float: right;
+        }
 
-		.signup-form .hint-text {
-			color: #999;
-			margin-bottom: 30px;
-			text-align: center;
-		}
+        .search-box .input-group {
+            min-width: 200px;
+            position: absolute;
+            right: 0;
+        }
 
-		.signup-form form {
-			color: #999;
-			border-radius: 3px;
-			margin-bottom: 15px;
-			background: #f2f3f7;
-			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-			padding: 30px;
-		}
+        .search-box .input-group-addon,
+        .search-box input {
+            border-color: #ddd;
+            border-radius: 0;
+        }
 
-		.signup-form .form-group {
-			margin-bottom: 20px;
-		}
+        .search-box .input-group-addon {
+            border: none;
+            border: none;
+            background: transparent;
+            position: absolute;
+            z-index: 9;
+        }
 
-		.signup-form input[type="checkbox"] {
-			margin-top: 3px;
-		}
+        .search-box input {
+            height: 34px;
+            padding-left: 28px;
+            box-shadow: none !important;
+            border-width: 0 0 1px 0;
+        }
 
-		.signup-form .btn {
-			font-size: 16px;
-			font-weight: bold;
-			min-width: 140px;
-			outline: none !important;
-		}
+        .search-box input:focus {
+            border-color: #3FBAE4;
+        }
 
-		.signup-form .row div:first-child {
-			padding-right: 10px;
-		}
+        .search-box i {
+            color: #a0a5b1;
+            font-size: 19px;
+            position: relative;
+            top: 8px;
+        }
 
-		.signup-form .row div:last-child {
-			padding-left: 10px;
-		}
+        table.table tr th,
+        table.table tr td {
+            border-color: #e9e9e9;
+        }
 
-		.signup-form a {
-			color: #fff;
-			text-decoration: underline;
-		}
+        table.table th i {
+            font-size: 13px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
 
-		.signup-form a:hover {
-			text-decoration: none;
-		}
+        table.table td:last-child {
+            width: 130px;
+        }
 
-		.signup-form form a {
-			color: #5cb85c;
-			text-decoration: none;
-		}
+        table.table td a {
+            color: #a0a5b1;
+            display: inline-block;
+            margin: 0 5px;
+        }
 
-		.signup-form form a:hover {
-			text-decoration: underline;
-		}
+        table.table td a.view {
+            color: #03A9F4;
+        }
 
-		.fa-home {
-			color: black;
-		}
+        table.table td a.edit {
+            color: #FFC107;
+        }
 
-		.text-center {
-			color: grey;
-		}
-	</style>
+        table.table td a.delete {
+            color: #E34724;
+        }
+
+        table.table td i {
+            font-size: 19px;
+        }
+
+        .pagination {
+            float: right;
+            margin: 0 0 5px;
+        }
+
+        .pagination li a {
+            border: none;
+            font-size: 13px;
+            min-width: 30px;
+            min-height: 30px;
+            padding: 0 10px;
+            color: #999;
+            margin: 0 2px;
+            line-height: 30px;
+            border-radius: 30px !important;
+            text-align: center;
+        }
+
+        .pagination li a:hover {
+            color: #666;
+        }
+
+        .pagination li.active a {
+            background: #03A9F4;
+        }
+
+        .pagination li.active a:hover {
+            background: #0397d6;
+        }
+
+        .pagination li.disabled i {
+            color: #ccc;
+        }
+
+        .pagination li i {
+            font-size: 16px;
+            padding-top: 6px
+        }
+
+        .hint-text {
+            float: left;
+            margin-top: 10px;
+            font-size: 13px;
+        }
+
+        .btn-circle.btn-xl {
+            width: 50px;
+            height: 50px;
+            padding: 10px 10px;
+            border-radius: 35px;
+            font-size: 20px;
+            text-align: center;
+            box-shadow: 0px 4px 4px #888888;
+
+        }
+
+        .btn-circle.btn-xl:hover {
+            background-color: black;
+        }
+
+        i.material-icons {
+            margin-top: 2px;
+        }
+
+
+
+        .fa-home {
+            color: black;
+        }
+
+        .navbar-text {
+            display: inline-block;
+
+        }
+
+        .icon,
+        .text {
+            display: inline;
+        }
+
+        .text {
+            margin-left: 10px;
+            color: black;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .navbar {
+            background-color: #f5f5f5;
+        }
+
+        footer.bg-light.text-center.text-lg-start {
+            position: sticky;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+
+
+        }
+
+        .text-center.p-3 {
+            color: black;
+        }
+
+        a.text1 {
+            color: black;
+            text-decoration: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -207,7 +320,7 @@ if (isset($_GET['delid'])) {
                                     <td><?php echo $cnt; ?></td>
                                     <td><?php echo $row['user_state']; ?></td>
                                     <td><?php echo $row['shipping_fee']; ?></td>
-                                <td>
+                                    <td>
                                         <a href="read.php?viewid=<?php echo htmlentities($row['ID']); ?>" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                                         <a href="edit.php?editid=<?php echo htmlentities($row['ID']); ?>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
                                         <a href="product_details.php?delid=<?php echo ($row['ID']); ?>" class="delete" title="Delete" data-toggle="tooltip" onclick="return confirm('Do you really want to Delete ?');"><i class="material-icons">&#xE872;</i></a>
