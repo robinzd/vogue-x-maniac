@@ -14,20 +14,20 @@ function decrypt_e($crypt, $ky) {
 	return $data;
 }
 
-function generateSalt_e($length) {
-	$random = "";
-	srand((double) microtime() * 1000000);
+// function generateSalt_e($length) {
+// 	$random = "";
+// 	srand((double) microtime() * 1000000);
 
-	$data = "AbcDE123IJKLMN67QRSTUVWXYZ";
-	$data .= "aBCdefghijklmn123opq45rs67tuv89wxyz";
-	$data .= "0FGH45OP89";
+// 	$data = "AbcDE123IJKLMN67QRSTUVWXYZ";
+// 	$data .= "aBCdefghijklmn123opq45rs67tuv89wxyz";
+// 	$data .= "0FGH45OP89";
 
-	for ($i = 0; $i < $length; $i++) {
-		$random .= substr($data, (rand() % (strlen($data))), 1);
-	}
+// 	for ($i = 0; $i < $length; $i++) {
+// 		$random .= substr($data, (rand() % (strlen($data))), 1);
+// 	}
 
-	return $random;
-}
+// 	return $random;
+// }
 
 function checkString_e($value) {
 	if ($value == 'null')
@@ -35,27 +35,27 @@ function checkString_e($value) {
 	return $value;
 }
 
-function getChecksumFromArray($arrayList, $key, $sort=1) {
-	if ($sort != 0) {
-		ksort($arrayList);
-	}
-	$str = getArray2Str($arrayList);
-	$salt = generateSalt_e(4);
-	$finalString = $str . "|" . $salt;
-	$hash = hash("sha256", $finalString);
-	$hashString = $hash . $salt;
-	$checksum = encrypt_e($hashString, $key);
-	return $checksum;
-}
-function getChecksumFromString($str, $key) {
+// function getChecksumFromArray($arrayList, $key, $sort=1) {
+// 	if ($sort != 0) {
+// 		ksort($arrayList);
+// 	}
+// 	$str = getArray2Str($arrayList);
+// 	$salt = generateSalt_e(4);
+// 	$finalString = $str . "|" . $salt;
+// 	$hash = hash("sha256", $finalString);
+// 	$hashString = $hash . $salt;
+// 	$checksum = encrypt_e($hashString, $key);
+// 	return $checksum;
+// }
+// function getChecksumFromString($str, $key) {
 	
-	$salt = generateSalt_e(4);
-	$finalString = $str . "|" . $salt;
-	$hash = hash("sha256", $finalString);
-	$hashString = $hash . $salt;
-	$checksum = encrypt_e($hashString, $key);
-	return $checksum;
-}
+// 	$salt = generateSalt_e(4);
+// 	$finalString = $str . "|" . $salt;
+// 	$hash = hash("sha256", $finalString);
+// 	$hashString = $hash . $salt;
+// 	$checksum = encrypt_e($hashString, $key);
+// 	return $checksum;
+// }
 
 function verifychecksum_e($arrayList, $key, $checksumvalue) {
 	$arrayList = removeCheckSumParam($arrayList);
@@ -198,18 +198,18 @@ function callNewAPI($apiURL, $requestParamList) {
 	$responseParamList = json_decode($jsonResponse,true);
 	return $responseParamList;
 }
-function getRefundChecksumFromArray($arrayList, $key, $sort=1) {
-	if ($sort != 0) {
-		ksort($arrayList);
-	}
-	$str = getRefundArray2Str($arrayList);
-	$salt = generateSalt_e(4);
-	$finalString = $str . "|" . $salt;
-	$hash = hash("sha256", $finalString);
-	$hashString = $hash . $salt;
-	$checksum = encrypt_e($hashString, $key);
-	return $checksum;
-}
+// function getRefundChecksumFromArray($arrayList, $key, $sort=1) {
+// 	if ($sort != 0) {
+// 		ksort($arrayList);
+// 	}
+// 	$str = getRefundArray2Str($arrayList);
+// 	$salt = generateSalt_e(4);
+// 	$finalString = $str . "|" . $salt;
+// 	$hash = hash("sha256", $finalString);
+// 	$hashString = $hash . $salt;
+// 	$checksum = encrypt_e($hashString, $key);
+// 	return $checksum;
+// }
 function getRefundArray2Str($arrayList) {	
 	$findmepipe = '|';
 	$paramStr = "";
