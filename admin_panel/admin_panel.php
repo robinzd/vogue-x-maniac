@@ -284,7 +284,7 @@
 
           <!-- Copyright -->
 
-          <footer class="bg-light text-center text-lg-start d-none d-lg-block">
+          <footer class="bg-light text-center text-lg-start d-none d-lg-block" style="margin-top:100px;">
               <!-- Copyright -->
               <div class="text-center p-3" style="background-color:ghostwhite;">
                   © 2022 Copyright:
