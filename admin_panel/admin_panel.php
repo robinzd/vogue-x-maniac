@@ -259,9 +259,9 @@
                       </a>
                   </div>
                
-                  <footer class="bg-light text-center text-lg-start">
+                  <footer class="bg-light text-center text-lg-start" style="margin-top:10px;">
                       <!-- Copyright -->
-                      <div  id="text" style="background-color:ghostwhite;margin-top:10px;">
+                      <div  id="text" style="background-color:ghostwhite;">
                           © 2022 Copyright:
                           <a class="text1" href="../index.php">Vogue X Maniac</a>
                       </div>
