@@ -261,7 +261,7 @@
                
                   <footer class="bg-light text-center text-lg-start">
                       <!-- Copyright -->
-                      <div  id="text" style="background-color:ghostwhite;">
+                      <div  id="text" style="background-color:ghostwhite;margin-top:10px;">
                           © 2022 Copyright:
                           <a class="text1" href="../index.php">Vogue X Maniac</a>
                       </div>
