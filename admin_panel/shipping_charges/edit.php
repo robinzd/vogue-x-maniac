@@ -11,7 +11,7 @@ if (isset($_POST['submit'])) {
 
 
 	//Query for data updation
-	$query = mysqli_query($conn, "update products_details set user_state='$userstate',shipping_fee='$shippingfee' where ID='$eid'");
+	$query = mysqli_query($conn, "update shipping_charges set user_state='$userstate',shipping_fee='$shippingfee' where ID='$eid'");
 
 	if ($query) {
 		echo "<script>alert('You have successfully update the shipping details');</script>";
