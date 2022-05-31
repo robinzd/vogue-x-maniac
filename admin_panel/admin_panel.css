@@ -380,14 +380,15 @@ text-decoration: none;
 }
 
 .footer.bg-light.text-center.text-lg-start.d-none.d-lg-block {
+  margin-top: 100px;
   left: 0;
    bottom: 0;
   width: 100%;
   padding-left: 0px;
   padding-right: 0px;
-  margin-top: 100px;
-
+ 
 }
+
 
 
 .text-center.p-3{
