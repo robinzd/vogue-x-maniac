@@ -129,7 +129,7 @@ include("./conn.php");
 
 									$categoryname = $row_product_category['product_category'];
 
-									$category_replace = str_replace(" ", "-", $row_product_category['category_name']);
+									$category_replace = str_replace(" ", "-", $row_product_category['product_category']);
 
 
 
