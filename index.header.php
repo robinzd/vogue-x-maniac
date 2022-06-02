@@ -79,8 +79,7 @@ while ($row_name = mysqli_fetch_array($run_name)) {
 					</div>
 				</div>
 				<div class="col-md-4 d-flex">
-					<h1>hello,<?php echo $user_name;?></h1>
-					<div class="social-media">
+				   <div class="social-media">
 						<p class="mb-0 d-flex">
 							<a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
 
