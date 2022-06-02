@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 					$_SESSION['user_id'] = $user_data['user_id'];
 
-					header("location:../index1.php");
+					header("location:../index.php");
 					die;
 				}
 			}
