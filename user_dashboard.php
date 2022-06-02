@@ -79,28 +79,7 @@
                                     <div class="status">Status : Delivered</div>
                                     <div class="btn btn-primary text-uppercase">order info</div>
                                 </div>
-                                <div class="progressbar-track">
-                                    <ul class="progressbar">
-                                        <li id="step-1" class="text-muted green">
-                                            <span class="fas fa-gift"></span>
-                                        </li>
-                                        <li id="step-2" class="text-muted green">
-                                            <span class="fas fa-check"></span>
-                                        </li>
-                                        <li id="step-3" class="text-muted green">
-                                            <span class="fas fa-box"></span>
-                                        </li>
-                                        <li id="step-4" class="text-muted green">
-                                            <span class="fas fa-truck"></span>
-                                        </li>
-                                        <li id="step-5" class="text-muted green">
-                                            <span class="fas fa-box-open"></span>
-                                        </li>
-                                    </ul>
-                                    <div id="tracker"></div>
-                                </div>
                             </div>
-                        </div>
                     </div>
                     <div class="order my-3 bg-light">
                         <div class="row">
@@ -120,32 +99,6 @@
                                         <span class="fas fa-star"></span>
                                         <span class="far fa-star"></span>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="d-sm-flex align-items-sm-start justify-content-sm-between">
-                                    <div class="status">Status : Delivered</div>
-                                    <div class="btn btn-primary text-uppercase">order info</div>
-                                </div>
-                                <div class="progressbar-track">
-                                    <ul class="progressbar">
-                                        <li id="step-1" class="text-muted green">
-                                            <span class="fas fa-gift"></span>
-                                        </li>
-                                        <li id="step-2" class="text-muted">
-                                            <span class="fas fa-check"></span>
-                                        </li>
-                                        <li id="step-3" class="text-muted">
-                                            <span class="fas fa-box"></span>
-                                        </li>
-                                        <li id="step-4" class="text-muted">
-                                            <span class="fas fa-truck"></span>
-                                        </li>
-                                        <li id="step-5" class="text-muted">
-                                            <span class="fas fa-box-open"></span>
-                                        </li>
-                                    </ul>
-                                    <div id="tracker"></div>
                                 </div>
                             </div>
                         </div>
