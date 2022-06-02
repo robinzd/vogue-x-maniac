@@ -127,7 +127,7 @@ include("./conn.php");
 								while ($row_product_category = mysqli_fetch_array($run_product_category)) {
 
 
-									$categoryname = $row_product_category['category_name'];
+									$categoryname = $row_product_category['product_category'];
 
 									$category_replace = str_replace(" ", "-", $row_product_category['category_name']);
 
