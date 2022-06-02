@@ -81,7 +81,7 @@
                                 <div class="d-flex flex-column justify-content-between order-summary">
                                     <div class="d-flex align-items-center">
                                         <div class="text-uppercase">Order #fur10001</div>
-                                        <div class="blue-label ms-auto text-uppercase">paid</div>
+                                        <div class="green-label ms-auto text-uppercase">paid</div>
                                     </div>
                                     <div class="fs-8">Products #03</div>
                                     <div class="fs-8">22 August, 2020 | 12:05 PM</div>
@@ -109,7 +109,7 @@
                                 <div class="d-flex flex-column justify-content-between order-summary">
                                     <div class="d-flex align-items-center">
                                         <div class="text-uppercase">Order #fur10001</div>
-                                        <div class="green-label ms-auto text-uppercase">cod</div>
+                                        <div class="green-label ms-auto text-uppercase">paid</div>
                                     </div>
                                     <div class="fs-8">Products #03</div>
                                     <div class="fs-8">22 August, 2020 | 12:05 PM</div>
