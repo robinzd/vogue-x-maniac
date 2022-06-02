@@ -32,24 +32,23 @@
                     </div>
                     <div class="col-12 d-flex my-4 flex-wrap">
                         <div class="box me-4 my-1 bg-light">
-                            <img src="https://www.freepnglogos.com/uploads/box-png/cardboard-box-brown-vector-graphic-pixabay-2.png" alt="">
+                            <img src="./159-1595553_profile-blue-logo-png-removebg-preview.png" alt="">
                             <div class="d-flex align-items-center mt-2">
-                                <div class="tag">Orders placed</div>
-                                <div class="ms-auto number">10</div>
+                                <div class="tag">Your Profile</div>
                             </div>
                         </div>
-                        <div class="col-12 box me-4 my-1 bg-light">
+                        <div class="box me-4 my-1 bg-light">
                             <img src="https://www.freepnglogos.com/uploads/shopping-cart-png/shopping-cart-campus-recreation-university-nebraska-lincoln-30.png" alt="">
                             <div class="d-flex align-items-center mt-2">
                                 <div class="tag">Items in Cart</div>
                                 <div class="ms-auto number">10</div>
                             </div>
                         </div>
-                        <div class="col-12 box me-4 my-1 bg-light">
-                            <img src="https://www.freepnglogos.com/uploads/love-png/love-png-heart-symbol-wikipedia-11.png" alt="">
+                        <div class="box me-4 my-1 bg-light">
+                            <img src="./reset-password-icon-29.jpg" alt="">
                             <div class="d-flex align-items-center mt-2">
-                                <div class="tag">Wishlist</div>
-                                <div class="ms-auto number">10</div>
+                                <div class="tag">Password management</div>
+                                
                             </div>
                         </div>
                     </div>
