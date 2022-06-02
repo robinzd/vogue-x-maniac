@@ -87,7 +87,6 @@ include('dbconnection.php');
                         <thead>
                             <tr>
                                 <th>S.No</th>
-                                <th>User ID</th>
                                 <th>User Name</th>
                                 <th>User Email</th>
                                 <th>User Subject</th>
@@ -108,7 +107,6 @@ include('dbconnection.php');
                                     <!--Fetch the Records -->
                                     <tr>
                                         <td><?php echo $cnt; ?></td>
-                                        <td><?php echo $row['user_id']; ?></td>
                                         <td><?php echo $row['user_name']; ?></td>
                                         <td><?php echo $row['user_email']; ?></td>
                                         <td><?php echo $row['user_subject']; ?></td>
