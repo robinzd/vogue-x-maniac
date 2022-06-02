@@ -16,25 +16,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- link the external stylesheet -->
     <link rel="stylesheet" type="text/css" href="user_dashboard.css">
-    <link rel="stylesheet" type="text/css" href="./admin_panel/admin_panel.css">
+  
 </head>
 
 <body>
 
     <div class="container mt-4">
         <div class="row">
-            <div class="l-navbar" id="nav-bar">
-                <nav class="nav">
-                    <div> <a href="#" class="nav_logo"><i class="fa fa-user"></i><span class="nav_logo-name">Admin Panel</span> </a>
-                        <div class="nav_list"> <a href="./admin_panel.php" class="nav_link active"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a>
-                            <a href="./user_table.php" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users Table</span> </a>
-                            <a href="./user_message.php" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i> <span class="nav_name">Messages</span> </a>
-                            <!-- <a href="#" class="nav_link"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Bookmark</span> </a> <a href="#" class="nav_link">
-                              <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Files</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Stats</span> </a> -->
-                        </div>
-
-                </nav>
-            </div>
+            
             <div class="col-lg-9 my-lg-0 my-1">
                 <div id="main-content" class="bg-white border">
                     <div class="d-flex flex-column">
