@@ -54,7 +54,7 @@ $userid = $user_data['user_id'];
 
 			$user_firstname = $row_name['first_name'];
 			$user_lastname = $row_name['first_name'];
-		}
+		};
 
 		?>
 
@@ -159,7 +159,7 @@ $userid = $user_data['user_id'];
 							</div>
 						</li>
 						<li class="nav-item"><a href="shop.php" class="nav-link">Shop</a></li>
-						<li class="nav-item"><a href="./aboutus.php" class="nav-link">About Us</a></li>
+						<li class="nav-item"><a href="aboutus.php" class="nav-link">About Us</a></li>
 						<li class="nav-item"><a href="contactus.php" class="nav-link">Contact Us</a></li>
 					</ul>
 				</div>
