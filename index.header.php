@@ -60,13 +60,7 @@ include("./conn.php");
 				<div class="col-md-4 d-flex">
 					<div class="social-media">
 						<p class="mb-0 d-flex">
-							<a href="./login_form/login.php" class="d-flex align-items-center justify-content-center" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="fa fa-user"><i class="sr-only">Facebook</i></span>
-								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-									<li><a class="dropdown-item" href="#">Your Orders</a></li>
-									<li><a class="dropdown-item" href="#">Your Account</a></li>
-									<li><a class="dropdown-item" href="#">Sign Out</a></li>
-								</ul>
-							</a>
+							<a href="./login_form/login.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
 							<?php
 
 							$select_rows = mysqli_query($conn, "select * from products_cart");
