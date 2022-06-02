@@ -102,7 +102,7 @@ include("./conn.php");
 
 
 
-									echo "<a class='dropdown-item' href='shop.php?category_name=$category_replace'>$categoryname</a>
+									echo "<a class='dropdown-item' href='dummy_shop.php?category_name=$category_replace'>$categoryname</a>
 
 
 
@@ -123,9 +123,9 @@ include("./conn.php");
 
 							</div>
 						</li>
-						<li class="nav-item"><a href="shop.php" class="nav-link">Shop</a></li>
-						<li class="nav-item"><a href="aboutus.php" class="nav-link">About Us</a></li>
-						<li class="nav-item"><a href="contactus.php" class="nav-link">Contact Us</a></li>
+						<li class="nav-item"><a href="dummy_shop.php" class="nav-link">Shop</a></li>
+						<li class="nav-item"><a href="dummy_aboutus.php" class="nav-link">About Us</a></li>
+						<li class="nav-item"><a href="dummy_contactus.php" class="nav-link">Contact Us</a></li>
 					</ul>
 				</div>
 			</div>

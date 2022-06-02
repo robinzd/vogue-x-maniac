@@ -21,7 +21,7 @@
 <!-- navbar starts -->
   
 
-<?php include "./index.header.php";?> 
+<?php include "./dummy_index_header.php";?> 
 
 <!-- navbar  ends -->
 
