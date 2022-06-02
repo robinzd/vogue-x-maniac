@@ -60,25 +60,30 @@ include("./conn.php");
 				<div class="col-md-4 d-flex">
 					<div class="social-media">
 						<p class="mb-0 d-flex">
-							<a href="./login_form/login.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
-							<?php
+							<a href="./login_form/login.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user right hide-on-med-and-down dropdown-trigger" data-target="dropdown1"><i class="sr-only">Facebook</i></span></a>
+						<ul id="dropdown1" class="dropdown-content">
+							<li> <a href="table.php"> Service Details</a></li>
+							<li><a href="logout.php">Logout</a></li>
+						</ul>
 
-							$select_rows = mysqli_query($conn, "select * from products_cart");
+						<?php
+
+						$select_rows = mysqli_query($conn, "select * from products_cart");
 
 
-							$row_count = mysqli_num_rows($select_rows);
+						$row_count = mysqli_num_rows($select_rows);
 
-							if ($row_count > 0) {
+						if ($row_count > 0) {
 
-								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span><span id='product'>$row_count</span></a>";
-							} else {
-								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
-							}
+							echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span><span id='product'>$row_count</span></a>";
+						} else {
+							echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
+						}
 
-							?>
+						?>
 
-							<a href="./logout.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-sign-out"><i class="sr-only">Instagram</i></span></a>
-							<a href="./admin_panel/admin_panel.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+						<a href="./logout.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-sign-out"><i class="sr-only">Instagram</i></span></a>
+						<a href="./admin_panel/admin_panel.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
 						</p>
 					</div>
 				</div>
