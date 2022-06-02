@@ -1,14 +1,10 @@
 <?php
 
 
-session_start();
+
 
 include("./conn.php");
-include("./function.php");
 
-$user_data = check_login($conn);
-
-$userid = $user_data['user_id'];
 
 $get_name = "select * from users where user_id=$userid";
 
