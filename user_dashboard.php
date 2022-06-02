@@ -24,7 +24,7 @@
     <div class="container mt-4">
         <div class="row">
             
-            <div class="col-lg-9 my-lg-0 my-1">
+            <div class="col-lg-12 my-lg-0 my-1">
                 <div id="main-content" class="bg-white border">
                     <div class="d-flex flex-column">
                         <div class="h5">Hello Jhon,</div>
