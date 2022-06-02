@@ -43,7 +43,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
     <!-- navbar starts -->
 
-    <?php include "./index.header.php"; ?>
+    <?php include "./dummy_index_header.php"; ?>
 
     <!-- navbar  ends -->
 
@@ -56,21 +56,85 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
 
 
-    
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 col-md-3">
+
+
+
+                <!-- Filter -->
+                <form class="shop__filter">
+
+
+                    <!-- Checkboxes -->
+                    <div class="list-group" style="overflow-y: scroll;height: 400px;">
+                        <h3 class="headline">
+                            <span>Brands</span>
+                        </h3>
+                        <div>
+                            <?php
+
+                            $query = "SELECT DISTINCT(product_brand) FROM Products_details WHERE product_status = '1' ORDER BY ID DESC";
+                            $statement = $connect->prepare($query);
+                            $statement->execute();
+                            $result = $statement->fetchAll();
+                            foreach ($result as $row) {
+                            ?>
+                                <div class="form-check">
+                                    <label><input type="checkbox" class="form-check-input brand" id="brand-<?php echo $row['product_brand']; ?>" value="<?php echo $row['product_brand']; ?>"> <?php echo $row['product_brand']; ?></label>
+                                </div>
+                            <?php
+                            }
+
+                            ?>
+                        </div>
+                    </div>
+
+
+                    <!--product category -->
+
+                    <div class="list-group" style="overflow-y: scroll;height: 400px;">
+                        <h3 class="headline">
+                            <span>Categories</span>
+                        </h3>
+                        <?php
+
+                        $query = "
+                    SELECT DISTINCT(product_category) FROM products_details  WHERE  product_status = '1' ORDER BY product_category DESC
+                    ";
+                        $statement = $connect->prepare($query);
+                        $statement->execute();
+                        $result = $statement->fetchAll();
+                        foreach ($result as $row) {
+                            $repalce_category = str_replace(" ", "-", $row['product_category']);
+                        ?>
+                            <div class="form-check">
+                                <label><input type="checkbox" class="form-check-input category" id="category-<?php echo  $repalce_category; ?>" value="<?php echo $row['product_category']; ?>"> <?php echo $row['product_category']; ?></label>
+                            </div>
+                        <?php
+                        }
+
+                        ?>
+                    </div>
+
+
+
+                </form>
+            </div>
 
 
 
 
 
             <div class="col-sm-8 col-md-9" style="overflow-y: scroll;height: 1000px;">
-                <form action="shop.php">
+                <form action="dummy_shop.php">
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Sort by
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="shop.php?order=desc">High to Low</a></li>
-                            <li><a class="dropdown-item" href="shop.php?order=asc">Low to High</a></li>
+                            <li><a class="dropdown-item" href="dummy_shop.php?order=desc">High to Low</a></li>
+                            <li><a class="dropdown-item" href="dummy_shop.php?order=asc">Low to High</a></li>
                             <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                         </ul>
                     </div>
@@ -118,13 +182,13 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
                         echo "<div class='col-sm-6 col-md-4'>
                             <div class='card bg-white'>
-                            <a href='details.php?id=$product_id'><img class='card-img-top' src='./admin_panel/products_images/images/$details_image' alt='' style='width:100%'>
+                            <a href='dummy_details.php?id=$product_id'><img class='card-img-top' src='./admin_panel/products_images/images/$details_image' alt='' style='width:100%'>
         <div class='card-body'>
             <h5 class='card-title text-center'>$product_title</h5>
         <p class='card-text  text-center'><s>₹$product_strikeout_price</s> ₹$product_price</p>
         </div></a>
     </div>
-    </div>
+</div>
 
     
 
@@ -148,8 +212,8 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
 
 
-    </div> <!-- / .row -->
-</div>
+                </div> <!-- / .row -->
+            </div>
 
 
 
@@ -258,7 +322,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                             var category = get_filter('category');
 
                             $.ajax({
-                                url: "fetchdata.php",
+                                url: "dummy_fetchdata.php",
                                 method: "POST",
                                 data: {
                                     action: action,
