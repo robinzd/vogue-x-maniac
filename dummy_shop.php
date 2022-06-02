@@ -188,7 +188,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
         <p class='card-text  text-center'><s>₹$product_strikeout_price</s> ₹$product_price</p>
         </div></a>
     </div>
-    </div>
+</div>
 
     
 
