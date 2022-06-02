@@ -322,7 +322,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                             var category = get_filter('category');
 
                             $.ajax({
-                                url: "dummy_fetchdata.php",
+                                url: "dummy_data.php",
                                 method: "POST",
                                 data: {
                                     action: action,

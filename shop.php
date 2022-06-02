@@ -127,14 +127,14 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
 
             <div class="col-sm-8 col-md-9" style="overflow-y: scroll;height: 1000px;">
-                <form action="dummy_shop.php">
+                <form action="shop.php">
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                             Sort by
                         </button>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="dummy_shop.php?order=desc">High to Low</a></li>
-                            <li><a class="dropdown-item" href="dummy_shop.php?order=asc">Low to High</a></li>
+                            <li><a class="dropdown-item" href="shop.php?order=desc">High to Low</a></li>
+                            <li><a class="dropdown-item" href="shop.php?order=asc">Low to High</a></li>
                             <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                         </ul>
                     </div>
@@ -182,7 +182,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
                         echo "<div class='col-sm-6 col-md-4'>
                             <div class='card bg-white'>
-                            <a href='dummy_details.php?id=$product_id'><img class='card-img-top' src='./admin_panel/products_images/images/$details_image' alt='' style='width:100%'>
+                            <a href='details.php?id=$product_id'><img class='card-img-top' src='./admin_panel/products_images/images/$details_image' alt='' style='width:100%'>
         <div class='card-body'>
             <h5 class='card-title text-center'>$product_title</h5>
         <p class='card-text  text-center'><s>₹$product_strikeout_price</s> ₹$product_price</p>
@@ -322,7 +322,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                             var category = get_filter('category');
 
                             $.ajax({
-                                url: "dummy_fetchdata.php",
+                                url: "fetchdata.php",
                                 method: "POST",
                                 data: {
                                     action: action,
