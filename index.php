@@ -6,7 +6,7 @@ include("./conn.php");
 
 <?php
 
-// session_start();
+//  session_start();
 
 
 // include("./conn.php");
@@ -50,7 +50,7 @@ include("./conn.php");
 
     <?php 
 
-    include "./dummy_index_header.php"; 
+    include "./index.header.php"; 
     
     ?>
 
@@ -194,7 +194,7 @@ include("./conn.php");
 
                 echo " <div class='card' style='background-color: $brand_color ;'>
              <div class='img'>
-                 <a href='dummy_shop.php?brand_name=$brand_name'><img src='./admin_panel/brands/brands_images/$image_source' alt=''></a>
+                 <a href='shop.php?brand_name=$brand_name'><img src='./admin_panel/brands/brands_images/$image_source' alt=''></a>
              </div>
             <div class='content'>
                 <div class='title'>
@@ -250,7 +250,7 @@ include("./conn.php");
 
 
                 echo "<div class='gallery__column'>
-                        <a href='dummy_shop.php?category_name=$category_name' target='_blank' class='gallery__link'>
+                        <a href='shop.php?category_name=$category_name' target='_blank' class='gallery__link'>
                         <figure class='gallery__thumb'>
 <img src='./admin_panel/categories/categories_images/$category_image' alt='' class='gallery__image'>
 <figcaption class='gallery__caption'>$category_name1</figcaption>
@@ -381,7 +381,7 @@ include("./conn.php");
                 }
 
                 echo "<div class='card bg-white'>
-                <a href='dummy_details.php?id=$product_id'><img class='card-img-top' src='./admin_panel/products_images/images/$details_image' alt='' style='width:100%'>
+                <a href='details.php?id=$product_id'><img class='card-img-top' src='./admin_panel/products_images/images/$details_image' alt='' style='width:100%'>
                     <div class='card-body'>
                         <h5 class='card-title text-center'>$product_title</h5>
                         <p class='card-text  text-center'><s>₹$product_strikeout_price</s>₹$product_price</p>
