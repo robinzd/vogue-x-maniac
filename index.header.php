@@ -63,7 +63,7 @@ $userid = $user_data['user_id'];
 				<div class="col-md-8 order-md-last">
 					<div class="row">
 						<div class="col-md-6 text-center">
-							<a class="navbar-brand" href="./index.php"><img src="./header images/vogue x maniac png.png"></a>
+							<a class="navbar-brand" href="./index1.php"><img src="./header images/vogue x maniac png.png"></a>
 						</div>
 						<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
 							<form action="shop.php" method="Post" class="searchform order-lg-last">
