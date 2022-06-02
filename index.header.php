@@ -1,25 +1,6 @@
 <?php
 
-
-
-
 include("./conn.php");
-
-
-$get_name = "select * from users where user_id=$userid";
-
-$run_name = mysqli_query($conn, $get_name);
-
-
-
-while ($row_name = mysqli_fetch_array($run_name)) {
-
-
-	$user_name = $row_name['user_name'];
-}
-
-
-
 
 
 ?>
