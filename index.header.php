@@ -4,7 +4,7 @@ include("./conn.php");
 
 $userid = $user_data['user_id'];
 
-echo $userid;
+
 
 ?>
 
@@ -41,10 +41,28 @@ echo $userid;
 			</div>
 		</div>
 
+		<?php
+
+
+		$get_name = "select * from users where user_id=$userid";
+
+		$run_name = mysqli_query($conn, $get_name);
+
+		// echo "Check";
+
+		while ($row_name = mysqli_fetch_array($run_name)) {
+
+			$user_firstname = $row_name['first_name'];
+			$user_lastnamename = $row_name['first_name'];
+		}
+
+		?>
+
 		<div class="container-fluid px-md-5">
 			<div class="row justify-content-between">
 				<div class="col-md-8 order-md-last">
 					<div class="row">
+						<h1>Hello,<?php echo $user_firstname.' '.$lastnamename;?></h1>
 						<div class="col-md-6 text-center">
 							<a class="navbar-brand" href="./index.php"><img src="./header images/vogue x maniac png.png"></a>
 						</div>
@@ -59,7 +77,7 @@ echo $userid;
 					</div>
 				</div>
 				<div class="col-md-4 d-flex">
-				   <div class="social-media">
+					<div class="social-media">
 						<p class="mb-0 d-flex">
 							<a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
 
