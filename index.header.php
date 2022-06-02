@@ -60,25 +60,29 @@ include("./conn.php");
 				<div class="col-md-4 d-flex">
 					<div class="social-media">
 						<p class="mb-0 d-flex">
-							<a href="./login_form/login.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
+							<a href="./login_form/login.php" class="d-flex align-items-center justify-content-center" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"><span class="fa fa-user"><i class="sr-only">Facebook</i></span>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+									<li><a class="dropdown-item" href="#">Your Orders</a></li>
+									<li><a class="dropdown-item" href="#">Your Account</a></li>
+									<li><a class="dropdown-item" href="#">Sign Out</a></li>
+								</ul>
+							</a>
 							<?php
-							
-							$select_rows=mysqli_query($conn, "select * from products_cart");
-							
-							
-							$row_count=mysqli_num_rows($select_rows);
 
-							if($row_count > 0){
+							$select_rows = mysqli_query($conn, "select * from products_cart");
 
-							echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span><span id='product'>$row_count</span></a>";
-						
-						}
-						else {
-                                echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
+
+							$row_count = mysqli_num_rows($select_rows);
+
+							if ($row_count > 0) {
+
+								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span><span id='product'>$row_count</span></a>";
+							} else {
+								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
 							}
 
 							?>
-							
+
 							<a href="./logout.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-sign-out"><i class="sr-only">Instagram</i></span></a>
 							<a href="./admin_panel/admin_panel.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
 						</p>
@@ -112,7 +116,7 @@ include("./conn.php");
 
 									$categoryname = $row_product_category['category_name'];
 
-									$category_replace =str_replace(" ","-", $row_product_category['category_name']);
+									$category_replace = str_replace(" ", "-", $row_product_category['category_name']);
 
 
 
@@ -136,8 +140,8 @@ include("./conn.php");
 
 
 
-							
-								
+
+
 							</div>
 						</li>
 						<li class="nav-item"><a href="shop.php" class="nav-link">Shop</a></li>
