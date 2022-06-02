@@ -127,14 +127,14 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
 
             <div class="col-sm-8 col-md-9" style="overflow-y: scroll;height: 1000px;">
-                <form action="shop.php">
+                <form action="dummy_shop.php">
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         Sort by
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="shop.php?order=desc">High to Low</a></li>
-                        <li><a class="dropdown-item" href="shop.php?order=asc">Low to High</a></li>
+                        <li><a class="dropdown-item" href="dummy_shop.php?order=desc">High to Low</a></li>
+                        <li><a class="dropdown-item" href="dummy_shop.php?order=asc">Low to High</a></li>
                         <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                     </ul>
                 </div>
@@ -322,7 +322,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                             var category = get_filter('category');
 
                             $.ajax({
-                                url: "fetchdata.php",
+                                url: "dummy_fetchdata.php",
                                 method: "POST",
                                 data: {
                                     action: action,
