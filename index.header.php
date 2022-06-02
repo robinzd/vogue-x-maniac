@@ -5,7 +5,7 @@ include("./conn.php");
  session_start();
 
 
- include("./conn.php");
+include("./conn.php");
 include("./function.php");
 
 
