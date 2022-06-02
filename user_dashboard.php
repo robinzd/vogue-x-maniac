@@ -85,14 +85,6 @@
                                     </div>
                                     <div class="fs-8">Products #03</div>
                                     <div class="fs-8">22 August, 2020 | 12:05 PM</div>
-                                    <div class="rating d-flex align-items-center pt-1">
-                                        <img src="https://www.freepnglogos.com/uploads/like-png/like-png-hand-thumb-sign-vector-graphic-pixabay-39.png" alt=""><span class="px-2">Rating:</span>
-                                        <span class="fas fa-star"></span>
-                                        <span class="fas fa-star"></span>
-                                        <span class="fas fa-star"></span>
-                                        <span class="fas fa-star"></span>
-                                        <span class="far fa-star"></span>
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-12">
@@ -113,14 +105,6 @@
                                     </div>
                                     <div class="fs-8">Products #03</div>
                                     <div class="fs-8">22 August, 2020 | 12:05 PM</div>
-                                    <div class="rating d-flex align-items-center pt-1">
-                                        <img src="https://www.freepnglogos.com/uploads/like-png/like-png-hand-thumb-sign-vector-graphic-pixabay-39.png" alt=""><span class="px-2">Rating:</span>
-                                        <span class="fas fa-star"></span>
-                                        <span class="fas fa-star"></span>
-                                        <span class="fas fa-star"></span>
-                                        <span class="fas fa-star"></span>
-                                        <span class="far fa-star"></span>
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-12">
