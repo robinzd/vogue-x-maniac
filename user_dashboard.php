@@ -220,7 +220,7 @@
         </div>
         <!-- Copyright -->
     </footer>
-    <!-- end of the footer -->
+    <!-- end of the footer --><br>
 
 
 
