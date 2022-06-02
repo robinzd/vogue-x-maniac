@@ -1,7 +1,28 @@
 <?php
 
 
+session_start();
+
 include("./conn.php");
+include("./function.php");
+
+$user_data = check_login($conn);
+
+$userid = $user_data['user_id'];
+
+$get_name = "select * from users where user_id='$userid'";
+
+$run_name = mysqli_query($conn, $get_name);
+
+
+
+while ($row_name = mysqli_fetch_array($run_name)) {
+
+
+	$user_name = $row_name['user_name'];
+}
+
+
 
 
 
@@ -58,28 +79,29 @@ include("./conn.php");
 					</div>
 				</div>
 				<div class="col-md-4 d-flex">
+					<h1>hello,<?php echo $user_name;?></h1>
 					<div class="social-media">
 						<p class="mb-0 d-flex">
-							<a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center" ><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
+							<a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
 
-						<?php
+							<?php
 
-						$select_rows = mysqli_query($conn, "select * from products_cart");
+							$select_rows = mysqli_query($conn, "select * from products_cart");
 
 
-						$row_count = mysqli_num_rows($select_rows);
+							$row_count = mysqli_num_rows($select_rows);
 
-						if ($row_count > 0) {
+							if ($row_count > 0) {
 
-							echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span><span id='product'>$row_count</span></a>";
-						} else {
-							echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
-						}
+								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span><span id='product'>$row_count</span></a>";
+							} else {
+								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
+							}
 
-						?>
+							?>
 
-						<a href="./logout.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-sign-out"><i class="sr-only">Instagram</i></span></a>
-						<a href="./admin_panel/admin_panel.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+							<a href="./logout.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-sign-out"><i class="sr-only">Instagram</i></span></a>
+							<a href="./admin_panel/admin_panel.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
 						</p>
 					</div>
 				</div>
