@@ -104,7 +104,7 @@ $userid = $user_data['user_id'];
                             <div class="col-lg-12">
                                 <div class="d-sm-flex align-items-sm-start justify-content-sm-between">
                                     <div class="status">Status : Delivered</div>
-                                    <div class="btn btn-primary text-capitalize">order info</div>
+                                    <div class="btn text-capitalize">order info</div>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +124,7 @@ $userid = $user_data['user_id'];
                             <div class="col-lg-12">
                                 <div class="d-sm-flex align-items-sm-start justify-content-sm-between">
                                     <div class="status">Status : Delivered</div>
-                                    <div class="btn btn-primary text-capitalize">order info</div>
+                                    <div class="btn text-capitalize">order info</div>
                                 </div>
                             </div>
                         </div>

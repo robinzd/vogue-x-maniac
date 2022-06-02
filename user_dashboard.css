@@ -104,13 +104,15 @@
     font-weight: 600;
 }
 
-.order .btn.btn-primary {
+.order .btn {
     background-color:lightgreen;
     color: black;
     border: 1px solid #4e2296;
+    outline: lightgreen;
+    border-radius: 20px;
 }
 
-.order .btn.btn-primary:hover {
+.order .btn:hover {
     background-color:black;
     color: #fff;
 }
