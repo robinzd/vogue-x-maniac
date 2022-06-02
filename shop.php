@@ -4,12 +4,12 @@ include("./db_conn.php");
 
 include("./conn.php");
 
-$searchstring = isset($_POST['search']) ? $_POST['search'] : "";
+$searchstring = $_POST['search'];
 
 $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$searchstring%'";
 
 
-$ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
+$ordervalue = $_GET['order'];
 
 
 
