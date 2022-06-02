@@ -6,14 +6,14 @@ include("./conn.php");
 
 <?php
 
-// session_start();
+ session_start();
 
 
-// include("./conn.php");
-// include("./function.php");
+include("./conn.php");
+include("./function.php");
 
 
-// $user_data = check_login($conn);
+$user_data = check_login($conn);
 
 ?>
 
