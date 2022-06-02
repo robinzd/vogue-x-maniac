@@ -67,7 +67,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="text-uppercase">My recent orders</div>
+                    <div class="text-uppercase">My orders</div>
                     <div class="order my-3 bg-light">
                         <div class="row">
                             <div class="col-lg-12">
