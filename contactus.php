@@ -1,6 +1,9 @@
 
 <?php
 
+include("./conn.php");
+
+
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	// something was posted
 	$name = $_POST["name"];
