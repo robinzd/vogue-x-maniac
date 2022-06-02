@@ -4,6 +4,19 @@ include("./conn.php");
 
 $userid = $user_data['user_id'];
 
+$get_name = "select * from users where user_id=$userid";
+
+		$run_name = mysqli_query($conn, $get_name);
+
+	
+
+		while ($row_name = mysqli_fetch_array($run_name)) {
+
+			$user_firstname = $row_name['first_name'];
+			$user_lastname = $row_name['first_name'];
+		};
+
+
 
 
 ?>
@@ -40,23 +53,6 @@ $userid = $user_data['user_id'];
 				</div>
 			</div>
 		</div>
-
-		<?php
-
-
-		$get_name = "select * from users where user_id=$userid";
-
-		$run_name = mysqli_query($conn, $get_name);
-
-		// echo "Check";
-
-		while ($row_name = mysqli_fetch_array($run_name)) {
-
-			$user_firstname = $row_name['first_name'];
-			$user_lastname = $row_name['first_name'];
-		};
-
-		?>
 
 		<div class="container-fluid px-md-5">
 			<div class="row justify-content-between">
