@@ -135,7 +135,7 @@
             </div>
         </div>
 
-    </div>
+    </div><br>
 
 
     <!-- Footer -->
@@ -220,7 +220,7 @@
         </div>
         <!-- Copyright -->
     </footer>
-    <!-- end of the footer --><br>
+    <!-- end of the footer -->
 
 
 
