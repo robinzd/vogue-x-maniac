@@ -62,8 +62,8 @@ $userid = $user_data['user_id'];
 			<div class="row justify-content-between">
 				<div class="col-md-8 order-md-last">
 					<div class="row">
-						<h1>Hello,<?php echo $user_firstname.' '.$user_lastname;?></h1>
 						<div class="col-md-6 text-center">
+						<h6>Hello,<?php echo $user_firstname.' '.$user_lastname;?></h6>
 							<a class="navbar-brand" href="./index.php"><img src="./header images/vogue x maniac png.png"></a>
 						</div>
 						<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
