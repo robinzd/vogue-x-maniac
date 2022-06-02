@@ -45,6 +45,11 @@
 }
 
 
+.col-md-6.d-md-flex.justify-content-end.mb-md-0.mb-3{
+  margin-top: -10px;
+}
+
+
 
 #heading6 {
   margin-top: 8px;
