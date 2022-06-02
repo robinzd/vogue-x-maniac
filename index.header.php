@@ -60,7 +60,7 @@ include("./conn.php");
 				<div class="col-md-4 d-flex">
 					<div class="social-media">
 						<p class="mb-0 d-flex">
-							<a href="./login_form/login.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user right hide-on-med-and-down dropdown-trigger" data-target="dropdown1"><i class="sr-only">Facebook</i></span></a>
+							<a href="./login_form/login.php" class="d-flex align-items-center justify-content-center right hide-on-med-and-down dropdown-trigger" data-target="dropdown1"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
 						<ul id="dropdown1" class="dropdown-content">
 							<li> <a href="table.php"> Service Details</a></li>
 							<li><a href="logout.php">Logout</a></li>
@@ -158,7 +158,7 @@ include("./conn.php");
 	<script src="./js header/jquery.min.js"></script>
 	<script src="./js header/main.js"></script>
 	<script src="./js header/popper.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	
 
 </body>
 
