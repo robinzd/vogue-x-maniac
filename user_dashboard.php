@@ -98,7 +98,7 @@
                             <div class="col-lg-12">
                                 <div class="d-sm-flex align-items-sm-start justify-content-sm-between">
                                     <div class="status">Status : Delivered</div>
-                                    <div class="btn btn-primary text-uppercase">order info</div>
+                                    <div class="btn btn-primary text-capitalize">order info</div>
                                 </div>
                             </div>
                         </div>
@@ -126,7 +126,7 @@
                             <div class="col-lg-12">
                                 <div class="d-sm-flex align-items-sm-start justify-content-sm-between">
                                     <div class="status">Status : Delivered</div>
-                                    <div class="btn btn-primary text-uppercase">order info</div>
+                                    <div class="btn btn-primary text-capitalize">order info</div>
                                 </div>
                             </div>
                         </div>

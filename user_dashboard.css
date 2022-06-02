@@ -97,13 +97,13 @@
 }
 
 .order .btn.btn-primary {
-    background-color: #fff;
-    color: #4e2296;
+    background-color:lightgreen;
+    color: black;
     border: 1px solid #4e2296;
 }
 
 .order .btn.btn-primary:hover {
-    background-color: #4e2296;
+    background-color:black;
     color: #fff;
 }
 
