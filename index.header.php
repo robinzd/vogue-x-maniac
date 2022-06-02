@@ -68,7 +68,7 @@ while ($row_name = mysqli_fetch_array($run_name)) {
 				<div class="col-md-8 order-md-last">
 					<div class="row">
 						<div class="col-md-6 text-center">
-							<a class="navbar-brand" href="./index1.php"><img src="./header images/vogue x maniac png.png"></a>
+							<a class="navbar-brand" href="./index.php"><img src="./header images/vogue x maniac png.png"></a>
 						</div>
 						<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
 							<form action="shop.php" method="Post" class="searchform order-lg-last">
@@ -117,7 +117,7 @@ while ($row_name = mysqli_fetch_array($run_name)) {
 				</button>
 				<div class="collapse navbar-collapse" id="ftco-nav">
 					<ul class="navbar-nav m-auto">
-						<li class="nav-item"><a href="index1.php" class="nav-link">Home</a></li>
+						<li class="nav-item"><a href="index.php" class="nav-link">Home</a></li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown04">
