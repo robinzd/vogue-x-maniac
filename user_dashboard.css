@@ -27,6 +27,10 @@
     line-height: 50px;
 }
 
+.lightgreen-label.ms-auto.text-capitalize{
+   background-color: lightgreen;
+}
+
 #main-content .h5+div {
     font-size: 0.9rem;
 }
