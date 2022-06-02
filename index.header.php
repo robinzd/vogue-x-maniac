@@ -79,7 +79,7 @@ $userid = $user_data['user_id'];
 				    <div class="social-media">
 						<p class="mb-0 d-flex">
 						
-						<span>Hello,<?php echo $user_firstname; ?><a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
+						<span>Hello,<?php echo $user_firstname; ?></span><a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
 
 							<?php
 
