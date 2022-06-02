@@ -46,7 +46,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
     <?php 
 
     include "./index.header.php";
-    
+
      ?>
 
 
@@ -331,7 +331,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                             var category = get_filter('category');
 
                             $.ajax({
-                                url: "fetchdata.php",
+                                url: "dummy_fetchdata.php",
                                 method: "POST",
                                 data: {
                                     action: action,
