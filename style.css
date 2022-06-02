@@ -41,10 +41,15 @@
   background-color: ghostwhite;
 }
 
-h6 {
+#h6 {
   margin-top: 8px !important;
-  margin-left: -40px  !important;
+  margin-left: -40px !important;
   margin-right: 2px !important;
+}
+
+#heading6 {
+  margin-left: 20px !important;
+  margin-right: -30px !important;
 }
 
 
