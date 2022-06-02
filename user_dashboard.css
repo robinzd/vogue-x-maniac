@@ -107,7 +107,7 @@
 .order .btn {
     background-color:lightgreen;
     color: black;
-    border: 1px solid #4e2296;
+    border: 1px solid lightgreen;
     outline: lightgreen;
     border-radius: 20px;
 }
