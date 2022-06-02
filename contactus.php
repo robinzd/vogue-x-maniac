@@ -1,16 +1,6 @@
 
 <?php
 
-session_start();
-
-include("./conn.php");
-include("./function.php");
-
-$user_data = check_login($conn);
-
-$userid = $user_data['user_id'];
-
-
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	// something was posted
 	$name = $_POST["name"];
@@ -24,7 +14,7 @@ if (!empty($name) && !is_numeric($name) && !empty($email)&& !empty($subject) && 
  {
 		// save to database
 		
-		$query = "INSERT INTO `users_message`( `user_id`, `user_name`, `user_email`, `user_subject`, `user_message`) VALUES ('$userid','$name','$email','$subject','$message')";
+		$query = "INSERT INTO `users_message`(`user_name`, `user_email`, `user_subject`, `user_message`) VALUES ('$name','$email','$subject','$message')";
         
 		
 
