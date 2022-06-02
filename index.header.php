@@ -76,17 +76,9 @@ $userid = $user_data['user_id'];
 					</div>
 				</div>
 				<div class="col-md-4 d-flex">
-					<!--hidden only in xs -->
-					<h6 class="d-none d-sm-block" id="h6">Hello,<?php echo $user_firstname; ?></h6>
-                     <!-- hidden only in xs -->
-
-					 <!-- visible only in xs -->
-					<h6 class="d-block d-sm-none" id="heading6">Hello,<?php echo $user_firstname; ?></h6>
-					<!-- visible only in xs  -->
-				
-					<div class="social-media">
+				    <div class="social-media">
 						<p class="mb-0 d-flex">
-							<a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
+						<span>Hello,<?php echo $user_firstname; ?></span><a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
 
 							<?php
 
