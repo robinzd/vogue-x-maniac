@@ -1,15 +1,15 @@
 <?php
 
-include("./db_conn.php");
+// include("./db_conn.php");
 
-include("./conn.php");
+// include("./conn.php");
 
-$searchstring = $_POST['search'];
+// $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
 
-$searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$searchstring%'";
+// $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$searchstring%'";
 
 
-$ordervalue = $_GET['order'];
+// $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
 
 
@@ -212,8 +212,8 @@ $ordervalue = $_GET['order'];
 
 
 
-                </div> <!-- / .row -->
-            </div>
+    </div> <!-- / .row -->
+</div>
 
 
 
