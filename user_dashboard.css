@@ -16,6 +16,10 @@
     border-radius: 15px;
 }
 
+.order.my-3.bg-light{
+    background-color: lightgrey !important;
+}
+
 #main-content .h5,
 #main-content .text-uppercase {
     font-weight: 600;
