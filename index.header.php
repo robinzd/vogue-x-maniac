@@ -10,7 +10,7 @@ $user_data = check_login($conn);
 
 $userid = $user_data['user_id'];
 
-$get_name = "select * from users where user_id='$userid'";
+$get_name = "select * from users where user_id=$userid";
 
 $run_name = mysqli_query($conn, $get_name);
 
