@@ -1,7 +1,5 @@
 <?php
-
 include("./conn.php");
-
 ?>
 
 
