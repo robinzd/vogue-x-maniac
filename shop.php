@@ -1,8 +1,8 @@
 <?php
 
-// include("./db_conn.php");
+include("./db_conn.php");
 
-// include("./conn.php");
+include("./conn.php");
 
 // $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
 
