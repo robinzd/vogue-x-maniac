@@ -4,12 +4,12 @@ include("./db_conn.php");
 
 include("./conn.php");
 
-// $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
+$searchstring = isset($_POST['search']) ? $_POST['search'] : "";
 
-// $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$searchstring%'";
+$searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$searchstring%'";
 
 
-// $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
+$ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
 
 
@@ -56,71 +56,7 @@ include("./conn.php");
 
 
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-4 col-md-3">
-
-
-
-                <!-- Filter -->
-                <form class="shop__filter">
-
-
-                    <!-- Checkboxes -->
-                    <div class="list-group" style="overflow-y: scroll;height: 400px;">
-                        <h3 class="headline">
-                            <span>Brands</span>
-                        </h3>
-                        <div>
-                            <?php
-
-                            $query = "SELECT DISTINCT(product_brand) FROM Products_details WHERE product_status = '1' ORDER BY ID DESC";
-                            $statement = $connect->prepare($query);
-                            $statement->execute();
-                            $result = $statement->fetchAll();
-                            foreach ($result as $row) {
-                            ?>
-                                <div class="form-check">
-                                    <label><input type="checkbox" class="form-check-input brand" id="brand-<?php echo $row['product_brand']; ?>" value="<?php echo $row['product_brand']; ?>"> <?php echo $row['product_brand']; ?></label>
-                                </div>
-                            <?php
-                            }
-
-                            ?>
-                        </div>
-                    </div>
-
-
-                    <!--product category -->
-
-                    <div class="list-group" style="overflow-y: scroll;height: 400px;">
-                        <h3 class="headline">
-                            <span>Categories</span>
-                        </h3>
-                        <?php
-
-                        $query = "
-                    SELECT DISTINCT(product_category) FROM products_details  WHERE  product_status = '1' ORDER BY product_category DESC
-                    ";
-                        $statement = $connect->prepare($query);
-                        $statement->execute();
-                        $result = $statement->fetchAll();
-                        foreach ($result as $row) {
-                            $repalce_category = str_replace(" ", "-", $row['product_category']);
-                        ?>
-                            <div class="form-check">
-                                <label><input type="checkbox" class="form-check-input category" id="category-<?php echo  $repalce_category; ?>" value="<?php echo $row['product_category']; ?>"> <?php echo $row['product_category']; ?></label>
-                            </div>
-                        <?php
-                        }
-
-                        ?>
-                    </div>
-
-
-
-                </form>
-            </div>
+    
 
 
 
