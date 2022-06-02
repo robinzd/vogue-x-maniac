@@ -4,6 +4,9 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -45,13 +48,17 @@
   margin-top: 8px !important;
   margin-left: -40px !important;
   margin-right: 2px !important;
+  font-family:'Redressed', cursive !important;
 }
+
 
 #heading6 {
   margin-left: 20px !important;
   margin-right:-65px !important;
   margin-top: 10px !important;
+  font-family:'Redressed', cursive !important;
 }
+
 
 
 
