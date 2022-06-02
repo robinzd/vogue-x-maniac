@@ -50,7 +50,7 @@ include("./conn.php");
 
     <?php 
 
-    include "./dummy-index.header.php"; 
+    include "./dummy_index_header.php"; 
     
     ?>
 
