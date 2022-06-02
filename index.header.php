@@ -76,9 +76,9 @@ $userid = $user_data['user_id'];
 					</div>
 				</div>
 				<div class="col-md-4 d-flex">
-					<p class="mb-0 d-flex">
-					<h6 class="d-flex align-items-center justify-content-center">Hello,<?php echo $user_firstname; ?></h6>
-					</p>
+					
+					<h6>Hello,<?php echo $user_firstname; ?></h6>
+				
 					<div class="social-media">
 						<p class="mb-0 d-flex">
 							<a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
