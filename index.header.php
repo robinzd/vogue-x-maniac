@@ -63,7 +63,7 @@ $userid = $user_data['user_id'];
 				<div class="col-md-8 order-md-last">
 					<div class="row">
 						<div class="col-md-6 text-center">
-					<a class="navbar-brand" href="./index.php"><img src="./header images/vogue x maniac png.png"></a>
+							<a class="navbar-brand" href="./index.php"><img src="./header images/vogue x maniac png.png"></a>
 						</div>
 						<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
 							<form action="shop.php" method="Post" class="searchform order-lg-last">
@@ -76,7 +76,9 @@ $userid = $user_data['user_id'];
 					</div>
 				</div>
 				<div class="col-md-4 d-flex">
-				<h6>Hello,<?php echo $user_firstname;?></h6>
+					<p class="mb-0 d-flex">
+					<h6 class="d-flex align-items-center justify-content-center">Hello,<?php echo $user_firstname; ?></h6>
+					</p>
 					<div class="social-media">
 						<p class="mb-0 d-flex">
 							<a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
