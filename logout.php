@@ -7,7 +7,7 @@ if(isset($_SESSION['user_id']))
     unset($_SESSION['user_id']);
 }
 
-header("location:./dummy-index.php");
+header("location:./index.php");
 
 
 
