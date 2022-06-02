@@ -43,14 +43,23 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
     <!-- navbar starts -->
 
-    <?php include "./index.header.php"; ?>
+    <?php 
+
+    include "./index.header.php";
+    
+     ?>
+
 
     <!-- navbar  ends -->
 
     <!-- back to top starts -->
 
 
-    <?php include "./back_to_top.php"; ?>
+    <?php 
+
+    include "./back_to_top.php"; 
+
+    ?>
 
     <!--back to top ends -->
 
