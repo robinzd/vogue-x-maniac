@@ -56,7 +56,7 @@
                     <div class="text-uppercase">My recent orders</div>
                     <div class="order my-3 bg-light">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-12">
                                 <div class="d-flex flex-column justify-content-between order-summary">
                                     <div class="d-flex align-items-center">
                                         <div class="text-uppercase">Order #fur10001</div>
@@ -74,7 +74,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-lg-12">
                                 <div class="d-sm-flex align-items-sm-start justify-content-sm-between">
                                     <div class="status">Status : Delivered</div>
                                     <div class="btn btn-primary text-uppercase">order info</div>
@@ -104,7 +104,7 @@
                     </div>
                     <div class="order my-3 bg-light">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-12">
                                 <div class="d-flex flex-column justify-content-between order-summary">
                                     <div class="d-flex align-items-center">
                                         <div class="text-uppercase">Order #fur10001</div>
@@ -122,7 +122,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-8">
+                            <div class="col-lg-12">
                                 <div class="d-sm-flex align-items-sm-start justify-content-sm-between">
                                     <div class="status">Status : Delivered</div>
                                     <div class="btn btn-primary text-uppercase">order info</div>
