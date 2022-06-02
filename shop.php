@@ -35,7 +35,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
     <!-- link the external css sheet -->
     <link rel="stylesheet" type="text/css" href="shop.css">
     <!-- jquery -->
-    <script src="./js/jquery-1.10.2.min.js"></script>
+    <!-- <script src="./js/jquery-1.10.2.min.js"></script> -->
     <title>Shop</title>
 </head>
 
