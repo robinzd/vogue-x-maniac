@@ -2,6 +2,10 @@
 
 include("./conn.php");
 
+$userid = $user_data['user_id'];
+
+echo $userid;
+
 ?>
 
 
