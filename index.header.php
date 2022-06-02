@@ -118,7 +118,7 @@ include("./conn.php");
 								<?php
 
 
-								$get_product_category = "select category_name from product_category";
+								$get_product_category = "select product_category from products_details";
 
 								$run_product_category = mysqli_query($conn, $get_product_category);
 
