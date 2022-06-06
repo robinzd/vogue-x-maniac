@@ -20,7 +20,7 @@
 
 <body>
 
-    <div class="container emp-profile">
+    <div class="container emp-profile" align="center">
         <form method="post">
             <div class="row">
                 <div class="col-md-4">
