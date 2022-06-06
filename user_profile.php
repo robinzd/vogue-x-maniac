@@ -52,24 +52,7 @@
     
     <div class="card text-center">
         
-        <div class="py-4 p-2">
-            
-            <div>
-            <img src="https://i.imgur.com/EnANUqj.jpg" class="rounded" width="100">
-        </div>
-        <div class="mt-3 d-flex flex-row justify-content-center">
-            <h5>Matt Damon</h5>
-            <span class="dots"><i class="fa fa-check"></i></span>
-        </div>
-         
-        <span>Member since Nov 2018</span>
-        
-        <div class="mt-3">
-            <button class="btn btn-danger">Follow</button>
-            <button class="btn btn-outline-secondary"><i class="fa fa-users"></i> 451</button>
-        </div>
-            
-        </div>
+       
         
         <div>
             <ul class="list-unstyled list">
