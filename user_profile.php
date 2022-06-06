@@ -48,52 +48,62 @@
 
 
 
-    <div class="page-content page-container" id="page-content">
-        <div class="padding">
-            <div class="row container d-flex justify-content-center">
-                <div class="col-xl-6 col-md-12">
-                    <div class="card user-card-full">
-                        <div class="row m-l-0 m-r-0">
-                            <div class="col-sm-4 bg-c-lite-green user-profile">
-                                <div class="card-block text-center text-white">
-                                    <div class="m-b-25">
-                                        <img src="./header images/vogue x maniac png.png" class="img-radius" alt="User-Profile-Image">
-                                    </div>
-                                    <h6 class="f-w-600">Profile Settings</h6>
-                                </div>
-                            </div>
-                            <div class="col-sm-8">
-                                <div class="card-block">
-                                    <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Information</h6>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <p class="m-b-10 f-w-600">Email</p>
-                                            <h6 class="text-muted f-w-400">rntng@gmail.com</h6>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <p class="m-b-10 f-w-600">Phone</p>
-                                            <h6 class="text-muted f-w-400">98979989898</h6>
-                                        </div>
-                                    </div>
-                                    <h6 class="m-b-20 m-t-40 p-b-5 b-b-default f-w-600">Projects</h6>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <p class="m-b-10 f-w-600">Recent</p>
-                                            <h6 class="text-muted f-w-400">Sam Disuja</h6>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <p class="m-b-10 f-w-600">Most Viewed</p>
-                                            <h6 class="text-muted f-w-400">Dinoter husainm</h6>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container height-100 d-flex justify-content-center align-items-center">
+    
+    <div class="card text-center">
+        
+        <div class="py-4 p-2">
+            
+            <div>
+            <img src="https://i.imgur.com/EnANUqj.jpg" class="rounded" width="100">
         </div>
+        <div class="mt-3 d-flex flex-row justify-content-center">
+            <h5>Matt Damon</h5>
+            <span class="dots"><i class="fa fa-check"></i></span>
+        </div>
+         
+        <span>Member since Nov 2018</span>
+        
+        <div class="mt-3">
+            <button class="btn btn-danger">Follow</button>
+            <button class="btn btn-outline-secondary"><i class="fa fa-users"></i> 451</button>
+        </div>
+            
+        </div>
+        
+        <div>
+            <ul class="list-unstyled list">
+                <li>
+                    <span class="font-weight-bold">Post</span>
+                    <div>
+                        <span class="mr-1">5</span>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </li>
+                
+                <li>
+                    <span class="font-weight-bold">Comments</span>
+                    <div>
+                        <span class="mr-1">45</span>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </li>
+                
+                <li>
+                    <span class="font-weight-bold">Favorites</span>
+                    <div>
+                        <span class="mr-1">15</span>
+                        <i class="fa fa-angle-right"></i>
+                    </div>
+                </li>
+            </ul>
+         </div>   
+        
+
     </div>
+    
+    
+</div>
 
 
 
