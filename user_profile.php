@@ -19,86 +19,111 @@
 </head>
 
 <body>
-<div class="container d-flex justify-content-center align-items-center">
 
-<div class="card py-4">
 
-  <h5 class="font-weight-normal">Personal Details</h5>
-  
-   <div class="mt-3">
 
-    <div class="row">
+    <!-- navbar starts -->
 
-      <div class="col-md-6">
-        
-        <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required"> <span>First Name</span> </div>
 
-      </div>
+    <?php
 
-      <div class="col-md-6">
-        <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required"> <span>Last Name</span> </div>
+    include "./index.header.php";
 
-      </div>
-      
+    ?>
+
+    <!-- navbar  ends -->
+
+
+    <!-- back to top starts -->
+
+
+    <?php include "./back_to_top.php"; ?>
+
+    <!--back to top ends -->
+
+
+
+
+    <div class="container d-flex justify-content-center align-items-center">
+
+        <div class="card py-4">
+
+            <h5 class="font-weight-normal">Personal Details</h5>
+
+            <div class="mt-3">
+
+                <div class="row">
+
+                    <div class="col-md-6">
+
+                        <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required"> <span>First Name</span> </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required"> <span>Last Name</span> </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+
+
+                    <div class="col-md-12">
+
+                        <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required"> <span>Email Address</span> </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+
+                    <div class="col-md-12">
+
+                        <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required"> <span>Email Address</span> </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+
+                    <div class="col-md-12">
+
+                        <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required"> <span>Email Address</span> </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+
+                    <div class="col-md-12">
+
+                        <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required"> <span>Email Address</span> </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
 
     </div>
-
-    <div class="row">
-
-
-      <div class="col-md-12">
-
-        <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required"> <span>Email Address</span> </div>
-        
-      </div>
-      
-    </div>
-
-    <div class="row">
-
-
-<div class="col-md-12">
-
-  <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required"> <span>Email Address</span> </div>
-  
-</div>
-
-</div>
-
-<div class="row">
-
-
-<div class="col-md-12">
-
-  <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required"> <span>Email Address</span> </div>
-  
-</div>
-
-</div>
-
-<div class="row">
-
-
-<div class="col-md-12">
-
-  <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required"> <span>Email Address</span> </div>
-  
-</div>
-
-</div>
-    
-
-  </div>
-
-
-
-  
-
-
-  
-</div>
-
-</div>
 
 
 
