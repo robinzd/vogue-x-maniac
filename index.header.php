@@ -7,8 +7,9 @@ include("./conn.php");
 
 
 
+ $userid = $user_data['user_id'];
 
-// $userid = $user_data['user_id'];
+ echo $userid;
 
 // $get_name = "select * from users where user_id=$userid";
 
