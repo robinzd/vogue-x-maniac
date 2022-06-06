@@ -1,21 +1,27 @@
 <?php
 
+
 include("./conn.php");
 
- 
-// $userid = $user_data['user_id'];
-
-// $get_name = "select * from users where user_id=$userid";
-
-// $run_name = mysqli_query($conn, $get_name);
+include("./function.php");
 
 
 
-// while ($row_name = mysqli_fetch_array($run_name)) {
 
-// 	$user_firstname = $row_name['first_name'];
-// 	$user_lastname = $row_name['first_name'];
-// };
+
+$userid = $user_data['user_id'];
+
+$get_name = "select * from users where user_id=$userid";
+
+$run_name = mysqli_query($conn, $get_name);
+
+
+
+while ($row_name = mysqli_fetch_array($run_name)) {
+
+	$user_firstname = $row_name['first_name'];
+	$user_lastname = $row_name['first_name'];
+};
 
 
 
@@ -76,22 +82,45 @@ include("./conn.php");
 					<div class="social-media">
 						<p class="mb-0 d-flex">
 
-						<!-- <span id="heading6">Hello,<?php echo $user_firstname; ?></span> -->
-
-							<a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
+							<!-- <span id="heading6">Hello,<?php echo $user_firstname; ?></span> -->
 
 							<?php
 
-							$select_rows = mysqli_query($conn, "select * from products_cart");
+							session_start();
 
+							if ($user_data = check_login($conn)) {
 
-							$row_count = mysqli_num_rows($select_rows);
-
-							if ($row_count > 0) {
-
-								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span><span id='product'>$row_count</span></a>";
+								echo "<a href='./user_dashboard.php' class='d-flex align-items-center justify-content-center'><span class='fa fa-user'><i class='sr-only'>Facebook</i></span></a>";
 							} else {
-								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
+								echo "<a href='./login_form/login.php' class='d-flex align-items-center justify-content-center'><span class='fa fa-user'><i class='sr-only'>Facebook</i></span></a>";
+							}
+
+
+							?>
+
+							
+
+
+
+							<?php
+
+							session_start();
+
+							if ($user_data = check_login($conn)) {
+
+								$userid = $user_data['user_id'];
+
+								$select_rows = mysqli_query($conn, "select * from products_cart where user_id=$userid");
+
+
+								$row_count = mysqli_num_rows($select_rows);
+
+								if ($row_count > 0) {
+
+									echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span><span id='product'>$row_count</span></a>";
+								} else {
+									echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
+								}
 							}
 
 							?>
