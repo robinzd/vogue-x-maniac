@@ -39,3 +39,12 @@ body{
     background-color:#dc3545;
     color:#fff;
 }
+
+h1{
+    text-align: center;
+    margin-top: 20px; 
+}
+
+.container.height-100.d-flex.justify-content-center.align-items-center{
+    margin-top: -150px;
+}
