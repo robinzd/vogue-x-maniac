@@ -45,12 +45,12 @@
 
     <!--back to top ends -->
 
-
+      <h1>User Details</h1>
 
 
     <div class="container height-100 d-flex justify-content-center align-items-center">
 
-       <h1>User Details</h1>
+       
 
         <div class="card text-center">
 
