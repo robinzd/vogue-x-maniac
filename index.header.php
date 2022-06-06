@@ -3,7 +3,6 @@
 
 include("./conn.php");
 
-include("./function.php");
 
 
 
@@ -95,22 +94,22 @@ include("./function.php");
 							include("./function.php");
 
 
-							if ($user_data = check_login($conn)) {
+							$user_data = check_login($conn);
 
-								$userid = $user_data['user_id'];
+							$userid = $user_data['user_id'];
 
-								$select_rows = mysqli_query($conn, "select * from products_cart where user_id=$userid");
+							$select_rows = mysqli_query($conn, "select * from products_cart where user_id=$userid");
 
 
-								$row_count = mysqli_num_rows($select_rows);
+							$row_count = mysqli_num_rows($select_rows);
 
-								if ($row_count > 0) {
+							if ($row_count > 0) {
 
-									echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span><span id='product'>$row_count</span></a>";
-								} else {
-									echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
-								}
+								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span><span id='product'>$row_count</span></a>";
+							} else {
+								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
 							}
+
 
 							?>
 
