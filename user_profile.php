@@ -49,44 +49,46 @@
 
 
     <div class="container height-100 d-flex justify-content-center align-items-center">
-    
-    <div class="card text-center">
-        
-       
-        
-        <div>
-            <ul class="list-unstyled list">
-                <li>
-                    <span class="font-weight-bold">Post</span>
-                    <div>
-                        <span class="mr-1">Robin</span>
-                      
-                    </div>
-                </li>
-                
-                <li>
-                    <span class="font-weight-bold">Comments</span>
-                    <div>
-                        <span class="mr-1">45</span>
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                </li>
-                
-                <li>
-                    <span class="font-weight-bold">Favorites</span>
-                    <div>
-                        <span class="mr-1">15</span>
-                        <i class="fa fa-angle-right"></i>
-                    </div>
-                </li>
-            </ul>
-         </div>   
-        
+
+       <h1>User Details</h1>
+
+        <div class="card text-center">
+
+
+
+            <div>
+                <ul class="list-unstyled list">
+                    <li>
+                        <span class="font-weight-bold">Post</span>
+                        <div>
+                            <span class="mr-1">Robin</span>
+
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="font-weight-bold">Comments</span>
+                        <div>
+                            <span class="mr-1">45</span>
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                    </li>
+
+                    <li>
+                        <span class="font-weight-bold">Favorites</span>
+                        <div>
+                            <span class="mr-1">15</span>
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
 
     </div>
-    
-    
-</div>
 
 
 
