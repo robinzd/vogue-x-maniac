@@ -9,19 +9,19 @@ include("./function.php");
 
 
 
-$userid = $user_data['user_id'];
+// $userid = $user_data['user_id'];
 
-$get_name = "select * from users where user_id=$userid";
+// $get_name = "select * from users where user_id=$userid";
 
-$run_name = mysqli_query($conn, $get_name);
+// $run_name = mysqli_query($conn, $get_name);
 
 
 
-while ($row_name = mysqli_fetch_array($run_name)) {
+// while ($row_name = mysqli_fetch_array($run_name)) {
 
-	$user_firstname = $row_name['first_name'];
-	$user_lastname = $row_name['first_name'];
-};
+// 	$user_firstname = $row_name['first_name'];
+// 	$user_lastname = $row_name['first_name'];
+// };
 
 
 
@@ -84,27 +84,16 @@ while ($row_name = mysqli_fetch_array($run_name)) {
 
 							<!-- <span id="heading6">Hello,<?php echo $user_firstname; ?></span> -->
 
-							<?php
-
-							session_start();
-
-							if ($user_data = check_login($conn)) {
-
-								echo "<a href='./user_dashboard.php' class='d-flex align-items-center justify-content-center'><span class='fa fa-user'><i class='sr-only'>Facebook</i></span></a>";
-							} else {
-								echo "<a href='./login_form/login.php' class='d-flex align-items-center justify-content-center'><span class='fa fa-user'><i class='sr-only'>Facebook</i></span></a>";
-							}
-
-
-							?>
-
-							
-
-
+							<a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
 
 							<?php
 
 							session_start();
+
+							include("./conn.php");
+
+							include("./function.php");
+
 
 							if ($user_data = check_login($conn)) {
 
