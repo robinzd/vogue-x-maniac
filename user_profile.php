@@ -59,8 +59,8 @@
                 <li>
                     <span class="font-weight-bold">Post</span>
                     <div>
-                        <span class="mr-1">5</span>
-                        <i class="fa fa-angle-right"></i>
+                        <span class="mr-1">Robin</span>
+                      
                     </div>
                 </li>
                 
