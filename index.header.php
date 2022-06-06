@@ -87,21 +87,9 @@ include("./conn.php");
 
 							<?php
 
-							session_start();
+							$select_rows = mysqli_query($conn, "select * from products_cart");
 
-							include("./conn.php");
-
-							include("./function.php");
-
-
-							$user_data = check_login($conn);
-
-							$userid = $user_data['user_id'];
-
-							$select_rows = mysqli_query($conn, "select * from products_cart where user_id=$userid");
-
-
-							$row_count = mysqli_num_rows($select_rows);
+                            $row_count = mysqli_num_rows($select_rows);
 
 							if ($row_count > 0) {
 
