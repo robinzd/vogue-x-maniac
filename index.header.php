@@ -4,9 +4,7 @@
 include("./conn.php");
 
 
- $userid = $user_data['user_id'];
-
- echo $userid;
+// $userid = $user_data['user_id'];
 
 // $get_name = "select * from users where user_id=$userid";
 
@@ -19,8 +17,6 @@ include("./conn.php");
 // 	$user_firstname = $row_name['first_name'];
 // 	$user_lastname = $row_name['first_name'];
 // };
-
-
 
 
 ?>
@@ -81,13 +77,14 @@ include("./conn.php");
 
 							<!-- <span id="heading6">Hello,<?php echo $user_firstname; ?></span> -->
 
+
 							<a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
 
 							<?php
 
 							$select_rows = mysqli_query($conn, "select * from products_cart");
 
-                            $row_count = mysqli_num_rows($select_rows);
+							$row_count = mysqli_num_rows($select_rows);
 
 							if ($row_count > 0) {
 
