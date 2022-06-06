@@ -27,7 +27,7 @@
             <div class="card-body">
                 <blockquote class="blockquote mb-0">
                     <p>A well-known quote, contained in a blockquote element.</p>
-                    <div class="col col-md-12">
+                    <div class="col col-md-10">
                 <input class="form-control" type="text" name="fullname" placeholder="Full Name" required>
                 <div class="invalid-feedback">Username field cannot be blank!</div>
               </div>
