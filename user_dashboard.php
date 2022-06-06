@@ -1,16 +1,12 @@
 <?php
-// session_start();
+session_start();
 
 include("./conn.php");
-// include("./function.php");
+include("./function.php");
 
+$user_data = check_login($conn);
 
-
-// $user_data = check_login($conn);
-
-// $userid = $user_data['user_id'];
-
-
+$userid = $user_data['user_id'];
 
 ?>
 
@@ -80,7 +76,7 @@ include("./conn.php");
                                 <div class="tag">Your Profile</div>
                             </div>
                         </div>
-                       <div class="box me-4 my-1 bg-light">
+                        <div class="box me-4 my-1 bg-light">
                             <img src="./reset-password-icon-29.jpg" alt="">
                             <div class="d-flex align-items-center mt-2">
                                 <div class="tag">Password management</div>
@@ -149,7 +145,7 @@ include("./conn.php");
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                         <img class="footerimage" src="./header images/vogue x maniac png.png" alt="brand image">
                         <p class="text-white">
-                           vogue-x-maniac is the one of the leading ecommerce website
+                            vogue-x-maniac is the one of the leading ecommerce website
                         </p>
                     </div>
                     <!-- Grid column -->
