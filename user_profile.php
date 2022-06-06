@@ -15,72 +15,57 @@
     <!-- owl carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- link the external stylesheet -->
-    <link rel="stylesheet" type="text/css" href="./address.css">
+    <link rel="stylesheet" type="text/css" href="user_profile.css">
 </head>
 
 <body>
-    <div class="container">
-        <div class="card">
-            <div class="card-header">
-                Quote
-            </div>
-            <div class="card-body">
-                <blockquote class="blockquote mb-0">
-                    <p>A well-known quote, contained in a blockquote element.</p>
-                    iv class="form-body d-none d-sm-block">
-                    <div class="row">
-                        <div class="form-holder">
-                            <div class="form-content">
-                                <div class="form-items">
-                                    <h3 class="text-center">Address Details</h3>
-                                    <p class="text-center">Fill in the data below.</p>
-                                    <form class="requires-validation" novalidate method="POST" action="./bill.php">
+<div class="container d-flex justify-content-center align-items-center">
 
-                                        <div class="col col-md-12">
-                                            <input class="form-control" type="text" name="fullname" placeholder="Full Name" required>
-                                            <div class="invalid-feedback">Username field cannot be blank!</div>
-                                        </div>
+<div class="card py-4">
 
-                                        <div class="col-md-12">
-                                            <input class="form-control" type="email" name="email" placeholder="E-mail Address" required>
-                                            <div class="invalid-feedback">Email field cannot be blank!</div>
-                                        </div>
+  <h5 class="font-weight-normal">Personal Details</h5>
+  
+   <div class="mt-3">
 
-                                        <div class="col-md-12">
-                                            <input class="form-control" type="text" name="street" placeholder="Address" required>
-                                            <div class="invalid-feedback">Address field cannot be blank!</div>
-                                        </div>
+    <div class="row">
 
-                                        <div class="col-md-12">
-                                            <input class="form-control" type="text" name="landmark" placeholder="Landmark" required>
-                                            <div class="invalid-feedback">Landmark field cannot be blank!</div>
-                                        </div>
+      <div class="col-md-6">
+        
+        <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required"> <span>First Name</span> </div>
 
-                                        <div class="col-md-12">
-                                            <input class="form-control" type="text" name="city" placeholder="City" required>
-                                            <div class="invalid-feedback">City field cannot be blank!</div>
-                                        </div>
+      </div>
 
-                                        <div class="col-md-12">
-                                            <input class="form-control" type="number" name="pincode" placeholder="Pincode" required>
-                                            <div class="invalid-feedback">Pincode field cannot be blank!</div>
-                                        </div>
+      <div class="col-md-6">
+        <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required"> <span>Last Name</span> </div>
 
+      </div>
+      
 
-                                        <div class="d-grid gap-2 col-6 mx-auto">
-                                            <button class="btn btn-outline-success" type="submit">Submit</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-            </blockquote>
-        </div>
     </div>
+
+    <div class="row">
+
+
+      <div class="col-md-12">
+
+        <div class="inputbox mt-3"> <input type="text" name="name" class="form-control" required="required"> <span>Email Address</span> </div>
+        
+      </div>
+      
     </div>
+    
+
+  </div>
+
+
+
+  
+
+
+  
+</div>
+
+</div>
 
 
 

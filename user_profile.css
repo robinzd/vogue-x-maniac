@@ -1,53 +1,116 @@
-body{
-    margin-top:20px;
-    color: #1a202c;
-    text-align: left;
-    background-color: #e2e8f0;    
-}
-.main-body {
-    padding: 15px;
-}
-.card {
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:weight@100;200;300;400;500;600;700;800&display=swap");
+
+
+       body{
+        background-color:#535fe6;
+        font-family: "Poppins", sans-serif;
+        font-weight: 300;
+       }
+
+       .container{
+
+        height: 100vh;
+       }
+
+       .card{
+
+        width: 380px;
+        padding:15px;
+        border:none;
+       }
+
+       .notify-text{
+
+        font-size: 14px;
+
+       }
+
+       .buttons{
+
+            font-size: 12px;
+    height: 32px;
+       }
+
+       .form-check-label{
+        font-size: 14px;
+
+       }
+
+       .accounts{
+
+        font-size: 14px;
+       }
+
+      .outline{
+
+        border: 1px solid #e3eae6;
+        border-radius: 5px;
+        background: #f4fcf8;
+        margin-top: 10px;
+      }
+
+     
+      .image-size{
+        font-size: 12px;
+    color: #9c9c9c;
+    margin-top: 7px;
+      }
+
+
+
+      .form-control {
+    border-bottom: 1px solid #eee !important;
+    border: none;
+    font-weight: 500;
+    padding: .375rem .15rem;
 }
 
-.card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
+.form-control:focus {
+    color: #495057;
     background-color: #fff;
-    background-clip: border-box;
-    border: 0 solid rgba(0,0,0,.125);
-    border-radius: .25rem;
+    border-color: #8bbafe;
+    outline: 0;
+    box-shadow: none;
+    border-radius: 0px;
+    padding: .375rem .15rem;
+        padding-bottom: 1px;
+    border-bottom: 1px solid blue !important
 }
 
-.card-body {
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding: 1rem;
+.inputbox {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%
 }
 
-.gutters-sm {
-    margin-right: -8px;
-    margin-left: -8px;
+.inputbox span {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    font-size: 13px;
+    transition: 0.5s;
 }
 
-.gutters-sm>.col, .gutters-sm>[class*=col-] {
-    padding-right: 8px;
-    padding-left: 8px;
-}
-.mb-3, .my-3 {
-    margin-bottom: 1rem!important;
+.inputbox i {
+    position: absolute;
+    top: 13px;
+    right: 8px;
+    transition: 0.5s;
+    color: #3F51B5
 }
 
-.bg-gray-300 {
-    background-color: #e2e8f0;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0
 }
-.h-100 {
-    height: 100%!important;
+
+.inputbox input:focus~span {
+        transform: translateX(-4px) translateY(-13px);
+    font-size: 10px;
 }
-.shadow-none {
-    box-shadow: none!important;
+
+.inputbox input:valid~span {
+     transform: translateX(-4px) translateY(-13px);
+    font-size: 10px;
 }
