@@ -45,7 +45,7 @@
 
     <!--back to top ends -->
 
-      <h1>User Details</h1>
+      <h1>User Profile</h1>
 
 
     <div class="container height-100 d-flex justify-content-center align-items-center">
