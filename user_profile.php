@@ -91,15 +91,15 @@
                         </div>
                         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <label>Experience</label>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <p>Expert</p>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <label>Hourly Rate</label>
                                 </div>
                                 <div class="col-md-6">
