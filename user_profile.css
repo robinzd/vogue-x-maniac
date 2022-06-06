@@ -32,7 +32,7 @@ body {
 
 .bg-c-lite-green {
         background: -webkit-gradient(linear, left top, right top, from(#f29263), to(#ee5a6f));
-    background: linear-gradient(to right, #ee5a6f, #f29263);
+    background: linear-gradient(to right, #050404, #f29263);
 }
 
 .user-profile {
@@ -49,6 +49,7 @@ body {
 
 .img-radius {
     border-radius: 5px;
+    width:100%;
 }
 
 
@@ -84,7 +85,7 @@ p {
 }
 
 .card .card-block p {
-    line-height: 25px;
+    line-height: 25
 }
 
 .m-b-10 {

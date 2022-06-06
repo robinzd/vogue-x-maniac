@@ -59,9 +59,7 @@
                                     <div class="m-b-25">
                                         <img src="./header images/vogue x maniac png.png" class="img-radius" alt="User-Profile-Image">
                                     </div>
-                                    <h6 class="f-w-600">Hembo Tingor</h6>
-                                    <p>Web Designer</p>
-                                    <i class=" mdi mdi-square-edit-outline feather icon-edit m-t-10 f-16"></i>
+                                    <h6 class="f-w-600">Profile Settings</h6>
                                 </div>
                             </div>
                             <div class="col-sm-8">
@@ -88,11 +86,6 @@
                                             <h6 class="text-muted f-w-400">Dinoter husainm</h6>
                                         </div>
                                     </div>
-                                    <ul class="social-link list-unstyled m-t-40 m-b-10">
-                                        <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="facebook" data-abc="true"><i class="mdi mdi-facebook feather icon-facebook facebook" aria-hidden="true"></i></a></li>
-                                        <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="twitter" data-abc="true"><i class="mdi mdi-twitter feather icon-twitter twitter" aria-hidden="true"></i></a></li>
-                                        <li><a href="#!" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="instagram" data-abc="true"><i class="mdi mdi-instagram feather icon-instagram instagram" aria-hidden="true"></i></a></li>
-                                    </ul>
                                 </div>
                             </div>
                         </div>
