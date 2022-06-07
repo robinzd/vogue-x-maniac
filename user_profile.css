@@ -67,8 +67,6 @@ h2{
 a.btn.edit{
   border-radius: 20px;
   background-color: lightgreen;
-  outline-color: lightgreen;
-  border-color: 1px solid lightgreen !important;
   color:black;
 }
 
