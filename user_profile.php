@@ -45,7 +45,7 @@
 
     <!--back to top ends -->
 
-    <h2><img src="./159-1595553_profile-blue-logo-png-removebg-preview.png">User Profile</h2>
+    <h2><img src="./159-1595553_profile-blue-logo-png-removebg-preview.png" class="user_profile">User Profile</h2>
 
 
     <div class="container height-100 d-flex justify-content-center align-items-center">
