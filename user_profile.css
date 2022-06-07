@@ -64,18 +64,17 @@ h2{
   margin-top: -150px;
 }
 
-a.btn.edit{
+a.btn.btn-success.edit{
   border-radius: 20px;
   background-color: lightgreen;
+  outline-color: lightgreen;
   color:black;
 }
 
-a.btn.edit:hover{
+a.btn.btn-success.edit:hover{
   background-color:black;
   color:white;
 }
-
-
 
 /* footer */
 
