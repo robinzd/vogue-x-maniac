@@ -1,3 +1,16 @@
+<?php
+session_start();
+
+include("./conn.php");
+include("./function.php");
+
+$user_data = check_login($conn);
+
+$userid = $user_data['user_id'];
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,33 +68,53 @@
         <div class="card text-center">
 
 
+            <?php
+
+            $get_user_details = "select * from users where user_id=$userid ";
+
+            $run_user_details = mysqli_query($conn,  $get_user_details);
+
+
+
+            while ($row_user_details = mysqli_fetch_array($run_user_details)) {
+
+                $firstname = $row_user_details['first_name'];
+                $lastname = $row_user_details['last_name'];
+                $email = $row_user_details['user_email'];
+                $mobile_no = $row_user_details['user_mob_no'];
+            };
+
+
+            ?>
+
+
 
             <div>
                 <ul class="list-unstyled list">
                     <li>
                         <span class="font-weight-bold">First Name</span>
                         <div>
-                            <span class="mr-1">Robin</span>
+                            <span class="mr-1"><?php echo $firstname;?></span>
                         </div>
                     </li>
 
                     <li>
                         <span class="font-weight-bold">Last Name</span>
                         <div>
-                            <span class="mr-1">45</span>
+                            <span class="mr-1"><?php echo $lastname;?></span>
                         </div>
                     </li>
 
                     <li>
                         <span class="font-weight-bold">Email</span>
                         <div>
-                            <span class="mr-1">15</span>
+                            <span class="mr-1"><?php echo  $email;?></span>
                         </div>
                     </li>
                     <li>
                         <span class="font-weight-bold">Mobile No</span>
                         <div>
-                            <span class="mr-1">15</span>
+                            <span class="mr-1"><?php echo $mobile_no;?></span>
                         </div>
                     </li>
                 </ul>
@@ -91,7 +124,7 @@
 
 
     <div class="d-grid gap-2 col-3 mx-auto">
-    <a href="edit.php?editid=<?php echo htmlentities($row['ID']); ?>"class="btn btn-success edit" type="button"  title="Edit" data-toggle="tooltip">Edit Profile</a>
+        <a href="edit.php?editid=<?php echo htmlentities($row['ID']); ?>" class="btn btn-success edit" type="button" title="Edit" data-toggle="tooltip">Edit Profile</a>
     </div> <br>
 
 
