@@ -131,9 +131,8 @@ $userid = $user_data['user_id'];
 
 
 
-
-
-    <!-- Footer -->
+    
+ <!-- Footer -->
 
     <footer class="text-center text-lg-start text-dark" style="background-color:lightgrey">
         <!-- Grid container -->
