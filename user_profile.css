@@ -51,8 +51,8 @@ h2{
 }
 
 img{
-  width:20%;
-  align-content: center;
+  max-width:10%;
+ 
 }
 
 .container.height-100.d-flex.justify-content-center.align-items-center{
