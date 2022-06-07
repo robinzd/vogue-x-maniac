@@ -124,7 +124,7 @@ $userid = $user_data['user_id'];
 
 
     <div class="d-grid gap-2 col-3 mx-auto">
-        <a href="edit.php?editid=<?php echo htmlentities($row['ID']); ?>" class="btn btn-success edit" type="button" title="Edit" data-toggle="tooltip">Edit Profile</a>
+        <a href="user_profile_edit.php?editid=<?php echo htmlentities($row['ID']); ?>" class="btn btn-success edit" type="button" title="Edit" data-toggle="tooltip">Edit Profile</a>
     </div> <br>
 
 
