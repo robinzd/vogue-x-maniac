@@ -77,7 +77,8 @@ $userid = $user_data['user_id'];
 
 
             while ($row_user_details = mysqli_fetch_array($run_user_details)) {
-
+                
+                $id=$row_user_details['ID'];
                 $firstname = $row_user_details['first_name'];
                 $lastname = $row_user_details['last_name'];
                 $email = $row_user_details['user_email'];
@@ -124,7 +125,7 @@ $userid = $user_data['user_id'];
 
 
     <div class="d-grid gap-2 col-3 mx-auto">
-        <a href="user_profile_edit.php?editid=<?php echo htmlentities($row['ID']); ?>" class="btn btn-success edit" type="button" title="Edit" data-toggle="tooltip">Edit Profile</a>
+        <a href="user_profile_edit.php?editid=<?php echo htmlentities($id); ?>" class="btn btn-success edit" type="button" title="Edit" data-toggle="tooltip">Edit Profile</a>
     </div> <br>
 
 

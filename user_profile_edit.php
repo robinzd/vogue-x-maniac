@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) {
 
 
 	//Query for data updation
-	$query = mysqli_query($conn, "update shipping_charges set first_name='$firstname',last_name='$lastname',user_email='$email',user_mob_no=' $mobile' where ID='$eid'");
+	$query = mysqli_query($conn, "update users set first_name='$firstname',last_name='$lastname',user_email='$email',user_mob_no=' $mobile' where ID='$eid'");
 
 	if ($query) {
 		echo "<script>alert('You have successfully update the profile details');</script>";
