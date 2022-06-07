@@ -59,14 +59,14 @@
             <div>
                 <ul class="list-unstyled list">
                     <li>
-                        <span class="font-weight-bold">Post</span>
+                        <span class="font-weight-bold">First Name</span>
                         <div>
                             <span class="mr-1">Robin</span>
                         </div>
                     </li>
 
                     <li>
-                        <span class="font-weight-bold">Comments</span>
+                        <span class="font-weight-bold">Last Name</span>
                         <div>
                             <span class="mr-1">45</span>
                             <i class="fa fa-angle-right"></i>
@@ -74,7 +74,14 @@
                     </li>
 
                     <li>
-                        <span class="font-weight-bold">Favorites</span>
+                        <span class="font-weight-bold">Email</span>
+                        <div>
+                            <span class="mr-1">15</span>
+                            <i class="fa fa-angle-right"></i>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="font-weight-bold">Mobile No</span>
                         <div>
                             <span class="mr-1">15</span>
                             <i class="fa fa-angle-right"></i>
