@@ -64,6 +64,18 @@ h2{
   margin-top: -150px;
 }
 
+a.btn.btn-primary.edit{
+  border-radius: 20px;
+  background-color: lightgreen;
+  outline-color: lightgreen;
+  color:black;
+}
+
+a.btn.btn-primary.edit{
+  background-color:black;
+  color:white;
+}
+
 /* footer */
 
 
