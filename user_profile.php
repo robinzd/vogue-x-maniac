@@ -69,7 +69,6 @@
                         <span class="font-weight-bold">Last Name</span>
                         <div>
                             <span class="mr-1">45</span>
-                            <i class="fa fa-angle-right"></i>
                         </div>
                     </li>
 
@@ -77,14 +76,12 @@
                         <span class="font-weight-bold">Email</span>
                         <div>
                             <span class="mr-1">15</span>
-                            <i class="fa fa-angle-right"></i>
                         </div>
                     </li>
                     <li>
                         <span class="font-weight-bold">Mobile No</span>
                         <div>
                             <span class="mr-1">15</span>
-                            <i class="fa fa-angle-right"></i>
                         </div>
                     </li>
                 </ul>
