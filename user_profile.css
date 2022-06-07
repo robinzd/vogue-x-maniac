@@ -71,7 +71,7 @@ a.btn.btn-primary.edit{
   color:black;
 }
 
-a.btn.btn-primary.edit{
+a.btn.btn-primary.edit:hover{
   background-color:black;
   color:white;
 }
