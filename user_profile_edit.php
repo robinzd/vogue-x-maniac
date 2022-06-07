@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
 
 	if ($query) {
 		echo "<script>alert('You have successfully update the profile details');</script>";
-		echo "<script type='text/javascript'> document.location ='shipping_details.php'; </script>";
+		echo "<script type='text/javascript'> document.location ='user_profile_edit'; </script>";
 	} else {
 		echo "<script>alert('Something Went Wrong. Please try again');</script>";
 	}
