@@ -31,7 +31,7 @@ if (isset($_POST['submit'])) {
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
 	<title>Edit Profile</title>
-	<link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png" />
+	<link rel="icon" type="image/png" href="./favicon/vogue_x_maniac_png_K8m_icon.ico" />
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -150,7 +150,17 @@ if (isset($_POST['submit'])) {
 
 		.fa-arrow-left {
 			color: black;
+            cursor: pointer;
 		}
+
+        button.btn.btn-success.btn-lg.btn-block{
+            border-radius:20px;
+        }
+
+        button.btn.btn-success.btn-lg.btn-block:hover{
+            background-color: black;
+            color:white;
+        }
 	</style>
 </head>
 
