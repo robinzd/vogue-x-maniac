@@ -76,6 +76,10 @@ a.btn.edit:hover{
   color:white;
 }
 
+a.btn.edit:focus{
+  border-color: 1px solid lightgreen !important;
+}
+
 /* footer */
 
 
