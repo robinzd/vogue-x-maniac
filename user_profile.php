@@ -45,12 +45,12 @@
 
     <!--back to top ends -->
 
-      <h2>User Profile</h2>
+    <h2>User Profile</h2>
 
 
     <div class="container height-100 d-flex justify-content-center align-items-center">
 
-       
+
 
         <div class="card text-center">
 
@@ -94,10 +94,15 @@
     </div>
 
 
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button class="btn btn-primary" type="button">Button</button>
+    </div>
 
-<!-- Footer -->
 
-<footer class="text-center text-lg-start text-dark" style="background-color:lightgrey">
+
+    <!-- Footer -->
+
+    <footer class="text-center text-lg-start text-dark" style="background-color:lightgrey">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
             <!-- Section: Links -->
@@ -108,7 +113,7 @@
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                         <img class="footerimage" src="./header images/vogue x maniac png.png" alt="brand image">
                         <p class="text-white">
-                           vogue-x-maniac is the one of the leading ecommerce website
+                            vogue-x-maniac is the one of the leading ecommerce website
                         </p>
                     </div>
                     <!-- Grid column -->
