@@ -91,7 +91,7 @@
 
 
     <div class="d-grid gap-2 col-3 mx-auto">
-    <a href="edit.php?editid=<?php echo htmlentities($row['ID']); ?>"class="btn btn-primary edit" type="button"  title="Edit" data-toggle="tooltip">Edit</a>
+    <a href="edit.php?editid=<?php echo htmlentities($row['ID']); ?>"class="btn edit" type="button"  title="Edit" data-toggle="tooltip">Edit</a>
     </div> <br>
 
 

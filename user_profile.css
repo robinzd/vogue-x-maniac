@@ -64,14 +64,14 @@ h2{
   margin-top: -150px;
 }
 
-a.btn.btn-primary.edit{
+a.btn.edit{
   border-radius: 20px;
   background-color: lightgreen;
   outline-color: lightgreen;
   color:black;
 }
 
-a.btn.btn-primary.edit:hover{
+a.btn.edit:hover{
   background-color:black;
   color:white;
 }
