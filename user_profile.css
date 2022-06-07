@@ -50,6 +50,11 @@ h2{
     font-family: 'Poppins', sans-serif;
 }
 
+img{
+  width:20%;
+  align-content: center;
+}
+
 .container.height-100.d-flex.justify-content-center.align-items-center{
     margin-top: -160px;
 }
