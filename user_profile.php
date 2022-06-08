@@ -57,82 +57,83 @@ $userid = $user_data['user_id'];
     ?>
 
     <!--back to top ends -->
+    <div class="container">
 
-    <h2><img src="./159-1595553_profile-blue-logo-png-removebg-preview.png" class="user_profile">User Profile</h2>
-
-
-    <div class="container height-100 d-flex justify-content-center align-items-center">
+        <h2><img src="./159-1595553_profile-blue-logo-png-removebg-preview.png" class="user_profile">User Profile</h2>
 
 
-
-        <div class="card text-center">
-
-
-            <?php
-
-            $get_user_details = "select * from users where user_id=$userid ";
-
-            $run_user_details = mysqli_query($conn,  $get_user_details);
+        <div class="container height-100 d-flex justify-content-center align-items-center">
 
 
 
-            while ($row_user_details = mysqli_fetch_array($run_user_details)) {
-                
-                $id=$row_user_details['ID'];
-                $firstname = $row_user_details['first_name'];
-                $lastname = $row_user_details['last_name'];
-                $email = $row_user_details['user_email'];
-                $mobile_no = $row_user_details['user_mob_no'];
-            };
+            <div class="card text-center">
 
 
-            ?>
+                <?php
+
+                $get_user_details = "select * from users where user_id=$userid ";
+
+                $run_user_details = mysqli_query($conn,  $get_user_details);
 
 
 
-            <div>
-                <ul class="list-unstyled list">
-                    <li>
-                        <span class="font-weight-bold">First Name</span>
-                        <div>
-                            <span class="mr-1"><?php echo $firstname;?></span>
-                        </div>
-                    </li>
+                while ($row_user_details = mysqli_fetch_array($run_user_details)) {
 
-                    <li>
-                        <span class="font-weight-bold">Last Name</span>
-                        <div>
-                            <span class="mr-1"><?php echo $lastname;?></span>
-                        </div>
-                    </li>
+                    $id = $row_user_details['ID'];
+                    $firstname = $row_user_details['first_name'];
+                    $lastname = $row_user_details['last_name'];
+                    $email = $row_user_details['user_email'];
+                    $mobile_no = $row_user_details['user_mob_no'];
+                };
 
-                    <li>
-                        <span class="font-weight-bold">Email</span>
-                        <div>
-                            <span class="mr-1"><?php echo  $email;?></span>
-                        </div>
-                    </li>
-                    <li>
-                        <span class="font-weight-bold">Mobile No</span>
-                        <div>
-                            <span class="mr-1"><?php echo $mobile_no;?></span>
-                        </div>
-                    </li>
-                </ul>
+
+                ?>
+
+
+
+                <div>
+                    <ul class="list-unstyled list">
+                        <li>
+                            <span class="font-weight-bold">First Name</span>
+                            <div>
+                                <span class="mr-1"><?php echo $firstname; ?></span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="font-weight-bold">Last Name</span>
+                            <div>
+                                <span class="mr-1"><?php echo $lastname; ?></span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <span class="font-weight-bold">Email</span>
+                            <div>
+                                <span class="mr-1"><?php echo  $email; ?></span>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="font-weight-bold">Mobile No</span>
+                            <div>
+                                <span class="mr-1"><?php echo $mobile_no; ?></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+
+
+        <div class="d-grid gap-2 col-3 mx-auto">
+            <a href="user_profile_edit.php?editid=<?php echo htmlentities($id); ?>" class="btn btn-success edit" type="button" title="Edit" data-toggle="tooltip">Edit Profile</a>
+        </div> <br>
+
+
     </div>
 
 
-    <div class="d-grid gap-2 col-3 mx-auto">
-        <a href="user_profile_edit.php?editid=<?php echo htmlentities($id); ?>" class="btn btn-success edit" type="button" title="Edit" data-toggle="tooltip">Edit Profile</a>
-    </div> <br>
-
-
-
-
-    
- <!-- Footer -->
+    <!-- Footer -->
 
     <footer class="text-center text-lg-start text-dark" style="background-color:lightgrey">
         <!-- Grid container -->
