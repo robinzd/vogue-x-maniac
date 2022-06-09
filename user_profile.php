@@ -70,7 +70,8 @@ $userid = $user_data['user_id'];
 
 
                 while ($row_user_details = mysqli_fetch_array($run_user_details)) {
-
+                    
+                    $id=$row_user_details['ID'];
                     $firstname=$row_user_details['first_name'];
                     $lastname=$row_user_details['last_name'];
                     $email=$row_user_details['user_email'];
@@ -85,9 +86,11 @@ $userid = $user_data['user_id'];
                 <p class="txt4">Email Address : <?php echo   $email;?></p>
                 <p class="txt4">Mobile No :<?php echo   $mobile;?></p><br>
 
-                <a href="./user_profile_edit.php"><div class="d-grid gap-2 col-10 mx-auto">
+                <a href="user_profile_edit.php?editid=<?php echo htmlentities($id);?>" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i>><div class="d-grid gap-2 col-10 mx-auto">
                     <button class="btn btn-success text-centered" type="button">Edit</button>
                 </div></a>
+
+
 
             </div>
 
