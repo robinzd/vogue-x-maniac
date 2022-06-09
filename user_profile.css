@@ -40,6 +40,7 @@ span.fa.fa-user{
   transition: 0.3s;
   border: 1px solid darkgray;
   border-radius: 10px;
+  background-color: lightgray;
 }
 
 .photo{
