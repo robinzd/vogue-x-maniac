@@ -65,10 +65,13 @@
                 <p class="txt4">Last Name : Robin</p>
                 <p class="txt4">Email : Robin</p>
                 <p class="txt4">Mobile No : Robin</p>
+
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" type="button">Edit</button>
+                </div>
+                
             </div>
-            <div class="d-grid gap-2 col-6 mx-auto">
-                <button class="btn btn-primary" type="button">Edit</button>
-            </div>
+
         </div>
     </div><br>
 
