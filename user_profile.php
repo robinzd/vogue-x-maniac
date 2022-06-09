@@ -58,10 +58,13 @@
 
     <!--back to top ends -->
     <div class="container">
-        <h1 class="heading">News Card</h1>
+        <h1 class="heading">User Profile</h1>
         <div class="cardcontainer">
             <div class="content">
                 <p class="txt4">First Name :  Robin</p>
+                <p class="txt4">Last Name  :  Robin</p>
+                <p class="txt4">Email      :  Robin</p>
+                <p class="txt4">Mobile No  :  Robin</p>
             </div>
         </div>
     </div>
