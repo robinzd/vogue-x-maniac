@@ -15,13 +15,8 @@ h1{
   color: #333333;
 }
 
-i.fa.fa-user{
-  font-family: 'roboto' , sans-serif;
-}
 
-::before{
-  font-family: 'roboto' , sans-serif;
-}
+
 
 .heading{
   margin-top: 40px;
