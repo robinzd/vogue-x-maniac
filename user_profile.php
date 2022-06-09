@@ -61,9 +61,9 @@
         <h1 class="heading">News Card</h1>
         <div class="cardcontainer">
             <div class="content">
-                <p class="txt4">City Lights In Newyork</p>
-                <p class="txt5">A city that never sleeps</p>
-                <p class="txt2">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+                <p class="txt4">First Name :  Robin</p>
+             
+               
             </div>
         </div>
     </div>
