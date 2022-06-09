@@ -58,7 +58,7 @@
 
     <!--back to top ends -->
     <div class="container">
-    <span class="fa fa-user"><h1 class="heading">User Profile</h1></span><br>
+   <h1 class="heading"> <span class="fa fa-user">User Profile</span></h1><br>
         <div class="cardcontainer">
             <div class="content">
                 <br>
