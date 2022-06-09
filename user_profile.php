@@ -85,9 +85,9 @@ $userid = $user_data['user_id'];
                 <p class="txt4">Email Address : <?php echo   $email;?></p>
                 <p class="txt4">Mobile No :<?php echo   $mobile;?></p><br>
 
-                <div class="d-grid gap-2 col-10 mx-auto">
+                <a href="./user_profile_edit.php"><div class="d-grid gap-2 col-10 mx-auto">
                     <button class="btn btn-success text-centered" type="button">Edit</button>
-                </div>
+                </div></a>
 
             </div>
 
