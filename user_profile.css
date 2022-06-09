@@ -20,9 +20,7 @@ h1{
   margin-right: auto;
   transition: 0.3s;
 }
-.cardcontainer:hover{
-  box-shadow: 0 0 45px gray;
-}
+
 .photo{
   height: 300px;
   width: 100%;
