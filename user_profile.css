@@ -77,15 +77,6 @@ a.btn.btn-success.edit:hover{
 }
 
 
-@media screen and (max-width: 600px) {
-
-  .container{
-    
-    zoom:80%;
-  
-  }
-
-}
 
 
 
