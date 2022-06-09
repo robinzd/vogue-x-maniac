@@ -58,7 +58,7 @@
 
     <!--back to top ends -->
     <div class="container">
-        <h1>News Card</h1>
+        <h1 class="heading">News Card</h1>
         <div class="cardcontainer">
             <div class="content">
                 <p class="txt4">City Lights In Newyork</p>

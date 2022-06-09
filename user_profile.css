@@ -12,6 +12,11 @@ h1{
   text-align: center;
   color: #333333;
 }
+
+.heading{
+  margin-top: 40px;
+}
+
 .cardcontainer{
   width: 350px;
   height: 500px;
