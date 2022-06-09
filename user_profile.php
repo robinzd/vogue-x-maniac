@@ -58,78 +58,18 @@ $userid = $user_data['user_id'];
 
     <!--back to top ends -->
     <div class="container">
-
-        <h2><img src="./159-1595553_profile-blue-logo-png-removebg-preview.png" class="user_profile">User Profile</h2>
-
-
-        <div class="container height-100 d-flex justify-content-center align-items-center">
-
-
-
-            <div class="card text-center">
-
-
-                <?php
-
-                $get_user_details = "select * from users where user_id=$userid ";
-
-                $run_user_details = mysqli_query($conn,  $get_user_details);
-
-
-
-                while ($row_user_details = mysqli_fetch_array($run_user_details)) {
-
-                    $id = $row_user_details['ID'];
-                    $firstname = $row_user_details['first_name'];
-                    $lastname = $row_user_details['last_name'];
-                    $email = $row_user_details['user_email'];
-                    $mobile_no = $row_user_details['user_mob_no'];
-                };
-
-
-                ?>
-
-
-
-                <div>
-                    <ul class="list-unstyled list">
-                        <li>
-                            <span class="font-weight-bold">First Name</span>
-                            <div>
-                                <span class="mr-1"><?php echo $firstname; ?></span>
-                            </div>
-                        </li>
-
-                        <li>
-                            <span class="font-weight-bold">Last Name</span>
-                            <div>
-                                <span class="mr-1"><?php echo $lastname; ?></span>
-                            </div>
-                        </li>
-
-                        <li>
-                            <span class="font-weight-bold">Email</span>
-                            <div>
-                                <span class="mr-1"><?php echo  $email; ?></span>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="font-weight-bold">Mobile No</span>
-                            <div>
-                                <span class="mr-1"><?php echo $mobile_no; ?></span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+        <h1>News Card</h1>
+        <div class="cardcontainer">
+            <div class="content">
+                <p class="txt4">City Lights In Newyork</p>
+                <p class="txt5">A city that never sleeps</p>
+                <p class="txt2">New York, the largest city in the U.S., is an architectural marvel with plenty of historic monuments, magnificent buildings and countless dazzling skyscrapers.</p>
+            </div>
+            <div class="footer">
+                <p><a class="waves-effect waves-light btn" href="#">Read More</a><a id="heart"><span class="like"><i class="fab fa-gratipay"></i>Like</span></a></p>
+                <p class="txt3"><i class="far fa-clock"></i>10 Minutes Ago <span class="comments"><i class="fas fa-comments"></i>45 Comments</span></p>
             </div>
         </div>
-
-
-        <div class="d-grid gap-2 col-3 mx-auto">
-            <a href="user_profile_edit.php?editid=<?php echo htmlentities($id); ?>" class="btn btn-success edit" type="button" title="Edit" data-toggle="tooltip">Edit Profile</a>
-        </div> <br>
-
-
     </div>
 
 
