@@ -61,6 +61,7 @@
       <h1 class="heading"><i class="fa fa-user">User Profile</i></h1><br>
         <div class="cardcontainer">
             <div class="content">
+                <br>
                 <p class="txt4">First Name : Robin</p>
                 <p class="txt4">Last Name : Robin</p>
                 <p class="txt4">Email : Robin</p>
