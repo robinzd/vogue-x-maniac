@@ -120,6 +120,18 @@ h1{
   margin-right: 7px;
 }
 
+button.btn{
+  background-color: lightgreen;
+  color: black;
+  border-radius: 10px;
+}
+
+button.btn:hover{
+  background-color:black;
+  color:white;
+ 
+}
+
 
 
 /* footer */
