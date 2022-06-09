@@ -58,7 +58,7 @@
 
     <!--back to top ends -->
     <div class="container">
-        <h1 class="heading">User Profile</h1>
+        <h1 class="heading">User Profile</h1><br>
         <div class="cardcontainer">
             <div class="content">
                 <p class="txt4">First Name : Robin</p>
