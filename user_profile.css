@@ -77,7 +77,7 @@ a.btn.btn-success.edit:hover{
 }
 
 
-@media only screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
 
   .container{
     
