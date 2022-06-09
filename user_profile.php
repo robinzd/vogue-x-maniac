@@ -58,7 +58,7 @@
 
     <!--back to top ends -->
     <div class="container">
-        <h1 class="heading">User Profile</h1><br>
+        <img src="./159-1595553_profile-blue-logo-png-removebg-preview.png"><h1 class="heading">User Profile</h1><br>
         <div class="cardcontainer">
             <div class="content">
                 <p class="txt4">First Name : Robin</p>
