@@ -62,8 +62,6 @@
         <div class="cardcontainer">
             <div class="content">
                 <p class="txt4">First Name :  Robin</p>
-             
-               
             </div>
         </div>
     </div>
