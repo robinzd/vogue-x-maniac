@@ -1,13 +1,12 @@
 <?php
-// session_start();
+session_start();
 
-// include("./conn.php");
-// include("./function.php");
+include("./conn.php");
+include("./function.php");
 
-// $user_data = check_login($conn);
+$user_data = check_login($conn);
 
-// $userid = $user_data['user_id'];
-
+$userid = $user_data['user_id'];
 ?>
 
 
@@ -58,17 +57,36 @@
 
     <!--back to top ends -->
     <div class="container">
-   <h1 class="heading"><span class="fa fa-user">User Profile</span></h1><br>
+        <h1 class="heading"><span class="fa fa-user">User Profile</span></h1><br>
         <div class="cardcontainer">
             <div class="content">
+
+                <?php
+
+                $get_user_details = "select * from users where user_id=$userid";
+
+                $run_user_details = mysqli_query($conn,$get_user_details);
+
+
+
+                while ($row_user_details = mysqli_fetch_array($run_user_details)) {
+
+                    $firstname=$row_user_details['first_name'];
+                    $lastname=$row_user_details['last_name'];
+                    $email=$row_user_details['user_email'];
+                    $mobile=$row_user_details['user_mob_no'];
+                }
+
+                ?>
+
                 <br>
-                <p class="txt4">First Name : Robin</p>
-                <p class="txt4">Last Name : Robin</p>
-                <p class="txt4">Email Address : Robin</p>
-                <p class="txt4">Mobile No : Robin</p><br>
+                <p class="txt4">First Name : <?php echo  $firstname;?></p>
+                <p class="txt4">Last Name : <?php echo  $lastname;?></p>
+                <p class="txt4">Email Address : <?php echo   $email;?></p>
+                <p class="txt4">Mobile No :<?php echo   $mobile;?></p><br>
 
                 <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn btn-success" type="button">Edit</button>
+                    <a href="./user_profile_edit.php"><button class="btn btn-success" type="button">Edit</button></a>
                 </div>
 
             </div>
