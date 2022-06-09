@@ -84,7 +84,7 @@ $userid = $user_data['user_id'];
                 <p class="txt4">First Name : <?php echo  $firstname;?></p>
                 <p class="txt4">Last Name : <?php echo  $lastname;?></p>
                 <p class="txt4">Email Address : <?php echo   $email;?></p>
-                <p class="txt4">Mobile No :<?php echo   $mobile;?></p><br>
+                <p class="txt4">Mobile No :<?php echo   $mobile;?></p><br><br>
 
                 <a href="user_profile_edit.php?editid=<?php echo htmlentities($id);?>" class="edit" title="Edit" data-toggle="tooltip"><div class="d-grid gap-2 col-10 mx-auto">
                     <button class="btn btn-success text-centered" type="button">Edit</button>
