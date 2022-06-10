@@ -430,11 +430,11 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                             <div class="d-grid gap-2 col-6 mx-auto">
                                 <button class="btn btn-success" type="submit" value="online" formaction="./paytm_php_sample_app/payment-using-paytm/payment.php">Pay On Online</button>
                                 <button class="btn btn-success" type="submit" value="online" formaction="./paytm_php_sample_app/payment-using-paytm/payment1.php">Pay On Delivery</button>
-                            </div>
+                            </div><br>
 
                             <h6>Note*</h6>
                             <p class="para">You Want to pay one part of the amount for pay on delivery balance amount at your doorstep</p>
-                            
+
                         </form>
 
 
@@ -787,7 +787,11 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                             <div class="d-grid gap-2 col-6 mx-auto">
                                 <button class="btn btn-success" type="submit" value="online" formaction="./paytm_php_sample_app/payment-using-paytm/payment.php">Pay On Online</button>
                                 <button class="btn btn-success" type="submit" value="online" formaction="./paytm_php_sample_app/payment-using-paytm/payment1.php">Pay On Delivery</button>
-                            </div>
+                            </div><br>
+
+
+                            <h6>Note*</h6>
+                            <p class="para">You Want to pay one part of the amount for pay on delivery balance amount at your doorstep</p>
 
                            
                         </form>
