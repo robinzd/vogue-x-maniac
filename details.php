@@ -305,10 +305,8 @@ include("./conn.php");
                                 <h1  class="text-muted" id="offerheading">Note*</h1>
                                 
                                 <p class="text-muted" id="offer">Within Tamilnadu shipping charges free,for other states delivery charges applied!</p>
-                                <p class="text-muted" id="offer">You Want to pay one part of the amount for pay on delivery balance amount at your doorstep</p>
-                                
-                                
 
+                                
                                 <div class="cart mt-4 align-items-center">
                                     <button type="submit" class="btn-success mr-2 px-4" value="cart" formaction="cart.php">Add to cart</button>
                                     <button type="submit" class="btn-success mr-2 px-4" value="address" formaction="address1.php">Buy Now</button>
