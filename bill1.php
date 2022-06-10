@@ -415,7 +415,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                         <p class="font-weight-bold mb-0">Thanks for shopping with us!</p>
                         <span>vogue-x-maniac Team</span>
 
-                        <form method="Post" action="./paytm_php_sample_app/payment-using-paytm/payment.php">
+                        <form method="Post">
                             <input type="hidden" name="txn_no" value="<?php echo  $totalamount; ?>">
                             <input type="hidden" name="cust_id" value="<?php echo $userid; ?>">
                             <input type="hidden" name="mob_no" value="<?php echo  $mob_no; ?>">
@@ -424,7 +424,8 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
 
                             <div class="d-grid gap-2 col-6 mx-auto">
-                                <button class="btn btn-success" type="submit">Pay</button>
+                                <button class="btn btn-success" type="submit" value="online" formaction="./paytm_php_sample_app/payment-using-paytm/payment.php">Pay On Online</button>
+                                <button class="btn btn-success" type="submit" value="online" formaction="./paytm_php_sample_app/payment-using-paytm/payment1.php">Pay On Delivery</button>
                             </div>
                         </form>
 
@@ -767,7 +768,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                         <p class="font-weight-bold mb-0">Thanks for shopping with us!</p>
                         <span>vogue-x-maniac Team</span>
 
-                        <form method="Post" action="./paytm_php_sample_app/payment-using-paytm/payment.php">
+                        <form method="Post">
                             <input type="hidden" name="txn_no" value="<?php echo  $totalamount; ?>">
                             <input type="hidden" name="cust_id" value="<?php echo $userid; ?>">
                             <input type="hidden" name="mob_no" value="<?php echo  $mob_no; ?>">
@@ -776,7 +777,8 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
 
                             <div class="d-grid gap-2 col-6 mx-auto">
-                                <button class="btn btn-success" type="submit">Pay</button>
+                                <button class="btn btn-success" type="submit" value="online" formaction="./paytm_php_sample_app/payment-using-paytm/payment.php">Pay On Online</button>
+                                <button class="btn btn-success" type="submit" value="online" formaction="./paytm_php_sample_app/payment-using-paytm/payment1.php">Pay On Delivery</button>
                             </div>
                         </form>
 
