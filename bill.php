@@ -36,7 +36,7 @@ $get_userscart = "select * from products_cart where user_id=$userid";
 $run_userscart = mysqli_query($conn, $get_userscart);
 
 
-$order_id = random_num(1000,9999);
+$order_id = rand(1000000,5000000);
 
 
 
