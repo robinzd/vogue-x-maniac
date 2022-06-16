@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 
 include("./conn.php");
@@ -7,6 +8,7 @@ include("./function.php");
 $user_data = check_login($conn);
 
 $userid = $user_data['user_id'];
+
 ?>
 
 
@@ -27,7 +29,7 @@ $userid = $user_data['user_id'];
     <!-- owl carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- link the external stylesheet -->
-    <link rel="stylesheet" type="text/css" href="user_profile.css">
+    <link rel="stylesheet" type="text/css" href="./address.css">
 </head>
 
 <body>
@@ -55,48 +57,131 @@ $userid = $user_data['user_id'];
 
     ?>
 
-    <!--back to top ends -->
-    <div class="container">
-        <h1 class="heading"><span class="fa fa-user">User Profile</span></h1><br>
-        <div class="cardcontainer">
-            <div class="content">
-
-                <?php
-
-                $get_user_details = "select * from users where user_id=$userid";
-
-                $run_user_details = mysqli_query($conn,$get_user_details);
+    <!-- hide only on xs -->
+    <div class="form-body d-none d-sm-block">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3 class="text-center">User Profile</h3>
+                        <form class="requires-validation" novalidate>
 
 
+                            <?php
 
-                while ($row_user_details = mysqli_fetch_array($run_user_details)) {
-                    
-                    $id=$row_user_details['ID'];
-                    $firstname=$row_user_details['first_name'];
-                    $lastname=$row_user_details['last_name'];
-                    $email=$row_user_details['user_email'];
-                    $mobile=$row_user_details['user_mob_no'];
-                }
+                            $get_user_details = "select * from users where user_id=$userid";
 
-                ?>
-
-                <br>
-                <p class="txt4">First Name : <?php echo  $firstname;?></p>
-                <p class="txt4">Last Name : <?php echo  $lastname;?></p>
-                <p class="txt4">Email Address : <?php echo   $email;?></p>
-                <p class="txt4">Mobile No :<?php echo   $mobile;?></p><br>
-
-                <a href="user_profile_edit.php?editid=<?php echo htmlentities($id);?>" class="edit" title="Edit" data-toggle="tooltip"><div class="d-grid gap-2 col-10 mx-auto">
-                    <button class="btn btn-success text-centered" type="button">Edit</button>
-                </div></a>
+                            $run_user_details = mysqli_query($conn, $get_user_details);
 
 
 
+                            while ($row_user_details = mysqli_fetch_array($run_user_details)) {
+
+                                $id = $row_user_details['ID'];
+                                $firstname = $row_user_details['first_name'];
+                                $lastname = $row_user_details['last_name'];
+                                $email = $row_user_details['user_email'];
+                                $mobile = $row_user_details['user_mob_no'];
+                            }
+
+                            ?>
+
+
+                            <div class="col col-md-12">
+                                <label>Firstname</label>
+                                <input class="form-control" type="text" value=<?php echo $firstname; ?> readonly>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label>Lastname</label>
+                                <input class="form-control" type="text" value=<?php echo  $lastname; ?> readonly>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label>Email</label>
+                                <input class="form-control" type="text" value=<?php echo  $email; ?> readonly>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label>Mobile No</label>
+                                <input class="form-control" type="text" value=<?php echo $mobile; ?> readonly>
+                            </div><br>
+
+                            <a href="user_profile_edit.php?editid=<?php echo htmlentities($id); ?>" class="edit" title="Edit" data-toggle="tooltip">
+                                <div class="d-grid gap-2 col-6 mx-auto">
+                                    <button class="btn btn-outline-success" type="submit">Submit</button>
+                                </div>
+                            </a>
+                        </form>
+                    </div>
+                </div>
             </div>
-
         </div>
-    </div><br><br>
+    </div>
+    <!-- hide only on xs -->
 
+    <!-- visible only on xs -->
+    <div class="form-body  d-block d-sm-none" style="zoom:70%">
+        <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3 class="text-center">User Profile</h3>
+                        <form class="requires-validation" novalidate>
+
+
+                            <?php
+
+                            $get_user_details = "select * from users where user_id=$userid";
+
+                            $run_user_details = mysqli_query($conn, $get_user_details);
+
+
+
+                            while ($row_user_details = mysqli_fetch_array($run_user_details)) {
+
+                                $id = $row_user_details['ID'];
+                                $firstname = $row_user_details['first_name'];
+                                $lastname = $row_user_details['last_name'];
+                                $email = $row_user_details['user_email'];
+                                $mobile = $row_user_details['user_mob_no'];
+                            }
+
+                            ?>
+
+
+                            <div class="col col-md-12">
+                                <label>Firstname</label>
+                                <input class="form-control" type="text" value=<?php echo $firstname; ?> readonly>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label>Lastname</label>
+                                <input class="form-control" type="text" value=<?php echo  $lastname; ?> readonly>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label>Email</label>
+                                <input class="form-control" type="text" value=<?php echo  $email; ?> readonly>
+                            </div>
+
+                            <div class="col-md-12">
+                                <label>Mobile No</label>
+                                <input class="form-control" type="text" value=<?php echo $mobile; ?> readonly>
+                            </div><br>
+
+                            <a href="user_profile_edit.php?editid=<?php echo htmlentities($id); ?>" class="edit" title="Edit" data-toggle="tooltip">
+                                <div class="d-grid gap-2 col-6 mx-auto">
+                                    <button class="btn btn-outline-success" type="submit">Submit</button>
+                                </div>
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- visible only on xs -->
 
     <!-- Footer -->
 
