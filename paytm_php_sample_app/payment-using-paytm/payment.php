@@ -45,6 +45,7 @@ $paytmParams["WEBSITE"] = PAYTM_MERCHANT_WEBSITE;
 $paytmParams["INDUSTRY_TYPE_ID"] = PAYTM_INDUSTRY_TYPE_ID;
 $paytmParams["CALLBACK_URL"] = PAYTM_CALLBACK_URL;
 $paytmChecksum = getChecksumFromArray($paytmParams, PAYTM_MERCHANT_KEY);
+print_r($paytmParams);
 
 
 
