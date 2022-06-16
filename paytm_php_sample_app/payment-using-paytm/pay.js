@@ -14,7 +14,7 @@
     })
 })()
 
-window.onload = function () {
-  var button = document.getElementById('clickbutton');
-  button.form.submit();
-}
+// window.onload = function () {
+//   var button = document.getElementById('clickbutton');
+//   button.form.submit();
+// }

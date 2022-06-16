@@ -23,7 +23,7 @@ $email = $_POST['email'];
 // This is the staging value. Production value is available in your dashboard
 // define("callbackUrl", "https://<Merchant_Response_URL>");
 
-$orderId     = time();
+$orderId     = rand(1000,9999);
 $txnAmount     = "$transaction_amount";
 $custId     = "$customer_id";
 $mobileNo     = "$mobile_number";
@@ -42,6 +42,7 @@ $paytmParams["WEBSITE"] = PAYTM_MERCHANT_WEBSITE;
 $paytmParams["INDUSTRY_TYPE_ID"] = PAYTM_INDUSTRY_TYPE_ID;
 $paytmParams["CALLBACK_URL"] = PAYTM_CALLBACK_URL;
 $paytmChecksum = getChecksumFromArray($paytmParams, PAYTM_MERCHANT_KEY);
+print_r($paytmParams);
 
 
 $transactionURL = PAYTM_TXN_URL;
