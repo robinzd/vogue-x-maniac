@@ -2,11 +2,12 @@
 require_once("PaytmKit/lib/config_paytm.php");
 require_once("PaytmKit/lib/encdec_paytm.php");
 
+$order_id = $_POST['order_id'];
 $transaction_amount = $_POST['txn_no'];
 $customer_id = $_POST['cust_id'];
 $mobile_number = $_POST['mob_no'];
 $email = $_POST['email'];
-$order_id = $_POST['order_id'];
+
 
 
 
