@@ -416,6 +416,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                         <span>vogue-x-maniac Team</span>
 
                         <form method="Post">
+                            <input type="hidden" name="order_id" value="<?php echo $order_id; ?>">
                             <input type="hidden" name="txn_no" value="<?php echo  $totalamount; ?>">
                             <input type="hidden" name="cust_id" value="<?php echo $userid; ?>">
                             <input type="hidden" name="mob_no" value="<?php echo  $mob_no; ?>">
@@ -772,6 +773,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                         <span>vogue-x-maniac Team</span>
 
                         <form method="Post">
+                            <input type="hidden" name="order_id" value="<?php echo $order_id; ?>">
                             <input type="hidden" name="txn_no" value="<?php echo  $totalamount; ?>">
                             <input type="hidden" name="cust_id" value="<?php echo $userid; ?>">
                             <input type="hidden" name="mob_no" value="<?php echo  $mob_no; ?>">

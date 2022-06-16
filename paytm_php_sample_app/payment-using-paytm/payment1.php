@@ -2,6 +2,7 @@
 require_once("PaytmKit/lib/config_paytm.php");
 require_once("PaytmKit/lib/encdec_paytm.php");
 
+$order_Id = $_POST['order_id'];
 $transaction_amount = $_POST['txn_no'];
 $total_amount=$transaction_amount/2;
 $customer_id = $_POST['cust_id'];
@@ -24,7 +25,7 @@ $email = $_POST['email'];
 // This is the staging value. Production value is available in your dashboard
 // define("callbackUrl", "https://<Merchant_Response_URL>");
 
-$orderId     = time();
+$orderId     = "$order_Id";
 $txnAmount     = "$total_amount";
 $custId     = "$customer_id";
 $mobileNo     = "$mobile_number";
