@@ -109,7 +109,7 @@ $userid = $user_data['user_id'];
 
                             <a href="user_profile_edit.php?editid=<?php echo htmlentities($id); ?>" class="edit" title="Edit" data-toggle="tooltip">
                                 <div class="d-grid gap-2 col-6 mx-auto">
-                                    <button class="btn btn-outline-success" type="submit">Submit</button>
+                                    <button class="btn btn-outline-success">edit</button>
                                 </div>
                             </a>
                         </form>
@@ -172,7 +172,7 @@ $userid = $user_data['user_id'];
 
                             <a href="user_profile_edit.php?editid=<?php echo htmlentities($id); ?>" class="edit" title="Edit" data-toggle="tooltip">
                                 <div class="d-grid gap-2 col-6 mx-auto">
-                                    <button class="btn btn-outline-success" type="submit">Submit</button>
+                                    <button class="btn btn-outline-success">Edit</button>
                                 </div>
                             </a>
                         </form>
