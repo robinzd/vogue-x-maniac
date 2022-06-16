@@ -38,7 +38,7 @@ while ($row_users = mysqli_fetch_array($run_users)) {
 
 
 
-$order_id = random_num(10);
+$order_id = random_num(1000,9999);
 
 
 
