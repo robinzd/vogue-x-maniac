@@ -63,7 +63,7 @@ $userid = $user_data['user_id'];
             <div class="form-holder">
                 <div class="form-content">
                     <div class="form-items">
-                        <h3 class="text-center">User Profile</h3>
+                        <h3 class="text-center"><i class="fa fa-user"></i>User Profile</h3>
                        
 
 
