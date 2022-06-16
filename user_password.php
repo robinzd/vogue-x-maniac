@@ -88,7 +88,7 @@ $userid = $user_data['user_id'];
 
                             <div class="col col-md-12">
                                 <label>Old Password</label>
-                                <input class="form-control" type="text" value=<?php echo $password; ?> readonly>
+                                <input class="form-control" type="password" value=<?php echo $password; ?> readonly>
                             </div><br>
 
                             <a href="user_password_edit.php?editid=<?php echo htmlentities($id); ?>" class="edit" title="Edit" data-toggle="tooltip">
@@ -136,7 +136,7 @@ $userid = $user_data['user_id'];
 
                             <div class="col col-md-12">
                                 <label>Old Password</label>
-                                <input class="form-control" type="text" value=<?php echo $password; ?> readonly>
+                                <input class="form-control" type="password" value=<?php echo $password; ?> readonly>
                             </div><br>
 
                             <a href="user_password_edit.php?editid=<?php echo htmlentities($id); ?>" class="edit" title="Edit" data-toggle="tooltip">
