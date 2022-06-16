@@ -6,6 +6,7 @@ $transaction_amount = $_POST['txn_no'];
 $customer_id = $_POST['cust_id'];
 $mobile_number = $_POST['mob_no'];
 $email = $_POST['email'];
+$order_id = $_POST['order_id'];
 
 
 
@@ -23,7 +24,7 @@ $email = $_POST['email'];
 // This is the staging value. Production value is available in your dashboard
 // define("callbackUrl", "https://<Merchant_Response_URL>");
 
-$orderId     = rand(1000,9999);
+$orderId     = "$order_id";
 $txnAmount     = "$transaction_amount";
 $custId     = "$customer_id";
 $mobileNo     = "$mobile_number";
