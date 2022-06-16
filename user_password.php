@@ -93,7 +93,7 @@ $userid = $user_data['user_id'];
 
                             <a href="user_password_edit.php?editid=<?php echo htmlentities($id); ?>" class="edit" title="Edit" data-toggle="tooltip">
                                 <div class="d-grid gap-2 col-6 mx-auto">
-                                    <button class="btn btn-outline-success">edit</button>
+                                    <button class="btn btn-outline-success">Change Password</button>
                                 </div>
                             </a>
 
@@ -141,7 +141,7 @@ $userid = $user_data['user_id'];
 
                             <a href="user_password_edit.php?editid=<?php echo htmlentities($id); ?>" class="edit" title="Edit" data-toggle="tooltip">
                                 <div class="d-grid gap-2 col-6 mx-auto">
-                                    <button class="btn btn-outline-success">edit</button>
+                                    <button class="btn btn-outline-success">Change Password</button>
                                 </div>
                             </a>
 
