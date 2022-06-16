@@ -86,9 +86,9 @@ $userid = $user_data['user_id'];
 
                             ?>
 
-
+                            <label>Firstname</label>
                             <div class="col col-md-12">
-                                <label>Firstname</label>
+
                                 <input class="form-control" type="text" value=<?php echo $firstname; ?> readonly>
                             </div>
 
