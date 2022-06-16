@@ -107,11 +107,13 @@ $userid = $user_data['user_id'];
                                 <input class="form-control" type="text" value=<?php echo $mobile; ?> readonly>
                             </div><br>
 
-                            <a href="user_profile_edit.php?editid=<?php echo htmlentities($id); ?>" class="edit" title="Edit" data-toggle="tooltip">
+                           
                                 <div class="d-grid gap-2 col-6 mx-auto">
+                                <a href="user_profile_edit.php?editid=<?php echo htmlentities($id); ?>" class="edit" title="Edit" data-toggle="tooltip">
                                     <button class="btn btn-outline-success">edit</button>
+                                </a>
                                 </div>
-                            </a>
+                           
                         </form>
                     </div>
                 </div>
