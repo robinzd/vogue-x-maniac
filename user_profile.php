@@ -64,7 +64,7 @@ $userid = $user_data['user_id'];
                 <div class="form-content">
                     <div class="form-items">
                         <h3 class="text-center">User Profile</h3>
-                        <form class="requires-validation" novalidate>
+                       
 
 
                             <?php
@@ -113,7 +113,7 @@ $userid = $user_data['user_id'];
                                 </div>
                             </a>
 
-                        </form>
+                       
                     </div>
                 </div>
             </div>
