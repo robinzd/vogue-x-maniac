@@ -76,12 +76,12 @@ $userid = $user_data['user_id'];
                                 <div class="tag">Your Profile</div>
                             </div>
                         </div></a>
-                        <div class="box me-4 my-1 bg-light">
-                            <img src="./reset-password-icon-29.jpg" alt="">
+                        <a href="./user_password.php"><div class="box me-4 my-1 bg-light">
+                       <img src="./reset-password-icon-29.jpg" alt="">
                             <div class="d-flex align-items-center mt-2">
                                 <div class="tag">Password management</div>
                             </div>
-                        </div>
+                        </div></a>
                     </div>
                     <div class="text-uppercase">My orders</div>
                     <div class="order my-3 bg-light">
