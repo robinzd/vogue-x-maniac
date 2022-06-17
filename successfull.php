@@ -1,7 +1,43 @@
 <?php
 
-$ORDERID = $_POST["ORDERID"];
-echo $ORDERID;
+$order_id = $_POST["ORDERID"];
+echo $order_id;
+echo "<br>";
+$txn_id=$_POST["TXNID"];
+echo $txn_id;
+echo "<br>";
+$txn_amount=$_POST["TXNAMOUNT"];
+echo $txn_amount;
+echo "<br>";
+$payment_mode=$POST["PAYMENTMODE"];
+echo $payment_mode;
+echo "<br>";
+$currency=$POST["CURRENCY"];
+echo $currency;
+echo "<br>";
+$txn_date=$POST["TXNDATE"];
+echo $txn_date;
+echo "<br>";
+$status=$POST["STATUS"];
+echo $status;
+echo "<br>";
+$response=$POST["RESPCODE"];
+echo $response;
+echo "<br>";
+$response_msg=$POST["RESPMSG"];
+echo $payment_mode;
+echo "<br>";
+$gateway=$POST["GATEWAYNAME"];
+echo $payment_mode;
+echo "<br>";
+$bank_id=$POST["BANKTXNID"];
+echo $bank_id;
+echo "<br>";
+$bank_name=$POST["BANKNAME"];
+echo $bank_name;
+echo "<br>";
+
+
 
 print_r($_POST);
 ?>
