@@ -37,9 +37,6 @@ $bank_name=$_POST["BANKNAME"];
 echo $bank_name;
 echo "<br>";
 
-
-
-print_r($_POST);
 ?>
 
 
