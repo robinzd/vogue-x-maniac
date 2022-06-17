@@ -3,6 +3,8 @@
 
 $ORDERID=$_POST["ORDERID"];
 echo $ORDERID;
+
+print_r($_POST);
 ?>
 
 
