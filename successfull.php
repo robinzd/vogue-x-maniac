@@ -1,9 +1,9 @@
 <?php
 
-$ORDERID = $_POST["ORDERID"];
-echo $ORDERID;
+// $ORDERID = $_POST["ORDERID"];
+// echo $ORDERID;
 
-print_r($_POST);
+// print_r($_POST);
 ?>
 
 
