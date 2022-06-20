@@ -10,6 +10,8 @@ $userid = $user_data['user_id'];
 
 $order_id = $_POST["order_id"];
 
+echo $order_id;
+
 ?>
 
 
