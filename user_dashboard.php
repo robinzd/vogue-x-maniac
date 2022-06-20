@@ -119,7 +119,7 @@ $status = $_POST["status"];
 
 
 
-                    $get_orders = "select * from users_order where user_id = $userid";
+                    $get_orders = "select * from users_order where user_id = $userid and order_id = $order_id ";
 
                     $run_orders = mysqli_query($conn, $get_orders);
 
