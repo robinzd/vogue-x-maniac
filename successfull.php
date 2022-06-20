@@ -2,11 +2,7 @@
 session_start();
 
 include("./conn.php");
-include("./function.php");
 
-$user_data = check_login($conn);
-
-$userid = $user_data['user_id'];
 
 $order_id = $_POST["ORDERID"];
 $txn_id = $_POST["TXNID"];
@@ -25,7 +21,7 @@ print_r($_POST);
 
 
 if (!empty($order_id) && !empty($txn_id) && !empty($txn_amount) && !empty($payment_mode) && !empty($currency) && !empty($txn_date) &&  !empty($status)  &&  !empty($response)  &&  !empty($response_msg)  &&  !empty($gateway)  &&  !empty($bank_id)  &&  !empty($bank_name)) {
-    $query_address = mysqli_query($conn, "INSERT INTO `users_address`( `user_id`, `order_id`, `transaction_id`,`transaction_amount`,`payment_mode`,`Currency`,`transaction_date`,`current_status`,`response_status`,`response_message`,`gateway`,`bank_id`,`bank_name`) VALUES ('$userid ','$order_id','$txn_id','$txn_amount','$payment_mode','$currency','$txn_date','$status','$response','$response_msg','$gateway','$bank_id','$bank_name')");
+    $query_address = mysqli_query($conn, "INSERT INTO `payment_info`(`order_id`, `transaction_id`,`transaction_amount`,`payment_mode`,`Currency`,`transaction_date`,`current_status`,`response_status`,`response_message`,`gateway`,`bank_id`,`bank_name`) VALUES ('$order_id','$txn_id','$txn_amount','$payment_mode','$currency','$txn_date','$status','$response','$response_msg','$gateway','$bank_id','$bank_name')");
 } else {
 
     echo "<script>alert('Something Went Wrong!');</script>";
