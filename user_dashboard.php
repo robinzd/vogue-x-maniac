@@ -117,31 +117,31 @@ $status = $_POST["status"];
 
                     $real_status = "TXN_SUCCESS";
 
+                    if ($status ==  $real_status) {
 
+                        $get_orders = "select * from users_order where user_id = $userid ";
 
-                    $get_orders = "select * from users_order where user_id = $userid and order_id = $order_id ";
-
-                    $run_orders = mysqli_query($conn, $get_orders);
-
-
-
-                    while ($row_orders = mysqli_fetch_array($run_orders)) {
-                        $order_no = $row_orders['order_id'];
-                        $productid = $row_orders['product_id'];
+                        $run_orders = mysqli_query($conn, $get_orders);
 
 
 
-                        $get_product_name = "select * from products_details where ID = $productid";
+                        while ($row_orders = mysqli_fetch_array($run_orders)) {
+                            $order_no = $row_orders['order_id'];
+                            $productid = $row_orders['product_id'];
 
-                        $run__product_name = mysqli_query($conn, $get_product_name);
+
+
+                            $get_product_name = "select * from products_details where ID = $productid";
+
+                            $run__product_name = mysqli_query($conn, $get_product_name);
 
 
 
-                        while ($row_product_name = mysqli_fetch_array($run__product_name)) {
+                            while ($row_product_name = mysqli_fetch_array($run__product_name)) {
 
-                            $product_title = $row_product_name['product_title'];
+                                $product_title = $row_product_name['product_title'];
 
-                            if ($status ==  $real_status) {
+
                                 echo "<div class='order my-3 bg-light'>
                         <div class='row'>
                             <div class='col-lg-12'>
@@ -162,31 +162,54 @@ $status = $_POST["status"];
                             </div>
                         </div>
                     </div>";
-                            } else {
+                            }
+                        }
+                    } else {
+
+                        $get_orders = "select * from users_order where user_id = $userid ";
+
+                        $run_orders = mysqli_query($conn, $get_orders);
+
+
+
+                        while ($row_orders = mysqli_fetch_array($run_orders)) {
+                            $order_no = $row_orders['order_id'];
+                            $productid = $row_orders['product_id'];
+
+
+
+                            $get_product_name = "select * from products_details where ID = $productid";
+
+                            $run__product_name = mysqli_query($conn, $get_product_name);
+
+
+
+                            while ($row_product_name = mysqli_fetch_array($run__product_name)) {
+
+                                $product_title = $row_product_name['product_title'];
                                 echo "<div class='order my-3 bg-light'>
-                        <div class='row'>
-                            <div class='col-lg-12'>
-                                <div class='d-flex flex-column justify-content-between order-summary'>
-                                    <div class='d-flex align-items-center'>
-                                        <div class='text-uppercase'>Order No:$order_no</div>
-                                        <div class='red-label ms-auto text-capitalize'>Cancelled</div>
-                                        </div>
-                                    <div class='fs-8'>Product Name:$product_title</div>
-                                    <div class='fs-8'>$date|$final_time</div>
-                                </div>
-                            </div>
-                            <div class='col-lg-12'>
-                                <div class='d-sm-flex align-items-sm-start justify-content-sm-between'>
-                            <div class='status'>Status : Failed</div>
-                        <div class='btn text-capitalize'>order info</div>
-                                </div>
+                    <div class='row'>
+                        <div class='col-lg-12'>
+                            <div class='d-flex flex-column justify-content-between order-summary'>
+                                <div class='d-flex align-items-center'>
+                                    <div class='text-uppercase'>Order No:$order_no</div>
+                                    <div class='red-label ms-auto text-capitalize'>Cancelled</div>
+                                    </div>
+                                <div class='fs-8'>Product Name:$product_title</div>
+                                <div class='fs-8'>$date|$final_time</div>
                             </div>
                         </div>
-                    </div>";
+                        <div class='col-lg-12'>
+                            <div class='d-sm-flex align-items-sm-start justify-content-sm-between'>
+                        <div class='status'>Status : Failed</div>
+                    <div class='btn text-capitalize'>order info</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>";
                             }
                         }
                     }
-
                     ?>
                 </div>
             </div>
