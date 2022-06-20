@@ -119,14 +119,16 @@ $status = $_POST["status"];
 
                     if ($status ==  $real_status) {
 
-                        $get_orders = "select * from users_order where user_id = $userid ";
+                        $get_orders = "select * from users_order where user_id=$userid and order_id=$order_id";
 
                         $run_orders = mysqli_query($conn, $get_orders);
 
 
 
                         while ($row_orders = mysqli_fetch_array($run_orders)) {
+
                             $order_no = $row_orders['order_id'];
+                            
                             $productid = $row_orders['product_id'];
 
 
@@ -166,14 +168,16 @@ $status = $_POST["status"];
                         }
                     } else {
 
-                        $get_orders = "select * from users_order where user_id = $userid ";
+                        $get_orders = "select * from users_order where user_id = $userid and order_id=$order_id";
 
                         $run_orders = mysqli_query($conn, $get_orders);
 
 
 
                         while ($row_orders = mysqli_fetch_array($run_orders)) {
-                            $order_no = $row_orders['order_id'];
+
+                             $order_no = $row_orders['order_id'];
+
                             $productid = $row_orders['product_id'];
 
 
