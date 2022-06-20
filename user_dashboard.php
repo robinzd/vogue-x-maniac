@@ -108,26 +108,6 @@ $order_id = $_POST["order_id"];
                             </div>
                         </div>
                     </div>
-                    <div class="order my-3 bg-light">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="d-flex flex-column justify-content-between order-summary">
-                                    <div class="d-flex align-items-center">
-                                        <div class="text-uppercase">Order #fur10001</div>
-                                        <div class="green-label ms-auto text-capitalize">paid</div>
-                                    </div>
-                                    <div class="fs-8">Products #03</div>
-                                    <div class="fs-8">22 August, 2020 | 12:05 PM</div>
-                                </div>
-                            </div>
-                            <div class="col-lg-12">
-                                <div class="d-sm-flex align-items-sm-start justify-content-sm-between">
-                                    <div class="status">Status : Delivered</div>
-                                    <div class="btn text-capitalize">order info</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
