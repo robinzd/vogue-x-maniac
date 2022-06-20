@@ -141,7 +141,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status)) {
 
                     if ( $status_1 ==  $real_status) {
 
-                        $get_orders = "select * from users_order where user_id=$userid and order_id= $order_no_1";
+                        $get_orders = "select * from users_order where order_id= $order_no_1";
 
                         $run_orders = mysqli_query($conn, $get_orders);
 
@@ -190,7 +190,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status)) {
                         }
                     } else {
 
-                        $get_orders = "select * from users_order where user_id = $userid and order_id=$order_no_1";
+                        $get_orders = "select * from users_order where order_id=$order_no_1";
 
                         $run_orders = mysqli_query($conn, $get_orders);
 
