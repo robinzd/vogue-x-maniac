@@ -1,16 +1,35 @@
 <?php
+session_start();
+
+include("./conn.php");
+include("./function.php");
+
+$user_data = check_login($conn);
+
+$userid = $user_data['user_id'];
+
 $order_id = $_POST["ORDERID"];
-$txn_id=$_POST["TXNID"];
-$txn_amount=$_POST["TXNAMOUNT"];
-$payment_mode=$_POST["PAYMENTMODE"];
-$currency=$_POST["CURRENCY"];
-$txn_date=$_POST["TXNDATE"];
-$status=$_POST["STATUS"];
-$response=$_POST["RESPCODE"];
-$response_msg=$_POST["RESPMSG"];
-$gateway=$_POST["GATEWAYNAME"];
-$bank_id=$_POST["BANKTXNID"];
-$bank_name=$_POST["BANKNAME"];
+$txn_id = $_POST["TXNID"];
+$txn_amount = $_POST["TXNAMOUNT"];
+$payment_mode = $_POST["PAYMENTMODE"];
+$currency = $_POST["CURRENCY"];
+$txn_date = $_POST["TXNDATE"];
+$status = $_POST["STATUS"];
+$response = $_POST["RESPCODE"];
+$response_msg = $_POST["RESPMSG"];
+$gateway = $_POST["GATEWAYNAME"];
+$bank_id = $_POST["BANKTXNID"];
+$bank_name = $_POST["BANKNAME"];
+
+print_r($_POST);
+
+
+if (!empty($order_id) && !empty($txn_id) && !empty($txn_amount) && !empty($payment_mode) && !empty($currency) && !empty($txn_date) &&  !empty($status)  &&  !empty($response)  &&  !empty($response_msg)  &&  !empty($gateway)  &&  !empty($bank_id)  &&  !empty($bank_name)) {
+    $query_address = mysqli_query($conn, "INSERT INTO `users_address`( `user_id`, `order_id`, `transaction_id`,`transaction_amount`,`payment_mode`,`Currency`,`transaction_date`,`current_status`,`response_status`,`response_message`,`gateway`,`bank_id`,`bank_name`) VALUES ('$userid ','$order_id','$txn_id','$txn_amount','$payment_mode','$currency','$txn_date','$status','$response','$response_msg','$gateway','$bank_id','$bank_name')");
+} else {
+
+    echo "<script>alert('Something Went Wrong!');</script>";
+}
 ?>
 
 
@@ -45,7 +64,10 @@ $bank_name=$_POST["BANKNAME"];
                     <div class="content">
                         <h1>Payment Success !</h1>
                         <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. </p>
-                        <a href="./user_dashboard.php">Go to Home</a>
+                        <form method="Post" action="./user_dashboard.php">
+                        <input type="hidden" name="order_id" value="<?php echo $order_id; ?>">
+                        <a>Go to Home</a>
+                        </form>
                     </div>
 
                 </div>
