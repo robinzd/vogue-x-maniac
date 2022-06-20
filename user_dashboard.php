@@ -16,11 +16,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status)) {
 
     $query_address = mysqli_query($conn, "INSERT INTO `order_info`( `user_id`, `order_id`, `current_status`) VALUES ('$userid ','$order_id','$status')");
 
-} else {
-
-    echo "<script>alert('Something Went Wrong!');</script>";
 }
-
 
 
 ?>
