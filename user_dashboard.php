@@ -115,6 +115,10 @@ $status = $_POST["status"];
 
                     $final_time = $time->format('H:i');
 
+                    $real_status="TXN_SUCCESS";
+
+                  
+
                     $get_orders = "select * from users_order where user_id = $userid";
 
                     $run_orders = mysqli_query($conn, $get_orders);
@@ -137,57 +141,50 @@ $status = $_POST["status"];
 
                             $product_title = $row_product_name['product_title'];
 
-
+                            if($status ==  $real_status){
                             echo "<div class='order my-3 bg-light'>
                         <div class='row'>
                             <div class='col-lg-12'>
                                 <div class='d-flex flex-column justify-content-between order-summary'>
                                     <div class='d-flex align-items-center'>
-                                        <div class='text-uppercase'>Order No:$order_no</div>";
-
-                    ?>
-
-                            <?php
-
-                            if($status == 'TXN_SUCCESS'){
-
-                            echo "<div class='green-label ms-auto text-capitalize'>paid</div>";
-                            }
-                            else{
-                                echo "<div class='red-label ms-auto text-capitalize'>Cancelled</div>";
-                            }
-
-
-
-                            ?>
-                            <?php
-                            echo "</div>
+                                        <div class='text-uppercase'>Order No:$order_no</div>
+                                        <div class='green-label ms-auto text-capitalize'>paid</div>
+                                        </div>
                                     <div class='fs-8'>Product Name:$product_title</div>
                                     <div class='fs-8'>$date|$final_time</div>
                                 </div>
-                            </div>";
-
-                            ?>
-
-                            <?php
-                            echo "<div class='col-lg-12'>
-                                <div class='d-sm-flex align-items-sm-start justify-content-sm-between'>";
-
-                            ?>
-                            <?php
-                            if($status == 'TXN_SUCCESS'){
-                            echo "<div class='status'>Status : Ordered</div>";
-                            }
-                            else{
-                                echo "<div class='status'>Status : Failed</div>"; 
-                            }
-                            ?>
-                    <?php
-                            echo "<div class='btn text-capitalize'>order info</div>
+                            </div>
+                            <div class='col-lg-12'>
+                                <div class='d-sm-flex align-items-sm-start justify-content-sm-between'>
+                            <div class='status'>Status : Ordered</div>
+                        <div class='btn text-capitalize'>order info</div>
                                 </div>
                             </div>
                         </div>
                     </div>";
+                        }
+                        else{
+                            echo "<div class='order my-3 bg-light'>
+                        <div class='row'>
+                            <div class='col-lg-12'>
+                                <div class='d-flex flex-column justify-content-between order-summary'>
+                                    <div class='d-flex align-items-center'>
+                                        <div class='text-uppercase'>Order No:$order_no</div>
+                                        <div class='red-label ms-auto text-capitalize'>Cancelled</div>
+                                        </div>
+                                    <div class='fs-8'>Product Name:$product_title</div>
+                                    <div class='fs-8'>$date|$final_time</div>
+                                </div>
+                            </div>
+                            <div class='col-lg-12'>
+                                <div class='d-sm-flex align-items-sm-start justify-content-sm-between'>
+                            <div class='status'>Status : Failed</div>
+                        <div class='btn text-capitalize'>order info</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>";
+                        }
                         }
                     }
 
