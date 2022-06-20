@@ -17,7 +17,7 @@ $gateway = $_POST["GATEWAYNAME"];
 $bank_id = $_POST["BANKTXNID"];
 $bank_name = $_POST["BANKNAME"];
 
-print_r($_POST);
+
 
 
 if (!empty($order_id) && !empty($txn_id) && !empty($txn_amount) && !empty($payment_mode) && !empty($currency) && !empty($txn_date) &&  !empty($status)  &&  !empty($response)  &&  !empty($response_msg)  &&  !empty($gateway)  &&  !empty($bank_id)  &&  !empty($bank_name)) {

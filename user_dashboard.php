@@ -113,7 +113,7 @@ $status = $_POST["status"];
 
                     $time = new DateTime("now", new DateTimeZone('Asia/Calcutta'));
 
-                    $final_time = $time->format('m/d/Y, H:i');
+                    $final_time = $time->format('H:i');
 
                     $get_orders = "select * from users_order where order_id = $order_id";
 
