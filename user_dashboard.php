@@ -115,9 +115,9 @@ $status = $_POST["status"];
 
                     $final_time = $time->format('H:i');
 
-                    $real_status="TXN_SUCCESS";
+                    $real_status = "TXN_SUCCESS";
 
-                  
+
 
                     $get_orders = "select * from users_order where user_id = $userid";
 
@@ -141,8 +141,8 @@ $status = $_POST["status"];
 
                             $product_title = $row_product_name['product_title'];
 
-                            if($status ==  $real_status){
-                            echo "<div class='order my-3 bg-light'>
+                            if ($status ==  $real_status) {
+                                echo "<div class='order my-3 bg-light'>
                         <div class='row'>
                             <div class='col-lg-12'>
                                 <div class='d-flex flex-column justify-content-between order-summary'>
@@ -162,9 +162,8 @@ $status = $_POST["status"];
                             </div>
                         </div>
                     </div>";
-                        }
-                        else{
-                            echo "<div class='order my-3 bg-light'>
+                            } else {
+                                echo "<div class='order my-3 bg-light'>
                         <div class='row'>
                             <div class='col-lg-12'>
                                 <div class='d-flex flex-column justify-content-between order-summary'>
@@ -184,7 +183,7 @@ $status = $_POST["status"];
                             </div>
                         </div>
                     </div>";
-                        }
+                            }
                         }
                     }
 
