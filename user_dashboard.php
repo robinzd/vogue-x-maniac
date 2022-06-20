@@ -15,7 +15,6 @@ $status = $_POST["status"];
 if (!empty($userid) && !empty($order_id) && !empty($status)) {
 
     $query_address = mysqli_query($conn, "INSERT INTO `order_info`( `user_id`, `order_id`, `current_status`) VALUES ('$userid ','$order_id','$status')");
-
 }
 
 
@@ -125,48 +124,50 @@ if (!empty($userid) && !empty($order_id) && !empty($status)) {
 
                     $real_status = "TXN_SUCCESS";
 
-                    $get_order_no = "select * from order_info where user_id=$userid";
+                    if ($status ==  $real_status) {
 
-                    $run_order_no = mysqli_query($conn, $get_order_no);
+                        $get_order_no = "select * from order_info where user_id=$userid";
 
-
-
-                    while ($row_order_no = mysqli_fetch_array($run_order_no)) {
-
-                        $order_no_1 = $row_order_no['order_id'];
-                        
-                        $status_1 = $row_order_no['current_status'];
-
-                    }
-
-                    if ( $status_1 ==  $real_status) {
-
-                        $get_orders = "select * from users_order where user_id = '$userid' and order_id='$order_no_1'";
-
-                        $run_orders = mysqli_query($conn, $get_orders);
+                        $run_order_no = mysqli_query($conn, $get_order_no);
 
 
 
-                        while ($row_orders = mysqli_fetch_array($run_orders)) {
+                        while ($row_order_no = mysqli_fetch_array($run_order_no)) {
 
-                            $order_no = $row_orders['order_id'];
-                            
-                            $productid = $row_orders['product_id'];
+                            $order_no_1 = $row_order_no['order_id'];
 
-
-
-                            $get_product_name = "select * from products_details where ID = $productid";
-
-                            $run__product_name = mysqli_query($conn, $get_product_name);
+                            // $status_1 = $row_order_no['current_status'];
 
 
 
-                            while ($row_product_name = mysqli_fetch_array($run__product_name)) {
-
-                                $product_title = $row_product_name['product_title'];
 
 
-                                echo "<div class='order my-3 bg-light'>
+                            $get_orders = "select * from users_order where user_id = '$userid' and order_id='$order_no_1'";
+
+                            $run_orders = mysqli_query($conn, $get_orders);
+
+
+
+                            while ($row_orders = mysqli_fetch_array($run_orders)) {
+
+                                $order_no = $row_orders['order_id'];
+
+                                $productid = $row_orders['product_id'];
+
+
+
+                                $get_product_name = "select * from products_details where ID = $productid";
+
+                                $run__product_name = mysqli_query($conn, $get_product_name);
+
+
+
+                                while ($row_product_name = mysqli_fetch_array($run__product_name)) {
+
+                                    $product_title = $row_product_name['product_title'];
+
+
+                                    echo "<div class='order my-3 bg-light'>
                         <div class='row'>
                             <div class='col-lg-12'>
                                 <div class='d-flex flex-column justify-content-between order-summary'>
@@ -186,6 +187,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status)) {
                             </div>
                         </div>
                     </div>";
+                                }
                             }
                         }
                     } else {
@@ -199,7 +201,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status)) {
 
                         while ($row_orders = mysqli_fetch_array($run_orders)) {
 
-                             $order_no = $row_orders['order_id'];
+                            $order_no = $row_orders['order_id'];
 
                             $productid = $row_orders['product_id'];
 
