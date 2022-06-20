@@ -115,7 +115,7 @@ $status = $_POST["status"];
 
                     $final_time = $time->format('H:i');
 
-                    $get_orders = "select * from users_order where order_id = $order_id";
+                    $get_orders = "select * from users_order where user_id = $userid";
 
                     $run_orders = mysqli_query($conn, $get_orders);
 
