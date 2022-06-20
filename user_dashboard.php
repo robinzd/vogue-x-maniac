@@ -153,58 +153,60 @@ if (!empty($userid) && !empty($order_id) && !empty($status)) {
                             $order_no = $row_orders['order_id'];
 
                             $productid = $row_orders['product_id'];
-                        }
 
 
 
-                        $get_product_name = "select * from products_details where ID = $productid";
 
-                        $run__product_name = mysqli_query($conn, $get_product_name);
+                            $get_product_name = "select * from products_details where ID = $productid";
 
-
-
-                        while ($row_product_name = mysqli_fetch_array($run__product_name)) {
-
-                            $product_title = $row_product_name['product_title'];
-                        }
+                            $run__product_name = mysqli_query($conn, $get_product_name);
 
 
-                        echo "<div class='order my-3 bg-light'>
+
+                            while ($row_product_name = mysqli_fetch_array($run__product_name)) {
+
+                                $product_title = $row_product_name['product_title'];
+
+
+
+                                echo "<div class='order my-3 bg-light'>
                         <div class='row'>
                             <div class='col-lg-12'>
                                 <div class='d-flex flex-column justify-content-between order-summary'>
                                     <div class='d-flex align-items-center'>
                                         <div class='text-uppercase'>Order No:$order_no</div>";
                     ?>
-                        <?php
-                        if ($status_1 == $real_status) {
-                            echo "<div class='green-label ms-auto text-capitalize'>paid</div>";
-                        } else {
-                            echo "<div class='red-label ms-auto text-capitalize'>Failed</div>";
-                        }
-                        ?>
-                        <?php
-                        echo "</div>
+                                <?php
+                                if ($status_1 == $real_status) {
+                                    echo "<div class='green-label ms-auto text-capitalize'>paid</div>";
+                                } else {
+                                    echo "<div class='red-label ms-auto text-capitalize'>Failed</div>";
+                                }
+                                ?>
+                                <?php
+                                echo "</div>
                                     <div class='fs-8'>Product Name:$product_title</div>
                                     <div class='fs-8'>$date|$final_time</div>
                                 </div>
                             </div>
                             <div class='col-lg-12'>
                                 <div class='d-sm-flex align-items-sm-start justify-content-sm-between'>";
-                        ?>
-                        <?php
-                        if ($status_1 == $real_status) {
-                            echo "<div class='status'>Status :Ordered</div>";
-                        } else {
-                            echo "<div class='status'>Status :Cancelled</div>";
-                        }
-                        ?>
+                                ?>
+                                <?php
+                                if ($status_1 == $real_status) {
+                                    echo "<div class='status'>Status : Ordered</div>";
+                                } else {
+                                    echo "<div class='status'>Status :Cancelled</div>";
+                                }
+                                ?>
                     <?php
-                        echo "<div class='btn text-capitalize'>order info</div>
+                                echo "<div class='btn text-capitalize'>order info</div>
                                 </div>
                             </div>
                         </div>
                     </div>";
+                            }
+                        }
                     }
                     ?>
                 </div>
