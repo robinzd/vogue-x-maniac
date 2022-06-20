@@ -11,6 +11,18 @@ $userid = $user_data['user_id'];
 $order_id = $_POST["order_id"];
 $status = $_POST["status"];
 
+
+if (!empty($userid) && !empty($order_id) && !empty($status)) {
+
+    $query_address = mysqli_query($conn, "INSERT INTO `order_info`( `user_id`, `order_id`, `current_status`) VALUES ('$userid ','$order_id','$status')");
+
+} else {
+
+    echo "<script>alert('Something Went Wrong!');</script>";
+}
+
+
+
 ?>
 
 
@@ -117,9 +129,23 @@ $status = $_POST["status"];
 
                     $real_status = "TXN_SUCCESS";
 
-                    if ($status ==  $real_status) {
+                    $get_order_no = "select * from order_info where user_id=$userid";
 
-                        $get_orders = "select * from users_order where user_id=$userid and order_id=$order_id";
+                    $run_order_no = mysqli_query($conn, $get_order_no);
+
+
+
+                    while ($row_order_no = mysqli_fetch_array($run_order_no)) {
+
+                        $order_no_1 = $row_order_no['order_id'];
+                        
+                        $status_1 = $row_order_no['current_status'];
+
+                    }
+
+                    if ( $status_1 ==  $real_status) {
+
+                        $get_orders = "select * from users_order where user_id=$userid and order_id= $order_no_1";
 
                         $run_orders = mysqli_query($conn, $get_orders);
 
@@ -168,7 +194,7 @@ $status = $_POST["status"];
                         }
                     } else {
 
-                        $get_orders = "select * from users_order where user_id = $userid and order_id=$order_id";
+                        $get_orders = "select * from users_order where user_id = $userid and order_id=$order_no_1";
 
                         $run_orders = mysqli_query($conn, $get_orders);
 
