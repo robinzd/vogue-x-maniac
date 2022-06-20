@@ -61,7 +61,8 @@ if (!empty($order_id) && !empty($txn_id) && !empty($txn_amount) && !empty($payme
                         <h1>Payment Success !</h1>
                         <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
                         <form method="Post" action="./user_dashboard.php">
-                        <input type="hidden" name="order_id" value="<?php echo $order_id; ?>">
+                        <input type="hidden" name="order_id" value="<?php echo $order_id;?>">
+                        <input type="hidden" name="status" value="<?php echo $status; ?>">
                         <button type="submit" class="btn btn-success">Go to Home</button>
                         </form>
                     </div>

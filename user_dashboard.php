@@ -9,8 +9,7 @@ $user_data = check_login($conn);
 $userid = $user_data['user_id'];
 
 $order_id = $_POST["order_id"];
-
-
+$status = $_POST["status"];
 
 ?>
 
@@ -67,47 +66,132 @@ $order_id = $_POST["order_id"];
     <div class="container mt-4">
         <div class="row">
 
+            <?php
+
+            $get_users = "select * from users where user_id=$userid";
+
+            $run_users = mysqli_query($conn, $get_users);
+
+
+
+            while ($row_users = mysqli_fetch_array($run_users)) {
+                $firstname = $row_users['first_name'];
+                $lastname = $row_users['last_name'];
+                $useremail = $row_users['user_email'];
+            }
+
+            ?>
+
             <div class="col-lg-12 my-lg-0 my-1">
                 <div id="main-content" class="bg-white border">
                     <div class="d-flex flex-column">
-                        <div class="h5">Hello Jhon,</div>
-                        <div>Logged in as: someone@gmail.com</div>
+                        <div class="h5">Hello <?php echo $firstname . " " . $lastname ?>,</div>
+                        <div>Logged in as:<?php echo $useremail ?></div>
                     </div>
                     <div class="col-12 d-flex my-4 flex-wrap">
-                        <a href="./user_profile.php"><div class="box me-4 my-1 bg-light">
-                            <img src="./159-1595553_profile-blue-logo-png-removebg-preview.png" alt="">
-                            <div class="d-flex align-items-center mt-2">
-                                <div class="tag">Your Profile</div>
-                            </div>
-                        </div></a>
-                        <a href="./user_password.php"><div class="box me-4 my-1 bg-light">
-                       <img src="./reset-password-icon-29.jpg" alt="">
-                            <div class="d-flex align-items-center mt-2">
-                                <div class="tag">Password management</div>
-                            </div>
-                        </div></a>
-                    </div>
-                    <div class="text-uppercase">My orders</div>
-                    <div class="order my-3 bg-light">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="d-flex flex-column justify-content-between order-summary">
-                                    <div class="d-flex align-items-center">
-                                        <div class="text-uppercase">Order #fur10001</div>
-                                        <div class="green-label ms-auto text-capitalize">paid</div>
-                                    </div>
-                                    <div class="fs-8">Products #03</div>
-                                    <div class="fs-8">22 August, 2020 | 12:05 PM</div>
+                        <a href="./user_profile.php">
+                            <div class="box me-4 my-1 bg-light">
+                                <img src="./159-1595553_profile-blue-logo-png-removebg-preview.png" alt="">
+                                <div class="d-flex align-items-center mt-2">
+                                    <div class="tag">Your Profile</div>
                                 </div>
                             </div>
-                            <div class="col-lg-12">
-                                <div class="d-sm-flex align-items-sm-start justify-content-sm-between">
-                                    <div class="status">Status : Delivered</div>
-                                    <div class="btn text-capitalize">order info</div>
+                        </a>
+                        <a href="./user_password.php">
+                            <div class="box me-4 my-1 bg-light">
+                                <img src="./reset-password-icon-29.jpg" alt="">
+                                <div class="d-flex align-items-center mt-2">
+                                    <div class="tag">Password management</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="text-uppercase">My orders</div>
+                    <?php
+
+                    $date = date("d M,Y");
+
+                    $time = new DateTime("now", new DateTimeZone('Asia/Calcutta'));
+
+                    $final_time = $time->format('m/d/Y, H:i');
+
+                    $get_orders = "select * from users_order where order_id = $order_id";
+
+                    $run_orders = mysqli_query($conn, $get_orders);
+
+
+
+                    while ($row_orders = mysqli_fetch_array($run_orders)) {
+                        $order_no = $row_orders['order_id'];
+                        $productid = $row_orders['product_id'];
+
+
+
+                        $get_product_name = "select * from products_details where ID = $productid";
+
+                        $run__product_name = mysqli_query($conn, $get_product_name);
+
+
+
+                        while ($row_product_name = mysqli_fetch_array($run__product_name)) {
+
+                            $product_title = $row_product_name['product_title'];
+
+
+                            echo "<div class='order my-3 bg-light'>
+                        <div class='row'>
+                            <div class='col-lg-12'>
+                                <div class='d-flex flex-column justify-content-between order-summary'>
+                                    <div class='d-flex align-items-center'>
+                                        <div class='text-uppercase'>Order No:$order_no</div>";
+
+                    ?>
+
+                            <?php
+
+                            if($status == 'TXN_SUCCESS'){
+
+                            echo "<div class='green-label ms-auto text-capitalize'>paid</div>";
+                            }
+                            else{
+                                echo "<div class='red-label ms-auto text-capitalize'>Cancelled</div>";
+                            }
+
+
+
+                            ?>
+                            <?php
+                            echo "</div>
+                                    <div class='fs-8'>Product Name:$product_title</div>
+                                    <div class='fs-8'>$date|$final_time</div>
+                                </div>
+                            </div>";
+
+                            ?>
+
+                            <?php
+                            echo "<div class='col-lg-12'>
+                                <div class='d-sm-flex align-items-sm-start justify-content-sm-between'>";
+
+                            ?>
+                            <?php
+                            if($status == 'TXN_SUCCESS'){
+                            echo "<div class='status'>Status : Ordered</div>";
+                            }
+                            else{
+                                echo "<div class='status'>Status : Failed</div>"; 
+                            }
+                            ?>
+                    <?php
+                            echo "<div class='btn text-capitalize'>order info</div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>";
+                        }
+                    }
+
+                    ?>
                 </div>
             </div>
         </div>
