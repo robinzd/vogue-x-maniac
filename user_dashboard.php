@@ -211,7 +211,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                     ?>
                                 <?php
                                 if ($final_amount == $cod_payment) {
-                                    echo "<div class='green-label ms-auto text-capitalize'>COD</div>";
+                                    echo "<div class='yellow-label ms-auto text-capitalize'>COD</div>";
                                 } elseif ($status_1 == $real_status) {
                                     echo "<div class='green-label ms-auto text-capitalize'>paid</div>";
                                 } else {
@@ -230,7 +230,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                                 <?php
                                 $balance_amount = $cod_payment - $full_amount;
                                 if ($final_amount == $cod_payment) {
-                                    echo "<div class='status'>Status:Ordered<h5>(Balance amount '₹' . number_format($balance_amount, 2) @ your Doorstep)</h5></div>";
+                                    echo "<div class='status'>Status:Ordered<h6>Balance amount <strong>₹.' '.$balance_amount</strong> @ your Doorstep</h6></div>";
                                 } elseif ($status_1 == $real_status) {
                                     echo "<div class='status'>Status :Ordered</div>";
                                 } else {

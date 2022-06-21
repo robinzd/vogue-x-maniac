@@ -88,6 +88,14 @@
     padding: 0px 3px;
 }
 
+.order .red-label {
+    background-color:yellow;
+    color:black;
+    font-size: 0.9rem;
+    padding: 0px 3px;
+}
+
+
 .order .fs-8 {
     font-size: 0.85rem;
 }
