@@ -13,7 +13,7 @@ $payondelivery_amount=$_POST['cod'];
 echo $payondelivery_amount;
 
 
-if (!empty($order_Id) && !empty($transaction_amount)) {
+if ($payondelivery_amount == 250) {
 
     $query_address = mysqli_query($conn, "INSERT INTO `cod_payment_info`( `order_id`, `transaction_amount`) VALUES ('$order_Id','$transaction_amount')");
     
