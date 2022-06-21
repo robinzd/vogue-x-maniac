@@ -3,7 +3,10 @@ include('dbconnection.php');
 
 
 $product_id = $_POST["productid"];
+echo $product_id ;
+echo "<br>";
 $order_id=$_POST["orderid"];
+echo "$order_id";
 
 ?>
 <!DOCTYPE html>
