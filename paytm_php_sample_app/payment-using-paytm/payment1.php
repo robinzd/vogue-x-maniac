@@ -10,6 +10,7 @@ $customer_id = $_POST['cust_id'];
 $mobile_number = $_POST['mob_no'];
 $email = $_POST['email'];
 $payondelivery_amount=$_POST['cod'];
+echo $payondelivery_amount;
 
 
 if (!empty($order_Id) && !empty($transaction_amount)) {
