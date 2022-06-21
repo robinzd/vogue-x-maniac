@@ -6,6 +6,7 @@ $order_id=$_POST["orderid"];
 echo "$order_id";
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
