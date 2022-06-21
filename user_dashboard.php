@@ -179,7 +179,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
 
                             $final_times = $time1 . "" . $time2 . ":" . $time3 . "" . $time4;
 
-
+                        }
                            
                              $get_amount = "select * from transaction_amount where order_id=$order_number";
 
@@ -237,7 +237,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                    ";
                             }
                         }
-                    }
+                    
 
 
 
