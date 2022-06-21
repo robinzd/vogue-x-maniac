@@ -421,6 +421,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                             <input type="hidden" name="cust_id" value="<?php echo $userid; ?>">
                             <input type="hidden" name="mob_no" value="<?php echo  $mob_no; ?>">
                             <input type="hidden" name="email" value="<?php echo  $user_email; ?>">
+                            <input type="hidden" name="cod" value="250">
 
 
 
@@ -778,6 +779,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                             <input type="hidden" name="cust_id" value="<?php echo $userid; ?>">
                             <input type="hidden" name="mob_no" value="<?php echo  $mob_no; ?>">
                             <input type="hidden" name="email" value="<?php echo  $user_email; ?>">
+                            <input type="hidden" name="cod" value="250">
 
 
 

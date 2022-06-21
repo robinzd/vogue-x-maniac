@@ -6,10 +6,10 @@ include("./conn.php");
 
 $order_Id = $_POST['order_id'];
 $transaction_amount = $_POST['txn_no'];
-$payondelivery_amount=250;
 $customer_id = $_POST['cust_id'];
 $mobile_number = $_POST['mob_no'];
 $email = $_POST['email'];
+$payondelivery_amount=$_POST['cod'];
 
 
 if (!empty($order_Id) && !empty($transaction_amount)) {
