@@ -14,10 +14,10 @@ $amount = $_POST["amount"];
 
 
 
-// if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) {
+if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) {
 
-//     $query_address = mysqli_query($conn, "INSERT INTO `order_info`( `user_id`, `order_id`, `current_status`,`transaction_amount`) VALUES ('$userid ','$order_id','$status','$amount')");
-// }
+    $query_address = mysqli_query($conn, "INSERT INTO `order_info`( `user_id`, `order_id`, `current_status`,`transaction_amount`) VALUES ('$userid ','$order_id','$status','$amount')");
+}
 
 
 
