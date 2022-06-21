@@ -240,7 +240,6 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                                
                         <?php
                                 echo " <form method='Post' action='order_read.php'>
-                                <input type='hidden' name='productid' value='$productid'>
                                 <input type='hidden' name='orderid' value='$order_no'>
                                 <button class='btn text-capitalize' type='submit'>order info</button>
                                 </form>
