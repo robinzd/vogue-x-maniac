@@ -87,10 +87,31 @@ body
     border-color: lightgreen;
 }
 
+.btn.btn-danger
+{
+    width:200px;
+    height:35px;
+    color:black;
+    border-radius:30px;
+    padding:5px 10px;
+    background:red;
+    transition:all ease-in-out 0.3s;
+    text-decoration:none;
+    border-color:red;
+}
+
+.btn.btn-danger:hover
+{
+    text-decoration:none;
+    background:#000;
+    color: white;
+}
+
 .btn.btn-success:hover
 {
     text-decoration:none;
     background:#000;
+    color: white;
 }
 
 .container{

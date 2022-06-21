@@ -53,11 +53,11 @@ if (!empty($order_id) && !empty($txn_id) && !empty($txn_amount) && !empty($payme
     <div class="container">
         <div class="row">
             <?php
-             
-             $final_status="TXN_SUCCESS";
 
-            if($status == $final_status){
-            echo"<div class='col-md-6 mx-auto mt-5'>
+            $final_status = "TXN_SUCCESS";
+
+            if ($status == $final_status) {
+                echo "<div class='col-md-6 mx-auto mt-5'>
                 <div class='payment'>
                     <div class='payment_header'>
                         <div class='check'><i class='fa fa-check' aria-hidden='true'></i></div>
@@ -66,8 +66,8 @@ if (!empty($order_id) && !empty($txn_id) && !empty($txn_amount) && !empty($payme
                         <h1>Payment Success !</h1>
                         <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
                         <form method='Post' action='./user_dashboard.php'>
-                        <input type='hidden' name='order_id' value='<?php $order_id;?>'>
-                        <input type='hidden' name='status' value='<?php $status; ?>'>
+                        <input type='hidden' name='order_id' value='$order_id'>
+                        <input type='hidden' name='status' value='$status'>
                         <button type='submit' class='btn btn-success'>Go to Home</button>
                         </form>
                     </div>
@@ -75,8 +75,8 @@ if (!empty($order_id) && !empty($txn_id) && !empty($txn_amount) && !empty($payme
                 </div>
             </div>
         </div>";
-        }else{
-            echo"<div class='col-md-6 mx-auto mt-5'>
+            } else {
+                echo "<div class='col-md-6 mx-auto mt-5'>
             <div class='payment'>
                 <div class='payment_header1'>
                     <div class='check1'><i class='fa fa-xmark' aria-hidden='true'></i></div>
@@ -85,27 +85,26 @@ if (!empty($order_id) && !empty($txn_id) && !empty($txn_amount) && !empty($payme
                     <h1>Payment failed!</h1>
                     <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
                     <form method='Post' action='./user_dashboard.php'>
-                    <input type='hidden' name='order_id' value='<?php $order_id;?>'>
-                    <input type='hidden' name='status' value='<?php $status; ?>'>
-                    <button type='submit' class='btn btn-success'>Go to Home</button>
+                    <input type='hidden' name='order_id' value='$order_id'>
+                    <input type='hidden' name='status' value='$status'>
+                    <button type='submit' class='btn btn-danger'>Go to Home</button>
                     </form>
                 </div>
-
             </div>
         </div>
     </div>";
-        }
-        ?>
-    </div>
-
-   
+            }
+            ?>
+        </div>
 
 
-    <!-- j query -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- owl carousel -->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+        <!-- j query -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- owl carousel -->
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </body>
 
 </html>
