@@ -238,7 +238,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                                 }
                                 ?>
                     <?php
-                                echo " <a href='order_read.php?viewid=$productid'class='view' title='View' data-toggle='tooltip'><div class='btn text-capitalize'>order info</div></a>
+                                echo " <a href='order_read.php?viewid=$productid?order_id=$order_no'class='view' title='View' data-toggle='tooltip'><div class='btn text-capitalize'>order info</div></a>
                                 </div>
                             </div>
                         </div>
