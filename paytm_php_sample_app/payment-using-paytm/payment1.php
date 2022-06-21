@@ -1,5 +1,5 @@
 <?php
-require_once("./conn.php");
+// require_once("./conn.php");
 require_once("PaytmKit/lib/config_paytm.php");
 require_once("PaytmKit/lib/encdec_paytm.php");
 
@@ -14,10 +14,10 @@ $payondelivery_amount = $_POST['cod'];
 echo $payondelivery_amount;
 
 
-// if (!empty($order_Id) && !empty($transaction_amount)) {
+ if (!empty($order_Id) && !empty($transaction_amount)) {
 
-//     $query_address = mysqli_query($conn, "INSERT INTO `cod_payment_info`( `order_id`, `transaction_amount`) VALUES ('$order_Id','$transaction_amount')");
-// }
+    $query_address = mysqli_query($conn, "INSERT INTO `cod_payment_info`( `order_id`, `transaction_amount`) VALUES ('$order_Id','$transaction_amount')");
+ }
 
 
 
