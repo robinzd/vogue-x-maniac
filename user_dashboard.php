@@ -20,6 +20,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status)) {
 }
 
 
+
 ?>
 
 
@@ -194,56 +195,54 @@ if (!empty($userid) && !empty($order_id) && !empty($status)) {
 
                                 $run_amount = mysqli_query($conn, $get_amount);
 
-
-
                                 while ($row_amount = mysqli_fetch_array($run_amount)) {
 
                                     $full_amount = $row_amount['transaction_amount'];
+                                }
 
 
 
-                                    echo "<div class='order my-3 bg-light'>
+                                echo "<div class='order my-3 bg-light'>
                         <div class='row'>
                             <div class='col-lg-12'>
                                 <div class='d-flex flex-column justify-content-between order-summary'>
                                     <div class='d-flex align-items-center'>
                                         <div class='text-uppercase'>Order No:$order_no</div>";
                     ?>
-                                    <?php
-                                    if ($final_amount == $cod_payment) {
-                                        echo "<div class='green-label ms-auto text-capitalize'>COD</div>";
-                                    } elseif ($status_1 == $real_status) {
-                                        echo "<div class='green-label ms-auto text-capitalize'>paid</div>";
-                                    } else {
-                                        echo "<div class='red-label ms-auto text-capitalize'>Failed</div>";
-                                    }
-                                    ?>
-                                    <?php
-                                    echo "</div>
+                                <?php
+                                if ($final_amount == $cod_payment) {
+                                    echo "<div class='green-label ms-auto text-capitalize'>COD</div>";
+                                } elseif ($status_1 == $real_status) {
+                                    echo "<div class='green-label ms-auto text-capitalize'>paid</div>";
+                                } else {
+                                    echo "<div class='red-label ms-auto text-capitalize'>Failed</div>";
+                                }
+                                ?>
+                                <?php
+                                echo "</div>
                                     <div class='fs-8'>Product Name:$product_title</div>
                                     <div class='fs-8'>$final|$final_times</div>
                                 </div>
                             </div>
                             <div class='col-lg-12'>
                                 <div class='d-sm-flex align-items-sm-start justify-content-sm-between'>";
-                                    ?>
-                                    <?php
-                                    $balance_amount= $cod_payment - $full_amount;
-                                    if ($final_amount == $cod_payment) {
-                                        echo "<div class='status'>Status:Ordered<h5>(Balance amount '₹' . number_format($balance_amount, 2) @ your Doorstep)</h5></div>";
-                                    } elseif ($status_1 == $real_status) {
-                                        echo "<div class='status'>Status :Ordered</div>";
-                                    } else {
-                                        echo "<div class='status'>Status :Cancelled</div>";
-                                    }
-                                    ?>
+                                ?>
+                                <?php
+                                $balance_amount = $cod_payment - $full_amount;
+                                if ($final_amount == $cod_payment) {
+                                    echo "<div class='status'>Status:Ordered<h5>(Balance amount '₹' . number_format($balance_amount, 2) @ your Doorstep)</h5></div>";
+                                } elseif ($status_1 == $real_status) {
+                                    echo "<div class='status'>Status :Ordered</div>";
+                                } else {
+                                    echo "<div class='status'>Status :Cancelled</div>";
+                                }
+                                ?>
                     <?php
-                                    echo "<div class='btn text-capitalize'>order info</div>
+                                echo "<div class='btn text-capitalize'>order info</div>
                                 </div>
                             </div>
                         </div>
                     </div>";
-                                }
                             }
                         }
                     }
