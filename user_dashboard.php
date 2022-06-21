@@ -116,15 +116,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status)) {
                     <div class="text-uppercase">My orders</div>
                     <?php
 
-                    $date = date("d M,Y");
-
-                    $time = new DateTime("now", new DateTimeZone('Asia/Calcutta'));
-
-                    $final_time = $time->format('H:i');
-
                     $real_status = "TXN_SUCCESS";
-
-
 
                     $get_order_no = "select * from order_info where user_id=$userid";
 
@@ -179,9 +171,6 @@ if (!empty($userid) && !empty($order_id) && !empty($status)) {
                             $time4 = $time['16'];
 
                             $final_times = $time1 . "" . $time2 . ":" . $time3 . "" . $time4;
-
-                            
-
 
 
                             $get_product_name = "select * from products_details where ID = $productid";
