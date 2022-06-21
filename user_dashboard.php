@@ -138,20 +138,18 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                         $final_amount = $row_order_no['transaction_amount'];
 
 
-                        $get_order_no = "select * from payment_info where order_id=$order_no_1";
+                        $get_order_no1 = "select * from payment_info where order_id=$order_no_1";
 
-                        $run_order_no = mysqli_query($conn, $get_order_no);
+                        $run_order_no1 = mysqli_query($conn, $get_order_no1);
 
-                        while ($row_order_no = mysqli_fetch_array($run_order_no)) {
+                        while ($row_order_no1 = mysqli_fetch_array($run_order_no1)) {
 
-                            $order_no = $row_order_no['order_id'];
+                            $order_number = $row_order_no1['order_id'];
 
 
                         $get_orders = "select * from users_order where user_id ='$userid' and order_id='$order_no_1'";
 
                         $run_orders = mysqli_query($conn, $get_orders);
-
-
 
                         while ($row_orders = mysqli_fetch_array($run_orders)) {
 
@@ -183,7 +181,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
 
 
                            
-                             $get_amount = "select * from transaction_amount where order_id=$order_no";
+                             $get_amount = "select * from transaction_amount where order_id=$order_number";
 
                                 $run_amount = mysqli_query($conn, $get_amount);
 
@@ -197,7 +195,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                             <div class='col-lg-12'>
                                 <div class='d-flex flex-column justify-content-between order-summary'>
                                     <div class='d-flex align-items-center'>
-                                        <div class='text-uppercase'>Order No:$order_no</div>";
+                                        <div class='text-uppercase'>Order No:$order_number</div>";
                     ?>
                                 <?php
                                 if ($final_amount == $cod_payment) {
@@ -229,7 +227,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
 
                     <?php
                                 echo " <form method='Post' action='order_read.php'>
-                                <input type='hidden' name='orderid' value='$order_no'>
+                                <input type='hidden' name='orderid' value='$order_number'>
                                 <button class='btn text-capitalize' type='submit'>order info</button>
                                 </form>
                                 </div>
