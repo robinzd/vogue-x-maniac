@@ -237,22 +237,24 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                                     echo "<div class='status'>Status :Cancelled</div>";
                                 }
                                 ?>
-                                <form method="Post" action="order_read.php">
-
-                                <input type="hidden" name="productid" value="<?php echo  $productid; ?>">
-                                <input type="hidden" name="orderid" value="<?php echo  $order_no; ?>">
+                               
                         <?php
-                                echo "<div class='btn text-capitalize'>order info</div>
+                                echo " <form method='Post' action='order_read.php'>
+                                <input type='hidden' name='productid' value='$productid'>
+                                <input type='hidden' name='orderid' value='$order_no'>
+                                <div class='btn text-capitalize'>order info</div>
+                                </form>
                                 </div>
                             </div>
                         </div>
-                    </div>";
+                    </div>
+                   ";
                             }
                         }
                     }
 
                         ?>
-                                </form>
+                                
                 </div>
             </div>
         </div>
