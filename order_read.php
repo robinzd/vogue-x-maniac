@@ -3,7 +3,7 @@
 include("./conn.php");
 
 $order_id=$_POST["orderid"];
-echo "$order_id";
+echo $order_id;
 
 ?>
 
