@@ -153,6 +153,8 @@ if (!empty($userid) && !empty($order_id) && !empty($status)) {
 
                             print_r($realtime_date);
 
+                            echo "<br>";
+
                             $date1 = $date['9'];
                             $date2 = $date['10'];
                             $date3 = $date['6'];
