@@ -3,7 +3,7 @@
 include("./conn.php");
 
 $order_id=$_POST["orderid"];
-echo $order_id;
+
 
 ?>
 
@@ -251,10 +251,6 @@ echo $order_id;
                             <h2>Slider Details</h2>
                         </div>
                         <?php
-                        // $vid = $_GET['viewid'];
-                        // print_r($vid);
-                        // $vid1 = $_GET['order_id'];
-                        // print_r($vid1);
                         $ret = mysqli_query($conn, "select * from slider_1 where ID =$vid");
                         $cnt = 1;
                         while ($row = mysqli_fetch_array($ret)) {

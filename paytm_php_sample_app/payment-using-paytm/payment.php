@@ -1,4 +1,5 @@
 <?php
+include("conn1.php");
 require_once("PaytmKit/lib/config_paytm.php");
 require_once("PaytmKit/lib/encdec_paytm.php");
 
@@ -7,6 +8,12 @@ $transaction_amount = $_POST['txn_no'];
 $customer_id = $_POST['cust_id'];
 $mobile_number = $_POST['mob_no'];
 $email = $_POST['email'];
+
+if (!empty($order_Id) && !empty($transaction_amount)) {
+
+    $query_address = mysqli_query($conn, "INSERT INTO `transaction_amount`( `order_id`, `transaction_amount`) VALUES ('$order_Id','$transaction_amount')");
+ }
+
 
 
 
