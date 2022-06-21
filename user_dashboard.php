@@ -230,7 +230,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                                 <?php
                                 $balance_amount =$full_amount - $cod_payment;
                                 if ($final_amount == $cod_payment) {
-                                    echo "<div class='status'>Status:Ordered<h6>Balance amount <strong>₹$balance_amount</strong> @ your Doorstep</h6></div>";
+                                    echo "<div class='status'>Status:Ordered<h6>Balance amount <strong>₹$balance_amount.00</strong> @ your Doorstep</h6></div>";
                                 } elseif ($status_1 == $real_status) {
                                     echo "<div class='status'>Status :Ordered</div>";
                                 } else {
