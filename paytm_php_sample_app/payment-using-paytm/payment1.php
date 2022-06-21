@@ -18,9 +18,11 @@ if (!empty($order_Id) && !empty($transaction_amount)) {
     
 }
 
+?>
 
 
 
+<?php
 
 
 // define("merchantMid", "dZlzzF17647713571019");
