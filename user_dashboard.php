@@ -185,6 +185,11 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                                 $order_no = $row_order_no['order_id'];
 
 
+
+
+                            }
+
+
                                 $get_amount = "select * from transaction_amount where order_id=$order_no";
 
                                 $run_amount = mysqli_query($conn, $get_amount);
@@ -242,7 +247,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                     </div>
                    ";
                                
-                            }
+                            
                         }
                     }
 
