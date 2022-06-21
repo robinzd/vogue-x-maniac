@@ -1,5 +1,5 @@
 <?php
-include("../conn.php");
+include("conn1.php");
 require_once("PaytmKit/lib/config_paytm.php");
 require_once("PaytmKit/lib/encdec_paytm.php");
 
