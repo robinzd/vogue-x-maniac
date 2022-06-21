@@ -228,9 +228,9 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                                 <div class='d-sm-flex align-items-sm-start justify-content-sm-between'>";
                                 ?>
                                 <?php
-                                $balance_amount = $cod_payment - $full_amount;
+                                $balance_amount =$full_amount - $cod_payment;
                                 if ($final_amount == $cod_payment) {
-                                    echo "<div class='status'>Status:Ordered<h6>Balance amount <strong>₹.' '.$balance_amount</strong> @ your Doorstep</h6></div>";
+                                    echo "<div class='status'>Status:Ordered<h6>Balance amount <strong>₹$balance_amount</strong> @ your Doorstep</h6></div>";
                                 } elseif ($status_1 == $real_status) {
                                     echo "<div class='status'>Status :Ordered</div>";
                                 } else {
