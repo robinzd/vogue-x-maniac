@@ -1,8 +1,9 @@
 <?php
+include("./conn.php");
 require_once("PaytmKit/lib/config_paytm.php");
 require_once("PaytmKit/lib/encdec_paytm.php");
 
-include("./conn.php");
+
 
 $order_Id = $_POST['order_id'];
 $transaction_amount = $_POST['txn_no'];
@@ -13,7 +14,7 @@ $payondelivery_amount=$_POST['cod'];
 echo $payondelivery_amount;
 
 
-if ($payondelivery_amount == 250) {
+if($payondelivery_amount == 250) {
 
     $query_address = mysqli_query($conn, "INSERT INTO `cod_payment_info`( `order_id`, `transaction_amount`) VALUES ('$order_Id','$transaction_amount')");
     
