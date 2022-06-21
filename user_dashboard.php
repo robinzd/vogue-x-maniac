@@ -155,14 +155,14 @@ if (!empty($userid) && !empty($order_id) && !empty($status)) {
 
                             echo "<br>";
 
-                            $date1 = $date['9'];
-                            $date2 = $date['10'];
-                            $date3 = $date['6'];
-                            $date4 = $date['7'];
-                            $date5 = $date['1'];
-                            $date6 = $date['2'];
-                            $date7 = $date['3'];
-                            $date8 = $date['4'];
+                            $date1 = $$realtime_date['8'];
+                            $date2 = $$realtime_date['9'];
+                            $date3 = $$realtime_date['5'];
+                            $date4 = $$realtime_date['6'];
+                            $date5 = $$realtime_date['0'];
+                            $date6 = $$realtime_date['1'];
+                            $date7 = $$realtime_date['2'];
+                            $date8 = $$realtime_date['3'];
 
                             $final = $date1 . "" . $date2 . "-" . $date3 . "" . $date4 . "-" . $date5 . "" . $date6 . "" . $date7 . "" . $date8;
 
@@ -171,10 +171,12 @@ if (!empty($userid) && !empty($order_id) && !empty($status)) {
 
                             print_r($time);
 
-                            $time1 = $time['12'];
-                            $time2 = $time['13'];
-                            $time3 = $time['15'];
-                            $time4 = $time['16'];
+                            $time1 = $time['11'];
+                            $time2 = $time['12'];
+                            $time3 = $time['14'];
+                            $time4 = $time['15'];
+
+                           
 
                             $final_times = $time1 . "" . $time2 . ":" . $time3 . "" . $time4;
 
