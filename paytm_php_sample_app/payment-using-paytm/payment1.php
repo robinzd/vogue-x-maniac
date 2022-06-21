@@ -2,12 +2,24 @@
 require_once("PaytmKit/lib/config_paytm.php");
 require_once("PaytmKit/lib/encdec_paytm.php");
 
+include("./conn.php");
+
 $order_Id = $_POST['order_id'];
 $transaction_amount = $_POST['txn_no'];
-$total_amount=$transaction_amount/2;
+$payondelivery_amount=250;
 $customer_id = $_POST['cust_id'];
 $mobile_number = $_POST['mob_no'];
 $email = $_POST['email'];
+
+
+if (!empty($order_Id) && !empty($transaction_amount)) {
+
+    $query_address = mysqli_query($conn, "INSERT INTO `cod_payment_info`( `order_id`, `transaction_amount`) VALUES ('$order_Id','$transaction_amount')");
+    
+}
+
+
+
 
 
 
@@ -26,7 +38,7 @@ $email = $_POST['email'];
 // define("callbackUrl", "https://<Merchant_Response_URL>");
 
 $orderId     = "$order_Id";
-$txnAmount     = "$total_amount";
+$txnAmount     = "$payondelivery_amount";
 $custId     = "$customer_id";
 $mobileNo     = "$mobile_number";
 $email         = "$email";

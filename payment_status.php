@@ -68,6 +68,7 @@ if (!empty($order_id) && !empty($txn_id) && !empty($txn_amount) && !empty($payme
                         <form method='Post' action='./user_dashboard.php'>
                         <input type='hidden' name='order_id' value='$order_id'>
                         <input type='hidden' name='status' value='$status'>
+                        <input type='hidden' name='amount' value='$txn_amount'>
                         <button type='submit' class='btn btn-success'>Go to Home</button>
                         </form>
                     </div>
@@ -87,6 +88,7 @@ if (!empty($order_id) && !empty($txn_id) && !empty($txn_amount) && !empty($payme
                     <form method='Post' action='./user_dashboard.php'>
                     <input type='hidden' name='order_id' value='$order_id'>
                     <input type='hidden' name='status' value='$status'>
+                    <input type='hidden' name='amount' value='$txn_amount'>
                     <button type='submit' class='btn btn-danger'>Go to Home</button>
                     </form>
                 </div>
