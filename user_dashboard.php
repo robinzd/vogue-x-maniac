@@ -151,10 +151,6 @@ if (!empty($userid) && !empty($order_id) && !empty($status)) {
 
                             $realtime_date = str_split("$date_time");
 
-                            print_r($realtime_date);
-
-                            echo "<br>";
-
                             $date1 = $realtime_date['8'];
                             $date2 = $realtime_date['9'];
                             $date3 = $realtime_date['5'];
@@ -169,14 +165,10 @@ if (!empty($userid) && !empty($order_id) && !empty($status)) {
 
                             $time = str_split("$date_time");
 
-                            print_r($time);
-
                             $time1 = $time['11'];
                             $time2 = $time['12'];
                             $time3 = $time['14'];
                             $time4 = $time['15'];
-
-                           
 
                             $final_times = $time1 . "" . $time2 . ":" . $time3 . "" . $time4;
 
