@@ -155,14 +155,14 @@ if (!empty($userid) && !empty($order_id) && !empty($status)) {
 
                             echo "<br>";
 
-                            $date1 = $$realtime_date['8'];
-                            $date2 = $$realtime_date['9'];
-                            $date3 = $$realtime_date['5'];
-                            $date4 = $$realtime_date['6'];
-                            $date5 = $$realtime_date['0'];
-                            $date6 = $$realtime_date['1'];
-                            $date7 = $$realtime_date['2'];
-                            $date8 = $$realtime_date['3'];
+                            $date1 = $realtime_date['8'];
+                            $date2 = $realtime_date['9'];
+                            $date3 = $realtime_date['5'];
+                            $date4 = $realtime_date['6'];
+                            $date5 = $realtime_date['0'];
+                            $date6 = $realtime_date['1'];
+                            $date7 = $realtime_date['2'];
+                            $date8 = $realtime_date['3'];
 
                             $final = $date1 . "" . $date2 . "-" . $date3 . "" . $date4 . "-" . $date5 . "" . $date6 . "" . $date7 . "" . $date8;
 
