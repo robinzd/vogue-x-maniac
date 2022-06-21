@@ -228,7 +228,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                                 <div class='d-sm-flex align-items-sm-start justify-content-sm-between'>";
                                 ?>
                                 <?php
-                                $balance_amount =$full_amount - $cod_payment;
+                                $balance_amount = $full_amount - $cod_payment;
                                 if ($final_amount == $cod_payment) {
                                     echo "<div class='status'>Status:Ordered<h6>Balance amount <strong>₹$balance_amount.00</strong> @ your Doorstep</h6></div>";
                                 } elseif ($status_1 == $real_status) {
@@ -237,8 +237,12 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                                     echo "<div class='status'>Status :Cancelled</div>";
                                 }
                                 ?>
-                    <?php
-                                echo " <a href='order_read.php?viewid=$productid?order_id=$order_no'class='view' title='View' data-toggle='tooltip'><div class='btn text-capitalize'>order info</div></a>
+                                <form method="Post" action="order_read.php">
+
+                                <input type="hidden" name="productid" value="<?php echo  $productid; ?>">
+                                <input type="hidden" name="orderid" value="<?php echo  $order_no; ?>">
+                        <?php
+                                echo "<div class='btn text-capitalize'>order info</div>
                                 </div>
                             </div>
                         </div>
@@ -246,7 +250,9 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                             }
                         }
                     }
-                    ?>
+
+                        ?>
+                                </form>
                 </div>
             </div>
         </div>
