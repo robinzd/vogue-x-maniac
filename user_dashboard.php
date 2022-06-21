@@ -138,7 +138,13 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                         $final_amount = $row_order_no['transaction_amount'];
 
 
+                        $get_order_no = "select * from payment_info where order_id=$order_no_1";
 
+                        $run_order_no = mysqli_query($conn, $get_order_no);
+
+                        while ($row_order_no = mysqli_fetch_array($run_order_no)) {
+
+                            $order_no = $row_order_no['order_id'];
 
 
                         $get_orders = "select * from users_order where user_id ='$userid' and order_id='$order_no_1'";
@@ -176,21 +182,8 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                             $final_times = $time1 . "" . $time2 . ":" . $time3 . "" . $time4;
 
 
-                            $get_order_no = "select * from payment_info where order_id=$order_no_1";
-
-                            $run_order_no = mysqli_query($conn, $get_order_no);
-
-                            while ($row_order_no = mysqli_fetch_array($run_order_no)) {
-
-                                $order_no = $row_order_no['order_id'];
-
-
-
-
-
-
-
-                                $get_amount = "select * from transaction_amount where order_id=$order_no";
+                           
+                             $get_amount = "select * from transaction_amount where order_id=$order_no";
 
                                 $run_amount = mysqli_query($conn, $get_amount);
 
