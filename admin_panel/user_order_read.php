@@ -32,7 +32,7 @@ $order_id_1 = $_GET['order_id'];
     <!-- owl carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- link the external stylesheet -->
-    <link rel="stylesheet" type="text/css" href="./bill1.css">
+    <link rel="stylesheet" type="text/css" href="../bill1.css">
 
 </head>
 
@@ -137,7 +137,7 @@ $order_id_1 = $_GET['order_id'];
                                                 <span class="d-block text-muted">Shiping Address</span>
                                                 <span><?php echo $user_street; ?>,</span><br>
                                                 <span><?php echo $user_landmark; ?>,</span><br>
-                                                <span><?php echo $user_city . "-" . $user_pincode; ?>.</span>
+                                                <span><?php echo $user_city . "-" . $user_pincode; ?>.</span><br>
                                                 <span><?php echo  $mob_no; ?>.</span>
                                             </div>
 
@@ -208,7 +208,7 @@ $order_id_1 = $_GET['order_id'];
                                                 <tr>
                                                     <td width="20%">
 
-                                                        <img src="<?php echo "./admin_panel/products_images/images/$details_image"; ?>" width="90">
+                                                        <img src="<?php echo "admin_panel/products_images/images/$details_image"; ?>" width="90">
 
                                                     </td>
 

@@ -60,6 +60,10 @@ button.btn.btn-success:hover{
    margin-top:5px; 
 }
 
+.don{
+  color:red;
+}
+
 
 .placed{
     color:lightgreen;

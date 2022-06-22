@@ -322,7 +322,6 @@ include('dbconnection.php');
                                 <!--Fetch the Records -->
                                 <tr>
                                     <td><?php echo $cnt; ?></td>
-                                    <td><?php echo $row['ID']; ?></td>
                                     <td><?php echo $row['order_id']; ?></td>
                                     <td><?php echo $row['transaction_amount']; ?></td>
                                     <td><?php echo $row['payment_mode']; ?></td>
@@ -336,7 +335,7 @@ include('dbconnection.php');
                                         echo"<a href='user_order_read.php?order_id=$order_id' class='view' title='View' data-toggle='tooltip'><i class='material-icons'>&#xE417;</i></a>";
                                         }
                                         else{
-                                           echo "<h3>Order Cancelled</h3>";
+                                           echo "<h6 class='don'>Order Cancelled</h6>";
                                         }
                                         ?>
                                     </td>
