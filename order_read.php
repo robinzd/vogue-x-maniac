@@ -1,303 +1,431 @@
 <?php
+session_start();
 
 include("./conn.php");
+include("./function.php");
 
-$order_id=$_POST["orderid"];
 
+
+$user_data = check_login($conn);
+
+$userid = $user_data['user_id'];
+
+
+$order_id_1 = $_POST["orderid"];
+$order_date = $_POST['date'];
 
 ?>
+
+
+
+
+
+
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Read Slider</title>
-    <link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <style>
-        body {
-            color: black;
-            background: #f5f5f5;
-            font-family: 'Roboto', sans-serif;
-        }
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill</title>
+    <!-- fav icon -->
+    <link rel="icon" type="image/png" href="./favicon/vogue_x_maniac_png_K8m_icon.ico" />
+    <!-- bootsstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- link the external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./bill.css">
 
-        .table-responsive {
-            margin: 30px 0;
-        }
-
-        .table-wrapper {
-            min-width: 1000px;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-        }
-
-        .table-title {
-            font-size: 15px;
-            padding-bottom: 10px;
-            margin: 0 0 10px;
-            min-height: 45px;
-        }
-
-        .table-title h2 {
-            margin: 5px 0 0;
-            font-size: 24px;
-        }
-
-        .table-title select {
-            border-color: #ddd;
-            border-width: 0 0 1px 0;
-            padding: 3px 10px 3px 5px;
-            margin: 0 5px;
-        }
-
-        .table-title .show-entries {
-            margin-top: 7px;
-        }
-
-        .search-box {
-            position: relative;
-            float: right;
-        }
-
-        .search-box .input-group {
-            min-width: 200px;
-            position: absolute;
-            right: 0;
-        }
-
-        .search-box .input-group-addon,
-        .search-box input {
-            border-color: #ddd;
-            border-radius: 0;
-        }
-
-        .search-box .input-group-addon {
-            border: none;
-            border: none;
-            background: transparent;
-            position: absolute;
-            z-index: 9;
-        }
-
-        .search-box input {
-            height: 34px;
-            padding-left: 28px;
-            box-shadow: none !important;
-            border-width: 0 0 1px 0;
-        }
-
-        .search-box input:focus {
-            border-color: #3FBAE4;
-        }
-
-        .search-box i {
-            color: #a0a5b1;
-            font-size: 19px;
-            position: relative;
-            top: 8px;
-        }
-
-        table.table tr th,
-        table.table tr td {
-            border-color: #e9e9e9;
-        }
-
-        table.table th i {
-            font-size: 13px;
-            margin: 0 5px;
-            cursor: pointer;
-        }
-
-        table.table td:last-child {
-            width: 130px;
-        }
-
-        table.table td a {
-            color: #a0a5b1;
-            display: inline-block;
-            margin: 0 5px;
-        }
-
-        table.table td a.view {
-            color: #03A9F4;
-        }
-
-        table.table td a.edit {
-            color: #FFC107;
-        }
-
-        table.table td a.delete {
-            color: #E34724;
-        }
-
-        table.table td i {
-            font-size: 19px;
-        }
-
-        .pagination {
-            float: right;
-            margin: 0 0 5px;
-        }
-
-        .pagination li a {
-            border: none;
-            font-size: 13px;
-            min-width: 30px;
-            min-height: 30px;
-            padding: 0 10px;
-            color: #999;
-            margin: 0 2px;
-            line-height: 30px;
-            border-radius: 30px !important;
-            text-align: center;
-        }
-
-        .pagination li a:hover {
-            color: #666;
-        }
-
-        .pagination li.active a {
-            background: #03A9F4;
-        }
-
-        .pagination li.active a:hover {
-            background: #0397d6;
-        }
-
-        .pagination li.disabled i {
-            color: #ccc;
-        }
-
-        .pagination li i {
-            font-size: 16px;
-            padding-top: 6px
-        }
-
-        .hint-text {
-            float: left;
-            margin-top: 10px;
-            font-size: 13px;
-        }
-
-      .fa-home{
-          color:black;
-      }
-
-        .btn-circle.btn-xl {
-            width: 50px;
-            height: 50px;
-            padding: 10px 10px;
-            border-radius: 35px;
-            font-size: 20px;
-            text-align: center;
-            box-shadow: 0px 4px 4px #888888;
-
-        }
-
-        i.material-icons {
-            margin-top: 2px;
-        }
-
-        .btn-circle.btn-xl:hover {
-            background-color: black;
-        }
-
-        .fa-pen {
-            margin-top: 2px;
-        }
-
-     
-        footer.bg-light.text-center.text-lg-start {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-
-
-        }
-
-        .text-center{
-            color: black;
-        }
-
-        .text-center.p-3 {
-            color: black;
-        }
-
-        a.text1 {
-            color: black;
-            text-decoration: none;
-        }
-    </style>
 </head>
 
 <body>
-   
-    <div class="container-xl">
-        <div class="table-responsive">
-            <div class="table-wrapper">
-                <div class="table-title">
-                    <div class="row">
-                        <div class="col-sm-5">
-                            <h2>Slider Details</h2>
-                        </div>
-                        <?php
-                        $ret = mysqli_query($conn, "select * from slider_1 where ID =$vid");
-                        $cnt = 1;
-                        while ($row = mysqli_fetch_array($ret)) {
-
-                        ?>
-
-                            <div class="col-sm-7" align="right">
-                                <a href="edit.php?editid=<?php echo htmlentities($row['ID']); ?>" class="btn btn-success btn-circle btn-xl"><i class="material-icons">&#xE254;</i></a>
-
-                            </div>
-                    </div>
-                </div>
-                <table cellpadding="0" cellspacing="0" border="0" class="display table table-bordered" id="hidden-table-info">
-
-                    <tbody>
 
 
-                        <tr>
-                            <th>Slider Name</th>
-                            <td><?php echo $row['slider_name']; ?></td>
-                        </tr>
 
-                        <tr>
-                            <th width="200">slider Image</th>
-                            <td><img src="slides_images/<?php echo $row['slider_image']; ?>" width="80" height="80"></td>
-                        </tr>
+    <!-- back to top starts -->
 
+
+    <?php include "./back_to_top.php"; ?>
+
+    <!--back to top ends -->
+
+    <!-- hidden only on xs -->
+
+    <div class="container mt-5 mb-5  d-none d-sm-block">
+
+        <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
+
+        <div class="row d-flex justify-content-center">
+
+            <div class="col-md-8">
+
+                <div class="card">
 
                     <?php
-                            $cnt = $cnt + 1;
-                        } ?>
 
-                    </tbody>
-                </table>
+
+                    $get_useraddress = "select * from users_address where user_id=$userid";
+
+                    $run_useraddress  = mysqli_query($conn, $get_useraddress);
+
+                    while ($row_useraddress = mysqli_fetch_array($run_useraddress)) {
+
+                        $user_name = $row_useraddress['user_fullname'];
+                        $user_street = $row_useraddress['user_address'];
+                        $user_landmark = $row_useraddress['user_landmark'];
+                        $user_city = $row_useraddress['user_city'];
+                        $user_pincode = $row_useraddress['user_pincode'];
+                        $user_state = $row_useraddress['user_state'];
+                    }
+
+                    $get_userorder = "select * from users_order where order_id=$order_id_1";
+
+                    $run_userorder  = mysqli_query($conn,  $get_userorder);
+
+                    while ($row_userorder = mysqli_fetch_array($run_userorder)) {
+
+                        $order_id = $row_userorder['order_id'];
+                    }
+
+
+
+                    ?>
+
+
+                    <div class="invoice p-5">
+
+                        <h5>Your order Confirmed!</h5>
+
+                        <span class="font-weight-bold d-block mt-4">Hello,<?php echo $user_name; ?></span>
+                        <span>You order has been confirmed and will be shipped in next two days!</span>
+
+                        <div class="payment border-top mt-3 mb-3 border-bottom table-responsive">
+
+                            <table class="table table-borderless">
+
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="py-2 text-left">
+                                                <span class="d-block text-muted" id="orderdate">Order Date</span>
+                                                <span id="date"><?php echo $order_date; ?></span>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="py-2 text-center">
+                                                <span class="d-block text-muted" id="orderno">Order No</span>
+                                                <span class="font-weight-bold" id="order"><?php echo $order_id; ?></span>
+                                            </div>
+                                        </td>
+
+
+
+                                        <td>
+                                            <div class="py-2 text-right">
+                                                <span class="d-block text-muted">Shiping Address</span>
+                                                <span><?php echo $user_street; ?>,</span><br>
+                                                <span><?php echo $user_landmark; ?>,</span><br>
+                                                <span><?php echo $user_city . "-" . $user_pincode; ?>.</span>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+
+
+
+
+
+                        </div>
+
+
+
+
+                        <div class="product border-bottom table-responsive">
+
+                            <table class="table table-borderless">
+
+                                <tbody>
+
+                                    <?php
+
+                                    $total_count = 0;
+
+                                    $get_order_details = "select * from users_order where order_id=$order_id";
+
+                                    $run_order_details = mysqli_query($conn,  $get_order_details);
+
+                                    while ($row_order_details = mysqli_fetch_array($run_order_details)) {
+
+                                        $product_id = $row_order_details["product_id"];
+
+                                        $product_quantity = $row_order_details["product_quantity"];
+
+                                        $product_size = $row_order_details["product_size"];
+
+
+                                        $get_details = "select * from products_details where ID=$product_id";
+
+                                        $run_details = mysqli_query($conn, $get_details);
+
+                                        while ($row_details = mysqli_fetch_array($run_details)) {
+
+                                            $product_price = $row_details["product_price"];
+
+                                            $product_title = $row_details["product_title"];
+
+                                            $total_price = $product_price *  $product_quantity;
+
+                                            $get_images = "select details_image from  products_images where related_product=$product_id and primary_image=1";
+
+                                            $run_images = mysqli_query($conn, $get_images);
+
+                                            while ($row_images = mysqli_fetch_array($run_images)) {
+
+                                                $details_image = $row_images["details_image"];
+
+
+                                    ?>
+
+
+
+
+                                                <tr>
+                                                    <td width="20%">
+
+                                                        <img src="<?php echo "./admin_panel/products_images/images/$details_image"; ?>" width="90">
+
+                                                    </td>
+
+                                                    <td width="60%">
+                                                        <span class="font-weight-bold"><?php echo $product_title; ?></span><br>
+                                                        <div class="product-qty">
+                                                            <span class="d-block">Quantity:<?php echo $product_quantity; ?></span>
+                                                            <?php
+                                                            if (!($product_size == 0)) {
+                                                                echo "<span id='size' class='d-block'>Size:$product_size</span>";
+                                                            }
+                                                            ?>
+                                                        </div>
+                                                    </td>
+                                                    <td width="20%">
+                                                        <div class="text-right">
+                                                            <span class="font-weight-bold"><?php echo "₹" . number_format($total_price, 2); ?></span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+
+                                    <?php
+
+                                                $total_count +=  $product_price *  $product_quantity;
+                                            }
+                                        }
+                                    }
+
+
+
+                                    ?>
+
+
+                                </tbody>
+
+                            </table>
+
+
+
+                        </div>
+
+
+
+                        <div class="row d-flex justify-content-end">
+
+                            <div class="col-md-5">
+
+                                <table class="table table-borderless">
+
+                                    <tbody class="totals">
+
+                                        <tr>
+                                            <td>
+                                                <div class="text-left">
+
+                                                    <span class="text-muted">Subtotal</span>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-right">
+                                                    <span><?php echo "₹" . number_format($total_count, 2); ?></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <?php
+
+                                        $get_shipping_fee = "select * from shipping_charges where user_state='$user_state'";
+
+                                        $run_shipping_fee = mysqli_query($conn, $get_shipping_fee);
+
+                                        while ($row_shipping_fee = mysqli_fetch_array($run_shipping_fee)) {
+
+                                            $delivery_charges = $row_shipping_fee['shipping_fee'];
+                                        }
+                                        ?>
+
+
+                                        <tr>
+                                            <td>
+                                                <div class="text-left">
+
+                                                    <span class="text-muted">Shipping Fee</span>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-right">
+                                                    <span><?php echo "₹" . number_format($delivery_charges, 2); ?></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+
+                                        <?php
+
+                                        $totalamount = $total_count + $delivery_charges;
+
+                                        $get_amount_paid = "select * from transaction_amount where order_id=$order_id";
+
+                                        $run_amount_paid = mysqli_query($conn, $get_amount_paid);
+
+                                        while ($row_amount_paid = mysqli_fetch_array($run_amount_paid)) {
+
+                                            $amount_to_paid = $row_amount_paid["transaction_amount"];
+                                        }
+                                        ?>
+
+
+                                        <tr>
+                                            <td>
+                                                <div class="text-left">
+
+                                                    <span class="text-muted">Amount To Paid</span>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-right">
+                                                    <span><?php echo $amount_to_paid; ?></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <?php
+
+                                        
+                                        $get_paid ="select * from payment_info where order_id=$order_id";
+
+                                        $run_paid = mysqli_query($conn, $get_paid);
+
+                                        while ($row_paid = mysqli_fetch_array($run_paid)) {
+
+                                            $amount_paid = $row_paid["transaction_amount"];
+                                        }
+
+
+
+                                        ?>
+
+
+                                         <tr>
+                                            <td>
+                                                <div class="text-left">
+
+                                                    <span class="text-muted">Amount Paid</span>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-right">
+                                                    <span class="text-success">$amount_paid</span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                       <?php
+                                       $balance_amount=  $amount_to_paid -  $amount_paid ;
+                                       if( $amount_paid == 250){
+                                        echo "<tr class='border-top border-bottom'>
+                                            <td>
+                                                <div class='text-left'>
+
+                                                    <span class='font-weight-bold'>Balance Amount</span>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class='text-right'>
+                                                    <span class='font-weight-bold'>₹$balance_amount.00</span>
+                                                </div>
+                                            </td>
+                                        </tr>";
+                                       }
+                                       else{
+                                        echo "<tr class='border-top border-bottom'>
+                                            <td>
+                                                <div class='text-left'>
+
+                                                    <span class='font-weight-bold'>Full Amount Paided</span>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class='text-right'>
+                                                    <span class='font-weight-bold'>₹$amount_paid.00</span>
+                                                </div>
+                                            </td>
+                                        </tr>";
+                                       }
+
+                                       ?>
+
+
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+
+                        <p>We will be sending shipping confirmation email when the item shipped successfully!</p>
+                        <p class="font-weight-bold mb-0">Thanks for shopping with us!</p>
+                        <span>vogue-x-maniac Team</span>
+
+                    </div>
+
+
+                </div>
 
             </div>
-        </div>
-        <div class="text-center">Back To Home <a href="slider1.php"><i class="fa fa-home"></i></a></div>
-    </div>
-    <footer class="bg-light text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color:#f5f5f5;">
-            © 2022 Copyright:
-            <a class="text1" href="/index.php">Vogue X Maniac</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
-</body>
 
-</html>
+        </div>
+
+    </div>
+
+
+</body>

@@ -167,7 +167,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                             $date7 = $realtime_date['2'];
                             $date8 = $realtime_date['3'];
 
-                            $final = $date1 . "" . $date2 . "-" . $date3 . "" . $date4 . "-" . $date5 . "" . $date6 . "" . $date7 . "" . $date8;
+                            $final = $date1 . "" . $date2 . "/" . $date3 . "" . $date4 . "/" . $date5 . "" . $date6 . "" . $date7 . "" . $date8;
 
 
                             $time = str_split("$date_time");
@@ -228,6 +228,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                     <?php
                                 echo " <form method='Post' action='order_read.php'>
                                 <input type='hidden' name='orderid' value='$order_number'>
+                                <input type='hidden' name='date' value='$final'>
                                 <button class='btn text-capitalize' type='submit'>order info</button>
                                 </form>
                                 </div>
