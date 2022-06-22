@@ -570,6 +570,10 @@ i.material-icons{
   color:deepskyblue;
 }
 
+a.nav_link{
+  text-decoration: none !important;
+}
+
 
 
 
