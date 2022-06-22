@@ -71,6 +71,10 @@ button.btn.btn-success:hover{
     color:lightgreen;
 }
 
+.invoice.p-5{
+  border: 1px solid lightgrey !important;
+}
+
 
 
 
