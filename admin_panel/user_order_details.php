@@ -254,6 +254,11 @@ include('dbconnection.php');
             text-decoration: none;
         }
 
+        .don{
+            color:red;
+            white-space:nowrap;
+        }
+
        
     </style>
 </head>
@@ -335,7 +340,7 @@ include('dbconnection.php');
                                         echo"<a href='user_order_read.php?order_id=$order_id' class='view' title='View' data-toggle='tooltip'><i class='material-icons'>&#xE417;</i></a>";
                                         }
                                         else{
-                                           echo "<h6 class='don'>Order Cancelled</h6>";
+                                           echo "<h8 class='don'>Order Cancelled</h8>";
                                         }
                                         ?>
                                     </td>

@@ -208,7 +208,7 @@ $order_id_1 = $_GET['order_id'];
                                                 <tr>
                                                     <td width="20%">
 
-                                                        <img src="<?php echo "admin_panel/products_images/images/$details_image"; ?>" width="90">
+                                                        <img src="<?php echo "products_images/images/$details_image"; ?>" width="90">
 
                                                     </td>
 
