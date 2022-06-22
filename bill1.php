@@ -433,7 +433,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                             </div><br>
 
                             <h6>Note*</h6>
-                            <p class="para">You Want to pay one part of the amount for pay on delivery balance amount at your doorstep</p>
+                            <p class="para">You Want to pay <strong>₹250</strong> for pay on delivery balance amount at your doorstep</p>
                         </form>
 
 
@@ -791,7 +791,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                             </div><br>
 
                             <h6>Note*</h6>
-                            <p class="para">You Want to pay one part of the amount for pay on delivery balance amount at your doorstep</p>
+                            <p class="para">You Want to pay <strong>₹250</strong> for pay on delivery balance amount at your doorstep</p>
 
                         </form>
 
