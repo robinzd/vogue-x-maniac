@@ -160,7 +160,7 @@
                                       </h1>
                               </div>
                               <div class="ico-card">
-                                  <i class="fa-code-fork"></i>
+                                  <i class="fa fa-code-fork"></i>
                               </div>
                           </div>
                       </a>
@@ -279,7 +279,7 @@
                                   Orders</h1>
                               </div>
                               <div class="ico-card">
-                                  <i class="fa-code-fork"></i>
+                                  <i class="fa fa-code-fork"></i>
                               </div>
                           </div>
                       </a>
