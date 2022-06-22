@@ -13,7 +13,8 @@ include('dbconnection.php');
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Users Order Details</title>
-    <link rel="icon" type="image/png" href="../favicon/icons8-admin-settings-male-48.png" />
+    <!-- fav icon -->
+    <link rel="icon" type="image/png" href="./favicon/icons8-data-sheet-48.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
