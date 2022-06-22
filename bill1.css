@@ -60,6 +60,9 @@ button.btn.btn-success:hover{
    margin-top:5px; 
 }
 
+.py-2.text-right{
+  text-align: right !important;
+}
 
 
 
