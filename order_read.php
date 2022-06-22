@@ -13,7 +13,7 @@ $userid = $user_data['user_id'];
 
 $order_id_1 = $_POST["orderid"];
 $order_date = $_POST['date'];
-$status=$_POST['status'];
+$status = $_POST['status'];
 
 ?>
 
@@ -100,19 +100,7 @@ $status=$_POST['status'];
 
                     <div class="invoice p-5">
 
-                    <?php
-
-                    if($status == 'TXN_SUCCESS'){
-
-                        echo"<h5 class='pass'>Your order Confirmed!</h5>";
-
-                    }else{
-                        echo"<h5 class='fail'>Your order Cancelled!</h5>";
-                    }
-
-
-                        ?>
-
+                        <h5>Your order Confirmed!</h5>
                         <span class="font-weight-bold d-block mt-4">Hello,<?php echo $user_name; ?></span>
                         <span>You order has been confirmed and will be shipped in next two days!</span>
 
@@ -343,8 +331,8 @@ $status=$_POST['status'];
 
                                         <?php
 
-                                        
-                                        $get_paid ="select * from payment_info where order_id=$order_id";
+
+                                        $get_paid = "select * from payment_info where order_id=$order_id";
 
                                         $run_paid = mysqli_query($conn, $get_paid);
 
@@ -358,7 +346,7 @@ $status=$_POST['status'];
                                         ?>
 
 
-                                         <tr>
+                                        <tr>
                                             <td>
                                                 <div class="text-left">
 
@@ -368,15 +356,15 @@ $status=$_POST['status'];
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span class="text-success"><?php echo $amount_paid;?></span>
+                                                    <span class="text-success"><?php echo $amount_paid; ?></span>
                                                 </div>
                                             </td>
                                         </tr>
 
-                                       <?php
-                                       $balance_amount=  $amount_to_paid -  $amount_paid ;
-                                       if( $amount_paid == 250){
-                                        echo "<tr class='border-top border-bottom'>
+                                        <?php
+                                        $balance_amount =  $amount_to_paid -  $amount_paid;
+                                        if ($amount_paid == 250) {
+                                            echo "<tr class='border-top border-bottom'>
                                             <td>
                                                 <div class='text-left'>
 
@@ -390,9 +378,8 @@ $status=$_POST['status'];
                                                 </div>
                                             </td>
                                         </tr>";
-                                       }
-                                       else{
-                                        echo "<tr class='border-top border-bottom'>
+                                        } else {
+                                            echo "<tr class='border-top border-bottom'>
                                             <td>
                                                 <div class='text-left'>
 
@@ -406,9 +393,9 @@ $status=$_POST['status'];
                                                 </div>
                                             </td>
                                         </tr>";
-                                       }
+                                        }
 
-                                       ?>
+                                        ?>
 
 
                                     </tbody>
