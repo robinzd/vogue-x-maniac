@@ -333,7 +333,7 @@ $order_id_1 = $_GET['order_id'];
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span><?php echo $amount_to_paid; ?></span>
+                                                    <span><?php echo "₹" .  $amount_to_paid; ?></span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -365,7 +365,7 @@ $order_id_1 = $_GET['order_id'];
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span class="text-success"><?php echo $amount_paid; ?></span>
+                                                    <span class="text-success"><?php echo "₹" .  $amount_paid; ?></span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -707,7 +707,7 @@ $order_id_1 = $_GET['order_id'];
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span><?php echo $amount_to_paid; ?></span>
+                                                    <span><?php echo "₹" .  $amount_to_paid; ?></span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -739,7 +739,7 @@ $order_id_1 = $_GET['order_id'];
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span class="text-success"><?php echo $amount_paid; ?></span>
+                                                    <span class="text-success"><?php echo "₹" .  $amount_paid; ?></span>
                                                 </div>
                                             </td>
                                         </tr>
