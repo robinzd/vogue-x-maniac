@@ -38,16 +38,11 @@ $order_id_1 = $_GET['order_id'];
 
 <body>
 
-    <?php
+    <?php 
 
-    include "./index.header.php";
+    include "./back_to_top.php"; 
 
     ?>
-
-    <!-- back to top starts -->
-
-
-    <?php include "./back_to_top.php"; ?>
 
     <!--back to top ends -->
 
