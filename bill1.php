@@ -45,7 +45,7 @@ $order_id = rand(1000000,5000000);
 if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) && !empty($city) && !empty($pincode)) {
 
 
-    $query_address = mysqli_query($conn, "INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`, `user_address`, `user_landmark`,`user_city`,`user_pincode`,`user_state`) VALUES ('$userid ','$fullname','$email','$street','$landmark','$city','$pincode','$state')");
+    $query_address = mysqli_query($conn, "INSERT INTO `users_address`( `user_id`, `user_fullname`, `user_email`, `user_address`, `user_landmark`,`user_city`,`user_pincode`,`user_state`,`order_id`) VALUES ('$userid ','$fullname','$email','$street','$landmark','$city','$pincode','$state','$order_id')");
 
 
     if ($query_address) {
