@@ -365,7 +365,8 @@ $order_id_1 = $_GET['order_id'];
                                         </tr>
 
                                         <?php
-                                        $balance_amount =  $amount_to_paid -  $amount_paid;
+                                        $balance_amount =  number_format($amount_to_paid, 2) - number_format($amount_paid, 2);
+                                        echo  $balance_amount ;
                                         if ($amount_paid == 250) {
                                             echo "<tr class='border-top border-bottom'>
                                             <td>
@@ -739,7 +740,7 @@ $order_id_1 = $_GET['order_id'];
                                         </tr>
 
                                         <?php
-                                        $balance_amount =  $amount_to_paid -  $amount_paid;
+                                        $balance_amount =  number_format($amount_to_paid, 2) - number_format($amount_paid, 2) ; 
                                         if ($amount_paid == 250) {
                                             echo "<tr class='border-top border-bottom'>
                                         <td>
