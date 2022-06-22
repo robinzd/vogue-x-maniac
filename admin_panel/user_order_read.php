@@ -139,8 +139,8 @@ $order_id_1 = $_GET['order_id'];
                                                 <span class="d-block text-muted">Shiping Address</span>
                                                 <span><?php echo $user_street; ?>,</span><br>
                                                 <span><?php echo $user_landmark; ?>,</span><br>
-                                                <span><?php echo $user_city . "-" . $user_pincode; ?>.</span><br>
-                                                <span><?php echo  $mob_no; ?>.</span>
+                                                <span><?php echo $user_city . "-" . $user_pincode; ?>,</span><br>
+                                                <span><?php echo  $mob_no; ?>.</span>.
                                             </div>
 
                                         </td>
@@ -513,7 +513,8 @@ $order_id_1 = $_GET['order_id'];
                                                 <span class="d-block text-muted">Shiping Address</span>
                                                 <span><?php echo $user_street; ?>,</span><br>
                                                 <span><?php echo $user_landmark; ?>,</span><br>
-                                                <span><?php echo $user_city . "-" . $user_pincode; ?>.</span>
+                                                <span><?php echo $user_city . "-" . $user_pincode; ?>,</span><br>
+                                                <span><?php echo  $mob_no; ?>.</span>
                                             </div>
 
                                         </td>
