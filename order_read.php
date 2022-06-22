@@ -63,7 +63,7 @@ $status = $_POST['status'];
 
     <div class="container mt-5 mb-5  d-none d-sm-block">
 
-    <div class="row d-flex justify-content-center">
+        <div class="row d-flex justify-content-center">
 
             <div class="col-md-8">
 
@@ -427,6 +427,380 @@ $status = $_POST['status'];
         </div>
 
     </div>
+
+    <!-- hide only on xs -->
+
+
+    <!-- visible only on xs -->
+
+    <div class="container mt-5 mb-5 d-block d-sm-none" style="zoom:70%">
+
+        <div class="row d-flex justify-content-center">
+
+            <div class="col-md-8">
+
+                <div class="card">
+
+                    <?php
+
+
+                    $get_useraddress = "select * from users_address where user_id=$userid";
+
+                    $run_useraddress  = mysqli_query($conn, $get_useraddress);
+
+                    while ($row_useraddress = mysqli_fetch_array($run_useraddress)) {
+
+                        $user_name = $row_useraddress['user_fullname'];
+                        $user_street = $row_useraddress['user_address'];
+                        $user_landmark = $row_useraddress['user_landmark'];
+                        $user_city = $row_useraddress['user_city'];
+                        $user_pincode = $row_useraddress['user_pincode'];
+                        $user_state = $row_useraddress['user_state'];
+                    }
+
+                    $get_userorder = "select * from users_order where order_id=$order_id_1";
+
+                    $run_userorder  = mysqli_query($conn,  $get_userorder);
+
+                    while ($row_userorder = mysqli_fetch_array($run_userorder)) {
+
+                        $order_id = $row_userorder['order_id'];
+                    }
+
+
+
+                    ?>
+
+
+                    <div class="invoice p-5">
+
+                        <h5 class="placed">Your order Placed!</h5>
+                        <span class="font-weight-bold d-block mt-4">Hello,<?php echo $user_name; ?></span>
+                        <span>You order has been confirmed and will be shipped in next two days!</span>
+
+                        <div class="payment border-top mt-3 mb-3 border-bottom table-responsive">
+
+                            <table class="table table-borderless">
+
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="py-2 text-left">
+                                                <span class="d-block text-muted" id="orderdate">Order Date</span>
+                                                <span id="date"><?php echo $order_date; ?></span>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div class="py-2 text-center">
+                                                <span class="d-block text-muted" id="orderno">Order No</span>
+                                                <span class="font-weight-bold" id="order"><?php echo $order_id; ?></span>
+                                            </div>
+                                        </td>
+
+
+
+                                        <td>
+                                            <div class="py-2 text-right">
+                                                <span class="d-block text-muted">Shiping Address</span>
+                                                <span><?php echo $user_street; ?>,</span><br>
+                                                <span><?php echo $user_landmark; ?>,</span><br>
+                                                <span><?php echo $user_city . "-" . $user_pincode; ?>.</span>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+
+                            </table>
+
+
+
+
+
+                        </div>
+
+
+
+
+                        <div class="product border-bottom table-responsive">
+
+                            <table class="table table-borderless">
+
+                                <tbody>
+
+                                    <?php
+
+                                    $total_count = 0;
+
+                                    $get_order_details = "select * from users_order where order_id=$order_id";
+
+                                    $run_order_details = mysqli_query($conn,  $get_order_details);
+
+                                    while ($row_order_details = mysqli_fetch_array($run_order_details)) {
+
+                                        $product_id = $row_order_details["product_id"];
+
+                                        $product_quantity = $row_order_details["product_quantity"];
+
+                                        $product_size = $row_order_details["product_size"];
+
+
+                                        $get_details = "select * from products_details where ID=$product_id";
+
+                                        $run_details = mysqli_query($conn, $get_details);
+
+                                        while ($row_details = mysqli_fetch_array($run_details)) {
+
+                                            $product_price = $row_details["product_price"];
+
+                                            $product_title = $row_details["product_title"];
+
+                                            $total_price = $product_price *  $product_quantity;
+
+                                            $get_images = "select details_image from  products_images where related_product=$product_id and primary_image=1";
+
+                                            $run_images = mysqli_query($conn, $get_images);
+
+                                            while ($row_images = mysqli_fetch_array($run_images)) {
+
+                                                $details_image = $row_images["details_image"];
+
+
+                                    ?>
+
+
+
+
+                                                <tr>
+                                                    <td width="20%">
+
+                                                        <img src="<?php echo "./admin_panel/products_images/images/$details_image"; ?>" width="90">
+
+                                                    </td>
+
+                                                    <td width="60%">
+                                                        <span class="font-weight-bold"><?php echo $product_title; ?></span><br>
+                                                        <div class="product-qty">
+                                                            <span class="d-block">Quantity:<?php echo $product_quantity; ?></span>
+                                                            <?php
+                                                            if (!($product_size == 0)) {
+                                                                echo "<span id='size' class='d-block'>Size:$product_size</span>";
+                                                            }
+                                                            ?>
+                                                        </div>
+                                                    </td>
+                                                    <td width="20%">
+                                                        <div class="text-right">
+                                                            <span class="font-weight-bold"><?php echo "₹" . number_format($total_price, 2); ?></span>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+
+                                    <?php
+
+                                                $total_count +=  $product_price *  $product_quantity;
+                                            }
+                                        }
+                                    }
+
+
+
+                                    ?>
+
+
+                                </tbody>
+
+                            </table>
+
+
+
+                        </div>
+
+
+
+                        <div class="row d-flex justify-content-end">
+
+                            <div class="col-md-5">
+
+                                <table class="table table-borderless">
+
+                                    <tbody class="totals">
+
+                                        <tr>
+                                            <td>
+                                                <div class="text-left">
+
+                                                    <span class="text-muted">Subtotal</span>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-right">
+                                                    <span><?php echo "₹" . number_format($total_count, 2); ?></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <?php
+
+                                        $get_shipping_fee = "select * from shipping_charges where user_state='$user_state'";
+
+                                        $run_shipping_fee = mysqli_query($conn, $get_shipping_fee);
+
+                                        while ($row_shipping_fee = mysqli_fetch_array($run_shipping_fee)) {
+
+                                            $delivery_charges = $row_shipping_fee['shipping_fee'];
+                                        }
+                                        ?>
+
+
+                                        <tr>
+                                            <td>
+                                                <div class="text-left">
+
+                                                    <span class="text-muted">Shipping Fee</span>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-right">
+                                                    <span><?php echo "₹" . number_format($delivery_charges, 2); ?></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+
+
+                                        <?php
+
+                                        $totalamount = $total_count + $delivery_charges;
+
+                                        $get_amount_paid = "select * from transaction_amount where order_id=$order_id";
+
+                                        $run_amount_paid = mysqli_query($conn, $get_amount_paid);
+
+                                        while ($row_amount_paid = mysqli_fetch_array($run_amount_paid)) {
+
+                                            $amount_to_paid = $row_amount_paid["transaction_amount"];
+                                        }
+                                        ?>
+
+
+                                        <tr>
+                                            <td>
+                                                <div class="text-left">
+
+                                                    <span class="text-muted">Amount To Paid</span>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-right">
+                                                    <span><?php echo $amount_to_paid; ?></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <?php
+
+
+                                        $get_paid = "select * from payment_info where order_id=$order_id";
+
+                                        $run_paid = mysqli_query($conn, $get_paid);
+
+                                        while ($row_paid = mysqli_fetch_array($run_paid)) {
+
+                                            $amount_paid = $row_paid["transaction_amount"];
+                                        }
+
+
+
+                                        ?>
+
+
+                                        <tr>
+                                            <td>
+                                                <div class="text-left">
+
+                                                    <span class="text-muted">Amount Paid</span>
+
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="text-right">
+                                                    <span class="text-success"><?php echo $amount_paid; ?></span>
+                                                </div>
+                                            </td>
+                                        </tr>
+
+                                        <?php
+                                        $balance_amount =  $amount_to_paid -  $amount_paid;
+                                        if ($amount_paid == 250) {
+                                            echo "<tr class='border-top border-bottom'>
+                                        <td>
+                                            <div class='text-left'>
+
+                                                <span class='font-weight-bold'>Balance Amount</span>
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='text-right'>
+                                                <span class='font-weight-bold'>₹$balance_amount.00</span>
+                                            </div>
+                                        </td>
+                                    </tr>";
+                                        } else {
+                                            echo "<tr class='border-top border-bottom'>
+                                        <td>
+                                            <div class='text-left'>
+
+                                                <span class='font-weight-bold'>Full Amount Paided</span>
+
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class='text-right'>
+                                                <span class='font-weight-bold'>₹$amount_paid.00</span>
+                                            </div>
+                                        </td>
+                                    </tr>";
+                                        }
+
+                                        ?>
+
+
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+
+
+
+
+
+                        </div>
+
+
+                        <p>We will be sending shipping confirmation email when the item shipped successfully!</p>
+                        <p class="font-weight-bold mb-0">Thanks for shopping with us!</p>
+                        <span>vogue-x-maniac Team</span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- visible only on xs -->
 
 
 
