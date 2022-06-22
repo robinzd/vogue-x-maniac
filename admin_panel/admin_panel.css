@@ -574,6 +574,10 @@ a.nav_link{
   text-decoration: none !important;
 }
 
+a.nav_logo{
+  text-decoration: none;
+}
+
 
 
 
