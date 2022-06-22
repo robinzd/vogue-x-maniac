@@ -103,7 +103,7 @@ $status = $_POST['status'];
                     <div class="invoice p-5">
 
                         <h5 class="placed">Your order Placed!</h5>
-                        <span class="font-weight-bold d-block mt-4">Hello,Mr/Ms<?php echo $user_name; ?></span>
+                        <span class="font-weight-bold d-block mt-4">Hello,Mr/Mrs. <?php echo $user_name; ?></span>
                         <span>You order has been confirmed and will be shipped in next two days!</span>
 
                         <div class="payment border-top mt-3 mb-3 border-bottom table-responsive">
@@ -326,7 +326,7 @@ $status = $_POST['status'];
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span><?php echo $amount_to_paid; ?></span>
+                                                    <span><?php echo  "₹" . $amount_to_paid; ?></span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -358,7 +358,7 @@ $status = $_POST['status'];
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span class="text-success"><?php echo $amount_paid; ?></span>
+                                                    <span class="text-success"><?php echo  "₹" . $amount_paid; ?></span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -475,7 +475,7 @@ $status = $_POST['status'];
                     <div class="invoice p-5">
 
                         <h5 class="placed">Your order Placed!</h5>
-                        <span class="font-weight-bold d-block mt-4">Hello,Mr/Ms<?php echo $user_name; ?></span>
+                        <span class="font-weight-bold d-block mt-4">Hello,Mr/Mrs. <?php echo $user_name; ?></span>
                         <span>You order has been confirmed and will be shipped in next two days!</span>
 
                         <div class="payment border-top mt-3 mb-3 border-bottom table-responsive">
@@ -698,7 +698,7 @@ $status = $_POST['status'];
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span><?php echo $amount_to_paid; ?></span>
+                                                    <span><?php echo  "₹" .$amount_to_paid; ?></span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -730,7 +730,7 @@ $status = $_POST['status'];
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span class="text-success"><?php echo $amount_paid; ?></span>
+                                                    <span class="text-success"><?php  echo  "₹" . $amount_paid; ?></span>
                                                 </div>
                                             </td>
                                         </tr>
