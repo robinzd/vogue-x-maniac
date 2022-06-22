@@ -109,7 +109,7 @@ $order_id_1 = $_GET['order_id'];
                     <div class="invoice p-5">
 
                         <h5>Users order</h5>
-                        <span class="font-weight-bold d-block mt-4"><strong>Username</strong>:<?php echo $user_name; ?></span>
+                        <span class="font-weight-bold d-block mt-4">Username:<strong>Mr/Ms<?php echo $user_name; ?></strong></span>
                         
 
                         <div class="payment border-top mt-3 mb-3 border-bottom table-responsive">
@@ -483,7 +483,7 @@ $order_id_1 = $_GET['order_id'];
                     <div class="invoice p-5">
 
                         
-                        <span class="font-weight-bold d-block mt-4">Hello,<?php echo $user_name; ?></span>
+                        <span class="font-weight-bold d-block mt-4">Username:<strong>Mr/Ms<?php echo $user_name; ?></strong></span>
                        
 
                         <div class="payment border-top mt-3 mb-3 border-bottom table-responsive">

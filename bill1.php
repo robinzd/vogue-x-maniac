@@ -145,7 +145,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                         <h5>Your order Confirmed!</h5>
 
-                        <span class="font-weight-bold d-block mt-4">Hello,<?php echo $user_name; ?></span>
+                        <span class="font-weight-bold d-block mt-4">Hello,Mr/Ms<?php echo $user_name; ?></span>
                         <span>You order has been confirmed and will be shipped in next two days!</span>
 
                         <div class="payment border-top mt-3 mb-3 border-bottom table-responsive">
@@ -503,7 +503,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                         <h5>Your order Confirmed!</h5>
 
-                        <span class="font-weight-bold d-block mt-4">Hello,<?php echo $user_name; ?></span>
+                        <span class="font-weight-bold d-block mt-4">Hello,Mr/Ms<?php echo $user_name; ?></span>
                         <span>You order has been confirmed and will be shipped in next two days!</span>
 
                         <div class="payment border-top mt-3 mb-3 border-bottom table-responsive">
