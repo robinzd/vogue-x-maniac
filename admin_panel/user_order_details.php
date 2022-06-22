@@ -292,10 +292,6 @@ include('dbconnection.php');
                             <h2>Users Order Details</h2>
                         </div>
 
-                        <div class="col-sm-7" align="right">
-                            <a href="insert.php" class="btn btn-success btn-circle btn-xl"><i class="material-icons">&#xE147;</i></a>
-                        </div>
-
                     </div>
                 </div>
                 <table class="table table-striped table-hover">
