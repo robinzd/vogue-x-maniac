@@ -377,7 +377,7 @@ $order_id_1 = $_GET['order_id'];
                                             </td>
                                             <td>
                                                 <div class='text-right'>
-                                                    <span class='font-weight-bold'><strong>₹$balance_amount.00</strong></span>
+                                                    <span class='font-weight-bold'><strong>₹$balance_amount</strong></span>
                                                 </div>
                                             </td>
                                         </tr>";
@@ -392,7 +392,7 @@ $order_id_1 = $_GET['order_id'];
                                             </td>
                                             <td>
                                                 <div class='text-right'>
-                                                    <span class='font-weight-bold'><strong>₹$amount_paid.00</strong></span>
+                                                    <span class='font-weight-bold'><strong>₹$amount_paid</strong></span>
                                                 </div>
                                             </td>
                                         </tr>";
@@ -751,7 +751,7 @@ $order_id_1 = $_GET['order_id'];
                                         </td>
                                         <td>
                                             <div class='text-right'>
-                                                <span class='font-weight-bold'><strong>₹$balance_amount.00</strong></span>
+                                                <span class='font-weight-bold'><strong>₹$balance_amount</strong></span>
                                             </div>
                                         </td>
                                     </tr>";
@@ -766,7 +766,7 @@ $order_id_1 = $_GET['order_id'];
                                         </td>
                                         <td>
                                             <div class='text-right'>
-                                                <span class='font-weight-bold'><strong>₹$amount_paid.00</strong></span>
+                                                <span class='font-weight-bold'><strong>₹$amount_paid</strong></span>
                                             </div>
                                         </td>
                                     </tr>";

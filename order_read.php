@@ -378,7 +378,7 @@ $status = $_POST['status'];
                                             </td>
                                             <td>
                                                 <div class='text-right'>
-                                                    <span class='font-weight-bold'>₹$balance_amount.00</span>
+                                                    <span class='font-weight-bold'>₹$balance_amount</span>
                                                 </div>
                                             </td>
                                         </tr>";
@@ -393,7 +393,7 @@ $status = $_POST['status'];
                                             </td>
                                             <td>
                                                 <div class='text-right'>
-                                                    <span class='font-weight-bold'>₹$amount_paid.00</span>
+                                                    <span class='font-weight-bold'>₹$amount_paid</span>
                                                 </div>
                                             </td>
                                         </tr>";
@@ -752,7 +752,7 @@ $status = $_POST['status'];
                                         </td>
                                         <td>
                                             <div class='text-right'>
-                                                <span class='font-weight-bold'>₹$balance_amount.00</span>
+                                                <span class='font-weight-bold'>₹$balance_amount</span>
                                             </div>
                                         </td>
                                     </tr>";
@@ -767,7 +767,7 @@ $status = $_POST['status'];
                                         </td>
                                         <td>
                                             <div class='text-right'>
-                                                <span class='font-weight-bold'>₹$amount_paid.00</span>
+                                                <span class='font-weight-bold'>₹$amount_paid</span>
                                             </div>
                                         </td>
                                     </tr>";
