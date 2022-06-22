@@ -32,7 +32,7 @@ $order_id_1 = $_GET['order_id'];
     <!-- owl carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- link the external stylesheet -->
-    <link rel="stylesheet" type="text/css" href="../bill1.css">
+    <link rel="stylesheet" type="text/css" href="./bill2.css">
 
 </head>
 
