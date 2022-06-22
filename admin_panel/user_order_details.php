@@ -309,6 +309,7 @@ include('dbconnection.php');
                             <th>Transaction Status</th>
                             <th>Gateway</th>
                             <th>Bank Name</th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
