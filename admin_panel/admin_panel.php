@@ -141,13 +141,26 @@
                   </div>
                   <div class="col-md-6 col-lg-4 column">
                       <a href="./shipping_charges/shipping_details.php">
-                          <div class="card gr-6">
+                          <div class="card gr-7">
                               <div class="txt">
                                   <h1>Shipping Charges</br>
                                       Management</h1>
                               </div>
                               <div class="ico-card">
                                   <i class="fa fa-gears"></i>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-6 col-lg-4 column">
+                      <a href="./user_order_details.php">
+                          <div class="card gr-8">
+                              <div class="txt">
+                                  <h1>User Orders</br>
+                                      </h1>
+                              </div>
+                              <div class="ico-card">
+                                  <i class="fa-code-fork"></i>
                               </div>
                           </div>
                       </a>
@@ -254,6 +267,19 @@
                               </div>
                               <div class="ico-card">
                                   <i class="fa fa-gears"></i>
+                              </div>
+                          </div>
+                      </a>
+                  </div>
+                  <div class="col-md-6 col-lg-4 column">
+                      <a href="./user_order_details.php">
+                          <div class="card gr-8">
+                              <div class="txt">
+                                  <h1>User </br>
+                                  Orders</h1>
+                              </div>
+                              <div class="ico-card">
+                                  <i class="fa-code-fork"></i>
                               </div>
                           </div>
                       </a>
