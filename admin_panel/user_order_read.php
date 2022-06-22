@@ -128,7 +128,7 @@ $order_id_1 = $_GET['order_id'];
                                         <td>
                                             <div class="py-2 text-center">
                                                 <span class="d-block text-muted" id="orderno">Order No</span>
-                                                <span class="font-weight-bold" id="order"><?php echo $order_id; ?></span>
+                                                <span class="font-weight-bold" id="order"><strong><?php echo $order_id; ?></strong></span>
                                             </div>
                                         </td>
 
