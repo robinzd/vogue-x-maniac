@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+body{
+  background-color:lightgray;
+}
 
 .card{
     border:none
