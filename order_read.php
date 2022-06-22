@@ -63,9 +63,7 @@ $status = $_POST['status'];
 
     <div class="container mt-5 mb-5  d-none d-sm-block">
 
-        <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
-
-        <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-center">
 
             <div class="col-md-8">
 
