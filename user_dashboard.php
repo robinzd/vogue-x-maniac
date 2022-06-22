@@ -183,7 +183,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                             ?>
                             <?php
                             echo "</div>
-                                    <div class='fs-8'><strong>Date:</strong>$date_time</div>
+                                    <div class='fs-8'><strong>Date:$date_time</strong></div>
                                 </div>
                             </div>
                             <div class='col-lg-12'>
