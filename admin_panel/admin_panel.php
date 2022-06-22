@@ -156,8 +156,8 @@
                       <a href="./user_order_details.php">
                           <div class="card gr-8">
                               <div class="txt">
-                                  <h1>User Orders</br>
-                                      </h1>
+                                  <h1>Users</br>
+                                  Orders</h1>
                               </div>
                               <div class="ico-card">
                                   <i class="fa fa-code-fork"></i>
@@ -275,7 +275,7 @@
                       <a href="./user_order_details.php">
                           <div class="card gr-8">
                               <div class="txt">
-                                  <h1>User </br>
+                                  <h1>Users</br>
                                   Orders</h1>
                               </div>
                               <div class="ico-card">
