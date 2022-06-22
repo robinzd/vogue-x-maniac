@@ -22,7 +22,7 @@ $order_id_1 = $_GET['order_id'];
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Order Bill</title>
+    <title>Users Order Details </title>
     <!-- fav icon -->
     <link rel="icon" type="image/png" href="./favicon/vogue_x_maniac_png_K8m_icon.ico" />
     <!-- bootsstrap cdn -->
