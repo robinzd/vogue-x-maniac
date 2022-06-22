@@ -102,7 +102,7 @@ $status = $_POST['status'];
 
                     <div class="invoice p-5">
 
-                        <h5 class="placed">Your order Placed!</h5>
+                        <h5 class="placed"><strong>Your order Placed!</strong></h5>
                         <span class="font-weight-bold d-block mt-4">Hello,Mr/Mrs. <?php echo $user_name; ?></span>
                         <span>You order has been confirmed and will be shipped in next two days!</span>
 
@@ -474,7 +474,7 @@ $status = $_POST['status'];
 
                     <div class="invoice p-5">
 
-                        <h5 class="placed">Your order Placed!</h5>
+                        <h5 class="placed"><strong>Your order Placed!</strong></h5>
                         <span class="font-weight-bold d-block mt-4">Hello,Mr/Mrs. <?php echo $user_name; ?></span>
                         <span>You order has been confirmed and will be shipped in next two days!</span>
 
