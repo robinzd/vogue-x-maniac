@@ -40,6 +40,8 @@ while ($row_users = mysqli_fetch_array($run_users)) {
 
 $order_id = rand(1000000,5000000);
 
+$date = date("d M Y");
+
 
 
 if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) && !empty($city) && !empty($pincode)) {
@@ -50,7 +52,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
     if ($query_address) {
 
-        $query_order = mysqli_query($conn, "INSERT INTO `users_order`( `user_id`, `order_id`, `product_id`, `product_quantity`, `product_size`) VALUES ('$userid ','$order_id','$id','$quantity','$size')");
+        $query_order = mysqli_query($conn, "INSERT INTO `users_order`( `user_id`, `order_id`, `product_id`, `product_quantity`, `product_size`,`created_date_time`) VALUES ('$userid ','$order_id','$id','$quantity','$size','$date')");
     } else {
 
         echo "<script>alert('Something Went Wrong!');</script>";

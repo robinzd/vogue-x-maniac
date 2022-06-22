@@ -38,6 +38,8 @@ $run_userscart = mysqli_query($conn, $get_userscart);
 
 $order_id = rand(1000000,5000000);
 
+$date = date("d M Y");
+
 
 
 if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) && !empty($city) && !empty($pincode) &&  !empty($state)) {
@@ -54,7 +56,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
             $product_quantity = $row_userscart['product_quantity'];
             $product_size = $row_userscart['product_size'];
 
-            $query_order = mysqli_query($conn, "INSERT INTO `users_order`( `user_id`, `order_id`, `product_id`, `product_quantity`, `product_size`) VALUES ('$userid ','$order_id','$product_id','$product_quantity ','$product_size')");
+            $query_order = mysqli_query($conn, "INSERT INTO `users_order`( `user_id`, `order_id`, `product_id`, `product_quantity`, `product_size`,`created_date_time`) VALUES ('$userid ','$order_id','$product_id','$product_quantity ','$product_size','$date')");
         }
     } else {
 
