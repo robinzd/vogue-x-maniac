@@ -13,6 +13,7 @@ $userid = $user_data['user_id'];
 
 $order_id_1 = $_POST["orderid"];
 $order_date = $_POST['date'];
+$status=$_POST['status'];
 
 ?>
 
@@ -99,7 +100,18 @@ $order_date = $_POST['date'];
 
                     <div class="invoice p-5">
 
-                        <h5>Your order Confirmed!</h5>
+                    <?php
+
+                    if($status == 'TXN_SUCCESS'){
+
+                        echo"<h5 class='pass'>Your order Confirmed!</h5>";
+
+                    }else{
+                        echo"<h5 class='fail'>Your order Cancelled!</h5>";
+                    }
+
+
+                        ?>
 
                         <span class="font-weight-bold d-block mt-4">Hello,<?php echo $user_name; ?></span>
                         <span>You order has been confirmed and will be shipped in next two days!</span>

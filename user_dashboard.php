@@ -229,6 +229,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                                 echo " <form method='Post' action='order_read.php'>
                                 <input type='hidden' name='orderid' value='$order_number'>
                                 <input type='hidden' name='date' value='$final'>
+                                <input type='hidden' name='status' value='$status'>
                                 <button class='btn text-capitalize' type='submit'>order info</button>
                                 </form>
                                 </div>
