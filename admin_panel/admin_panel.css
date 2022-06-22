@@ -561,6 +561,11 @@ table.table td a {
   font-size: 13px;
 }
 
+.don {
+  color: red;
+  white-space: nowrap;
+}
+
 
 
 

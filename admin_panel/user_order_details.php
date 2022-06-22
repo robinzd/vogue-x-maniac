@@ -21,261 +21,54 @@ include('dbconnection.php');
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    <!--box icon cdn -->
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- link the external stylesheet -->
+    <link rel="stylesheet" type="text/css" href="./admin_panel.css">
 
-        body {
-            color: black;
-            background: #f5f5f5;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .table-responsive {
-            margin: 30px 0;
-        }
-
-        .table-wrapper {
-            min-width: 1500px;
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
-        }
-
-        .table-title {
-            font-size: 15px;
-            padding-bottom: 10px;
-            margin: 0 0 10px;
-            min-height: 45px;
-        }
-
-        .table-title h2 {
-            margin: 5px 0 0;
-            font-size: 24px;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .table-title select {
-            border-color: #ddd;
-            border-width: 0 0 1px 0;
-            padding: 3px 10px 3px 5px;
-            margin: 0 5px;
-        }
-
-        .table-title .show-entries {
-            margin-top: 7px;
-        }
-
-        .search-box {
-            position: relative;
-            float: right;
-        }
-
-        .search-box .input-group {
-            min-width: 200px;
-            position: absolute;
-            right: 0;
-        }
-
-        .search-box .input-group-addon,
-        .search-box input {
-            border-color: #ddd;
-            border-radius: 0;
-        }
-
-        .search-box .input-group-addon {
-            border: none;
-            border: none;
-            background: transparent;
-            position: absolute;
-            z-index: 9;
-        }
-
-        .search-box input {
-            height: 34px;
-            padding-left: 28px;
-            box-shadow: none !important;
-            border-width: 0 0 1px 0;
-        }
-
-        .search-box input:focus {
-            border-color: #3FBAE4;
-        }
-
-        .search-box i {
-            color: #a0a5b1;
-            font-size: 19px;
-            position: relative;
-            top: 8px;
-        }
-
-        table.table tr th,
-        table.table tr td {
-            border-color: #e9e9e9;
-            text-align:center;
-        }
-
-        table.table th i {
-            font-size: 13px;
-            margin: 0 5px;
-            cursor: pointer;
-        }
-
-        table.table td:last-child {
-            width: 130px;
-        }
-
-        table.table td a {
-            color: #a0a5b1;
-            display: inline-block;
-            margin: 0 5px;
-        }
-
-        table.table td a.view {
-            color: #03A9F4;
-        }
-
-        table.table td a.edit {
-            color: #FFC107;
-        }
-
-        table.table td a.delete {
-            color: #E34724;
-        }
-
-        table.table td i {
-            font-size: 19px;
-        }
-
-        .pagination {
-            float: right;
-            margin: 0 0 5px;
-        }
-
-        .pagination li a {
-            border: none;
-            font-size: 13px;
-            min-width: 30px;
-            min-height: 30px;
-            padding: 0 10px;
-            color: #999;
-            margin: 0 2px;
-            line-height: 30px;
-            border-radius: 30px !important;
-            text-align: center;
-        }
-
-        .pagination li a:hover {
-            color: #666;
-        }
-
-        .pagination li.active a {
-            background: #03A9F4;
-        }
-
-        .pagination li.active a:hover {
-            background: #0397d6;
-        }
-
-        .pagination li.disabled i {
-            color: #ccc;
-        }
-
-        .pagination li i {
-            font-size: 16px;
-            padding-top: 6px
-        }
-
-        .hint-text {
-            float: left;
-            margin-top: 10px;
-            font-size: 13px;
-        }
-
-        .btn-circle.btn-xl {
-            width: 50px;
-            height: 50px;
-            padding: 10px 10px;
-            border-radius: 35px;
-            font-size: 20px;
-            text-align: center;
-            box-shadow: 0px 4px 4px #888888;
-
-        }
-
-        .btn-circle.btn-xl:hover {
-            background-color: black;
-        }
-
-        i.material-icons {
-            margin-top: 2px;
-        }
-
-
-
-        .fa-home {
-            color: black;
-        }
-
-        .navbar-text {
-            display: inline-block;
-
-        }
-
-        .icon,
-        .text {
-            display: inline;
-        }
-
-        .text {
-            margin-left: 10px;
-            color: black;
-            font-family: 'Roboto', sans-serif;
-        }
-
-        .navbar {
-            background-color: #f5f5f5;
-        }
-
-        footer.bg-light.text-center.text-lg-start {
-            position: sticky;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-
-
-        }
-
-        .text-center.p-3 {
-            color: black;
-        }
-
-        a.text1 {
-            color: black;
-            text-decoration: none;
-        }
-
-        .don{
-            color:red;
-            white-space:nowrap;
-        }
-
-       
-    </style>
+   
 </head>
 
-<body>
-    <!-- navbar starts -->
+
+<!-- navbar starts -->
 
 
-    <nav class="navbar">
-        <div class="container-fluid">
-            <div class="navbar-text">
-                <div class="icon"><a href="./admin_panel.php"><i class="fa fa-home"></i></a></div>
-                <div class="text">Home</div>
-            </div>
-
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+        <div class="navbar__right">
+            <!-- <a href="#">
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+                </a> -->
+            <a href="../index.php">
+                <i class="fa fa-sign-out" aria-hidden="true"></i>
+            </a>
+            <a href="#">
+                <img width="30" src="assets/avatar.svg" alt="" />
+                <!-- <i class="fa fa-user-circle-o" aria-hidden="true"></i> -->
+            </a>
         </div>
-    </nav>
+
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div> <a href="#" class="nav_logo"><i class="fa fa-user"></i><span class="nav_logo-name">Admin Panel</span> </a>
+                <div class="nav_list"> <a href="./admin_panel.php" class="nav_link"> <i class='bx bx-grid-alt nav_icon'></i> <span class="nav_name">Dashboard</span> </a>
+                    <a href="./user_table.php" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users Table</span> </a>
+                    <a href="./user_message.php" class="nav_link "> <i class='bx bx-message-square-detail nav_icon'></i>
+                        <span class="nav_name">Messages</span> </a>
+                    <a href="./user_order_details.php" class="nav_link active"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Bookmark</span></a> 
+                    <!-- <a href="#" class="nav_link">
+                            <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Files</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Stats</span> </a> -->
+                </div>
+
+        </nav>
+    </div>
+
+    <div class="top-text">
+        <div class="icon"><i class="fa fa-table"></i></div>
+        <div class="text">Users Messages Table</div>
+    </div>
 
 
 
@@ -316,9 +109,9 @@ include('dbconnection.php');
                         $row = mysqli_num_rows($ret);
                         if ($row > 0) {
                             while ($row = mysqli_fetch_array($ret)) {
-                               
-                                $order_id=$row['order_id'];
-                                $transaction_status=$row['current_status'] ;
+
+                                $order_id = $row['order_id'];
+                                $transaction_status = $row['current_status'];
 
                         ?>
                                 <!--Fetch the Records -->
@@ -333,11 +126,10 @@ include('dbconnection.php');
                                     <td><?php echo $row['bank_name']; ?></td>
                                     <td>
                                         <?php
-                                        if($transaction_status ==  $status){
-                                        echo"<a href='user_order_read.php?order_id=$order_id' class='view' title='View' data-toggle='tooltip'><i class='material-icons'>&#xE417;</i></a>";
-                                        }
-                                        else{
-                                           echo "<h8 class='don'>Order Cancelled</h8>";
+                                        if ($transaction_status ==  $status) {
+                                            echo "<a href='user_order_read.php?order_id=$order_id' class='view' title='View' data-toggle='tooltip'><i class='material-icons'>&#xE417;</i></a>";
+                                        } else {
+                                            echo "<h8 class='don'>Order Cancelled</h8>";
                                         }
                                         ?>
                                     </td>
