@@ -378,7 +378,7 @@ $status = $_POST['status'];
                                             </td>
                                             <td>
                                                 <div class='text-right'>
-                                                    <span class='font-weight-bold'>₹$balance_amount</span>
+                                                    <span class='font-weight-bold'>₹$balance_amount.00</span>
                                                 </div>
                                             </td>
                                         </tr>";
@@ -752,7 +752,7 @@ $status = $_POST['status'];
                                         </td>
                                         <td>
                                             <div class='text-right'>
-                                                <span class='font-weight-bold'>₹$balance_amount</span>
+                                                <span class='font-weight-bold'>₹$balance_amount.00</span>
                                             </div>
                                         </td>
                                     </tr>";
