@@ -67,7 +67,7 @@ include('dbconnection.php');
 
     <div class="top-text">
         <div class="icon"><i class="fa fa-table"></i></div>
-        <div class="text">Users Messages Table</div>
+        <div class="text">Users Orders Table</div>
     </div>
 
 
