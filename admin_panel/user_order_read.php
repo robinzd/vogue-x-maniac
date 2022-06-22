@@ -55,7 +55,7 @@ $order_id_1 = $_GET['order_id'];
 
     <div class="container mt-5 mb-5  d-none d-sm-block">
 
-    <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
+        <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
 
         <div class="row d-flex justify-content-center">
 
@@ -87,18 +87,17 @@ $order_id_1 = $_GET['order_id'];
                     while ($row_userorder = mysqli_fetch_array($run_userorder)) {
 
                         $order_id = $row_userorder['order_id'];
-                        $order_date= $row_userorder['created_date_time'];
+                        $order_date = $row_userorder['created_date_time'];
                         $user_id = $row_userorder['user_id'];
                     }
 
-                    $get_mob_no= "select * from users where user_id=$user_id";
+                    $get_mob_no = "select * from users where user_id=$user_id";
 
-                    $run_mob_no  = mysqli_query($conn,$get_mob_no);
+                    $run_mob_no  = mysqli_query($conn, $get_mob_no);
 
                     while ($row_mob_no = mysqli_fetch_array($run_mob_no)) {
 
-                        $mob_no=$row_mob_no['user_mob_no'];
-                        
+                        $mob_no = $row_mob_no['user_mob_no'];
                     }
 
 
@@ -108,9 +107,9 @@ $order_id_1 = $_GET['order_id'];
 
                     <div class="invoice p-5">
 
-                        <h5>Users order</h5>
+                        <h5>Users order Details</h5>
                         <span class="font-weight-bold d-block mt-4">Username:<strong>Mr/Mrs. <?php echo $user_name; ?></strong></span>
-                        
+
 
                         <div class="payment border-top mt-3 mb-3 border-bottom table-responsive">
 
@@ -420,7 +419,7 @@ $order_id_1 = $_GET['order_id'];
                         </div>
 
 
-                        
+
 
                     </div>
 
@@ -441,7 +440,7 @@ $order_id_1 = $_GET['order_id'];
     <div class="container mt-5 mb-5 d-block d-sm-none" style="zoom:70%">
 
 
-    <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
+        <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
 
         <div class="row d-flex justify-content-center">
 
@@ -482,9 +481,9 @@ $order_id_1 = $_GET['order_id'];
 
                     <div class="invoice p-5">
 
-                        
+                        <h5>Users order Details</h5>
                         <span class="font-weight-bold d-block mt-4">Username:<strong>Mr/Ms. <?php echo $user_name; ?></strong></span>
-                       
+
 
                         <div class="payment border-top mt-3 mb-3 border-bottom table-responsive">
 
@@ -794,7 +793,7 @@ $order_id_1 = $_GET['order_id'];
                         </div>
 
 
-                       
+
                     </div>
 
 
@@ -810,7 +809,7 @@ $order_id_1 = $_GET['order_id'];
 
 
 
-    
+
 
 
 
