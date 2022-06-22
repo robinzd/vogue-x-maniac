@@ -40,7 +40,7 @@ $status = $_POST['status'];
     <!-- owl carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- link the external stylesheet -->
-    <link rel="stylesheet" type="text/css" href="./bill.css">
+    <link rel="stylesheet" type="text/css" href="./bill1.css">
 
 </head>
 
@@ -100,7 +100,7 @@ $status = $_POST['status'];
 
                     <div class="invoice p-5">
 
-                        <h5>Your order Confirmed!</h5>
+                        <h5 class="placed">Your order Placed!</h5>
                         <span class="font-weight-bold d-block mt-4">Hello,<?php echo $user_name; ?></span>
                         <span>You order has been confirmed and will be shipped in next two days!</span>
 

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+
+ .card{
+    border:none
+}
+
+.totals tr td{
+    font-size: 13px
+}
+
+.product-qty span{
+    font-size: 12px;color: #dedbdb
+}
+
+.fa-arrow-left {
+   cursor: pointer;
+}
+
+
+.d-grid.gap-2.col-6.mx-auto{
+    margin-top: 50px;
+    
+}
+
+button.btn.btn-success{
+    color:black !important;
+    border-radius:20px !important;
+    background-color: lightgreen !important;
+}
+
+button.btn.btn-success:hover{
+    color:white !important;
+    background-color: black !important;
+
+}
+
+#orderdate{
+    
+    white-space:nowrap;
+}
+
+#date{
+
+    white-space:nowrap;
+}
+
+#orderno{
+
+    white-space:nowrap;
+}
+
+#order{
+
+    white-space:nowrap;
+}
+
+#size{
+   margin-top:5px; 
+}
+
+
+h6{
+    color:red
+}
+
+
+.para{
+    color:red;
+}
+
+.placed{
+    color:lightgreen;
+}
+
+
+
+
