@@ -444,7 +444,7 @@ $status = $_POST['status'];
                     <?php
 
 
-                    $get_useraddress = "select * from users_address where user_id=$userid";
+                    $get_useraddress = "select * from users_address where order_id=$order_id_1";
 
                     $run_useraddress  = mysqli_query($conn, $get_useraddress);
 
