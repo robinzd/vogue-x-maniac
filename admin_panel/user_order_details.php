@@ -153,6 +153,11 @@ include('dbconnection.php');
 
     </div>
 
+    <!-- j query -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="admin_panel.js"></script>
+
+
     <footer class="bg-light text-center text-lg-start">
         <!-- Copyright -->
         <div class="text-center p-3" style="background-color:#f5f5f5;">
