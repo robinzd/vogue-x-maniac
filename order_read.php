@@ -356,7 +356,7 @@ $order_date = $_POST['date'];
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span class="text-success">$amount_paid</span>
+                                                    <span class="text-success"><?php echo $amount_paid;?></span>
                                                 </div>
                                             </td>
                                         </tr>
