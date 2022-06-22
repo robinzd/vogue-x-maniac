@@ -215,7 +215,7 @@ $order_id_1 = $_GET['order_id'];
                                                     </td>
 
                                                     <td width="60%">
-                                                        <span class="font-weight-bold"><?php echo $product_title; ?></span><br>
+                                                        <span class="font-weight-bold"><strong><?php echo $product_title; ?></strong></span><br>
                                                         <div class="product-qty">
                                                             <span class="d-block">Quantity:<?php echo $product_quantity; ?></span>
                                                             <?php
@@ -227,7 +227,7 @@ $order_id_1 = $_GET['order_id'];
                                                     </td>
                                                     <td width="20%">
                                                         <div class="text-right">
-                                                            <span class="font-weight-bold"><?php echo "₹" . number_format($total_price, 2); ?></span>
+                                                            <span class="font-weight-bold"><strong><?php echo "₹" . number_format($total_price, 2); ?></strong></span>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -377,13 +377,13 @@ $order_id_1 = $_GET['order_id'];
                                             <td>
                                                 <div class='text-left'>
 
-                                                    <span class='font-weight-bold'>Balance Amount</span>
+                                                    <span class='font-weight-bold'><strong>Balance Amount</strong></span>
 
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class='text-right'>
-                                                    <span class='font-weight-bold'>₹$balance_amount.00</span>
+                                                    <span class='font-weight-bold'><strong>₹$balance_amount.00</strong></span>
                                                 </div>
                                             </td>
                                         </tr>";
@@ -392,13 +392,13 @@ $order_id_1 = $_GET['order_id'];
                                             <td>
                                                 <div class='text-left'>
 
-                                                    <span class='font-weight-bold'>Full Amount Paided</span>
+                                                    <span class='font-weight-bold'><strong>Full Amount Paided</strong></span>
 
                                                 </div>
                                             </td>
                                             <td>
                                                 <div class='text-right'>
-                                                    <span class='font-weight-bold'>₹$amount_paid.00</span>
+                                                    <span class='font-weight-bold'><strong>₹$amount_paid.00</strong></span>
                                                 </div>
                                             </td>
                                         </tr>";
@@ -482,9 +482,9 @@ $order_id_1 = $_GET['order_id'];
 
                     <div class="invoice p-5">
 
-                        <h5 class="placed">Your order Placed!</h5>
+                        
                         <span class="font-weight-bold d-block mt-4">Hello,<?php echo $user_name; ?></span>
-                        <span>You order has been confirmed and will be shipped in next two days!</span>
+                       
 
                         <div class="payment border-top mt-3 mb-3 border-bottom table-responsive">
 
@@ -502,7 +502,7 @@ $order_id_1 = $_GET['order_id'];
                                         <td>
                                             <div class="py-2 text-center">
                                                 <span class="d-block text-muted" id="orderno">Order No</span>
-                                                <span class="font-weight-bold" id="order"><?php echo $order_id; ?></span>
+                                                <span class="font-weight-bold" id="order"><strong><?php echo $order_id; ?></strong></span>
                                             </div>
                                         </td>
 
@@ -589,7 +589,7 @@ $order_id_1 = $_GET['order_id'];
                                                     </td>
 
                                                     <td width="60%">
-                                                        <span class="font-weight-bold"><?php echo $product_title; ?></span><br>
+                                                        <span class="font-weight-bold"><strong><?php echo $product_title; ?></strong></span><br>
                                                         <div class="product-qty">
                                                             <span class="d-block">Quantity:<?php echo $product_quantity; ?></span>
                                                             <?php
@@ -601,7 +601,7 @@ $order_id_1 = $_GET['order_id'];
                                                     </td>
                                                     <td width="20%">
                                                         <div class="text-right">
-                                                            <span class="font-weight-bold"><?php echo "₹" . number_format($total_price, 2); ?></span>
+                                                            <span class="font-weight-bold"><strong><?php echo "₹" . number_format($total_price, 2); ?></strong></span>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -751,13 +751,13 @@ $order_id_1 = $_GET['order_id'];
                                         <td>
                                             <div class='text-left'>
 
-                                                <span class='font-weight-bold'>Balance Amount</span>
+                                                <span class='font-weight-bold'><strong>Balance Amount</strong></span>
 
                                             </div>
                                         </td>
                                         <td>
                                             <div class='text-right'>
-                                                <span class='font-weight-bold'>₹$balance_amount.00</span>
+                                                <span class='font-weight-bold'><strong>₹$balance_amount.00</strong></span>
                                             </div>
                                         </td>
                                     </tr>";
@@ -766,13 +766,13 @@ $order_id_1 = $_GET['order_id'];
                                         <td>
                                             <div class='text-left'>
 
-                                                <span class='font-weight-bold'>Full Amount Paided</span>
+                                                <span class='font-weight-bold'><strong>Full Amount Paided</strong></span>
 
                                             </div>
                                         </td>
                                         <td>
                                             <div class='text-right'>
-                                                <span class='font-weight-bold'>₹$amount_paid.00</span>
+                                                <span class='font-weight-bold'><strong>₹$amount_paid.00</strong></span>
                                             </div>
                                         </td>
                                     </tr>";
@@ -794,10 +794,7 @@ $order_id_1 = $_GET['order_id'];
                         </div>
 
 
-                        <p>We will be sending shipping confirmation email when the item shipped successfully!</p>
-                        <p class="font-weight-bold mb-0">Thanks for shopping with us!</p>
-                        <span>vogue-x-maniac Team</span>
-
+                       
                     </div>
 
 
