@@ -225,7 +225,8 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                                 }
                                 ?>
 
-                    <?php
+                    <?php      
+                                if($status_1 == $real_status) {
                                 echo " <form method='Post' action='order_read.php'>
                                 <input type='hidden' name='orderid' value='$order_number'>
                                 <input type='hidden' name='date' value='$final'>
@@ -237,6 +238,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                         </div>
                     </div>
                    ";
+                                }
                             }
                         }
                     
