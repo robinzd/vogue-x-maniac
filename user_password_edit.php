@@ -217,6 +217,7 @@ if (isset($_POST['submit'])) {
 
 	<!-- add external js file -->
 	<script src="./user_password_edit.js"></script>
+	<script src="./password_edit_1.js"></script>
 	<!-- j query -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- owl carousel -->
