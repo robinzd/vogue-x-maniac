@@ -88,7 +88,7 @@ if (isset($_POST['submit'])) {
 				<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
 			</div>
 
-			<div class="text-center">Back<a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div>
+			<div class="text-center" id="back">Back<a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div>
 
 		</form>
 	</div><br><br>
