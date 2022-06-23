@@ -35,8 +35,6 @@ if (isset($_POST['submit'])) {
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-	<!-- add external js file -->
-	<script src="./user_password_edit.js"></script>
 	<style>
 		body {
 			color: #fff;
@@ -212,7 +210,7 @@ if (isset($_POST['submit'])) {
 				<h2>Edit User Password</h2>
 
 				<div class="form-group">
-					<input type="password" class="form-control" id="password" name="password" value="<?php echo $row['user_password']; ?>" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="true">
+					<input type="password" class="form-control" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="true">
 				</div>
 
 				<div id="message">
@@ -233,6 +231,10 @@ if (isset($_POST['submit'])) {
 
 		</form>
 	</div>
+	<!-- add external js file -->
+	<script src="./user_password_edit.js"></script>
 </body>
 
 </html>
+
+value="<?php echo $row['user_password']; ?>"
