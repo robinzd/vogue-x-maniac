@@ -103,6 +103,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/register1.css">
 	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<link rel="stylesheet" type="text/css" href="./password_validitation.css">
 	<!--===============================================================================================-->
 </head>
 
@@ -151,7 +152,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 					</div>
 
 					<div id="message">
-						<h3>Password must contain the following:</h3>
 						<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
 						<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
 						<p id="number" class="invalid">A <b>number</b></p>
@@ -205,7 +205,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
 
-    <!-- external js file -->
+	<!-- external js file -->
 	<script src="./password_validitation.js"></script>
 	<!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
