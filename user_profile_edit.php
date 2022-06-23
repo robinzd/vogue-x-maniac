@@ -85,7 +85,7 @@ if (isset($_POST['submit'])) {
 
 				<div class="form-group">
 					<input type="text" class="form-control" name="mobile" value="<?php echo $row['user_mob_no']; ?>" required="true">
-				</div>
+				</div><br><br>
 
 
 
