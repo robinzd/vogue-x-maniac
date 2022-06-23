@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
 	<style>
 		body {
 			color: #fff;
-			background: #63738a;
+			background:ghostwhite;
 			font-family: 'Roboto', sans-serif;
 		}
 
