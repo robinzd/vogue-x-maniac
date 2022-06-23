@@ -5,8 +5,8 @@ if (isset($_POST['submit'])) {
 	$eid = $_GET['editid'];
 	//Getting Post Values
 	$password = $_POST['password'];
-	
-	
+
+
 
 
 
@@ -35,6 +35,8 @@ if (isset($_POST['submit'])) {
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	<!-- add external js file -->
+	<script src="./user_password_edit.js"></script>
 	<style>
 		body {
 			color: #fff;
@@ -148,17 +150,54 @@ if (isset($_POST['submit'])) {
 
 		.fa-arrow-left {
 			color: black;
-            cursor: pointer;
+			cursor: pointer;
 		}
 
-        button.btn.btn-success.btn-lg.btn-block{
-            border-radius:20px;
-        }
+		button.btn.btn-success.btn-lg.btn-block {
+			border-radius: 20px;
+		}
 
-        button.btn.btn-success.btn-lg.btn-block:hover{
-            background-color: black;
-            color:white;
-        }
+		button.btn.btn-success.btn-lg.btn-block:hover {
+			background-color: black;
+			color: white;
+		}
+
+		/* The message box is shown when the user clicks on the password field */
+		#message {
+			display: none;
+			background: #f1f1f1;
+			color: #000;
+			position: relative;
+			padding: 20px;
+			margin-top: 10px;
+		}
+
+		#message p {
+			padding: 10px 35px;
+			font-size: 18px;
+		}
+
+		/* Add a green text color and a checkmark when the requirements are right */
+		.valid {
+			color: green;
+		}
+
+		.valid:before {
+			position: relative;
+			left: -35px;
+			content: "✔";
+		}
+
+		/* Add a red text color and an "x" when the requirements are wrong */
+		.invalid {
+			color: red;
+		}
+
+		.invalid:before {
+			position: relative;
+			left: -35px;
+			content: "✖";
+		}
 	</style>
 </head>
 
@@ -173,16 +212,24 @@ if (isset($_POST['submit'])) {
 				<h2>Edit User Password</h2>
 
 				<div class="form-group">
-					<input type="text" class="form-control" name="password" value="<?php echo $row['user_password']; ?>" required="true">
+					<input type="text" class="form-control" id="password" name="password" value="<?php echo $row['user_password']; ?>" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="true">
+				</div>
+
+				<div id="message">
+					<h3>Password must contain the following:</h3>
+					<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+					<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+					<p id="number" class="invalid">A <b>number</b></p>
+					<p id="length" class="invalid">Minimum <b>8 characters</b></p>
 				</div>
 
 			<?php
 			} ?>
-				<div class="form-group">
-					<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
-				</div>
+			<div class="form-group">
+				<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
+			</div>
 
-				<div class="text-center">Back<a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div>
+			<div class="text-center">Back<a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div>
 
 		</form>
 	</div>
