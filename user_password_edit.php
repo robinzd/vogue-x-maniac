@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
 	<style>
 		body {
 			color: #fff;
-			background:ghostwhite;
+			background:lightgray;
 			font-family: 'Roboto', sans-serif;
 		}
 
@@ -103,6 +103,7 @@ if (isset($_POST['submit'])) {
 			background: #f2f3f7;
 			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 			padding: 30px;
+			margin-top: 50%;
 		}
 
 		.signup-form .form-group {
