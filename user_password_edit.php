@@ -91,7 +91,7 @@ if (isset($_POST['submit'])) {
 			<div class="text-center">Back<a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div>
 
 		</form>
-	</div>
+	</div><br>
 
 	<!-- Footer -->
 
