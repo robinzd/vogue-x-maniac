@@ -193,7 +193,7 @@ if (isset($_POST['submit'])) {
 
 		/* Add a red text color and an "x" when the requirements are wrong */
 		.invalid {
-			text-decoration-color: red !important;
+			text-decoration: red !important;
 		}
 
 		.invalid:before {
