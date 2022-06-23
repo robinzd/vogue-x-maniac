@@ -201,10 +201,6 @@ if (isset($_POST['submit'])) {
 			left: -35px;
 			content: "✖";
 		}
-
-		p#letter.invalid{
-			color:red 
-		}
 	</style>
 </head>
 
