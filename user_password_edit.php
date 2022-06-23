@@ -212,7 +212,7 @@ if (isset($_POST['submit'])) {
 				<h2>Edit User Password</h2>
 
 				<div class="form-group">
-					<input type="text" class="form-control" id="password" name="password" value="<?php echo $row['user_password']; ?>" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="true">
+					<input type="password" class="form-control" id="password" name="password" value="<?php echo $row['user_password']; ?>" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="true">
 				</div>
 
 				<div id="message">
