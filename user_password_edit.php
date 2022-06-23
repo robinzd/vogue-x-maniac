@@ -104,7 +104,7 @@ if (isset($_POST['submit'])) {
 			padding: 30px;
 			border: 1px solid black;
 			border-radius: 10px;
-			margin-top: 50%;
+			
 		}
 
 		.signup-form .form-group {
