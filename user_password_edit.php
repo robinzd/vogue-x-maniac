@@ -25,16 +25,16 @@ if (isset($_POST['submit'])) {
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Edit Password</title>
-	<link rel="icon" type="image/png" href="./favicon/vogue_x_maniac_png_K8m_icon.ico"/>
+	<link rel="icon" type="image/png" href="./favicon/vogue_x_maniac_png_K8m_icon.ico" />
 	<!-- bootsstrap cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- font awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- font awesome cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 	<style>
@@ -107,7 +107,7 @@ if (isset($_POST['submit'])) {
 			border: 1px solid black;
 			border-radius: 10px;
 			margin-top: 20%;
-			
+
 		}
 
 		.signup-form .form-group {
@@ -193,13 +193,13 @@ if (isset($_POST['submit'])) {
 
 		/* Add a red text color and an "x" when the requirements are wrong */
 		.invalid {
-			text-decoration: red !important;
+			color: red !important;
 		}
 
 		.invalid:before {
 			position: relative;
 			left: -35px;
-			content: "✖";
+			content: "✖ red";
 		}
 	</style>
 </head>
