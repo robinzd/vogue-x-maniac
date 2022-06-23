@@ -14,59 +14,49 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	$email = $_POST["email"];
 	$password = $_POST["Password"];
 	$mobile_no = $_POST["Mobile_No"];
-	
 
 
 
-	
-
-	$sql="select * from users where (user_email='$email');";
-
-	
-
-      $res=mysqli_query($conn,$sql);
-
-	  
-
-	  
-
-	  
-      if (mysqli_num_rows($res) > 0) {
-        
-        $row = mysqli_fetch_assoc($res);
-
-		
-
-        if($email==isset($row['user_email'])) 
-        {
-            	echo "<script>alert('Email Already Exsists');</script>";
-        }
-
-	}
 
 
-	
+
+	$sql = "select * from users where (user_email='$email');";
 
 
- elseif (!empty($first_name) && !is_numeric($first_name) && !empty($last_name) && !is_numeric($last_name) && !empty($email)&& !empty($password) && !empty($mobile_no)) 
- {
+
+	$res = mysqli_query($conn, $sql);
+
+
+
+
+
+
+	if (mysqli_num_rows($res) > 0) {
+
+		$row = mysqli_fetch_assoc($res);
+
+
+
+		if ($email == isset($row['user_email'])) {
+			echo "<script>alert('Email Already Exsists');</script>";
+		}
+	} elseif (!empty($first_name) && !is_numeric($first_name) && !empty($last_name) && !is_numeric($last_name) && !empty($email) && !empty($password) && !empty($mobile_no)) {
 		// save to database
-		
-		 $user_id = random_num(20);
-		
-		
+
+		$user_id = random_num(20);
+
+
 		$query = "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`, `user_password`,`user_mob_no`) VALUES ('$user_id','$first_name','$last_name','$email','$password','$mobile_no')";
-        
-		
+
+
 
 		$check = mysqli_query($conn, $query);
 
-		
+
 
 		header("location:../login_form/login.php");
 		die;
-	} 
-	else {
+	} else {
 		echo "<script>alert('Please Enter Some Valid Information!');</script>";
 	}
 }
@@ -155,9 +145,17 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<input class="input100" type="password" name="Password">
+						<input class="input100" type="password" name="Password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
 						<span class="focus-input100"></span>
 						<span class="label-input100">Password</span>
+					</div>
+
+					<div id="message">
+						<h3>Password must contain the following:</h3>
+						<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+						<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+						<p id="number" class="invalid">A <b>number</b></p>
+						<p id="length" class="invalid">Minimum <b>8 characters</b></p>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="mobile number is required">
@@ -207,7 +205,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
 
-
+    <!-- external js file -->
+	<script src="./password_validitation.js"></script>
 	<!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 	<!--===============================================================================================-->
