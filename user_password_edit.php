@@ -60,7 +60,7 @@ if (isset($_POST['submit'])) {
 
 	<!--back to top ends -->
 
-	<!-- hide only on xs -->
+
 
 	<div class="signup-form" style="zoom:80%">
 		<form method="POST">
