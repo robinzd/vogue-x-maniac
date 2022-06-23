@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
 	<style>
 		body {
 			color: #fff;
-			background:ghostwhite;
+			background: ghostwhite;
 			font-family: 'Roboto', sans-serif;
 		}
 
@@ -100,9 +100,9 @@ if (isset($_POST['submit'])) {
 			color: #999;
 			border-radius: 3px;
 			margin-bottom: 15px;
-			background:ghostwhite;
-		    padding: 30px;
-			border:1px solid black;
+			background: ghostwhite;
+			padding: 30px;
+			border: 1px solid black;
 			border-radius: 10px;
 			margin-top: 50%;
 		}
@@ -202,10 +202,30 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
+
+	<!-- navbar starts -->
+
+
+	<?php
+
+	include "./index.header.php";
+
+	?>
+
+	<!-- navbar  ends -->
+
+
+	<!-- back to top starts -->
+
+
+	<?php include "./back_to_top.php"; ?>
+
+	<!--back to top ends -->
+
 	<!-- hide only on xs -->
-	
+
 	<div class="signup-form d-none d-sm-block">
-	    <form method="POST">
+		<form method="POST">
 			<?php
 			$eid = $_GET['editid'];
 			$ret = mysqli_query($conn, "select * from users where ID='$eid'");
@@ -218,7 +238,7 @@ if (isset($_POST['submit'])) {
 				</div>
 
 				<div id="message">
-				    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+					<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
 					<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
 					<p id="number" class="invalid">A <b>number</b></p>
 					<p id="length" class="invalid">Minimum <b>8 characters</b></p>
@@ -251,7 +271,7 @@ if (isset($_POST['submit'])) {
 				</div>
 
 				<div id="message">
-				    <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+					<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
 					<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
 					<p id="number" class="invalid">A <b>number</b></p>
 					<p id="length" class="invalid">Minimum <b>8 characters</b></p>
@@ -275,4 +295,3 @@ if (isset($_POST['submit'])) {
 </body>
 
 </html>
-
