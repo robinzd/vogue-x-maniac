@@ -199,7 +199,7 @@ if (isset($_POST['submit'])) {
 		.invalid:before {
 			position: relative;
 			left: -35px;
-			content: "✖ red";
+			content: "✖";
 		}
 	</style>
 </head>
