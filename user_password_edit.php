@@ -38,7 +38,7 @@ if (isset($_POST['submit'])) {
 	<style>
 		body {
 			color: #fff;
-			background:lightgray;
+			background:ghostwhite;
 			font-family: 'Roboto', sans-serif;
 		}
 
@@ -100,8 +100,10 @@ if (isset($_POST['submit'])) {
 			color: #999;
 			border-radius: 3px;
 			margin-bottom: 15px;
-			background:lightgray;
+			background:ghostwhite;
 		    padding: 30px;
+			border:1px solid black;
+			border-radius: 10px;
 			margin-top: 50%;
 		}
 
