@@ -202,8 +202,8 @@ if (isset($_POST['submit'])) {
 			content: "✖";
 		}
 
-		p#letter.invalid::before{
-			color:red !important;
+		p#letter.invalid{
+			color:red 
 		}
 	</style>
 </head>
