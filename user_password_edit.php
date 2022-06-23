@@ -104,6 +104,7 @@ if (isset($_POST['submit'])) {
 			padding: 30px;
 			border: 1px solid black;
 			border-radius: 10px;
+			margin-top: 20%;
 			
 		}
 
@@ -190,7 +191,7 @@ if (isset($_POST['submit'])) {
 
 		/* Add a red text color and an "x" when the requirements are wrong */
 		.invalid {
-			color: red;
+			color: red !important;
 		}
 
 		.invalid:before {
