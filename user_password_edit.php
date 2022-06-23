@@ -62,7 +62,7 @@ if (isset($_POST['submit'])) {
 
 	<!-- hide only on xs -->
 
-	<div class="signup-form" style="zoom:80%">
+	<div class="signup-form d-none d-sm-block">
 		<form method="POST">
 			<?php
 			$eid = $_GET['editid'];
@@ -80,6 +80,41 @@ if (isset($_POST['submit'])) {
 					<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
 					<p id="number" class="invalid">A <b>number</b></p>
 					<p id="length" class="invalid">Minimum <b>8 characters</b></p>
+				</div>
+
+			<?php
+			} ?>
+			<div class="form-group">
+				<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
+			</div>
+
+			<div class="text-center">Back<a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div>
+
+		</form>
+	</div><br><br>
+
+
+
+
+
+	<div class="signup-form  d-block d-sm-none" style="zoom:80%">
+		<form method="POST">
+			<?php
+			$eid = $_GET['editid'];
+			$ret = mysqli_query($conn, "select * from users where ID='$eid'");
+			while ($row = mysqli_fetch_array($ret)) {
+			?>
+				<h2>Enter New Password</h2>
+
+				<div class="form-group">
+					<input type="text" class="form-control" id="password1" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="true">
+				</div>
+
+				<div id="message">
+					<p id="letter1" class="invalid">A <b>lowercase</b> letter</p>
+					<p id="capital1" class="invalid">A <b>capital (uppercase)</b> letter</p>
+					<p id="number1" class="invalid">A <b>number</b></p>
+					<p id="length1" class="invalid">Minimum <b>8 characters</b></p>
 				</div>
 
 			<?php
