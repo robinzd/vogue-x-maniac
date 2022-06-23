@@ -154,17 +154,17 @@ $userid = $user_data['user_id'];
                             <div class="col col-md-12">
                                 <label>Firstname</label>
                                 <input class="form-control" type="text" value=<?php echo $firstname; ?> readonly>
-                            </div>
+                            </div><br>
 
                             <div class="col-md-12">
                                 <label>Lastname</label>
                                 <input class="form-control" type="text" value=<?php echo  $lastname; ?> readonly>
-                            </div>
+                            </div><br>
 
                             <div class="col-md-12">
                                 <label>Email</label>
                                 <input class="form-control" type="text" value=<?php echo  $email; ?> readonly>
-                            </div>
+                            </div><br>
 
                             <div class="col-md-12">
                                 <label>Mobile No</label>
