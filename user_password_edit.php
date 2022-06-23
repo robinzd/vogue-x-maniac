@@ -100,7 +100,7 @@ if (isset($_POST['submit'])) {
 			color: #999;
 			border-radius: 3px;
 			margin-bottom: 15px;
-			background: #f2f3f7;
+			background:lightgray;
 			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 			padding: 30px;
 			margin-top: 50%;
@@ -235,7 +235,7 @@ if (isset($_POST['submit'])) {
 	<!-- hide only on xs -->
 
 	<!-- visible only on xs -->
-	<div class="signup-form d-block d-sm-none" style="zoom:70%">
+	<div class="signup-form d-block d-sm-none" style="zoom:80%">
 		<form method="POST">
 			<?php
 			$eid = $_GET['editid'];
