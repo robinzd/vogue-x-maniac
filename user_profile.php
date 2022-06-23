@@ -111,7 +111,9 @@ $userid = $user_data['user_id'];
                                 <div class="d-grid gap-2 col-6 mx-auto">
                                     <button class="btn btn-outline-success">edit</button>
                                 </div>
-                            </a>
+                            </a><br>
+
+                            <div class="text-center">Back<a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div>
 
                        
                     </div>
@@ -175,7 +177,9 @@ $userid = $user_data['user_id'];
                                 <div class="d-grid gap-2 col-6 mx-auto">
                                     <button class="btn btn-outline-success">Edit</button>
                                 </div>
-                            </a>
+                            </a><br>
+
+                            <div class="text-center">Back<a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div>
                       
                     </div>
                 </div>
