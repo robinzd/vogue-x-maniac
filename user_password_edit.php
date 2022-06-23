@@ -205,8 +205,7 @@ if (isset($_POST['submit'])) {
 	<!-- hide only on xs -->
 	
 	<div class="signup-form d-none d-sm-block">
-	<img src="./header images/vogue x maniac png.png">
-		<form method="POST">
+	    <form method="POST">
 			<?php
 			$eid = $_GET['editid'];
 			$ret = mysqli_query($conn, "select * from users where ID='$eid'");
