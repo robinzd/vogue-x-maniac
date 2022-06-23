@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+
+
+body {
+    color: #fff;
+    background: ghostwhite !important;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-control {
+    height: 40px;
+    box-shadow: none;
+    color: #969fa4;
+}
+
+.form-control:focus {
+    border-color: #5cb85c;
+}
+
+.form-control,
+.btn {
+    border-radius: 3px;
+}
+
+.signup-form {
+    width: 450px;
+    margin: 0 auto;
+    padding: 30px 0;
+    font-size: 15px;
+}
+
+.signup-form h2 {
+    color: #636363;
+    margin: 0 0 15px;
+    position: relative;
+    text-align: center;
+}
+
+.signup-form h2:before,
+.signup-form h2:after {
+    content: "";
+    height: 2px;
+    width: 8%;
+    background: #d4d4d4;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+}
+
+.signup-form h2:before {
+    left: 0;
+}
+
+.signup-form h2:after {
+    right: 0;
+}
+
+.signup-form .hint-text {
+    color: #999;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.signup-form form {
+    color: #999;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    background: ghostwhite;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 20%;
+
+}
+
+.signup-form .form-group {
+    margin-bottom: 20px;
+}
+
+.signup-form input[type="checkbox"] {
+    margin-top: 3px;
+}
+
+.signup-form .btn {
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 140px;
+    outline: none !important;
+}
+
+.signup-form .row div:first-child {
+    padding-right: 10px;
+}
+
+.signup-form .row div:last-child {
+    padding-left: 10px;
+}
+
+.signup-form a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.signup-form a:hover {
+    text-decoration: none;
+}
+
+.signup-form form a {
+    color: #5cb85c;
+    text-decoration: none;
+}
+
+.signup-form form a:hover {
+    text-decoration: underline;
+}
+
+.fa-arrow-left {
+    color: black;
+    cursor: pointer;
+}
+
+button.btn.btn-success.btn-lg.btn-block {
+    border-radius: 20px;
+}
+
+button.btn.btn-success.btn-lg.btn-block:hover {
+    background-color: black;
+    color: white;
+}
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+    display: none;
+    background:ghostwhite;
+    color: #000;
+    position: relative;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#message p {
+    padding: 10px 35px;
+    font-size: 18px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red !important;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+    
+}
+
+#back{
+  color:black;
+}
+
+div#back{
+    cursor:pointer;
+}
+
+/* footer */
+
+
+
+img.footerimage{
+    width: 120px;
+}
+
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2{
+    border-radius: 50%;
+    background-color: rgb(59,89,152);
+    color:white;
+    
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-info.pmd-btn-flat.mx-1.my-2{
+    border-radius: 50%;
+    background-color: skyblue;
+    
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-info.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-danger.pmd-btn-flat.mx-1.my-2{
+    border-radius:50%;
+    background-color:#d63384;
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-danger.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2{
+    border-radius: 50%;
+    background-color: red;
+}
+
+
+a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2:hover{
+  color:black;
+}
+
+p.text-white{
+  margin-top: 20px;
+}
+
+h6.text-uppercase.mb-4.font-weight-bold{
+  font-family:'Redressed', cursive;
+}
+
+p#address{
+  white-space: nowrap;
+}
+
+img.px-2 {
+  width: 50px;
+}

@@ -180,6 +180,10 @@ select.form-control:focus{
     border-color: lightgreen;
 }
 
+.text-center{
+    cursor: pointer;
+}
+
 /* footer */
 
 

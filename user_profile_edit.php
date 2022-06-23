@@ -32,141 +32,16 @@ if (isset($_POST['submit'])) {
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
 	<title>Edit Profile</title>
 	<link rel="icon" type="image/png" href="./favicon/vogue_x_maniac_png_K8m_icon.ico" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-	<style>
-		body {
-			color: #fff;
-			background: lightgray;
-			font-family: 'Roboto', sans-serif;
-		}
-
-		.form-control {
-			height: 40px;
-			box-shadow: none;
-			color: #969fa4;
-		}
-
-		.form-control:focus {
-			border-color: #5cb85c;
-		}
-
-		.form-control,
-		.btn {
-			border-radius: 3px;
-		}
-
-		.signup-form {
-			width: 450px;
-			margin: 0 auto;
-			padding: 30px 0;
-			font-size: 15px;
-		}
-
-		.signup-form h2 {
-			color: #636363;
-			margin: 0 0 15px;
-			position: relative;
-			text-align: center;
-		}
-
-		.signup-form h2:before,
-		.signup-form h2:after {
-			content: "";
-			height: 2px;
-			width: 10%;
-			background: #d4d4d4;
-			position: absolute;
-			top: 50%;
-			z-index: 2;
-		}
-
-		.signup-form h2:before {
-			left: 0;
-		}
-
-		.signup-form h2:after {
-			right: 0;
-		}
-
-		.signup-form .hint-text {
-			color: #999;
-			margin-bottom: 30px;
-			text-align: center;
-		}
-
-		.signup-form form {
-			color: #999;
-			border-radius: 3px;
-			margin-bottom: 15px;
-			background: #f2f3f7;
-			box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-			padding: 30px;
-			margin-top: 50%;
-		}
-
-		.signup-form .form-group {
-			margin-bottom: 20px;
-		}
-
-		.signup-form input[type="checkbox"] {
-			margin-top: 3px;
-		}
-
-		.signup-form .btn {
-			font-size: 16px;
-			font-weight: bold;
-			min-width: 140px;
-			outline: none !important;
-		}
-
-		.signup-form .row div:first-child {
-			padding-right: 10px;
-		}
-
-		.signup-form .row div:last-child {
-			padding-left: 10px;
-		}
-
-		.signup-form a {
-			color: #fff;
-			text-decoration: underline;
-		}
-
-		.signup-form a:hover {
-			text-decoration: none;
-		}
-
-		.signup-form form a {
-			color: #5cb85c;
-			text-decoration: none;
-		}
-
-		.signup-form form a:hover {
-			text-decoration: underline;
-		}
-
-		.fa-arrow-left {
-			color: black;
-            cursor: pointer;
-		}
-
-        button.btn.btn-success.btn-lg.btn-block{
-            border-radius:20px;
-        }
-
-        button.btn.btn-success.btn-lg.btn-block:hover{
-            background-color: black;
-            color:white;
-        }
-	</style>
+	<!-- bootsstrap cdn -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- font awesome cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- link the external stylesheet -->
+	 <link rel="stylesheet" type="text/css" href="./user_password_edit.css">
 </head>
 
 <body>
-	<div class="signup-form">
+	<div class="signup-form" style="zoom:80%">
 		<form method="POST">
 			<?php
 			$eid = $_GET['editid'];
@@ -197,9 +72,9 @@ if (isset($_POST['submit'])) {
 			} ?>
 				<div class="form-group">
 					<button type="submit" class="btn btn-success btn-lg btn-block" name="submit">Update</button>
-				</div>
+				</div><br>
 
-				<div class="text-center">Back<a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div>
+				<div class="text-center" id="back">Back<a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div>
 
 		</form>
 
@@ -209,6 +84,95 @@ if (isset($_POST['submit'])) {
 
 
 	</div>
+
+	<!-- Footer -->
+
+    <footer class="text-center text-lg-start text-dark" style="background-color:lightgrey">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Links -->
+            <section class="">
+                <!--Grid row-->
+                <div class="row">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <img class="footerimage" src="./header images/vogue x maniac png.png" alt="brand image">
+                        <p class="text-white">
+                           vogue-x-maniac is the one of the leading ecommerce website
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                        <p class="text-white">MDBootstrap</p>
+                        <p class="text-white">MDWordPress</p>
+                        <p class="text-white">BrandFlow</p>
+                        <p class="text-white">Angular</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                        <p class="text-white"><i class="fas fa-home text-white mr-3"></i> New York, NY 10012, US</p>
+                        <p class="text-white" id="address"><i class="fas fa-envelope text-white mr-3"></i> inf0@text-white@gmail.com
+                        </p>
+                        <p class="text-white"><i class="fas fa-phone text-white mr-3"></i> + 01 234 567 88</p>
+                        <p class="text-white"><i class="fas fa-print text-white mr-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-4 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
+
+                        <!-- Facebook -->
+                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-primary pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" role="button"><i class="fab fa-facebook"></i></a>
+
+                        <!-- Twitter -->
+                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-info pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" role="button"><i class="fab fa-twitter"></i></a>
+
+                        <!-- youtube -->
+                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-secondary pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="youtube" role="button"><i class="fab fa-youtube"></i></a>
+
+
+                        <!-- Instagram -->
+                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-danger pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram" role="button"><i class="fab fa-instagram"></i></a>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+            </section>
+            <!-- Section: Links -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.096)">
+
+            <p class="text-dark"> ©2022 Vogue X Maniac.All Rights Reserved
+            </p>
+            <img class="px-2" src="./payment_pics/2560px-MasterCard_Logo.svg-removebg-preview.png">
+            <img class="px-2" src="./payment_pics/1200px-Visa.svg-removebg-preview.png">
+            <img class="px-2" src="./payment_pics/paypal-logo-removebg-preview.png">
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- end of the footer -->
+
+	<!-- j query -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- owl carousel -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 </body>
 
 </html>
