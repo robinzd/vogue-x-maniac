@@ -57,7 +57,7 @@ if (isset($_GET['delid'])) {
     <!--back to top ends -->
 
     <!-- product_cart starts hidden only on xs -->
-    <div class="table-responsive d-none d-sm-block">
+    <div class="table-responsive d-none d-sm-block  d-sm-none d-md-block">
         <div id="shopping-cart">
 
 
