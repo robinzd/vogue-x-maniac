@@ -200,7 +200,7 @@ if (isset($_POST['submit'])) {
 			position: relative;
 			left: -35px;
 			content: "✖";
-			color: red;
+			color: red !important;
 		}
 	</style>
 </head>
