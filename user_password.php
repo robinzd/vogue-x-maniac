@@ -95,7 +95,7 @@ $userid = $user_data['user_id'];
                                 <div class="d-grid gap-2 col-6 mx-auto">
                                     <button class="btn btn-outline-success">Change Password</button>
                                 </div>
-                            </a>
+                            </a><br>
 
                             <div class="text-center">Back<a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div>
 
@@ -145,7 +145,7 @@ $userid = $user_data['user_id'];
                                 <div class="d-grid gap-2 col-6 mx-auto">
                                     <button class="btn btn-outline-success">Change Password</button>
                                 </div>
-                            </a>
+                            </a><br>
 
 
                             <div class="text-center">Back<a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div>
