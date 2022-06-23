@@ -203,6 +203,7 @@ if (isset($_POST['submit'])) {
 
 <body>
 	<!-- hide only on xs -->
+	<img src="./header images/vogue x maniac png.png">
 	<div class="signup-form d-none d-sm-block">
 		<form method="POST">
 			<?php
