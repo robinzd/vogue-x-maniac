@@ -29,7 +29,7 @@ $userid = $user_data['user_id'];
     <!-- owl carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- link the external stylesheet -->
-    <link rel="stylesheet" type="text/css" href="./address.css">
+    <link rel="stylesheet" type="text/css" href="./password.css">
 </head>
 
 <body>
@@ -58,7 +58,7 @@ $userid = $user_data['user_id'];
     ?>
 
     <!-- hide only on xs -->
-    <div class="form-body" style="zoom:70%">
+    <div class="form-body d-none d-sm-block">
         <div class="row">
             <div class="form-holder">
                 <div class="form-content">
@@ -105,7 +105,53 @@ $userid = $user_data['user_id'];
     </div>
     <!-- hide only on xs -->
 
-    
+    <!-- visible only on xs -->
+    <div class="form-body  d-block d-sm-none" style="zoom:70%">
+    <div class="row">
+            <div class="form-holder">
+                <div class="form-content">
+                    <div class="form-items">
+                        <h3 class="text-center"><i class="fa fa-key"></i>User Profile</h3>
+                       
+
+
+                            <?php
+
+                            $get_user_details = "select * from users where user_id=$userid";
+
+                            $run_user_details = mysqli_query($conn, $get_user_details);
+
+
+
+                            while ($row_user_details = mysqli_fetch_array($run_user_details)) {
+
+                                $id = $row_user_details['ID'];
+                                $password = $row_user_details['user_password'];
+                                
+
+                            }
+
+                            ?>
+
+
+                            <div class="col col-md-12">
+                                <label>Old Password</label>
+                                <input class="form-control" type="password" value=<?php echo $password; ?> readonly>
+                            </div><br>
+
+                            <a href="user_password_edit.php?editid=<?php echo htmlentities($id); ?>" class="edit" title="Edit" data-toggle="tooltip">
+                                <div class="d-grid gap-2 col-6 mx-auto">
+                                    <button class="btn btn-outline-success">Change Password</button>
+                                </div>
+                            </a>
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- visible only on xs -->
 
     <!-- Footer -->
 
