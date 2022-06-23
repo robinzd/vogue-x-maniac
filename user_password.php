@@ -97,6 +97,8 @@ $userid = $user_data['user_id'];
                                 </div>
                             </a>
 
+                            <div class="text-center">Back<a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div>
+
                        
                     </div>
                 </div>
@@ -111,7 +113,7 @@ $userid = $user_data['user_id'];
             <div class="form-holder">
                 <div class="form-content">
                     <div class="form-items">
-                        <h3 class="text-center"><i class="fa fa-key"></i>User Profile</h3>
+                        <h3 class="text-center"><i class="fa fa-key"></i>User Password</h3>
                        
 
 
@@ -144,6 +146,9 @@ $userid = $user_data['user_id'];
                                     <button class="btn btn-outline-success">Change Password</button>
                                 </div>
                             </a>
+
+
+                            <div class="text-center">Back<a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div>
 
                        
                     </div>
