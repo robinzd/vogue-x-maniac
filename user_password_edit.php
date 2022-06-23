@@ -62,7 +62,7 @@ if (isset($_POST['submit'])) {
 
 	<!-- hide only on xs -->
 
-	<div class="signup-form">
+	<div class="signup-form" style="zoom:80%">
 		<form method="POST">
 			<?php
 			$eid = $_GET['editid'];
