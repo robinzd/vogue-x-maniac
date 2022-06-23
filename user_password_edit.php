@@ -72,7 +72,7 @@ if (isset($_POST['submit'])) {
 				<h2>Enter New Password</h2>
 
 				<div class="form-group">
-					<input type="password" class="form-control" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="true">
+					<input type="text" class="form-control" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="true">
 				</div>
 
 				<div id="message">
@@ -105,14 +105,14 @@ if (isset($_POST['submit'])) {
 				<h2>Enter New Password</h2>
 
 				<div class="form-group">
-					<input type="password" class="form-control" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="true">
+					<input type="text" class="form-control" id="password1" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="true">
 				</div>
 
 				<div id="message">
-					<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-					<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-					<p id="number" class="invalid">A <b>number</b></p>
-					<p id="length" class="invalid">Minimum <b>8 characters</b></p>
+					<p id="letter1" class="invalid">A <b>lowercase</b> letter</p>
+					<p id="capital1" class="invalid">A <b>capital (uppercase)</b> letter</p>
+					<p id="number1" class="invalid">A <b>number</b></p>
+					<p id="length1" class="invalid">Minimum <b>8 characters</b></p>
 				</div>
 
 			<?php
