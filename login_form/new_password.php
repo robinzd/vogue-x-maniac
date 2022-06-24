@@ -1,13 +1,19 @@
 
 <?php
 
-include(".../conn.php");
+include("../conn.php");
 
 $email_id_1 = $_POST["email"];
 
 echo $email_id_1;
 
 $get_email = "select * from users where user_email=$email_id_1";
+
+echo $get_email;
+
+echo "<br>";
+
+print_r($get_email);
 
 $run_email = mysqli_query($conn, $get_email);
 
@@ -20,6 +26,8 @@ while ($row_email = mysqli_fetch_array($run_email)) {
 	$email_id=$row_email['user_email'] ;
 
 }
+
+echo "<br>";
 
 print_r($row_email);
 
