@@ -116,7 +116,7 @@ if (isset($_POST['submit'])) {
 
 					<div class="text-center p-t-46 p-b-20">
 						<span class="txt2">
-							Already Have an account?<a href="./login.php" class="txt1">Login</a>
+							Know Your Password?<a href="./login.php" class="txt1">Login</a>
 						</span>
 					</div>
 				</form>
