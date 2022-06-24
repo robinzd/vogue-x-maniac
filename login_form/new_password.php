@@ -19,13 +19,13 @@ while ($row_email = mysqli_fetch_array($run_email)) {
 
 }
 
-if (isset($_POST['submit'])) {
+
     //Getting Post Values
 	$new_password = $_POST['password'];
 
 	//Query for data updation
 	if($email_id_1 == $email_id ){
-	$query = mysqli_query($conn, "update users set user_password='$new_password' where user_email='$email_id'");
+	$query = mysqli_query($conn, "update users set user_password='$new_password' where user_email='$email_id_1'");
 
 	if ($query) {
 		echo "<script>alert('You have successfully changed the password');</script>";
@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
 		echo "<script>alert('Something Went Wrong. Please try again');</script>";
 	}
 }
-}
+
 ?>
 
 
