@@ -20,10 +20,11 @@ if (isset($_POST['submit'])) {
 		if ($query) {
 			echo "<script>alert('You have successfully changed the password');</script>";
 			echo "<script type='text/javascript'> document.location ='./login.php'; </script>";
-		} else {
-			echo "<script>alert('Sorry Entered Email Is Wrong!');</script>";
-		}
+		} 
 	}
+}
+else {
+	echo "<script>alert('Sorry Entered Email Is Wrong!');</script>";
 }
 ?>
 
