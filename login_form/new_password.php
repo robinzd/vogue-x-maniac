@@ -1,7 +1,7 @@
 
 <?php
 
-include("../conn.php");
+include(".../conn.php");
 
 $email_id_1 = $_POST["email"];
 
@@ -30,6 +30,8 @@ while ($row_email = mysqli_fetch_array($run_email)) {
 }
 
 print_r($email_id);
+
+echo $email_id;
 
 
 
