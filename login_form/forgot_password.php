@@ -70,7 +70,7 @@ if (isset($_POST['submit'])) {
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form method="post" class="login100-form validate-form" action="./new_password.php">
+				<form method="post" class="login100-form validate-form">
 
 					<span class="login100-form-title p-b-43">
 						<img src="../header images/vogue x maniac png.png">
