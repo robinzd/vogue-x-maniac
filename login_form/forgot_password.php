@@ -3,7 +3,7 @@
 include("../conn.php");
 
 
-if (isset($_POST['submit'])) {
+
 	//Getting Post Values
 	$email_id_1 = $_POST['email'];
 
@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
 	} else {
 		echo "<script>alert('Sorry Entered Email Address Is not Matched!');</script>";
 	}
-}
+
 
 
 
