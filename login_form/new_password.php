@@ -1,27 +1,27 @@
 
 <?php
 
-include(".../conn.php");
+include("../conn.php");
 
 $email_id_1 = $_POST["email"];
 
 echo $email_id_1;
 
-$get_email = "select * from users where user_email=$email_id_1";
+echo "<br>";
+
+$get_email_id = "select user_email from users where user_email=$email_id_1";
 
 echo $get_email;
 
 echo "<br>";
 
-
-
-$run_email = mysqli_query($conn, $get_email);
+$run_email_id = mysqli_query($conn, $get_email_id);
 
 
 
-while ($row_email = mysqli_fetch_array($run_email)) {
+while ($row_email_id = mysqli_fetch_array($run_email_id )) {
 
-	print_r($row_email);	
+	
 
 	$email_id=$row_email['user_email'] ;
 
@@ -29,9 +29,7 @@ while ($row_email = mysqli_fetch_array($run_email)) {
 
 }
 
-print_r($email_id);
 
-echo $email_id;
 
 
 
