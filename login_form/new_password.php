@@ -25,9 +25,13 @@ while ($row_email = mysqli_fetch_array($run_email)) {
 
 	$email_id=$row_email['user_email'] ;
 
+
+
 }
 
-echo "<br>";
+print_r($email_id);
+
+
 
 
 
