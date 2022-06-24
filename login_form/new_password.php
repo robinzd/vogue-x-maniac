@@ -1,7 +1,7 @@
 
 <?php
 
-// include("../conn.php");
+include("../conn.php");
 
 // $email_id_1 = $_POST["email"];
 
