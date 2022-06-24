@@ -113,9 +113,14 @@ if (isset($_POST['submit'])) {
 							Change Password
 						</button>
 					</div>
-				</form>
 
-				<div class="login100-more" style="background-image: url('images/forgotpassword.jpg');">
+					<div class="text-center p-t-46 p-b-20">
+						<span class="txt2">
+							Already Have an account?<a href="./login.php" class="txt1">Login</a>
+						</span>
+					</div>
+				</form>
+            <div class="login100-more" style="background-image: url('images/forgotpassword.jpg');">
 				</div>
 			</div>
 		</div>
