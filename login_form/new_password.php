@@ -11,7 +11,7 @@ echo "<br>";
 
 $get_email_id = "select user_email from users where user_email=$email_id_1";
 
-echo $get_email;
+echo $get_email_id;
 
 echo "<br>";
 
