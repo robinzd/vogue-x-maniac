@@ -20,8 +20,8 @@ if (isset($_POST['submit'])) {
 		if ($query) {
 			echo "<script>alert('You have successfully changed the password');</script>";
 			echo "<script type='text/javascript'> document.location ='./login.php'; </script>";
-		} 
-	}else {
+		}
+	} else {
 		echo "<script>alert('Sorry Entered Email Address Is Wrong!');</script>";
 	}
 }
@@ -126,7 +126,7 @@ if (isset($_POST['submit'])) {
 
 
 
-    <!-- external js file -->
+	<!-- external js file -->
 	<script src="./forgot_password_validitation.js"></script>
 	<!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
