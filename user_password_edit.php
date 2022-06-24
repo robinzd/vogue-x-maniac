@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
 
 		if ($query) {
 			echo "<script>alert('You have successfully update the password');</script>";
-			echo "<script type='text/javascript'> document.location ='user_password.php'; </script>";
+			echo "<script type='text/javascript'> document.location ='./login_form/login.php'; </script>";
 		} 
 	}
 	else {
@@ -61,6 +61,8 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
+
+	
 
 	<!-- navbar starts -->
 
