@@ -15,7 +15,7 @@ $get_email_id = "select user_email from users where user_email=$email_id_1";
 
 // echo "<br>";
 
-$run_email_id = mysqli_query($conn, $get_email_id);
+$run_email_id = mysqli_query($conn,$get_email_id);
 
 
 
