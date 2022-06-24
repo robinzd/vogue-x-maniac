@@ -91,7 +91,7 @@ if (isset($_POST['submit'])) {
 					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
 						<input class="input100" type="email" name="email">
 						<span class="focus-input100"></span>
-						<span class="label-input100">Email</span>
+						<span class="label-input100">Enter Registered Email</span>
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
@@ -115,7 +115,7 @@ if (isset($_POST['submit'])) {
 					</div>
 				</form>
 
-				<div class="login100-more" style="background-image: url('images/login-pic.jpg');">
+				<div class="login100-more" style="background-image: url('images/forgotpassword.jpg');">
 				</div>
 			</div>
 		</div>
