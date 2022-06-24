@@ -9,23 +9,36 @@ include("./function.php");
 
 $user_data = check_login($conn);
 
+$userid = $user_data['user_id'];
+
 if (isset($_POST['submit'])) {
 	$eid = $_GET['editid'];
 	//Getting Post Values
 	$password = $_POST['password'];
+	$oldpassword_1 = $_POST['oldpassword'];
+
+	$get_old_password = "select user_password from users where user_id='$userid'";
+
+	$run_old_password = mysqli_query($conn, $get_old_password);
+
+	while ($row_old_password = mysqli_fetch_array($run_old_password)) {
+
+		$oldpassword = $row_old_password['user_password'];
+	}
 
 
 
+	if ($oldpassword_1 == $oldpassword) {
+		//Query for data updation
+		$query = mysqli_query($conn, "update users set user_password='$password' where ID='$eid'");
 
-
-	//Query for data updation
-	$query = mysqli_query($conn, "update users set user_password='$password' where ID='$eid'");
-
-	if ($query) {
-		echo "<script>alert('You have successfully update the password');</script>";
-		echo "<script type='text/javascript'> document.location ='user_password.php'; </script>";
-	} else {
-		echo "<script>alert('Something Went Wrong. Please try again');</script>";
+		if ($query) {
+			echo "<script>alert('You have successfully update the password');</script>";
+			echo "<script type='text/javascript'> document.location ='user_password.php'; </script>";
+		} 
+	}
+	else {
+		echo "<script>alert('Sorry Entered Old Password is Wrong!');</script>";
 	}
 }
 ?>
@@ -80,7 +93,12 @@ if (isset($_POST['submit'])) {
 				<h2>Enter New Password</h2>
 
 				<div class="form-group">
-					<input type="text" class="form-control" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="true">
+					<input type="text" class="form-control" name="oldpassword" required="true" placeholder="Enter Old Password">
+				</div>
+
+
+				<div class="form-group">
+					<input type="text" class="form-control" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required="true" placeholder="Enter New Password">
 				</div>
 
 				<div id="message">
