@@ -15,9 +15,13 @@ $run_email = mysqli_query($conn, $get_email);
 
 while ($row_email = mysqli_fetch_array($run_email)) {
 
+	
+
 	$email_id=$row_email['user_email'] ;
 
 }
+
+print_r($row_email);
 
 
     //Getting Post Values
