@@ -1,34 +1,4 @@
-<?php
 
-include("../conn.php");
-
-
-
-	//Getting Post Values
-	$email_id_1 = $_POST['email'];
-
-	$get_email = "select * from users where user_email=$email_id_1";
-
-	$run_email = mysqli_query($conn, $get_email);
-
-
-
-	while ($row_email = mysqli_fetch_array($run_email)) {
-
-		$email_id = $row_email['user_email'];
-	}
-
-	//Query for data updation
-	if ($email_id_1 == $email_id) {
-		echo "<script type='text/javascript'> document.location ='./new_password.php';</script>";
-	} else {
-		echo "<script>alert('Sorry Entered Email Address Is not Matched!');</script>";
-	}
-
-
-
-
-?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -70,7 +40,7 @@ include("../conn.php");
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100">
-				<form method="post" class="login100-form validate-form">
+				<form method="post" class="login100-form validate-form" action="./new_password.php">
 
 					<span class="login100-form-title p-b-43">
 						<img src="../header images/vogue x maniac png.png">

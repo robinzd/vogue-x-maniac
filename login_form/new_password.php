@@ -5,6 +5,8 @@ include("../conn.php");
 
 $email_id_1 = $_POST["email"];
 
+echo $email_id_1;
+
 $get_email = "select * from users where user_email=$email_id_1";
 
 $run_email = mysqli_query($conn, $get_email);
@@ -89,7 +91,7 @@ if (isset($_POST['submit'])) {
 
 
 					<span class="login100-form-title p-b-43">
-						Forgot Password
+						New Password
 					</span>
 
 
