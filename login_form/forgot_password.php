@@ -5,25 +5,11 @@ if (isset($_POST['submit'])) {
 	$email_id_1 = $_POST["email"];
 	$new_password = $_POST['password'];
 
-	echo $email_id_1;
-
-	echo "<br>";
-
-	echo $new_password;
-
 	$get_email_id = "select user_email from users where user_email='$email_id_1'";
-
-	echo $get_email_id;
-
-	echo "<br>";
 
 	$run_email_id = mysqli_query($conn, $get_email_id);
 
-
-
 	while ($row_email_id = mysqli_fetch_array($run_email_id)) {
-
-		print_r($row_email_id);
 
 		$email_id = $row_email_id['user_email'];
 	}
@@ -35,7 +21,7 @@ if (isset($_POST['submit'])) {
 			echo "<script>alert('You have successfully changed the password');</script>";
 			echo "<script type='text/javascript'> document.location ='./login.php'; </script>";
 		} else {
-			echo "<script>alert('Something Went Wrong. Please try again');</script>";
+			echo "<script>alert('Sorry Entered Email Is Wrong!');</script>";
 		}
 	}
 }
@@ -76,6 +62,7 @@ if (isset($_POST['submit'])) {
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/login1.css">
 	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="./forgot_password_validitation.css">
 	<!--===============================================================================================-->
 </head>
 
@@ -107,15 +94,22 @@ if (isset($_POST['submit'])) {
 					</div>
 
 					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<input class="input100" type="password" name="password">
+						<input class="input100" type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">>
 						<span class="focus-input100"></span>
-						<span class="label-input100">Password</span>
+						<span class="label-input100">Enter New Password</span>
+					</div>
+
+					<div id="message">
+						<p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+						<p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+						<p id="number" class="invalid">A <b>number</b></p>
+						<p id="length" class="invalid">Minimum <b>8 characters</b></p>
 					</div>
 
 
 					<div class="container-login100-form-btn">
 						<button class="login100-form-btn" type="submit" value="login" name="submit">
-							Login
+							Change Password
 						</button>
 					</div>
 				</form>
@@ -131,7 +125,8 @@ if (isset($_POST['submit'])) {
 
 
 
-
+    <!-- external js file -->
+	<script src="./forgot_password_validitation.js"></script>
 	<!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
 	<!--===============================================================================================-->
