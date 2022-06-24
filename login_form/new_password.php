@@ -9,6 +9,8 @@ echo $email_id_1;
 
 echo "<br>";
 
+echo $new_password;
+
 $get_email_id = "select user_email from users where user_email='$email_id_1'";
 
 echo $get_email_id;
@@ -26,9 +28,7 @@ while ($row_email_id = mysqli_fetch_array($run_email_id)) {
 	$email_id = $row_email['user_email'];
 }
 
-
-	//Query for data updation
-	if ($email_id_1 == $email_id) {
+if ($email_id_1 == $email_id) {
 		$query = mysqli_query($conn, "update users set user_password='$new_password' where user_email='$email_id_1'");
 
 		if ($query) {
