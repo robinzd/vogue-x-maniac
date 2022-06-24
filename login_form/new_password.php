@@ -3,13 +3,13 @@
 
 include("../conn.php");
 
-// $email_id_1 = $_POST["email"];
+$email_id_1 = $_POST["email"];
 
 // echo $email_id_1;
 
 // echo "<br>";
 
-// $get_email_id = "select user_email from users where user_email=$email_id_1";
+$get_email_id = "select user_email from users where user_email=$email_id_1";
 
 // echo $get_email_id;
 
