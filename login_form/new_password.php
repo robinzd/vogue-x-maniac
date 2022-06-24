@@ -25,7 +25,7 @@ while ($row_email_id = mysqli_fetch_array($run_email_id)) {
 
     print_r($row_email_id);
 
-	$email_id = $row_email['user_email'];
+	$email_id = $row_email_id['user_email'];
 }
 
 if ($email_id_1 == $email_id) {
