@@ -413,7 +413,7 @@ $status = $_POST['status'];
 
                                         }
 
-                                        if(!(($tracking_link =='nothing'))){
+                                        if(!($tracking_link =='nothing')){
 
                                             echo"<h3>Tracking Link:</h3><a class='link'>$tracking_link</a>";
                                         }
