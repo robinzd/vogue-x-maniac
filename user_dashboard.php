@@ -118,6 +118,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                     </div>
                     <div class="text-uppercase">My orders</div>
                     <?php
+                    $realtime_status = "Ordered";
 
                     $real_status = "TXN_SUCCESS";
 
@@ -192,9 +193,25 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                             <?php
                             $balance_amount = $full_amount - $cod_payment;
                             if ($final_amount == $cod_payment) {
-                                echo "<div class='status'>Status:Ordered<h6>Balance amount <strong>₹$balance_amount.00</strong> @ your Doorstep</h6></div>";
+                                $query_address = mysqli_query($conn, "INSERT INTO status_info`( `order_id`, `realtime_status`) VALUES ('$order_number','$realtime_status')");
+                                $get_realtime_status = "select realtime_status from status_info where order_id=$order_number";
+                                $run_realtime_status = mysqli_query($conn, $get_realtime_status);
+                                 while ($row_realtime_status = mysqli_fetch_array($run_realtime_status)) {
+                                 
+                                    $realtime_status_1=$row_realtime_status['realtime_status'];
+
+                                }
+                                echo "<div class='status'>Status:$realtime_status_1<h6>Balance amount <strong>₹$balance_amount.00</strong> @ your Doorstep</h6></div>";
                             } elseif ($status_1 == $real_status) {
-                                echo "<div class='status'>Status :Ordered</div>";
+                                $query_address = mysqli_query($conn, "INSERT INTO status_info`( `order_id`, `realtime_status`) VALUES ('$order_number','$realtime_status')");
+                                $get_realtime_status = "select realtime_status from status_info where order_id=$order_number";
+                                $run_realtime_status = mysqli_query($conn, $get_realtime_status);
+                                 while ($row_realtime_status = mysqli_fetch_array($run_realtime_status)) {
+                                 
+                                    $realtime_status_1=$row_realtime_status['realtime_status'];
+
+                                }
+                                echo "<div class='status'>Status :$realtime_status_1</div>";
                             } else {
                                 echo "<div class='status'>Status :Cancelled</div>";
                             }
