@@ -65,6 +65,11 @@ button.btn.btn-success:hover{
   text-align: right !important;
 }
 
+.link{
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 
 .placed{
