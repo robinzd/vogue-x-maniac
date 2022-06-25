@@ -12,6 +12,7 @@ $order_id = $_POST["order_id"];
 $status = $_POST["status"];
 $amount = $_POST["amount"];
 $dummy_data = "nothing";
+$realtime_status = "Ordered";
 
 
 
@@ -122,11 +123,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
                     <div class="text-uppercase">My orders</div>
                     <?php
 
-
-
-                    $realtime_status = "Ordered";
-
-                    $real_status = "TXN_SUCCESS";
+                   $real_status = "TXN_SUCCESS";
 
                     $cod_payment = 250;
 
