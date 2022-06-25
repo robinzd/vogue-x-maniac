@@ -819,9 +819,9 @@ $status = $_POST['status'];
                         }
 
                         if ($tracking_link == 'nothing') {
-                            echo "<h3><strong>Tracking Link Appear Here After The Product Dispatch</strong></h3>";
+                            echo "<h3 class='heading3'><strong>Tracking Link Appear Here After The Product Dispatch</strong></h3>";
                         } else {
-                            echo "<h3><strong>Tracking Link</strong>:<a href='$tracking_link' class='link'>$tracking_link</a></h3>";
+                            echo "<h3 class='heading3'><strong>Tracking Link</strong>:<a href='$tracking_link' class='link1'>$tracking_link</a></h3>";
                         }
                         ?>
 
