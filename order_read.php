@@ -429,7 +429,7 @@ $status = $_POST['status'];
 
                         if (!($tracking_link == 'nothing')) {
 
-                            echo "<h3>Tracking Link:</h3><a href='$tracking_link' class='link'>$tracking_link</a>";
+                            echo "<h3>Tracking Link:<a href='$tracking_link' class='link'>$tracking_link</a></h3>";
                         } else {
                             echo "<h3>Tracking Link Appear Here After The Product Dispatch</h3>";
                         }
