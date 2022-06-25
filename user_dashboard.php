@@ -13,6 +13,7 @@ $status = $_POST["status"];
 $amount = $_POST["amount"];
 $dummy_data = "nothing";
 $realtime_status = "Ordered";
+$real_status_1 = "TXN_SUCCESS";
 
 
 
@@ -20,7 +21,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
 
     $query_address = mysqli_query($conn, "INSERT INTO `order_info`( `user_id`, `order_id`, `current_status`,`transaction_amount`) VALUES ('$userid ','$order_id','$status','$amount')");
 
-    if ($query_address) {
+    if ($real_status_1 == $status) {
         $query_address1 = mysqli_query($conn, "INSERT INTO status_info(`order_id`, `realtime_status`,`tracking_link`) VALUES ('$order_id','$realtime_status','$dummy_data')");
     }
 }
