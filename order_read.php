@@ -405,17 +405,18 @@ $status = $_POST['status'];
 
                                         $get_link = "select * from status_info where order_id= $order_id";
 
-                                        $run_link = mysqli_query($conn,$get_link);
+                                        $run_link = mysqli_query($conn, $get_link);
 
-                                       while ($row_link = mysqli_fetch_array($run_link)) {
+                                        while ($row_link = mysqli_fetch_array($run_link)) {
 
-                                        $tracking_link=$row_link['tracking_link'];
-
+                                            $tracking_link = $row_link['tracking_link'];
                                         }
 
-                                        if(!($tracking_link =='nothing')){
+                                        if (!($tracking_link == 'nothing')) {
 
-                                            echo"<h3>Tracking Link:</h3><a class='link'>$tracking_link</a>";
+                                            echo "<h3>Tracking Link:</h3><a class='link'>$tracking_link</a>";
+                                        } else {
+                                            echo "<h3>Tracking Link Appear Here After The Product Dispatch</h3>";
                                         }
                                         ?>
 
