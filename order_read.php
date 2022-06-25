@@ -401,24 +401,7 @@ $status = $_POST['status'];
 
                                         ?>
 
-                                        <?php
 
-                                        $get_link = "select * from status_info where order_id= $order_id";
-
-                                        $run_link = mysqli_query($conn, $get_link);
-
-                                        while ($row_link = mysqli_fetch_array($run_link)) {
-
-                                            $tracking_link = $row_link['tracking_link'];
-                                        }
-
-                                        if (!($tracking_link == 'nothing')) {
-
-                                            echo "<h3>Tracking Link:</h3><a class='link'>$tracking_link</a>";
-                                        } else {
-                                            echo "<h3>Tracking Link Appear Here After The Product Dispatch</h3>";
-                                        }
-                                        ?>
 
 
                                     </tbody>
@@ -432,6 +415,25 @@ $status = $_POST['status'];
 
 
                         </div>
+
+                        <?php
+
+                        $get_link = "select * from status_info where order_id=$order_id_1";
+
+                        $run_link = mysqli_query($conn, $get_link);
+
+                        while ($row_link = mysqli_fetch_array($run_link)) {
+
+                            $tracking_link = $row_link['tracking_link'];
+                        }
+
+                        if (!($tracking_link == 'nothing')) {
+
+                            echo "<h3>Tracking Link:</h3><a class='link'>$tracking_link</a>";
+                        } else {
+                            echo "<h3>Tracking Link Appear Here After The Product Dispatch</h3>";
+                        }
+                        ?>
 
 
                         <p>We will be sending shipping confirmation email when the item shipped successfully!</p>
