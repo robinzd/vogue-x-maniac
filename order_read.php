@@ -63,7 +63,7 @@ $status = $_POST['status'];
 
     <div class="container mt-5 mb-5  d-none d-sm-block">
 
-    <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
+        <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
 
         <div class="row d-flex justify-content-center">
 
@@ -401,6 +401,24 @@ $status = $_POST['status'];
 
                                         ?>
 
+                                        <?php
+
+                                        $get_link = "select * from status_info where order_id= $order_id";
+
+                                        $run_link = mysqli_query($conn,$get_link);
+
+                                       while ($row_link = mysqli_fetch_array($run_link)) {
+
+                                        $tracking_link=$row_link['tracking_link'];
+
+                                        }
+
+                                        if(!(($tracking_link =='nothing'))){
+
+                                            echo"<h3>Tracking Link:<a class='link'>$tracking_link</a></h3>";
+                                        }
+                                        ?>
+
 
                                     </tbody>
 
@@ -437,7 +455,7 @@ $status = $_POST['status'];
 
     <div class="container mt-5 mb-5 d-block d-sm-none" style="zoom:70%">
 
-    <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
+        <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
 
         <div class="row d-flex justify-content-center">
 
@@ -702,7 +720,7 @@ $status = $_POST['status'];
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span><?php echo  "₹" .$amount_to_paid; ?></span>
+                                                    <span><?php echo  "₹" . $amount_to_paid; ?></span>
                                                 </div>
                                             </td>
                                         </tr>
@@ -734,7 +752,7 @@ $status = $_POST['status'];
                                             </td>
                                             <td>
                                                 <div class="text-right">
-                                                    <span class="text-success"><?php  echo  "₹" . $amount_paid; ?></span>
+                                                    <span class="text-success"><?php echo  "₹" . $amount_paid; ?></span>
                                                 </div>
                                             </td>
                                         </tr>
