@@ -80,14 +80,6 @@ include('dbconnection.php');
     <div class="container-xl">
         <div class="table-responsive">
             <div class="table-wrapper">
-                <div class="table-title">
-                    <div class="row">
-                        <div class="col-sm-5">
-                            <h2>Users Order Details</h2>
-                        </div>
-
-                    </div>
-                </div>
                 <table class="table table-striped table-hover">
                     <thead>
                         <tr>
