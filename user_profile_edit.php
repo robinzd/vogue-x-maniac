@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
 	$mobile = $_POST['mobile'];
 
 
-	$get_email = "select user_email from users";
+	$get_email = "select user_email from users where user_email='$email'";
 
 	$run_email = mysqli_query($conn, $get_email);
 
