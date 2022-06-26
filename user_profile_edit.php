@@ -10,12 +10,19 @@ if (isset($_POST['submit'])) {
 	$mobile = $_POST['mobile'];
 
 
+	$get_email = "select user_email from users";
 
+	$run_email = mysqli_query($conn, $get_email);
 
-	//Query for data updation
-	$query = mysqli_query($conn, "update users set first_name='$firstname',last_name='$lastname',user_email='$email',user_mob_no=' $mobile' where ID='$eid'");
+	while ($row_email = mysqli_fetch_array($run_email)) {
 
-	if ($query) {
+		$email_1 = $row_email['user_email'];
+	}
+    //Query for data updation
+	if ($email == $email_1) {
+		echo "<script>alert('This Email Already Exsists. Please try again');</script>";
+	} elseif (!empty($firstname) && !empty($lastname) && !empty($email) && !empty($mobile)) {
+		$query = mysqli_query($conn, "update users set first_name='$firstname',last_name='$lastname',user_email='$email',user_mob_no=' $mobile' where ID='$eid'");
 		echo "<script>alert('You have successfully update the profile details');</script>";
 		echo "<script type='text/javascript'> document.location ='user_profile.php'; </script>";
 	} else {

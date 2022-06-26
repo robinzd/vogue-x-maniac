@@ -26,8 +26,6 @@ if (isset($_POST['submit'])) {
 		$oldpassword = $row_old_password['user_password'];
 	}
 
-
-
 	if ($oldpassword_1 == $oldpassword) {
 		//Query for data updation
 		$query = mysqli_query($conn, "update users set user_password='$password' where ID='$eid'");
