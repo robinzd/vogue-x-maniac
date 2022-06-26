@@ -20,6 +20,8 @@ include('dbconnection.php');
     <!--box icon cdn -->
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
     <!-- link the external stylesheet -->
+    <!-- material icon link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="admin_panel.css">
 
 </head>
