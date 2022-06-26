@@ -157,8 +157,8 @@
                       <a href="./status_info/status_info.php">
                           <div class="card gr-8">
                               <div class="txt">
-                                  <h1>Product Status</br>
-                                      Management</h1>
+                                  <h1>Product And Tracking</br>
+                                      Status Management</h1>
                               </div>
                               <div class="ico-card">
                                   <i class="fa fa-code-fork"></i>
@@ -273,8 +273,8 @@
                       <a href="./status_info/status_info.php">
                           <div class="card gr-8">
                               <div class="txt">
-                                  <h1>Product Status</br>
-                                      Management</h1>
+                                  <h1>Product And Tracking</br>
+                                  Status Management</h1>
                               </div>
                               <div class="ico-card">
                                   <i class="fa fa-code-fork"></i>
