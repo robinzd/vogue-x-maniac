@@ -2,7 +2,7 @@
 
 
 include("./conn.php");
-include("./function.php");
+
 
 
 // $userid = $user_data['user_id'];
@@ -82,13 +82,7 @@ include("./function.php");
 							<a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
 
 							<?php
-							session_start();
-
-							$user_data = check_login($conn);
-
-							$userid = $user_data['user_id'];
-
-							$select_rows = mysqli_query($conn, "select * from products_cart where user_id=$userid");
+							$select_rows = mysqli_query($conn, "select * from products_cart");
 
 							$row_count = mysqli_num_rows($select_rows);
 
