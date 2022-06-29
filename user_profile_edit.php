@@ -22,13 +22,17 @@ if (isset($_POST['submit'])) {
 	if (!empty($firstname) && !empty($lastname) && !empty($email) && !empty($mobile)) {
 		$query1 = mysqli_query($conn, "update users set first_name='$firstname',last_name='$lastname',user_mob_no=' $mobile' where ID='$eid'");
 		echo "<script>alert('You have successfully update the profile details');</script>";
-	} elseif ($email !== $email_1) {
-		$query = mysqli_query($conn, "update users set first_name='$firstname',last_name='$lastname',user_email='$email',user_mob_no=' $mobile' where ID='$eid'");
-		echo "<script>alert('You have successfully update the profile details');</script>";
 		echo "<script type='text/javascript'> document.location ='user_profile.php'; </script>";
-	} else {
-		echo "<script>alert('This Email Already Exsists. Please try again with new email address');</script>";
-	}
+	} elseif ($email !== $email_1) {
+		$query = mysqli_query($conn, "update users set user_email='$email' where ID='$eid'");
+		if ($query) {
+			echo "<script>alert('You have successfully update the profile details');</script>";
+			echo "<script type='text/javascript'> document.location ='user_profile.php'; </script>";
+		}
+		else{
+			echo "<script>alert('Sorry Entered Email Address Already Exsists,Try New Email Address');</script>";
+		}
+	} 
 }
 ?>
 <!DOCTYPE html>
