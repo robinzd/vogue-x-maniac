@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
 		echo "<script>alert('The Email Address Is already Exsists So we cannot Update Only email');</script>";
 		echo "<script type='text/javascript'> document.location ='user_profile.php'; </script>";
 	} elseif ($email !== $email_1) {
-		$query1 = mysqli_query($conn, "update users set first_name='$firstname',last_name='$lastname','user_email='$email',user_mob_no=' $mobile' where ID='$eid'");
+		$query1 = mysqli_query($conn, "update users set first_name='$firstname',last_name='$lastname',user_email='$email',user_mob_no=' $mobile' where ID='$eid'");
 		echo "<script>alert('You have successfully update the profile details');</script>";
 		echo "<script type='text/javascript'> document.location ='user_profile.php'; </script>";
 	}
