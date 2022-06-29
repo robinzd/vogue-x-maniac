@@ -19,9 +19,10 @@ if (isset($_POST['submit'])) {
 		$email_1 = $row_email['user_email'];
 	}
 	//Query for data updation
-	if ($email == $email_1) {
+	if (!empty($firstname) && !empty($lastname) && !empty($email) && !empty($mobile)) {
 		$query1 = mysqli_query($conn, "update users set first_name='$firstname',last_name='$lastname',user_mob_no=' $mobile' where ID='$eid'");
-	} elseif (!empty($firstname) && !empty($lastname) && !empty($email) && !empty($mobile)) {
+		echo "<script>alert('You have successfully update the profile details');</script>";
+	} elseif ($email !== $email_1) {
 		$query = mysqli_query($conn, "update users set first_name='$firstname',last_name='$lastname',user_email='$email',user_mob_no=' $mobile' where ID='$eid'");
 		echo "<script>alert('You have successfully update the profile details');</script>";
 		echo "<script type='text/javascript'> document.location ='user_profile.php'; </script>";
