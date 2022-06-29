@@ -29,10 +29,11 @@ if (isset($_POST['submit'])) {
 			echo "<script>alert('You have successfully update the profile details');</script>";
 			echo "<script type='text/javascript'> document.location ='user_profile.php'; </script>";
 		}
-		else{
-			echo "<script>alert('Sorry Entered Email Address Already Exsists,Try New Email Address');</script>";
-		}
+		
 	} 
+	else{
+		echo "<script>alert('Sorry Entered Email Address Already Exsists,Try New Email Address');</script>";
+	}
 }
 ?>
 <!DOCTYPE html>
