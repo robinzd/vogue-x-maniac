@@ -1,19 +1,18 @@
 <?php
 
-
-function check($conn)
+function check_login($conn)
 {
 
-    if(isset($_SESSION['admin_id']))
+    if(isset($_SESSION['user_id']))
     {
-        $id = $_SESSION['admin_id'];
-        $query ="select*from admin_login where admin_id ='$id' limit 1";
+        $id = $_SESSION['user_id'];
+        $query ="select*from admin_login where user_id ='$id' limit 1";
 
         $result = mysqli_query($conn,$query);
         if($result && mysqli_num_rows($result) > 0)
         {
-            $admin_data = mysqli_fetch_assoc($result);
-            return $admin_data;
+            $user_data = mysqli_fetch_assoc($result);
+            return $user_data;
         }
     }
 
