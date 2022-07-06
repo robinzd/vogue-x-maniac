@@ -4,8 +4,7 @@ session_start();
 include('dbconnection.php');
 include("check_login.php");
 
-if ($_SERVER['REQUEST_METHOD'] == "POST") {
-    // something was posted
+// something was posted
     $email = $_POST["Username"];
     $password = $_POST["password"];
 
@@ -39,10 +38,9 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	}else {
 		echo  "<script>alert('Please Enter Some Valid Information!');</script>";
 	}
-}
 
 
 
 
 
-?>
+
