@@ -25,7 +25,8 @@ while ($row_admin = mysqli_fetch_array($run_admin)) {
 
 
 if ($admin_email == $email &&  $admin_password == $password) {
-    header("location:admin_panel.php");
+    
+    echo "<script type='text/javascript'> document.location ='admin_panel_login.php'; </script>";
     
 }
 else {

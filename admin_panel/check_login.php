@@ -2,12 +2,14 @@
 function check_login($conn)
 {
 
-    if (isset($_SESSION['password_admin'])) {
+    if(isset($_SESSION['password_admin']))
+    {
         $id = $_SESSION['password_admin'];
-        $query = "select*from admin_login where password_admin ='$id'";
+        $query ="select*from admin_login where password_admin ='$id' limit 1";
 
-        $result = mysqli_query($conn, $query);
-        if ($result && mysqli_num_rows($result) > 0) {
+        $result = mysqli_query($conn,$query);
+        if($result && mysqli_num_rows($result) > 0)
+        {
             $admin_password = mysqli_fetch_assoc($result);
             return $admin_password;
         }
@@ -20,4 +22,3 @@ function check_login($conn)
 
 
 }
-?>
