@@ -6,40 +6,31 @@ session_start();
 include("dbconnection.php");
 include("check_login.php");
 
+
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	// something was posted
-	$email = $_POST["Username"];
+	$username = $_POST["Username"];
 	$password = $_POST["password"];
 
 
+if (!empty($first_name) && !is_numeric($first_name) && !empty($last_name) && !is_numeric($last_name) && !empty($email) && !empty($password) && !empty($mobile_no)) {
+		// save to database
 
-	if (!empty($email) && !empty($password)) {
-		// read from database
-
-		$query = "select * from admin_login where email_admin='$email' limit 1";
-
+		$admin_id = random_num(20);
 
 
-		$result = mysqli_query($conn, $query);
+		$query = "INSERT INTO `admin_login`( `admin_id`, `email_admin`, `password_admin`) VALUES ('$admin_id','$username','$password')";
 
 
 
-		if ($result) {
-			if ($result && mysqli_num_rows($result) > 0) {
+		$check = mysqli_query($conn, $query);
 
-				$admin_data = mysqli_fetch_assoc($result);
-				if ($admin_data['password_admin'] === $password) {
 
-					$_SESSION['admin_id'] = $admin_data['admin_id'];
 
-					header("location:admin_panel.php");
-					die;
-				}
-			}
-		}
-		echo "<script>alert('Wrong Email or Password');</script>";
+		header("location:admin_panel_login.php");
+		die;
 	} else {
-		echo  "<script>alert('Please Enter Some Valid Information!');</script>";
+		echo "<script>alert('Please Enter Some Valid Information!');</script>";
 	}
 }
 
@@ -48,7 +39,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
 ?>
-
 
 
 
@@ -80,7 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 <div class="text-center mb-5 text-dark">Made with bootstrap</div>
                 <div class="card my-5">
 
-                    <form class="card-body cardbody-color p-lg-5" method="Post" action="./admin.php">
+                    <form class="card-body cardbody-color p-lg-5" method="Post">
 
                         <div class="text-center">
                             <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295397__340.png" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3" width="200px" alt="profile">
