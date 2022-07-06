@@ -4,7 +4,7 @@ session_start();
 
 
 include("./conn.php");
-include("./check_login.php");
+include("../function.php");
 
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
