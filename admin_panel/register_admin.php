@@ -10,7 +10,11 @@ include("check_login.php");
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	// something was posted
 	$username = $_POST["Username"];
+    echo $username;
+    echo "<br>";
 	$password = $_POST["password"];
+    echo $password;
+
 
 
 if (!empty($username) && !empty($password)) {
@@ -27,8 +31,8 @@ if (!empty($username) && !empty($password)) {
 
 
 
-		header("location:admin_panel_login.php");
-		die;
+		// header("location:admin_panel_login.php");
+		// die;
 	} else {
 		echo "<script>alert('Please Enter Some Valid Information!');</script>";
 	}
