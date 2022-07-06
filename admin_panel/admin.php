@@ -1,7 +1,7 @@
 <?php
 
 
-include("../conn.php");
+include(".../conn.php");
 
 // something was posted
 $email = $_POST["Username"];
