@@ -9,7 +9,7 @@ include("./check_login.php");
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	// something was posted
-	$username = $_POST["Username"];
+	$username = $_POST["username"];
     echo $username;
     echo "<br>";
 	$password = $_POST["password"];
@@ -81,7 +81,7 @@ if (!empty($username) && !empty($password)) {
                         </div>
 
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="Username" aria-describedby="emailHelp" placeholder="User Name" required="true">
+                            <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="User Name" required="true">
                         </div>
                         <div class="mb-3">
                             <input type="password" class="form-control" id="password" placeholder="password" required="true">
