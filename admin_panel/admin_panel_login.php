@@ -25,10 +25,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		if ($result) {
 			if ($result && mysqli_num_rows($result) > 0) {
 
-                $admin_data = mysqli_fetch_assoc($result);
-				if ($admin_data['password_admin'] === $password) {
+                $user_data = mysqli_fetch_assoc($result);
+				if ($user_data['password_admin'] === $password) {
 
-					$_SESSION['admin_id'] = $admin_data['admin_id'];
+					$_SESSION['admin_id'] = $user_data['admin_id'];
 
 					header("location:admin_panel.php");
 					die;
@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 			}
 		}
 		echo "<script>alert('Wrong Email or Password');</script>";
-	} else {
+	}else {
 		echo  "<script>alert('Please Enter Some Valid Information!');</script>";
 	}
 }
