@@ -1,7 +1,7 @@
 <?php
 
 
-include('./dbconnection.php');
+include('dbconnection.php');
 
 // something was posted
 $email = $_POST["Username"];
@@ -11,7 +11,7 @@ $password = $_POST["password"];
 echo $password;
 
 
-$get_admin = "select * admin_login where email_admin='$email' and password_admin='$password'";
+$get_admin = "select * from admin_login where email_admin='$email' and password_admin='$password'";
 
 $run_admin = mysqli_query($conn, $get_admin);
 
