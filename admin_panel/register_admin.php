@@ -3,8 +3,8 @@
 session_start();
 
 
-include("dbconnection.php");
-include("check_login.php");
+include("./dbconnection.php");
+include("./check_login.php");
 
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
