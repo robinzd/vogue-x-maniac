@@ -4,7 +4,7 @@ session_start();
 
 
 include("./conn.php");
-include("../function.php");
+include("./check_login.php");
 
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
@@ -86,7 +86,7 @@ if (!empty($username) && !empty($password)) {
                         <div class="mb-3">
                             <input type="password" class="form-control" id="password" placeholder="password" required="true">
                         </div>
-                        <div class="text-center"><button type="submit" value="login" class="btn btn-color px-5 mb-5 w-100">Login</button></div>
+                        <div class="text-center"><button type="submit" value="signup" class="btn btn-color px-5 mb-5 w-100">Register</button></div>
                     </form>
                 </div>
 
