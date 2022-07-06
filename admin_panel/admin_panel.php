@@ -1,4 +1,19 @@
-<!DOCTYPE html>
+ <?php
+ session_start();
+
+ include('dbconnection.php');
+ include("check_login.php");
+ 
+ check_login($conn);
+ 
+
+ ?>
+  
+  
+  
+  
+  
+  <!DOCTYPE html>
   <html lang="en">
 
   <head>
