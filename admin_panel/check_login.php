@@ -18,7 +18,7 @@ function check($conn)
     }
 
     // redirecting to login page
-    header("location:admin_panel_login.php");
+    header("location:admin_panel.php");
 
     // die;
 
