@@ -1,49 +1,3 @@
-<?php
-
-include('dbconnection.php');
-
-if ($_SERVER['REQUEST_METHOD'] == "POST") {
-
-
-// something was posted
-$email = $_POST["Username"];
-$password = $_POST["password"];
-
-
-
-$get_admin = "select * from admin_login where email_admin='$email' and password_admin='$password'";
-
-$run_admin = mysqli_query($conn, $get_admin);
-
-
-
-while ($row_admin = mysqli_fetch_array($run_admin)) {
-
-    $admin_email = $row_admin['email_admin'];
-    $admin_password = $row_admin['password_admin'];
-}
-
-
-
-if ($admin_email == $email &&  $admin_password == $password) {
-    header("location:./admin_panel.php");
-    
-}
-else {
-    echo "<script>alert('Entered Email Or Password Wrong');</script>";
-}
-
-}
-
-
-
-
-?>
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -72,7 +26,7 @@ else {
                 <div class="text-center mb-5 text-dark">Made with bootstrap</div>
                 <div class="card my-5">
 
-                    <form class="card-body cardbody-color p-lg-5" method="post">
+                    <form class="card-body cardbody-color p-lg-5" method="post" action="./admin.php">
 
                         <div class="text-center">
                             <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295397__340.png" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3" width="200px" alt="profile">
