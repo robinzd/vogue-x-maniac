@@ -87,10 +87,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         </div>
 
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="Username" aria-describedby="emailHelp" placeholder="User Name" required="true">
+                            <input type="text" class="form-control" name="Username" aria-describedby="emailHelp" placeholder="User Name" required="true">
                         </div>
                         <div class="mb-3">
-                            <input type="password" class="form-control" id="password" placeholder="password" required="true">
+                            <input type="password" class="form-control" name="password" placeholder="password" required="true">
                         </div>
                         <div class="text-center"><button type="submit" value="login" class="btn btn-color px-5 mb-5 w-100">Login</button></div>
                     </form>
