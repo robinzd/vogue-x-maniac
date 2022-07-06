@@ -1,13 +1,13 @@
- <?php
- session_start();
+  <?php
+//  session_start();
 
- include('dbconnection.php');
- include("check_login.php");
+//  include('dbconnection.php');
+//  include("check_login.php");
  
- check_login($conn);
+//  check_login($conn);
  
 
- ?>
+ ?> 
   
   
   
