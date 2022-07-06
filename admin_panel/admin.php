@@ -25,7 +25,7 @@ while ($row_admin = mysqli_fetch_array($run_admin)) {
 
 
 if ($admin_email == $email &&  $admin_password == $password) {
-    header("location:./admin_panel.php");
+    header("location:admin_panel.php");
     
 }
 else {
