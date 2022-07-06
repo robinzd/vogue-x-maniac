@@ -4,7 +4,7 @@
     include('dbconnection.php');
     include("check_login.php");
 
-    $admin_data=check_login($conn);
+    check_login($conn);
 
 
     ?>

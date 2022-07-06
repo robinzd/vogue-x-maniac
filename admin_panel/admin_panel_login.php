@@ -1,3 +1,54 @@
+<?php
+
+session_start();
+include('dbconnection.php');
+include("check_login.php");
+
+if ($_SERVER['REQUEST_METHOD'] == "POST") {
+    // something was posted
+    $email = $_POST["Username"];
+    $password = $_POST["password"];
+
+
+
+    if (!empty($email) && !empty($password)) {
+		// read from database
+
+		$query = "select * from admin_login where email_admin='$email'";
+
+
+
+		$result = mysqli_query($conn, $query);
+
+
+
+		if ($result) {
+			if ($result && mysqli_num_rows($result) > 0) {
+
+                $admin_data = mysqli_fetch_assoc($result);
+				if ($admin_data['password_admin'] === $password) {
+
+					$_SESSION['admin_id'] = $admin_data['admin_id'];
+
+					header("location:admin_panel.php");
+					die;
+				}
+			}
+		}
+		echo "<script>alert('Wrong Email or Password');</script>";
+	} else {
+		echo  "<script>alert('Please Enter Some Valid Information!');</script>";
+	}
+}
+
+
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +77,7 @@
                 <div class="text-center mb-5 text-dark">Made with bootstrap</div>
                 <div class="card my-5">
 
-                    <form class="card-body cardbody-color p-lg-5" method="Post" action="./admin.php">
+                    <form class="card-body cardbody-color p-lg-5" method="Post">
 
                         <div class="text-center">
                             <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295397__340.png" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3" width="200px" alt="profile">
