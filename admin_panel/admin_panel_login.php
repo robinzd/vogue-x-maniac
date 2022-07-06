@@ -29,11 +29,12 @@ if ($admin_email == $email &&  $admin_password == $password) {
     header("location:./admin_panel.php");
     
 }
-
-}
 else {
     echo "<script>alert('Entered Email Or Password Wrong');</script>";
 }
+
+}
+
 
 
 
