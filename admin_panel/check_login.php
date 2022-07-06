@@ -4,25 +4,23 @@
 function check($conn)
 {
 
-    if(isset($_SESSION['password_admin']))
+    if(isset($_SESSION['admin_id']))
     {
-        $id = $_SESSION['password_admin'];
-        $query ="select*from admin_login where password_admin='$id'";
+        $id = $_SESSION['admin_id'];
+        $query ="select*from admin_login where admin_id ='$id' limit 1";
 
         $result = mysqli_query($conn,$query);
         if($result && mysqli_num_rows($result) > 0)
         {
-            $user_data = mysqli_fetch_assoc($result);
-            return $user_data;
+            $admin_data = mysqli_fetch_assoc($result);
+            return $admin_data;
         }
     }
 
     // redirecting to login page
-    header("location:admin_panel_login.php");
+    header("location:check_login.php");
 
     // die;
 
 
 }
-
-?>

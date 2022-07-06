@@ -1,18 +1,18 @@
   <?php
-session_start();
+    session_start();
 
- include('dbconnection.php');
-  include("check_login.php");
- 
- check($conn);
- 
+    include('dbconnection.php');
+    include("check_login.php");
 
- ?> 
-  
-  
-  
-  
-  
+    check($conn);
+
+
+    ?>
+
+
+
+
+
   <!DOCTYPE html>
   <html lang="en">
 
@@ -289,7 +289,7 @@ session_start();
                           <div class="card gr-8">
                               <div class="txt">
                                   <h1>Product And Tracking</br>
-                                  Status Management</h1>
+                                      Status Management</h1>
                               </div>
                               <div class="ico-card">
                                   <i class="fa fa-code-fork"></i>
