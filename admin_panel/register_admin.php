@@ -31,8 +31,8 @@ if (!empty($username) && !empty($password)) {
 
 
 
-		// header("location:admin_panel_login.php");
-		// die;
+		 header("location:admin_panel_login.php");
+		 die;
 	} else {
 		echo "<script>alert('Please Enter Some Valid Information!');</script>";
 	}
