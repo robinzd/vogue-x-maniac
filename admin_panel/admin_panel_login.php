@@ -32,10 +32,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         header("location:./admin_panel.php");
         
     }
-} else {
-    echo "<script>alert('Entered Email Or Password Wrong');</script>";
+    else {
+        echo "<script>alert('Entered Email Or Password Wrong');</script>";
+    }
+    
 }
-
 
 ?>
 
