@@ -27,6 +27,8 @@ check_login($conn);
     <!-- material icon link -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="admin_panel.css">
+    <!-- external javascript page -->
+    <script src="./admin_details.js"></script>
 
 </head>
 
@@ -80,7 +82,7 @@ check_login($conn);
 
 
         <div class="form-inline d-flex justify-content-end md-form form-sm mt-0">
-            <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+            <input class="form-control form-control-sm ml-3 w-75" id="tableSearch" type="text" placeholder="Search" aria-label="Search">
         </div>
 
 
