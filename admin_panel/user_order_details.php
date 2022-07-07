@@ -83,7 +83,7 @@ check_login($conn);
 
         <form class="form-inline d-flex justify-content-end md-form form-sm mt-0" method="post">
             <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
-            <i class="fa fa-search" aria-hidden="true"></i>
+            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
         </form>
 
 
