@@ -10,7 +10,7 @@ include("./check_login.php");
     $password = $_POST["password"];
     echo $password;
     echo "<br>";
-    $admin_id = rand(1000000,5000000);
+    $admin_id = rand(1000,5000);
     echo $admin_id;
 
     if (!empty($username) && !empty($password)) {
