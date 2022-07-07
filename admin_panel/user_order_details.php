@@ -115,7 +115,7 @@ check_login($conn);
                                 <th>Actions</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="myTable">
                             <?php
                             $status = 'TXN_SUCCESS';
                             $ret = mysqli_query($conn, "select * from payment_info");
