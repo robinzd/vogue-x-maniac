@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
 
-$searchingquery = "SELECT * FROM order_info WHERE order_id LIKE '%$searchstring%'";
+$searchingquery = "SELECT order_id FROM order_info WHERE order_id LIKE '%$searchstring%'";
 
 }
 
