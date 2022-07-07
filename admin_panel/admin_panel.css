@@ -624,13 +624,25 @@ a.nav_logo {
   margin-left: 5px;
 }
 
+.fa:hover{
+color:white;
+}
+
 input.form-control.form-control-sm.ml-3.w-75 {
    border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
+  padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 button {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   width: 5%;
+  background-color: lightgray;
+
+}
+
+button:hover{
+  background-color: black;
 }
