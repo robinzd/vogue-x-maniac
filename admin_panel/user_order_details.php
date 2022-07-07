@@ -81,8 +81,8 @@ check_login($conn);
         
 
         <div class="container-xl">
-        <input class="form-control mb-4" id="tableSearch" type="text" placeholder="Type something to search list items">
-            <div class="table-responsive">
+          <div class="table-responsive">
+          <input class="form-control" id="listSearch" type="text" placeholder="Type something to search list items">
                 <div class="table-wrapper">
                     <!-- <div class="table-title">
                         <div class="row">
