@@ -1,12 +1,11 @@
 .btn-color{
-    background-color: #0e1c36;
+    background-color:black;
     color: #fff;
     
   }
 
   .btn:hover{
-    background-color: black;
-    color:white;
+    color:lightgreen;
   }
   
   .profile-image-pic{
@@ -20,7 +19,11 @@
   }
   
   .cardbody-color{
-    background-color: #ebf2fa;
+    background-color:powderblue;
+  }
+
+  .body{
+    background-color: ghostwhite;
   }
   
   a{
