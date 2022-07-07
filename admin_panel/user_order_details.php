@@ -78,7 +78,7 @@ check_login($conn);
             <div class="text">Users Orders Table</div>
         </div>
 
-        <input class="form-inline d-flex justify-content-end" id="tableSearch" type="text" placeholder="Type something to search list items">
+        <input class="d-flex justify-content-end" id="tableSearch" type="text" placeholder="Type something to search list items">
 
         <div class="container-xl">
             <div class="table-responsive">
