@@ -79,17 +79,14 @@ check_login($conn);
         </div>
 
 
-        <form class="form-inline d-flex justify-content-center md-form form-sm mt-0">
-  <i class="fas fa-search" aria-hidden="true"></i>
-  <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search"
-    aria-label="Search">
-</form>
+        <div class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+            <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+        </div>
 
-        
+
 
         <div class="container-xl">
-          <div class="table-responsive">
-          <input class="form-control" id="listSearch" type="text" placeholder="Type something to search list items">
+            <div class="table-responsive">
                 <div class="table-wrapper">
                     <!-- <div class="table-title">
                         <div class="row">
