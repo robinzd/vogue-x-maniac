@@ -33,10 +33,10 @@
                         </div>
 
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="User Name" required="true">
+                            <input type="text" class="form-control" name="username" aria-describedby="emailHelp" placeholder="User Name" required="true">
                         </div>
                         <div class="mb-3">
-                            <input type="password" class="form-control" id="password" placeholder="password" required="true">
+                            <input type="password" class="form-control" name="password" placeholder="password" required="true">
                         </div>
                         <div class="text-center"><button type="submit" value="signup" class="btn btn-color px-5 mb-5 w-100">Register</button></div>
                     </form>

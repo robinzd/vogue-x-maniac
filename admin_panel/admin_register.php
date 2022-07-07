@@ -1,14 +1,9 @@
 <?php
-
 session_start();
-
-
-include("./conn.php");
+include("./db_conn.php");
 include("./check_login.php");
 
-
-
-    // something was posted
+// something was posted
     $username = $_POST["username"];
     echo $username;
     echo "<br>";
@@ -18,26 +13,21 @@ include("./check_login.php");
     if (!empty($username) && !empty($password)) {
         // save to database
 
-        $admin_id = random_num(10);
+        $admin_id =rand(10000,50000);
 
 
-        $query = "INSERT INTO `admin_login`(`admin_id`,`email_admin`,`password_admin`) VALUES ('$admin_id','$username','$password')";
-
-
-
-        $check = mysqli_query($conn, $query);
+        $query_address = mysqli_query($conn, "INSERT INTO `admin_login`( `admin_id`, `email_admin`,`password_admin`) VALUES ('$admin_id','$username','$password')");
 
 
 
-        header("location:admin_panel_login.php");
+    if($query_address){   
+
+    header("location:admin_panel_login.php");
         die;
+    }
+    
     } else {
         echo "<script>alert('Please Enter Some Valid Information!');</script>";
+
     }
-
-
-
-
-
-
 ?>
