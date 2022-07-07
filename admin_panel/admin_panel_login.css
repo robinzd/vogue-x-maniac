@@ -26,6 +26,7 @@
   .cardbody-color{
     background-color:powderblue;
     border-radius: 10px;
+    padding: 2rem !important;
   }
 
   .body{
@@ -40,4 +41,6 @@
     box-shadow:none;
     outline: none;
     border-radius: 20px;
+    margin-top: 10px;
   }
+
