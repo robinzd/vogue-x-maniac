@@ -79,7 +79,7 @@ check_login($conn);
         </div>
 
 
-        <div class="form-inline d-flex justify-content-center md-form form-sm mt-0">
+        <div class="form-inline d-flex justify-content-end md-form form-sm mt-0">
             <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
         </div>
 
