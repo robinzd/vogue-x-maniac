@@ -80,7 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 <div class="text-center mb-5 text-dark">Made with bootstrap</div>
                 <div class="card my-5">
 
-                    <form class="card-body cardbody-color p-lg-5" method="Post" action="./admin.php">
+                    <form class="card-body cardbody-color p-lg-5" method="Post">
 
                         <div class="text-center">
                             <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295397__340.png" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3" width="200px" alt="profile">
