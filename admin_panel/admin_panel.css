@@ -638,9 +638,9 @@ button {
   border-bottom-right-radius: 20px;
   width: 5%;
   background-color:lightgrey;
-  border-color: none;
-  outline: none;
-  box-shadow: none;
+  border-color: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 
 }
 
