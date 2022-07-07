@@ -124,7 +124,7 @@ $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
                         <tbody>
                             <?php
                             $status = 'TXN_SUCCESS';
-                            $ret = mysqli_query($conn, "SELECT * FROM payment_info WHERE order_id LIKE '%$searchstring%' and transaction_date LIKE '%$searchstring%'");
+                            $ret = mysqli_query($conn, "SELECT * FROM payment_info WHERE order_id LIKE '%$searchstring%'");
                             $cnt = 1;
                             $row = mysqli_num_rows($ret);
                             if ($row > 0) {
