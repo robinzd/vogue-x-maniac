@@ -6,14 +6,11 @@ include("check_login.php");
 
 check_login($conn);
 
-if ($_SERVER['REQUEST_METHOD'] == "POST") {
-
-    $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
-
-    $searchingquery = "SELECT * FROM payment_info WHERE order_id LIKE '%$searchstring%'";
-}
+$searchstring = isset($_POST['search']) ? $_POST['search'] : "";
 
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -89,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         </div>
 
 
-        <form class="form-inline d-flex justify-content-end md-form form-sm mt-0" method="Post" action="./search_order_details.php">
+        <form class="form-inline d-flex justify-content-end md-form form-sm mt-0" method="Post">
             <input class="form-control form-control-sm ml-3 w-75" type="text" name="search" placeholder="Search" aria-label="Search">
             <button type="submit"><span><i class="fa fa-search" aria-hidden="true"></i><span></button>
         </form>
@@ -127,7 +124,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         <tbody>
                             <?php
                             $status = 'TXN_SUCCESS';
-                            $ret = mysqli_query($conn, "select * from payment_info");
+                            $ret = mysqli_query($conn, "SELECT * FROM payment_info WHERE order_id LIKE '%$searchstring%'");
                             $cnt = 1;
                             $row = mysqli_num_rows($ret);
                             if ($row > 0) {
