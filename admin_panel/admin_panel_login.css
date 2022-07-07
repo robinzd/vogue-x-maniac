@@ -5,7 +5,8 @@
   }
 
   .btn:hover{
-    color:honeydew;
+    background-color:ghostwhite;
+    color:black;
   }
   
   .profile-image-pic{
