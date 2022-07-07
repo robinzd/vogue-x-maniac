@@ -1,51 +1,3 @@
-<?php
-
-session_start();
-
-
-include("./conn.php");
-include("./check_login.php");
-
-
-if ($_SERVER['REQUEST_METHOD'] == "POST") {
-	// something was posted
-	$username = $_POST["username"];
-    echo $username;
-    echo "<br>";
-	$password = $_POST["password"];
-    echo $password;
-
-
-
-if (!empty($username) && !empty($password)) {
-		// save to database
-
-		$admin_id = random_num(20);
-
-
-		$query = "INSERT INTO `admin_login`( `admin_id`, `email_admin`, `password_admin`) VALUES ('$admin_id','$username','$password')";
-
-
-
-		$check = mysqli_query($conn, $query);
-
-
-
-		 header("location:admin_panel_login.php");
-		 die;
-	} else {
-		echo "<script>alert('Please Enter Some Valid Information!');</script>";
-	}
-}
-
-
-
-
-
-?>
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -74,7 +26,7 @@ if (!empty($username) && !empty($password)) {
                 <div class="text-center mb-5 text-dark">Made with bootstrap</div>
                 <div class="card my-5">
 
-                    <form class="card-body cardbody-color p-lg-5" method="POST">
+                    <form class="card-body cardbody-color p-lg-5" method="POST" action="./admin_register.php">
 
                         <div class="text-center">
                             <img src="https://cdn.pixabay.com/photo/2016/03/31/19/56/avatar-1295397__340.png" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3" width="200px" alt="profile">
