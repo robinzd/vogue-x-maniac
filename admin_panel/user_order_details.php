@@ -79,8 +79,8 @@ check_login($conn);
         </div>
 
         <form method="Post" class="searchform order-lg-last">
-            <div class="form-group d-flex">
-                <input type="text" name="search" class="form-control me-2" placeholder="Search">
+            <div class="form-group d-flex" align="right">
+                <input type="text" name="search" class="form-control pl-3" placeholder="Search">
                 <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
             </div>
         </form>
