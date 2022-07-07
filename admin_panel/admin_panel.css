@@ -623,3 +623,13 @@ a.nav_logo {
   margin-top: 5px;
   margin-left: 5px;
 }
+
+input.form-control.form-control-sm.ml-3.w-75 {
+   border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+button {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
