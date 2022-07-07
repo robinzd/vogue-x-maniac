@@ -78,7 +78,7 @@ check_login($conn);
             <div class="text">Users Orders Table</div>
         </div>
 
-        <form class="form-inline d-flex justify-content-center md-form form-sm active-purple-2 mt-2">
+        <form class="form-inline d-flex justify-content-right md-form form-sm active-purple-2 mt-2">
             <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search" aria-label="Search">
             <i class="fas fa-search" aria-hidden="true"></i>
         </form>
