@@ -5,7 +5,7 @@
   }
 
   .btn:hover{
-    color:lightgreen;
+    color:honeydew;
   }
   
   .profile-image-pic{
@@ -15,7 +15,7 @@
   }
 
   img.img-fluid.profile-image-pic.img-thumbnail.rounded-circle.my-3{
-    background-color: darkgrey;
+    background-color:honeydew;
   }
   
   .cardbody-color{
