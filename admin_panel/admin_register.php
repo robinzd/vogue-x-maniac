@@ -1,30 +1,25 @@
 <?php
-session_start();
+// session_start();
 include("./dbconnection.php");
-include("./check_login.php");
+// include("./check_login.php");
 
 // something was posted
-    $username = $_POST["username"];
-    echo $username;
-    echo "<br>";
-    $password = $_POST["password"];
-    echo $password;
-    echo "<br>";
-    if (!empty($username) && !empty($password)) {
-        // save to database
+$username = $_POST["username"];
+$password = $_POST["password"];
+if (!empty($username) && !empty($password)) {
+    // save to database
 
-        $admin_id = rand(1000000,5000000);
+    $admin_id = rand(1000000, 5000000);
 
-        
-      $query_address = mysqli_query($conn, "INSERT INTO `admin_login`( `admin_id`, `email_admin`,`password_admin`) VALUES ('$admin_id','$username','$password')");
 
-    if($query_address){   
+    $query_admin = mysqli_query($conn, "INSERT INTO `admin_login`( `admin_id`, `email_admin`,`password_admin`) VALUES ('$admin_id','$username','$password')");
 
-    header("location:admin_panel_login.php");
+    if ($query_admin) {
+
+        header("location:admin_panel_login.php");
         die;
     }
-    
-    } else {
-        echo "<script>alert('Please Enter Some Valid Information!');</script>";
-
-    }
+} else {
+    echo "<script>alert('Please Enter Some Valid Information!');</script>";
+}
+?>
