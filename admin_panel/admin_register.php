@@ -9,15 +9,17 @@ include("./check_login.php");
     echo "<br>";
     $password = $_POST["password"];
     echo $password;
+    echo "<br>";
+    $admin_id = rand(1000000,5000000);
+    echo $admin_id;
 
     if (!empty($username) && !empty($password)) {
         // save to database
 
         $admin_id = rand(1000000,5000000);
+
         
-
-
-        $query_address = mysqli_query($conn, "INSERT INTO `admin_login`( `admin_id`, `email_admin`,`password_admin`) VALUES ('$admin_id','$username','$password')");
+      $query_address = mysqli_query($conn, "INSERT INTO `admin_login`( `admin_id`, `email_admin`,`password_admin`) VALUES ('$admin_id','$username','$password')");
 
 
 
