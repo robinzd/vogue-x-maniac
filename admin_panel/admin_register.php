@@ -1,7 +1,7 @@
 <?php
-// session_start();
+session_start();
 include("./dbconnection.php");
-// include("./check_login.php");
+include("./check_login.php");
 
 // something was posted
 $username = $_POST["username"];
