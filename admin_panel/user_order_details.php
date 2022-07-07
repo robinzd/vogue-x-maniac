@@ -71,17 +71,19 @@ check_login($conn);
             </nav>
         </div>
 
+        
+
+        <div class="top-text">
+            <div class="icon"><i class="fa fa-table"></i></div>
+            <div class="text">Users Orders Table</div>
+        </div>
+
         <form method="Post" class="searchform order-lg-last">
             <div class="form-group d-flex">
                 <input type="text" name="search" class="form-control pl-3" placeholder="Search">
                 <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
             </div>
         </form>
-
-        <div class="top-text">
-            <div class="icon"><i class="fa fa-table"></i></div>
-            <div class="text">Users Orders Table</div>
-        </div>
 
         <div class="container-xl">
             <div class="table-responsive">
