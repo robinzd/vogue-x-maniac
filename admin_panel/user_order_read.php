@@ -24,7 +24,7 @@ $order_id_1 = $_GET['order_id'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Users Order Details </title>
     <!-- fav icon -->
-    <link rel="icon" type="image/png" href="./favicon/icons8-view-details-48.png"/>
+    <link rel="icon" type="image/png" href="./favicon/icons8-view-details-48.png" />
     <!-- bootsstrap cdn -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- font awesome cdn -->
@@ -38,9 +38,9 @@ $order_id_1 = $_GET['order_id'];
 
 <body>
 
-    <?php 
+    <?php
 
-    include "./back_to_top.php"; 
+    include "./back_to_top.php";
 
     ?>
 
@@ -578,7 +578,7 @@ $order_id_1 = $_GET['order_id'];
                                                 <tr>
                                                     <td width="20%">
 
-                                                        <img src="<?php echo "./admin_panel/products_images/images/$details_image"; ?>" width="90">
+                                                        <img src="<?php echo "products_images/images/$details_image"; ?>" width="90">
 
                                                     </td>
 
@@ -739,7 +739,7 @@ $order_id_1 = $_GET['order_id'];
                                         </tr>
 
                                         <?php
-                                        $balance_amount =   $amount_to_paid -  $amount_paid; 
+                                        $balance_amount =   $amount_to_paid -  $amount_paid;
                                         if ($amount_paid == 250) {
                                             echo "<tr class='border-top border-bottom'>
                                         <td>
