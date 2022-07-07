@@ -1,7 +1,4 @@
 <?php
-session_start();
-include('check_login.php');
-check_login($conn);
 //database conection  file
 include('dbconnection.php');
 //Code for deletion
