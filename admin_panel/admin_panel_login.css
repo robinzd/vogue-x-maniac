@@ -18,6 +18,10 @@
   img.img-fluid.profile-image-pic.img-thumbnail.rounded-circle.my-3{
     background-color:honeydew;
   }
+
+  .card.my-5{
+    border-radius: 10px;
+  }
   
   .cardbody-color{
     background-color:powderblue;
