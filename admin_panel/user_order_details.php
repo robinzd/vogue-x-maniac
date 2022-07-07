@@ -81,9 +81,10 @@ check_login($conn);
         </div>
 
 
-        <div class="form-inline d-flex justify-content-end md-form form-sm mt-0">
-            <input class="form-control form-control-sm ml-3 w-75" id="tableSearch" type="text" placeholder="Search" aria-label="Search">
-        </div>
+        <form class="form-inline d-flex justify-content-end md-form form-sm mt-0" method="post">
+            <input class="form-control form-control-sm ml-3 w-75" type="text" placeholder="Search" aria-label="Search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </form>
 
 
 
@@ -115,7 +116,7 @@ check_login($conn);
                                 <th>Actions</th>
                             </tr>
                         </thead>
-                        <tbody id="myTable">
+                        <tbody>
                             <?php
                             $status = 'TXN_SUCCESS';
                             $ret = mysqli_query($conn, "select * from payment_info");
