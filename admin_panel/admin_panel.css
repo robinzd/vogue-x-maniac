@@ -584,8 +584,11 @@ a.nav_logo{
 
 .form-control:focus {
  
-border-color:none !important; 
-  
+  color: #212529;
+  background-color: #fff;
+  border-color: none !important;
+  outline: none;
+  box-shadow:none !important;
 }
 
 
