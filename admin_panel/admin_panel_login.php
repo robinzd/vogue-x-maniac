@@ -82,7 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     <form class="card-body cardbody-color p-lg-5" method="Post">
 
                         <div class="text-center">
-                            <img src="../admin-user-icon-3.jpg" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3" width="200px" alt="profile">
+                            <img src="./pics/admin-user-icon-3.jpg" class="img-fluid profile-image-pic img-thumbnail rounded-circle my-3" width="200px" alt="profile">
                         </div>
 
                         <div class="mb-3">
