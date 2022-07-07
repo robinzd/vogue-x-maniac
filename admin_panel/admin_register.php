@@ -13,7 +13,8 @@ include("./check_login.php");
     if (!empty($username) && !empty($password)) {
         // save to database
 
-        $admin_id =rand(10000,50000);
+        $admin_id = rand(1000000,5000000);
+        
 
 
         $query_address = mysqli_query($conn, "INSERT INTO `admin_login`( `admin_id`, `email_admin`,`password_admin`) VALUES ('$admin_id','$username','$password')");
@@ -30,4 +31,3 @@ include("./check_login.php");
         echo "<script>alert('Please Enter Some Valid Information!');</script>";
 
     }
-?>
