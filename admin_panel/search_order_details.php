@@ -159,7 +159,7 @@ $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
                                 }
                             } else { ?>
                                 <tr>
-                                    <th style="text-align:center; color:red;" colspan="6">No Record Found</th>
+                                    <th style="text-align:center; color:red;" colspan="9">No Record Found</th>
                                 </tr>
                             <?php } ?>
 
