@@ -632,4 +632,5 @@ input.form-control.form-control-sm.ml-3.w-75 {
 button {
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
+  width: 5%;
 }
