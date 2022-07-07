@@ -63,13 +63,20 @@ check_login($conn);
                         <a href="./user_table.php" class="nav_link"> <i class='bx bx-user nav_icon'></i> <span class="nav_name">Users Table</span> </a>
                         <a href="./user_message.php" class="nav_link"> <i class='bx bx-message-square-detail nav_icon'></i>
                             <span class="nav_name">Messages</span> </a>
-                        <a href="./user_order_details.php" class="nav_link active"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Users Orders</span> </a> 
+                        <a href="./user_order_details.php" class="nav_link active"> <i class='bx bx-bookmark nav_icon'></i> <span class="nav_name">Users Orders</span> </a>
                         <!-- <a href="#" class="nav_link">
                             <i class='bx bx-folder nav_icon'></i> <span class="nav_name">Files</span> </a> <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i> <span class="nav_name">Stats</span> </a> -->
                     </div>
 
             </nav>
         </div>
+
+        <form action="shop.php" method="Post" class="searchform order-lg-last">
+            <div class="form-group d-flex">
+                <input type="text" name="search" class="form-control pl-3" placeholder="Search">
+                <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+            </div>
+        </form>
 
         <div class="top-text">
             <div class="icon"><i class="fa fa-table"></i></div>
@@ -91,62 +98,62 @@ check_login($conn);
                     </div> -->
 
                     <table class="table table-striped table-hover">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Order Id</th>
-                            <th>Transaction Amount</th>
-                            <th>Payment Mode</th>
-                            <th>Transaction Date</th>
-                            <th>Transaction Status</th>
-                            <th>Gateway</th>
-                            <th>Bank Name</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php
-                        $status = 'TXN_SUCCESS';
-                        $ret = mysqli_query($conn, "select * from payment_info");
-                        $cnt = 1;
-                        $row = mysqli_num_rows($ret);
-                        if ($row > 0) {
-                            while ($row = mysqli_fetch_array($ret)) {
-
-                                $order_id = $row['order_id'];
-                                $transaction_status = $row['current_status'];
-
-                        ?>
-                                <!--Fetch the Records -->
-                                <tr>
-                                    <td><?php echo $cnt; ?></td>
-                                    <td><?php echo $row['order_id']; ?></td>
-                                    <td><?php echo $row['transaction_amount']; ?></td>
-                                    <td><?php echo $row['payment_mode']; ?></td>
-                                    <td><?php echo $row['transaction_date']; ?></td>
-                                    <td><?php echo $row['current_status']; ?></td>
-                                    <td><?php echo $row['gateway']; ?></td>
-                                    <td><?php echo $row['bank_name']; ?></td>
-                                    <td>
-                                        <?php
-                                        if ($transaction_status ==  $status) {
-                                            echo "<a href='user_order_read.php?order_id=$order_id' class='view' title='View' data-toggle='tooltip'><i class='material-icons'>&#xE417;</i></a>";
-                                        } else {
-                                            echo "<h8 class='don'>Order Cancelled</h8>";
-                                        }
-                                        ?>
-                                    </td>
-                                </tr>
-                            <?php
-                                $cnt = $cnt + 1;
-                            }
-                        } else { ?>
+                        <thead>
                             <tr>
-                                <th style="text-align:center; color:red;" colspan="6">No Record Found</th>
+                                <th>ID</th>
+                                <th>Order Id</th>
+                                <th>Transaction Amount</th>
+                                <th>Payment Mode</th>
+                                <th>Transaction Date</th>
+                                <th>Transaction Status</th>
+                                <th>Gateway</th>
+                                <th>Bank Name</th>
+                                <th>Actions</th>
                             </tr>
-                        <?php } ?>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $status = 'TXN_SUCCESS';
+                            $ret = mysqli_query($conn, "select * from payment_info");
+                            $cnt = 1;
+                            $row = mysqli_num_rows($ret);
+                            if ($row > 0) {
+                                while ($row = mysqli_fetch_array($ret)) {
 
-                    </tbody>
+                                    $order_id = $row['order_id'];
+                                    $transaction_status = $row['current_status'];
+
+                            ?>
+                                    <!--Fetch the Records -->
+                                    <tr>
+                                        <td><?php echo $cnt; ?></td>
+                                        <td><?php echo $row['order_id']; ?></td>
+                                        <td><?php echo $row['transaction_amount']; ?></td>
+                                        <td><?php echo $row['payment_mode']; ?></td>
+                                        <td><?php echo $row['transaction_date']; ?></td>
+                                        <td><?php echo $row['current_status']; ?></td>
+                                        <td><?php echo $row['gateway']; ?></td>
+                                        <td><?php echo $row['bank_name']; ?></td>
+                                        <td>
+                                            <?php
+                                            if ($transaction_status ==  $status) {
+                                                echo "<a href='user_order_read.php?order_id=$order_id' class='view' title='View' data-toggle='tooltip'><i class='material-icons'>&#xE417;</i></a>";
+                                            } else {
+                                                echo "<h8 class='don'>Order Cancelled</h8>";
+                                            }
+                                            ?>
+                                        </td>
+                                    </tr>
+                                <?php
+                                    $cnt = $cnt + 1;
+                                }
+                            } else { ?>
+                                <tr>
+                                    <th style="text-align:center; color:red;" colspan="6">No Record Found</th>
+                                </tr>
+                            <?php } ?>
+
+                        </tbody>
                     </table>
 
                 </div>
