@@ -18,7 +18,7 @@ include("./check_login.php");
     if (!empty($username) && !empty($password)) {
         // save to database
 
-        $admin_id = random_num(20);
+        $admin_id = random_num(10);
 
 
         $query = "INSERT INTO `admin_login`(`admin_id`,`email_admin`,`password_admin`) VALUES ('$admin_id','$username','$password')";
