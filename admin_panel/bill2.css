@@ -75,6 +75,10 @@ button.btn.btn-success:hover{
   border: 1px solid lightgrey !important;
 }
 
+#balance{
+    color:red;
+}
+
 
 
 
