@@ -78,9 +78,10 @@ check_login($conn);
             <div class="text">Users Orders Table</div>
         </div>
 
-        <input class="form-control mb-4" id="tableSearch" type="text" placeholder="Type something to search list items">
+        
 
         <div class="container-xl">
+        <input class="form-control mb-4" id="tableSearch" type="text" placeholder="Type something to search list items">
             <div class="table-responsive">
                 <div class="table-wrapper">
                     <!-- <div class="table-title">
