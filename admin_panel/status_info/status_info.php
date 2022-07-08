@@ -268,12 +268,16 @@ include('dbconnection.php');
             margin-right: 10px;
         }
 
+        form.form-inline.d-flex.justify-content-end.md-form.form-sm.mt-0 {
+            margin-right: 15px;
+        }
+
 
         input.form-control.form-control-sm.ml-3.w-75 {
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
 
         button {
@@ -284,6 +288,8 @@ include('dbconnection.php');
             border-color: none !important;
             outline: none !important;
             box-shadow: none !important;
+            padding-top: 8px;
+            padding-bottom: 4px;
 
         }
     </style>
