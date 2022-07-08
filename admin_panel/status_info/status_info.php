@@ -23,7 +23,7 @@ include('dbconnection.php');
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <style>
         body {
-            color:black;
+            color: black;
             background: #f5f5f5;
             font-family: 'Roboto', sans-serif;
         }
@@ -108,7 +108,7 @@ include('dbconnection.php');
         table.table tr th,
         table.table tr td {
             border-color: #e9e9e9;
-            text-align:center;
+            text-align: center;
         }
 
         table.table th i {
@@ -232,22 +232,60 @@ include('dbconnection.php');
         }
 
         footer.bg-light.text-center.text-lg-start {
-            position:sticky;
+            position: sticky;
             left: 0;
             bottom: 0;
             width: 100%;
-         
+
         }
 
-        .text-center.p-3{
-            color:black;
+        .text-center.p-3 {
+            color: black;
         }
 
-        a.text1{
-       color: black;
-       text-decoration: none;
+        a.text1 {
+            color: black;
+            text-decoration: none;
         }
 
+        .w-75 {
+            width: 25% !important;
+        }
+
+        .form-control:focus {
+
+            color: #212529;
+            background-color: #fff;
+            border-color: black !important;
+            outline: none;
+            box-shadow: none !important;
+        }
+
+        #search1 {
+            margin-top: 5px;
+            margin-left: 5px;
+            color: black;
+            margin-right: 10px;
+        }
+
+
+        input.form-control.form-control-sm.ml-3.w-75 {
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        button {
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: 5%;
+            background-color: lightgrey;
+            border-color: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+
+        }
     </style>
 </head>
 
@@ -265,10 +303,13 @@ include('dbconnection.php');
         </div>
     </nav>
 
-
-
-
     <!-- navbar ends -->
+
+
+    <form class="form-inline d-flex justify-content-end md-form form-sm mt-0" method="Post" action="./search_order_details.php">
+        <input class="form-control form-control-sm ml-3 w-75" type="text" name="search" placeholder="Search" aria-label="Search">
+        <button type="submit"><span><i id="search1" class="fa fa-search" aria-hidden="true"></i><span></button>
+    </form>
 
 
     <div class="container-xl">
