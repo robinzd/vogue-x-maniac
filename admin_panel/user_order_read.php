@@ -50,7 +50,7 @@ $order_id_1 = $_GET['order_id'];
 
     <div class="container mt-5 mb-5  d-none d-sm-block">
 
-        <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
+        <div class="text-left"><a href="./user_order_details.php"><i class="fa fa-arrow-left"></i></a></div><br>
 
         <div class="row d-flex justify-content-center">
 
@@ -435,7 +435,7 @@ $order_id_1 = $_GET['order_id'];
     <div class="container mt-5 mb-5 d-block d-sm-none" style="zoom:70%">
 
 
-        <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
+        <div class="text-left"><a href="./user_order_details.php"><i class="fa fa-arrow-left"></i></a></div><br>
 
         <div class="row d-flex justify-content-center">
 
