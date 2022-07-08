@@ -293,7 +293,6 @@ $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
             box-shadow: none !important;
             padding-top: 7px;
             padding-bottom: 7px;
-
         }
     </style>
 </head>
