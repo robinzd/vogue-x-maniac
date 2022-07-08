@@ -311,11 +311,12 @@ include('dbconnection.php');
 
     <!-- navbar ends -->
 
-
+    <div class="searchbar">
     <form class="form-inline d-flex justify-content-end md-form form-sm mt-0" method="Post" action="./status_search.php">
         <input class="form-control form-control-sm ml-3 w-75" type="text" name="search" placeholder="Search" aria-label="Search">
         <button type="submit"><span><i id="search1" class="fa fa-search" aria-hidden="true"></i><span></button>
     </form>
+    </div><br>
 
 
     <div class="container-xl">
