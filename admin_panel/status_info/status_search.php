@@ -252,7 +252,7 @@ $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
         }
 
         .w-75 {
-            width: 20% !important;
+            width: 19% !important;
         }
 
         .form-control:focus {
