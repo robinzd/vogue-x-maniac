@@ -279,8 +279,8 @@ $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
         input.form-control.form-control-sm.ml-3.w-75 {
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
-            padding-top: 25px;
-            padding-bottom: 25px;
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
 
         button {
@@ -291,8 +291,8 @@ $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
             border-color: none !important;
             outline: none !important;
             box-shadow: none !important;
-            padding-top: 12px;
-            padding-bottom: 12px;
+            padding-top: 7px;
+            padding-bottom: 7px;
 
         }
     </style>
