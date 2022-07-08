@@ -86,14 +86,14 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <div class="top-text">
             <div class="icon"><i class="fa fa-table"></i></div>
             <div class="text">Users Orders Table</div>
-        </div>
+        </div><br>
 
         <div class="searchbar">
         <form class="form-inline d-flex justify-content-end md-form form-sm mt-0" method="Post" action="./search_order_details.php">
             <input class="form-control form-control-sm ml-3 w-75" type="text" name="search" placeholder="Search" aria-label="Search">
             <button type="submit"><span><i  id="search1" class="fa fa-search" aria-hidden="true"></i><span></button>
         </form>
-        <</div><br>
+        </div><br>
 
 
 
