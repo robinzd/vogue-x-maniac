@@ -127,7 +127,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                         <tbody>
                             <?php
                             $status = 'TXN_SUCCESS';
-                            $ret = mysqli_query($conn, "select * from payment_info");
+                            $date=date("d M,Y");
+                            $ret = mysqli_query($conn, "select * from payment_info where date_done='$date'");
                             $cnt = 1;
                             $row = mysqli_num_rows($ret);
                             if ($row > 0) {

@@ -16,12 +16,13 @@ $response_msg = $_POST["RESPMSG"];
 $gateway = $_POST["GATEWAYNAME"];
 $bank_id = $_POST["BANKTXNID"];
 $bank_name = $_POST["BANKNAME"];
+$date=date("d M,Y");
 
 
 
 
 if (!empty($order_id) && !empty($txn_id) && !empty($txn_amount) && !empty($payment_mode) && !empty($currency) && !empty($txn_date) &&  !empty($status)  &&  !empty($response)  &&  !empty($response_msg)  &&  !empty($gateway)  &&  !empty($bank_id)  &&  !empty($bank_name)) {
-    $query_address = mysqli_query($conn, "INSERT INTO `payment_info`(`order_id`, `transaction_id`,`transaction_amount`,`payment_mode`,`Currency`,`transaction_date`,`current_status`,`response_status`,`response_message`,`gateway`,`bank_id`,`bank_name`) VALUES ('$order_id','$txn_id','$txn_amount','$payment_mode','$currency','$txn_date','$status','$response','$response_msg','$gateway','$bank_id','$bank_name')");
+    $query_address = mysqli_query($conn, "INSERT INTO `payment_info`(`order_id`, `transaction_id`,`transaction_amount`,`payment_mode`,`Currency`,`transaction_date`,`current_status`,`response_status`,`response_message`,`gateway`,`bank_id`,`bank_name`,`date_done`) VALUES ('$order_id','$txn_id','$txn_amount','$payment_mode','$currency','$txn_date','$status','$response','$response_msg','$gateway','$bank_id','$bank_name','$date')");
 } else {
 
     echo "<script>alert('Something Went Wrong!');</script>";
