@@ -249,7 +249,7 @@ include('dbconnection.php');
         }
 
         .w-75 {
-            width: 25% !important;
+            width: 20% !important;
         }
 
         .form-control:focus {
