@@ -279,8 +279,8 @@ $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
         input.form-control.form-control-sm.ml-3.w-75 {
             border-top-left-radius: 20px;
             border-bottom-left-radius: 20px;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding-top: 25px;
+            padding-bottom: 25px;
         }
 
         button {
@@ -291,8 +291,8 @@ $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
             border-color: none !important;
             outline: none !important;
             box-shadow: none !important;
-            padding-top: 8px;
-            padding-bottom: 4px;
+            padding-top: 12px;
+            padding-bottom: 12px;
 
         }
     </style>
@@ -308,17 +308,16 @@ $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
                 <div class="icon"><a href="../admin_panel.php"><i class="fa fa-home"></i></a></div>
                 <div class="text">Home</div>
             </div>
-
         </div>
     </nav>
 
     <!-- navbar ends -->
 
     <div class="searchbar">
-    <form class="form-inline d-flex justify-content-end md-form form-sm mt-0" method="Post" action="./search_order_details.php">
-        <input class="form-control form-control-sm ml-3 w-75" type="text" name="search" placeholder="Search" aria-label="Search">
-        <button type="submit"><span><i id="search1" class="fa fa-search" aria-hidden="true"></i><span></button>
-    </form>
+        <form class="form-inline d-flex justify-content-end md-form form-sm mt-0" method="Post" action="./search_order_details.php">
+            <input class="form-control form-control-sm ml-3 w-75" type="text" name="search" placeholder="Search" aria-label="Search">
+            <button type="submit"><span><i id="search1" class="fa fa-search" aria-hidden="true"></i><span></button>
+        </form>
     </div><br>
 
 
