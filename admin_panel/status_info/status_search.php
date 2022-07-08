@@ -2,6 +2,9 @@
 //database conection  file
 include('dbconnection.php');
 //Code for deletion
+
+$searchstring = isset($_POST['search']) ? $_POST['search'] : "";
+
 ?>
 
 
@@ -312,7 +315,7 @@ include('dbconnection.php');
     <!-- navbar ends -->
 
 
-    <form class="form-inline d-flex justify-content-end md-form form-sm mt-0" method="Post" action="./status_search.php">
+    <form class="form-inline d-flex justify-content-end md-form form-sm mt-0" method="Post" action="./search_order_details.php">
         <input class="form-control form-control-sm ml-3 w-75" type="text" name="search" placeholder="Search" aria-label="Search">
         <button type="submit"><span><i id="search1" class="fa fa-search" aria-hidden="true"></i><span></button>
     </form>
@@ -341,7 +344,7 @@ include('dbconnection.php');
                     </thead>
                     <tbody>
                         <?php
-                        $ret = mysqli_query($conn, "select * from status_info");
+                        $ret = mysqli_query($conn, "select * from status_info WHERE order_id LIKE '%$searchstring%'");
                         $cnt = 1;
                         $row = mysqli_num_rows($ret);
                         if ($row > 0) {
