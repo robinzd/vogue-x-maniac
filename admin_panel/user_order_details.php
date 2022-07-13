@@ -37,6 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     <link rel="stylesheet" type="text/css" href="admin_panel.css">
     <!-- external javascript page -->
     <script src="./admin_details.js"></script>
+    <sript src="ebin.js"></sript>
 
 </head>
 
