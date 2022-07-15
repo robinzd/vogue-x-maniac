@@ -107,8 +107,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                                 <h2>Users Table</h2>
                             </div>
                             <div class="col-sm-7">
-
-                            </div>
+                        </div>
                         </div>
                     </div> -->
 
