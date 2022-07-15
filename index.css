@@ -7,7 +7,7 @@ a.navbar-brand.text-dark{
 }
 
 *body{
-  background-color: grey;
+  background-color:ghostwhite !important;
 }
 
 a#brand{
@@ -67,7 +67,6 @@ img#brand{
 #fade{
   margin-top: -25px !important;
 }
-
 
 }
 
