@@ -2,7 +2,7 @@
 
 
 body{
-  background-color: ghostwhite;
+  background-color: ghostwhite !important;
 }
 
 .text-center.py-2{
