@@ -261,6 +261,7 @@ include("./conn.php");
 
 
     <!-- cross fade carousel -->
+    <section id="fade">
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
 
@@ -327,6 +328,7 @@ include("./conn.php");
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    </section>
     <!-- cross fade carousle end -->
 
 

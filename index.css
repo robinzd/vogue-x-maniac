@@ -64,6 +64,14 @@ img#brand{
   margin-top: -55px;
 }
 
+@media (max-width: 767px) {
+
+
+
+
+
+}
+
 /* .brands-box img{
     width:250px;
     height:250px;
@@ -74,8 +82,6 @@ img#brand{
     overflow:hidden;
     border:1px solid rgba(0,0,0,0.04);
     transition:all ease 0.3s;
-    
-    
 }
 
 .brands-box span{
