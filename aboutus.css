@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 
 
+body{
+	background-color: ghostwhite;
+}
+
+
 .about{
 	cursor: pointer;
 	background-color:ghostwhite;
@@ -36,10 +41,10 @@
 	opacity: 1;	
 	border: 2px solid lightgreen;
 	font-size: 42px;
-	-webkit-transform: scale(1.1,1.1) rotate(360deg) ;
-	-moz-transform: scale(1.1,1.1) rotate(360deg) ;
-	-o-transform: scale(1.1,1.1) rotate(360deg) ;
-	transform: scale(1.1,1.1) rotate(360deg) ;
+	-webkit-transform: scale(1.1,1.1) rotate(360deg);
+	-moz-transform: scale(1.1,1.1) rotate(360deg);
+	-o-transform: scale(1.1,1.1) rotate(360deg);
+	transform: scale(1.1,1.1) rotate(360deg);
 }
 .about-item:hover h2{
 	opacity: 1;

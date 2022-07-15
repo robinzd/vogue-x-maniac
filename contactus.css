@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 
+
+body{
+  background-color: ghostwhite;
+}
+
 .text-center.py-2{
     background-color: lightgreen;
     color:black;
