@@ -212,7 +212,7 @@ include("./conn.php");
 
     <!-- categories -->
 
-    <section id="brands">
+    <section class="categories" id="brands">
         <h2>categories</h2>
 
 
