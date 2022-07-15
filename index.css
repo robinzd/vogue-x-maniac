@@ -45,15 +45,12 @@ img#brand{
     align-items:center;
     padding:20px;
     border:1px solid rgba(0,0,0,0.04);
-   
-    
 }
 
 .brands-box{
     position:relative;
     padding:10px;
     text-decoration: none;
-  
 }
 
 .categories {
@@ -67,8 +64,8 @@ img#brand{
 @media (max-width: 767px) {
 
 
-#id{
-  margin-top: 20px !important;
+#fade{
+  margin-top: -20px !important;
 }
 
 
