@@ -38,7 +38,7 @@ if ($rowcount > 0) {
     }
 } else {
 
-    $query = mysqli_query($conn, "insert into products_cart(product_id,user_id,product_quantity,product_size) value ('$productid','$userid','$productquantity','$productsize')");
+    $query = mysqli_query($conn, "insert into products_cart(product_id,user_id,product_quantity,product_size,order_id) value ('$productid','$userid','$productquantity','$productsize','123')");
     if ($query) {
         echo "<script>alert('You have successfully inserted the item into the cart');</script>";
         echo "<script type='text/javascript'> document.location ='details.php?id=$productid'; </script>";
