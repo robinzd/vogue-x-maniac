@@ -40,8 +40,8 @@ body {
 }
 
 /* card */
-.card.bg-white{
-  border-radius: 10px;
+.card .bg-white{
+  border-radius: 10px !important;
 }
 
 /* Shop: Slideshow */
