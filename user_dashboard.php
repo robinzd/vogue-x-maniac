@@ -248,7 +248,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
     </div><br>
 
     <?php
-   $get_cart_delete = "select * from order_info where current_status='TXN_SUCCESS' AND user_id='$userid'";
+   $get_cart_delete = "select * from order_info where current_status='TXN_SUCCESS' AND order_id='$order_id'";
 
     $run_cart_delete = mysqli_query($conn, $get_cart_delete);
 
