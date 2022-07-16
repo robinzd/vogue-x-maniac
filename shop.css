@@ -39,6 +39,11 @@ body {
   color: #777777;
 }
 
+/* card */
+.card.bg-white{
+  border-radius: 10px;
+}
+
 /* Shop: Slideshow */
 .shop__slideshow {
   margin-top: -18px;
