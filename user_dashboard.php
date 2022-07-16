@@ -256,11 +256,11 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
 
     while ($row_cart_delete = mysqli_fetch_array($run_cart_delete)) {
 
-        $order_id_2 = $row_cart_delete['user_id'];
+        $order_id_2 = $row_cart_delete['order_id'];
     }
 
     if ($get_cart_delete) {
-        $cart_deletequery = mysqli_query($conn, "delete from products_cart where user_id= $user_id_2");
+        $cart_deletequery = mysqli_query($conn, "delete from products_cart where order_id= $order_id_2");
     }
 
     ?>
