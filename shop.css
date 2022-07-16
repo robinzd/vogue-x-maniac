@@ -40,7 +40,7 @@ body {
 }
 
 /* card */
-.card .bg-white{
+.card{
   border-radius: 10px !important;
 }
 
