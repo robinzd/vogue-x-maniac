@@ -58,6 +58,8 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
             $query_order = mysqli_query($conn, "INSERT INTO `users_order`( `user_id`, `order_id`, `product_id`, `product_quantity`, `product_size`,`created_date_time`) VALUES ('$userid ','$order_id','$product_id','$product_quantity ','$product_size','$date')");
         }
+    }if( $query_order){
+        $update_query_cart = mysqli_query($conn, "update  products_cart set order_id='$order_id' where user_id='$userid'");
     } else {
 
         echo "<script>alert('Something Went Wrong!');</script>";

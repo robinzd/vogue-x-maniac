@@ -13,9 +13,7 @@ if (!empty($order_Id) && !empty($transaction_amount)) {
 
     $query_address = mysqli_query($conn, "INSERT INTO `transaction_amount`( `order_id`, `transaction_amount`) VALUES ('$order_Id','$transaction_amount')");
  
-if($query_address){
-    $update_query_cart = mysqli_query($conn, "update  products_cart set order_id='$order_Id' where user_id='$customer_id'");
-}
+
 
 }
 
