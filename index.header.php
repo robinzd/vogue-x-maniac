@@ -7,7 +7,14 @@ include("./conn.php");
 $user_id = $_SESSION['user_id'];
 
 
-$get_user="select * from users WHERE user_id='$user_id'";
+$get_user = "select * from users WHERE user_id='$user_id'";
+
+
+if ($get_user) {
+	$select_rows = mysqli_query($conn, "select * from products_cart where user_id='$user_id'");
+
+	$row_count = mysqli_num_rows($select_rows);
+}
 
 
 // $run_name = mysqli_query($conn, $get_name);
@@ -84,23 +91,16 @@ $get_user="select * from users WHERE user_id='$user_id'";
 
 							<?php
 
-						// 	if($get_user){
+							if ($row_count > 0) {
 
-						// 	$select_rows = mysqli_query($conn, "select * from products_cart where user_id='$user_id'");
+								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span><span id='product'>$row_count</span></a>";
+							} else {
+								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
+							}
 
-						// 	$row_count = mysqli_num_rows($select_rows);
 
-						// 	if ($row_count > 0) {
 
-						// 		echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span><span id='product'>$row_count</span></a>";
-						// 	} 
-						// 	else {
-						// 		echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
-						// 	}
-						// }
-						
-
-							?> 
+							?>
 
 							<a href="./logout.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-sign-out"><i class="sr-only">Instagram</i></span></a>
 							<!-- <a href="./admin_panel/admin_panel.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a> -->
