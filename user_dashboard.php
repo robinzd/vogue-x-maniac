@@ -26,6 +26,21 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
     }
 }
 
+$get_cart_delete = "select * from order_info where current_status='TXN_SUCCESS' AND order_id='$order_id'";
+
+    $run_cart_delete = mysqli_query($conn, $get_cart_delete);
+
+
+
+    while ($row_cart_delete = mysqli_fetch_array($run_cart_delete)) {
+
+        $order_id_2 = $row_cart_delete['order_id'];
+    }
+
+    if ($get_cart_delete) {
+        $cart_deletequery = mysqli_query($conn, "delete from products_cart where order_id= $order_id_2");
+    }
+
 
 ?>
 
@@ -247,23 +262,7 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
 
     </div><br>
 
-    <?php
-   $get_cart_delete = "select * from order_info where current_status='TXN_SUCCESS' AND order_id='$order_id'";
-
-    $run_cart_delete = mysqli_query($conn, $get_cart_delete);
-
-
-
-    while ($row_cart_delete = mysqli_fetch_array($run_cart_delete)) {
-
-        $order_id_2 = $row_cart_delete['order_id'];
-    }
-
-    if ($get_cart_delete) {
-        $cart_deletequery = mysqli_query($conn, "delete from products_cart where order_id= $order_id_2");
-    }
-
-    ?>
+    
 
 
     <!-- Footer -->
