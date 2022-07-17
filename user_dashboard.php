@@ -33,14 +33,12 @@ if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) 
 
     $query_address = mysqli_query($conn, "INSERT INTO `order_info`( `user_id`, `order_id`, `current_status`,`transaction_amount`) VALUES ('$userid ','$order_id','$status','$amount')");
     
-    if ($query_address) {
-        $cart_deletequery = mysqli_query($conn, "delete from products_cart where order_id= $order_id_2");
-    }
-
     if ($real_status_1 == $status) {
         $query_address1 = mysqli_query($conn, "INSERT INTO status_info(`order_id`, `realtime_status`,`tracking_link`) VALUES ('$order_id','$realtime_status','$dummy_data')");
     }
-   
+    if ($get_cart_delete) {
+        $cart_deletequery = mysqli_query($conn, "delete from products_cart where order_id= $order_id_2");
+    }
 }
 
 
