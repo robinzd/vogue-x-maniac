@@ -48,8 +48,8 @@ while ($row_cart_delete = mysqli_fetch_array($run_cart_delete)) {
 }
 
 
-if ($order_id == $order_id_3) {
-    $cart_deletequery = mysqli_query($conn, "delete from products_cart");
+if ($get_cart) {
+    $cart_deletequery = mysqli_query($conn, "delete from products_cart where order_id='$order_id_3'");
 }
 
 
