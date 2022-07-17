@@ -4,10 +4,6 @@ session_start();
 include("./conn.php");
 
 
-$user_id = $_POST["id"];
-
-
-
 // $run_name = mysqli_query($conn, $get_name);
 
 
@@ -82,11 +78,7 @@ $user_id = $_POST["id"];
 
 							<?php
 
-							$get_name = "select * from users where user_id=$user_id";
-
-							echo $get_name;
-
-							$select_rows = mysqli_query($conn, "select * from products_cart");
+					        $select_rows = mysqli_query($conn, "select * from products_cart");
 
 							$row_count = mysqli_num_rows($select_rows);
 
