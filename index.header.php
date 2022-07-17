@@ -94,11 +94,11 @@ $get_user="select * from users WHERE user_id='$user_id'";
 
 								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span><span id='product'>$row_count</span></a>";
 							} 
+							else {
+								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
+							}
+						}
 						
-						}
-						else {
-							echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
-						}
 
 							?>
 
