@@ -29,6 +29,7 @@ $get_cart_delete = "select * from order_info where current_status='TXN_SUCCESS' 
 
 
     if ($get_cart_delete) {
+        echo "Hai";
         $cart_deletequery = mysqli_query($conn, "delete from products_cart where order_id= $order_id_2");
     }
 
