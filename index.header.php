@@ -4,6 +4,11 @@ session_start();
 include("./conn.php");
 
 
+$user_id = $_SESSION['user_id'];
+
+print_r($user_id);
+
+
 // $run_name = mysqli_query($conn, $get_name);
 
 
@@ -78,7 +83,7 @@ include("./conn.php");
 
 							<?php
 
-					        $select_rows = mysqli_query($conn, "select * from products_cart");
+							$select_rows = mysqli_query($conn, "select * from products_cart");
 
 							$row_count = mysqli_num_rows($select_rows);
 
@@ -88,6 +93,7 @@ include("./conn.php");
 							} else {
 								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
 							}
+						
 
 
 							?>

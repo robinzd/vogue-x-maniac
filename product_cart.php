@@ -11,6 +11,8 @@ $user_data = check_login($conn);
 
 $userid = $user_data['user_id'];
 
+// $_SESSION['user_id']=$user_id;
+
 if (isset($_GET['delid'])) {
     $rid = intval($_GET['delid']);
     $sql = mysqli_query($conn, "delete from products_cart where product_id=$rid and user_id=$userid");
