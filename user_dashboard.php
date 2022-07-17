@@ -20,33 +20,41 @@ $real_status_1 = "TXN_SUCCESS";
 if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) {
 
     $query_address = mysqli_query($conn, "INSERT INTO `order_info`( `user_id`, `order_id`, `current_status`,`transaction_amount`) VALUES ('$userid ','$order_id','$status','$amount')");
-    
+
     if ($real_status_1 == $status) {
         $query_address1 = mysqli_query($conn, "INSERT INTO status_info(`order_id`, `realtime_status`,`tracking_link`) VALUES ('$order_id','$realtime_status','$dummy_data')");
     }
-   
 }
 
 
 $get_cart_delete = "select * from order_info where current_status='TXN_SUCCESS' AND order_id='$order_id'";
 
-    $run_cart_delete = mysqli_query($conn, $get_cart_delete);
+$run_cart_delete = mysqli_query($conn, $get_cart_delete);
 
 
 
-    while ($row_cart_delete = mysqli_fetch_array($run_cart_delete)) {
+while ($row_cart_delete = mysqli_fetch_array($run_cart_delete)) {
 
-        $order_id_2 = $row_cart_delete['order_id'];
+    $order_id_2 = $row_cart_delete['order_id'];
+
+    $get_cart = "select * from products_cart where order_id='$order_id_2'";
+
+    $run_cart = mysqli_query($conn, $get_cart);
+
+   while ($row_cart = mysqli_fetch_array($run_cart)) {
+
+        $order_id_3 = $row_cart['order_id'];
     }
+}
 
 
-    if ($get_cart_delete) {
-    $cart_deletequery = mysqli_query($conn, "delete from products_cart where order_id= $order_id_2");
-    }
+if ($order_id == $order_id_3) {
+    $cart_deletequery = mysqli_query($conn, "delete from products_cart");
+}
 
 
 
-   
+
 
 ?>
 
@@ -268,7 +276,7 @@ $get_cart_delete = "select * from order_info where current_status='TXN_SUCCESS' 
 
     </div><br>
 
-    
+
 
 
     <!-- Footer -->
