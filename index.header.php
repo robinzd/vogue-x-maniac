@@ -2,12 +2,14 @@
 
 
 include("./conn.php");
+include("./function.php");
 
 
+$userid = $user_data['user_id'];
 
-// $userid = $user_data['user_id'];
+$get_name = "select * from users where user_id=$userid";
 
-// $get_name = "select * from users where user_id=$userid";
+echo $get_name;
 
 // $run_name = mysqli_query($conn, $get_name);
 
