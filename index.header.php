@@ -3,17 +3,7 @@ session_start();
 
 include("./conn.php");
 
-$_SERVER['SCRIPT_NAME'];
 
-$get_string = $_SERVER['QUERY_STRING'];
-
-parse_str($get_string, $get_array);
-
-$user_id = $get_array['userid'];
-
-$get_name = "select * from users where user_id=$user_id";
-
-echo $get_name;
 
 // $run_name = mysqli_query($conn, $get_name);
 
@@ -88,6 +78,19 @@ echo $get_name;
 							<a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
 
 							<?php
+
+							$_SERVER['SCRIPT_NAME'];
+
+							$get_string = $_SERVER['QUERY_STRING'];
+
+							parse_str($get_string, $get_array);
+
+							$user_id = $get_array['userid'];
+
+							$get_name = "select * from users where user_id=$user_id";
+
+							echo $get_name;
+							
 							$select_rows = mysqli_query($conn, "select * from products_cart");
 
 							$row_count = mysqli_num_rows($select_rows);
