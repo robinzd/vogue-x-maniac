@@ -67,7 +67,7 @@ else {
                     <div class='content'>
                         <h1>Payment Success !</h1>
                         <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
-                        <form method='Post' action='./user.php'>
+                        <form method='Post' action='./user_dashboard.php'>
                         <input type='hidden' name='order_id' value='$order_id'>
                         <input type='hidden' name='status' value='$status'>
                         <input type='hidden' name='amount' value='$txn_amount'>
@@ -87,7 +87,7 @@ else {
                 <div class='content'>
                     <h1>Payment failed!</h1>
                     <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.</p>
-                    <form method='Post' action='./user.php'>
+                    <form method='Post' action='./user_dashboard.php'>
                     <input type='hidden' name='order_id' value='$order_id'>
                     <input type='hidden' name='status' value='$status'>
                     <input type='hidden' name='amount' value='$txn_amount'>
