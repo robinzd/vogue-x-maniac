@@ -16,6 +16,18 @@ $realtime_status = "Ordered";
 $real_status_1 = "TXN_SUCCESS";
 
 
+
+if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) {
+
+    $query_address = mysqli_query($conn, "INSERT INTO `order_info`( `user_id`, `order_id`, `current_status`,`transaction_amount`) VALUES ('$userid ','$order_id','$status','$amount')");
+    
+    if ($real_status_1 == $status) {
+        $query_address1 = mysqli_query($conn, "INSERT INTO status_info(`order_id`, `realtime_status`,`tracking_link`) VALUES ('$order_id','$realtime_status','$dummy_data')");
+    }
+   
+}
+
+
 $get_cart_delete = "select * from order_info where current_status='TXN_SUCCESS' AND order_id='$order_id'";
 
     $run_cart_delete = mysqli_query($conn, $get_cart_delete);
@@ -29,21 +41,8 @@ $get_cart_delete = "select * from order_info where current_status='TXN_SUCCESS' 
 
 
     if ($get_cart_delete) {
-        echo "Hai";
-        $cart_deletequery = mysqli_query($conn, "delete from products_cart where order_id= $order_id_2");
+    $cart_deletequery = mysqli_query($conn, "delete from products_cart where order_id= $order_id_2");
     }
-
-
-
-if (!empty($userid) && !empty($order_id) && !empty($status) && !empty($amount)) {
-
-    $query_address = mysqli_query($conn, "INSERT INTO `order_info`( `user_id`, `order_id`, `current_status`,`transaction_amount`) VALUES ('$userid ','$order_id','$status','$amount')");
-    
-    if ($real_status_1 == $status) {
-        $query_address1 = mysqli_query($conn, "INSERT INTO status_info(`order_id`, `realtime_status`,`tracking_link`) VALUES ('$order_id','$realtime_status','$dummy_data')");
-    }
-   
-}
 
 
 
