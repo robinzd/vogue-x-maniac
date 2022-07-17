@@ -44,7 +44,7 @@ if (isset($_GET['delid'])) {
     <!-- navbar starts -->
 
 
-    <?php include "./index.header.php"; ?>
+    <?php include "./index.header.php?userid='$userid'"; ?>
 
     <!-- navbar  ends -->
 

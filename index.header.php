@@ -2,12 +2,16 @@
 session_start();
 
 include("./conn.php");
-include("./function.php");
 
+$_SERVER['SCRIPT_NAME'];
 
-$userid = $user_data['user_id'];
+$get_string = $_SERVER['QUERY_STRING'];
 
-$get_name = "select * from users where user_id=$userid";
+parse_str($get_string, $get_array);
+
+$user_id = $get_array['userid'];
+
+$get_name = "select * from users where user_id=$user_id";
 
 echo $get_name;
 
