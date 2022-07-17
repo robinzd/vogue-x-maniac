@@ -6,8 +6,6 @@ include("./conn.php");
 
 $user_id = $_SESSION['user_id'];
 
-print_r($user_id);
-
 
 // $run_name = mysqli_query($conn, $get_name);
 
