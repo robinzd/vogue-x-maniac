@@ -115,7 +115,7 @@ if (isset($_GET['delid'])) {
 
                     ?>
                                     <tr>
-                                        <td><?php echo "<a href='./details.php?id=$product_id'><img src='./admin_panel/products_images/images/$product_image' class='cart-item-image' />$product_title ?></a></td>"?>
+                                        <td><?php echo "<a href='./details.php?id=$product_id'><img src='./admin_panel/products_images/images/$product_image' class='cart-item-image' />$product_title</a>" ?></td>
                                         <td style="text-align:center;"><?php echo $row["product_quantity"]; ?></td>
                                         <td style="text-align:center;"><?php echo $row["product_size"]; ?></td>
                                         <td style="text-align:center;"><?php echo "₹" . $product_price; ?></td>
@@ -237,7 +237,7 @@ if (isset($_GET['delid'])) {
 
                     ?>
                                     <tr>
-                                        <td><img src="<?php echo "./admin_panel/products_images/images/$product_image"; ?>" class="cart-item-image" /><?php echo $product_title ?></td>
+                                        <td><?php echo "<a href='./details.php?id=$product_id'><img src='./admin_panel/products_images/images/$product_image' class='cart-item-image' />$product_title</a>" ?></td>
                                         <td style="text-align:center;"><?php echo $row["product_quantity"]; ?></td>
                                         <td style="text-align:center;"><?php echo $row["product_size"]; ?></td>
                                         <td style="text-align:center;"><?php echo "₹" . $product_price; ?></td>
