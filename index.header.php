@@ -7,6 +7,9 @@ include("./conn.php");
 $user_id = $_SESSION['user_id'];
 
 
+$get_user="select * from users WHERE user_id='$user_id'";
+
+
 // $run_name = mysqli_query($conn, $get_name);
 
 
@@ -81,7 +84,7 @@ $user_id = $_SESSION['user_id'];
 
 							<?php
 
-							if($user_id == $user_id){
+							if($get_user){
 
 							$select_rows = mysqli_query($conn, "select * from products_cart where user_id=$user_id");
 
