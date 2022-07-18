@@ -91,7 +91,7 @@ if ($get_user) {
 
 							<a href="./logout.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-sign-out"><i class="sr-only">Instagram</i></span></a>
 							<?php
-							$get_is_admin = "select is_admin from users where is_admin='1'";
+							$get_is_admin = "select is_admin from users where is_admin='1' AND user_id='$user_id'";
 
 							$run_is_admin = mysqli_query($conn,$get_is_admin);
 
