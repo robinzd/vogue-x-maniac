@@ -17,15 +17,7 @@ if ($get_user) {
 }
 
 
-// $run_name = mysqli_query($conn, $get_name);
 
-
-
-// while ($row_name = mysqli_fetch_array($run_name)) {
-
-// 	$user_firstname = $row_name['first_name'];
-// 	$user_lastname = $row_name['first_name'];
-// };
 
 
 ?>
@@ -83,13 +75,8 @@ if ($get_user) {
 				<div class="col-md-4 d-flex">
 					<div class="social-media">
 						<p class="mb-0 d-flex">
-
-							<!-- <span id="heading6">Hello,<?php echo $user_firstname; ?></span> -->
-
-
-							<a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
-
-							<?php
+                        <a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
+                        <?php
 
 							if ($row_count > 0) {
 
@@ -103,7 +90,23 @@ if ($get_user) {
 							?>
 
 							<a href="./logout.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-sign-out"><i class="sr-only">Instagram</i></span></a>
-							<!-- <a href="./admin_panel/admin_panel.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a> -->
+							<?php
+							$get_is_admin = "select is_admin from users where is_admin='1'";
+
+							$run_is_admin = mysqli_query($conn,$get_is_admin);
+
+
+
+							while ($row_is_admin = mysqli_fetch_array($run_is_admin)) {
+
+
+								$admin = $row_is_admin['is_admin'];
+
+							}
+							if($admin > 0){
+                            echo "<a href='./admin_panel/admin_panel.php' class='d-flex align-items-center justify-content-center'><span class='fa fa-dribbble'><i class='sr-only'>Dribbble</i></span></a>";
+							}
+							?>
 						</p>
 					</div>
 				</div>

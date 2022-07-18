@@ -1,13 +1,7 @@
 <?php
 //database conection  file
-session_start();
 include('dbconnection.php');
-include("check_login.php");
-
-check_login($conn);
-
 $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
-
 ?>
 
 
