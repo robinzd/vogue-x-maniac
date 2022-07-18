@@ -46,7 +46,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		$user_id = random_num(20);
 
 
-		$query = "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`, `user_password`,`user_mob_no`) VALUES ('$user_id','$first_name','$last_name','$email','$password','$mobile_no')";
+		$is_admin=0;
+
+
+		$query = "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`, `user_password`,`user_mob_no`,`is_admin`) VALUES ('$user_id','$first_name','$last_name','$email','$password','$mobile_no','$is_admin')";
 
 
 
