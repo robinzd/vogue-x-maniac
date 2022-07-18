@@ -47,7 +47,7 @@ $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
                 <!-- <a href="#">
                     <i class="fa fa-bell" aria-hidden="true"></i>
                 </a> -->
-                <a href="./admin_logout.php">
+                <a href="../index.php">
                     <i class="fa fa-sign-out" aria-hidden="true"></i>
                 </a>
                 <a href="#">

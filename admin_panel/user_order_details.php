@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                 <!-- <a href="#">
                     <i class="fa fa-bell" aria-hidden="true"></i>
                 </a> -->
-                <a href="./admin_logout.php">
+                <a href="../index.php">
                     <i class="fa fa-sign-out" aria-hidden="true"></i>
                 </a>
                 <a href="#">
