@@ -130,7 +130,7 @@ if ($get_cart) {
             ?>
 
             <div  class="col-lg-12 my-lg-0 my-1">
-                <div class="order" id="main-content" class="bg-white border">
+                <div id="main-content" class="bg-white border">
                     <div class="d-flex flex-column">
                         <div class="h5">Hello <?php echo $firstname . " " . $lastname ?>,</div>
                         <div>Logged in as:<?php echo $useremail ?></div>
@@ -390,11 +390,11 @@ if ($get_cart) {
                   success:function(data) {
                     if(data !=""){
                         $('#btnLoad').remove();
-                        $('.order').append(data);
+                        $('#main-content').append(data);
                     }
                     else{
                         $('#btnLoad').remove();
-                        $('.order').append('<h4>No More Data To Show</h4>');
+                        $('#main-content').append('<h4>No More Data To Show</h4>');
                     }
                   }
                });
