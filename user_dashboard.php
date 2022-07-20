@@ -202,7 +202,7 @@ if ($get_cart) {
                                 $full_amount = $row_amount['transaction_amount'];
                             }
 
-                            echo "<div class='order my-3 bg-light'>
+                            echo "<div  id='order' class='order my-3 bg-light'>
                         <div class='row'>
                             <div class='col-lg-12'>
                                 <div class='d-flex flex-column justify-content-between order-summary'>
@@ -388,7 +388,14 @@ if ($get_cart) {
                   },
                   dataType:"text",
                   success:function(data) {
-                    alert(data);
+                    if(data !=""){
+                        $('#btnLoad').remove();
+                        $('#order').append(data);
+                    }
+                    else{
+                        $('#btnLoad').remove();
+                        $('#order').append('<h4>No More Data To Show</h4>');
+                    }
                   }
                });
             });
