@@ -261,7 +261,7 @@ if ($get_cart) {
                                 </div>
                             </div>
                         </div>
-                    </div>";
+                    </div><br>";
                             $last_id = $row_order_no['ID'];
                         }
                     }
@@ -271,7 +271,7 @@ if ($get_cart) {
 
                     ?>
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary" type="button">Load More Orders...</button>
+                        <button class="btn btn-primary" type="button" id="btnload" data-id="<?php echo $last_id ?>" >Load More Orders...</button>
                     </div>
                 </div>
             </div>
