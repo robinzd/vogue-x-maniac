@@ -7,9 +7,12 @@ include("./function.php");
 $user_data = check_login($conn);
 
 $userid = $user_data['user_id'];
+echo "Check";
+print_r($_POST);
 
+print_r(isset($_POST['lastid']));
 // sleep(1);
-if (isset($_POST['lastid'])) {
+if (isset($_POST['lastid']) && $_POST['lastid']!="") {
     $last_id_1 = $_POST["lastid"];
 
 
