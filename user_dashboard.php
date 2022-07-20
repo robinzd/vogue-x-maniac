@@ -273,7 +273,7 @@ if ($get_cart) {
 
                     ?>
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary" type="button" id="btnload" data-id="<?php echo $last_id ?>">Load More Orders...</button>
+                        <button class="btn btn-primary" type="button" id="btnLoad" data-id="<?php echo $last_id ?>">Load More Orders...</button>
                     </div>
                 </div>
             </div>
@@ -377,8 +377,8 @@ if ($get_cart) {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
         $(document).ready(function(){
-            $(document).on('click','btnload',function(){
-                console.log('clicked');
+            $(document).on('click','btnLoad',function(){
+                alert("hai");
             })
         });
     </script>
