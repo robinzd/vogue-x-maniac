@@ -139,4 +139,31 @@ while ($row_order_no = mysqli_fetch_array($run_order_no)) {
 }
 
 
+
 ?>
+
+<script>
+$(document).ready(function() {
+    $(document).on('click', '#btnLoad', function() {
+        var lastid = $(this).data('id');
+        $('#btnLoad').html('Loading...');
+        $.ajax({
+            url: "load_data.php",
+            method: "POST",
+            data: {
+                lastid: lastid,
+            },
+            dataType: "text",
+            success: function(data) {
+                if (data != "") {
+                    $('#btnLoad').remove();
+                    $('#main-content').append(data);
+                } else {
+                    $('#btnLoad').remove();
+                    $('#main-content').append('<h4>No More Data To Show</h4>');
+                }
+            }
+        });
+    });
+});
+</script>
