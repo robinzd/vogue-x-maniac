@@ -81,7 +81,7 @@ if ($get_cart) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- link the external stylesheet -->
     <link rel="stylesheet" type="text/css" href="user_dashboard.css">
-    
+
 
 
 </head>
@@ -129,7 +129,7 @@ if ($get_cart) {
 
             ?>
 
-            <div  class="col-lg-12 my-lg-0 my-1">
+            <div class="col-lg-12 my-lg-0 my-1">
                 <div id="main-content" class="bg-white border">
                     <div class="d-flex flex-column">
                         <div class="h5">Hello <?php echo $firstname . " " . $lastname ?>,</div>
@@ -159,6 +159,11 @@ if ($get_cart) {
                     $real_status = "TXN_SUCCESS";
 
                     $cod_payment = 250;
+
+                    $select_rows_1 = mysqli_query($conn, "select * from from order_info where user_id='$user_id'");
+                    $row_count_1 = mysqli_num_rows($select_rows_1);
+
+                    if($row_count_1 > 1){
 
                     $get_order_no = "select * from order_info where user_id='$userid' ORDER BY ID DESC LIMIT 5 ";
 
@@ -267,14 +272,20 @@ if ($get_cart) {
                             $last_id = $row_order_no['ID'];
                         }
                     }
-
-
-
-
+                }
+                else{
+                    echo "<h1>No Orders Placed Yet</h1>";
+                }
                     ?>
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary" type="button" id="btnLoad" data-id="<?php echo $last_id ?>">Load More Orders...</button>
-                    </div>
+                    <?php
+                    $select_rows = mysqli_query($conn, "select * from from order_info where user_id='$user_id'");
+                    $row_count = mysqli_num_rows($select_rows);
+                    if ($row_count > 5) {
+                        echo "<div class='d-grid gap-2 col-6 mx-auto'>
+                        <button class='btn btn-primary' type='button' id='btnLoad' data-id='$last_id'>Load More Orders...</button>
+                    </div>";
+                    }
+                    ?>
                 </div>
             </div>
         </div>
@@ -376,32 +387,29 @@ if ($get_cart) {
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
-        $(document).ready(function(){
-            $(document).on('click','#btnLoad',function(){
-               var lastid = $(this).data('id');
-               $('#btnLoad').html('Loading...');
-               $.ajax({
-                  url:"load_data.php",
-                  method:"POST",
-                  data:{
-                   lastid:lastid,
-                  },
-                  dataType:"text",
-                  success:function(data) {
-                    if(data !=""){
-                        $('#btnLoad').remove();
-                        $('#main-content').append(data);
+        $(document).ready(function() {
+            $(document).on('click', '#btnLoad', function() {
+                var lastid = $(this).data('id');
+                $('#btnLoad').html('Loading...');
+                $.ajax({
+                    url: "load_data.php",
+                    method: "POST",
+                    data: {
+                        lastid: lastid,
+                    },
+                    dataType: "text",
+                    success: function(data) {
+                        if (data != "") {
+                            $('#btnLoad').remove();
+                            $('#main-content').append(data);
+                        } else {
+                            $('#btnLoad').remove();
+                            $('#main-content').append('<h4>No More Data To Show</h4>');
+                        }
                     }
-                    else{
-                        $('#btnLoad').remove();
-                        $('#main-content').append('<h4>No More Data To Show</h4>');
-                    }
-                  }
-               });
+                });
             });
         });
-
-       
     </script>
 
 
