@@ -261,7 +261,7 @@ if ($get_cart) {
                                 </div>
                             </div>
                         </div>
-                    </div><br>";
+                    </div>";
                             $last_id = $row_order_no['ID'];
                         }
                     }
