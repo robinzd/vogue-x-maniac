@@ -394,7 +394,7 @@ if ($get_cart) {
                     }
                     else{
                         $('#btnLoad').remove();
-                        $('#main-content').append('<h4>No More Data To Show</h4>');
+                        $('#main-content').append("<h4>No More Data To Show</h4>");
                     }
                   }
                });
