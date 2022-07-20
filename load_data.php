@@ -9,6 +9,7 @@ $user_data = check_login($conn);
 $userid = $user_data['user_id'];
 
 sleep(1);
+if(isset($_POST['lastid'])){
 $last_id_1 = $_POST["lastid"];
 
 
@@ -124,6 +125,7 @@ while ($row_order_no = mysqli_fetch_array($run_order_no)) {
         $last_id = $row_order_no['ID'];
     }
 }
+
 ?>
  <div class="d-grid gap-2 col-6 mx-auto">
     <button class="btn btn-primary" type="button" id="btnLoad" data-id="<?php echo $last_id ?>">Load More Orders...</button>
@@ -131,39 +133,9 @@ while ($row_order_no = mysqli_fetch_array($run_order_no)) {
 
 <?php
 
-{
-
-
 
 
 }
 
-
-
 ?>
 
-<script>
-$(document).ready(function() {
-    $(document).on('click', '#btnLoad', function() {
-        var lastid = $(this).data('id');
-        $('#btnLoad').html('Loading...');
-        $.ajax({
-            url: "load_data.php",
-            method: "POST",
-            data: {
-                lastid: lastid,
-            },
-            dataType: "text",
-            success: function(data) {
-                if (data != "") {
-                    $('#btnLoad').remove();
-                    $('#main-content').append(data);
-                } else {
-                    $('#btnLoad').remove();
-                    $('#main-content').append('<h4>No More Data To Show</h4>');
-                }
-            }
-        });
-    });
-});
-</script>
