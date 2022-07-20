@@ -129,7 +129,7 @@ if ($get_cart) {
 
             ?>
 
-            <div class="col-lg-12 my-lg-0 my-1">
+            <div id="order" class="col-lg-12 my-lg-0 my-1">
                 <div id="main-content" class="bg-white border">
                     <div class="d-flex flex-column">
                         <div class="h5">Hello <?php echo $firstname . " " . $lastname ?>,</div>
@@ -202,7 +202,7 @@ if ($get_cart) {
                                 $full_amount = $row_amount['transaction_amount'];
                             }
 
-                            echo "<div  id='order' class='order my-3 bg-light'>
+                            echo "<div   class='order my-3 bg-light'>
                         <div class='row'>
                             <div class='col-lg-12'>
                                 <div class='d-flex flex-column justify-content-between order-summary'>
