@@ -42,10 +42,7 @@ $last_id_1 = $_POST["lastid"];
 </head>
 
 <body>
-    <div class="container mt-4">
-        <div class="row">
-            <div class="col-lg-12 my-lg-0 my-1">
-                <div id="main-content" class="bg-white border">
+    
                 <?php
 
                     $real_status = "TXN_SUCCESS";
@@ -159,19 +156,11 @@ $last_id_1 = $_POST["lastid"];
                             $last_id = $row_order_no['ID'];
                         }
                     }
-
-
-
-
                     ?>
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <button class="btn btn-primary" type="button" id="btnLoad" data-id="<?php echo $last_id ?>">Load More Orders...</button>
                     </div>
-                </div>
-            </div>
-        </div>
-
-    </div><br>
+    
 
 
 <!-- j query -->
