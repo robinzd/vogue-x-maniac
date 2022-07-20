@@ -401,7 +401,6 @@ if ($get_cart) {
                     },
                     dataType: "text",
                     success: function(data) {
-                        console.log(data);
                         if (data != "") {
                             $('#btnLoad').remove();
                             $('#main-content').append(data);

@@ -9,10 +9,6 @@ $user_data = check_login($conn);
 $userid = $user_data['user_id'];
 
 sleep(1);
-echo $_POST['lastid'];
-echo "<br>";
-echo "Whole Post Data";
-echo $_POST;
 if (isset($_POST['lastid'])) {
     $last_id_1 = $_POST["lastid"];
 
@@ -139,6 +135,10 @@ if (isset($_POST['lastid'])) {
 
 
 
+}
+
+else{
+    echo "";
 }
 
 ?>
