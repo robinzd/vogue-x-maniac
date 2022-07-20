@@ -378,8 +378,20 @@ if ($get_cart) {
     <script>
         $(document).ready(function(){
             $(document).on('click','#btnLoad',function(){
-                alert("hai");
-            })
+               var lastid = $(this).data('id');
+               $('#btnLoad').html('Loading...');
+               $.ajax({
+                  url:"load_data.php",
+                  method:"POST",
+                  data:{
+                   lastid:lastid,
+                  },
+                  dataType:"text",
+                  success:function(data) {
+                    alert(data);
+                  }
+               });
+            });
         });
 
        
