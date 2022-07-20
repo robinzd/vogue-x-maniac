@@ -8,7 +8,7 @@ $user_data = check_login($conn);
 
 $userid = $user_data['user_id'];
 
-sleep(1);
+// sleep(1);
 if (isset($_POST['lastid'])) {
     $last_id_1 = $_POST["lastid"];
 
@@ -138,7 +138,9 @@ if (isset($_POST['lastid'])) {
 }
 
 else{
-    echo "";
+    echo '<div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-primary" type="button" id="btnLoad" disabled>No More Data.</button>
+</div>';
 }
 
 ?>
