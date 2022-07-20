@@ -7,11 +7,7 @@ include("./function.php");
 $user_data = check_login($conn);
 
 $userid = $user_data['user_id'];
-echo "Check";
-print_r($_POST);
 
-print_r(isset($_POST['lastid']));
-// sleep(1);
 if (isset($_POST['lastid']) && $_POST['lastid']!="") {
     $last_id_1 = $_POST["lastid"];
 
@@ -141,9 +137,10 @@ if (isset($_POST['lastid']) && $_POST['lastid']!="") {
 }
 
 else{
-    echo '<div class="d-grid gap-2 col-6 mx-auto">
-    <button class="btn btn-primary" type="button" id="btnLoad" disabled>No More Data.</button>
-</div>';
+//     echo '<div class="d-grid gap-2 col-6 mx-auto">
+//     <button class="btn btn-primary" type="button" id="btnLoad" disabled>No More Data.</button>
+// </div>';
+    echo "";
 }
 
 ?>
