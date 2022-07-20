@@ -41,7 +41,7 @@ while ($row_cart_delete = mysqli_fetch_array($run_cart_delete)) {
 
     $run_cart = mysqli_query($conn, $get_cart);
 
-   while ($row_cart = mysqli_fetch_array($run_cart)) {
+    while ($row_cart = mysqli_fetch_array($run_cart)) {
 
         $order_id_3 = $row_cart['order_id'];
     }
@@ -158,7 +158,7 @@ if ($get_cart) {
 
                     $cod_payment = 250;
 
-                    $get_order_no = "select * from order_info where user_id=$userid";
+                    $get_order_no = "select * from order_info where user_id='$userid' ORDER BY ID DESC LIMIT 5 ";
 
                     $run_order_no = mysqli_query($conn, $get_order_no);
 
@@ -262,6 +262,7 @@ if ($get_cart) {
                             </div>
                         </div>
                     </div>";
+                            $last_id = $row_order_no['ID'];
                         }
                     }
 
@@ -270,6 +271,9 @@ if ($get_cart) {
 
                     ?>
 
+                </div>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-primary" type="button">Load More Orders...</button>
                 </div>
             </div>
         </div>
