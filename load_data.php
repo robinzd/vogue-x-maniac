@@ -128,3 +128,15 @@ while ($row_order_no = mysqli_fetch_array($run_order_no)) {
 <div class="d-grid gap-2 col-6 mx-auto">
     <button class="btn btn-primary" type="button" id="btnLoad" data-id="<?php echo $last_id ?>">Load More Orders...</button>
 </div>
+
+<?php
+
+{
+
+
+
+    
+}
+
+
+?>
