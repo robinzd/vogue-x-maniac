@@ -129,8 +129,8 @@ if ($get_cart) {
 
             ?>
 
-            <div id="order" class="col-lg-12 my-lg-0 my-1">
-                <div id="main-content" class="bg-white border">
+            <div  class="col-lg-12 my-lg-0 my-1">
+                <div id="order" id="main-content" class="bg-white border">
                     <div class="d-flex flex-column">
                         <div class="h5">Hello <?php echo $firstname . " " . $lastname ?>,</div>
                         <div>Logged in as:<?php echo $useremail ?></div>
