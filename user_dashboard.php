@@ -282,7 +282,7 @@ if ($get_cart) {
                     <?php
                     $select_rows = mysqli_query($conn, "select * from order_info where user_id='$user_id'");
                     $row_count = mysqli_num_rows($select_rows);
-                    if ($row_count > 5) {
+                    if ($row_count > 4) {
                         echo "<div class='d-grid gap-2 col-6 mx-auto'>
                         <button class='btn btn-primary' type='button' id='btnLoad' data-id='$last_id'>Load More Orders...</button>
                     </div>";
