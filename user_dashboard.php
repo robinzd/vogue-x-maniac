@@ -81,8 +81,7 @@ if ($get_cart) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- link the external stylesheet -->
     <link rel="stylesheet" type="text/css" href="user_dashboard.css">
-    <!-- link external java script file -->
-    <script src="./user_dashboard.js"></script>
+    
 
 
 </head>
@@ -274,7 +273,7 @@ if ($get_cart) {
 
                     ?>
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <button class="btn btn-primary" type="button" id="btnload" data-id="<?php echo $last_id ?>" >Load More Orders...</button>
+                        <button class="btn btn-primary" type="button" id="btnload" data-id="<?php echo $last_id ?>">Load More Orders...</button>
                     </div>
                 </div>
             </div>
@@ -376,6 +375,15 @@ if ($get_cart) {
     <!-- owl carousel -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(document).on('click', 'btnload', function() {
+                alert("hai");
+            })
+        });
+    </script>
+
+
 </body>
 
 </html>
