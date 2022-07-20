@@ -376,9 +376,9 @@ if ($get_cart) {
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script>
-        $(document).ready(function() {
-            $(document).on('click', 'btnload', function() {
-                alert("hai");
+        $(document).ready(function(){
+            $(document).on('click','btnload',function(){
+                console.log('clicked');
             })
         });
     </script>
