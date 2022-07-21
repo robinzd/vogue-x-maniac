@@ -285,7 +285,7 @@ if ($get_cart) {
                 <?php
                    if ($row_count_1 > 5) {
                         echo "<div class='d-grid gap-2 col-6 mx-auto'>
-                        <button class='btn btn-primary' type='button' id='btnLoad' data-id='$last_id'>More Orders</button>
+                        <button class='btn btn-primary' type='button' id='btnLoad' data-id='$last_id'>See More</button>
                     </div>";
                     }
                     ?>
