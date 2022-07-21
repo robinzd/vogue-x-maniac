@@ -219,8 +219,8 @@
     }
 }
 
-#images{
-    text-align: center;
+div#images{
+    text-align: center !important;
 }
 
 /* footer */
