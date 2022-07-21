@@ -127,7 +127,7 @@ if (isset($_POST['lastid']) && $_POST['lastid']!="") {
 
     ?>
     <div class="d-grid gap-2 col-6 mx-auto">
-        <button class="btn btn-primary" type="button" id="btnLoad" data-id="<?php echo $last_id ?>">Load More Orders...</button>
+        <button class="btn btn-primary" type="button" id="btnLoad" data-id="<?php echo $last_id ?>">More Orders</button>
     </div>
 
 <?php
