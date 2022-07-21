@@ -138,7 +138,7 @@ if (isset($_POST['lastid']) && $_POST['lastid']!="") {
 
 else{
     echo '<div class="d-grid gap-2 col-6 mx-auto">
-    <button class="btn btn-primary" type="button" id="btnLoad" disabled>No More Data.</button>
+    <button class="btn btn-primary" type="button" id="btnLoad" disabled>No Orders..</button>
 </div>';
     
 }
