@@ -274,7 +274,7 @@ if ($get_cart) {
                             }
                         }
                     } else {
-                        echo "<div>
+                        echo "<div id='images'>
                         <img id='noorders' src='./noorders.png'><br>
                         <div class='text-uppercase'>No orders Placed Yet</div>
                         </div>";
