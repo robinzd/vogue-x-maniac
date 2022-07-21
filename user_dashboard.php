@@ -274,15 +274,12 @@ if ($get_cart) {
                             }
                         }
                     } else {
-                        echo "<h1>No Orders Placed</h1>";
+                        echo "<img src='./noorders.png'>";
                     }
 
-                    ?>
-
-                    <?php
-                    $select_rows = mysqli_query($conn, "select * from order_info where user_id='$user_id'");
-                    $row_count = mysqli_num_rows($select_rows);
-                    if ($row_count > 4) {
+                  ?>
+                <?php
+                   if ($row_count_1 > 5) {
                         echo "<div class='d-grid gap-2 col-6 mx-auto'>
                         <button class='btn btn-primary' type='button' id='btnLoad' data-id='$last_id'>Load More Orders...</button>
                     </div>";
