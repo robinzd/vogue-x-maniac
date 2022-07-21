@@ -137,6 +137,11 @@
     border-radius: 20px;
 }
 
+div#images{
+    text-align: center !important;
+}
+
+
 
 
 
@@ -219,9 +224,6 @@
     }
 }
 
-div#images{
-    text-align: center !important;
-}
 
 /* footer */
 
