@@ -75,17 +75,14 @@ if ($get_user) {
 				<div class="col-md-4 d-flex">
 					<div class="social-media">
 						<p class="mb-0 d-flex">
-                        <a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
-                        <?php
-                            if($user_id == 0){
-
-								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
-
-                            if ($row_count > 0) {
+							<a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
+							<?php
+							if ($user_id == 0) {
+                                echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
+							} elseif ($row_count > 0) {
 
 								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span><span id='product'>$row_count</span></a>";
-							}
-						 } else {
+							} else {
 								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
 							}
 
@@ -97,7 +94,7 @@ if ($get_user) {
 							<?php
 							$get_is_admin = "select is_admin from users where is_admin='1' AND user_id='$user_id'";
 
-							$run_is_admin = mysqli_query($conn,$get_is_admin);
+							$run_is_admin = mysqli_query($conn, $get_is_admin);
 
 
 
@@ -105,10 +102,9 @@ if ($get_user) {
 
 
 								$admin = $row_is_admin['is_admin'];
-
 							}
-							if($admin > 0){
-                            echo "<a href='./admin_panel/admin_panel.php' class='d-flex align-items-center justify-content-center'><span class='fa fa-dribbble'><i class='sr-only'>Dribbble</i></span></a>";
+							if ($admin > 0) {
+								echo "<a href='./admin_panel/admin_panel.php' class='d-flex align-items-center justify-content-center'><span class='fa fa-dribbble'><i class='sr-only'>Dribbble</i></span></a>";
 							}
 							?>
 						</p>
