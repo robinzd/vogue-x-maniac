@@ -267,11 +267,12 @@ img#brand{
 }
 
 .text-center.p-3{
-  background-color: #1d1d1f !important;
+  background-color: #424245 !important;
 }
 
 footer.text-center.text-lg-start.text-dark{
-  background-color: #424245 !important;
+  
+  background-color: #1d1d1f !important;
 }
 
 a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2{
