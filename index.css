@@ -278,7 +278,6 @@ a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2{
     border-radius: 50%;
     background-color: rgb(59,89,152);
     color:white;
-    
 }
 
 a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2:hover{
@@ -321,6 +320,7 @@ p.text-white{
 
 h6.text-uppercase.mb-4.font-weight-bold{
   font-family:'Redressed', cursive;
+  color:lightgrey !important;
 }
 
 p#address{
