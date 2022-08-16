@@ -497,7 +497,7 @@ include("./conn.php");
 
 
                         <!-- Instagram -->
-                        <a class="instagram" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram" role="button"><i class="fab fa-instagram"></i></a>
+                        <a class=" mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram" role="button"><i class="fab fa-instagram"></i></a>
 
                     </div>
                 </div>
