@@ -311,6 +311,10 @@ a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2:hover{
   color:black;
 } */
 
+.facebook{
+  width: 20% !important;
+}
+
 p.text-white{
   margin-top: 20px;
 }
