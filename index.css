@@ -277,6 +277,21 @@ footer.text-center.text-lg-start.text-dark{
   font-size: 25px;
 }
 
+#twitter{
+  color:#00acee;
+  font-size: 25px;
+}
+
+#youtube{
+  color:#FF0000;
+  font-size: 25px;
+}
+
+#instagram{
+  color:#C13584;
+  font-size: 25px;
+}
+
 
 p.text-white{
   margin-top: 20px;
