@@ -323,6 +323,10 @@ h6.text-uppercase.mb-4.font-weight-bold{
   color:lightgrey !important;
 }
 
+hr.w-100.clearfix.d-md-none {
+  color: lightgrey !important;
+}
+
 p#address{
   white-space: nowrap;
 }
