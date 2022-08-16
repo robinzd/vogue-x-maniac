@@ -16,10 +16,6 @@ if ($get_user) {
 	$row_count = mysqli_num_rows($select_rows);
 }
 
-
-
-
-
 ?>
 
 

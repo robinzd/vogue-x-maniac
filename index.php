@@ -438,7 +438,7 @@ include("./conn.php");
 
     <!-- Footer -->
 
-    <footer class="text-center text-lg-start text-dark" style="background-color:lightgrey">
+    <footer class="text-center text-lg-start text-dark">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
             <!-- Section: Links -->
@@ -508,7 +508,7 @@ include("./conn.php");
         <!-- Grid container -->
 
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.096)">
+        <div class="text-center p-3">
 
             <p class="text-dark"> ©2022 Vogue X Maniac.All Rights Reserved
             </p>
