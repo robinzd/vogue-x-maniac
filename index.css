@@ -8,6 +8,8 @@ a.navbar-brand.text-dark{
 
 body{
   background-color: ghostwhite !important;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
 }
 
 .body1{
