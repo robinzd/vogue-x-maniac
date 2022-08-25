@@ -11,10 +11,7 @@ body{
   
 }
 
-.body1{
-  overflow-y: scroll !important;
-  height:1500px;
-}
+
 
 a#brand{
     font-size: 20px;
