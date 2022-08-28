@@ -5,6 +5,14 @@ body{
   background-color: ghostwhite !important;
 }
 
+#contact{
+  margin-top: 20%;
+}
+
+#map{
+  margin-top: 20%;
+}
+
 .text-center.py-2{
     background-color: lightgreen;
     color:black;

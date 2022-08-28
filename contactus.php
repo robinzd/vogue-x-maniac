@@ -78,7 +78,7 @@ if (!empty($name) && !is_numeric($name) && !empty($email)&& !empty($subject) && 
       <!--Contact heading-->
       <div class="row">
          <!--Grid column-->
-         <div class="col-sm-12 mb-4 col-md-5">
+         <div class="col-sm-12 mb-4 col-md-5" id="contact">
             <!--Form with header-->
             <div class="card border-success rounded-0">
                <div class="card-header p-0">
@@ -123,7 +123,7 @@ if (!empty($name) && !is_numeric($name) && !empty($email)&& !empty($subject) && 
          <!--Grid column-->
 
          <!--Grid column-->
-         <div class="col-sm-12 col-md-7">
+         <div class="col-sm-12 col-md-7" id="map">
             <!--Google map-->
             <div class="mb-4">
                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d117223.77996815204!2d85.3213263!3d23.3432048!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x11b5a9b0042eef56!2sourcita.com!5e0!3m2!1sen!2sin!4v1589706571407!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
