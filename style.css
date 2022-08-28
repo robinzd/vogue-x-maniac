@@ -242,6 +242,10 @@ figure {
 img {
   vertical-align: middle;
   border-style: none;
+ 
+}
+
+#imageid{
   margin-top: -35px;
 }
 
