@@ -38,7 +38,10 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-
+#navbartop{
+  position: fixed;
+  z-index: 1000;
+}
 
 .ftco-section {
   background-color: ghostwhite;
