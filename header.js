@@ -7,3 +7,6 @@ function scrollFunction() {
     document.getElementsByClassName("ftco-section py-0").style.top = "-50px";
   }
 }
+
+
+console.log("hai");
