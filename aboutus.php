@@ -35,7 +35,7 @@
 
     
 <section id="brands" class="text-center about">
-       <div class="container">
+       <div class="container" id="about">
         <div class="row">
           <div class="col-lg-4 col-sm-6 col-ex-12 about-item wow lightSpeedIn" data-wow-offset="200">
             <span class="fas fa-user-group"></span>
