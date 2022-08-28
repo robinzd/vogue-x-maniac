@@ -5,6 +5,9 @@ body{
 	background-color: ghostwhite !important;
 }
 
+.container{
+	margin-top: 20%;
+}
 
 .about{
 	cursor: pointer;
