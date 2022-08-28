@@ -41,7 +41,8 @@
 #navbartop{
   position: fixed !important;
   z-index: 1000;
-  top:0px;
+  top: 0;
+  bottom:0;
 }
 
 .ftco-section {
