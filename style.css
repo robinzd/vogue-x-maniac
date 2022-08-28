@@ -39,9 +39,10 @@
 }
 
 #navbartop{
-  position: fixed;
+  position: fixed !important;
   z-index: 1000;
   top:0px;
+  position:static !important;
 }
 
 .ftco-section {
