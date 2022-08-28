@@ -39,7 +39,7 @@
 }
 
 #navbartop{
-  position:sticky !important;
+  position:fixed !important;
   z-index: 1000;
   top: 0;
 }
