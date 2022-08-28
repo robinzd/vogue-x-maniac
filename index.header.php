@@ -42,7 +42,7 @@ if ($get_user) {
 </head>
 
 <body>
-	<section class="ftco-section py-0">
+	<section class="ftco-section py-0" id="navbartop">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
