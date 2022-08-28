@@ -37,6 +37,9 @@ if ($get_user) {
 
 	<link rel="stylesheet" href="style.css">
 
+	 <!-- external javascript file -->
+	 <script src="./header.js"></script>
+
 
 
 </head>
