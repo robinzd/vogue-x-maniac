@@ -10,7 +10,9 @@ html, body {
     background-color: ghostwhite !important;
 }
 
-
+.form-content {
+    margin-top: 15%;
+}
 
 
 .form-holder {
