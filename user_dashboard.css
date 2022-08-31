@@ -10,15 +10,9 @@
   font-family: "Poppins", sans-serif;
 }
 
-div#main-content {
-    margin-top: 20% !important;
-}
-
 #main-content {
- margin: top 20%;
   padding: 30px;
   border-radius: 15px;
-  
 }
 
 .order.my-3.bg-light {
@@ -42,6 +36,7 @@ div#main-content {
   width: 250px;
   height: 90px;
   background-color: #ced4da !important;
+  margin-top: 20%;
 }
 
 #main-content .box img {
