@@ -8,6 +8,10 @@ body {
   background-color: ghostwhite !important;
 }
 
+.row.d-flex.justify-content-center{
+  margin-top: 20% !important;
+}
+
 /**
  * Shop
  */
