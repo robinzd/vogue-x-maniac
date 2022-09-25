@@ -9,6 +9,10 @@ body{
     border: none
 }
 
+.row.d-flex.justify-content-center{
+  margin-top: 20% !important;
+}
+
 /* cards */
 .card{
   border-radius: 10px !important;
