@@ -13,12 +13,9 @@
 #main-content {
   padding: 30px;
   border-radius: 15px;
-
+ margin-top: 20% !important;
 }
 
-div#main-content{
-  margin-top:40% !important;
-}
 
 .order.my-3.bg-light {
   background-color: lightgrey !important;
