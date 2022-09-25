@@ -13,7 +13,11 @@
 #main-content {
   padding: 30px;
   border-radius: 15px;
-  margin-top:20%;
+
+}
+
+div#main-content{
+  margin-top:20% !important;
 }
 
 .order.my-3.bg-light {
