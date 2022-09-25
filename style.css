@@ -11852,14 +11852,14 @@ h5,
 }
 
 .ftco-navbar-light {
-  background: #252525 !important;
+  background: var(--red) !important;
   z-index: 3;
   padding: 0;
 }
 
 @media (max-width: 991.98px) {
   .ftco-navbar-light {
-    background: var(--red) !important;
+    background: #000 !important;
     position: relative;
     top: 0;
     padding: 10px 15px;
