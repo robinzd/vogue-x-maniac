@@ -51,8 +51,7 @@ include("./conn.php");
 
     <!--back to top ends -->
 
-    <?php
-    echo "hai" ?>
+  
 
     <!-- Carousel -->
     <div id="demo" class="carousel slide" data-bs-ride="carousel">
