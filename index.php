@@ -28,11 +28,11 @@ include("./conn.php");
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <!-- link the external stylesheet -->
     <link rel="stylesheet" type="text/css" href="index.css">
- </head>
+</head>
 
 <body>
 
-  <!-- navbar starts -->
+    <!-- navbar starts -->
 
 
     <?php
@@ -51,10 +51,12 @@ include("./conn.php");
 
     <!--back to top ends -->
 
-
+    <?php
+    echo "hai" ?>
 
     <!-- Carousel -->
-      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
 
         <!-- Indicators/dots -->
         <div class="carousel-indicators">
@@ -509,7 +511,7 @@ include("./conn.php");
     <!-- end of the footer -->
 
 
-   <!-- j query -->
+    <!-- j query -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- owl carousel -->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
