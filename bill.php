@@ -61,11 +61,9 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
     }if( $query_order){
         $update_query_cart = mysqli_query($conn, "update  products_cart set order_id='$order_id' where user_id='$userid'");
     } else {
-
-        echo "<script>alert('Something Went Wrong!');</script>";
+    echo "<script>alert('Something Went Wrong!');</script>";
     }
 } else {
-
     echo "<script>alert('Something Went Wrong!');</script>";
 }
 
@@ -76,7 +74,6 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
