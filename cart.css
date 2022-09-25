@@ -10,6 +10,10 @@
     padding: 10px;
 }
 
+.table-responsive.d-none.d-md-block{
+    margin-top: 10%;
+}
+
 body {
     background: #eee;
 }
