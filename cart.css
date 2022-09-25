@@ -11,7 +11,7 @@
 }
 
 .table-responsive.d-none.d-md-block{
-    margin-top: 10%;
+    margin-top: 10% !important;
 }
 
 body {
