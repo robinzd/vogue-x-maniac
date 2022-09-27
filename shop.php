@@ -8,10 +8,7 @@ $searchstring = isset($_POST['search']) ? $_POST['search'] : "";
 
 $searchingquery = "SELECT * FROM products_details WHERE product_title LIKE '%$searchstring%'";
 
-
 $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
-
-
 
 ?>
 
@@ -35,7 +32,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
     <!-- link the external css sheet -->
     <link rel="stylesheet" type="text/css" href="shop.css">
     <!-- jquery -->
-     <script src="./js/jquery-1.10.2.min.js"></script>
+    <script src="./js/jquery-1.10.2.min.js"></script>
     <title>Shop</title>
 </head>
 
@@ -67,7 +64,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
 
                     <!-- Checkboxes -->
-                    <div class="list-group"  style="overflow-y: scroll;height: 400px;">
+                    <div class="list-group" style="overflow-y: scroll;height: 400px;">
                         <h3 class="headline">
                             <span>Brands</span>
                         </h3>
@@ -128,27 +125,27 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
             <div class="col-sm-8 col-md-9" style="overflow-y: scroll;height: 1000px;">
                 <form action="shop.php">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Sort by
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="shop.php?order=desc">High to Low</a></li>
-                        <li><a class="dropdown-item" href="shop.php?order=asc">Low to High</a></li>
-                        <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
-                    </ul>
-                </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            Sort by
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="shop.php?order=desc">High to Low</a></li>
+                            <li><a class="dropdown-item" href="shop.php?order=asc">Low to High</a></li>
+                            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                    </div>
                 </form>
                 <!-- Filters -->
                 <div class="row filter_data">
                     <?php
 
-                    if ($searchingquery) {
+                    if ($searchingquery){
                         $get_product_slider = $searchingquery;
                     } else {
                         $get_product_slider = "select * from products_details";
                     };
-                    if($ordervalue) {
+                    if ($ordervalue) {
                         $get_product_slider .= "ORDER BY product_price $ordervalue";
                     }
 
@@ -229,7 +226,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                         <!--Grid row-->
                         <div class="row">
                             <!-- Grid column -->
-                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" >
+                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                                 <img class="footerimage" src="./header images/vogue x maniac png.png" alt="brand image">
                                 <p class="text-white">
                                     Here you can use rows and columns to organize your footer
@@ -331,7 +328,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                                     brand: brand,
                                     category: category,
                                     search_string: "<?php echo $searchstring; ?>",
-                                    order_value:"<?php echo $ordervalue; ?>",
+                                    order_value: "<?php echo $ordervalue; ?>",
 
                                 },
                                 success: function(data) {
