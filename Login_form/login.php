@@ -155,10 +155,10 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 						</span>
 					</div>
 
-					 <!-- <div class="login100-form-social flex-c-m">
+					 <div class="login100-form-social flex-c-m">
 						<a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
 							<i class="fa fa-facebook-f" aria-hidden="true"></i>
-						</a> -->
+						</a>
 
 						<a href="#" class="login100-form-social-item flex-c-m bg2 m-r-5">
 							<i class="fa fa-google" aria-hidden="true"></i>
