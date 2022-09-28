@@ -1,11 +1,11 @@
 <?php
-
+include("google.php");
 session_start();
 
 
 include("../conn.php");
 include("../function.php");
-include("google.php");
+
 
 
 
