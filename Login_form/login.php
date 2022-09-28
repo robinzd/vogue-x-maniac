@@ -212,15 +212,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 							}
 						}
 
-						// echo "<a href='" . $client->createAuthUrl() . "'>Login With Google</a>";
+						 echo "<a href='" . $client->createAuthUrl() . "'>Login With Google</a>";
 
 						//google integration code ends//
 
 						
 
-						echo "<a href='". $client->createAuthUrl() ."' class='login100-form-social-item flex-c-m bg2 m-r-5'>
-							<i class='fa fa-google' aria-hidden='true'>google</i>
-						</a>";
+						// <a href="" class="login100-form-social-item flex-c-m bg2 m-r-5">
+						// 	<i class="fa fa-google" aria-hidden="true"></i>
+						// </a>
 
 						?>
 					</div>
