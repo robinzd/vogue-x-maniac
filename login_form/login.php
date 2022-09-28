@@ -5,7 +5,7 @@ session_start();
 
 include("../conn.php");
 include("../function.php");
-require './google-api-php-client-2.4.0/google-api-php-client-2.4.0/vendor/autoload.php';
+// require './google-api-php-client-2.4.0/google-api-php-client-2.4.0/vendor/autoload.php';
 
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
