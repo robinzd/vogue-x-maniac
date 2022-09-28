@@ -154,7 +154,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 						</a> -->
 						
                     
-					 <a href=" " class="login100-form-social-item flex-c-m bg2 m-r-5">
+					 <a href="./google.php" class="login100-form-social-item flex-c-m bg2 m-r-5">
 							<i class="fa fa-google" aria-hidden="true"></i>
 					</a>
 				</div> 
