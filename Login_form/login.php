@@ -218,15 +218,15 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 						
 
-						// <a href="" class="login100-form-social-item flex-c-m bg2 m-r-5">
-						// 	<i class="fa fa-google" aria-hidden="true"></i>
-						// </a>
+						
+					?>
+					<a href="" class="login100-form-social-item flex-c-m bg2 m-r-5">
+							<i class="fa fa-google" aria-hidden="true"></i>
+						</a>
 
-						?>
 					</div>
 				</form>
-
-				<div class="login100-more" style="background-image: url('images/login-pic.jpg');">
+                <div class="login100-more" style="background-image: url('images/login-pic.jpg');">
 				</div>
 			</div>
 		</div>
