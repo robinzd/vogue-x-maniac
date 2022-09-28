@@ -153,12 +153,11 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 							<i class="fa fa-facebook-f" aria-hidden="true"></i>
 						</a> -->
 						
-                    <?php 
-					echo "<a href='". $client->createAuthUrl() . "' class='login100-form-social-item flex-c-m bg2 m-r-5'>
-							<i class='fa fa-google' aria-hidden='true'></i>
-					</a>"
-					?>
-					</div> 
+                    
+					 <a href=<?php echo "'". $client->createAuthUrl() . "'"?> class="login100-form-social-item flex-c-m bg2 m-r-5">
+							<i class="fa fa-google" aria-hidden="true"></i>
+					</a>
+				</div> 
 				</form>
 
 				<div class="login100-more" style="background-image: url('images/login-pic.jpg');">
