@@ -5,6 +5,8 @@ session_start();
 
 include("../conn.php");
 include("../function.php");
+require './google-api-php-client-2.4.0/google-api-php-client-2.4.0/vendor/autoload.php';
+
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	// something was posted
@@ -45,7 +47,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 // google integration code starts//
 
-require './google-api-php-client-2.4.0/google-api-php-client-2.4.0/vendor/autoload.php';
 
 $clientId = "428003245396-63d10kjmatp8ubebi6qunbdj6sjvn1t9.apps.googleusercontent.com";
 $clientSecret = "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";
@@ -59,7 +60,7 @@ $client->setRedirectUri($redirectURI);
 $client->addScope("email");
 $client->addScope("profile");
 
-if (isset($_GET["code"])){
+if(isset($_GET["code"])){
     $token = $client->fetchAccessTokenWithAuthCode($_GET["code"]);
     $client->setAccessToken($token["access_token"]);
 
@@ -100,6 +101,7 @@ if (isset($_GET["code"])){
         header("location:../index.php");
     }
 }
+
 // echo "<a href='" . $client->createAuthUrl() . "'>Login With Google</a>";
 
 //google integration code ends//
