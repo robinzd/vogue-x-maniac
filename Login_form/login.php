@@ -1,12 +1,8 @@
 <?php
-include("google.php");
 session_start();
-
 
 include("../conn.php");
 include("../function.php");
-
-
 
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
