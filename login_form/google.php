@@ -2,11 +2,12 @@
 session_start();
 include("../conn.php");
 include("../function.php");
-require './google-api-php-client-2.4.0/google-api-php-client-2.4.0/vendor/autoload.php';
+
 
 
 // google integration code starts//
 
+require './google-api-php-client-2.4.0/google-api-php-client-2.4.0/vendor/autoload.php';
 
 $clientId = "428003245396-63d10kjmatp8ubebi6qunbdj6sjvn1t9.apps.googleusercontent.com";
 $clientSecret = "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";
