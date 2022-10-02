@@ -70,7 +70,7 @@ if (isset($_POST['submit'])) {
 
 	<!--back to top ends -->
 
-	<div class="signup-form" style="zoom:80%">
+	<div class="signup-form" style="zoom:80%" id="myform">
 		<form method="POST">
 			<?php
 			$eid = $_GET['editid'];
