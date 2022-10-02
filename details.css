@@ -269,109 +269,62 @@ color:black;
 
 
 
- /* footer */
-
-
-
- img.footerimage{
+img.footerimage {
   width: 120px;
 }
 
-
-a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2{
-  border-radius: 50%;
-  background-color:rgb(59,89,152);
-  color: white;
-  
-  
+.text-center.p-3 {
+  background-color: #1d1d1f !important;
 }
 
-a.btn.pmd-btn-fab.pmd-ripple-effect.btn-info.pmd-btn-flat.mx-1.my-2{
-  border-radius: 50%;
-  background-color:skyblue;
-  color: white;
-  
+footer.text-center.text-lg-start.text-dark {
+  background-color: #424245 !important;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-
-a.btn.pmd-btn-fab.pmd-ripple-effect.btn-danger.pmd-btn-flat.mx-1.my-2{
-  border-radius:50%;
-  background-color:#d63384;
-  color: white;
+#facebook {
+  color: #3b5998;
+  font-size: 25px;
 }
 
-a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2{
-  border-radius: 50%;
-  background-color: red;
-  color: white;
+#twitter {
+  color: #00acee;
+  font-size: 25px;
 }
 
-p.text-white{
-margin-top: 20px;
+#youtube {
+  color: #ff0000;
+  font-size: 25px;
 }
 
-
-h6.text-uppercase.mb-4.font-weight-bold{
-font-family:'Redressed', cursive;
+#instagram {
+  color: #c13584;
+  font-size: 25px;
 }
 
-p#address{
+p.text-white {
+  margin-top: 20px;
+}
+
+h6.text-uppercase.mb-4.font-weight-bold {
+  font-family: "Redressed", cursive;
+  color: lightgrey !important;
+}
+
+hr.w-100.clearfix.d-md-none {
+  color: lightgrey !important;
+}
+
+p#address {
   white-space: nowrap;
-}
-
-.fa-long-arrow-left:hover{
-  color: black;
-}
-
-.fa-long-arrow-left{
-  cursor: pointer;
-}
-
-span.ml-1:hover{
-  color: black;
-}
-
-span.ml-1{
-  cursor:pointer;
-}
-
-.fa-home:hover{
-  color:black;
 }
 
 img.px-2 {
   width: 50px;
 }
 
-#offer{
-  margin-top: 10px;
-  font-size: 12px;
-  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-#offerheading{
-  font-family: 'Redressed', cursive;
-  font-size: 20px;
-  margin-top: 10px;
-}
-
-
- 
-a.btn.pmd-btn-fab.pmd-ripple-effect.btn-primary.pmd-btn-flat.mx-1.my-2:hover{
-  color:black;
-}
-
-a.btn.pmd-btn-fab.pmd-ripple-effect.btn-info.pmd-btn-flat.mx-1.my-2:hover{
-  color:black;
-}
-
-a.btn.pmd-btn-fab.pmd-ripple-effect.btn-danger.pmd-btn-flat.mx-1.my-2:hover{
-  color:black;
-}
-
-a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2:hover{
-  color:black;
-}
+/* footer ends */
 
 /* -- quantity box -- */
 
