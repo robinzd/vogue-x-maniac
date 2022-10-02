@@ -256,3 +256,15 @@ p#address{
 img.px-2 {
   width: 50px;
 }
+
+@media (max-width:480px) {
+    #myform {
+        margin-top: 55% !important;
+  }
+  }
+  
+   @media (max-width:768px) {
+    #myform {
+        margin-top: 55% !important;
+  }
+  }
