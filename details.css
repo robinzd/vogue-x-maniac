@@ -434,7 +434,17 @@ a.btn.pmd-btn-fab.pmd-ripple-effect.btn-secondary.pmd-btn-flat.mx-1.my-2:hover{
   }
  
   
+  @media (max-width:480px) {
+    #cards{
+      margin-top: 75% !important;
+    }
+  }
   
+   @media (max-width:768px) {
+    #cards{
+      margin-top: 75% !important;
+    }
+  }
  
   
 

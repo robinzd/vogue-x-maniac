@@ -53,7 +53,7 @@ include("./conn.php");
     <div class="container-fluid mt-5 mb-5">
         <div class="row d-flex justify-content-center">
             <div class="col-md-10">
-                <div class="card">
+                <div class="card" id="cards">
                     <div class="row">
                         <div class="col-md-6">
                             <div class='images p-3'>
