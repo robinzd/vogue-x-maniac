@@ -300,10 +300,12 @@ button#btnLoad{
 }
 
 button#btnLoad:focus{
- border: 1px solid white;
+ border: 1px solid white !important;
+ outline:none !important;
 }
 
 button#btnLoad:hover{
  background-color: #000;
  color: white;
+
  }
