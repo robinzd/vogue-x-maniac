@@ -290,3 +290,9 @@ img.px-2 {
     margin-top: 75% !important;
 }
 }
+
+
+/* load button */
+button#btnLoad{
+  border-radius: 20px !important;
+}
