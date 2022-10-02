@@ -140,7 +140,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                 <div class="row filter_data">
                     <?php
 
-                    if ($searchingquery){
+                    if ($searchingquery) {
                         $get_product_slider = $searchingquery;
                     } else {
                         $get_product_slider = "select * from products_details";
@@ -218,7 +218,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
             <!-- Footer -->
 
-            <footer class="text-center text-lg-start text-dark" style="background-color:lightgrey">
+            <footer class="text-center text-lg-start text-dark">
                 <!-- Grid container -->
                 <div class="container p-4 pb-0">
                     <!-- Section: Links -->
@@ -229,9 +229,7 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                             <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                                 <img class="footerimage" src="./header images/vogue x maniac png.png" alt="brand image">
                                 <p class="text-white">
-                                    Here you can use rows and columns to organize your footer
-                                    content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit.
+                                    vogue-x-maniac is the one of the leading ecommerce website
                                 </p>
                             </div>
                             <!-- Grid column -->
@@ -269,17 +267,17 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                                 <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
 
                                 <!-- Facebook -->
-                                <a class="btn pmd-btn-fab pmd-ripple-effect btn-primary pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" role="button"><i class="fab fa-facebook"></i></a>
+                                <a class="mx-1 my-2" id="facebook" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" role="button"><i class="fab fa-facebook"></i></a>
 
                                 <!-- Twitter -->
-                                <a class="btn pmd-btn-fab pmd-ripple-effect btn-info pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" role="button"><i class="fab fa-twitter"></i></a>
+                                <a class=" mx-1 my-2" id="twitter" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" role="button"><i class="fab fa-twitter"></i></a>
 
                                 <!-- youtube -->
-                                <a class="btn pmd-btn-fab pmd-ripple-effect btn-secondary pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="youtube" role="button"><i class="fab fa-youtube"></i></a>
+                                <a class="mx-1 my-2" id="youtube" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="youtube" role="button"><i class="fab fa-youtube"></i></a>
 
 
                                 <!-- Instagram -->
-                                <a class="btn pmd-btn-fab pmd-ripple-effect btn-danger pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram" role="button"><i class="fab fa-instagram"></i></a>
+                                <a class="mx-1 my-2" id="instagram" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram" role="button"><i class="fab fa-instagram"></i></a>
 
                             </div>
                         </div>
@@ -290,13 +288,13 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                 <!-- Grid container -->
 
                 <!-- Copyright -->
-                <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.096)">
+                <div class="text-center p-3">
 
                     <p class="text-dark"> ©2022 Vogue X Maniac.All Rights Reserved
-                    <p>
-                        <img class="px-2" src="./payment_pics/2560px-MasterCard_Logo.svg-removebg-preview.png">
-                        <img class="px-2" src="./payment_pics/1200px-Visa.svg-removebg-preview.png">
-                        <img class="px-2" src="./payment_pics/paypal-logo-removebg-preview.png">
+                    </p>
+                    <img class="px-2" src="./payment_pics/2560px-MasterCard_Logo.svg-removebg-preview.png">
+                    <img class="px-2" src="./payment_pics/1200px-Visa.svg-removebg-preview.png">
+                    <img class="px-2" src="./payment_pics/paypal-logo-removebg-preview.png">
                 </div>
                 <!-- Copyright -->
             </footer>
