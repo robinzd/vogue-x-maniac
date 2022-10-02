@@ -402,11 +402,11 @@ img.px-2 {
 
 
 /* view in the mobile */
- @media (max-width:480px) {
+ /* @media (max-width:480px) {
   .demos {
     margin-top: 68% !important;
 }
-}
+} */
 
 /* @media (max-width:768px) {
   .demos {
