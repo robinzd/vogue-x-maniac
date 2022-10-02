@@ -254,3 +254,16 @@ p#address{
 img.px-2 {
   width: 50px;
 }
+
+@media (max-width:480px) {
+    #myaddress1 {
+        margin-top: 70% !important;
+  }
+  }
+  
+   @media (max-width:768px) {
+    #myaddress1 {
+        margin-top: 70% !important;
+  }
+  }
+
