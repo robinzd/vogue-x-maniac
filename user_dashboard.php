@@ -279,12 +279,11 @@ if ($get_cart) {
                         <img id='noorders' src='./noorders.png'><br>
                         <div class='text-uppercase'>No orders Placed Yet</div>
                         </div>";
-
                     }
 
-                  ?>
-                <?php
-                   if ($row_count_1 > 5) {
+                    ?>
+                    <?php
+                    if ($row_count_1 > 5) {
                         echo "<div class='d-grid gap-2 col-6 mx-auto'>
                         <button class='btn btn-primary' type='button' id='btnLoad' data-id='$last_id'>See More</button>
                     </div>";
@@ -301,7 +300,7 @@ if ($get_cart) {
 
     <!-- Footer -->
 
-    <footer class="text-center text-lg-start text-dark" style="background-color:lightgrey">
+    <footer class="text-center text-lg-start text-dark">
         <!-- Grid container -->
         <div class="container p-4 pb-0">
             <!-- Section: Links -->
@@ -350,17 +349,17 @@ if ($get_cart) {
                         <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
 
                         <!-- Facebook -->
-                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-primary pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" role="button"><i class="fab fa-facebook"></i></a>
+                        <a class="mx-1 my-2" id="facebook" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" role="button"><i class="fab fa-facebook"></i></a>
 
                         <!-- Twitter -->
-                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-info pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" role="button"><i class="fab fa-twitter"></i></a>
+                        <a class=" mx-1 my-2" id="twitter" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" role="button"><i class="fab fa-twitter"></i></a>
 
                         <!-- youtube -->
-                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-secondary pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="youtube" role="button"><i class="fab fa-youtube"></i></a>
+                        <a class="mx-1 my-2" id="youtube" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="youtube" role="button"><i class="fab fa-youtube"></i></a>
 
 
                         <!-- Instagram -->
-                        <a class="btn pmd-btn-fab pmd-ripple-effect btn-danger pmd-btn-flat mx-1 my-2" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram" role="button"><i class="fab fa-instagram"></i></a>
+                        <a class="mx-1 my-2" id="instagram" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Instagram" role="button"><i class="fab fa-instagram"></i></a>
 
                     </div>
                 </div>
@@ -371,7 +370,7 @@ if ($get_cart) {
         <!-- Grid container -->
 
         <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.096)">
+        <div class="text-center p-3">
 
             <p class="text-dark"> ©2022 Vogue X Maniac.All Rights Reserved
             </p>
