@@ -402,7 +402,7 @@ img.px-2 {
 
 
 /* view in the mobile */
-@media (max-width:500px) {
+/* @media (max-width:500px) {
   .demos {
     margin-top: 68% !important;
 }
@@ -418,5 +418,5 @@ img.px-2 {
   .demos {
     margin-top: 68% !important;
 }
-}
+} */
 
