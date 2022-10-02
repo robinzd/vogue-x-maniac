@@ -46,7 +46,7 @@ include("./conn.php");
 
   <!-- navbar  ends -->
   <!-- hide only on xs -->
-  <div class="form-body d-none d-sm-block">
+  <div class="form-body d-none d-sm-block" id="myaddress">
     <div class="row">
       <div class="form-holder">
         <div class="form-content">
@@ -123,7 +123,7 @@ include("./conn.php");
   <!-- hide only on xs -->
 
   <!-- visible only on xs -->
-  <div class="form-body  d-block d-sm-none" style="zoom:70%">
+  <div class="form-body  d-block d-sm-none" style="zoom:70%" id="myaddress1">
     <div class="row">
       <div class="form-holder">
         <div class="form-content">
