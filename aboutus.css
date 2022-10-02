@@ -133,13 +133,13 @@ img.px-2 {
 
 @media (max-width:480px) {
 	#about{
-		margin-top: 100% !important;
+		margin-top: 90% !important;
 	}
   }
   
    @media (max-width:768px) {
 	#about{
-		margin-top: 100% !important;
+		margin-top: 90% !important;
 	}
   }
 
