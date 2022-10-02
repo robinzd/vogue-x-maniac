@@ -216,9 +216,9 @@ img.px-2 {
   width: 50px;
 }
 
-@media (max-width:480px) {
+/* @media (max-width:480px) {
     #myform {
-        margin-top: 90% !important;
+        margin-top: % !important;
   }
   }
   
@@ -226,4 +226,4 @@ img.px-2 {
     #myform {
         margin-top: 90% !important;
   }
-  }
+  } */
