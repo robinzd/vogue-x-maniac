@@ -202,11 +202,7 @@ if (isset($_POST['submit'])) {
         <!-- Copyright -->
     </footer>
     <!-- end of the footer -->
-
-
-
-
-	<!-- add external js file -->
+    <!-- add external js file -->
 	<script src="./user_password_edit.js"></script>
 	<!-- j query -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
