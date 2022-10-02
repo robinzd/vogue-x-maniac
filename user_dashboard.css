@@ -295,4 +295,15 @@ img.px-2 {
 /* load button */
 button#btnLoad{
   border-radius: 20px !important;
+  background-color: lightgreen;
+  border:1px solid white;
 }
+
+button#btnLoad:focus{
+ border: none !important;
+}
+
+button#btnLoad:hover{
+ background-color: #000;
+ color: white;
+ }
