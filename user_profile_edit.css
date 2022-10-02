@@ -9,6 +9,8 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+
+
 .form-control {
     height: 40px;
     box-shadow: none;
@@ -71,7 +73,7 @@ body {
     padding: 30px;
     border: 1px solid black;
     border-radius: 10px;
-    margin-top: 20%;
+    margin-top: 75% !important;
 
 }
 
