@@ -403,13 +403,13 @@ img.px-2 {
 
 /* view in the mobile */
 @media (max-width:500px) {
-  #demo {
-    margin-top: 67% !important;
+  .demos {
+    margin-top: 68% !important;
 }
 }
 
 @media (max-width:768px) {
-  #demo {
-    margin-top: 67% !important;
+  .demos {
+    margin-top: 68% !important;
 }
 }

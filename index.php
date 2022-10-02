@@ -54,7 +54,7 @@ include("./conn.php");
   
 
     <!-- Carousel -->
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div id="demo" class="carousel slide demos" data-bs-ride="carousel">
 
 
         <!-- Indicators/dots -->
