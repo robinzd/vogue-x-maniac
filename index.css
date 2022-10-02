@@ -407,3 +407,9 @@ img.px-2 {
     margin-top: 67% !important;
 }
 }
+
+@media (max-width:768px) {
+  #demo {
+    margin-top: 67% !important;
+}
+}
