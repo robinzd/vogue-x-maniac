@@ -408,11 +408,11 @@ img.px-2 {
 }
 }
 
- /* @media (max-width:768px) {
+ @media (max-width:768px) {
   .demos {
     margin-top: 60% !important;
 }
-} */
+}
 
 
 /* @media (max-width:450px) {
