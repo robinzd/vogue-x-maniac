@@ -7,6 +7,10 @@
   border: none
 }
 
+.card{
+  margin-top: 25% !important;
+}
+
 .totals tr td {
   font-size: 13px
 }
@@ -156,4 +160,16 @@ p#address {
 
 img.px-2 {
   width: 50px;
+}
+
+@media (max-width:480px) {
+  #mybill {
+      margin-top: 20% !important;
+}
+}
+
+ @media (max-width:768px) {
+  #mybill {
+      margin-top: 20% !important;
+}
 }

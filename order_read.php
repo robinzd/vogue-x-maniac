@@ -455,7 +455,7 @@ $status = $_POST['status'];
 
     <!-- visible only on xs -->
 
-    <div class="container mt-5 mb-5 d-block d-sm-none" style="zoom:70%">
+    <div class="container mt-5 mb-5 d-block d-sm-none" style="zoom:70%" id="mybill">
 
         <div class="text-left"><a onclick="history.back()"><i class="fa fa-arrow-left"></i></a></div><br>
 
