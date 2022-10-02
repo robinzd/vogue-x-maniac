@@ -867,6 +867,11 @@ button.btn.btn-success {
   margin-top: 20%;
 }
 
+footer.text-center.text-lg-start.text-dark {
+  margin-top: 20px;
+}
+
+
  /* footer */
  img.footerimage{
   width: 120px;
