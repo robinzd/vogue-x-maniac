@@ -324,3 +324,15 @@ th{
     white-space: nowrap;
 }
 
+
+@media (max-width:480px) {
+    #cart{
+        margin-top: 70% !important;
+  }
+  }
+  
+   @media (max-width:768px) {
+    #cart {
+        margin-top: 70% !important;
+  }
+  }

@@ -180,7 +180,7 @@ if (isset($_GET['delid'])) {
     <!-- product_cart visible only on xs-->
 
 
-    <div class="table-responsive d-block d-sm-none" style="zoom:50%">
+    <div class="table-responsive d-block d-sm-none" style="zoom:50%" id="cart">
         <div id="shopping-cart">
 
 
