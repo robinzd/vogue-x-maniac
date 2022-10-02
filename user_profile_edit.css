@@ -216,14 +216,14 @@ img.px-2 {
   width: 50px;
 }
 
-/* @media (max-width:480px) {
-    #myform {
-        margin-top: % !important;
+@media (max-width:480px) {
+    .signup-form form {
+        margin-top: 10% !important;
   }
   }
   
    @media (max-width:768px) {
-    #myform {
-        margin-top: 90% !important;
+    .signup-form form {
+        margin-top: 10% !important;
   }
-  } */
+  }
