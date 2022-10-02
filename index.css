@@ -404,6 +404,6 @@ img.px-2 {
 /* view in the mobile */
 @media (max-width:500px) {
   #demo {
-    margin-top: 30% !important;
+    margin-top: 67% !important;
 }
 }
