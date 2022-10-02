@@ -1002,3 +1002,16 @@ input.form-check-input.category {
 }
 
 
+@media (max-width:480px) {
+  .col-sm-4.col-md-3 {
+    margin-top: 80%;
+}
+}
+
+ @media (max-width:768px) {
+  .col-sm-4.col-md-3 {
+    margin-top: 80%;
+  }
+}
+
+
