@@ -1,228 +1,221 @@
-@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 body {
-    color: #fff;
-    background: ghostwhite !important;
-    font-family: 'Roboto', sans-serif;
+  color: #fff;
+  background: ghostwhite !important;
+  font-family: "Roboto", sans-serif;
 }
 
-
-
 .form-control {
-    height: 40px;
-    box-shadow: none;
-    color: #969fa4;
+  height: 40px;
+  box-shadow: none;
+  color: #969fa4;
 }
 
 .form-control:focus {
-    border-color: #5cb85c;
+  border-color: #5cb85c;
 }
 
 .form-control,
 .btn {
-    border-radius: 3px;
+  border-radius: 3px;
 }
 
 .signup-form {
-    width: 450px;
-    margin: 0 auto;
-    padding: 30px 0;
-    font-size: 15px;
+  width: 450px;
+  margin: 0 auto;
+  padding: 30px 0;
+  font-size: 15px;
 }
 
 .signup-form h2 {
-    color: #636363;
-    margin: 0 0 15px;
-    position: relative;
-    text-align: center;
+  color: #636363;
+  margin: 0 0 15px;
+  position: relative;
+  text-align: center;
 }
 
 .signup-form h2:before,
 .signup-form h2:after {
-    content: "";
-    height: 2px;
-    width: 18%;
-    background: #d4d4d4;
-    position: absolute;
-    top: 50%;
-    z-index: 2;
+  content: "";
+  height: 2px;
+  width: 18%;
+  background: #d4d4d4;
+  position: absolute;
+  top: 50%;
+  z-index: 2;
 }
 
 .signup-form h2:before {
-    left: 0;
+  left: 0;
 }
 
 .signup-form h2:after {
-    right: 0;
+  right: 0;
 }
 
 .signup-form .hint-text {
-    color: #999;
-    margin-bottom: 30px;
-    text-align: center;
+  color: #999;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .signup-form form {
-    color: #999;
-    border-radius: 3px;
-    margin-bottom: 15px;
-    background: ghostwhite;
-    padding: 30px;
-    border: 1px solid black;
-    border-radius: 10px;
-    margin-top: 75% !important;
-
+  color: #999;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  background: ghostwhite;
+  padding: 30px;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 75% !important;
 }
 
 .signup-form .form-group {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .signup-form input[type="checkbox"] {
-    margin-top: 3px;
+  margin-top: 3px;
 }
 
 .signup-form .btn {
-    font-size: 16px;
-    font-weight: bold;
-    min-width: 140px;
-    outline: none !important;
+  font-size: 16px;
+  font-weight: bold;
+  min-width: 140px;
+  outline: none !important;
 }
 
 .signup-form .row div:first-child {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 .signup-form .row div:last-child {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .signup-form a {
-    color: #fff;
-    text-decoration: underline;
+  color: #fff;
+  text-decoration: underline;
 }
 
 .signup-form a:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .signup-form form a {
-    color: #5cb85c;
-    text-decoration: none;
+  color: #5cb85c;
+  text-decoration: none;
 }
 
 .signup-form form a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .fa-arrow-left {
-    color: black;
-    cursor: pointer;
+  color: black;
+  cursor: pointer;
 }
 
 button.btn.btn-success.btn-lg.btn-block {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 button.btn.btn-success.btn-lg.btn-block:hover {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
 
-
-button.btn.btn-success.btn-lg.btn-block{
-    border-radius:20px;
+button.btn.btn-success.btn-lg.btn-block {
+  border-radius: 20px;
 }
 
-button.btn.btn-success.btn-lg.btn-block:hover{
-    background-color: black;
-    color:white;
+button.btn.btn-success.btn-lg.btn-block:hover {
+  background-color: black;
+  color: white;
 }
 
-#back{
-  color:black;
+#back {
+  color: black;
 }
 
-div#back{
-    cursor:pointer;
+div#back {
+  cursor: pointer;
 }
 
 /* footer */
 img.footerimage {
-    width: 120px;
-  }
-  
-  .text-center.p-3 {
-    background-color: #1d1d1f !important;
-  }
-  
-  footer.text-center.text-lg-start.text-dark {
-    background-color: #424245 !important;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  
-  #facebook {
-    color: #3b5998;
-    font-size: 25px;
-  }
-  
-  #twitter {
-    color: #00acee;
-    font-size: 25px;
-  }
-  
-  #youtube {
-    color: #ff0000;
-    font-size: 25px;
-  }
-  
-  #instagram {
-    color: #c13584;
-    font-size: 25px;
-  }
-  
-  p.text-white {
-    margin-top: 20px;
-  }
-  
-  h6.text-uppercase.mb-4.font-weight-bold {
-    font-family: "Redressed", cursive;
-    color: lightgrey !important;
-  }
-  
-  hr.w-100.clearfix.d-md-none {
-    color: lightgrey !important;
-  }
-  
-  p#address {
-    white-space: nowrap;
-  }
-  
-  img.px-2 {
-    width: 50px;
-  }
-  
-  /* footer ends */
+  width: 120px;
+}
 
-@media (max-width:480px) {
-    .signup-form form {
-        margin-top: 90% !important;
-  }
-  }
-  
-   @media (max-width:768px) {
-    .signup-form form {
-        margin-top: 90% !important;
-  }
-  }
+.text-center.p-3 {
+  background-color: #1d1d1f !important;
+}
 
+footer.text-center.text-lg-start.text-dark {
+  background-color: #424245 !important;
+  padding-left: 0;
+  padding-right: 0;
+}
 
-  @media (min-width:784px) and (max-width:984px){
-    .signup-form form {
-    margin-top:50% !important;
-   }
+#facebook {
+  color: #3b5998;
+  font-size: 25px;
+}
+
+#twitter {
+  color: #00acee;
+  font-size: 25px;
+}
+
+#youtube {
+  color: #ff0000;
+  font-size: 25px;
+}
+
+#instagram {
+  color: #c13584;
+  font-size: 25px;
+}
+
+p.text-white {
+  margin-top: 20px;
+}
+
+h6.text-uppercase.mb-4.font-weight-bold {
+  font-family: "Redressed", cursive;
+  color: lightgrey !important;
+}
+
+hr.w-100.clearfix.d-md-none {
+  color: lightgrey !important;
+}
+
+p#address {
+  white-space: nowrap;
+}
+
+img.px-2 {
+  width: 50px;
+}
+
+/* footer ends */
+
+@media (max-width: 480px) {
+  .signup-form form {
+    margin-top: 90% !important;
   }
+}
+
+@media (max-width: 768px) {
+  .signup-form form {
+    margin-top: 90% !important;
+  }
+}
+
+@media (min-width: 784px) and (max-width: 984px) {
+  .signup-form form {
+    margin-top: 50% !important;
+  }
+}
