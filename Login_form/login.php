@@ -89,10 +89,10 @@ if (isset($_GET["code"])) {
 	if (!empty($data->email) && !empty($data->name) &&  $user_email !== $data->email) {
 		$query_address = mysqli_query($conn, "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`,user_password,user_mob_no,is_admin) VALUES ('$user_id','$first_name','$last_name','$email','0','0')");
 		if ($query_address) {
-			header("location:../index.php");
+			header("location:./index.php");
 		}
 	} else {
-		header("location:../index.php");
+		header("location:./index.php");
 	}
 }
 
