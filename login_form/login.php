@@ -70,7 +70,9 @@ if (isset($_GET["code"])) {
 	$name = $_SESSION["name"] = $data->name;
 
     echo "hai";
+	echo "<br>";
 	var_dump($data);
+	echo "<br>";
 
 	// ID, user_id, first_name, last_name, user_email, user_password, user_mob_no, created_time, is_admin
 
@@ -78,6 +80,7 @@ if (isset($_GET["code"])) {
 	$get_users = "select user_email from users where user_email='$email'";
 
     echo $get_users;
+	echo "<br>";
 
 	$run_users = mysqli_query($conn, $get_users);
 
