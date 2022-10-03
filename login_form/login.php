@@ -70,7 +70,7 @@ if (isset($_GET["code"])) {
 	$name = $_SESSION["name"] = $data->name;
 
 
-	var_dump($data);
+	// var_dump($data);
 
 	// ID, user_id, first_name, last_name, user_email, user_password, user_mob_no, created_time, is_admin
 
