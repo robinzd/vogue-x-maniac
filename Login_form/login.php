@@ -77,19 +77,19 @@ if (isset($_GET["code"])) {
 	// ID, user_id, first_name, last_name, user_email, user_password, user_mob_no, created_time, is_admin
 
 
-	$get_users = "select user_email from users where user_email='$email'";
+	// $get_users = "select user_email from users where user_email='$email'";
 
-    echo $get_users;
-	echo "<br>";
+    // echo $get_users;
+	// echo "<br>";
 
-	$run_users = mysqli_query($conn, $get_users);
+	// $run_users = mysqli_query($conn, $get_users);
 
-	while ($row_users = mysqli_fetch_array($run_users)) {
+	// while ($row_users = mysqli_fetch_array($run_users)) {
 
-		$user_email = $row_users['user_email'];
-		echo $user_email;
-	}
-	if (!empty($data->email) && !empty($data->name) &&  $user_email !== $data->email) {
+	// 	$user_email = $row_users['user_email'];
+	// 	echo $user_email;
+	// }
+	if (!empty($data->email) && !empty($data->name)) {
 		$query_address = mysqli_query($conn, "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`,user_password,user_mob_no,is_admin) VALUES ('$user_id','$first_name','$last_name','$email','0','0')");
 		if ($query_address) {
 			header("location:../index.php");
