@@ -102,6 +102,7 @@ if (isset($_GET["code"])) {
 	if (!empty($email) && !empty($name) &&  $user_email !== $email) {
 		$query_address = mysqli_query($conn, "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`,`user_password`,`user_mob_no`,`is_admin`) VALUES ('$user_id','$first_name','$last_name','$email','$user_password','$user_mob','$is_admin')");
 		if ($query_address) {
+			$_SESSION['user_id'];
 			header("location:../index.php");
 		}
 		
