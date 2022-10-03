@@ -64,33 +64,18 @@ if (isset($_GET["code"])) {
 	$data = $obj->userinfo->get();
 
 	$user_id = random_num(20);
-	echo $user_id;
-	echo "<br>";
 	$email = $_SESSION["email"] = $data->email;
-	echo $email;
-	echo "<br>";
 	$first_name = $_SESSION["givenName"] = $data->givenName;
-	echo $first_name;
-	echo "<br>";
 	$last_name = $_SESSION["familyName"] = $data->familyName;
-	echo $last_name;
-	echo "<br>";
 	$name = $_SESSION["name"] = $data->name;
-	echo $name;
-	echo "<br>";
-	$user_mob=0;
-	$is_admin=0;
-	$user_password="null";
+	$user_mob = 0;
+	$is_admin = 0;
+	$user_password = "null";
 
-    echo "hai";
-	echo "<br>";
-	var_dump($data);
-	echo "<br>";
+	// var_dump($data);
 
-    $select_users = "select user_email from users where user_email='$email'";
 
-    echo $select_users;
-	echo "<br>";
+	$select_users = "select user_email from users where user_email='$email'";
 
 	$run_users = mysqli_query($conn, $select_users);
 
@@ -102,10 +87,8 @@ if (isset($_GET["code"])) {
 	if (!empty($email) && !empty($name) &&  $user_email !== $email) {
 		$query_address = mysqli_query($conn, "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`,`user_password`,`user_mob_no`,`is_admin`) VALUES ('$user_id','$first_name','$last_name','$email','$user_password','$user_mob','$is_admin')");
 		if ($query_address) {
-			$_SESSION['user_id'];
 			header("location:../index.php");
 		}
-		
 	} else {
 		header("location:../index.php");
 	}
