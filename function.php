@@ -18,6 +18,9 @@ function check_login($conn)
         }
     }
 
+
+
+
     // redirecting to login page
     header("location:./login_form/login.php");
 
@@ -25,6 +28,16 @@ function check_login($conn)
 
 
 }
+
+
+function check_gmail_login()
+{
+    if(!isset($_SESSION["email"])){
+        header("location:./login_form/login.php");
+    }
+    // redirecting to login page
+    // die;
+    }
 
 
 function random_num($length)

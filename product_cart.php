@@ -9,6 +9,8 @@ include("./function.php");
 
 $user_data = check_login($conn);
 
+check_gmail_login();
+
 $userid = $user_data['user_id'];
 
 // $_SESSION['user_id']=$user_id;
