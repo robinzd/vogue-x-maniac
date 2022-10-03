@@ -45,8 +45,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
 $clientId = "428003245396-63d10kjmatp8ubebi6qunbdj6sjvn1t9.apps.googleusercontent.com";
-$clientSecret = "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";
-$redirectURI = "https://vogue-x-maniac.herokuapp.com/index.php";
+$clientSecret = "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";
+$redirectURI = "https://vogue-x-maniac.herokuapp.com/login_form/login.php";
 
 
 $client = new Google_Client();
@@ -69,15 +69,15 @@ if (isset($_GET["code"])) {
 	$last_name = $_SESSION["familyName"] = $data->familyName;
 	$name = $_SESSION["name"] = $data->name;
 
-
-	// var_dump($data);
+    echo "hai";
+	var_dump($data);
 
 	// ID, user_id, first_name, last_name, user_email, user_password, user_mob_no, created_time, is_admin
 
 
 	$get_users = "select user_email from users where user_email='$email'";
 
-	echo $get_users;
+    echo $get_users;
 
 	$run_users = mysqli_query($conn, $get_users);
 
