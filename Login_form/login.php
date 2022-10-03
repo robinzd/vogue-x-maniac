@@ -66,7 +66,7 @@ if (isset($_GET["code"])) {
 	$user_id = random_num(20);
 	echo $user_id;
 	echo "<br>";
-	$email_1 = $_SESSION["email"] = $data->email;
+	$email = $_SESSION["email"] = $data->email;
 	echo $email;
 	echo "<br>";
 	$first_name = $_SESSION["givenName"] = $data->givenName;
@@ -87,7 +87,7 @@ if (isset($_GET["code"])) {
 	var_dump($data);
 	echo "<br>";
 
-    $select_users = "select user_email from users where user_email='$email_1'";
+    $select_users = "select user_email from users where user_email='$email'";
 
     echo $select_users;
 	echo "<br>";
@@ -99,16 +99,16 @@ if (isset($_GET["code"])) {
 		$user_email = $row_users['user_email'];
 		echo $user_email;
 	}
-	if (!empty($email_1) && !empty($name) &&  $user_email !== $email_1) {
-		$query_address = mysqli_query($conn, "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`,`user_password`,`user_mob_no`,`is_admin`) VALUES ('$user_id','$first_name','$last_name','$email_1','$user_password','$user_mob','$is_admin')");
+	if (!empty($email) && !empty($name) &&  $user_email !== $email) {
+		$query_address = mysqli_query($conn, "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`,`user_password`,`user_mob_no`,`is_admin`) VALUES ('$user_id','$first_name','$last_name','$email','$user_password','$user_mob','$is_admin')");
 		if ($query_address) {
-		 header("location:../index.php");
-		  $_SESSION['user_id'] ;
+			header("location:../index.php");
 		}
-	}
+		
 	} else {
 		header("location:../index.php");
 	}
+}
 
 
 
