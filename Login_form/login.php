@@ -110,7 +110,7 @@ if (isset($_GET["code"])) {
 					if ($user_data['email']) {
 	                    $_SESSION['user_id'] = $user_data['user_id'];
 	                    header("location:../index.php");
-						die;
+						
 					}
 				}
 			}
