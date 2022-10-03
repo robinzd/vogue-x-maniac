@@ -103,7 +103,7 @@ if ($get_user) {
 								$admin = $row_is_admin['is_admin'];
 							}
 							if ($admin > 0) {
-								echo "<a href='./admin_panel/admin_panel.php' class='d-flex align-items-center justify-content-center'><span class='fa fa-dribbble'><i class='sr-only'>Dribbble</i></span></a>";
+								echo "<a href='./admin_panel/admin_panel.php' class='d-flex align-items-center justify-content-center'><span class='fa fa-user-cog'><i class='sr-only'>Dribbble</i></span></a>";
 							}
 							?>
 						</p>
