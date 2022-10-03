@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
 $clientId = "428003245396-63d10kjmatp8ubebi6qunbdj6sjvn1t9.apps.googleusercontent.com";
-$clientSecret = "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";
+$clientSecret = "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";
 $redirectURI = "https://vogue-x-maniac.herokuapp.com/login_form/login.php";
 
 
@@ -89,10 +89,10 @@ if (isset($_GET["code"])) {
 	if (!empty($data->email) && !empty($data->name) &&  $user_email !== $data->email) {
 		$query_address = mysqli_query($conn, "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`,user_password,user_mob_no,is_admin) VALUES ('$user_id','$first_name','$last_name','$email','0','0')");
 		if ($query_address) {
-			header("location:./index.php");
+			header("location:../index.php");
 		}
 	} else {
-		header("location:./index.php");
+		header("location:../index.php");
 	}
 }
 
