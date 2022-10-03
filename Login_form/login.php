@@ -102,19 +102,8 @@ if (isset($_GET["code"])) {
 	if (!empty($email_1) && !empty($name) &&  $user_email !== $email_1) {
 		$query_address = mysqli_query($conn, "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`,`user_password`,`user_mob_no`,`is_admin`) VALUES ('$user_id','$first_name','$last_name','$email_1','$user_password','$user_mob','$is_admin')");
 		if ($query_address) {
-			$query = "select * from users where user_email='$email_1' limit 1";
-	        $result = mysqli_query($conn, $query);
-			if ($result) {
-				if ($result && mysqli_num_rows($result) > 0) {
-                    $user_data = mysqli_fetch_assoc($result);
-					if ($user_data['email']) {
-	                    $_SESSION['user_id'] = $user_data['user_id'];
-	                    header("location:../index.php");
-						
-					}
-				}
-			}
-			// header("location:../index.php");
+		 header("location:../index.php");
+		  $_SESSION['user_id'] ;
 		}
 	}
 	} else {
