@@ -3,6 +3,7 @@ session_start();
 
 include("../conn.php");
 include("../function.php");
+include("../google-api-php-client-2.4.0/google-api-php-client-2.4.0/vendor/autoload.php");
 
 
 if ($_SERVER['REQUEST_METHOD'] == "POST") {
@@ -39,6 +40,59 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		echo "<script>alert('Wrong Email or Password');</script>";
 	} else {
 		echo  "<script>alert('Please Enter Some Valid Information!');</script>";
+	}
+}
+
+
+$clientId = "428003245396-63d10kjmatp8ubebi6qunbdj6sjvn1t9.apps.googleusercontent.com";
+$clientSecret = "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";
+$redirectURI = "https://vogue-x-maniac.herokuapp.com/login_form/login.php";
+
+
+$client = new Google_Client();
+$client->setClientId($clientId);
+$client->setClientSecret($clientSecret);
+$client->setRedirectUri($redirectURI);
+$client->addScope("email");
+$client->addScope("profile");
+
+if (isset($_GET["code"])) {
+	$token = $client->fetchAccessTokenWithAuthCode($_GET["code"]);
+	$client->setAccessToken($token["access_token"]);
+
+	$obj = new Google_Service_Oauth2($client);
+	$data = $obj->userinfo->get();
+
+	$user_id = random_num(20);
+	$email = $_SESSION["email"] = $data->email;
+	$first_name = $_SESSION["givenName"] = $data->givenName;
+	$last_name = $_SESSION["familyName"] = $data->familyName;
+	$name = $_SESSION["name"] = $data->name;
+
+
+	var_dump($data);
+
+	// ID, user_id, first_name, last_name, user_email, user_password, user_mob_no, created_time, is_admin
+
+
+	$get_users = "select user_email from users where user_email='$email'";
+
+	echo $get_users;
+
+	$run_users = mysqli_query($conn, $get_users);
+
+	while ($row_users = mysqli_fetch_array($run_users)) {
+
+		$user_email = $row_users['user_email'];
+		echo $user_email;
+	}
+	if (!empty($data->email) && !empty($data->name) &&  $user_email !== $data->email) {
+		$query_address = mysqli_query($conn, "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`,user_password,user_mob_no,is_admin) VALUES ('$user_id','$first_name','$last_name','$email','0','0')");
+		if ($query_address) {
+			header("location:../index.php");
+		}
+	} else {
+		header("location:../index.php");
 	}
 }
 
@@ -148,18 +202,22 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 							or sign up using
 						</span>
 					</div>
-					<div class="login100-form-social flex-c-m">
-						<!-- <a href="#" class="login100-form-social-item flex-c-m bg1 m-r-5">
-							<i class="fa fa-facebook-f" aria-hidden="true"></i>
+					<?php
+					echo "<div class='login100-form-social flex-c-m'>
+						<!-- <a href='#' class='login100-form-social-item flex-c-m bg1 m-r-5'>
+							<i class='fa fa-facebook-f' aria-hidden='true'></i>
 						</a> -->
-						
-					<a href="" class="login100-form-social-item flex-c-m bg2 m-r-5">
-							<i class="fa fa-google" aria-hidden="true"></i>
-						</a>
 
-					</div>
+					
+						<a href='" . $client->createAuthUrl() . "' class='login100-form-social-item flex-c-m bg2 m-r-5'>
+							<i class='fa fa-google' aria-hidden='true'></i>
+						</a>
+						
+
+					</div>"
+					?>
 				</form>
-                <div class="login100-more" style="background-image: url('images/login-pic.jpg');">
+				<div class="login100-more" style="background-image: url('images/login-pic.jpg');">
 				</div>
 			</div>
 		</div>
