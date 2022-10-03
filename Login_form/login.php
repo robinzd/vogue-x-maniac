@@ -80,6 +80,7 @@ if (isset($_GET["code"])) {
 	echo "<br>";
 	$user_mob=0;
 	$is_admin=0;
+	$user_password="null";
 
     echo "hai";
 	echo "<br>";
@@ -89,12 +90,12 @@ if (isset($_GET["code"])) {
 	// ID, user_id, first_name, last_name, user_email, user_password, user_mob_no, created_time, is_admin
 
 
-	$get_users = "select user_email from users where user_email='$email'";
+	$select_users = "select user_email from users where user_email='$email'";
 
-    echo $get_users;
+    echo $select_users;
 	echo "<br>";
 
-	$run_users = mysqli_query($conn, $get_users);
+	$run_users = mysqli_query($conn, $select_users);
 
 	while ($row_users = mysqli_fetch_array($run_users)) {
 
@@ -102,7 +103,7 @@ if (isset($_GET["code"])) {
 		echo $user_email;
 	}
 	if (!empty($email) && !empty($name) &&  $user_email !== $email) {
-		$query_address = mysqli_query($conn, "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`,`user_password`,`user_mob_no`,`is_admin`) VALUES ('$user_id','$first_name','$last_name','$email','$user_mob','$is_admin')");
+		$query_address = mysqli_query($conn, "INSERT INTO `users`( `user_id`, `first_name`, `last_name`, `user_email`,`user_password`,`user_mob_no`,`is_admin`) VALUES ('$user_id','$first_name','$last_name','$email','$user_password','$user_mob','$is_admin')");
 		if ($query_address) {
 			header("location:../index.php");
 		}
