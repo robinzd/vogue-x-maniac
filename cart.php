@@ -36,7 +36,7 @@ if ($rowcount > 0) {
     } else {
         echo "<script>alert('something went wrong');</script>";
     }
-} else {
+} else if($userid !== 0) {
 
     $query = mysqli_query($conn, "insert into products_cart(product_id,user_id,product_quantity,product_size,order_id) value ('$productid','$userid','$productquantity','$productsize','123')");
     if ($query) {
