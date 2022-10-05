@@ -197,7 +197,7 @@ if (isset($_GET["code"])) {
 					</div>
 					<div class="text-center p-t-46 p-b-20">
 						<span class="txt2">
-							or sign up using
+							or Login using
 						</span>
 					</div>
 					<?php
