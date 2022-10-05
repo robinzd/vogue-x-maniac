@@ -70,7 +70,7 @@ if (isset($_GET["code"])) {
 	$name = $_SESSION["name"] = $data->name;
 	$user_mob = 0;
 	$is_admin = 0;
-	$user_password = "null";
+
 
 	// var_dump($data);
 
