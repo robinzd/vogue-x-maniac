@@ -157,7 +157,7 @@ if ($get_user) {
 	<nav class="navbar fixed-top bg-light d-block d-sm-none" id="mobile">
     <div class="container-fluid">
     <a class="navbar-brand text-center" href="#" id="logo"><img src="./header images/vogue x maniac png.png" style="
-    width: 20%;margin-top: 4%;"></a>
+    width: 25%;margin-top: 2%;"></a>
     </div>
     </nav>
 
