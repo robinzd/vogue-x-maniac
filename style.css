@@ -52,8 +52,8 @@ nav#mobile{
 }
 
 #heading4{
-  color: white;
-  text-align: center;
+ text-align: center !important;
+ color: ghostwhite;
 }
 
 
