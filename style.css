@@ -53,7 +53,7 @@ nav#mobile{
 #mobile{
   padding-top: 5px !important;
   position:fixed !important;
-  z-index: 1000 !important;
+  z-index: 9999 !important;
   top: 0 !important;
   width:100% !important;
 }
