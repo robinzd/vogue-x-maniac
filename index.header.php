@@ -163,7 +163,7 @@ if ($get_user) {
 
 	<header>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top" style="width:100%; top:0;">
     <div class="container-fluid">
       <button
         class="navbar-toggler"
