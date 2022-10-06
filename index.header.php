@@ -152,6 +152,15 @@ if ($get_user) {
 
 	</section>
 
+
+	<!-- The Navbar Design For The Mobile Version Starts -->
+	<nav class="navbar fixed-top bg-light d-block d-sm-none">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#">Fixed top</a>
+    </div>
+    </nav>
+
+
 	<script src="./js header/bootstrap.min.js"></script>
 	<script src="./js header/jquery.min.js"></script>
 	<script src="./js header/main.js"></script>
