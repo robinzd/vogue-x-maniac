@@ -46,13 +46,8 @@
 }
 
 nav#mobile{
-  height: 12% !important;
+  height: 14% !important;
   border: 1px solid grey;
-}
-
-.voglogo{
- width: 30% !important;
- margin-top: 1% !important;
 }
 
 
