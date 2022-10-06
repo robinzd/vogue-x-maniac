@@ -46,6 +46,8 @@
 }
 
 #mobilenavbar{
+  position:fixed !important;
+  z-index: 1000 !important;
   top: 0 !important;
   width:100% !important;
 }
