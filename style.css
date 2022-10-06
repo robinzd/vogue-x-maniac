@@ -46,8 +46,7 @@
 }
 
 nav#mobile{
-padding-top: 3% !important;
-padding-bottom: 3% !important;
+  height: 10% !important;
   background: transparent;
 
 }
