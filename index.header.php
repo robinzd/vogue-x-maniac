@@ -163,7 +163,7 @@ if ($get_user) {
 
 	<header>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container-fluid">
       <button
         class="navbar-toggler"
@@ -197,7 +197,7 @@ if ($get_user) {
   <!-- Navbar -->
 
   <!-- Jumbotron -->
-  <div class="p-5 text-center bg-light">
+  <div class="p-5 text-center bg-light" style="margin-top: 58px;">
     <h1 class="mb-3">Heading</h1>
     <h4 class="mb-3">Subheading</h4>
     <a class="btn btn-primary" href="" role="button">Call to action</a>
