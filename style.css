@@ -54,6 +54,7 @@ nav#mobile{
 #mobile{
   position:fixed !important;
   z-index: 9999 !important;
+  margin: 0 !important;
   top: 0 !important;
   width:100% !important;
   box-shadow: 15px grey;
