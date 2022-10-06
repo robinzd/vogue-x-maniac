@@ -45,7 +45,7 @@ if ($get_user) {
 </head>
 
 <body>
-	<section class="ftco-section py-0" id="navbartop">
+	<section class="ftco-section py-0 d-none d-sm-block" id="navbartop">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
@@ -128,40 +128,18 @@ if ($get_user) {
 
 								$run_product_category = mysqli_query($conn, $get_product_category);
 
+                                 while ($row_product_category = mysqli_fetch_array($run_product_category)) {
 
+                                $categoryname = $row_product_category['product_category'];
 
-								while ($row_product_category = mysqli_fetch_array($run_product_category)) {
+								$category_replace = str_replace(" ", "-", $row_product_category['product_category']);
 
+                                 echo "<a class='dropdown-item' href='shop.php?category_name=$category_replace'>$categoryname</a>
 
-									$categoryname = $row_product_category['product_category'];
-
-									$category_replace = str_replace(" ", "-", $row_product_category['product_category']);
-
-
-
-
-
-
-									echo "<a class='dropdown-item' href='shop.php?category_name=$category_replace'>$categoryname</a>
-
-
-
-
-
-
-
-";
-								}
-
-
-								?>
-
-
-
-
-
-
-							</div>
+                        ";
+                        }
+                        ?>
+                        </div>
 						</li>
 						<li class="nav-item"><a href="shop.php" class="nav-link">Shop</a></li>
 						<li class="nav-item"><a href="aboutus.php" class="nav-link">About Us</a></li>
