@@ -154,7 +154,7 @@ if ($get_user) {
 
 
 	<!-- The Navbar Design For The Mobile Version Starts -->
-	<nav class="navbar fixed-top bg-light d-block d-sm-none" id="mobile">
+	<nav class="navbar fixed-top bg-light d-block d-sm-none navs" id="mobile">
 		<div class="container-fluid">
 		<a class="navbar-brand text-center" href="#" id="logo"><img src="./header images/vogue x maniac png.png" style="
     width: 30%; margin-top:-1%;"></a>
@@ -172,9 +172,13 @@ if ($get_user) {
 	<script src="./js header/popper.js"></script>
 
 	<script>
-		$(".body").scroll(function() {
-			$(".navbar-brand text-center").css("margin-top", "6px");
-		});
+		$(window).scroll(function(){
+  var sticky = $('.navs'),
+      scroll = $(window).scrollTop();
+
+  if (scroll >= 100) sticky.addClass('fixed');
+  else sticky.removeClass('fixed');
+});
 	</script>
 
 
