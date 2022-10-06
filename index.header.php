@@ -154,14 +154,20 @@ if ($get_user) {
 
 
 	<!-- The Navbar Design For The Mobile Version Starts -->
-	<nav class="navbar fixed-top bg-light d-block d-sm-none" id="mobile">
+	<!-- <nav class="navbar fixed-top bg-light d-block d-sm-none" id="mobile">
 		<div class="container-fluid">
 			<div>
 			<a class="navbar-brand text-center" href="#" id="logo"><img src="./header images/vogue x maniac png.png" style="
     width: 30%;"></a>
 			</div>
 		</div>
-	</nav>
+	</nav> -->
+
+	<div id="navbar d-block d-sm-none">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+</div>
 
 
 	<script src="./js header/bootstrap.min.js"></script>
@@ -169,12 +175,7 @@ if ($get_user) {
 	<script src="./js header/main.js"></script>
 	<script src="./js header/popper.js"></script>
 
-	<script>
-		$(".body").scroll(function() {
-			$(".navbar-brand text-center").css("margin-top", "6px");
-		});
-	</script>
-
+	
 
 </body>
 
