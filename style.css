@@ -47,7 +47,8 @@
 
 nav#mobile{
   height: 14% !important;
-  border: 1px solid grey;
+  background: transparent;
+  
 }
 
 
