@@ -169,7 +169,7 @@ if ($get_user) {
 
 	<script>
 		$("body").scroll(function() {
-			$("#logo").css("margin-top", "6px");
+			$("img").css("margin-top", "6px");
 		});
 	</script>
 
