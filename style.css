@@ -45,11 +45,23 @@
   width:100% !important;
 }
 
-#mobilenavbar{
-  position:fixed !important;
-  z-index: 1000 !important;
-  top: 0 !important;
-  width:100% !important;
+
+@media (max-width:480px) {
+  #mobile{
+    position:fixed !important;
+    z-index: 1000 !important;
+    top: 0 !important;
+    width:100% !important;
+  }
+}
+
+ @media (max-width:768px) {
+  #mobile{
+    position:fixed !important;
+    z-index: 1000 !important;
+    top: 0 !important;
+    width:100% !important;
+  }
 }
 
 .ftco-section {

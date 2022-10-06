@@ -154,7 +154,7 @@ if ($get_user) {
 
 
 	<!-- The Navbar Design For The Mobile Version Starts -->
-	<nav class="navbar fixed-top bg-light d-block d-sm-none" id="mobilenavbar">
+	<nav class="navbar fixed-top bg-light d-block d-sm-none" id="mobile">
     <div class="container-fluid">
     <a class="navbar-brand" href="#">Fixed top</a>
     </div>
