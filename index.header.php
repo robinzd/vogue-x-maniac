@@ -156,34 +156,15 @@ if ($get_user) {
 	<!-- The Navbar Design For The Mobile Version Starts -->
 	<nav class="navbar fixed-top bg-light d-block d-sm-none navs" id="mobile">
 		<div class="container-fluid">
-		<a class="navbar-brand text-center" href="#" id="logo"><img src="./header images/vogue x maniac png.png" style="
+			<a class="navbar-brand text-center" href="#" id="logo"><img src="./header images/vogue x maniac png.png" style="
     width: 30%; margin-top:-1%;"></a>
 		</div>
 	</nav>
 
-
-
- 
-
-	
-   <script src="./js header/bootstrap.min.js"></script>
+    <script src="./js header/bootstrap.min.js"></script>
 	<script src="./js header/jquery.min.js"></script>
 	<script src="./js header/main.js"></script>
 	<script src="./js header/popper.js"></script>
 
-	<script>
-		$(window).scroll(function(){
-  var sticky = $('.navs'),
-      scroll = $(window).scrollTop();
-
-  if (scroll >= 100) sticky.addClass('fixed');
-  else sticky.removeClass('fixed');
-});
-	</script>
-
-
 </body>
-
-
-
 </html>
