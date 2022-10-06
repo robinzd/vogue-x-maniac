@@ -48,6 +48,7 @@
 nav#mobile{
   height: 12% !important;
   background: transparent;
+  box-shadow: 5px white;
 }
 
 #mobile{
