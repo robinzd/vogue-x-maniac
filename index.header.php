@@ -168,8 +168,8 @@ if ($get_user) {
 	<script src="./js header/popper.js"></script>
 
 	<script>
-		$("body").scroll(function() {
-			$("img").css("margin-top", "6px");
+		$(".body").scroll(function() {
+			$(".navbar-brand text-center").css("margin-top", "6px");
 		});
 	</script>
 

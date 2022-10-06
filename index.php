@@ -30,7 +30,7 @@ include("./conn.php");
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
-<body>
+<body class="body">
 
     <!-- navbar starts -->
 
