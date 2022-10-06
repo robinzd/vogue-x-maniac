@@ -156,7 +156,7 @@ if ($get_user) {
 	<!-- The Navbar Design For The Mobile Version Starts -->
 	<nav class="navbar fixed-top bg-light d-block d-sm-none" id="mobile">
     <div class="container-fluid">
-    <a class="voglogo" href="#"><img class="text-center" src="./header images/vogue x maniac png.png"></a>
+    <a class="navbar-brand text-center" href="#"><img src="./header images/vogue x maniac png.png"></a>
     </div>
     </nav>
 
