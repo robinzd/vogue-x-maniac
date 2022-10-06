@@ -51,12 +51,6 @@ nav#mobile{
 
 }
 
-#heading4{
- text-align: center !important;
- color: ghostwhite;
-}
-
-
 @media (max-width:480px) {
   #mobile{
     position:fixed !important;

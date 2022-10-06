@@ -37,8 +37,8 @@ if ($get_user) {
 
 	<link rel="stylesheet" href="style.css">
 
-	 <!-- external javascript file -->
-	 <script src="./index.header.php"></script>
+	<!-- external javascript file -->
+	<script src="./index.header.php"></script>
 
 
 
@@ -77,14 +77,14 @@ if ($get_user) {
 							<a href="./user_dashboard.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-user"><i class="sr-only">Facebook</i></span></a>
 							<?php
 							if ($user_id == 0) {
-                                echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
+								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
 							} elseif ($row_count > 0) {
 
 								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span><span id='product'>$row_count</span></a>";
 							} else {
 								echo "<a href='product_cart.php'  class='d-flex align-items-center justify-content-center'><span class='fa fa-cart-shopping'><i class='sr-only'>Twitter</i></span></a>";
 							}
-							
+
 							?>
 
 							<a href="./logout.php" class="d-flex align-items-center justify-content-center"><span class="fa fa-sign-out"><i class="sr-only">Instagram</i></span></a>
@@ -128,18 +128,18 @@ if ($get_user) {
 
 								$run_product_category = mysqli_query($conn, $get_product_category);
 
-                                 while ($row_product_category = mysqli_fetch_array($run_product_category)) {
+								while ($row_product_category = mysqli_fetch_array($run_product_category)) {
 
-                                $categoryname = $row_product_category['product_category'];
+									$categoryname = $row_product_category['product_category'];
 
-								$category_replace = str_replace(" ", "-", $row_product_category['product_category']);
+									$category_replace = str_replace(" ", "-", $row_product_category['product_category']);
 
-                                 echo "<a class='dropdown-item' href='shop.php?category_name=$category_replace'>$categoryname</a>
+									echo "<a class='dropdown-item' href='shop.php?category_name=$category_replace'>$categoryname</a>
 
                         ";
-                        }
-                        ?>
-                        </div>
+								}
+								?>
+							</div>
 						</li>
 						<li class="nav-item"><a href="shop.php" class="nav-link">Shop</a></li>
 						<li class="nav-item"><a href="aboutus.php" class="nav-link">About Us</a></li>
@@ -155,12 +155,11 @@ if ($get_user) {
 
 	<!-- The Navbar Design For The Mobile Version Starts -->
 	<nav class="navbar fixed-top bg-light d-block d-sm-none" id="mobile">
-    <div class="container-fluid">
-	<div id="heading4"><h9>hai</h9></div>
-    <a class="navbar-brand text-center" href="#" id="logo"><img src="./header images/vogue x maniac png.png" style="
+		<div class="container-fluid">
+			<a class="navbar-brand text-center" href="#" id="logo"><img src="./header images/vogue x maniac png.png" style="
     width: 25%;margin-top: -2%;"></a>
-    </div>
-    </nav>
+		</div>
+	</nav>
 
 
 	<script src="./js header/bootstrap.min.js"></script>
@@ -168,7 +167,15 @@ if ($get_user) {
 	<script src="./js header/main.js"></script>
 	<script src="./js header/popper.js"></script>
 
+	<script>
+		$("body").scroll(function() {
+			$("#logo").css("margin-top", "4px");
+		});
+	</script>
+
 
 </body>
+
+
 
 </html>
