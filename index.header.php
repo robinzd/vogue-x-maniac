@@ -154,34 +154,16 @@ if ($get_user) {
 
 
 	<!-- The Navbar Design For The Mobile Version Starts -->
-	<!-- <nav class="navbar fixed-top bg-light d-block d-sm-none" id="mobile">
+	<nav class="navbar fixed-top bg-light d-block d-sm-none" id="mobile">
 		<div class="container-fluid">
 		<a class="navbar-brand text-center" href="#" id="logo"><img src="./header images/vogue x maniac png.png" style="
     width: 30%; margin-top:-5%;"></a>
 		</div>
-	</nav> -->
+	</nav>
 
-
-	<!-- Sticky header -->
-<header class="header-outer d-block d-sm-none">
-  <div class="header-inner responsive-wrapper">
-    <div class="header-logo">
-      <img src="https://assets.codepen.io/285131/acme-2.svg" />
-    </div>
-    <nav class="header-navigation">
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Blog</a>
-      <a href="#">Contact Us</a>
-      <button>Menu</button>
-    </nav>
-  </div>
-</header>
 
 	
-
-
-	<script src="./js header/bootstrap.min.js"></script>
+   <script src="./js header/bootstrap.min.js"></script>
 	<script src="./js header/jquery.min.js"></script>
 	<script src="./js header/main.js"></script>
 	<script src="./js header/popper.js"></script>
