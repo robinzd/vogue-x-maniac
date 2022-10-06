@@ -45,6 +45,11 @@
   width:100% !important;
 }
 
+#mobilenavbar{
+  top: 0 !important;
+  width:100% !important;
+}
+
 .ftco-section {
   background-color: ghostwhite;
 }
