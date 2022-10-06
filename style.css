@@ -48,15 +48,15 @@
 nav#mobile{
   height: 12% !important;
   background:grey;
-  box-shadow: 15px grey;
+ 
 }
 
 #mobile{
- 
   position:fixed !important;
   z-index: 9999 !important;
   top: 0 !important;
   width:100% !important;
+  box-shadow: 15px grey;
 }
 
 
