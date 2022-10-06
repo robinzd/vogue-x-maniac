@@ -48,11 +48,9 @@
 nav#mobile{
   height: 10% !important;
   background: transparent;
-
 }
 
 #mobile{
-  margin-top: 5px !important;
   position:fixed !important;
   z-index: 1000 !important;
   top: 0 !important;
