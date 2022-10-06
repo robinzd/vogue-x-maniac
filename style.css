@@ -46,12 +46,12 @@
 }
 
 nav#mobile{
-  height: 13% !important;
+  height: 15% !important;
 }
 
 img{
   width: 35% !important;
- margin-top: -2% !important;
+ /* margin-top: -2% !important; */
 }
 
 
