@@ -50,8 +50,8 @@ nav#mobile{
   border: 1px solid grey;
 }
 
-#voglogo{
-  width: 30% !important;
+.voglogo{
+width: 30% !important;
  margin-top: 1% !important;
 }
 
