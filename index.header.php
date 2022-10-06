@@ -154,12 +154,25 @@ if ($get_user) {
 
 
 	<!-- The Navbar Design For The Mobile Version Starts -->
-	<nav class="navbar fixed-top bg-light d-block d-sm-none" id="mobile">
-    <div class="container-fluid">
-    <a class="navbar-brand text-center" href="#" id="logo"><img src="./header images/vogue x maniac png.png" style="
-    width: 20%;margin-top: 4%;"></a>
-    </div>
-    </nav>
+	<nav class="navbar navbar-default navbar-fixed-top d-block d-sm-none">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#resNav">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a href="#" class="navbar-brand">Company Logo</a>
+  </div>
+  <div class="collapse navbar-collapse" id="resNav">
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+</nav>  <!-- End of Navigation Bar -->
 
 
 	<script src="./js header/bootstrap.min.js"></script>
