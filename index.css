@@ -404,13 +404,13 @@ img.px-2 {
 /* view in the mobile */
  @media (max-width:480px) {
   .demos {
-    margin-top: 10% !important;
+    margin-top: 20% !important;
 }
 }
 
  @media (max-width:768px) {
   .demos {
-    margin-top: 10% !important;
+    margin-top: 20% !important;
 }
 }
 
