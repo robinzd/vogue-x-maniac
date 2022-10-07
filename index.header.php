@@ -172,7 +172,7 @@ if ($get_user) {
 
 	<!-- curtain menu -->
 	<div id="myNav" class="overlay d-block d-sm-none">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-x"></i></a>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i id="close" class="fa-solid fa-x"></i></a>
 		<div class="overlay-content">
 			<a href="#">About</a>
 			<a href="#">Services</a>
@@ -244,6 +244,10 @@ if ($get_user) {
 			right: 45px;
 			font-size: 60px;
 			color: white !important;
+		}
+
+		#close{
+			color: black !important;
 		}
 
 		@media screen and (max-height: 450px) {
