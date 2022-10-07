@@ -12289,7 +12289,7 @@ body {
   }
 }
 @media(max-width: 480px) {
-  .dropdown-menu{
+  .dropdown-menu.show{
     margin-left: 20px;
     border: none;
     background-color: ghostwhite;
@@ -12297,7 +12297,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .dropdown-menu{
+  .dropdown-menu.show{
     margin-left: 20px;
     border: none;
     background-color: ghostwhite;
