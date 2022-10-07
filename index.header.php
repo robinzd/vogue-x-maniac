@@ -161,7 +161,9 @@ if ($get_user) {
 
 <!-- bottom nav -->
 <nav class="navbar fixed-bottom navbar-light bg-light d-block d-sm-none navs">
-  <a class="navbar-brand" href="#">Fixed bottom</a>
+<a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
 </nav>
 <!-- bottom nav -->
 
