@@ -151,8 +151,6 @@ if ($get_user) {
 		<!-- END nav -->
 
 	</section>
-
-
 	<!-- The Navbar Design For The Mobile Version Starts -->
 	<nav class="navbar fixed-top bg-light d-block d-sm-none navs" id="mobile">
 		<div class="container-fluid">
@@ -161,10 +159,19 @@ if ($get_user) {
 		</div>
 	</nav>
 
-    <script src="./js header/bootstrap.min.js"></script>
+<!-- bottom nav -->
+	<div class="navbar">
+		<a href="#home" class="active">Home</a>
+		<a href="#news">News</a>
+		<a href="#contact">Contact</a>
+	</div>
+<!-- bottom nav -->
+
+	<script src="./js header/bootstrap.min.js"></script>
 	<script src="./js header/jquery.min.js"></script>
 	<script src="./js header/main.js"></script>
 	<script src="./js header/popper.js"></script>
 
 </body>
+
 </html>
