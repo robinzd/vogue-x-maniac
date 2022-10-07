@@ -12163,6 +12163,7 @@ h5,
 
 /*botton nav style starts*/
 #bottomnav {
+  margin-top: 20% !important;
   overflow: hidden !important;
   background-color: #333 !important;
   position: fixed !important;
