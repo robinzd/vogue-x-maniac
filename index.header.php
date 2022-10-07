@@ -247,6 +247,7 @@ if ($get_user) {
 
 		#close{
 			color: black !important;
+			font-size: small !important;
 		}
 
 		@media screen and (max-height: 450px) {
