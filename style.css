@@ -12297,7 +12297,7 @@ body {
     text-align: center !important;
   }
 
-  #home{
+  #home1{
     margin-top: -20% !important;
   }
 }
@@ -12308,6 +12308,10 @@ body {
     border: none;
     background-color: ghostwhite;
     text-align: center !important;
+    margin-top: -20% !important;
+  }
+
+  #home1{
     margin-top: -20% !important;
   }
 }

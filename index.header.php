@@ -175,7 +175,7 @@ if ($get_user) {
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i id="close" class="fa-solid fa-x"></i></a>
 		<div class="overlay-content">
 		<ul class="navbar-nav m-auto">
-						<li class="nav-item" id="home"><a href="index.php" class="nav-link">Home</a></li>
+						<li class="nav-item" id="home1"><a href="index.php" class="nav-link">Home</a></li>
 						<li class="nav-item dropdown">
 							<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
 							<div class="dropdown-menu" aria-labelledby="dropdown04">
