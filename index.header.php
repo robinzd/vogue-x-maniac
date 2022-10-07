@@ -219,14 +219,17 @@ if ($get_user) {
 		<!-- modal box starts -->
 		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
-
-				<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
-					<form action="shop.php" method="Post" class="searchform order-lg-last">
-						<div class="form-group d-flex">
-							<input type="text" name="search" class="form-control pl-3" placeholder="Search">
-							<button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+				<div class="modal-content">
+					<div class="modal-body">
+					<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
+							<form action="shop.php" method="Post" class="searchform order-lg-last">
+								<div class="form-group d-flex">
+									<input type="text" name="search" class="form-control pl-3" placeholder="Search">
+									<button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+								</div>
+							</form>
 						</div>
-					</form>
+					</div>
 				</div>
 			</div>
 		</div>
