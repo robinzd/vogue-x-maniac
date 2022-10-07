@@ -30,9 +30,8 @@ if ($get_user) {
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css" integrity="sha512-RvQxwf+3zJuNwl4e0sZjQeX7kUa3o82bDETpgVCH2RiwYSZVDdFJ7N/woNigN/ldyOOoKw8584jM4plQdt8bhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/b6be472426.js" crossorigin="anonymous"></script>
 	<!-- bootsstrap cdn -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -162,7 +161,7 @@ if ($get_user) {
 
 <!-- bottom nav -->
 <nav class="navbar fixed-bottom navbar-light bg-light d-block d-sm-none navs" id="bottom">
-<a href="./user_dashboard.php" id="avatar"><i class='<i class="fa-thin fa-house-user"></i>'style='font-size:30px'></i></a>
+<a href="./user_dashboard.php" id="avatar"><i class="fa-thin fa-house-user" style='font-size:30px'></i></a>
   <a href="#news"><i class='fa fa-navicon' style='font-size:30px'></i></a>
   <a href="./index.php"><i class='fa fa-home' style='font-size:30px'></i></a>
   <a href="./cart.php"><i class='fa fa-shopping-cart' style='font-size:30px'></i></a>
