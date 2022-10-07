@@ -12340,11 +12340,17 @@ body {
 /* modal box */
 .modal-dialog{
   margin-top: 40% !important;
-  border-radius: 10px !important;
 }
 
 .modal-body{
   background-color: ghostwhite !important;
   border: none !important;
 }
+
+.modal-content{
+  background-color: ghostwhite !important;
+  border: none;
+  border-radius: 10px !important;
+}
+
 
