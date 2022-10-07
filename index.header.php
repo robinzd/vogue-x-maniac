@@ -30,7 +30,7 @@ if ($get_user) {
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/b6be472426.js" crossorigin="anonymous"></script>
 	<!-- bootsstrap cdn -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -159,45 +159,103 @@ if ($get_user) {
 		</div>
 	</nav>
 
-<!-- bottom nav -->
-<nav class="navbar fixed-bottom navbar-light bg-light d-block d-sm-none navs" id="bottom">
-<a href="./user_dashboard.php" id="avatar"><i class="fa-regular fa-user" style='font-size:30px'></i></a>
-  <a onclick="openNav()" id="menu"><i class="fa-solid fa-bars" style='font-size:30px'></i></a>
-  <a href="./index.php" id="home"><i class='fa fa-home' style='font-size:30px'></i></a>
-  <a href="./cart.php" id="cart"><i class="fa-solid fa-cart-shopping" style='font-size:30px'></i></a>
-  <a href="#news" id="search"><i class='fa fa-search' style='font-size:30px'></i></a>
-  
-   </nav>
-<!-- bottom nav -->
+	<!-- bottom nav -->
+	<nav class="navbar fixed-bottom navbar-light bg-light d-block d-sm-none navs" id="bottom">
+		<a href="./user_dashboard.php" id="avatar"><i class="fa-regular fa-user" style='font-size:30px'></i></a>
+		<a onclick="openNav()" id="menu"><i class="fa-solid fa-bars" style='font-size:30px'></i></a>
+		<a href="./index.php" id="home"><i class='fa fa-home' style='font-size:30px'></i></a>
+		<a href="./cart.php" id="cart"><i class="fa-solid fa-cart-shopping" style='font-size:30px'></i></a>
+		<a href="#news" id="search"><i class='fa fa-search' style='font-size:30px'></i></a>
 
-<!-- curtain menu -->
-<div id="myNav" class="overlay d-block d-sm-none">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
-</div>
-<!-- curtain menu -->
+	</nav>
+	<!-- bottom nav -->
 
-<script>
-function openNav() {
-  document.getElementById("myNav").style.width = "100%";
-}
+	<!-- curtain menu -->
+	<div id="myNav" class="overlay d-block d-sm-none">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
+		</div>
+	</div>
+	<!-- curtain menu -->
 
-function closeNav() {
-  document.getElementById("myNav").style.width = "0%";
-}
-</script>
+	<script>
+		function openNav() {
+			document.getElementById("myNav").style.width = "100%";
+		}
+
+		function closeNav() {
+			document.getElementById("myNav").style.width = "0%";
+		}
+	</script>
 
 	<script src="./js header/bootstrap.min.js"></script>
 	<script src="./js header/jquery.min.js"></script>
 	<script src="./js header/main.js"></script>
 	<script src="./js header/popper.js"></script>
 
-	
+	<style>
+		body {
+			font-family: 'Lato', sans-serif;
+		}
+
+		.overlay {
+			height: 100%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: rgb(0, 0, 0);
+			background-color: rgba(0, 0, 0, 0.9);
+			overflow-x: hidden;
+			transition: 0.5s;
+		}
+
+		.overlay-content {
+			position: relative;
+			top: 25%;
+			width: 100%;
+			text-align: center;
+			margin-top: 30px;
+		}
+
+		.overlay a {
+			padding: 8px;
+			text-decoration: none;
+			font-size: 36px;
+			color: #818181;
+			display: block;
+			transition: 0.3s;
+		}
+
+		.overlay a:hover,
+		.overlay a:focus {
+			color: #f1f1f1;
+		}
+
+		.overlay .closebtn {
+			position: absolute;
+			top: 20px;
+			right: 45px;
+			font-size: 60px;
+		}
+
+		@media screen and (max-height: 450px) {
+			.overlay a {
+				font-size: 20px
+			}
+
+			.overlay .closebtn {
+				font-size: 40px;
+				top: 15px;
+				right: 35px;
+			}
+		}
+	</style>
 
 </body>
 
