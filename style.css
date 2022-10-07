@@ -12167,8 +12167,9 @@ h5,
   overflow: hidden !important;
   background-color: #333 !important;
   position: fixed !important;
-  z-index: 1000 !important;
+  /* z-index: 1000 !important; */
   bottom: 0 !important;
+  width: 100% !important;
  }
 /*bottom nav style ends*/
 
