@@ -12296,6 +12296,10 @@ body {
     background-color: ghostwhite;
     text-align: center !important;
   }
+
+  #home{
+    margin-top: -20% !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -12304,6 +12308,7 @@ body {
     border: none;
     background-color: ghostwhite;
     text-align: center !important;
+    margin-top: -20% !important;
   }
 }
 
