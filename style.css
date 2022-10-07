@@ -12288,6 +12288,23 @@ body {
     right: 35px;
   }
 }
+@media(max-width: 480px) {
+  .dropdown-menu{
+    margin-left: 20px;
+    border: none;
+    background-color: ghostwhite;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu{
+    margin-left: 20px;
+    border: none;
+    background-color: ghostwhite;
+  }
+}
+
+
 
 /* curtain menu */
 
