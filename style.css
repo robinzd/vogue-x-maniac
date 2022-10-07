@@ -12228,7 +12228,7 @@ nav.navbar.fixed-bottom.navbar-light.bg-light.d-block.d-sm-none.navs a {
 .overlay {
   height: 100%;
   width: 0;
-  position: fixed;
+  position:1000;
   z-index: 1;
   top: 0;
   left: 0;
@@ -12244,6 +12244,7 @@ nav.navbar.fixed-bottom.navbar-light.bg-light.d-block.d-sm-none.navs a {
   width: 100%;
   text-align: center;
   margin-top: 30px;
+  
 }
 
 .overlay a {
