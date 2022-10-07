@@ -12164,7 +12164,7 @@ h5,
 /*botton nav style starts*/
 #bottomnav {
   margin-top: 20% !important;
-  /* overflow: hidden !important; */
+  overflow: hidden !important;
   background-color: #333 !important;
   position:sticky !important;
   /* z-index: 1000 !important; */
