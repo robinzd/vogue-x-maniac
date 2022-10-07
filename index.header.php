@@ -221,6 +221,7 @@ if ($get_user) {
 			width: 100%;
 			text-align: center;
 			margin-top: 30px;
+			z-index: 1000;
 		}
 
 		.overlay a {
