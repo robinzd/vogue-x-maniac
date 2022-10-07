@@ -164,7 +164,7 @@ if ($get_user) {
 <a href="./user_dashboard.php" id="avatar"><i class="fa-regular fa-user" style='font-size:30px'></i></a>
   <a href="#news" id="menu"><i class="fa-solid fa-bars" style='font-size:30px'></i></a>
   <a href="./index.php" id="home"><i class='fa fa-home' style='font-size:30px'></i></a>
-  <a href="./cart.php" id="cart"><i class="fa-solid fa-cart-shopping-fast" style='font-size:30px'></i></a>
+  <a href="./cart.php" id="cart"><i class="fa-solid fa-cart-shopping" style='font-size:30px'></i></a>
   <a href="#news" id="search"><i class='fa fa-search' style='font-size:30px'></i></a>
   
    </nav>
