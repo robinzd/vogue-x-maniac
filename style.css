@@ -12324,9 +12324,12 @@ body {
     margin-top: -9px;
   }
 }
-
-
-
 /* curtain menu */
+
+/* modal box */
+div#exampleModal{
+  margin-top: 40% !important;
+}
+/* modal box */
 
 
