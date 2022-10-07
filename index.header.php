@@ -174,10 +174,29 @@ if ($get_user) {
 	<div id="myNav" class="overlay d-block d-sm-none">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i id="close" class="fa-solid fa-x"></i></a>
 		<div class="overlay-content">
-			<a href="#">About</a>
-			<a href="#">Services</a>
-			<a href="#">Clients</a>
-			<a href="#">Contact</a>
+		<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+							<div class="dropdown-menu" aria-labelledby="dropdown04">
+								<?php
+
+
+								$get_product_category = "select product_category from products_details";
+
+								$run_product_category = mysqli_query($conn, $get_product_category);
+
+								while ($row_product_category = mysqli_fetch_array($run_product_category)) {
+
+									$categoryname = $row_product_category['product_category'];
+
+									$category_replace = str_replace(" ", "-", $row_product_category['product_category']);
+
+									echo "<a class='dropdown-item' href='shop.php?category_name=$category_replace'>$categoryname</a>
+
+                        ";
+								}
+								?>
+							</div>
+						</li>
 		</div>
 	</div>
 	<!-- curtain menu -->
