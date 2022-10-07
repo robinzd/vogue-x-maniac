@@ -12308,6 +12308,10 @@ body {
     margin-left: -6px;
     margin-top: -9px;
   }
+
+  .col-md-6.d-md-flex.justify-content-end.mb-md-0.mb-3{
+    margin-top: 10px !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -12323,10 +12327,21 @@ body {
     margin-left: -6px;
     margin-top: -9px;
   }
+
+  .col-md-6.d-md-flex.justify-content-end.mb-md-0.mb-3{
+    margin-top: 10px !important;
+  }
 }
 /* curtain menu */
 
 
 /* modal box */
+.modal-dialog{
+  margin-top: 40% !important;
+}
 
+.modal-body{
+  background-color: ghostwhite !important;
+  border: none !important;
+}
 
