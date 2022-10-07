@@ -165,8 +165,7 @@ if ($get_user) {
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
   <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-</nav>
+   </nav>
 <!-- bottom nav -->
 
 	<script src="./js header/bootstrap.min.js"></script>
