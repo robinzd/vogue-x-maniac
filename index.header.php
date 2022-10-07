@@ -166,6 +166,7 @@ if ($get_user) {
   <a href="#contact"><i class='fa fa-home' style='font-size:36px'></i></a>
   <a href="#news"><i class='fa fa-shopping-cart' style='font-size:36px'></i></a>
   <a href="#news"><i class='fa fa-search' style='font-size:36px'></i></a>
+  <a href="#news"><i class='fa fa-search' style='font-size:36px'></i></a>
    </nav>
 <!-- bottom nav -->
 
