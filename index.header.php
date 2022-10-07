@@ -209,8 +209,7 @@ if ($get_user) {
 			z-index: 1000;
 			top: 0;
 			left: 0;
-			background-color: rgb(0, 0, 0);
-			background-color: rgba(0, 0, 0, 0.9);
+			background-color: ghostwhite;
 			overflow-x: hidden;
 			transition: 0.5s;
 		}
