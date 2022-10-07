@@ -172,7 +172,7 @@ if ($get_user) {
 
 	<!-- curtain menu -->
 	<div id="myNav" class="overlay d-block d-sm-none">
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fa-solid fa-x"></i></a>
 		<div class="overlay-content">
 			<a href="#">About</a>
 			<a href="#">Services</a>
