@@ -12165,7 +12165,7 @@ h5,
 
 nav.navbar.fixed-bottom.navbar-light.bg-light.d-block.d-sm-none.navs a {
   display:flex !important;
-  justify-content: space-between !important;
+  justify-content:space-evenly !important;
   color:black;
   text-align: center !important;
   padding: 14px 16px;
