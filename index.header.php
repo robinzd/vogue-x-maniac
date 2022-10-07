@@ -164,7 +164,18 @@ if ($get_user) {
 		<a href="./user_dashboard.php" id="avatar"><i class="fa-regular fa-user" style='font-size:20px'></i></a>
 		<a onclick="openNav()" id="menu"><i class="fa-solid fa-bars" style='font-size:20px'></i></a>
 		<a href="./index.php" id="home"><i class='fa fa-home' style='font-size:20px'></i></a>
-		<a href="./cart.php" id="cart"><i class="fa-solid fa-cart-shopping" style='font-size:20px'></i><i class='sr-only'>Twitter</i></span><span id='product'>1</span></a>
+		<?php
+		if ($user_id == 0) {
+			echo "<a href='./cart.php' id='cart'><i class='fa-solid fa-cart-shopping' style='font-size:20px'></i><i class='sr-only'>Twitter</i></span><span id='product'></span></a>";
+		} elseif ($row_count > 0) {
+
+			echo "<a href='./cart.php' id='cart'><i class='fa-solid fa-cart-shopping' style='font-size:20px'></i><i class='sr-only'>Twitter</i></span><span id='product'>$row_count</span></a>";
+		} else {
+			echo "<a href='./cart.php' id='cart'><i class='fa-solid fa-cart-shopping' style='font-size:20px'></i><i class='sr-only'>Twitter</i></span><span id='product'></span></a>";
+		}
+
+		?>
+
 		<a href="#news" id="search"><i class='fa fa-search' style='font-size:20px'></i></a>
 
 	</nav>
@@ -174,36 +185,36 @@ if ($get_user) {
 	<div id="myNav" class="overlay d-block d-sm-none">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i id="close" class="fa-solid fa-x"></i></a>
 		<div class="overlay-content">
-		<ul class="navbar-nav m-auto">
-						<li class="nav-item" id="home1"><a href="index.php" class="nav-link">Home</a></li>
-						<li class="nav-item"><a href="shop.php" class="nav-link">Shop</a></li>
-						<li class="nav-item"><a href="aboutus.php" class="nav-link">About Us</a></li>
-						<li class="nav-item"><a href="contactus.php" class="nav-link">Contact Us</a></li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
-							<div class="dropdown-menu" aria-labelledby="dropdown04">
-								<?php
+			<ul class="navbar-nav m-auto">
+				<li class="nav-item" id="home1"><a href="index.php" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="shop.php" class="nav-link">Shop</a></li>
+				<li class="nav-item"><a href="aboutus.php" class="nav-link">About Us</a></li>
+				<li class="nav-item"><a href="contactus.php" class="nav-link">Contact Us</a></li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown04">
+						<?php
 
 
-								$get_product_category = "select product_category from products_details";
+						$get_product_category = "select product_category from products_details";
 
-								$run_product_category = mysqli_query($conn, $get_product_category);
+						$run_product_category = mysqli_query($conn, $get_product_category);
 
-								while ($row_product_category = mysqli_fetch_array($run_product_category)) {
+						while ($row_product_category = mysqli_fetch_array($run_product_category)) {
 
-									$categoryname = $row_product_category['product_category'];
+							$categoryname = $row_product_category['product_category'];
 
-									$category_replace = str_replace(" ", "-", $row_product_category['product_category']);
+							$category_replace = str_replace(" ", "-", $row_product_category['product_category']);
 
-									echo "<a class='dropdown-item' href='shop.php?category_name=$category_replace'>$categoryname</a>
+							echo "<a class='dropdown-item' href='shop.php?category_name=$category_replace'>$categoryname</a>
 
                         ";
-								}
-								?>
-							</div>
-						</li>
-						
-					</ul>
+						}
+						?>
+					</div>
+				</li>
+
+			</ul>
 		</div>
 	</div>
 	<!-- curtain menu -->
@@ -223,4 +234,5 @@ if ($get_user) {
 	<script src="./js header/main.js"></script>
 	<script src="./js header/popper.js"></script>
 </body>
+
 </html>
