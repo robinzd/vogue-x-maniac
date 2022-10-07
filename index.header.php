@@ -166,12 +166,12 @@ if ($get_user) {
 		<a href="./index.php" id="home"><i class='fa fa-home' style='font-size:20px'></i></a>
 		<?php
 		if ($user_id == 0) {
-			echo "<a href='./cart.php' id='cart'><i class='fa-solid fa-cart-shopping' style='font-size:20px'></i><i class='sr-only'>Twitter</i></span><span id='product'></span></a>";
+			echo "<a href='product_cart.php' id='cart'><i class='fa-solid fa-cart-shopping' style='font-size:20px'></i><i class='sr-only'>Twitter</i></span><span id='product'></span></a>";
 		} elseif ($row_count > 0) {
 
-			echo "<a href='./cart.php' id='cart'><i class='fa-solid fa-cart-shopping' style='font-size:20px'></i><i class='sr-only'>Twitter</i></span><span id='product'>$row_count</span></a>";
+			echo "<a href='product_cart.php' id='cart'><i class='fa-solid fa-cart-shopping' style='font-size:20px'></i><i class='sr-only'>Twitter</i></span><span id='product'>$row_count</span></a>";
 		} else {
-			echo "<a href='./cart.php' id='cart'><i class='fa-solid fa-cart-shopping' style='font-size:20px'></i><i class='sr-only'>Twitter</i></span><span id='product'></span></a>";
+			echo "<a href='product_cart.php' id='cart'><i class='fa-solid fa-cart-shopping' style='font-size:20px'></i><i class='sr-only'>Twitter</i></span><span id='product'></span></a>";
 		}
 
 		?>
