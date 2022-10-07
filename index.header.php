@@ -206,7 +206,7 @@ if ($get_user) {
 			height: 100%;
 			width: 0;
 			position: fixed;
-			z-index: 1;
+			z-index: 1000;
 			top: 0;
 			left: 0;
 			background-color: rgb(0, 0, 0);
@@ -231,6 +231,7 @@ if ($get_user) {
 			color: #818181;
 			display: block;
 			transition: 0.3s;
+			z-index: 1000;
 		}
 
 		.overlay a:hover,
