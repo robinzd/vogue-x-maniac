@@ -1,80 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
-a.navbar-brand.text-dark{
-    font-size: 35px;
-  
+a.navbar-brand.text-dark {
+  font-size: 35px;
 }
 
-body{
+body {
   background-color: ghostwhite !important;
-  
 }
 
 #demo {
   margin-top: 10%;
 }
 
-
-
-a#brand{
-    font-size: 20px;
+a#brand {
+  font-size: 20px;
 }
 
-img#brand{
-    width:100px;
+img#brand {
+  width: 100px;
 }
 
 /* brands */
-#brands{
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    margin:20px 0px 50px 0px;
-    flex-direction:column;
+#brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0px 50px 0px;
+  flex-direction: column;
 }
 
-#brands h2{
-   font-weight:500;
-   padding:2px 20px;
-   text-transform:capitalize;
-   letter-spacing: 2px;
-   font-family: 'Redressed', cursive;
-   margin:20px 0px;
-   border: 1px solid rgba(0,0,0,0.14) ;
+#brands h2 {
+  font-weight: 500;
+  padding: 2px 20px;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-family: "Redressed", cursive;
+  margin: 20px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
 }
 
-.brands-container{
-    display: flex;
-    margin:auto;
-    width:1200px;
-    justify-content: center;
-    align-items:center;
-    padding:20px;
-    border:1px solid rgba(0,0,0,0.04);
+.brands-container {
+  display: flex;
+  margin: auto;
+  width: 1200px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
 }
 
-.brands-box{
-    position:relative;
-    padding:10px;
-    text-decoration: none;
+.brands-box {
+  position: relative;
+  padding: 10px;
+  text-decoration: none;
 }
 
 .categories {
   margin-top: -50px !important;
 }
 
-.services.pd{
+.services.pd {
   margin-top: -55px;
 }
 
 @media (max-width: 767px) {
-
-
-#fade{
-  margin-top: -25px !important;
-}
-
+  #fade {
+    margin-top: -25px !important;
+  }
 }
 
 /* .brands-box img{
@@ -103,56 +96,53 @@ img#brand{
 
 /* owl brands */
 
-
-  .title{
-      text-align: center;
-  }
- 
-  .slider{
-    max-width:1100px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width:100%
+.title {
+  text-align: center;
 }
-  .slider .card{
-    flex: 1;
-    margin: 0 10px;
-}s
-  .slider .card .img{
-    height:200px;
-    width: 100%;
-  
-  }
-  .slider .card .img img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
-  .slider .card .content{
-    padding: 10px 20px;
-  }
-  .card .content .title{
-    font-size: 25px;
-    font-weight: 600;
-  } 
 
+.slider {
+  max-width: 1100px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.slider .card {
+  flex: 1;
+  margin: 0 10px;
+}
+s .slider .card .img {
+  height: 200px;
+  width: 100%;
+}
+.slider .card .img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider .card .content {
+  padding: 10px 20px;
+}
+.card .content .title {
+  font-size: 25px;
+  font-weight: 600;
+}
 
-  .card .img{
-      height:150px;
-      border-radius: 10px;
-  }
+.card .img {
+  height: 150px;
+  border-radius: 10px;
+}
 
- div.card{
-     background-color:orange;
-     border-radius: 10px;
- }
+div.card {
+  background-color: orange;
+  border-radius: 10px;
+}
 
- /* #tissot{
+/* #tissot{
      background-color: teal;
  } */
 
- /* #jbl{
+/* #jbl{
      background-color: lightgrey;
  }
 
@@ -160,161 +150,153 @@ img#brand{
      background-color:lightseagreen;
  } */
 
- /* #apple{
+/* #apple{
      background-color:wheat;
  } */
 
- img.card-img-top{
-   border-top-left-radius: 10px;
-   border-top-right-radius: 10px;
- }
-
- /* category image grid */
-
-
- 
- .gallery {
-    transition: 0.3s;
-    display: flex;
-    padding: 2px;
-    flex-wrap: wrap;
-  }
-
-  
-  .gallery:hover .gallery__image {
-    filter: grayscale(1);
-  }
-
-  
-  .gallery__column {
-    display: flex;
-    flex-direction:column;
-    width: 25%;
-  }
-
-
-  .gallery__link {
-    margin: 2px;
-    overflow: hidden;
-  }
-  .gallery__link:hover .gallery__image {
-    filter: grayscale(0);
-  }
-  .gallery__link:hover .gallery__caption {
-    opacity: 1;
-  }
-  .gallery__thumb {
-    position: relative;
-  }
-  .gallery__image {
-    display: block;
-    width: 100%;
-    transition: 0.3s;
-  }
-  .gallery__image:hover {
-    transform: scale(1.1);
-  }
-  .gallery__caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 25px 15px 15px;
-    width: 100%;
-    font-family:'Redressed', cursive;
-    font-size: 16px;
-    color: white;
-    opacity: 0;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
-    transition: 0.3s;
-  }
-
-  /* latest products */
-  a.btn.btn-success{
-    margin:10px;
-  }
-  
-  a.btn.btn-success:hover{
-    background-color:black;
-    border:1px solid;
-    color:white;
-  }
-  
-  a.btn.btn-success{
-  background-color:white;
-  border-radius: 10px;
-  border-color: lightgreen;
-  color:black;
-  white-space: nowrap; 
-  
-  }
-  
- 
-  h5.card-title.text-center{
-    font-family: 'Poppins', sans-serif;
-    white-space: nowrap;
-  }
-
-  
-  s{
-    color:grey;
-  }
-
-  p.card-text.text-center{
-    color:black;
-    text-transform: capitalize;
-  }
-
-
-  /* footer */
-img.footerimage{
-    width: 120px;
+img.card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.text-center.p-3{
+/* category image grid */
+
+.gallery {
+  transition: 0.3s;
+  display: flex;
+  padding: 2px;
+  flex-wrap: wrap;
+}
+
+.gallery:hover .gallery__image {
+  filter: grayscale(1);
+}
+
+.gallery__column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.gallery__link {
+  margin: 2px;
+  overflow: hidden;
+}
+.gallery__link:hover .gallery__image {
+  filter: grayscale(0);
+}
+.gallery__link:hover .gallery__caption {
+  opacity: 1;
+}
+.gallery__thumb {
+  position: relative;
+}
+.gallery__image {
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+.gallery__image:hover {
+  transform: scale(1.1);
+}
+.gallery__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px 15px 15px;
+  width: 100%;
+  font-family: "Redressed", cursive;
+  font-size: 16px;
+  color: white;
+  opacity: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transition: 0.3s;
+}
+
+/* latest products */
+a.btn.btn-success {
+  margin: 10px;
+}
+
+a.btn.btn-success:hover {
+  background-color: black;
+  border: 1px solid;
+  color: white;
+}
+
+a.btn.btn-success {
+  background-color: white;
+  border-radius: 10px;
+  border-color: lightgreen;
+  color: black;
+  white-space: nowrap;
+}
+
+h5.card-title.text-center {
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
+}
+
+s {
+  color: grey;
+}
+
+p.card-text.text-center {
+  color: black;
+  text-transform: capitalize;
+}
+
+/* footer */
+img.footerimage {
+  width: 120px;
+}
+
+.text-center.p-3 {
   background-color: #1d1d1f !important;
 }
 
-footer.text-center.text-lg-start.text-dark{
+footer.text-center.text-lg-start.text-dark {
   background-color: #424245 !important;
-  margin-bottom: 20% !important;
 }
 
-
-#facebook{
+#facebook {
   color: #3b5998;
   font-size: 25px;
 }
 
-#twitter{
-  color:#00acee;
+#twitter {
+  color: #00acee;
   font-size: 25px;
 }
 
-#youtube{
-  color:#FF0000;
+#youtube {
+  color: #ff0000;
   font-size: 25px;
 }
 
-#instagram{
-  color:#C13584;
+#instagram {
+  color: #c13584;
   font-size: 25px;
 }
 
-
-p.text-white{
+p.text-white {
   margin-top: 20px;
 }
 
-h6.text-uppercase.mb-4.font-weight-bold{
-  font-family:'Redressed', cursive;
-  color:lightgrey !important;
+h6.text-uppercase.mb-4.font-weight-bold {
+  font-family: "Redressed", cursive;
+  color: lightgrey !important;
 }
 
 hr.w-100.clearfix.d-md-none {
   color: lightgrey !important;
 }
 
-p#address{
+p#address {
   white-space: nowrap;
 }
 
@@ -324,11 +306,9 @@ img.px-2 {
 
 /* services */
 
-
-
 .services {
   padding: 40px;
-  position: relative
+  position: relative;
 }
 
 .services .square {
@@ -341,7 +321,7 @@ img.px-2 {
   padding: 10px;
   background-color: lightgreen;
   box-shadow: 0px 0px 27px 0px #ccc;
-  border: 2px dotted #eaf3fa
+  border: 2px dotted #eaf3fa;
 }
 
 .square i {
@@ -350,7 +330,7 @@ img.px-2 {
   color: #eaf3fa;
   font-size: 40px;
   padding-top: 17px;
-  padding-right: 14px
+  padding-right: 14px;
 }
 
 .services .square::before {
@@ -359,8 +339,8 @@ img.px-2 {
   top: 0;
   width: 1px;
   height: 100%;
-  background-color:black;
-  content: ''
+  background-color: black;
+  content: "";
 }
 
 .services .square::after {
@@ -369,9 +349,9 @@ img.px-2 {
   top: 66px;
   width: 1px;
   height: 88%;
-  background-color:black;
-  content: '';
-  transform: rotate(90deg)
+  background-color: black;
+  content: "";
+  transform: rotate(90deg);
 }
 
 .services .serv .num {
@@ -384,34 +364,38 @@ img.px-2 {
   color: #fff;
   font-size: 30px;
   padding-top: 7px;
-  border: 1px dashed
+  border: 1px dashed;
 }
 
 .services .serv h5 {
   color: #fa9746;
-  font-family: 'Redressed', cursive;
+  font-family: "Redressed", cursive;
 }
 
 .services .serv p {
-  color: #777
+  color: #777;
 }
 
 .services .serv hr {
   width: 30px;
-  border-top: 3px solid rgb(0 169 211)
+  border-top: 3px solid rgb(0 169 211);
 }
-
 
 /* view in the mobile */
- @media (max-width:480px) {
+@media (max-width: 480px) {
   .demos {
     margin-top: 20% !important;
-}
+  }
+  footer.text-center.text-lg-start.text-dark {
+    margin-bottom: 20% !important;
+  }
 }
 
- @media (max-width:768px) {
+@media (max-width: 768px) {
   .demos {
     margin-top: 20% !important;
+  }
+  footer.text-center.text-lg-start.text-dark {
+    margin-bottom: 20% !important;
+  }
 }
-}
-
