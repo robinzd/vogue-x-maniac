@@ -220,7 +220,7 @@ if ($get_user) {
 		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<div class="modal-body">
+					
 					<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
 							<form action="shop.php" method="Post" class="searchform order-lg-last">
 								<div class="form-group d-flex">
@@ -229,7 +229,7 @@ if ($get_user) {
 								</div>
 							</form>
 						</div>
-					</div>
+				
 				</div>
 			</div>
 		</div>
