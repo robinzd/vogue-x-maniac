@@ -244,6 +244,7 @@ if ($get_user) {
 			top: 20px;
 			right: 45px;
 			font-size: 60px;
+			color: white !important;
 		}
 
 		/* @media screen and (max-height: 450px) {
