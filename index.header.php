@@ -161,7 +161,7 @@ if ($get_user) {
 
 <!-- bottom nav -->
 <nav class="navbar fixed-bottom navbar-light bg-light d-block d-sm-none navs" id="bottom">
-<a href="#home"><i class='fa fa-user-alt' style='font-size:36px'></i></a>
+<a href="#home" id="avatar"><i class='fa fa-user-alt' style='font-size:36px'></i></a>
   <a href="#news"><i class='fa fa-navicon' style='font-size:36px'></i></a>
   <a href="#contact"><i class='fa fa-home' style='font-size:36px'></i></a>
   <a href="#news"><i class='fa fa-shopping-cart' style='font-size:36px'></i></a>
