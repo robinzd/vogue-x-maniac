@@ -12174,6 +12174,7 @@ nav.navbar.fixed-bottom.navbar-light.bg-light.d-block.d-sm-none.navs a {
  }
 
  nav.navbar.fixed-bottom.navbar-light.bg-light.d-block.d-sm-none.navs{
+  background-color: lightgreen !important;
  padding-bottom: 5% !important;
 }
 
