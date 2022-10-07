@@ -12162,13 +12162,13 @@ h5,
 
 
 /*botton nav style starts*/
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  position: fixed;
+#bottomnav {
+  overflow: hidden !important;
+  background-color: #333 !important;
+  position: fixed !important;
   z-index: 1000 !important;
-  bottom: 0;
-  width: 100%
+  bottom: 0 !important;
+  width: 100% !important;
 }
 /*bottom nav style ends*/
 
