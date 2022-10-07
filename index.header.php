@@ -160,11 +160,9 @@ if ($get_user) {
 	</nav>
 
 <!-- bottom nav -->
-	<div class="navbar d-block d-sm-none" id="bottomnav">
-		<a href="#home" class="active">Home</a>
-		<a href="#news">News</a>
-		<a href="#contact">Contact</a>
-	</div>
+<nav class="navbar fixed-bottom navbar-light bg-light d-block d-sm-none navs">
+  <a class="navbar-brand" href="#">Fixed bottom</a>
+</nav>
 <!-- bottom nav -->
 
 	<script src="./js header/bootstrap.min.js"></script>
