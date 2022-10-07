@@ -245,7 +245,7 @@ if ($get_user) {
 			font-size: 60px;
 		}
 
-		@media screen and (max-height: 450px) {
+		/* @media screen and (max-height: 450px) {
 			.overlay a {
 				font-size: 20px
 			}
@@ -255,7 +255,7 @@ if ($get_user) {
 				top: 15px;
 				right: 35px;
 			}
-		}
+		} */
 	</style>
 
 </body>
