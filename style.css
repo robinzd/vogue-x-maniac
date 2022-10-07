@@ -46,6 +46,11 @@
 }
 
 
+a.navbar-brand{
+  margin-top: -20% !important;
+}
+
+
 @media (max-width: 480px) {
   nav#mobile{
     height: 12% !important;
