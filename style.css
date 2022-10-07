@@ -12165,6 +12165,7 @@ h5,
 
 nav.navbar.fixed-bottom.navbar-light.bg-light.d-block.d-sm-none.navs a {
   float: left;
+  justify-content:space-evenly;
   display: block;
   color:black;
   text-align: center;
