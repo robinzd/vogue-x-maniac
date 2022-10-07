@@ -12164,11 +12164,10 @@ h5,
 nav.navbar.fixed-bottom.navbar-light.bg-light.d-block.d-sm-none.navs a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color:black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
-}
+ }
 
 
