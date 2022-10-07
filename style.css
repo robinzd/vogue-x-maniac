@@ -12338,6 +12338,7 @@ body {
 /* modal box */
 .modal-dialog{
   margin-top: 40% !important;
+  border-radius: 10px !important;
 }
 
 .modal-body{
