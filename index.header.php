@@ -176,7 +176,7 @@ if ($get_user) {
 
 		?>
 
-		<a href="#news" id="search"><i class='fa fa-search' style='font-size:20px'></i></a>
+		<a data-bs-toggle="modal" data-bs-target="#exampleModal" id="search"><i class='fa fa-search' style='font-size:20px'></i></a>
 
 	</nav>
 	<!-- bottom nav -->
@@ -216,6 +216,18 @@ if ($get_user) {
 
 			</ul>
 		</div>
+		<!-- modal box starts -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-body">
+						...
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<!-- modal box ends-->
 	</div>
 	<!-- curtain menu -->
 
