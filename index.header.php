@@ -163,8 +163,8 @@ if ($get_user) {
 <nav class="navbar fixed-bottom navbar-light bg-light d-block d-sm-none navs" id="bottom">
 <a href="./user_dashboard.php" id="avatar"><i class="fa-regular fa-user" style='font-size:30px'></i></a>
   <a href="#news"><i class="fa-solid fa-bars" style='font-size:30px'></i></a>
-  <a href="./index.php"><i class="fa-solid fa-cart-shopping-fast" style='font-size:30px'></i></a>
-  <a href="./cart.php"><i class='fa fa-shopping-cart' style='font-size:30px'></i></a>
+  <a href="./index.php"><i class='fa fa-home' style='font-size:30px'></i></a>
+  <a href="./cart.php"><i class="fa-solid fa-cart-shopping-fast" style='font-size:30px'></i></a>
   <a href="#news"><i class='fa fa-search' style='font-size:30px'></i></a>
   
    </nav>
