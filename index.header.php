@@ -206,7 +206,7 @@ if ($get_user) {
 			height: 100%;
 			width: 0;
 			position: fixed;
-			z-index: 1000;
+			z-index:9999;
 			top: 0;
 			left: 0;
 			background-color: ghostwhite;
@@ -243,7 +243,6 @@ if ($get_user) {
 			top: 20px;
 			right: 45px;
 			font-size: 60px;
-			color: white !important;
 		}
 
 		#close{
