@@ -12258,6 +12258,7 @@ body {
   display: block;
   transition: 0.3s;
   z-index: 1000;
+  margin-top: -20%;
 }
 
 .overlay a:hover,
