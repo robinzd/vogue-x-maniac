@@ -12304,7 +12304,10 @@ body {
     background-color: ghostwhite;
     text-align: center !important;
   }
-
+  span#product {
+    margin-left: -6px;
+    margin-top: -9px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -12316,6 +12319,10 @@ body {
     margin-top: -20% !important;
   }
 
+  span#product {
+    margin-left: -6px;
+    margin-top: -9px;
+  }
 }
 
 
