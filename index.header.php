@@ -162,7 +162,7 @@ if ($get_user) {
 <!-- bottom nav -->
 <nav class="navbar fixed-bottom navbar-light bg-light d-block d-sm-none navs" id="bottom">
 <a href="./user_dashboard.php" id="avatar"><i class="fa-regular fa-user" style='font-size:30px'></i></a>
-  <a href="#news" id="menu"><i class="fa-solid fa-bars" style='font-size:30px'></i></a>
+  <a onclick="openNav()" id="menu"><i class="fa-solid fa-bars" style='font-size:30px'></i></a>
   <a href="./index.php" id="home"><i class='fa fa-home' style='font-size:30px'></i></a>
   <a href="./cart.php" id="cart"><i class="fa-solid fa-cart-shopping" style='font-size:30px'></i></a>
   <a href="#news" id="search"><i class='fa fa-search' style='font-size:30px'></i></a>
@@ -170,10 +170,34 @@ if ($get_user) {
    </nav>
 <!-- bottom nav -->
 
+<!-- curtain menu -->
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div>
+</div>
+<!-- curtain menu -->
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+</script>
+
 	<script src="./js header/bootstrap.min.js"></script>
 	<script src="./js header/jquery.min.js"></script>
 	<script src="./js header/main.js"></script>
 	<script src="./js header/popper.js"></script>
+
+	
 
 </body>
 
