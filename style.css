@@ -45,25 +45,48 @@
   width:100% !important;
 }
 
-nav#mobile{
-  height: 12% !important;
- 
- 
+
+@media (max-width: 480px) {
+  nav#mobile{
+    height: 12% !important;
+   
+   
+  }
+  
+  .bg-light{
+    border: 1px solid grey !important;
+  }
+  
+  #mobile{
+    position:fixed !important;
+    z-index: 9999 !important;
+    margin: 0 !important;
+    top: 0 !important;
+    width:100% !important;
+    box-shadow: 15px grey;
+  }
 }
 
-.bg-light{
-  border: 1px solid grey !important;
+@media (max-width: 768px) {
+  nav#mobile{
+    height: 12% !important;
+   
+   
+  }
+  
+  .bg-light{
+    border: 1px solid grey !important;
+  }
+  
+  #mobile{
+    position:fixed !important;
+    z-index: 9999 !important;
+    margin: 0 !important;
+    top: 0 !important;
+    width:100% !important;
+    box-shadow: 15px grey;
+  }
 }
-
-#mobile{
-  position:fixed !important;
-  z-index: 9999 !important;
-  margin: 0 !important;
-  top: 0 !important;
-  width:100% !important;
-  box-shadow: 15px grey;
-}
-
 
 
 .ftco-section {
@@ -12180,9 +12203,18 @@ nav.navbar.fixed-bottom.navbar-light.bg-light.d-block.d-sm-none.navs a {
  padding-bottom: 5% !important;
 }
 
-#avatar{
-  margin-left: 5% !important;
+#search{
+   margin-left: 3% !important;
 }
+
+#cart{
+  margin-left: 3% !important;
+}
+
+#home{
+  margin-left: 3% !important;
+}
+
 
 /* bottom navbar */
 
