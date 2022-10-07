@@ -12209,15 +12209,23 @@ nav.navbar.fixed-bottom.navbar-light.bg-light.d-block.d-sm-none.navs a {
 }
 
 #search{
-   margin-left: 3% !important;
+   margin-left: 5% !important;
 }
 
 #cart{
-  margin-left: 3% !important;
+  margin-left: 5% !important;
 }
 
 #home{
-  margin-left: 3% !important;
+  margin-left: 5% !important;
+}
+
+#menu{
+  margin-left: 5% !important;
+}
+
+#avatar{
+  margin-right:5% ;
 }
 
 
@@ -12297,9 +12305,6 @@ body {
     text-align: center !important;
   }
 
-  /* #home1{
-    margin-top: -20% !important;
-  } */
 }
 
 @media (max-width: 768px) {
@@ -12311,9 +12316,6 @@ body {
     margin-top: -20% !important;
   }
 
-  /* #home1{
-    margin-top: -20% !important;
-  } */
 }
 
 
