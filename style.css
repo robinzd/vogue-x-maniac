@@ -12338,9 +12338,9 @@ body {
 
 
 /* modal box */
-.modal-dialog{
-  margin-top: 40% !important;
-}
+/* .modal-dialog{
+ 
+} */
 
 .modal-body{
   background-color: ghostwhite !important;
@@ -12351,6 +12351,7 @@ body {
   background-color: ghostwhite !important;
   border: none;
   border-radius: 10px !important;
+  margin-top: 40% !important;
 }
 
 
