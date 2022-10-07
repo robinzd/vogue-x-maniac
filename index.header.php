@@ -203,7 +203,7 @@ if ($get_user) {
 		}
 
 		.overlay {
-			height: 100%;
+			height: 200%;
 			width: 0;
 			position: fixed;
 			z-index: 1000;
