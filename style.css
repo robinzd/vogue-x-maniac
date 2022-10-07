@@ -12164,7 +12164,7 @@ h5,
 /* bottom navbar */
 
 nav.navbar.fixed-bottom.navbar-light.bg-light.d-block.d-sm-none.navs a {
-  float: left;
+  float:center;
   display: block;
   color:black;
   text-align: center;
