@@ -164,6 +164,8 @@ if ($get_user) {
 <a href="#home" class="active">Home</a>
   <a href="#news">News</a>
   <a href="#contact">Contact</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
 </nav>
 <!-- bottom nav -->
 
