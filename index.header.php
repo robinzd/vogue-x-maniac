@@ -161,10 +161,10 @@ if ($get_user) {
 
 <!-- bottom nav -->
 <nav class="navbar fixed-bottom navbar-light bg-light d-block d-sm-none navs" id="bottom">
-<a href="#home" id="avatar"><i class='fa fa-user-alt' style='font-size:36px'></i></a>
+<a href="./user_dashboard.php" id="avatar"><i class='fa fa-user-alt' style='font-size:36px'></i></a>
   <a href="#news"><i class='fa fa-navicon' style='font-size:36px'></i></a>
-  <a href="#contact"><i class='fa fa-home' style='font-size:36px'></i></a>
-  <a href="#news"><i class='fa fa-shopping-cart' style='font-size:36px'></i></a>
+  <a href="./index.php"><i class='fa fa-home' style='font-size:36px'></i></a>
+  <a href="./cart.php"><i class='fa fa-shopping-cart' style='font-size:36px'></i></a>
   <a href="#news"><i class='fa fa-search' style='font-size:36px'></i></a>
   
    </nav>
