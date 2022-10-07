@@ -12299,10 +12299,11 @@ body {
 }
 @media(max-width: 480px) {
   .dropdown-menu.show{
-    margin-left: 20px;
+    margin-left: 45% !important;
     border: none;
     background-color: ghostwhite;
     text-align: center !important;
+    margin-top:0.1% !important;
   }
   span#product {
     margin-left: -6px;
@@ -12316,11 +12317,12 @@ body {
 
 @media (max-width: 768px) {
   .dropdown-menu.show{
-    margin-left: 20px;
+    margin-left: 45% !important;
     border: none;
     background-color: ghostwhite;
     text-align: center !important;
-    margin-top: -20% !important;
+    margin-top:0.1% !important;
+    
   }
 
   span#product {
