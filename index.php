@@ -501,9 +501,9 @@ include("./conn.php");
 
             <p class="text-dark"> ©2022 Vogue X Maniac.All Rights Reserved
             </p>
-            <img class="px-2" src="./payment_pics/2560px-MasterCard_Logo.svg-removebg-preview.png">
+            <!-- <img class="px-2" src="./payment_pics/2560px-MasterCard_Logo.svg-removebg-preview.png">
             <img class="px-2" src="./payment_pics/1200px-Visa.svg-removebg-preview.png">
-            <img class="px-2" src="./payment_pics/paypal-logo-removebg-preview.png">
+            <img class="px-2" src="./payment_pics/paypal-logo-removebg-preview.png"> -->
         </div>
         <!-- Copyright -->
     </footer>
