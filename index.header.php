@@ -218,7 +218,7 @@ if ($get_user) {
 		</div>
 		<!-- modal box starts -->
 		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-			<div class="modal-dialog-centered">
+			<div class="modal-dialog">
 				<div class="modal-content">
 				<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
 							<form action="shop.php" method="Post" class="searchform order-lg-last">
