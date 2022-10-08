@@ -153,6 +153,14 @@ if ($get_cart) {
                                 </div>
                             </div>
                         </a>
+                        <a href="./logout.php">
+                            <div class="box me-4 my-1 bg-light d-block d-sm-none">
+                                <img src="./reset-password-icon-29.jpg" alt="">
+                                <div class="d-flex align-items-center mt-2">
+                                    <div class="tag">Logout</div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                     <div class="text-uppercase">My orders</div>
                     <?php
