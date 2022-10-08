@@ -438,7 +438,7 @@ include("./conn.php");
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                         <img class="footerimage" src="./header images/vogue x maniac png.png" alt="brand image">
                         <p class="text-white">
-                            vogue-x-maniac is the one of the leading ecommerce website
+                        VogueXmaniac The Best place to buy your favorite products at affordable prices.
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -463,7 +463,7 @@ include("./conn.php");
                     <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                        <p class="text-white"><i class="fas fa-home text-white mr-3"></i> New York, NY 10012, US</p>
+                        <p class="text-white"><i class="fas fa-home text-white mr-3"></i> Kajamalai,Trichy,620023.</p>
                         <p class="text-white" id="address"><i class="fas fa-envelope text-white mr-3"></i> inf0@text-white@gmail.com
                         </p>
                         <p class="text-white"><i class="fas fa-phone text-white mr-3"></i>+91 8526359590</p>
