@@ -131,15 +131,17 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                   <a class=" px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-map-marker"></i></a>
                   <p class="my-0">Vogue X Maniac,</p>
                   <p class="my-0">Kajamalai,</p>
-                  <p>Trichy-620020.</p>
+                  <p>Trichy-620023.</p>
                </div>
                <div class="col-md-4">
                   <a class=" px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-phone"></i></a>
-                  <p>+91-6381945168</p>
+                  <p>+91 8526359590</p><br>
+                  <p>+91 7904860889</p><br>
+                  <p>+91 6383457659</p>
                </div>
                <div class="col-md-4">
                   <a class="px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-envelope"></i></a>
-                  <p>voguexmaniac@gmail.com</p>
+                  <p>aslammr.9148@gmail.com</p>
                </div>
             </div>
          </div>
