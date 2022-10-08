@@ -155,7 +155,7 @@ if ($get_cart) {
                         </a>
                         <a href="./logout.php">
                             <div class="box me-4 my-1 bg-light d-block d-sm-none">
-                                <img src="./reset-password-icon-29.jpg" alt="">
+                                <img src="./logout.png" alt="">
                                 <div class="d-flex align-items-center mt-2">
                                     <div class="tag">Logout</div>
                                 </div>
