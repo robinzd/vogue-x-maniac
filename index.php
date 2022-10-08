@@ -461,7 +461,7 @@ while ($row_product_category = mysqli_fetch_array($run_product_category)) {
 
     $category_replace = str_replace(" ", "-", $row_product_category['product_category']);
 
-    echo " <a class='text-white' href='shop.php?category_name=$category_replace'>$categoryname<br></a>
+    echo " <a class='text-white' href='shop.php?category_name=$category_replace'>$categoryname</br></a>
 
 ";
 }
