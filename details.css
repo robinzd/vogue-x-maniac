@@ -390,14 +390,27 @@ img.px-2 {
   
   @media (max-width:480px) {
     #cards{
-      margin-top: 75% !important;
+      margin-top: 20% !important;
+    }
+
+    footer.text-center.text-lg-start.text-dark {
+      margin-bottom: 19% !important;
     }
   }
   
    @media (max-width:768px) {
     #cards{
-      margin-top: 75% !important;
+      margin-top: 20% !important;
     }
+
+    footer.text-center.text-lg-start.text-dark {
+      margin-bottom: 19% !important;
+    }
+  }
+
+  h1#offerheading{
+    font-size: 15px;
+    margin-top: 5px;
   }
  
   
