@@ -304,7 +304,7 @@ include("./conn.php");
 
                                 <h1 class="text-muted" id="offerheading">Note*</h1>
 
-                                <p class="text-muted" id="offer">Within Tamilnadu shipping charges free,for other states delivery charges applied!</p>
+                                <p class="text-muted" id="offer">Within Tamilnadu shipping charges free for other states delivery charges applied!</p>
 
 
                                 <div class="cart mt-4 align-items-center">
