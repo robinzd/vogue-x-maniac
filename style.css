@@ -12265,6 +12265,7 @@ body {
   display: block;
   transition: 0.3s;
   z-index: 1000;
+  overflow-x: scroll !important;
 }
 
 .overlay a:hover,
