@@ -6,6 +6,7 @@ html, body {
   overflow-x: hidden;
 }
 
+
 .card {
   border: none
 }
@@ -162,7 +163,7 @@ img.px-2 {
 
 @media (max-width:480px) {
   #mybill {
-      margin-top: 20% !important;
+      margin-top: 35% !important;
 }
 
 footer.text-center.text-lg-start.text-dark {
@@ -172,7 +173,7 @@ footer.text-center.text-lg-start.text-dark {
 
  @media (max-width:768px) {
   #mybill {
-      margin-top: 20% !important;
+      margin-top: 45% !important;
 }
 
 footer.text-center.text-lg-start.text-dark {

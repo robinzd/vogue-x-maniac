@@ -117,7 +117,7 @@ $status = $_POST['status'];
                                         <td>
                                             <div class="py-2 text-left">
                                                 <span class="d-block text-muted" id="orderdate">Order Date</span>
-                                                <span id="date"><?php echo $order_date; ?></span>
+                    `                            <span id="date"><?php echo $order_date; ?></span>
                                             </div>
                                         </td>
 
@@ -461,7 +461,7 @@ $status = $_POST['status'];
 
         <div class="row d-flex justify-content-center">
 
-            <div class="col-md-8">
+            <div class="col-md-8" id="orderbill">
 
                 <div class="card">
 
