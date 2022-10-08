@@ -51,7 +51,7 @@ include("./conn.php");
 
     <!--back to top ends -->
 
-  
+
 
     <!-- Carousel -->
     <div id="demo" class="carousel slide demos" data-bs-ride="carousel">
@@ -466,7 +466,9 @@ include("./conn.php");
                         <p class="text-white"><i class="fas fa-home text-white mr-3"></i> New York, NY 10012, US</p>
                         <p class="text-white" id="address"><i class="fas fa-envelope text-white mr-3"></i> inf0@text-white@gmail.com
                         </p>
-                        <p class="text-white"><i class="fas fa-phone text-white mr-3"></i> + 01 234 567 88</p>
+                        <p class="text-white"><i class="fas fa-phone text-white mr-3"></i>+91 8526359590
+                            +91 7904860889
+                            +91 6383457659</p>
                         <p class="text-white"><i class="fas fa-print text-white mr-3"></i> + 01 234 567 89</p>
                     </div>
                     <!-- Grid column -->
@@ -478,8 +480,6 @@ include("./conn.php");
                         <!-- Facebook -->
                         <a class="mx-1 my-2" id="facebook" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook" role="button"><i class="fab fa-facebook"></i></a>
 
-                        <!-- Twitter -->
-                        <a class=" mx-1 my-2" id="twitter" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter" role="button"><i class="fab fa-twitter"></i></a>
 
                         <!-- youtube -->
                         <a class="mx-1 my-2" id="youtube" href="#!" data-bs-toggle="tooltip" data-bs-placement="top" title="youtube" role="button"><i class="fab fa-youtube"></i></a>
