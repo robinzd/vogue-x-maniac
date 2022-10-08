@@ -250,12 +250,20 @@ img.footerimage {
 
 @media (max-width:480px) {
     #myform {
-        margin-top: 55% !important;
+        margin-top: 12% !important;
+  }
+
+  footer.text-center.text-lg-start.text-dark {
+    margin-bottom: 19% !important;
   }
   }
   
    @media (max-width:768px) {
     #myform {
-        margin-top: 55% !important;
+        margin-top: 12% !important;
+  }
+
+  footer.text-center.text-lg-start.text-dark {
+    margin-bottom: 19% !important;
   }
   }

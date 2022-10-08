@@ -278,13 +278,21 @@ img.px-2 {
 /* footer ends */
 @media (max-width: 480px) {
   #main-content {
-    margin-top: 75% !important;
+    margin-top: 30% !important;
+  }
+
+  footer.text-center.text-lg-start.text-dark {
+    margin-bottom: 19% !important;
   }
 }
 
 @media (max-width: 768px) {
   #main-content {
-    margin-top: 75% !important;
+    margin-top: 30% !important;
+  }
+
+  footer.text-center.text-lg-start.text-dark {
+    margin-bottom: 19% !important;
   }
 }
 
