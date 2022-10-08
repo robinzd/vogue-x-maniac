@@ -162,9 +162,9 @@ img.px-2 {
 /* footer ends */
 
 @media (max-width:480px) {
-  .card{
+  /* .card{
     margin-top: -3% !important;
-  }
+  } */
 
 footer.text-center.text-lg-start.text-dark {
   margin-bottom: 16% !important;
@@ -176,11 +176,11 @@ footer.text-center.text-lg-start.text-dark {
 }
 
  @media (max-width:768px) {
-  .card{
+  /* .card{
     margin-top: -3% !important;
-  }
+  } */
 
-footer.text-center.text-lg-start.text-dark {
+footer.text-center.text-lg-start.text-dark{
   margin-bottom: 16% !important;
 }
 
