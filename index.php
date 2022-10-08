@@ -447,12 +447,29 @@ include("./conn.php");
 
                     <!-- Grid column -->
                     <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-                        <p class="text-white">MDBootstrap</p>
-                        <p class="text-white">MDWordPress</p>
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                    <?php
+
+
+$get_product_category = "select product_category from products_details";
+
+$run_product_category = mysqli_query($conn, $get_product_category);
+
+while ($row_product_category = mysqli_fetch_array($run_product_category)) {
+
+    $categoryname = $row_product_category['product_category'];
+
+    $category_replace = str_replace(" ", "-", $row_product_category['product_category']);
+
+    echo " <a class='text-white' href='shop.php?category_name=$category_replace'>$categoryname></a>
+
+";
+}
+?>
+                        <!-- <p class="text-white">MDWordPress</p>
                         <p class="text-white">BrandFlow</p>
-                        <p class="text-white">Angular</p>
-                    </div>
+                        <p class="text-white">Angular</p> -->
+                        </div>
                     <!-- Grid column -->
 
                     <hr class="w-100 clearfix d-md-none" />
