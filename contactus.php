@@ -135,8 +135,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                </div>
                <div class="col-md-4">
                   <a class=" px-3 py-2 rounded text-white mb-2 d-inline-block"><i class="fa fa-phone"></i></a>
-                  <p>+91 8526359590</p><br>
-                  <p>+91 7904860889</p><br>
+                  <p>+91 8526359590</p>
+                  <p>+91 7904860889</p>
                   <p>+91 6383457659</p>
                </div>
                <div class="col-md-4">
