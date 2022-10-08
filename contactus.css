@@ -125,12 +125,20 @@ img.px-2 {
 
 @media (max-width: 480px) {
   #contact {
-    margin-top: 70% !important;
+    margin-top: 30% !important;
+  }
+
+  footer.text-center.text-lg-start.text-dark {
+    margin-bottom: 19% !important;
   }
 }
 
 @media (max-width: 768px) {
   #contact {
-    margin-top: 70% !important;
+    margin-top: 30% !important;
+  }
+
+  footer.text-center.text-lg-start.text-dark {
+    margin-bottom: 19% !important;
   }
 }
