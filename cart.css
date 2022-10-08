@@ -2,10 +2,11 @@
 
 
 
-
+html, body {
+    height: 100%;
+    overflow-x: hidden;
+}
     
-    
-
 .product-details {
     padding: 10px;
 }
@@ -310,7 +311,7 @@ th{
   }
 
   footer.text-center.text-lg-start.text-dark {
-    margin-bottom: 19% !important;
+    margin-bottom: 16% !important;
   }
   }
   
@@ -320,6 +321,6 @@ th{
   }
 
   footer.text-center.text-lg-start.text-dark {
-    margin-bottom: 19% !important;
+    margin-bottom: 16% !important;
   }
   }
