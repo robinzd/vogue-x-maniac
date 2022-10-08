@@ -12265,7 +12265,6 @@ body {
   display: block;
   transition: 0.3s;
   z-index: 1000;
-  overflow-x: scroll !important;
 }
 
 .overlay a:hover,
@@ -12336,7 +12335,6 @@ body {
 
 #menus1{
   text-align: center !important;
-  margin-top: 10% !important;
 }
 /* curtain menu */
 

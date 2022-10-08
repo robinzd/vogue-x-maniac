@@ -183,12 +183,10 @@ if ($get_user) {
 
 	<!-- curtain menu -->
 	<div id="myNav" class="overlay d-block d-sm-none">
-		<div class="container">
-		<h3 id="menus1">Menus</h3>
-		</div>
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i id="close" class="fa-solid fa-x"></i></a>
 		<div class="overlay-content">
 			<ul class="navbar-nav m-auto">
+			    <h3 id="menus1">Menus</h3>
 				<li class="nav-item" id="home1"><a href="index.php" class="nav-link">Home</a></li>
 				<li class="nav-item"><a href="shop.php" class="nav-link">Shop</a></li>
 				<li class="nav-item"><a href="aboutus.php" class="nav-link">About Us</a></li>
