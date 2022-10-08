@@ -465,8 +465,7 @@ include("./conn.php");
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
                         <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
                         <p class="text-white"><i class="fas fa-home text-white mr-3"></i> Kajamalai,Trichy,620023.</p>
-                        <p class="text-white" id="address"><i class="fas fa-envelope text-white mr-3"></i> inf0@text-white@gmail.com
-                        </p>
+                        <p class="text-white" id="address"><i class="fas fa-envelope text-white mr-3"></i>aslammr.9148@gmail.com </p>
                         <p class="text-white"><i class="fas fa-phone text-white mr-3"></i>+91 8526359590</p>
                         <p class="text-white"><i class="fas fa-phone text-white mr-3"></i>+91 7904860889</p>
                         <p class="text-white"><i class="fas fa-phone text-white mr-3"></i> +91 6383457659</p>
@@ -503,7 +502,8 @@ include("./conn.php");
             </p>
             <img class="px-2" src="./payment_pics/2560px-MasterCard_Logo.svg-removebg-preview.png">
             <img class="px-2" src="./payment_pics/1200px-Visa.svg-removebg-preview.png">
-            <img class="px-2" src="./payment_pics/paypal-logo-removebg-preview.png">
+            <img class="px-2" src="./payment_pics/paytm.png">
+            <img class="px-2" src="./payment_pics/upi.png">
         </div>
         <!-- Copyright -->
     </footer>
