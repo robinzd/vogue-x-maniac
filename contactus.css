@@ -125,7 +125,7 @@ img.px-2 {
 
 @media (max-width: 480px) {
   #contact {
-    margin-top: 30% !important;
+    margin-top: 25% !important;
   }
 
   footer.text-center.text-lg-start.text-dark {
@@ -135,7 +135,7 @@ img.px-2 {
 
 @media (max-width: 768px) {
   #contact {
-    margin-top: 30% !important;
+    margin-top: 25% !important;
   }
 
   footer.text-center.text-lg-start.text-dark {
