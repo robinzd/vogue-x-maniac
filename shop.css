@@ -7,6 +7,11 @@ body {
   background-color: ghostwhite !important;
 }
 
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
 /**
  * Shop
  */
@@ -970,7 +975,7 @@ input.form-check-input.category {
     margin-top: 35% !important;
   }
   footer.text-center.text-lg-start.text-dark {
-    margin-bottom: 19% !important;
+    margin-bottom: 16% !important;
   }
 
   .col-sm-8.col-md-9{
@@ -983,7 +988,7 @@ input.form-check-input.category {
     margin-top: 35% !important;
   }
   footer.text-center.text-lg-start.text-dark {
-    margin-bottom: 19% !important;
+    margin-bottom: 16% !important;
   }
 
   .col-sm-8.col-md-9{

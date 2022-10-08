@@ -4,6 +4,11 @@ body {
   background-color: ghostwhite !important;
 }
 
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
 #contact {
   margin-top: 20%;
 }
@@ -129,7 +134,7 @@ img.px-2 {
   }
 
   footer.text-center.text-lg-start.text-dark {
-    margin-bottom: 19% !important;
+    margin-bottom: 16% !important;
   }
 }
 
@@ -139,6 +144,6 @@ img.px-2 {
   }
 
   footer.text-center.text-lg-start.text-dark {
-    margin-bottom: 19% !important;
+    margin-bottom: 16% !important;
   }
 }

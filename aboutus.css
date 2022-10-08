@@ -5,6 +5,11 @@ body{
 	background-color: ghostwhite !important;
 }
 
+html, body {
+	height: 100%;
+	overflow-x: hidden;
+  }
+
 #about{
 	margin-top: 20%;
 }
@@ -127,7 +132,7 @@ img.footerimage {
 	}
 
 	footer.text-center.text-lg-start.text-dark {
-		margin-bottom: 19% !important;
+		margin-bottom: 16% !important;
 	  }
   }
   
@@ -137,7 +142,7 @@ img.footerimage {
 	}
 
 	footer.text-center.text-lg-start.text-dark {
-		margin-bottom: 19% !important;
+		margin-bottom: 16% !important;
 	  }
   }
 

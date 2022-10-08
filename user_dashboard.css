@@ -10,6 +10,11 @@
   font-family: "Poppins", sans-serif;
 }
 
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
 #main-content {
   padding: 30px;
   border-radius: 15px;
@@ -282,7 +287,7 @@ img.px-2 {
   }
 
   footer.text-center.text-lg-start.text-dark {
-    margin-bottom: 19% !important;
+    margin-bottom: 16% !important;
   }
 }
 
@@ -292,7 +297,7 @@ img.px-2 {
   }
 
   footer.text-center.text-lg-start.text-dark {
-    margin-bottom: 19% !important;
+    margin-bottom: 16% !important;
   }
 }
 
