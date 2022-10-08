@@ -394,28 +394,28 @@ include("./conn.php");
                         <div class="square"><i class="fas fa-truck"></i></div>
                         <div class="serv">
                             <h5>Safe Delivery</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <p>Your package in our safe hands</p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="serv">
                             <div class="square"><i class="fas fa-money-bill"></i></div>
                             <h5>Secured Payment</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <p>Enabling businesses by managed secure technologies.</p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="square"><i class="fas fa-truck-fast"></i></div>
                         <div class="serv">
                             <h5>3-4 days Shipping</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <p>Promised quality service</p>
                         </div>
                     </div>
                     <div class="col-md-3">
                         <div class="square"><i class="fas fa-user-shield"></i></div>
                         <div class="serv">
                             <h5>Secure Website</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                            <p>Be perfectly Secure with us</p>
                         </div>
                     </div>
                 </div>
