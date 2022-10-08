@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
-
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
 
 .card {
   border: none
@@ -159,12 +162,20 @@ img.px-2 {
 
 @media (max-width:480px) {
   #mybill {
-      margin-top: 35% !important;
+      margin-top: 20% !important;
+}
+
+footer.text-center.text-lg-start.text-dark {
+  margin-bottom: 16% !important;
 }
 }
 
  @media (max-width:768px) {
   #mybill {
-      margin-top: 45% !important;
+      margin-top: 20% !important;
+}
+
+footer.text-center.text-lg-start.text-dark {
+  margin-bottom: 16% !important;
 }
 }
