@@ -466,8 +466,8 @@ include("./conn.php");
                         <p class="text-white"><i class="fas fa-home text-white mr-3"></i> New York, NY 10012, US</p>
                         <p class="text-white" id="address"><i class="fas fa-envelope text-white mr-3"></i> inf0@text-white@gmail.com
                         </p>
-                        <p class="text-white"><i class="fas fa-phone text-white mr-3"></i>+91 8526359590
-                            +91 7904860889
+                        <p class="text-white"><i class="fas fa-phone text-white mr-3"></i>+91 8526359590<br>
+                            +91 7904860889<br>
                             +91 6383457659</p>
                         <p class="text-white"><i class="fas fa-print text-white mr-3"></i> + 01 234 567 89</p>
                     </div>
