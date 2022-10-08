@@ -12255,7 +12255,6 @@ body {
   text-align: center;
   margin-top: 30px;
   z-index: 1000;
-  overflow-x: scroll;
   margin-bottom: 100%;
 }
 
@@ -12303,7 +12302,8 @@ body {
     border: none;
     background-color: ghostwhite;
     text-align: center !important;
-    margin-top:0.1% !important;
+    /* margin-top:0.1% !important; */
+    margin-top: 20% !important;
   }
   span#product {
     margin-left: -6px;
@@ -12321,8 +12321,8 @@ body {
     border: none;
     background-color: ghostwhite;
     text-align: center !important;
-    margin-top:0.1% !important;
-    
+    /* margin-top:0.1% !important; */
+    margin-top: 20% !important;
   }
 
   span#product {
