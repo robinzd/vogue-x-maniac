@@ -162,21 +162,29 @@ img.px-2 {
 /* footer ends */
 
 @media (max-width:480px) {
-  #mybill {
-      margin-top: 35% !important;
-}
+  .card{
+    margin-top: -3% !important;
+  }
 
 footer.text-center.text-lg-start.text-dark {
   margin-bottom: 16% !important;
+}
+
+.text-left{
+  margin-top: -12% !important;
 }
 }
 
  @media (max-width:768px) {
-  #mybill {
-      margin-top: 45% !important;
-}
+  .card{
+    margin-top: -3% !important;
+  }
 
 footer.text-center.text-lg-start.text-dark {
   margin-bottom: 16% !important;
+}
+
+.text-left{
+  margin-top: -12% !important;
 }
 }
