@@ -972,6 +972,10 @@ input.form-check-input.category {
   footer.text-center.text-lg-start.text-dark {
     margin-bottom: 19% !important;
   }
+
+  .col-sm-8.col-md-9{
+    margin-top: -20% !important ;
+  }
 }
 
 @media (max-width: 768px) {
@@ -980,5 +984,9 @@ input.form-check-input.category {
   }
   footer.text-center.text-lg-start.text-dark {
     margin-bottom: 19% !important;
+  }
+
+  .col-sm-8.col-md-9{
+    margin-top: -20% !important ;
   }
 }
