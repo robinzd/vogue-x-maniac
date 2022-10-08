@@ -123,14 +123,22 @@ img.footerimage {
 
 @media (max-width:480px) {
 	#about{
-		margin-top: 80% !important;
+		margin-top: -40% !important;
 	}
+
+	footer.text-center.text-lg-start.text-dark {
+		margin-bottom: 19% !important;
+	  }
   }
   
    @media (max-width:768px) {
 	#about{
-		margin-top: 80% !important;
+		margin-top: -40% !important;
 	}
+
+	footer.text-center.text-lg-start.text-dark {
+		margin-bottom: 19% !important;
+	  }
   }
 
 
