@@ -538,12 +538,6 @@ include("./conn.php");
                     }
                 }
             });
-
-
-
-
-
-
         });
     </script>
 
