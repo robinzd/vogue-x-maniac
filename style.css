@@ -12243,7 +12243,6 @@ body {
   top: 0;
   left: 0;
   background-color: ghostwhite;
-  overflow-x: hidden;
   transition: 0.5s;
 }
 
