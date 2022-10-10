@@ -176,15 +176,15 @@ footer.text-center.text-lg-start.text-dark {
 } */
 
  @media (max-width:768px) {
-  /* .card{
+  .card{
     margin-top: -0% !important;
-  } */
+  }
 
 footer.text-center.text-lg-start.text-dark{
   margin-bottom: 16% !important;
 } 
 
-.text-left{
+#backbutton{
   margin-top: 30% !important;
 } 
  }
