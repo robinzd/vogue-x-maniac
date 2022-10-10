@@ -249,8 +249,7 @@ if ($get_user) {
 		}
 	</script>
 	<!-- Javascript for the curtain menu -->
-
-	<script src="./js header/bootstrap.min.js"></script>
+    <script src="./js header/bootstrap.min.js"></script>
 	<script src="./js header/jquery.min.js"></script>
 	<script src="./js header/main.js"></script>
 	<script src="./js header/popper.js"></script>
