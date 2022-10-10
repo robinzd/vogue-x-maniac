@@ -46,9 +46,12 @@ button.btn.btn-success:hover {
 
 }
 
+span#orderdate {
+  margin-left: 7% !important;
+}
+
 #orderdate {
   white-space: nowrap;
-  margin-left: 7% !important;
 }
 
 #date {
