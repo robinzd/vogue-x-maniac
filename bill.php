@@ -747,9 +747,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                         <tr class="border-top border-bottom">
                                             <td>
                                                 <div class="text-left">
-
                                                     <span class="font-weight-bold">Total Amount</span>
-
                                                 </div>
                                             </td>
                                             <td>
@@ -758,10 +756,6 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                                 </div>
                                             </td>
                                         </tr>
-
-
-
-
                                     </tbody>
 
                                 </table>
