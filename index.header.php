@@ -149,8 +149,9 @@ if ($get_user) {
 			</div>
 		</nav>
 		<!-- END nav -->
-
 	</section>
+
+
 	<!-- The Navbar Design For The Mobile Version Starts -->
 	<nav class="navbar fixed-top bg-light d-block d-sm-none navs" id="mobile">
 		<div class="container-fluid">
@@ -158,8 +159,9 @@ if ($get_user) {
     width: 30%; margin-top:-1%;"></a>
 		</div>
 	</nav>
+	<!-- The Navbar Design For The Mobile Version ends-->
 
-	<!-- bottom nav -->
+	<!-- bottom nav starts-->
 	<nav class="navbar fixed-bottom navbar-light bg-light d-block d-sm-none navs" id="bottom">
 		<a href="./user_dashboard.php" id="avatar"><i class="fa-regular fa-user" style='font-size:20px'></i></a>
 		<a onclick="openNav()" id="menu"><i class="fa-solid fa-bars" style='font-size:20px'></i></a>
@@ -179,14 +181,14 @@ if ($get_user) {
 		<a data-bs-toggle="modal" data-bs-target="#exampleModal" id="search"><i class='fa fa-search' style='font-size:20px'></i></a>
 
 	</nav>
-	<!-- bottom nav -->
+	<!-- bottom nav ends-->
 
-	<!-- curtain menu -->
+	<!-- curtain menu starts -->
 	<div id="myNav" class="overlay d-block d-sm-none">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i id="close" class="fa-solid fa-x"></i></a>
 		<div class="overlay-content">
 			<ul class="navbar-nav m-auto">
-			    <h3 id="menus1">Menus</h3>
+				<h3 id="menus1">Menus</h3>
 				<li class="nav-item" id="home1"><a href="index.php" class="nav-link">Home</a></li>
 				<li class="nav-item"><a href="shop.php" class="nav-link">Shop</a></li>
 				<li class="nav-item"><a href="aboutus.php" class="nav-link">About Us</a></li>
@@ -217,25 +219,26 @@ if ($get_user) {
 
 			</ul>
 		</div>
-		<!-- modal box starts -->
+		<!-- modal box starts-->
 		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
-				<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
-							<form action="shop.php" method="Post" class="searchform order-lg-last">
-								<div class="form-group d-flex">
-									<input type="text" name="search" class="form-control pl-3" placeholder="Search">
-									<button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
-								</div>
-							</form>
-						</div>
+					<div class="col-md-6 d-md-flex justify-content-end mb-md-0 mb-3">
+						<form action="shop.php" method="Post" class="searchform order-lg-last">
+							<div class="form-group d-flex">
+								<input type="text" name="search" class="form-control pl-3" placeholder="Search">
+								<button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
+							</div>
+						</form>
 					</div>
+				</div>
 			</div>
 		</div>
 		<!-- modal box ends-->
 	</div>
-	<!-- curtain menu -->
+	<!-- curtain menu ends-->
 
+	<!-- Javascript for the curtain menu -->
 	<script>
 		function openNav() {
 			document.getElementById("myNav").style.width = "100%";
@@ -245,6 +248,7 @@ if ($get_user) {
 			document.getElementById("myNav").style.width = "0%";
 		}
 	</script>
+	<!-- Javascript for the curtain menu -->
 
 	<script src="./js header/bootstrap.min.js"></script>
 	<script src="./js header/jquery.min.js"></script>
