@@ -210,13 +210,11 @@ if ($get_user) {
 							$category_replace = str_replace(" ", "-", $row_product_category['product_category']);
 
 							echo "<a class='dropdown-item' href='shop.php?category_name=$category_replace'>$categoryname</a>
-
-                        ";
+						";
 						}
 						?>
 					</div>
 				</li>
-
 			</ul>
 		</div>
 		<!-- modal box starts-->
