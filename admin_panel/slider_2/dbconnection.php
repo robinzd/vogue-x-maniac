@@ -19,6 +19,6 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
 // Check connection
 if (!$conn) {
-    die("Connection failed(Check): " . mysqli_connect_error());
+    die("Connection failed(Check): " . mysqli_connect_error()."$cleardb_server--$cleardb_username--$cleardb_password--$cleardb_db--$cleardb_url");
 }
 ?>
