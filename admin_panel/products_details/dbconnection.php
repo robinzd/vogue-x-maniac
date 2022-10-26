@@ -1,5 +1,4 @@
 <?php
-
 // echo "Check from Data base";
 //Get Heroku ClearDB connection information
 // $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
@@ -25,6 +24,6 @@ $dbname="u291904117_kEVdC";
 $conn = new mysqli($host, $user, $password, $dbname, $port, $socket);
 // Check connection
 if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+    die("Connection failed(Check): " . mysqli_connect_error());
 }
 ?>
