@@ -70,7 +70,6 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                         </h3>
                         <div>
                             <?php
-
                             $query = "SELECT DISTINCT(product_brand) FROM Products_details WHERE product_status = '1' ORDER BY ID DESC";
                             $statement = $connect->prepare($query);
                             $statement->execute();
@@ -82,21 +81,18 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                                 </div>
                             <?php
                             }
-
-                            ?>
+                        ?>
                         </div>
                     </div>
 
 
                     <!--product category -->
-
                     <div class="list-group" style="overflow-y: scroll;height: 400px;">
                         <h3 class="headline">
                             <span>Categories</span>
                         </h3>
                         <?php
-
-                        $query = "
+                    $query = "
                     SELECT DISTINCT(product_category) FROM products_details  WHERE  product_status = '1' ORDER BY product_category DESC
                     ";
                         $statement = $connect->prepare($query);
@@ -110,12 +106,8 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                             </div>
                         <?php
                         }
-
-                        ?>
+                    ?>
                     </div>
-
-
-
                 </form>
             </div>
 
