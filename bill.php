@@ -170,9 +170,6 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                                 <span class="font-weight-bold" id="order"><?php echo $order_id; ?></span>
                                             </div>
                                         </td>
-
-
-
                                         <td>
                                             <div class="py-2 text-right">
                                                 <span class="d-block text-muted">Shiping Address</span>
@@ -186,11 +183,6 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                 </tbody>
 
                             </table>
-
-
-
-
-
                         </div>
 
 
@@ -530,8 +522,6 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                             </div>
                                         </td>
 
-
-
                                         <td>
                                             <div class="py-2 text-right">
                                                 <span class="d-block text-muted">Shiping Address</span>
@@ -539,23 +529,13 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
                                                 <span><?php echo $user_landmark; ?>,</span><br>
                                                 <span><?php echo $user_city . "-" . $user_pincode; ?>.</span>
                                             </div>
-
                                         </td>
                                     </tr>
                                 </tbody>
 
                             </table>
-
-
-
-
-
                         </div>
-
-
-
-
-                        <div class="product border-bottom table-responsive">
+                    <div class="product border-bottom table-responsive">
 
                             <table class="table table-borderless">
 
@@ -594,7 +574,7 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
                                             $run_images = mysqli_query($conn, $get_images);
 
-                                            while ($row_images = mysqli_fetch_array($run_images)) {
+                                            while ($row_images = mysqli_fetch_array($run_images)){
 
                                                 $details_image = $row_images["details_image"];
 
@@ -640,14 +620,9 @@ if (!empty($fullname) && !empty($email) && !empty($street) && !empty($landmark) 
 
 
                                     ?>
-
-
+                                    
                                 </tbody>
-
                             </table>
-
-
-
                         </div>
 
 

@@ -4,12 +4,6 @@ include("./conn.php");
 
 ?>
 
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -174,16 +168,14 @@ include("./conn.php");
                 $brand_name = $row_owlslider_picture_1['brand_name'];
 
 
-                echo " <div class='card' style='background-color: $brand_color ;'>
+                echo " <div class='card' sty'le='background-color: $brand_color ;'>
              <div class='img'>
                  <a href='shop.php?brand_name=$brand_name'><img src='./admin_panel/brands/brands_images/$image_source' alt=''></a>
              </div>
            </div>
-
- 
-
+           
         ";
-            }
+        }
 
 
             ?>
