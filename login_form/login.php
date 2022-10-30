@@ -45,8 +45,8 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
 $clientId = "428003245396-63d10kjmatp8ubebi6qunbdj6sjvn1t9.apps.googleusercontent.com";
-$clientSecret = "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";
-$redirectURI = "https://vogue-x-maniac.herokuapp.com/login_form/login.php";
+$clientSecret = "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";
+$redirectURI = "https://vogue-x-maniac.com/login_form/login.php";
 
 
 $client = new Google_Client();
