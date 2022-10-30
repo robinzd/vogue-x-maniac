@@ -74,10 +74,10 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                             $statement = $connect->prepare($query);
                             $statement->execute();
                             $result = $statement->fetchAll();
-                            foreach ($result as $row) {
+                            foreach ($result as $rows) {
                             ?>
                                 <div class="form-check">
-                                    <label><input type="checkbox" class="form-check-input brand" id="brand-<?php echo $row['product_brand']; ?>" value="<?php echo $row['product_brand']; ?>"> <?php echo $row['product_brand']; ?></label>
+                                    <label><input type="checkbox" class="form-check-input brand" id="brand-<?php echo $rows['product_brand']; ?>" value="<?php echo $rows['product_brand']; ?>"> <?php echo $rows['product_brand']; ?></label>
                                 </div>
                             <?php
                             }
@@ -160,12 +160,8 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
                         $details_image = null;
 
-                        while ($row_products_image = mysqli_fetch_array($run_products_image)) {
-
-
-
-
-                            $details_image = $row_products_image['details_image'];
+                        while ($row_products_image = mysqli_fetch_array($run_products_image)){
+                             $details_image = $row_products_image['details_image'];
                         }
 
 
