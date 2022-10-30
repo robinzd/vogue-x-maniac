@@ -70,14 +70,14 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                         </h3>
                         <div>
                             <?php
-                            $query = "SELECT DISTINCT(product_brand) FROM Products_details WHERE product_status = '1' ORDER BY ID DESC";
+                            $query = "SELECT DISTINCT(product_brand) FROM Products_details WHERE product_status = '1' ORDER BY product_brand DESC";
                             $statement = $connect->prepare($query);
                             $statement->execute();
                             $result = $statement->fetchAll();
-                            foreach ($result as $rows) {
+                            foreach ($result as $row) {
                             ?>
                                 <div class="form-check">
-                                    <label><input type="checkbox" class="form-check-input brand" id="brand-<?php echo $rows['product_brand']; ?>" value="<?php echo $rows['product_brand']; ?>"> <?php echo $rows['product_brand']; ?></label>
+                                    <label><input type="checkbox" class="form-check-input brand" id="brand-<?php echo $row['product_brand']; ?>" value="<?php echo $row['product_brand']; ?>"> <?php echo $row['product_brand']; ?></label>
                                 </div>
                             <?php
                             }
