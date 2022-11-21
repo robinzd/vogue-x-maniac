@@ -70,7 +70,8 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                         </h3>
                         <div>
                             <?php
-                            $query = "SELECT DISTINCT(product_brand) FROM Products_details WHERE product_status = '1' ORDER BY product_brand DESC";
+
+                            $query = "SELECT DISTINCT(product_brand) FROM Products_details WHERE product_status = '1' ORDER BY ID DESC";
                             $statement = $connect->prepare($query);
                             $statement->execute();
                             $result = $statement->fetchAll();

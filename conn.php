@@ -23,6 +23,6 @@ $dbname="u291904117_kEVdC";
 $conn = new mysqli($host, $user, $password, $dbname, $port, $socket);
 // Check connection
 if (!$conn) {
-    die("Connection failed(Check): " . mysqli_connect_error());
+    die("Connection failed: " . mysqli_connect_error());
 }
 ?>
