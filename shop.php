@@ -82,18 +82,21 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                                 </div>
                             <?php
                             }
-                        ?>
+
+                            ?>
                         </div>
                     </div>
 
 
                     <!--product category -->
+
                     <div class="list-group" style="overflow-y: scroll;height: 400px;">
                         <h3 class="headline">
                             <span>Categories</span>
                         </h3>
                         <?php
-                    $query = "
+
+                        $query = "
                     SELECT DISTINCT(product_category) FROM products_details  WHERE  product_status = '1' ORDER BY product_category DESC
                     ";
                         $statement = $connect->prepare($query);
@@ -107,8 +110,12 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
                             </div>
                         <?php
                         }
-                    ?>
+
+                        ?>
                     </div>
+
+
+
                 </form>
             </div>
 
@@ -161,8 +168,12 @@ $ordervalue = isset($_GET['order']) ? $_GET['order'] : "";
 
                         $details_image = null;
 
-                        while ($row_products_image = mysqli_fetch_array($run_products_image)){
-                             $details_image = $row_products_image['details_image'];
+                        while ($row_products_image = mysqli_fetch_array($run_products_image)) {
+
+
+
+
+                            $details_image = $row_products_image['details_image'];
                         }
 
 
