@@ -13,7 +13,7 @@
 // if (!$conn) {
 //     die("Connection failed: " . mysqli_connect_error());
 // }
-$host="127.0.0.1";
+$host="217.21.85.52";
 $port=3306;
 $socket="";
 $user="u291904117_usctU";
