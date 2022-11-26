@@ -319,7 +319,7 @@ if ($get_cart) {
                     <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
                         <img class="footerimage" src="./header images/vogue x maniac png.png" alt="brand image">
                         <p class="text-white">
-                        VogueXmaniac The Best place to buy your favorite products at affordable prices.
+                            VogueXmaniac The Best place to buy your favorite products at affordable prices.
                         </p>
                     </div>
                     <!-- Grid column -->
