@@ -20,7 +20,7 @@ $user="u291904117_usctU";
 $password="Robin@123";
 $dbname="u291904117_kEVdC";
 // connect to db
-$conn = new mysqli($host, $user, $password, $dbname, $port, $socket)
+$conn = mysqli_connect($host, $user, $password, $dbname, $port, $socket)
 	or die ('Could not connect to the database server' . mysqli_connect_error());
 // Check connection
 if (!$conn) {
