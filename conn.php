@@ -13,11 +13,11 @@
 // if (!$conn) {
 //     die("Connection failed: " . mysqli_connect_error());
 // }
-$host="217.21.85.52";
+$host="root";
 $port=3306;
 $socket="";
 $user="u291904117_usctU";
-$password="Robin@123";
+$password="";
 $dbname="u291904117_kEVdC";
 // connect to db
 $conn = mysqli_connect($host, $user, $password, $dbname, $port, $socket)
