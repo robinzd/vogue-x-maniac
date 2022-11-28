@@ -17,7 +17,7 @@ $host="217.21.85.52";
 $port=3306;
 $socket="";
 $user="u291904117_usctU";
-$password="robin@123";
+$password="Robin@123";
 $dbname="u291904117_kEVdC";
 // connect to db
 $conn = mysqli_connect($host, $user, $password, $dbname, $port, $socket)
