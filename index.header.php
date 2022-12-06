@@ -1,25 +1,15 @@
 <?php
 session_start();
-
 include("./conn.php");
-
-
-$user_id = $_SESSION['user_id'];
-
-
+print_r($_SESSION);
+$user_id = $_SESSION["user_id"];
 echo $user_id;
-
-
 $get_user = "select * from users WHERE user_id='$user_id'";
-
-
-
 if ($get_user) {
 	$select_rows = mysqli_query($conn, "select * from products_cart where user_id='$user_id'");
 
 	$row_count = mysqli_num_rows($select_rows);
 }
-
 ?>
 <!doctype html>
 <html lang="en">
