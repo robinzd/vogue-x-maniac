@@ -2,10 +2,11 @@
 session_start();
 
 include("./conn.php");
-include("./function.php");
 
 
 $user_id = $_SESSION['user_id'];
+
+echo $user_id;
 
 
 $get_user = "select * from users WHERE user_id='$user_id'";
