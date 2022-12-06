@@ -1,7 +1,6 @@
 <?php
 session_start();
 include("./conn.php");
-print_r($_SESSION);
 $user_id = $_SESSION["user_id"];
 $get_user = "select * from users WHERE user_id='$user_id'";
 if ($get_user) {
