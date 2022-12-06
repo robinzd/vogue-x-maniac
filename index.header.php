@@ -94,6 +94,8 @@ if ($get_user) {
 
 							echo $get_is_admin;
 
+							echo "<br>";
+
                             $run_is_admin = mysqli_query($conn, $get_is_admin);
  
 							while ($row_is_admin = mysqli_fetch_array($run_is_admin)) {
