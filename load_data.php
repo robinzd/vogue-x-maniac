@@ -8,10 +8,8 @@ $user_data = check_login($conn);
 
 $userid = $user_data['user_id'];
 
-if (isset($_POST['lastid']) && $_POST['lastid']!="") {
+if (isset($_POST['lastid']) && $_POST['lastid'] != "") {
     $last_id_1 = $_POST["lastid"];
-
-
 
     $real_status = "TXN_SUCCESS";
 
@@ -20,8 +18,6 @@ if (isset($_POST['lastid']) && $_POST['lastid']!="") {
     $get_order_no = "select * from order_info where user_id='$userid' and ID < $last_id_1 ORDER BY ID DESC LIMIT 5 ";
 
     $run_order_no = mysqli_query($conn, $get_order_no);
-
-
 
     while ($row_order_no = mysqli_fetch_array($run_order_no)) {
 
@@ -134,13 +130,10 @@ if (isset($_POST['lastid']) && $_POST['lastid']!="") {
 
 
 
-}
-
-else{
+} else {
     echo '<div class="d-grid gap-2 col-6 mx-auto">
     <button class="btn btn-primary" type="button" id="btnLoad" disabled>No Orders..</button>
 </div>';
-    
 }
 
 ?>
