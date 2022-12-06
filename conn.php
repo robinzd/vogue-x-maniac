@@ -27,4 +27,3 @@ if (!$conn) {
     die("Connection failed(Check): " . mysqli_connect_error());
 }
 ?>
-<!-- 217.21.85.52 -->

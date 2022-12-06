@@ -2,6 +2,7 @@
 session_start();
 
 include("./conn.php");
+include("./function.php");
 
 
 $user_id = $_SESSION['user_id'];
@@ -18,33 +19,21 @@ if ($get_user) {
 }
 
 ?>
-
-
-
-
 <!doctype html>
 <html lang="en">
-
 <head>
 	<title>Website menu 07</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://kit.fontawesome.com/b6be472426.js" crossorigin="anonymous"></script>
 	<!-- bootsstrap cdn -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-	<link rel="stylesheet" href="style.css">
-
-	<!-- external javascript file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- external javascript file -->
 	<script src="./index.header.php"></script>
-
-
-
 </head>
-
 <body>
 	<section class="ftco-section py-0 d-none d-sm-block" id="navbartop">
 		<div class="container">
@@ -54,7 +43,6 @@ if ($get_user) {
 				</div>
 			</div>
 		</div>
-
 		<div class="container-fluid px-md-5">
 			<div class="row justify-content-between">
 				<div class="col-md-8 order-md-last">
