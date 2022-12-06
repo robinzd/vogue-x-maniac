@@ -39,14 +39,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 </head>
 
 <body>
-
-    <!-- back to top starts -->
-
-
-    <?php include "./back_to_top.php"; ?>
-
-    <!--back to top ends -->
-
     <body id="body-pd">
         <header class="header" id="header">
             <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
