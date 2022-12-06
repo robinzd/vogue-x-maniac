@@ -92,14 +92,13 @@ if ($get_user) {
 							<?php
 							$get_is_admin = "select is_admin from users where is_admin='1' AND user_id='$user_id'";
 
-							$run_is_admin = mysqli_query($conn, $get_is_admin);
+							echo $get_is_admin;
 
-
-
+                            $run_is_admin = mysqli_query($conn, $get_is_admin);
+ 
 							while ($row_is_admin = mysqli_fetch_array($run_is_admin)) {
-
-
-								$admin = $row_is_admin['is_admin'];
+                                $admin = $row_is_admin['is_admin'];
+								echo $admin;
 							}
 							if ($admin > 0) {
 								echo "<a href='./admin_panel/admin_panel.php' class='d-flex align-items-center justify-content-center'><span class='fa fa-user-cog'><i class='sr-only'>Dribbble</i></span></a>";
