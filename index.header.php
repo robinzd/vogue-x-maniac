@@ -8,7 +8,7 @@ $user_id = $_SESSION['user_id'];
 
 
 $get_user = "select * from users WHERE user_id='$user_id'";
-echo $get_user;
+
 
 
 if ($get_user) {
