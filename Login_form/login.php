@@ -195,25 +195,25 @@ if (isset($_GET["code"])) {
 							Don't Have an account?<a href="../register_form/register.php" class="txt1">Register</a>
 						</span>
 					</div>
-					<div class="text-center p-t-46 p-b-20">
+					<!-- <div class="text-center p-t-46 p-b-20">
 						<span class="txt2">
 							or Login using
 						</span>
-					</div>
-					<?php
-					echo "<div class='login100-form-social flex-c-m'>
-						<!-- <a href='#' class='login100-form-social-item flex-c-m bg1 m-r-5'>
-							<i class='fa fa-facebook-f' aria-hidden='true'></i>
-						</a> -->
+					</div> -->
+					  <!-- <?php  
+					// echo "<div class='login100-form-social flex-c-m'>
+					// 	<!-- <a href='#' class='login100-form-social-item flex-c-m bg1 m-r-5'>
+					// 		<i class='fa fa-facebook-f' aria-hidden='true'></i>
+					// 	</a> 
 
 					
-						<a href='" . $client->createAuthUrl() . "' class='login100-form-social-item flex-c-m bg2 m-r-5'>
-							<i class='fa fa-google' aria-hidden='true'></i>
-						</a>
+					// 	// <a href='" . $client->createAuthUrl() . "' class='login100-form-social-item flex-c-m bg2 m-r-5'>
+					// 	// 	<i class='fa fa-google' aria-hidden='true'></i>
+					// 	// </a>
 						
 
-					</div>"
-					?>
+					// </div>"
+					?> -->
 				</form>
 				<div class="login100-more" style="background-image: url('images/login-pic.jpg');">
 				</div>

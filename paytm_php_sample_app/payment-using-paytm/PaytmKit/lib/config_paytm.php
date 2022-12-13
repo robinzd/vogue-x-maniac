@@ -68,7 +68,7 @@ if (PAYTM_ENVIRONMENT == 'PROD') {
 	$PAYTM_INDUSTRY_TYPE_ID = "Retail";
 	$PAYTM_MERCHANT_WEBSITE = "WEBSTAGING";
 
-	$PAYTM_CALLBACK_URL 	= "https://vogue-x-maniac.herokuapp.com/payment_status.php";
+	$PAYTM_CALLBACK_URL 	= "https://vogue-x-maniac.com/payment_status.php";
 	
 }
 
